@@ -1,0 +1,329 @@
+.card-virtual-ward {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+.text-bed-occupied .form-control {
+    border-radius: 7px 0 0 7px;
+}
+
+.text-leaflet .form-control {
+    background: linear-gradient(180deg, rgba(21, 130, 226, 1) 0%, rgba(2, 127, 206, 1) 100%);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0 7px 7px 0;
+    text-align: center;
+}
+
+.text-bed-occupied .form-control::placeholder {
+    color: #000;
+}
+
+.text-leaflet .form-control::placeholder {
+    color: #fff;
+}
+
+.text-leaflet.cyan-input .form-control {
+    background: #098486;
+}
+
+.text-leaflet.maroon-input .form-control {
+    background: #9D1757;
+}
+
+.text-leaflet.green-input .form-control {
+    background: #47C061;
+}
+
+.text-leaflet.orange-input .form-control {
+    background: #F9703E;
+}
+
+.card-mobility-table {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+
+.table-mobility-score,
+.table-mobility-score-five-days {
+    font-size: 12px;
+}
+
+.table-mobility-score thead {
+    background: var(--bg-grey-gradient);
+}
+
+
+.bg-thead-blue {
+    background: linear-gradient(180deg, rgba(14, 129, 219, 1) 50%, rgba(12, 103, 174, 1) 100%);
+}
+
+.table-mobility-score thead th {
+    font-weight: 400;
+    text-align: center;
+}
+
+.table-mobility-score thead tr:first-child th:nth-child(3),
+.table-mobility-score thead tr:first-child th:nth-child(4) {
+    color: #fff;
+}
+
+.table-mobility-score tbody tr td {
+    text-align: center;
+}
+
+.table-mobility-score thead tr:first-child th:first-child,
+.table-mobility-score tbody tr td:first-child {
+    padding: .5rem 1rem;
+    text-align: left;
+    width: 150px;
+}
+
+.mobility-medical-ward .table-mobility-score thead {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+}
+
+.mobility-surgical-ward .table-mobility-score thead {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+}
+
+.table-mobility-score-five-days thead {
+    background: var(--bg-grey-gradient);
+}
+
+.table-mobility-score-five-days thead tr:first-child th:nth-child(1) {
+    width: 200px;
+}
+
+.table-mobility-score-five-days thead tr:first-child th:first-child {
+    border-radius: 7px 7px 0 0;
+}
+
+.table-mobility-score-five-days thead tr:first-child th:last-child {
+    border-radius: 7px 7px 0 0;
+}
+
+.table-mobility-score-five-days thead tr:last-child {
+    border-radius: 7px 7px 0 0;
+}
+
+.table-mobility-score-five-days tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.table-mobility-score-five-days tbody tr:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+.table-mobility-score-five-days thead th {
+    text-align: center;
+    font-weight: 400;
+}
+
+.table-mobility-score-five-days thead tr:last-child th {
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.table-mobility-score-five-days thead th span {
+    display: block;
+}
+
+.table-mobility-score-five-days thead tr th,
+.table-mobility-score-five-days tbody tr td {
+    border-right: 1px solid #ccc;
+}
+
+.table-mobility-score-five-days tbody tr td {
+    text-align: center;
+}
+
+.table-mobility-score-five-days tbody tr td:first-child {
+    text-align: start;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .table-mobility-score tbody tr:nth-child(odd),
+    .table-mobility-score-five-days tbody tr:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+
+    .table-mobility-score tbody tr:nth-child(even),
+    .table-mobility-score-five-days tbody tr:nth-child(even) {
+        background-color: #F2F2F3;
+    }
+
+    .table-mobility-score thead th,
+    .table-mobility-score tbody td {
+        border-right: 1px solid #A7A7A7;
+    }
+
+    .table-mobility-score thead th:last-child,
+    .table-mobility-score tbody td:last-child {
+        border: none;
+    }
+
+    .table-mobility-score tbody tr:last-child {
+        font-weight: 600;
+    }
+
+    .table-mobility-score thead tr:first-child th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .table-mobility-score thead tr:first-child th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .table-mobility-score tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-mobility-score tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .table-mobility-score-five-days thead tr th:last-child,
+    .table-mobility-score-five-days tbody tr td:last-child {
+        border-right: none;
+    }
+
+}
+
+@media (max-width:1025px) {
+
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(1) {
+        width: 100% !important;
+    }
+
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(1) {
+        border-radius: 6px 6px 0 0;
+    }
+
+    .responsiveTable td.pivoted,
+    .table-mobility-score thead tr:first-child th:first-child,
+    .table-mobility-score tbody tr td:first-child {
+        width: 20%;
+        padding: 5px 10px;
+    }
+
+    .table-mobility-score tbody tr:last-child td:first-child {
+        border-radius: 6px 0 0 0;
+    }
+
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(7),
+    .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(11) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(6),
+    .responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0;
+    }
+
+    .card-mobility-table {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    .responsiveTable td.pivoted {
+        border-right: none;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .responsiveTable td.pivoted,
+    .table-mobility-score thead tr:first-child th:first-child,
+    .table-mobility-score tbody tr td:first-child {
+        width: 25%;
+        padding: 5px 10px;
+    }
+
+    .mobility-score-five-days .responsiveTable td.pivoted:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+    .responsiveTable td.pivoted:nth-child(5),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(10) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .responsiveTable td.pivoted:nth-child(6),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(4),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(5),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(8),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(9),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(11) {
+        border-radius: 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 6px 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .card-virtual-ward {
+        padding: .75rem .5rem;
+        border-radius: 4px;
+    }
+
+    .responsiveTable td.pivoted,
+    .table-mobility-score tbody tr td:first-child {
+        width: 50%;
+    }
+
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(2),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(6),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(7) {
+        border-radius: 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(5),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(10) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .responsiveTable td.pivoted:nth-child(6),
+    .responsiveTable.table-mobility-score-five-days td.pivoted:nth-child(11) {
+        border-radius: 0 0 4px 0;
+    }
+
+    .text-bed-occupied .form-control {
+        border-radius: 4px 0 0 4px;
+    }
+
+    .text-leaflet .form-control {
+        border-radius: 0 4px 4px 0;
+    }
+
+    .card-virtual-ward p {
+        margin-bottom: .5rem;
+    }
+}

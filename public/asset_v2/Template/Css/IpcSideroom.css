@@ -1,0 +1,913 @@
+.ipc-filters .ms-options-wrap>button:focus,
+.ipc-filters .ms-options-wrap>button,
+.ipc-filters .bg-patients-count {
+    min-height: 40px;
+}
+
+.ipc-filters .btn-ipc-green,
+.ipc-filters .btn-ipc-red {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+}
+
+.ipc-filters .btn-ipc-green img,
+.ipc-filters .btn-ipc-red img {
+    display: none;
+}
+
+.ipc-filters .btn-ipc-green.active {
+    background: linear-gradient(180deg, rgba(69, 190, 69, 1) 50%, rgba(52, 176, 52, 1) 100%);
+    color: #fff;
+}
+
+.ipc-filters .btn-ipc-red.active {
+    background: linear-gradient(180deg, rgba(253, 19, 19, 1) 50%, rgba(228, 8, 8, 1) 100%);
+    color: #fff;
+}
+
+.ipc-filters .btn-ipc-red.active img,
+.ipc-filters .btn-ipc-green.active img {
+    display: block;
+}
+
+.ipc-filters .bg-patients-count h5.count-moved {
+    color: green;
+}
+
+.ipc-filters .bg-patients-count h5.count-not-moved {
+    color: red;
+}
+
+.card-ipc {
+    padding: 0;
+    font-size: 12px;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px;
+    padding-bottom: .25rem;
+    margin-bottom: .5rem;
+}
+
+.ipc-ward-header {
+    background: var(--primary-blue);
+    color: #fff;
+    border-radius: 7px 7px 0 0;
+    padding: .5rem .75rem;
+    margin-bottom: .5rem;
+}
+
+.ipc-ward-header h6 {
+    margin-bottom: 0;
+}
+
+.ipc-wrapper {
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px;
+    margin: .5rem;
+}
+
+.card-ipc .ipc-wrapper:last-child {
+    margin-bottom: .25rem;
+}
+
+.table-ipc-sideroom thead {
+    background: var(--bg-grey-gradient);
+    border-radius: 7px 7px 0 0;
+}
+
+.table-ipc-sideroom thead th {
+    text-align: center;
+    font-weight: 500;
+}
+
+.table-ipc-sideroom thead th span {
+    display: block;
+}
+
+.table-ipc-sideroom .icon-ipc {
+    width: 25px;
+    height: 25px;
+}
+
+.isolation-reason-symbol,
+.reverse-barrier-section,
+.update-details-section {
+    min-height: 25px;
+    margin-bottom: .25rem;
+    width: 100%;
+}
+
+.reverse-barrier-section .bg-red {
+    background: var(--primary-blue);
+}
+
+.update-details-section .btn-update-details {
+    background: var(--primary-blue);
+    color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    padding: .15rem .15rem;
+    font-size: 11px;
+    min-height: 25px;
+}
+
+.table-ipc-sideroom .patient-gender {
+    margin-left: -5px;
+    height: 25px;
+}
+
+.ipc-patient-details,
+.infection-details {
+    padding: 4px 8px;
+    width: 100%;
+}
+
+.table-ipc-sideroom .ipc-patient-details span.sub-title,
+.table-ipc-sideroom .primary-reason span.sub-title,
+.table-ipc-sideroom .secondary-reason span.sub-title,
+.table-ipc-sideroom .comment-block span.sub-title {
+    font-weight: 500;
+}
+
+.table-ipc-sideroom .comment-block textarea {
+    height: 50px;
+    cursor: pointer;
+}
+
+.table-ipc-sideroom .primary-reason,
+.table-ipc-sideroom .secondary-reason {
+    min-height: 35px;
+}
+
+.table-ipc-sideroom .ipc-empty-bed {
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 360px;
+    width: 100%;
+    position: relative;
+}
+
+.table-ipc-sideroom .ipc-empty-bed .add-btn-wrap .btn-primary-grey {
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    width: 50%;
+    transform: translate(-50%, -4%);
+    padding: .25rem .5rem;
+    min-height: 30px;
+    min-width: auto;
+}
+
+.table-ipc-sideroom .ipc-empty-bed h6 {
+    font-size: 12px;
+}
+
+th.bg-reverse-barrier,
+tr.bg-reverse-barrier {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+
+.is_infected {
+    background-color: rgb(255 50 50);
+    color: #fff;
+}
+
+.bg-reverse-barrier .spl-th {
+    color: #fff;
+}
+
+.ipc-infection-risk-offcanvas.offcanvas-end {
+    width: 55%;
+}
+
+.ipc-add-patient-offcanvas.offcanvas-end {
+    width: 50%;
+    font-size: 12px;
+}
+
+.ipc-add-patient-offcanvas.offcanvas-end .selectric-items,
+.ipc-add-patient-offcanvas.offcanvas-end .selectric-items .selectric-scroll {
+    min-height: 150px;
+}
+
+.ipc-add-patient-offcanvas.offcanvas-end .form-control,
+.ipc-add-patient-offcanvas.offcanvas-end .selectric {
+    background-color: #F3F3F3;
+    border-radius: 7px;
+    border: 0.5px solid rgb(128, 128, 128, .5);
+    min-height: 35px;
+}
+
+.ipc-add-patient-offcanvas.offcanvas-end .selectric .button {
+    background-color: #F3F3F3;
+}
+
+.ipc-infection-risk-offcanvas .ipc-infection-header,
+.ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper {
+    width: 70%;
+}
+
+.ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .reverse-barrier-block,
+.ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .infection-history-btn {
+    width: 40%;
+}
+
+.ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .close-btn {
+    width: 20%;
+}
+
+.ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .btn-grey {
+    text-transform: uppercase;
+    min-height: 35px;
+}
+
+.ipc-infection-risk-offcanvas .reverse-barrier-block,
+.ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .infection-history-btn {
+    margin-right: .5rem;
+}
+
+.ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .infection-history-btn .btn {
+    width: 100%;
+}
+
+.ipc-infection-risk-offcanvas .reverse-barrier-block button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ipc-infection-risk-offcanvas .reverse-barrier-block button img {
+    display: none;
+}
+
+.ipc-infection-risk-offcanvas .reverse-barrier-block .btn.active img {
+    display: block;
+}
+
+.ipc-infection-risk-offcanvas .reverse-barrier-block .btn-reverse-barrier {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0.5rem .25rem;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.ipc-infection-risk-offcanvas .reverse-barrier-block .btn-reverse-barrier {
+    min-height: 35px;
+}
+
+.ipc-infection-risk-offcanvas .reverse-barrier-block .btn.active {
+    background: var(--primary-blue);
+    color: #fff;
+}
+
+.ipc-infection-risk-offcanvas .card-infection-data {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    margin-bottom: .5rem;
+}
+
+.ipc-infection-risk-offcanvas .card-infection-data.past-infections-section textarea {
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.ipc-infection-risk-offcanvas .card-infection-data.ipc-module {
+    margin-bottom: 0;
+}
+
+.ipc-infection-risk-offcanvas .card-infection-data .header-chart {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+    padding: .4rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ipc-infection-risk-offcanvas .card-infection-data .header-chart h6 {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.ipc-infection-risk-offcanvas .section-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+}
+
+.ipc-infection-risk-offcanvas .card-infection-data .header-chart .btn-primary-grey,
+.ipc-infection-risk-offcanvas .card-infection-data .data-section .btn-primary-grey,
+.add-more .btn-primary-grey {
+    padding: .25rem 2.25rem;
+    min-width: auto;
+    min-height: 35px;
+    width: auto;
+}
+
+.ipc-infection-risk-offcanvas .card-infection-data .data-section .btn-primary-grey {
+    width: 100%;
+    padding: .25rem 1rem;
+}
+
+.ipc-infection-risk-offcanvas .section-buttons .btn img {
+    display: none;
+}
+
+.ipc-infection-risk-offcanvas .card-infection-data .data-section {
+    padding: .5rem;
+}
+
+.ipc-infection-risk-offcanvas .add-more .btn-primary-grey {
+    width: 100%;
+}
+
+.ipc-infection-risk-offcanvas .form-label {
+    margin-bottom: .25rem;
+    font-size: 12px;
+}
+
+.ipc-infection-risk-offcanvas .form-control,
+.ipc-infection-risk-offcanvas .form-select {
+    min-height: 37px;
+}
+
+.ipc-history-card .data-area {
+    padding: .25rem .5rem;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+    .ipc-filters {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 53px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .ipc-content-wrapper {
+        margin-top: 45px;
+    }
+
+    .ipc-patient-details {
+        min-height: 125px;
+        background-color: #ffffff;
+    }
+
+    .infection-details {
+        background-color: #F2F2F3;
+        min-height: 235px;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-1 {
+        width: 16.66%;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-2 {
+        width: 33.32%;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-3 {
+        width: 49.98%;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-4 {
+        width: 66.64%;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-5 {
+        width: 83.33%;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-6 {
+        width: 99.96%;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-1,
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-2,
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-3,
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-4,
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-5 {
+        border-right: 1px solid #A7A7A7;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom thead tr:last-child th,
+    .card-ipc .ipc-wrapper .table-ipc-sideroom tbody tr td {
+        width: 16.66%;
+        max-width: 16.66%;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom thead tr th .spl-th {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom tbody tr td:nth-child(2) .ipc-empty-bed,
+    .card-ipc .ipc-wrapper .table-ipc-sideroom tbody tr td:nth-child(2),
+    .card-ipc .ipc-wrapper .table-ipc-sideroom tbody tr td:nth-child(2) .infection-details {
+        border-radius: 0 0 0 7px;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom tbody tr td:nth-child(6) .ipc-empty-bed,
+    .card-ipc .ipc-wrapper .table-ipc-sideroom tbody tr td:last-child .infection-details {
+        border-radius: 0 0 7px 0;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-1 tbody tr td:last-child .ipc-empty-bed,
+    .card-ipc .ipc-wrapper .table-ipc-sideroom.w-1 tbody tr td:last-child .infection-details {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-ipc-sideroom tbody tr {
+        vertical-align: top;
+    }
+
+    .table-ipc-sideroom tbody tr:nth-child(odd),
+    .table-ipc-sideroom tbody tr:nth-child(even) {
+        background-color: #F2F2F3;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom thead tr {
+        border-bottom: 1px solid #A7A7A7;
+    }
+
+    .table-ipc-sideroom thead tr:first-child,
+    .table-ipc-sideroom thead tr:first-child th {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .table-ipc-sideroom thead tr:first-child th {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .table-ipc-sideroom thead tr th:last-child,
+    .table-ipc-sideroom tbody tr td:last-child {
+        border-right: none;
+    }
+
+    .table-ipc-sideroom thead tr th,
+    .table-ipc-sideroom tbody tr td {
+        border-right: 1px solid #A7A7A7;
+        text-align: start;
+    }
+
+    .table-ipc-sideroom tbody tr td {
+        text-align: start;
+        padding: 0;
+    }
+
+    .table-ipc-sideroom tbody tr:last-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-ipc-sideroom tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-ipc-sideroom tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .table-ipc-sideroom tbody tr td.sm-ward-name,
+    .card-ipc .ipc-wrapper .responsiveTable td .sm-sideroom-wrapper {
+        display: none;
+    }
+
+    .ipc-comments .table-ipc-comments,
+    .infection-history-section .table-infection-history {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .infection-history-section .table-infection-history {
+        box-shadow: 0px 3px 6px #00000038;
+        border-radius: 7px;
+    }
+
+    .ipc-comments .table-ipc-comments thead,
+    .ipc-comments .table-ipc-comments tbody tr,
+    .infection-history-section .table-infection-history thead,
+    .infection-history-section .table-infection-history tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .ipc-comments .table-ipc-comments thead tr,
+    .infection-history-section .table-infection-history thead tr {
+        background: var(--primary-blue);
+        color: #fff;
+        box-shadow: 0px 3px 6px #00000038;
+        width: 100%;
+        border-right: 3px solid rgb(128, 128, 128, 0);
+    }
+
+    .ipc-comments .table-ipc-comments thead tr th,
+    .infection-history-section .table-infection-history thead tr th {
+        font-weight: 500;
+    }
+
+    .ipc-comments .table-ipc-comments thead tr th:first-child,
+    .infection-history-section .table-infection-history thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .ipc-comments .table-ipc-comments thead tr th:last-child,
+    .infection-history-section .table-infection-history thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .ipc-comments .table-ipc-comments th:nth-child(1),
+    .ipc-comments .table-ipc-comments tbody td:nth-child(1) {
+        width: 64%;
+    }
+
+    .ipc-comments .table-ipc-comments th,
+    .ipc-comments .table-ipc-comments tbody td {
+        width: 18%;
+    }
+
+    .infection-history-section .table-infection-history th,
+    .infection-history-section .table-infection-history tbody td {
+        width: 20%;
+    }
+
+    .infection-history-section .table-infection-history th:nth-child(1),
+    .infection-history-section .table-infection-history tbody td:nth-child(1) {
+        width: 50%;
+    }
+
+    .infection-history-section .table-infection-history th:nth-child(2),
+    .infection-history-section .table-infection-history tbody td:nth-child(2),
+    .infection-history-section .table-infection-history th:nth-child(3),
+    .infection-history-section .table-infection-history tbody td:nth-child(3) {
+        width: 15%;
+    }
+
+    .ipc-comments .table-ipc-comments tbody,
+    .infection-history-section .table-infection-history tbody {
+        flex: 1 1 auto;
+        display: block;
+        max-height: 170px;
+        overflow-y: auto;
+    }
+
+    .ipc-comments .table-ipc-comments tbody tr,
+    .infection-history-section .table-infection-history tbody tr {
+        border-bottom: 1px solid #dedddd;
+    }
+
+    .ipc-comments .responsiveTable td .tdBefore,
+    .infection-history-section .responsiveTable td .tdBefore {
+        display: none;
+    }
+
+    .ipc-comments .table-ipc-comments tbody::-webkit-scrollbar,
+    .ipc-infection-risk-offcanvas .infection-ipc-wrapper::-webkit-scrollbar,
+    .infection-history-section .table-infection-history tbody::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .ipc-module {
+        position: relative;
+        bottom: 20%;
+        width: 100%;
+        margin-top: .5rem;
+    }
+
+    .ipc-comment-modal .modal-dialog {
+        max-width: 80%;
+    }
+
+    .infection-history-modal .modal-dialog {
+        max-width: 60%;
+    }
+}
+
+@media (min-width:1400px) {
+    .ipc-patient-details {
+        min-height: 100px;
+    }
+
+    .infection-details {
+        min-height: 235px;
+    }
+
+    .table-ipc-sideroom .ipc-empty-bed {
+        min-height: 335px;
+    }
+
+    .ipc-infection-risk-offcanvas .infection-ipc-wrapper {
+        height: 100%;
+    }
+
+    .ipc-module {
+        bottom: 28%;
+    }
+}
+
+@media (min-width:1600px) {
+    .ipc-infection-risk-offcanvas .infection-ipc-wrapper {
+        height: 54vh;
+    }
+
+    .ipc-module {
+        bottom: -2%;
+    }
+}
+
+@media (min-width:1800px) {
+    .ipc-infection-risk-offcanvas .infection-ipc-wrapper {
+        height: 57vh;
+    }
+}
+
+@media (max-width: 1399px) {
+
+    .ipc-infection-risk-offcanvas .section-buttons {
+        width: 75%;
+    }
+
+    .ipc-infection-risk-offcanvas .infection-ipc-wrapper {
+        height: 82%;
+    }
+
+    .table-ipc-sideroom .ipc-empty-bed .add-btn-wrap .btn-primary-grey {
+        width: 70%;
+    }
+
+    .infection-history-modal .modal-dialog {
+        max-width: 70%;
+    }
+}
+
+@media (min-width:1026px) and (max-width:1199px) {
+
+    .infection-details {
+        min-height: 235px;
+    }
+
+    .table-ipc-sideroom .ipc-empty-bed {
+        min-height: 360px;
+    }
+
+    .bg-green, .bg-red {
+        font-size: 10px;
+    }
+
+    .ipc-infection-risk-offcanvas.offcanvas-end {
+        width: 70%;
+    }
+
+    .ipc-infection-risk-offcanvas .infection-ipc-wrapper {
+        height: 70%;
+    }
+}
+
+@media (max-width:1199px) and (min-width:768px) {
+
+    .ipc-filters .row-cols-md-3 .col:nth-child(4),
+    .ipc-filters .row-cols-md-3 .col:nth-child(5) {
+        width: 50%;
+    }
+}
+
+@media (max-width:1025px) {
+
+    .ipc-wrapper {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        margin: .25rem;
+    }
+
+    .ipc-wrapper .table-ipc-sideroom .bg-green {
+        min-width: auto;
+        max-width: none;
+    }
+
+    .ipc-ward-header {
+        margin-bottom: .25rem;
+    }
+
+    .card-ipc .ipc-wrapper:last-child {
+        margin-bottom: 0;
+    }
+
+    .card-ipc .ipc-wrapper .responsiveTable tbody tr:nth-child(odd),
+    .card-ipc .ipc-wrapper .responsiveTable tbody tr:nth-child(even) {
+        background-color: transparent;
+    }
+
+    .card-ipc .ipc-wrapper .responsiveTable tbody tr {
+        margin-bottom: 0;
+    }
+
+    .card-ipc .ipc-wrapper:nth-child(odd),
+    .card-ipc .ipc-wrapper:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .ipc-patient-details,
+    .infection-details {
+        padding: 5px 0;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom tbody tr td.sm-ward-name:first-child {
+        border-top: none;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .table-ipc-sideroom tbody tr td.sm-ward-name {
+        width: 100%;
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000030;
+        margin: 0;
+        font-weight: 600;
+        border-top: 1px solid #A7A7A7;
+        border-bottom: 1px solid #A7A7A7;
+    }
+
+    .table-ipc-sideroom .ipc-empty-bed {
+        min-height: 340px;
+        margin-top: 5px;
+        border-radius: 4px;
+    }
+
+    .card-ipc .ipc-wrapper .responsiveTable td .sm-sideroom-wrapper {
+        border: 1px solid #A7A7A7;
+        width: 100%;
+        padding: .25rem .5rem;
+        border-radius: 4px;
+    }
+
+    .card-ipc .ipc-wrapper .responsiveTable td .sm-sideroom-wrapper .spl-th {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .table-ipc-sideroom tbody tr td .sm-sideroom-wrapper.bg-reverse-barrier {
+        background: rgb(255 50 50);
+        color: #fff;
+    }
+
+    .table-ipc-sideroom tbody tr td .sm-sideroom-wrapper.bg-reverse-barrier i {
+        color: #fff;
+    }
+
+    .ipc-infection-risk-offcanvas.offcanvas-end,
+    .ipc-add-patient-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .ipc-comment-modal .modal-dialog {
+        max-width: 100%;
+    }
+
+    .ipc-comments-section .rectangle-block-1 {
+        background: none;
+        box-shadow: none;
+    }
+
+    .ipc-comments .responsiveTable td.pivoted:nth-child(1) {
+        width: 50%;
+    }
+
+    .ipc-comments .responsiveTable td.pivoted {
+        width: 25%;
+    }
+
+    .ipc-module {
+        margin-top: .5rem;
+    }
+
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .reverse-barrier-block.add-btn-wrap,
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .infection-history-btn {
+        width: 40%;
+    }
+
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .close-btn {
+        width: 20%;
+    }
+
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .btn {
+        width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+
+    .ipc-filters .btn-ipc-green,
+    .ipc-filters .btn-ipc-red,
+    .card-ipc {
+        border-radius: 4px;
+    }
+
+    .card-ipc .ipc-wrapper .table-ipc-sideroom tbody tr td.sm-ward-name:first-child {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .ipc-comments .responsiveTable td.pivoted {
+        width: 50%;
+    }
+
+    .ipc-infection-risk-offcanvas .offcanvas-header {
+        min-height: 80px;
+    }
+
+    .ipc-infection-risk-offcanvas .ipc-infection-header,
+    .ipc-infection-risk-offcanvas .card-infection-data .header-chart {
+        flex-direction: column;
+    }
+
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper {
+        width: 100%;
+    }
+
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .reverse-barrier-block {
+        width: 50%;
+    }
+
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .infection-history-btn {
+        width: 60%;
+    }
+
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .close-btn {
+        width: 40%;
+    }
+
+    .ipc-infection-risk-offcanvas .reverse-barrier-block button,
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .btn-grey {
+        padding: 0.5rem .25rem;
+    }
+
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper {
+        margin-top: .5rem;
+    }
+
+    .ipc-infection-risk-offcanvas .reverse-barrier-block .btn-reverse-barrier {
+        font-size: 12px;
+        border-radius: 4px;
+    }
+
+    .ipc-infection-risk-offcanvas .card-infection-data .section-buttons {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ipc-infection-risk-offcanvas .card-infection-data .section-buttons div,
+    .ipc-infection-risk-offcanvas .card-infection-data .header-chart .btn-primary-grey {
+        width: 100%;
+    }
+
+    .ipc-infection-risk-offcanvas .card-infection-data .header-chart h6,
+    .ipc-infection-risk-offcanvas .card-infection-data .header-chart .btn-primary-grey:first-child {
+        margin-bottom: .5rem;
+    }
+
+}
+
+@media(max-width:374px) {
+
+    .ipc-infection-risk-offcanvas .reverse-barrier-block .btn-reverse-barrier,
+    .ipc-infection-risk-offcanvas .offcanvas-header .offcanvas-top-btn-wrapper .btn-grey {
+        font-size: 11px;
+    }
+}

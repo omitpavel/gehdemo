@@ -1,0 +1,100 @@
+.handover_check_underline {
+    color: red;
+}
+
+#navigation h6 {
+    font-size: 14px !important;
+}
+
+.btn-grey.inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.bg-grey.inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.btn-icon-next-button {
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bed-navigation-cursor:not(:disabled)
+{
+    cursor: pointer;
+}
+
+.btn-handover .tick-icon{
+    display: block;
+    position: absolute;
+    left: 3%;
+}
+.btn-handover span{
+    position: absolute;
+    left: 16%;
+}
+.handover-rightside .handover-rightside-list .bed_no .tick-icon {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.table-handover-row-2{
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.handover-rightside .handover-rightside-list .bed_no {
+    width: 30%;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 3px 3px;
+    margin-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+}
+@media (max-width:565px) {
+
+.table-handover-tbody {
+    display:contents;
+}
+    .spl-cell{
+        min-width: 277px;
+    }
+}
+
+@media (min-width:566px) and (max-width: 768px) {
+    .spl-cell{
+        min-width: 342px;
+    }
+}
+@media (min-width:769px) and (max-width: 1024px) {
+    .spl-cell{
+        min-width: 476px;
+    }
+}
+@media (min-width:1024px) and (max-width: 1500px) {
+    .btn-handover .tick-icon{
+        left: 4% !important;
+    }
+    .btn-handover span {
+        position: absolute;
+        left: 13% !important;
+    }
+}

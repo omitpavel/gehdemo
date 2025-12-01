@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 58.745 54.753">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="1.521" y2="1.751" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fdfdfe"/>
+      <stop offset="1" stop-color="#7f7f7f"/>
+    </linearGradient>
+  </defs>
+  <path id="hexagon-fill-svgrepo-com" d="M26.512,1.954a5.425,5.425,0,0,1,5.229,0l21.7,11.936a5.425,5.425,0,0,1,2.811,4.754V42.067a5.426,5.426,0,0,1-2.811,4.754l-21.7,11.936a5.425,5.425,0,0,1-5.229,0L4.811,46.821A5.425,5.425,0,0,1,2,42.067V18.644A5.425,5.425,0,0,1,4.811,13.89Z" transform="translate(59.728 -1.75) rotate(90)" stroke="#707070" stroke-width="0.5" fill="url(#linear-gradient)"/>
+</svg>

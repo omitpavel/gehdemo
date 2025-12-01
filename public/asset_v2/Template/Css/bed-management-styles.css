@@ -1,0 +1,208 @@
+/* Bed Management Styles */
+
+.grey-rectangle-1 {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 10px 0 0 10px;
+    padding: .5rem;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.grey-rectangle-2 {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 0;
+    padding: .5rem 0;
+    min-height: 80px;
+}
+
+.grey-rectangle-3 {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 0 10px 10px 0;
+    padding: .5rem 0;
+    min-height: 80px;
+
+}
+
+.bg-info {
+    background: linear-gradient(180deg, rgba(19, 190, 193, 1) 50%, rgba(7, 121, 123, 1) 100%);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.grey-rectangle-1 p,
+.grey-rectangle-2 p,
+.grey-rectangle-3 p {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.grey-rectangle-1 h6,
+.grey-rectangle-2 h6,
+.grey-rectangle-3 h6 {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.bed-management .tile-shape-bottom,
+.bed-management .blue-tile-top {
+    border-radius: 10px;
+}
+
+.bed-management .tile-shape-bottom {
+    min-height: auto;
+}
+
+.bed-mngmt-rectangle {
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 10px;
+    min-height: 50px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.cyan-rectangle {
+    background: linear-gradient(180deg, rgba(19, 190, 193, 1) 50%, rgba(7, 121, 123, 1) 100%);
+
+}
+
+.maroon-rectangle {
+    background: linear-gradient(180deg, rgba(193, 11, 93, 1) 50%, rgba(129, 33, 84, 1) 100%);
+}
+
+.green-bg-rectangle {
+    background: linear-gradient(180deg, rgba(112, 196, 126, 1) 50%, rgba(73, 128, 82, 1) 100%);
+}
+
+.blue-bg-rectangle {
+    background: linear-gradient(180deg, rgba(25, 127, 209, 1) 50%, rgba(16, 56, 89, 1) 100%);
+}
+
+.orange-bg-rectangle {
+    background: linear-gradient(180deg, rgba(242, 109, 36, 1) 50%, rgba(204, 72, 0, 1) 100%);
+}
+
+.black-bg-rectangle {
+    background: linear-gradient(180deg, rgba(142, 142, 142, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.bed-mngmt-greyrectangle {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 10px;
+    padding: .5rem;
+    margin-left: -10px;
+    min-height: 50px;
+}
+
+.bed-mngmt-leftside-bg {
+    /* background: #fff; */
+    text-align: left;
+    padding: .5rem 0;
+    height: 35px;
+}
+
+.leftside-head {
+    list-style: none;
+    padding-left: 0;
+}
+
+.leftside-head li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.bed-mngmt-rightside {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.bed-mngmt-rightside-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2px;
+    padding: 0.1rem .5rem;
+}
+
+
+.bed-mngmt-rightside .bed-mngmt-rightside-list.rightside-head li {
+    background-color: transparent;
+    border: none;
+}
+
+.bed-mngmt-rightside .bed-mngmt-rightside-list li {
+    width: 20%;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0px 4px;
+    background-color: transparent;
+}
+
+.bed-mngmt-rightside .bed-mngmt-rightside-list li:first-child {
+    width: 30%;
+    margin-right: 20px;
+    border: 1px solid #707070;
+}
+
+.bed-mngmt-rightside .bed-mngmt-rightside-list li:nth-child(2) {
+    border: 1px solid #166AAE;
+}
+
+.bed-mngmt-rightside .bed-mngmt-rightside-list li:nth-child(3) {
+    border: 1px solid #6EC07C;
+}
+
+.bed-mngmt-rightside .bed-mngmt-rightside-list li:nth-child(4) {
+    border: 1px solid #B90E5C;
+}
+
+.bed-mngmt-rightside-list .bg-grey {
+    border: 1px solid #4C6FB9;
+}
+
+.bg-info .bed-mngmt-rightside .bed-mngmt-rightside-list li:first-child,
+.bg-info .bed-mngmt-rightside .bed-mngmt-rightside-list li:nth-child(2),
+.bg-info .bed-mngmt-rightside .bed-mngmt-rightside-list li:nth-child(3),
+.bg-info .bed-mngmt-rightside .bed-mngmt-rightside-list li:nth-child(4) {
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.round-bottom {
+    border-radius: 0px 0px 14px 14px;
+}
+
+@media (max-width:767px) {
+    .round-bottom {
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .leftside-head li {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,223 @@
+.tabinnerWrap {
+    width: 100%;
+}
+
+.SelectBoxWrap {
+    width: 33%;
+    margin-bottom: 5px;
+}
+
+.contentArea {
+    width: 100%;
+}
+
+.highcharts-background {
+    opacity: 0;
+}
+
+.contentArea .colWrap .mainHead {
+    width: 100%;
+    padding: 10px 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: #10696b;
+}
+
+.contentArea .colWrap .boxWrap {
+    width: 100%;
+}
+
+.contentArea .colWrap .boxWrap .box {
+    width: 100%;
+    border: solid 1px #f1f1f1;
+    border-radius: 3px;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
+}
+
+.contentArea .colWrap .boxWrap .box .headSectop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ddd;
+    margin-bottom: 5px;
+}
+
+.contentArea .colWrap .boxWrap .box .headSectop .headBox {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contentArea .colWrap .boxWrap .box .headSectop .rightTxt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.contentArea .colWrap .boxWrap .box .graphRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentArea .colWrap .boxWrap .box .graphRow .graphinnerBox {
+    width: 48%;
+}
+
+.contentArea .colWrap .boxWrap .box .graphRow .rgtGraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentArea .colWrap .boxWrap .box .graphRow .rgtGraph .thumbBox {
+    width: 30%;
+}
+
+.contentArea .colWrap .boxWrap .box .graphRow .rgtGraph .thumbBox .headthumb {
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 10px 0px 30px 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 3px;
+    height: 50px;
+}
+
+.contentArea .colWrap .boxWrap .box .graphRow .rgtGraph .thumbBox .headthumb.bg1 {
+    background-color: #4caf50;
+}
+
+.contentArea .colWrap .boxWrap .box .graphRow .rgtGraph .thumbBox .headthumb.bg2 {
+    background-color: #03a9f4;
+}
+
+.contentArea .colWrap .boxWrap .box .graphRow .rgtGraph .thumbBox .headthumb.bg3 {
+    background-color: #673ab7;
+}
+
+.contentArea .colWrap .boxWrap .box .graphRow .rgtGraph .thumbBox .count {
+    display: inline-block;
+    width: 80%;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    bottom: -6px;
+    color: #000;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
+}
+
+
+/* /////////////////// BOXPLOT STYLES START//////////////////// */
+
+.referral_dashboard_box_pot_container {
+    height: 100px;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 310px;
+    max-width: 700px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+
+/* /////////////////// BOXPLOT STYLES END //////////////////// */
+
+@media only screen and (max-width: 1600px) {
+    .contentArea .colWrap .boxWrap .box .headSectop .headBox {
+        font-size: 15px;
+    }
+    .contentArea .colWrap .boxWrap .box .headSectop .rightTxt {
+        font-size: 13px;
+    }
+    .contentArea .colWrap .boxWrap .box .graphRow .rgtGraph .thumbBox .headthumb {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .contentArea .colWrap .boxWrap .box .headSectop .headBox {
+        font-size: 14px;
+    }
+    .contentArea .colWrap .boxWrap .box .headSectop .rightTxt {
+        font-size: 12px;
+    }
+    .contentArea .colWrap .boxWrap .box .graphRow .rgtGraph .thumbBox .headthumb {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1368px) {
+    .contentArea .colWrap .boxWrap .box .graphRow {
+        flex-direction: column;
+    }
+    .contentArea .colWrap .boxWrap .box .graphRow .graphinnerBox {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contentArea .colWrap .boxWrap .box .headSectop .headBox {
+        font-size: 16px;
+    }
+    .contentArea .colWrap .boxWrap .box .headSectop .rightTxt {
+        font-size: 14px;
+    }
+    .contentArea .colWrap .boxWrap .box .graphRow .rgtGraph .thumbBox .headthumb {
+        font-size: 12px;
+    }
+}

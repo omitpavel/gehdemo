@@ -1,0 +1,382 @@
+.btn-export {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: 0.5rem;
+    min-width: 90px;
+}
+
+.discharge-summary-modal .form-label {
+    font-size: 12px;
+    margin-bottom: .25rem;
+}
+
+label,
+.form-control,
+table,
+.card-dischage-summary h6 {
+    font-size: 12px;
+}
+
+.discharge-summary-modal.offcanvas-end {
+    width: 90%;
+}
+
+.card-dischage-summary {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 60px #00000014;
+    border-radius: 12px;
+    padding: .5rem;
+}
+
+.card-dischage-summary .form-control {
+    background-color: #F3F3F3;
+}
+
+.card-dischage-summary .rectangle-block-1 {
+    border-radius: 7px;
+}
+
+.blue-rectangle-block {
+    background: linear-gradient(180deg, rgba(18, 129, 223, 1) 0%, rgba(6, 128, 210, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0 0;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.table-completed-tasks thead tr {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.table-completed-tasks thead tr th {
+    font-weight: 400;
+}
+
+.table-completed-tasks thead tr th,
+.table-completed-tasks tbody tr td {
+    border-right: 1px solid #A7A7A7;
+}
+
+.table-completed-tasks thead tr th:last-child,
+.table-completed-tasks tbody tr td:last-child {
+    border-right: none;
+}
+
+.card-dischage-summary p.comment-area {
+    border: 1px solid #ced4da;
+    border-radius: 7px;
+    padding: 0.25rem 0.5rem;
+    background-color: #F3F3F3;
+    margin-bottom: 0;
+    min-height: 90px;
+    font-size: 12px;
+}
+
+.card-dischage-summary .rectangle-block-1 p.comment-area {
+    background-color: #fff;
+}
+
+.btn-discharge-grey {
+    background: var(--bg-grey-gradient);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #00000038;
+    font-weight: 500;
+    text-align: center;
+    min-height: 40px;
+}
+
+.white-box {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    background: var(--bg-grey-gradient);
+    padding: 0.5rem 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    margin: 0 20px;
+}
+
+.bottom-card {
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+}
+
+.bottom-card .inner-textbox {
+    border-radius: 12px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 3px 20px #00000021;
+    min-height: 80px;
+}
+
+.bottom-card .inner-textbox .form-control {
+    position: absolute;
+    top: 40px;
+    margin: 0 2%;
+    width: 96%;
+}
+
+.care-block .rectangle-block-1 {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.care-block .rectangle-block-2 {
+    border-radius: 10px 10px 0 0;
+    min-height: 40px;
+}
+
+.care-block .checkbox-card {
+    min-height: 60px;
+    padding: 1rem;
+}
+
+.handover-subtitle {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px 10px 0px 0px;
+    padding: .5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.bg-ash {
+    background-color: transparent;
+    margin-bottom: .75rem;
+}
+
+.bg-ash .form-control {
+    background-color: #fff;
+}
+
+.flags-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flags-section .flag-group {
+    width: 12.5%;
+    height: 80px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.flags-section .flag-group img {
+    width: 50px;
+}
+
+.flags-section .flag-group span {
+    display: block;
+    font-size: 10px;
+    padding: 3px;
+    line-height: 12px;
+}
+
+.card-dischage-summary .card-col-grp {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    overflow-x: hidden;
+    min-width: 100%;
+    min-height: 80px;
+}
+
+.card-dischage-summary .card-col-grp span.comment {
+    font-size: 12px;
+}
+
+.card-dischage-summary .card-col-grp .row .col-12:nth-child(odd) {
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.card-dischage-summary .card-col-grp .row .col-12:nth-child(even) {
+    background-color: #F2F2F3;
+    padding: 5px 10px;
+}
+
+.keep-moving .checkbox-card {
+    min-height: 300px;
+}
+
+.nutrition .checkbox-card {
+    min-height: 254px;
+}
+
+.continence .checkbox-card {
+    min-height: 246px;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+    .table-completed-tasks tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .table-completed-tasks tbody tr:nth-child(even) {
+        background-color: #F2F2F3;
+    }
+}
+
+@media (min-width:768px) {
+    .completed-tasks-section .responsiveTable td.pivoted:nth-child(1) {
+        width: 10%;
+    }
+
+    .completed-tasks-section .responsiveTable td.pivoted {
+        width: 30%;
+    }
+
+    .completed-tasks-section .responsiveTable td.pivoted:nth-child(1),
+    .completed-tasks-section .responsiveTable tr {
+        border-radius: 0;
+    }
+
+    .completed-tasks-section .responsiveTable tr:last-child {
+        border-radius: 0 0 6px 6px;
+    }
+
+    .completed-tasks-section .responsiveTable tr:last-child td.pivoted:nth-child(1) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .completed-tasks-section .responsiveTable tr:last-child td.pivoted:nth-child(4) {
+        border-radius: 0 0 6px 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .btn-discharge-grey {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1025px) {
+
+
+    .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .responsiveTable td.pivoted {
+        border-right: none;
+    }
+
+    .blue-rectangle-block {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .completed-tasks-section .rectangle-block-1 {
+        box-shadow: none;
+        background: #fff;
+    }
+
+    label {
+        font-size: 11px;
+    }
+
+    .card-dischage-summary .completed-tasks-section .responsiveTable tbody tr {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:991px) {
+
+    .discharge-summary-modal.offcanvas-end {
+        width: 100%;
+    }
+
+    .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+
+    .btn-discharge-grey {
+        font-size: 10px;
+    }
+
+    .btn-discharge-grey img {
+        width: 14px;
+    }
+
+    .care-block .checkbox-card {
+        min-height: 70px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .card-dischage-summary,
+    .btn-export,
+    .card-dischage-summary .rectangle-block-1,
+    .bottom-card .inner-textbox,
+    .white-box,
+    .card-dischage-summary p.comment-area,
+    .card-dischage-summary .card-col-grp {
+        border-radius: 4px;
+    }
+
+    .handover-subtitle {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+
+    .btn-discharge-grey {
+        font-size: 12px;
+        border-radius: 4px;
+    }
+
+    .bottom-card {
+        margin-bottom: .5rem;
+    }
+
+    .flags-section .flag-group {
+        width: 25%;
+    }
+
+    .flags-section .flag-group img {
+        width: 40px;
+    }
+
+    .completed-tasks-section .responsiveTable td.pivoted:nth-child(1),
+    .completed-tasks-section .responsiveTable tr {
+        border-radius: 0;
+    }
+
+    .completed-tasks-section .responsiveTable tr:last-child {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .completed-tasks-section .responsiveTable tr:last-child td.pivoted:nth-child(3) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .completed-tasks-section .responsiveTable tr:last-child td.pivoted:nth-child(4) {
+        border-radius: 0 0 4px 0;
+    }
+
+    .bg-ash {
+        margin-bottom: .25rem;
+    }
+
+    .keep-moving .checkbox-card,
+    .nutrition .checkbox-card,
+    .continence .checkbox-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width:359px) {
+    .btn-discharge-grey {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,309 @@
+.dtoc_prev_patient.btn-grey.inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.dtoc_next_patient.btn-grey.inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+.bottom-save-button-disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+@media (min-width: 992px) {
+
+    #patientDetails .modal-dialog {
+        max-width: 95%;
+
+    }
+    #modal_add_comment_popup .modal-dialog {
+        max-width: 50%;
+
+    }
+
+
+
+}
+.top-btn-row {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ width: 100%;
+}
+
+.top-btn-row .btn-col:nth-child(1),
+.top-btn-row .btn-col:nth-child(2),
+.top-btn-row .btn-col:nth-child(4),
+.top-btn-row .btn-col:nth-child(5) {
+    width: 25%;
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.top-btn-row .btn-col:nth-child(5) {
+    padding-right: 0;
+}
+
+.top-btn-row .btn-col:nth-child(3) {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: .5rem;
+}
+
+.btn-breach-grey {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(236, 236, 237, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    min-width: 130px;
+}
+
+#grey-btns-group svg {
+    margin-right: 10px;
+}
+
+.table-medifit.responsiveTable {
+width: 100%
+}
+
+.table-medifit.responsiveTable td .tdBefore {
+display: none
+}
+
+@media screen and (max-width:1025px) {
+
+.table-medifit.responsiveTable table,
+.table-medifit.responsiveTable thead,
+.table-medifit.responsiveTable tbody,
+.table-medifit.responsiveTable th,
+.table-medifit.responsiveTable td,
+.table-medifit.responsiveTable tr {
+    /* display: block */
+}
+
+.table-medifit.responsiveTable thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    border-bottom: 2px solid #333
+}
+
+.table-medifit.responsiveTable tbody tr,
+.table-infection-control tbody tr {
+    border: 0.5px solid #A7A7A7;
+}
+
+
+
+.table-medifit.responsiveTable td .tdBefore {
+    position: absolute;
+    display: block;
+    left: 1rem;
+    width: calc(50% - 20px);
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    text-align: left !important;
+    font-weight: 600
+}
+
+
+
+
+.table-medifit.responsiveTable td .tdBefore {
+    width: auto;
+    left: auto;
+    position: relative
+}
+
+.table-medifit.responsiveTable td {
+    min-height: 70px;
+}
+
+.table-infection-control th {
+    display: none;
+}
+
+}
+
+@media screen and (max-width:1025px) and (min-width:992px) {
+
+.table-medifit.responsiveTable td.pivoted:nth-child(1) {
+    border-radius: 6px 0 0 0;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(11) {
+    border-radius: 0 0 0 6px;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(5) {
+    border-radius: 0 6px 0 0;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(16) {
+    border-radius: 0 0 6px 0;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(1),
+.table-medifit.responsiveTable td.pivoted:nth-child(2),
+.table-medifit.responsiveTable td.pivoted:nth-child(3),
+.table-medifit.responsiveTable td.pivoted:nth-child(4),
+.table-medifit.responsiveTable td.pivoted:nth-child(5),
+.table-medifit.responsiveTable td.pivoted:nth-child(11),
+.table-medifit.responsiveTable td.pivoted:nth-child(12),
+.table-medifit.responsiveTable td.pivoted:nth-child(13),
+.table-medifit.responsiveTable td.pivoted:nth-child(14),
+.table-medifit.responsiveTable td.pivoted:nth-child(15) {
+    background-color: #FDFDFE;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(6),
+.table-medifit.responsiveTable td.pivoted:nth-child(7),
+.table-medifit.responsiveTable td.pivoted:nth-child(8),
+.table-medifit.responsiveTable td.pivoted:nth-child(9),
+.table-medifit.responsiveTable td.pivoted:nth-child(10),
+.table-medifit.responsiveTable td.pivoted:nth-child(10) {
+    background-color: #dff3f3;
+}
+
+.table-infection-control tbody tr td:nth-child(6) {
+    border-radius: 0 0 0 6px;
+}
+}
+
+@media screen and (max-width:991px) {
+.table-medifit.responsiveTable td.pivoted {
+    width: 25%
+}
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+
+.table-medifit.responsiveTable td.pivoted:nth-child(1) {
+    border-radius: 6px 0 0 0;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(13) {
+    border-radius: 0 0 0 6px;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(4) {
+    border-radius: 0 6px 0 0;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(16) {
+    border-radius: 0 0 6px 0;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(1),
+.table-medifit.responsiveTable td.pivoted:nth-child(2),
+.table-medifit.responsiveTable td.pivoted:nth-child(3),
+.table-medifit.responsiveTable td.pivoted:nth-child(4),
+.table-medifit.responsiveTable td.pivoted:nth-child(9),
+.table-medifit.responsiveTable td.pivoted:nth-child(10),
+.table-medifit.responsiveTable td.pivoted:nth-child(11),
+.table-medifit.responsiveTable td.pivoted:nth-child(12) {
+    background-color: #FDFDFE;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(5),
+.table-medifit.responsiveTable td.pivoted:nth-child(6),
+.table-medifit.responsiveTable td.pivoted:nth-child(7),
+.table-medifit.responsiveTable td.pivoted:nth-child(8),
+.table-medifit.responsiveTable td.pivoted:nth-child(13),
+.table-medifit.responsiveTable td.pivoted:nth-child(14),
+.table-medifit.responsiveTable td.pivoted:nth-child(15),
+.table-medifit.responsiveTable td.pivoted:nth-child(16) {
+    background-color: #dff3f3;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(9) {
+    border-radius: 0 0 0 10px;
+}
+}
+
+@media screen and (max-width:767px) {
+.table-medifit.responsiveTable td.pivoted {
+    width: 50% !important
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(1) {
+    border-radius: 6px 0 0 0;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(15) {
+    border-radius: 0 0 0 6px;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(2) {
+    border-radius: 0 6px 0 0;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(16) {
+    border-radius: 0 0 6px 0;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(1),
+.table-medifit.responsiveTable td.pivoted:nth-child(2),
+.table-medifit.responsiveTable td.pivoted:nth-child(5),
+.table-medifit.responsiveTable td.pivoted:nth-child(6),
+.table-medifit.responsiveTable td.pivoted:nth-child(9),
+.table-medifit.responsiveTable td.pivoted:nth-child(10),
+.table-medifit.responsiveTable td.pivoted:nth-child(13),
+.table-medifit.responsiveTable td.pivoted:nth-child(14) {
+    background-color: #FDFDFE;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(3),
+.table-medifit.responsiveTable td.pivoted:nth-child(4),
+.table-medifit.responsiveTable td.pivoted:nth-child(7),
+.table-medifit.responsiveTable td.pivoted:nth-child(8),
+.table-medifit.responsiveTable td.pivoted:nth-child(11),
+.table-medifit.responsiveTable td.pivoted:nth-child(12),
+.table-medifit.responsiveTable td.pivoted:nth-child(15),
+.table-medifit.responsiveTable td.pivoted:nth-child(16) {
+    background-color: #dff3f3;
+}
+
+.table-medifit.responsiveTable td.pivoted:nth-child(9) {
+    border-radius: 0 0 0 10px;
+}
+
+}
+
+@media screen and (max-width:420px) {
+.table-medifit.responsiveTable td.pivoted {
+    width: 100%
+}
+}
+
+/* Default style for the element (display: none;) */
+.print-only {
+display: none;
+}
+
+/* Style for printing (display: block;) */
+@media print {
+.print-only {
+    display: block;
+}
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #dad55e !important;
+    background: #fffa90 !important;
+    color: #777620 !important;
+}
+.ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 1px solid #003eff !important;
+    background: #007fff !important;
+    font-weight: normal !important;
+    color: #ffffff !important;
+}

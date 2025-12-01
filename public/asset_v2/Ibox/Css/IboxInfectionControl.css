@@ -1,0 +1,53 @@
+table thead tr th {
+    border-right: none;
+}
+
+.table-column-covid-highlight {
+    background-color: #ff9999 !important;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    -moz-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+}
+
+.table-column-no-covid-highlight {
+    background-color: #9cd59c !important;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    -moz-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+}
+
+.breachReasonTable tbody {
+    font-size: 12px;
+}
+
+.breachReasonTable thead {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ip-patients-greybox {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 10%, rgba(238, 238, 239, 1) 60%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 12px;
+    padding: 0.5rem 0.5rem;
+    min-height: 55px;
+}
+
+.ip-patients-greybox-inner {
+    margin: 0;
+    padding: 0;
+}
+
+.fs-13 h6 {
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.ip-patients-greybox-outer {
+    float: right;
+    cursor: pointer;
+}
+
+.ip-patients-covid-filter {
+    cursor: pointer;
+}

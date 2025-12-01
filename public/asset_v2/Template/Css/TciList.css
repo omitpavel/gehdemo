@@ -1,0 +1,40 @@
+.card-tci-list {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0;
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.bg-primary-tci {
+    background: linear-gradient(180deg, rgba(0, 139, 223, 1) 50%, rgba(1, 42, 67, 1) 100%);
+    color: #fff;
+    border-radius: 7px 7px 0 0;
+    padding: 0.5rem;
+}
+
+.card-tci-list span.content {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn-primary-tci {
+    padding: 0.25rem 0.5rem;
+    box-shadow: 3px 4px 6px rgba(85, 85, 85, 0.4);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #FFFFFF;
+    min-width: 100px;
+    background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+}
+
+.card-tci-list .form-label {
+    margin-bottom: .2rem;
+    font-size: 12px;
+}
+
+.card-tci-list .content-area {
+    padding: .25rem .5rem;
+}

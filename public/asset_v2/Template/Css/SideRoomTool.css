@@ -1,0 +1,220 @@
+table {
+    font-size: 11px;
+}
+
+.card-wards-group,
+.card-side-room {
+    padding: 0;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.card-wards-group {
+    margin-bottom: .5rem;
+}
+
+.card-wards-group .wards-group-name {
+    background: var(--bg-grey-gradient);
+    padding: .5rem;
+    border-radius: 7px 7px 0 0;
+}
+
+.card-wards-group .wards-group-name h6 {
+    margin-bottom: 0;
+}
+
+.card-side-room {
+    margin: 0;
+    box-shadow: none;
+}
+
+.card-wards-group .card-side-room:last-child {
+    margin-bottom: 0;
+}
+
+.card-side-room .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0;
+    min-height: 35px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.card-side-room .name-header span {
+    font-weight: 500;
+}
+
+.card-side-room .table-infection-control thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.card-side-room .table-infection-control th {
+    font-weight: 500;
+    padding: 8px;
+    color: #fff;
+}
+
+.bg-green,
+.bg-red {
+    border-radius: 5px;
+    color: #fff;
+    padding: .15rem .15rem;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.bg-red {
+    background: linear-gradient(180deg, rgba(253, 19, 19, 1) 50%, rgba(228, 8, 8, 1) 100%);
+}
+
+.bg-green {
+    background: linear-gradient(180deg, rgba(69, 190, 69, 1) 50%, rgba(52, 176, 52, 1) 100%);
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .side-room-filters {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 55px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .side-room-data {
+        margin-top: 45px;
+        border-radius: 7px;
+    }
+
+    .card-wards-group .wards-group-name,
+    .card-side-room .table-infection-control thead tr {
+        position: sticky;
+        top: 115px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .card-side-room .table-infection-control thead tr {
+        top: 148px;
+    }
+
+    .card-side-room .name-header {
+        border-top: 1px solid rgb(112, 112, 112, .5);
+        border-bottom: 1px solid rgb(112, 112, 112, .5);
+    }
+
+    .card-side-room .table-infection-control tbody:last-child tr:last-child td:first-child {
+        border-radius: 0px 0 0 7px;
+    }
+
+    .card-side-room .table-infection-control tbody:last-child tr:last-child td:last-child {
+        border-radius: 0px 0 7px 0;
+    }
+
+    .card-side-room .table-infection-control tbody tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .card-side-room .table-infection-control tbody tr:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .card-side-room .table-infection-control thead th:nth-child(3),
+    .card-side-room .table-infection-control tbody tr td:nth-child(3),
+    .card-side-room .table-infection-control thead th:nth-child(4),
+    .card-side-room .table-infection-control tbody tr td:nth-child(4),
+    .card-side-room .table-infection-control thead th:nth-child(8),
+    .card-side-room .table-infection-control tbody tr td:nth-child(8) {
+        width: 10%;
+    }
+
+    .card-side-room .table-infection-control thead th,
+    .card-side-room .table-infection-control tbody tr td {
+        width: 11.66%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width:1026px) {
+    .side-room-filters {
+        height: 95px;
+    }
+
+    .side-room-data {
+        margin-top: 85px;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .table-infection-control thead {
+        display: none;
+    }
+
+    .card-wards-group,
+    .card-side-room {
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .card-wards-group .wards-group-name {
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000038;
+        margin-bottom: .5rem;
+        border-radius: 7px;
+    }
+
+    .card-side-room .name-header {
+        padding: 0;
+        min-height: auto;
+    }
+
+    .card-side-room .table-infection-control.responsiveTable tbody tr:first-child td {
+        min-height: 30px;
+    }
+
+    .card-side-room .table-infection-control.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .card-side-room .table-infection-control .bg-green {
+        min-width: auto;
+        max-width: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-side-room .table-infection-control.responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .card-side-room .table-infection-control.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .bg-red,
+    .bg-green,
+    .side-room-data,
+    .card-side-room .name-header {
+        border-radius: 4px;
+    }
+
+    .card-wards-group .wards-group-name {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .card-side-room .table-infection-control.responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0 0 0 4px;
+    }
+}

@@ -1,0 +1,82 @@
+
+
+
+.colour_text_acc_bar_black {
+    fill: #FFFFFF !important;
+}
+
+@media (max-width:768px) {
+    .dta-header-section {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .dta-header-section {
+        margin-top: 412px;
+    }
+}
+
+.bottom-delete-button-disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.progress-bg.bars-border-red {
+    border: 1px solid #e42627;
+}
+
+.progress-bg.bars-border-green {
+    border: 1px solid #4c9e00;
+}
+
+.progress-bg.bars-border-orange {
+    border: 1px solid #f49929;
+}
+
+.progress-bg.bars-border-black {
+    border: 1px solid #000000;
+}
+.assigned-speciality-offcanvas .bg-assign-total {
+    background: var(--primary-blue);
+    border-radius: 7px 7px 0 0;
+    color: #fff;
+}
+table.table-assigned-speciality tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+
+.table-assigned-speciality th, .table-assigned-speciality td {
+    text-align: left;
+    padding: 8px !important;
+}
+
+.opel-time-green .form-control:not([readonly]),
+.opel-time-amber .form-control:not([readonly]),
+.opel-time-red .form-control:not([readonly]),
+.opel-time-black .form-control:not([readonly]),
+.opel-na .form-control:not([readonly]) {
+background-color: white;
+border: none;
+}
+#ane_opel_stage_one_no_patients_in_ed {
+    text-align: left;
+}
+#ane_opel_stage_one_completed_by {
+    text-align: left;
+}
+#ane_opel_stage_one_no_patients_awaiting_bed {
+    text-align: left;
+}
+input.form-control[readonly] {
+    background-color: #e9ecef !important;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+.item_disabled {
+    background-color: #e9ecef !important;
+    color: #6c757d;
+    cursor: not-allowed;
+}

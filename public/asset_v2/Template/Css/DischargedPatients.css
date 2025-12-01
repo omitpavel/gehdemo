@@ -1,0 +1,105 @@
+.btn-dark,
+.bg-dark {
+    background: linear-gradient(180deg, rgba(127, 130, 130, 1) 20%, rgba(30, 30, 30, 1) 100%);
+    border-radius: 7px;
+    color: #fff;
+}
+
+.btn-export {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0.5rem;
+    min-width: 90px;
+}
+
+.fixed-height .ms-options-wrap>button:focus,
+.fixed-height .ms-options-wrap>button,
+.fixed-height .form-select,
+.fixed-height .form-control,
+.fixed-height .btn-export,
+.fixed-height .bg-patients-count {
+    min-height: 40px;
+}
+
+.fixed-height .selectric {
+    padding: 2px 0;
+}
+
+.fixed-height .selectric .button {
+    top: 2px;
+}
+
+/* Media Query */
+
+@media(min-width:1200px) {
+    .fixed-height .col-xl-2 {
+        width: 15%;
+    }
+
+    .fixed-height .col-xl-2:nth-child(5) {
+        width: 12%;
+    }
+
+    .fixed-height .col-xl-2:nth-child(6) {
+        margin-left: 3%;
+    }
+
+    .fixed-height .col-xl-1 {
+        width: 8%;
+    }
+
+    .fixed-height .col-xl-3 {
+        width: 24%;
+    }
+}
+
+@media (min-width:1026px) {
+    .sticky-toprow {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 54px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .discharge-summary-wrapper {
+        margin-top: 46px;
+    }
+
+    .sticky-header {
+        position: sticky;
+        width: 100%;
+        background-color: #F8F8F8;
+        z-index: 2;
+        border-radius: 7px;
+    }
+
+    .sticky-header {
+        top: 160px;
+    }
+}
+
+@media (max-width:1199px) and (min-width:1026px) {
+    .sticky-toprow {
+        height: 105px;
+    }
+
+    .discharge-summary-wrapper {
+        margin-top: 97px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .btn-export,
+    .btn-dark,
+    .bg-dark,
+    .btn-assign-task {
+        border-radius: 4px;
+    }
+
+}

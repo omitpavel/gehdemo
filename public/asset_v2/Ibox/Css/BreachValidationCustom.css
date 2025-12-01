@@ -1,0 +1,205 @@
+    .breach-reason-table .table-breach th {
+        font-size: 11px;
+    }
+
+    .breach-reason-table .table-breach td {
+        font-size: 10px;
+    }
+
+    .breach-popup-colour-b19cd9 {
+        background-color: #b19cd9 !important;
+        color: #FFFFFF;
+    }
+
+    .table-breach-sp tbody tr:nth-child(1) {
+        background: rgba(var(--bs-white-rgb), var(--bs-bg-opacity))!important;
+        color: #000;
+    }
+
+    .table-breach-sp tbody .performance-calculation-background-high {
+        background: linear-gradient(180deg, #4c9e00 50%, #264f00 100%);
+        color: #fff;
+    }
+
+    .table-breach-sp tbody .performance-calculation-background-mid {
+        background: linear-gradient(180deg, #f49929 50%, #aa6b1c 100%);
+        color: #fff;
+    }
+
+    .table-breach-sp tbody .performance-calculation-background-avg {
+        background: linear-gradient(180deg, #E42627 50%, #9f1a1b 100%);
+        color: #fff;
+    }
+
+    .table-breach-sp tbody .performance-calculation-background-low {
+        background: linear-gradient(180deg, #666666 50%, #000000 100%);
+        color: #fff;
+    }
+
+    .unlock-breach-reason-container img {
+        height: 28px;
+        float: right;
+    }
+
+    .unloack_reason_value {
+        cursor: pointer;
+    }
+
+    .performance-chart {
+        padding: 1rem;
+    }
+
+    .bg-grey {
+        background-color: #F1F1F3 !important;
+    }
+
+    .round_progress_chart_container .progress_chart_container_box {
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .round_progress_chart_container .progress_chart_container_box .circle_progress_chart_easy_pie {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .circle_progress_chart_easy_pie {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 25px;
+        line-height: 120px;
+        height: 120px;
+    }
+
+    .circle_progress_chart_easy_pie_label {
+        font-size: 12px;
+        padding: 5px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .round_progress_chart_container .progress_chart_container_box .circle_progress_chart_easy_pie {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 25px;
+        line-height: 120px;
+        height: 120px;
+    }
+
+
+
+    #modal-breach-reason .form-control:disabled,
+    #modal-breach-reason .form-control[readonly] {
+        background-color: #EEEEEE !important;
+    }
+
+    #modal-breach-reason .disabled-div-show {
+        background-color: #EEEEEE;
+    }
+    /*#breach_dashboard_breach_reason_update .modal-dialog {*/
+    /*    min-width: 90%;*/
+    /*}*/
+
+    .breach-popup-colour-FF0000 {
+        background-color: #FF0000 !important;
+        color: #FFFFFF;
+    }
+
+    .breach-reason-modal .form-label,
+    .breach-reason-modal .form-select {
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+    }
+
+    #breach_dashboard_breach_reason_update .form-control {
+        font-size: 11px;
+        height: 35px;
+        padding: 0 5px;
+    }
+
+    #breach_dashboard_breach_reason_update .breach-reason-text-inside-span {
+        line-height: 34px;
+    }
+
+    .table-breach tr.breach-row-data-tr-reason-added {
+        background-color: #3CE6FF;
+        color: #000;
+    }
+
+    .btn-light-grey {
+        background: linear-gradient(180deg, rgba(247, 247, 248, 1) 95%, rgba(206, 206, 207, 1) 100%);
+        box-shadow: 0px 3px 6px #00000038;
+        border-radius: 10px;
+        min-width: 130px;
+    }
+
+    @media (min-width:1025px) {
+        .breachReasonTable .column_breach_dates {
+            width: 7%;
+        }
+        .breachReasonTable .column_breach_reason {
+            width: 20%;
+        }
+        .breachReasonTable .column_patient_name {
+            width: 15%;
+        }
+        .breachReasonTable .column_row_id {
+            width: 3%;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .breachReasonTable.responsiveTable td.pivoted.add_update_breach_reason {
+            width: 100% !important;
+        }
+        .breachReasonTable.responsiveTable .breach_reason_show_data_column_row {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .breachReasonTable.responsiveTable td.pivoted.add_update_breach_reason {
+            width: 100% !important;
+        }
+    }
+
+
+    .bars-black {
+        background: url("../Images/black-bars.svg");
+        height: 1.34rem;
+    }
+
+    .bars-red {
+        background: url("../Images/red-bars.svg");
+        height: 1.34rem;
+    }
+
+    .bars-orange {
+        background: url("../Images/orange-bars.svg");
+        height: 1.34rem;
+    }
+
+    .bars-green {
+        background: url("../Images/green-bar.svg");
+        height: 1.34rem;
+    }
+
+    .progress-bg.bars-border-red {
+        border: 1px solid #e42627;
+    }
+
+    .progress-bg.bars-border-green {
+        border: 1px solid #4c9e00;
+    }
+
+    .progress-bg.bars-border-orange {
+        border: 1px solid #f49929;
+    }
+
+    .progress-bg.bars-border-black {
+        border: 1px solid #000000;
+    }

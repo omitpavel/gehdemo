@@ -1,0 +1,14 @@
+#dischargeSummary .modal-dialog{
+    max-width: none;
+    margin: .5rem;
+
+}
+.class_show_red
+{
+    background-color:transparent;
+}
+
+.class_show_green
+{
+    background-color:transparent;
+}

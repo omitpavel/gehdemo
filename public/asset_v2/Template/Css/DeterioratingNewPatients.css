@@ -1,0 +1,874 @@
+.input-group.search-topbar input {
+    border-right: none;
+    height: 40px;
+}
+
+.search-topbar .input-group-text {
+    background-color: #fff;
+    border-left: none;
+    border-radius: 7px;
+    height: 40px;
+}
+
+.count-details-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.count-details-row .count-details-col {
+    width: 12.14%;
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.count-details-row .count-details-col-2 {
+    width: 15%;
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.count-details-row .count-details-col:last-child {
+    padding-right: 0;
+}
+
+.count-details-col .form-select,
+.count-details-row .count-details-col .ms-options-wrap>button:focus,
+.count-details-row .count-details-col .ms-options-wrap>button {
+    height: 40px;
+}
+
+.count-details-row .bg-maroon,
+.count-details-row .bg-darkcyan,
+.count-details-row .bg-purple,
+.count-details-row .bg-ash,
+.count-details-row .bg-primary,
+.count-details-row .bg-dark {
+    border-radius: 7px;
+    color: #fff;
+    padding: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    box-shadow: 0px 3px 6px #00000030;
+}
+
+.count-details-row .selectric {
+    padding: 2px 0;
+}
+
+.count-details-row .selectric .button {
+    top: 2px;
+}
+
+.count-details-col .bg-primary {
+    background: linear-gradient(180deg, rgba(0, 140, 225, 1) 0%, rgba(0, 125, 202, 1) 100%);
+}
+
+.count-details-row .bg-dark {
+    background: var(--bg-black-gradient);
+}
+
+.count-details-row .bg-maroon {
+    background: linear-gradient(180deg, rgba(148, 2, 30, 1) 0%, rgba(86, 1, 17, 1) 100%);
+}
+
+.count-details-row .bg-darkcyan {
+    background: linear-gradient(180deg, rgba(16, 176, 179, 1) 0%, rgba(9, 132, 134, 1) 100%);
+}
+
+.count-details-row .bg-purple {
+    background: linear-gradient(180deg, rgba(133, 29, 147, 1) 0%, rgba(54, 4, 61, 1) 100%);
+}
+
+.count-details-row .bg-ash {
+    background: linear-gradient(180deg, rgba(148, 144, 140, 1) 0%, rgba(48, 67, 82, 1) 100%);
+}
+
+.count-details-row .bg-maroon h6,
+.count-details-row .bg-darkcyan h6,
+.count-details-row .bg-purple h6,
+.count-details-row .bg-ash h6,
+.count-details-row .bg-primary h6,
+.count-details-row .bg-dark h6 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+h6.count {
+    font-weight: 500;
+}
+
+.card-details {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0;
+}
+
+.card-details h6 {
+    margin-bottom: .5rem;
+}
+
+.card-details p {
+    font-size: 12px;
+}
+
+.card-details .data-set ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.card-details .data-set ul li {
+    font-size: 12px;
+    word-wrap: break-word;
+}
+
+.card-details .data-set ul li:last-child {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.card-details .text-red {
+    color: #E30000;
+}
+
+.deteriorating-content {
+    padding: .5rem 0 0 .5rem;
+}
+
+.shape-hex {
+    position: absolute;
+    top: -23px;
+    left: 90%;
+}
+
+.flag-icon-nc,
+.flag-icon-dp {
+    background-image: url(../icons/ward_icons/nurse_concern.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 50px;
+    height: 45px;
+}
+
+.flag-icon-dp {
+    background-image: url(../icons/ward_icons/covid_dp.png);
+}
+
+.shape-hex span {
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    font-size: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+.shape-hex span.dp-text {
+    position: absolute;
+    top: 100%;
+    left: 32%;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.card-details .deteriorating-content .bg-primary {
+    background: linear-gradient(180deg, rgba(0, 139, 223, 1) 0%, rgba(1, 42, 67, 1) 100%);
+    color: #fff;
+    border-radius: 7px;
+    height: auto;
+    padding: .25rem .5rem;
+    box-shadow: 0px 3px 6px #00000030;
+    display: block;
+}
+
+.card-details .deteriorating-content .bg-primary .patients-medical-results {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.card-details .deteriorating-content .bg-primary ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-right: 1px solid rgb(255, 255, 255, .5);
+    width: 14%;
+    text-align: center;
+}
+
+.card-details .deteriorating-content .bg-primary ul:first-child {
+    border-left: 1px solid rgb(255, 255, 255, .5);
+}
+
+.card-details .deteriorating-content .bg-primary ul:nth-child(2),
+.card-details .deteriorating-content .bg-primary ul:nth-child(3) {
+    width: 19%;
+}
+
+.card-details .deteriorating-content .bg-primary ul:nth-child(6),
+.card-details .deteriorating-content .bg-primary ul:nth-child(7) {
+    width: 10%;
+}
+
+.card-details .deteriorating-content .bg-primary ul li {
+    padding: .5rem;
+    line-height: 10px;
+}
+
+.card-details .deteriorating-content .bg-primary ul li:first-child {
+    font-size: 9px;
+    height: 30px;
+}
+
+.card-details .deteriorating-content .bg-primary ul li:last-child {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-details .deteriorating-content .bg-primary ul:last-child {
+    border-right: none;
+}
+
+.card-details .deteriorating-content .bg-primary .ews-wrapper {
+    top: 2%;
+    left: -5%;
+    font-size: 10px;
+}
+
+.card-details .ews-wrapper {
+    background-image: url(../icons/ews-triangle-red-dp.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    height: 40px;
+    width: 50px;
+}
+
+.card-details .ews-low-value {
+    background-image: url(../icons/ews-triangle-grey-dp.svg);
+}
+
+.card-details .ews-text {
+    font-size: 14px;
+    transform: translate(-50%, -18%);
+}
+
+.card-details span.ews-header {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+    width: 50px;
+    position: relative;
+    top: 100%;
+}
+
+.black-text {
+    color: #000;
+}
+
+.card-details .btn-view-all {
+    background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+    padding: 0.25rem 0.5rem;
+    box-shadow: 3px 4px 6px rgba(85, 85, 85, 0.4);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    min-width: 90px;
+}
+
+.btn-view-all:hover {
+    color: #fff;
+}
+
+.card-inner {
+    background-color: #fff;
+    border-radius: 0 7px 7px 0;
+    padding: 0 .5rem;
+}
+
+.card-details .card-tasks {
+    background-color: #fff;
+    padding: 0 .25rem;
+    height: 190px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 100%;
+    font-size: 10px;
+    border: .5px solid #A7A7A7;
+    border-radius: 5px;
+}
+
+.card-details .card-tasks::-webkit-scrollbar {
+    width: 3px;
+}
+
+.card-details .card-comments {
+    height: 100px;
+}
+
+.card-details .card-tasks span,
+.card-details .card-comments .row .col-12 span {
+    font-size: 10px;
+    display: block;
+    line-height: 12px;
+}
+
+.card-details .card-tasks .row .col-12:nth-child(odd),
+.card-details .card-comments .row .col-12:nth-child(odd) {
+    background-color: #F4F4F5;
+    padding: 2px 10px;
+}
+
+.card-details .card-tasks .row .col-12:nth-child(even),
+.card-details .card-comments .row .col-12:nth-child(even) {
+    background-color: #FFFFFF;
+    padding: 2px 10px;
+}
+
+.card-col-grp {
+    background-color: #fff;
+    height: 105px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 100%;
+    border: .5px solid #A7A7A7;
+    border-radius: 5px;
+}
+
+.card-col-grp .row .col-comment {
+    width: 90%;
+    text-wrap: wrap;
+}
+
+.card-col-grp .row .col-icons {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-col-grp .row .col-icons a,
+.comments-all-offcanvas .table-comments tbody tr a {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3px;
+}
+
+.card-details .card-tasks .row .col-12,
+.card-col-grp .row {
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.card-col-grp .row .col-comment span {
+    font-size: 10px;
+    font-weight: 400;
+    display: block;
+    line-height: 12px;
+}
+
+.card-col-grp .row:nth-child(even) {
+    background-color: #FDFDFE;
+    padding: 3px;
+}
+
+.card-col-grp .row:nth-child(odd) {
+    background-color: #F2F2F3;
+    padding: 3px;
+}
+
+.wrap-btn .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .25rem;
+    width: 100%;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 10px;
+    min-height: 25px;
+}
+
+.wrap-btn .btn img {
+    margin-right: 5px;
+}
+
+.btn-grey {
+    background: var(--bg-grey-gradient);
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+    font-weight: 400;
+}
+
+.btn-tables {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 4px;
+    padding: 0.2rem .5rem;
+    min-width: 70px;
+    font-size: 14px;
+}
+
+.offcanvas-end {
+    width: 800px;
+    top: 0;
+    border-radius: 0;
+}
+
+.comments-all-offcanvas.offcanvas-end {
+    width: 90%;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.comments-all-offcanvas .card-comments {
+    padding: 0;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.comments-all-offcanvas .table-comments {
+    font-size: 12px;
+}
+
+.comments-all-offcanvas .table-comments thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0 0;
+    color: #fff;
+}
+
+.comments-all-offcanvas .table-comments thead tr th {
+    font-weight: 500;
+}
+
+.comments-all-offcanvas .table-comments thead tr th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.comments-all-offcanvas .table-comments thead tr th:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:nth-child(odd) {
+    background-color: #F2F2F3;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+button.dp-btn-disabled,
+button.dp-btn-disabled:hover {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) and (max-width:1199px) {
+    .card-col-grp {
+        height: 100px;
+    }
+}
+
+@media (min-width:1400px) {
+
+    .card-details,
+    .card-inner {
+        min-height: 200px;
+    }
+
+    .deteriorating-row .col-xxl-5 {
+        width: 36%;
+    }
+
+    .deteriorating-row .col-xxl-7 {
+        width: 64%;
+    }
+
+    .card-inner .row .col-lg-5 {
+        width: 40%;
+    }
+
+    .card-inner .row .col-lg-7 {
+        width: 60%;
+    }
+}
+
+@media (min-width:992px) {
+
+    .table-patient-tbody {
+        background: linear-gradient(180deg, rgba(253, 253, 254, 1) 1%, rgba(236, 236, 237, 1) 100%);
+        border: 1px solid rgb(112, 112, 112, .5);
+    }
+
+    .btn-assign-task {
+        margin-bottom: .25rem;
+    }
+
+    .table-outstanding-tasks.responsiveTable td .tdBefore,
+    .table-comments.responsiveTable td .tdBefore {
+        display: none;
+    }
+
+    .table-comments tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-comments tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+}
+
+@media (max-width:1399px) {
+    .card-details {
+        padding: 0 .5rem 0 0;
+    }
+
+    .card-details .bg-primary .patients-medical-results ul {
+        width: 14.28%;
+    }
+
+    .count-details-row .bg-maroon h6,
+    .count-details-row .bg-darkcyan h6,
+    .count-details-row .bg-purple h6,
+    .count-details-row .bg-ash h6,
+    .count-details-row .bg-primary h6,
+    .count-details-row .bg-dark h6 {
+        font-size: 12px;
+    }
+
+    .card-details .card-tasks,
+    .card-inner {
+        background-color: transparent;
+    }
+
+    .card-inner {
+        padding: 0;
+    }
+
+    .shape-hex {
+        left: 95%;
+    }
+
+    .w-90 {
+        width: 95%;
+    }
+
+    .card-col-grp .row .col-comment {
+        width: 85%;
+    }
+
+    .card-col-grp .row .col-icons {
+        width: 15%;
+        justify-content: end;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    .count-details-row {
+        flex-wrap: wrap;
+    }
+
+    .count-details-row .count-details-col,
+    .count-details-row .count-details-col-2 {
+        width: 20%;
+    }
+
+    .count-details-row .count-details-col:nth-child(5),
+    .count-details-row .count-details-col-2:last-child {
+        padding-right: 0;
+    }
+
+    .count-details-row .count-details-col-2:nth-child(6),
+    .count-details-row .count-details-col:nth-child(7),
+    .count-details-row .count-details-col:nth-child(8) {
+        width: 33.33%;
+    }
+
+    .grp-grey-btns .btn-grey {
+        font-size: 12px;
+        padding: .5rem 0;
+    }
+
+    .w-90 {
+        width: 94%;
+    }
+
+    .shape-hex {
+        left: 94%;
+    }
+}
+
+@media (max-width:991px) {
+    .count-details-row {
+        flex-wrap: wrap;
+    }
+
+    .count-details-row .count-details-col,
+    .count-details-row .count-details-col-2 {
+        width: 33.33%;
+    }
+
+    .count-details-row .count-details-col:nth-child(3),
+    .count-details-row .count-details-col:nth-child(6),
+    .count-details-row .count-details-col-2 {
+        padding-right: 0;
+    }
+
+    .count-details-row .count-details-col:nth-child(7),
+    .count-details-row .count-details-col:nth-child(8) {
+        width: 50%;
+    }
+
+    .card-details {
+        padding: .5rem .5rem 0 .5rem;
+    }
+
+    .card-details .card-tasks,
+    .card-details .card-comments .row .col-12 span {
+        font-size: 10px;
+    }
+
+    .card-inner {
+        margin: 0;
+        border-radius: 0;
+        background-color: transparent;
+        padding: .25rem 0;
+    }
+
+    .bg-blue {
+        padding: 0.75rem 1rem;
+    }
+
+    .card-details .card-tasks,
+    .card-col-grp {
+        height: 150px;
+    }
+
+    .wrap-btn .btn img {
+        margin-right: 15px;
+    }
+
+    .deteriorating-content {
+        padding: 0;
+    }
+
+    .w-90 {
+        width: 93%;
+    }
+
+    .shape-hex {
+        left: 93%;
+        top: -22px;
+    }
+
+    .wrap-btn .btn {
+        min-height: 30px;
+    }
+
+    .comments-all-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .table-comments tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-comments tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+}
+
+@media (max-width:767px) {
+    .count-details-row {
+        flex-wrap: wrap;
+    }
+
+    .count-details-row .count-details-col,
+    .count-details-row .count-details-col-2 {
+        width: 50%;
+    }
+
+    .count-details-row .count-details-col:nth-child(2),
+    .count-details-row .count-details-col:nth-child(4),
+    .count-details-row .count-details-col-2 {
+        padding-right: 0;
+    }
+
+    .count-details-row .count-details-col:nth-child(3) {
+        padding-right: .5rem;
+    }
+
+    .count-details-row .count-details-col-2:last-child {
+        width: 100%;
+    }
+
+    .count-details-row .bg-maroon h6,
+    .count-details-row .bg-darkcyan h6,
+    .count-details-row .bg-purple h6,
+    .count-details-row .bg-ash h6,
+    .count-details-row .bg-primary h6,
+    .count-details-row .bg-dark h6 {
+        font-size: 12px;
+    }
+
+    .card-details .data-set ul li {
+        font-size: 11px;
+    }
+
+    .deteriorating-content .deteriorating-row div.position-relative {
+        padding: .5rem 0;
+    }
+
+    .card-details .bg-primary {
+        padding: .25rem;
+    }
+
+    .card-details .bg-primary .ews-wrapper {
+        top: 0;
+        left: 0;
+        width: 40px;
+    }
+
+    .card-details .ews-wrapper {
+        background-size: 40px;
+    }
+
+    .card-details .ews-text {
+        font-size: 14px;
+        transform: translate(-60%, -40%);
+    }
+
+    .card-details span.ews-header {
+        top: 75%;
+        left: -10%;
+    }
+
+    .shape-hex {
+        top: -11px;
+        left: 90%;
+    }
+
+    .flag-icon-nc,
+    .flag-icon-dp {
+        min-width: 30px;
+    }
+
+    .w-90 {
+        width: 90%;
+    }
+
+    .shape-hex span {
+        top: 100%;
+        left: -25%;
+        font-size: 8px;
+        width: 50px;
+        text-align: center;
+        line-height: 10px;
+
+    }
+
+    .shape-hex span.dp-text {
+        left: 20%;
+    }
+
+    .card-details .deteriorating-content .bg-primary ul li {
+        padding: .25rem;
+    }
+
+    .card-details .deteriorating-content .bg-primary ul li:first-child {
+        font-size: 7px;
+        line-height: 10px;
+        height: 25px;
+    }
+
+    .card-details .deteriorating-content .bg-primary ul li:last-child {
+        font-size: 12px;
+    }
+
+    .card-details,
+    .count-details-row .bg-maroon,
+    .count-details-row .bg-darkcyan,
+    .count-details-row .bg-purple,
+    .count-details-row .bg-ash,
+    .count-details-row .bg-primary,
+    .count-details-col .bg-dark,
+    .count-details-col .form-select,
+    .deteriorating-content .bg-primary,
+    .wrap-btn .btn {
+        border-radius: 4px;
+    }
+
+    .wrap-btn .col-6:nth-child(odd) {
+        padding-right: 4px;
+    }
+
+    .wrap-btn .col-6:nth-child(even) {
+        padding-left: 4px;
+    }
+
+    .card-col-grp .row .col-comment {
+        width: 80%;
+    }
+
+    .card-col-grp .row .col-icons {
+        width: 20%;
+    }
+
+    .table-comments tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .table-comments tbody tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+
+    .card-details .bg-primary .ews-wrapper {
+        top: 5%;
+    }
+}
+
+@media (max-width:575px) {
+
+    .card-details .bg-primary .patients-medical-results ul:nth-child(2),
+    .card-details .bg-primary .patients-medical-results ul:nth-child(3) {
+        width: 20%;
+    }
+
+    .card-details .bg-primary .patients-medical-results ul:nth-child(1),
+    .card-details .bg-primary .patients-medical-results ul:nth-child(4),
+    .card-details .bg-primary .patients-medical-results ul:nth-child(5) {
+        width: 15%;
+    }
+
+    .card-details .bg-primary .patients-medical-results ul:nth-child(6),
+    .card-details .bg-primary .patients-medical-results ul:nth-child(7) {
+        width: 11.66%;
+    }
+}

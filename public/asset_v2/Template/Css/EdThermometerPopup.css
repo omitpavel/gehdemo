@@ -1,0 +1,387 @@
+.btn-icon-modal.previous {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+}
+
+.btn-icon-modal.next {
+    left: 80%;
+}
+
+.high-risk-section .form-label {
+    min-height: 40px;
+}
+
+.bg-opel-green .btn-ems {
+    background: var(--bg-green-gradient);
+}
+
+.bg-opel-amber .btn-ems {
+    background: var(--bg-amber-gradient);
+}
+
+.bg-opel-red .btn-ems {
+    background: var(--bg-red-gradient);
+}
+
+.bg-opel-black .btn-ems {
+    background: var(--bg-black-gradient);
+}
+
+.bg-opel-green .btn-ems,
+.bg-opel-amber .btn-ems,
+.bg-opel-red .btn-ems,
+.bg-opel-black .btn-ems {
+    opacity: .7;
+}
+
+.bg-opel-green .btn.active,
+.bg-opel-amber .btn.active,
+.bg-opel-red .btn.active,
+.bg-opel-black .btn.active {
+    opacity: 1;
+}
+
+.bg-opel-green,
+.bg-opel-red,
+.bg-opel-black {
+    color: #fff;
+}
+
+.opel-green-circle,
+.opel-amber-circle,
+.opel-red-circle,
+.opel-black-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.opel-green-circle {
+    background-color: #00B00F;
+}
+
+.opel-amber-circle {
+    background-color: #F7CC00;
+}
+
+.opel-red-circle {
+    background-color: #E80000;
+}
+
+.opel-black-circle {
+    background-color: #424242;
+}
+
+.opel-time-green,
+.opel-time-amber,
+.opel-time-red,
+.opel-time-black,
+.opel-na {
+    background-color: #F3F3F3;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.opel-time-green .form-control,
+.opel-time-amber .form-control,
+.opel-time-red .form-control,
+.opel-time-black .form-control,
+.opel-na .form-control {
+    background-color: #F3F3F3;
+    border: none;
+}
+
+.opel-time-green {
+    border: 1px solid #00B00F;
+}
+
+.opel-time-amber {
+    border: 1px solid #F7CC00;
+}
+
+.opel-time-red {
+    border: 1px solid #E80000;
+}
+
+.opel-time-black {
+    border: 1px solid #424242;
+}
+
+.opel-na {
+    border: 1px solid #dee2e6;
+}
+
+.bg-opel-green,
+.bg-opel-red,
+.bg-opel-black,
+.bg-opel-amber,
+.opel-time-green,
+.opel-time-amber,
+.opel-time-red,
+.opel-time-black,
+.opel-na,
+.form-control {
+    min-height: 34px;
+}
+
+.ems-time-row .form-control {
+    min-height: 37px;
+}
+
+.staffing-absent .opel-time-amber .btn-ems,
+.opel-na {
+    background: linear-gradient(180deg, rgba(255, 201, 40, 1) 50%, rgba(238, 181, 12, 1) 100%);
+}
+
+.staffing-absent .opel-time-red .btn-ems {
+    background: linear-gradient(180deg, rgba(255, 20, 20, 1) 50%, rgba(222, 6, 6, 1) 100%);
+}
+
+.staffing-absent .opel-time-black .btn-ems {
+    background: linear-gradient(180deg, rgba(83, 82, 82, 1) 50%, rgba(4, 4, 4, 1) 100%);
+}
+
+.staffing-absent .opel-time-amber .btn-ems,
+.staffing-absent .opel-time-red .btn-ems,
+.staffing-absent .opel-time-black .btn-ems {
+    opacity: .7;
+}
+
+.staffing-absent .opel-time-amber .btn.active,
+.staffing-absent .opel-time-red .btn.active,
+.staffing-absent .opel-time-black .btn.active {
+    opacity: 1;
+}
+
+.staffing-absent .btn-ems,
+.ed-status-row .btn-ems {
+    width: 100%;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.ed-status-row .btn-ems {
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.ed-status-row .bg-opel-green .btn-ems,
+.ed-status-row .bg-opel-red .btn-ems,
+.ed-status-row .bg-opel-black .btn-ems {
+    color: #fff;
+}
+
+.staffing-absent .opel-time-amber img,
+.staffing-absent .opel-time-red img,
+.staffing-absent .opel-time-black img,
+.ed-status-row .opel-time-green img,
+.ed-status-row .opel-time-amber img,
+.ed-status-row .opel-time-red img,
+.ed-status-row .opel-time-black img {
+    display: none;
+}
+
+.staffing-absent .opel-time-amber .btn.active img,
+.staffing-absent .opel-time-red .btn.active img,
+.staffing-absent .opel-time-black .btn.active img,
+.ed-status-row .opel-time-green .btn.active img,
+.ed-status-row .opel-time-amber .btn.active img,
+.ed-status-row .opel-time-red .btn.active img,
+.ed-status-row .opel-time-black .btn.active img {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+.form-select {
+    min-height: 38px;
+    font-size: 12px;
+}
+
+.form-select.opel-time-green,
+.form-select.opel-time-amber,
+.form-select.opel-time-red,
+.form-select.opel-time-black {
+    padding: .5rem;
+    background-color: #fff;
+}
+
+.form-select.opel-time-green:focus {
+    border-color: #00B00F;
+}
+
+.form-select.opel-time-amber:focus {
+    border-color: #F7CC00;
+}
+
+.form-select.opel-time-red:focus {
+    border-color: #E80000;
+}
+
+.form-select.opel-time-black:focus {
+    border-color: #424242;
+}
+
+.card-sitrep-modal {
+    background: var(--bg-grey-gradient);
+    border-radius: 7px;
+    padding: .5rem;
+    box-shadow: 0px 3px 6px #00000038;
+    border: 1px solid rgb(112, 112, 112, .5);
+}
+
+.card-sitrep-modal .form-control,
+.card-sitrep-modal .form-label {
+    font-size: 12px;
+}
+
+.card-sitrep-modal .selectric {
+    border-radius: 7px;
+    border: 1px solid #dee2e6;
+}
+
+.card-sitrep-modal .selectric-items,
+.card-sitrep-modal .selectric-items .selectric-scroll {
+    height: 100%;
+    min-height: 150px;
+}
+
+.card-sitrep-modal .selectric-items {
+    overflow: hidden;
+}
+
+.safety-content-wrapper .card-sitrep-modal {
+    padding: 0;
+}
+
+.safety-content-wrapper .card-sitrep-modal .content-wrapper {
+    padding: .5rem;
+}
+
+input.form-control {
+    text-align: center;
+}
+
+.emergency-requests input.form-control {
+    text-align: start;
+}
+
+.card-sitrep-modal .form-label {
+    margin-bottom: .25rem;
+}
+
+.card-sitrep-modal .category-header-align {
+    text-align: -webkit-center;
+}
+
+.card-sitrep-modal .category-header {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.row-border-bottom {
+    border-bottom: 1px solid rgb(112, 112, 112, .5);
+    padding: .5rem;
+}
+
+.right-side-area .row-border-bottom:first-child {
+    padding-top: 0;
+}
+
+.right-side-area .row-border-bottom:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.right-side-area .form-label {
+    text-transform: capitalize;
+}
+
+.ed-total-row,
+.ed-status-row {
+    padding: 0 .5rem
+}
+
+.total-header {
+    font-weight: 600;
+    text-align: start;
+}
+
+.sitrep-btn-row {
+    text-align: center;
+}
+
+.emergency-requests .modal-dialog {
+    width: 750px;
+}
+
+#requestStageSix .modal-body,
+#requestStageFive .modal-body {
+    height: 600px;
+}
+
+/* Media Query */
+
+@media (max-width: 991px) and (min-width:768px) {
+    .card-sitrep-modal .row-cols-md-4 .col:first-child {
+        width: 100%;
+        margin-bottom: .25rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .right-side-area {
+        border-left: none;
+    }
+
+    .emergency-requests .modal-dialog {
+        width: auto;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .modal-content .btn-grey,
+    .btn-breach-grey,
+    .card-sitrep-modal,
+    .opel-time-green,
+    .opel-time-amber,
+    .opel-time-red,
+    .opel-time-black,
+    .btn-sdec-green,
+    .btn-sdec-red {
+        border-radius: 4px;
+    }
+
+    .btn-sdec-green.active {
+        border: none;
+    }
+
+    .card-sitrep-modal {
+        padding: .25rem .5rem;
+    }
+
+    .sitrep-btn-row .btn-primary-grey,
+    .emergency-requests .modal-dialog .sitrep-btn-row .btn-primary-grey {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .sitrep-modal .modal-dialog {
+        max-width: 1200px;
+        margin: 1rem auto;
+    }
+}

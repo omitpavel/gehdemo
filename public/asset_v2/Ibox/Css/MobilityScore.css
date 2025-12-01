@@ -1,0 +1,5 @@
+.table-mobility-score-five-days thead tr:last-child th {
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    font-size: 11px;
+}

@@ -1,0 +1,665 @@
+#ambulance-details .rectangle-block-1 {
+    min-height: 148px;
+}
+
+#seven-col-row .col {
+    width: 14.285%;
+}
+
+.card-date {
+    min-height: 45px;
+}
+
+.month-select .selectric {
+    padding: 4px 0;
+    box-shadow: 0px 2px 6px #00000038;
+}
+
+.month-select .selectric .button {
+    top: 4px;
+}
+
+.date-box input {
+    height: 35px;
+}
+
+.performance-chart {
+    padding: 1rem;
+}
+
+.performance-chart .progress-bg {
+    height: 1.7rem;
+    border: 1px solid #4C9E00;
+    padding: 2px 0;
+}
+
+.performance-chart .bar-progress {
+    display: flex;
+    align-items: center;
+    height: 1.34rem;
+    min-width: auto;
+    background: url(../icons/ash-bars.svg);
+}
+
+.performance-chart .bars-green {
+    background: url(../icons/green-bar.svg);
+    height: 1.34rem;
+}
+
+.performance-chart .bars-ash {
+    height: 1.6rem;
+    background-size: contain;
+}
+
+.ambulance-details-leftside,
+.ambulance-details-rightside,
+.breach-count-section {
+    padding: .5rem;
+}
+
+.breach-count-section h5,
+.ambulance-details-rightside h6 {
+    font-size: 15px;
+}
+
+.icon-circle-bg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-blue);
+}
+
+.vertical-line-left,
+.vertical-line-right {
+    position: absolute;
+    border-right: 1px solid #707070;
+    height: 45px;
+    top: 0;
+    opacity: .5;
+}
+
+.vertical-line-right {
+    right: 0;
+}
+
+.vertical-line-left {
+    left: -25%;
+}
+
+.rectangle-breach {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+    min-height: 120px;
+}
+
+.rectangle-block {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 0 0 7px 7px;
+    padding: 1rem .25rem;
+    position: relative;
+    z-index: -1;
+    margin-top: -14px;
+}
+
+.rectangle-block hr {
+    margin: .74rem 0;
+}
+
+.block-conversion .rectangle-block-1 .bottom-section {
+    padding: .6rem .75rem;
+}
+
+.table-breach {
+    font-size: 12px;
+}
+
+/* Custom Table body sroll styles  */
+
+.breach-reason-section,
+.presenting-complaint-section,
+.attendance-section,
+.past-seven-days-section {
+    width: 100%;
+    margin: 0;
+}
+
+.breach-reason-section .table-breach,
+.presenting-complaint-section .table-breach,
+.attendance-section .table-breach,
+.past-seven-days-section .table-breach {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.breach-reason-section .table-breach thead,
+.presenting-complaint-section .table-breach thead,
+.past-seven-days-section .table-breach thead,
+.attendance-section .table-breach thead {
+    flex: 0 0 auto;
+}
+
+.breach-reason-section .table-breach tbody,
+.presenting-complaint-section .table-breach tbody,
+.attendance-section .table-breach tbody,
+.past-seven-days-section .table-breach tbody {
+    flex: 1 1 auto;
+    display: block;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.breach-reason-section .table-breach tbody {
+    height: 127px;
+}
+
+.attendance-section .table-breach tbody {
+    height: 176px;
+}
+
+.breach-reason-section .table-breach thead,
+.breach-reason-section .table-breach tbody tr,
+.presenting-complaint-section .table-breach thead,
+.presenting-complaint-section .table-breach tbody tr,
+.attendance-section .table-breach thead,
+.attendance-section .table-breach tbody tr,
+.past-seven-days-section .table-breach thead,
+.past-seven-days-section .table-breach tbody tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.breach-reason-section .table-breach td,
+.breach-reason-section .table-breach th,
+.attendance-section .table-breach th,
+.attendance-section .table-breach td,
+.presenting-complaint-section .table-breach td,
+.past-seven-days-section .table-breach td {
+    padding: 8px 3px;
+    width: 20%;
+}
+
+.breach-reason-section .table-breach td:first-child,
+.breach-reason-section .table-breach th:first-child {
+    width: 40%;
+}
+
+.past-seven-days-section .table-breach td:first-child,
+.past-seven-days-section .table-breach th:first-child {
+    width: 30%;
+}
+
+.past-seven-days-section .table-breach td {
+    width: 22.5%;
+}
+
+.past-seven-days-section .table-breach th:last-child,
+.past-seven-days-section .table-breach td:last-child {
+    width: 25%;
+}
+
+.presenting-complaint-section .table-breach td:first-child {
+    width: 50%;
+}
+
+.attendance-section .table-breach th:first-child,
+.attendance-section .table-breach td:first-child {
+    width: 45%;
+}
+
+.breach-reason-section .table-breach tbody::-webkit-scrollbar,
+.presenting-complaint-section .table-breach tbody::-webkit-scrollbar,
+.attendance-section .table-breach tbody::-webkit-scrollbar,
+.past-seven-days-section .table-breach tbody::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Custom Table body sroll styles End */
+
+.attendance-section .table-breach thead th {
+    text-align: center;
+}
+
+.breach-reason-section .table-breach thead,
+.past-seven-days-section .table-breach thead,
+.details-section-table .table-breach-sp thead {
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.breach-reason-table .table-breach th,
+.breach-reason-table .table-breach td {
+    padding: 8px;
+}
+
+.breach-reason-table .table-breach th,
+.breach-month-data .table-breach th {
+    background: var(--bg-grey-gradient);
+    color: #000;
+}
+
+.table-breach th {
+    background: var(--primary-blue);
+    color: #fff;
+    font-weight: 400;
+}
+
+.breach-reason-table .table-breach th:first-child,
+.breach-month-data .table-breach th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.breach-reason-table .table-breach th:last-child,
+.breach-month-data .table-breach th:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+.table-breach th,
+.table-breach td {
+    border-right: .5px solid #A7A7A7;
+}
+
+.table-breach th:last-child,
+.table-breach td:last-child {
+    border-right: none;
+}
+
+.table-breach tr:nth-child(odd) {
+    background-color: #F2F2F3;
+}
+
+.table-breach tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.breach-month-data .table-breach td {
+    text-align: center;
+}
+
+.breach-month-data .table-breach tr:last-child td {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.breach-reason-section .table-breach th,
+.past-seven-days-section .table-breach th {
+    padding: 10px 2px;
+}
+
+.table-breach-sp {
+    font-size: 12px;
+}
+
+.table-breach-sp th {
+    background: var(--bg-grey-gradient);
+    font-weight: 400;
+}
+
+.table-breach-sp th:first-child {
+    border-radius: 7px 0 0 0px;
+}
+
+.table-breach-sp th:last-child {
+    border-radius: 0 7px 0px 0;
+}
+
+.table-breach tr:nth-child(odd),
+.table-breach-sp tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.table-breach tr:nth-child(even),
+.table-breach-sp tr:nth-child(even) {
+    background-color: #F2F2F3;
+}
+
+.card-breach {
+    box-shadow: 0px 20px 60px #00000014;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.data-breach-reason {
+    display: flex;
+    align-items: center;
+}
+
+.data-breach-reason .reason {
+    width: 85%;
+}
+
+.data-breach-reason .icon-lock {
+    width: 15%;
+    text-align: end;
+}
+
+.referral-charts .border-breach-end {
+    border-right: 1px solid #dee2e6;
+    margin: .5rem 0;
+}
+
+.referral-charts .border-breach-end:last-child {
+    border-right: none;
+}
+
+.table-breach tr.row-no-data {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: transparent;
+}
+
+.table-breach tr.row-no-data td.cell-no-data {
+    text-align: center;
+    border-right: none;
+    border-radius: 0;
+}
+
+.header-charts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+}
+
+.medical-data h6 {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Media Query */
+
+@media (min-width:1400px) {
+
+    .breach-reason-section .table-breach tbody {
+        height: 142px;
+    }
+
+    .attendance-section .table-breach tbody {
+        height: 152px;
+    }
+
+    .past-seven-days-section .table-breach tbody {
+        height: 183px;
+    }
+
+    .attendance-section .table-breach th {
+        padding: 6px 2px;
+        line-height: 15px;
+    }
+
+    .breach-chart1,
+    .breach-chart2,
+    .breach-chart3,
+    .breach-chart4,
+    .breach-chart5,
+    .breach-chart6,
+    .breach-chart7,
+    .breach-weekly-chart1,
+    .breach-weekly-chart2,
+    .breach-weekly-chart3,
+    .breach-weekly-chart4,
+    .breach-weekly-chart5,
+    .breach-weekly-chart6,
+    .breach-weekly-chart7,
+    .breach-monthly-chart1,
+    .breach-monthly-chart2,
+    .breach-monthly-chart3,
+    .breach-monthly-chart4,
+    .breach-monthly-chart5,
+    .breach-monthly-chart6,
+    .breach-monthly-chart7 {
+        margin-top: -23px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 1475px) and (min-width:1400px) {
+
+    .breach-reason-section .table-breach th,
+    .past-seven-days-section .table-breach th {
+        padding: 10px 3px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .attendance-section .table-breach tbody {
+        height: 193px;
+    }
+
+    .data-breach-reason .reason {
+        width: 80%;
+    }
+
+    .data-breach-reason .icon-lock {
+        width: 20%;
+        text-align: end;
+    }
+
+    .breach-reason-table {
+        overflow-x: scroll;
+    }
+}
+
+@media (min-width:1026px) {
+
+    .breach-reason-table,
+    .breach-month-data {
+        box-shadow: 0px 3px 6px #00000038;
+        border-radius: 7px;
+    }
+
+    .table-breach th:last-child,
+    .table-breach td:last-child {
+        border-right: none;
+    }
+
+    .breach-reason-table .table-breach tr:last-child td:first-child,
+    .breach-month-data .table-breach tr:last-child td:first-child,
+    .table-breach-sp tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .breach-reason-table .table-breach tr:last-child td:last-child,
+    .breach-month-data .table-breach tr:last-child td:last-child,
+    .table-breach-sp tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .table-breach tr.breach-reason-added-row {
+        background-color: var(--primary-blue);
+        color: #fff;
+    }
+
+    .table-breach tr.breach-reason-added-row a {
+        color: #fff;
+    }
+
+    .table-breach tr.breach-reason-added-row a:hover {
+        color: #dee1e4;
+    }
+
+    .breach-reason-table .table-breach tr.message-no-data-row td.message-no-data {
+        border-radius: 0 0 7px 7px;
+        text-align: center;
+        border-right: none;
+    }
+
+    .breach-month-data .table-breach {
+        table-layout: fixed;
+    }
+}
+
+@media (max-width: 1025px) {
+    .responsiveTable td .tdBefore {
+        white-space: nowrap;
+    }
+
+    .table-breach th,
+    .table-breach td {
+        border-right: none;
+    }
+
+    .breach-month-data .table-breach tr:last-child td {
+        font-size: 12px;
+    }
+
+    .breach-month-data .responsiveTable td.pivoted:nth-child(6),
+    .table-breach-sp tr:last-child td:first-child {
+        border-radius: 0 0 0 6px;
+    }
+
+    .breach-month-data .responsiveTable td.pivoted:nth-child(10),
+    .table-breach-sp tr:last-child td:last-child {
+        border-radius: 0 0 6px 0;
+    }
+
+    .breach-reason-table {
+        overflow-x: hidden;
+    }
+
+    .breach-reason-table .table-breach tr.message-no-data-row,
+    .breach-reason-table .table-breach tr.message-no-data-row td.message-no-data {
+        width: 100%;
+        text-align: center;
+    }
+
+    .breach-reason-table .table-breach tr.message-no-data-row td.message-no-data {
+        border-right: none;
+        min-height: 30px;
+    }
+}
+
+@media (min-width:991px) {
+    .block-conversion .rectangle-block-1 {
+        min-height: 160px;
+    }
+
+    .breach-reason-table div {
+        overflow-x: auto;
+    }
+
+    .breach-reason-table div.patient-gender {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width:991px) {
+
+    #seven-col-row .col {
+        width: 25%;
+        flex: auto;
+    }
+
+    .breach-reason-section .table-breach tbody,
+    .presenting-complaint-section .table-breach tbody,
+    .attendance-section .table-breach tbody,
+    .past-seven-days-section .table-breach tbody {
+        height: 200px;
+    }
+
+      .breach-reason-table .responsiveTable td.pivoted:nth-child(12) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .breach-month-data .responsiveTable td.pivoted:nth-child(6),
+    .breach-month-data .responsiveTable td.pivoted:nth-child(10) {
+        border-radius: 0;
+    }
+
+    .header-charts {
+        height: 20px;
+    }
+
+    .referral-charts .border-breach-end:nth-child(4) {
+        border-right: none;
+    }
+}
+
+@media (min-width:768px) {
+
+    .breach-reason-section .table-breach tbody tr:last-child,
+    .presenting-complaint-section .table-breach tbody tr:last-child,
+    .attendance-section .table-breach tbody tr:last-child,
+    .past-seven-days-section .table-breach tbody tr:last-child {
+        border-radius: 0 0 7px 7px;
+    }
+}
+
+@media (max-width:767px) {
+    #seven-col-row .col {
+        width: 50%;
+        flex: auto;
+    }
+
+    .rectangle-breach {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .rectangle-block {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .breach-reason-section .table-breach tbody tr:last-child,
+    .presenting-complaint-section .table-breach tbody tr:last-child,
+    .attendance-section .table-breach tbody tr:last-child,
+    .past-seven-days-section .table-breach tbody tr:last-child {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .breach-month-data .responsiveTable td.pivoted:nth-child(9),
+    .breach-reason-table .responsiveTable td.pivoted:nth-child(11),
+    .table-breach-sp tr:last-child td:first-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .breach-month-data .responsiveTable td.pivoted:nth-child(10),
+    .breach-reason-table .responsiveTable td.pivoted:nth-child(12),
+    .table-breach-sp tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+
+    .vertical-line-left {
+        display: none;
+    }
+
+    .referral-charts .border-breach-end:nth-child(even) {
+        border-right: none;
+    }
+}
+
+@media (max-width:424px) {
+
+    .block-conversion .fs-5,
+    .block-conversion span {
+        font-size: .75rem !important;
+    }
+
+    .block-conversion p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:359px) {
+
+    .table-breach th,
+    .table-breach-sp {
+        font-size: 10px;
+    }
+
+    .block-conversion .rectangle-block-1 .bottom-section {
+        padding: .5rem;
+    }
+}

@@ -1,0 +1,150 @@
+table {
+    font-size: 11px;
+}
+
+.card-referral {
+    padding: 0;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.card-referral .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem .5rem;
+    min-height: 35px;
+}
+
+.card-referral .name-header span {
+    font-weight: 500;
+}
+
+.card-referral .table-cdt-referral thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.card-referral .table-cdt-referral th {
+    font-weight: 500;
+    padding: 8px;
+    color: #fff;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .sticky-toprow {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 55px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .dashboard-contents {
+        margin-top: 47px;
+    }
+
+    .bg-sticky {
+        background: #F8F8F8;
+        position: fixed;
+        height: 40px;
+        width: calc(100% - 115px);
+        left: 115px;
+        padding: 0.5rem 0.75rem 0 0.6rem;
+    }
+
+    .sticky-header {
+        position: sticky;
+        width: 100%;
+        background-color: #F8F8F8;
+        z-index: 2;
+        border-radius: 7px;
+    }
+
+    .bg-sticky,
+    .sticky-header {
+        top: 160px;
+    }
+
+    .card-referral .table-cdt-referral tr:last-child td:first-child {
+        border-radius: 0px 0 0 7px;
+    }
+
+    .card-referral .table-cdt-referral tr:last-child td:last-child {
+        border-radius: 0px 0 7px 0;
+    }
+
+    .card-referral .table-cdt-referral tbody tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .card-referral .table-cdt-referral tbody tr:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .card-referral .table-cdt-referral thead th,
+    .card-referral .table-cdt-referral tbody tr td {
+        width: 16.66%;
+    }
+
+    .removed-patients-details .card-referral .table-cdt-referral thead th,
+    .removed-patients-details .card-referral .table-cdt-referral tbody tr td {
+        width: 13%;
+    }
+
+    .removed-patients-details .card-referral .table-cdt-referral thead th:nth-child(6),
+    .removed-patients-details .card-referral .table-cdt-referral tbody tr td:nth-child(6) {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .table-cdt-referral thead {
+        display: none;
+    }
+
+    .card-referral {
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .card-referral .name-header {
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000038;
+        margin-bottom: .5rem;
+        border-radius: 7px;
+    }
+
+    .card-referral .table-cdt-referral.responsiveTable td.pivoted:nth-child(6) {
+        width: 75%;
+    }
+
+    .removed-patients-details .card-referral .table-cdt-referral.responsiveTable td.pivoted:nth-child(6) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .removed-patients-details .card-referral .table-cdt-referral.responsiveTable td.pivoted:nth-child(6) {
+        width: 75%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .card-referral .name-header {
+        border-radius: 4px;
+    }
+
+    .removed-patients-details .card-referral .table-cdt-referral.responsiveTable td.pivoted:nth-child(6) {
+        width: 50%;
+    }
+}

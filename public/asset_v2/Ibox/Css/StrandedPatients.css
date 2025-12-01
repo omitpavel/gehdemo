@@ -1,0 +1,93 @@
+
+.BoardRoundInfo {
+    cursor: pointer;
+    background: #00b300;
+    padding: 0.25rem 0.5rem;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+}
+.card-pd-table .name-header span{
+    font-size: 14px;
+}
+
+.btn:hover {
+    color: #212529;
+}
+button.btn.click_popup_open_ibox_board_round_medfit_no.btn-red {
+    background: linear-gradient(180deg, rgb(205 8 8) 50%, rgb(114 38 57) 100%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+
+
+
+button.btn.click_popup_open_ibox_board_round_medfit_no.btn-green {
+    background: linear-gradient(180deg, rgb(5, 173, 61) 50%, rgb(0, 59, 18) 100%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.cld_comment_box {
+    border-radius: 12px;
+    height: 220px;
+}
+@media (min-width: 992px) {
+
+    #camis_patient_ward_summary_boardround_deteriorating_patient_timeline .modal-dialog {
+        max-width: 95%;
+    }
+}
+
+
+.card-icons textarea.form-control{
+    background:#fff !important;
+}
+.No_record_css {
+    max-height: 400px;
+    min-height: 200px;
+    overflow-y: hidden !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-assigned-speciality {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+.board-round-offcanvas .card-icons textarea.form-control {
+    min-height: 87px;
+}
+.button_disabled {
+    cursor: not-allowed;
+}
+.ui-datepicker {
+    width: auto !important;
+}
+.boardround_width {
+    width: 98% !important;
+}
+.ms-options-wrap>.ms-options>ul>li.optgroup .label {
+    display: inline;
+    padding-right: 7px;
+}
+.optgroup-all{
+    position: unset !important;
+}

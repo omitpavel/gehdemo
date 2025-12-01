@@ -1,0 +1,243 @@
+.responsiveTable {
+    width: 100%
+}
+
+.responsiveTable td .tdBefore {
+    display: none
+}
+
+@media screen and (max-width:1025px) {
+
+    .responsiveTable table,
+    .responsiveTable thead,
+    .responsiveTable tbody,
+    .responsiveTable th,
+    .responsiveTable td,
+    .responsiveTable tr {
+        display: block
+    }
+
+    .responsiveTable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        border-bottom: 2px solid #333
+    }
+
+    .responsiveTable tbody tr,
+    .table-infection-control tbody tr {
+        border: 0.5px solid #A7A7A7;
+    }
+
+    .responsiveTable td.pivoted {
+        position: relative;
+        padding-left: calc(50% + 10px) !important;
+        text-align: left !important;
+        overflow-wrap: break-word;
+        display: flex;
+        align-items: center
+    }
+
+    .responsiveTable td .tdBefore {
+        position: absolute;
+        display: block;
+        left: 1rem;
+        width: calc(50% - 20px);
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+        text-align: left !important;
+        font-weight: 600
+    }
+
+    .responsiveTable tbody tr {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        border-radius: 6px;
+    }
+
+    .responsiveTable tbody tr:nth-child(odd),
+    .table-infection-control tbody tr:nth-child(odd),
+    .responsiveTable tbody tr:nth-child(even),
+    .table-infection-control tbody tr:nth-child(even) {
+        background-color: transparent;
+    }
+
+    .responsiveTable td.pivoted {
+        padding: 5px 20px !important;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start
+    }
+
+    .responsiveTable td .tdBefore {
+        width: auto;
+        left: auto;
+        position: relative
+    }
+
+    .responsiveTable td {
+        min-height: 70px;
+    }
+
+    .table-infection-control th {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1025px) and (min-width:992px) {
+
+    .responsiveTable td.pivoted:nth-child(1) {
+        border-radius: 6px 0 0 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(11) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 6px 0 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(16) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(1),
+    .responsiveTable td.pivoted:nth-child(2),
+    .responsiveTable td.pivoted:nth-child(3),
+    .responsiveTable td.pivoted:nth-child(4),
+    .responsiveTable td.pivoted:nth-child(5),
+    .responsiveTable td.pivoted:nth-child(11),
+    .responsiveTable td.pivoted:nth-child(12),
+    .responsiveTable td.pivoted:nth-child(13),
+    .responsiveTable td.pivoted:nth-child(14),
+    .responsiveTable td.pivoted:nth-child(15) {
+        background-color: #FDFDFE;
+    }
+
+    .responsiveTable td.pivoted:nth-child(6),
+    .responsiveTable td.pivoted:nth-child(7),
+    .responsiveTable td.pivoted:nth-child(8),
+    .responsiveTable td.pivoted:nth-child(9),
+    .responsiveTable td.pivoted:nth-child(10),
+    .responsiveTable td.pivoted:nth-child(10) {
+        background-color: #dff3f3;
+    }
+
+    .table-infection-control tbody tr td:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .responsiveTable td.pivoted {
+        width: 25%
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+
+    .responsiveTable td.pivoted:nth-child(1) {
+        border-radius: 6px 0 0 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(13) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .responsiveTable td.pivoted:nth-child(4) {
+        border-radius: 0 6px 0 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(16) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(1),
+    .responsiveTable td.pivoted:nth-child(2),
+    .responsiveTable td.pivoted:nth-child(3),
+    .responsiveTable td.pivoted:nth-child(4),
+    .responsiveTable td.pivoted:nth-child(9),
+    .responsiveTable td.pivoted:nth-child(10),
+    .responsiveTable td.pivoted:nth-child(11),
+    .responsiveTable td.pivoted:nth-child(12) {
+        background-color: #FDFDFE;
+    }
+
+    .responsiveTable td.pivoted:nth-child(5),
+    .responsiveTable td.pivoted:nth-child(6),
+    .responsiveTable td.pivoted:nth-child(7),
+    .responsiveTable td.pivoted:nth-child(8),
+    .responsiveTable td.pivoted:nth-child(13),
+    .responsiveTable td.pivoted:nth-child(14),
+    .responsiveTable td.pivoted:nth-child(15),
+    .responsiveTable td.pivoted:nth-child(16) {
+        background-color: #dff3f3;
+    }
+
+    .responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0 0 0 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .responsiveTable td.pivoted {
+        width: 50% !important
+    }
+
+    .responsiveTable td.pivoted:nth-child(1) {
+        border-radius: 6px 0 0 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(15) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .responsiveTable td.pivoted:nth-child(2) {
+        border-radius: 0 6px 0 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(16) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(1),
+    .responsiveTable td.pivoted:nth-child(2),
+    .responsiveTable td.pivoted:nth-child(5),
+    .responsiveTable td.pivoted:nth-child(6),
+    .responsiveTable td.pivoted:nth-child(9),
+    .responsiveTable td.pivoted:nth-child(10),
+    .responsiveTable td.pivoted:nth-child(13),
+    .responsiveTable td.pivoted:nth-child(14) {
+        background-color: #FDFDFE;
+    }
+
+    .responsiveTable td.pivoted:nth-child(3),
+    .responsiveTable td.pivoted:nth-child(4),
+    .responsiveTable td.pivoted:nth-child(7),
+    .responsiveTable td.pivoted:nth-child(8),
+    .responsiveTable td.pivoted:nth-child(11),
+    .responsiveTable td.pivoted:nth-child(12),
+    .responsiveTable td.pivoted:nth-child(15),
+    .responsiveTable td.pivoted:nth-child(16) {
+        background-color: #dff3f3;
+    }
+
+    .responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0 0 0 10px;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    .responsiveTable td.pivoted {
+        width: 100%
+    }
+}

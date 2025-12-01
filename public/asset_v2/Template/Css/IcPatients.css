@@ -1,0 +1,208 @@
+.ic-filters .selectric .label,
+.ic-filters .btn-reverse-barrier {
+    min-height: 40px;
+}
+
+.ic-filters .selectric .label {
+    line-height: 40px;
+}
+
+.ic-filters .selectric .button {
+    height: 40px;
+}
+
+.ic-filters .btn-reverse-barrier {
+    font-size: 12px;
+}
+
+.patients-count-box {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px;
+    padding: 0.5rem 1rem;
+    min-height: 40px;
+}
+
+.card-ic-patients {
+    padding: 0;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.card-ic-patients .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem .5rem;
+    min-height: 35px;
+}
+
+.card-ic-patients .name-header span {
+    font-weight: 500;
+}
+
+table {
+    font-size: 11px;
+}
+
+.form-select {
+    min-height: 40px;
+}
+
+.card-ic-patients .table-infection-control thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.card-ic-patients .table-infection-control th {
+    font-weight: 500;
+    padding: 8px;
+    color: #fff;
+}
+
+.ic-filters .btn-reverse-barrier,
+.reverse-barrier-block button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ic-filters .btn-reverse-barrier img,
+.reverse-barrier-block button img {
+    display: none;
+}
+
+.ic-filters .btn-reverse-barrier.active img,
+.reverse-barrier-block .btn.active img {
+    display: block;
+}
+
+.ic-filters .btn-reverse-barrier,
+.reverse-barrier-block .btn-reverse-barrier {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: 0.5rem .25rem;
+    font-size: 11px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.reverse-barrier-block .btn-reverse-barrier {
+    min-height: 35px;
+}
+
+.ic-filters .btn-reverse-barrier {
+    padding: .5rem 1rem;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.ic-filters .btn-reverse-barrier.active,
+.reverse-barrier-block .btn.active {
+    background: var(--primary-blue);
+    color: #fff;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+    .card-ic-patients .table-infection-control tr:last-child td:first-child {
+        border-radius: 0px 0 0 7px;
+    }
+
+    .card-ic-patients .table-infection-control tr:last-child td:last-child {
+        border-radius: 0px 0 7px 0;
+    }
+
+    .card-ic-patients .table-infection-control tbody tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .card-ic-patients .table-infection-control tbody tr:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .card-ic-patients .table-infection-control thead th:nth-child(7),
+    .card-ic-patients .table-infection-control tbody tr td:nth-child(7),
+    .card-ic-patients .table-infection-control thead th:nth-child(1),
+    .card-ic-patients .table-infection-control tbody tr td:nth-child(1) {
+        width: 7%;
+    }
+
+    .card-ic-patients .table-infection-control thead th,
+    .card-ic-patients .table-infection-control tbody tr td {
+        width: 10%;
+    }
+
+    .card-ic-patients .table-infection-control thead th:nth-child(8),
+    .card-ic-patients .table-infection-control tbody tr td:nth-child(8) {
+        width: 12%;
+    }
+
+    .card-ic-patients .table-infection-control thead th:nth-child(5),
+    .card-ic-patients .table-infection-control tbody tr td:nth-child(5),
+    .card-ic-patients .table-infection-control thead th:nth-child(6),
+    .card-ic-patients .table-infection-control tbody tr td:nth-child(6) {
+        width: 16%;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .card-ic-patients {
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .card-ic-patients .name-header {
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000038;
+        margin-bottom: .5rem;
+        border-radius: 7px;
+    }
+
+    .card-ic-patients .table-infection-control.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .card-ic-patients .table-infection-control.responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .card-ic-patients .table-infection-control.responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .card-ic-patients .table-infection-control.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .patients-count-box,
+    .card-ic-patients .name-header {
+        border-radius: 4px;
+    }
+
+    .card-ic-patients .table-infection-control.responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0;
+    }
+
+    .card-ic-patients .table-infection-control.responsiveTable td.pivoted:nth-child(7) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .card-ic-patients .table-infection-control.responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 4px 0;
+    }
+}
+
+.card-ic-patients .table-infection-control tbody tr.bg-reverse-barrier {
+    background-color: rgb(255 50 50);
+    color: #fff;
+}

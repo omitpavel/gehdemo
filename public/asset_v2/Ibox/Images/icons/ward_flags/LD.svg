@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93.155" height="89.538" viewBox="0 0 93.155 89.538">
+  <defs>
+    <filter id="hexagon-fill-svgrepo-com" x="0" y="0" width="93.155" height="89.538" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <defs xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    @font-face {
+    font-family: American Captain;
+    src: url(../../fonts/american-captain/American\ Captain.ttf);
+}
+  </style>
+</defs>
+  </defs>
+  <g id="LD" transform="translate(-441.201 -209.75)">
+    <g id="Group_2643" data-name="Group 2643">
+      <g transform="matrix(1, 0, 0, 1, 441.2, 209.75)" filter="url(#hexagon-fill-svgrepo-com)">
+        <path id="hexagon-fill-svgrepo-com-2" data-name="hexagon-fill-svgrepo-com" d="M22.156.607a4.9,4.9,0,0,1,4.726,0L46.5,11.4a4.9,4.9,0,0,1,2.541,4.3V36.864a4.9,4.9,0,0,1-2.541,4.3L26.882,51.949a4.9,4.9,0,0,1-4.726,0L2.541,41.161A4.9,4.9,0,0,1,0,36.864V15.692a4.9,4.9,0,0,1,2.541-4.3Z" transform="translate(72.86 10.25) rotate(90)" fill="none" stroke="#eb4e14" stroke-width="1.5"/>
+      </g>
+      <text id="LD-2" data-name="LD" transform="translate(478 253.5)" fill="#eb4e14" font-size="26" font-family="AmericanCaptain, American Captain"><tspan x="0" y="0">LD</tspan></text>
+    </g>
+  </g>
+</svg>

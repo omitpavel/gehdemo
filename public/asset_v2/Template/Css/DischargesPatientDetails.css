@@ -1,0 +1,464 @@
+.btn-dark,
+.bg-dark {
+    background: var(--bg-black-gradient);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.wrap-btn .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .25rem .25rem;
+    width: 100%;
+    min-height: 38px;
+}
+
+.wrap-btn .btn svg {
+    margin-right: 5px;
+}
+
+.btn-grey {
+    background: var(--bg-grey-gradient);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #00000038;
+    font-weight: 400;
+}
+
+.card-welcome {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 60px #00000014;
+    border-radius: 12px;
+}
+
+.bg-blue {
+    background-color: var(--primary-blue);
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    color: #fff;
+}
+
+.bg-blue h6 {
+    margin-bottom: 0;
+}
+
+.bg-blue .row .col-lg-2 h6:first-child {
+    margin-bottom: .5rem;
+}
+
+.btn-width .btn-grey {
+    min-width: 160px;
+    font-size: 14px;
+}
+
+.btn-width svg {
+    margin-right: 25px;
+}
+
+.date-icon {
+    position: absolute;
+    top: 56%;
+    right: 5%;
+}
+
+.delete-icon {
+    position: absolute;
+    top: -3%;
+    right: 1%;
+    cursor: pointer;
+}
+
+.patients-details-offcanvas .delete-icon .btn-primary-grey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem 0;
+    min-width: 100px;
+    min-height: auto;
+}
+
+.comment-discharges .card-col-grp {
+    background-color: #fff;
+    height: 92px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-width: 100%;
+}
+
+.comment-discharges .card-col-grp .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+}
+
+.comment-discharges .card-col-grp .row:nth-child(odd) {
+    background-color: #FDFDFE;
+    padding: 3px 6px;
+}
+
+.comment-discharges .card-col-grp .row:nth-child(even) {
+    background-color: #F2F2F3;
+    padding: 3px 6px;
+}
+
+.comment-discharges .card-col-grp .row.bg-priority-task {
+    background-color: rgb(255 50 50);
+    color: #fff;
+}
+
+.comment-discharges .card-col-grp .row .col-comment {
+    width: 76%;
+    text-wrap: wrap;
+    padding-right: .5rem;
+}
+
+.comment-discharges .card-col-grp .row .col-comment span {
+    font-size: 10px;
+    font-weight: 400;
+    display: block;
+    line-height: 12px;
+}
+
+.comment-discharges .card-col-grp .row .col-icons {
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.comment-discharges .card-col-grp .row .col-icons .btn {
+    font-size: 10px;
+}
+
+.comment-discharges .card-col-grp {
+    background-color: #fff;
+    border: .5px solid #A7A7A7;
+    padding: .25rem 0;
+    min-height: 430px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.comment-discharges .card-col-grp::-webkit-scrollbar {
+    width: 3px;
+}
+
+.comment-discharges .card-col-grp .btn-tables {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 4px;
+    padding: 0.2rem;
+    min-width: 50px;
+    font-size: 12px;
+}
+
+.grp-grey-btns .btn-grey {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
+    min-height: 40px;
+}
+
+.grey-btns-wrap {
+    position: relative;
+}
+
+.grey-btns-wrap .btn-grey img {
+    position: absolute;
+    left: 25px;
+}
+
+.requirements-section .form-label,
+.requirements-section h6,
+.requirements-section .form-check-label {
+    font-size: 12px;
+}
+
+.requirements-section .form-control {
+    min-height: 37px;
+}
+
+.requirements-section .selectric,
+.requirements-section .selectric .button {
+    background-color: #F2F2F2;
+}
+
+.requirements-section .rectangle-block-1 {
+    min-height: 104px;
+}
+
+.requirements-section .medfit-section .rectangle-block-1 {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+}
+
+.btn-medfit-yes,
+.btn-medfit-no {
+    background: linear-gradient(180deg, rgba(223, 223, 223, 1) 50%, rgba(184, 179, 179, 1) 100%);
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 3px 6px #00000030;
+    min-width: 90px;
+}
+
+.btn-medfit-yes.active {
+    background: var(--bg-green-gradient);
+    color: #fff;
+}
+
+.btn-medfit-no.active {
+    background: var(--bg-red-gradient);
+    color: #fff;
+}
+
+.provider-section {
+    padding: .5rem 0;
+}
+
+.provider-section .form-check {
+    padding: 0 .5rem 0 3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.provider-section .form-check .form-check-input[type=checkbox] {
+    font-size: large;
+}
+
+.provider-section .form-check label {
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.provider-section span.date-time {
+    font-size: 12px;
+    padding-left: 54px;
+}
+
+.requirements-section .rectangle-block-1 .rectangle-block-2 p {
+    font-weight: 500;
+}
+
+.patients-details-offcanvas .requirements-section .switches-wrapper {
+    padding: .5rem;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.patients-details-offcanvas .requirements-section .highlight-patient {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.patients-details-offcanvas .requirements-section .switches-wrapper .stamp-update ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.patients-details-offcanvas .requirements-section .switches-wrapper .highlight-patient .form-check {
+    font-size: 1.5rem;
+    min-height: 2.5rem;
+    width: 25%;
+    margin-bottom: 0;
+}
+
+.patients-details-offcanvas .requirements-section .switches-wrapper .highlight-patient .stamp-update {
+    width: 75%;
+}
+
+.patients-details-offcanvas .requirements-section .marked-timestamp {
+    font-size: 12px;
+}
+
+.patients-details-offcanvas .requirements-section .switch-discharge .form-label,
+.patients-details-offcanvas .requirements-section .switch-equipment .form-label,
+.patients-details-offcanvas .requirements-section .switch-cdt-actions .form-label {
+    margin-bottom: 0;
+}
+
+.patients-details-offcanvas .requirements-section .switch-discharge .form-check-input:checked {
+    background-color: #008000;
+    border-color: #008000;
+}
+
+.patients-details-offcanvas .requirements-section .switch-equipment .form-check-input:checked {
+    background-color: #ffbf00;
+    border-color: #ffbf00;
+}
+
+.patients-details-offcanvas .requirements-section .switch-cdt-actions .form-check-input:checked {
+    background-color: #FF2624;
+    border-color: #FF2624;
+}
+
+.table-patient-tbody.bg-highlight {
+    background: #f7a9a9;
+}
+
+.table-patient-tbody.bg-highlight .responsiveTable tbody tr:nth-child(odd),
+.table-patient-tbody.bg-highlight .responsiveTable tbody tr:nth-child(even) {
+    background: #f7a9a9;
+}
+
+.table-patient-tbody.bg-highlight .table-patient-row-1,
+.table-patient-tbody.bg-highlight .table-patient-row-2 {
+    background: transparent;
+}
+
+/* Enter Comment Modal Styles */
+
+.enter-comment-modal .comments-box {
+    border: 1px solid #A7A7A7;
+    height: 150px;
+    overflow-y: auto;
+    border-radius: 6px;
+}
+
+.enter-comment-modal .comments-box::-webkit-scrollbar {
+    width: 3px;
+}
+
+.enter-comment-modal .comments-box ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.enter-comment-modal .comments-box ul li {
+    font-size: 12px;
+    border-bottom: 1px solid #A7A7A7;
+    padding: 5px 3px;
+    min-height: 20px;
+}
+
+.enter-comment-modal .comments-box ul li:last-child {
+    border-bottom: none;
+}
+
+.patients-details-offcanvas.offcanvas-end {
+    width: 92%;
+}
+
+.comment-discharges .card-col-grp .row {
+    border-bottom: .5px solid #A7A7A7;
+}
+
+.comment-discharges .card-col-grp .row:last-child {
+    border-bottom: none;
+}
+
+.patients-details-offcanvas .btn-primary-grey {
+    padding: 0.8rem 0;
+}
+
+/* Media Query */
+
+@media (max-width:1399px) {
+    .btn-icon-modal {
+        left: 6%;
+    }
+
+    .offcanvas-footer .btn-primary-grey span {
+        font-size: 12px;
+    }
+
+    .comment-discharges .card-col-grp {
+        min-height: 356px;
+    }
+}
+
+
+@media (max-width:991px) {
+
+    .btn-grey img {
+        left: 25px;
+    }
+
+    .bg-blue {
+        padding: 0.75rem 1rem;
+    }
+
+    .patients-details-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .comment-discharges .card-col-grp {
+        min-height: 200px;
+    }
+}
+
+@media (max-width:767px) {
+    .card-welcome {
+        padding: .5rem 0.25rem;
+        border-radius: 4px;
+    }
+
+    .bg-blue,
+    .patients-details-offcanvas .requirements-section .switches-wrapper {
+        border-radius: 4px;
+    }
+
+    .btn-tables {
+        font-size: 12px;
+    }
+
+    .modal .card-col-grp {
+        min-height: auto;
+    }
+
+    .btn-width .btn-grey {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    .grey-btns-wrap .btn-grey img {
+        left: 15px;
+    }
+
+    .grp-grey-btns .btn-grey {
+        border-radius: 4px;
+        font-size: 12px;
+    }
+
+    .comment-discharges .card-col-grp .row .col-comment {
+        width: 80%;
+    }
+
+    .comment-discharges .card-col-grp .row .col-icons {
+        width: 20%;
+    }
+
+    .comment-discharges .card-col-grp .row .col-comment {
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width:359px) {
+
+    .grp-grey-btns .btn-grey,
+    .btn-primary-grey {
+        font-size: 10px;
+    }
+
+    .grey-btns-wrap .btn-grey img {
+        left: 15px;
+    }
+
+    .btn-icon-modal {
+        left: 6%;
+    }
+}

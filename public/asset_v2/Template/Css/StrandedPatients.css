@@ -1,0 +1,630 @@
+.other-dashboard-contents .patients-details .wards-patients-details .responsiveTable td .tdBefore {
+    display: block;
+}
+
+.sticky-toprow .form-select {
+    min-height: 35px;
+}
+
+.custom-card {
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: 0.5rem;
+}
+
+.medfit-text-danger {
+    color: #E30000;
+}
+
+.medfit-text-success {
+    color: #48AB3F;
+}
+
+.table-custom {
+    font-size: 10px;
+}
+
+.table-custom th {
+    background: var(--primary-blue);
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.table-custom-tbody {
+    display: flex;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.table-col-1 {
+    background: var(--bg-grey-gradient);
+    display: flex;
+    flex-wrap: wrap;
+    width: 42%;
+    border-radius: 0 0 0 7px;
+}
+
+.table-col-2 {
+    width: 13%;
+}
+
+.table-col-3 {
+    width: 45%;
+}
+
+.table-custom .table-col-1 td {
+    padding: 10px;
+    width: 25%;
+    border-bottom: 1px solid rgb(112, 112, 112, .5);
+}
+
+.table-custom td:nth-child(5),
+.table-custom td:nth-child(6),
+.table-custom td:nth-child(7),
+.table-custom td.spl-cell {
+    border-bottom: none;
+}
+
+.table-custom .table-col-1 td {
+    border-bottom: none;
+    padding: 5px 8px;
+    border-bottom: 1px dashed rgb(112, 112, 112, .5);
+}
+
+.table-custom .table-col-3 td {
+    padding: 5px 8px 5px 0;
+    width: 100%;
+    display: block;
+}
+
+.table-custom .table-col-2 td {
+    padding: 5px;
+}
+
+.pivoted span {
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.table-custom .table-col-2 .flags-table {
+    width: 100%;
+    border: .5px solid #A7A7A7;
+    border-radius: 5px;
+    padding: .25rem;
+    min-height: 120px;
+}
+
+.table-custom .table-col-2 .flags-table table tbody tr {
+    background-color: transparent;
+    float: left;
+}
+
+.no-flag-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    font-weight: 600;
+}
+
+.table-custom .table-col-2 .flags-table table td img {
+    width: 35px;
+}
+
+.table-custom .table-col-2 .flags-table table tr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.table-custom .table-col-2 .flags-table table tr td {
+    width: 25%;
+    padding: 0;
+    border-bottom: none;
+    margin: 2px 0;
+    text-align: center;
+}
+
+.card-col-grp {
+    background-color: #fff;
+    height: 88px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 100%;
+    border: .5px solid #A7A7A7;
+    border-radius: 5px;
+}
+
+.card-col-grp::-webkit-scrollbar {
+    width: 3px;
+}
+
+.card-col-grp .row .col-comment {
+    width: 86%;
+    text-wrap: wrap;
+}
+
+.card-col-grp .row .col-icons {
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.card-col-grp .row .col-icons a {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3px;
+}
+
+.card-col-grp .row .col-icons a:last-child {
+    margin-right: 0;
+}
+
+.card-col-grp .row .col-comment span {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.card-col-grp .row:nth-child(odd) {
+    background-color: #FDFDFE;
+    padding: 3px;
+}
+
+.card-col-grp .row:nth-child(even) {
+    background-color: #F2F2F3;
+    padding: 3px;
+}
+
+.table-custom p {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    top: -1.5px;
+}
+
+.table-row {
+    border-radius: 10px;
+}
+
+.custom-card .btn:hover {
+    color: #fff;
+}
+
+.header-comment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header-comment .btn {
+    min-width: 90px;
+}
+
+.header-comment .btn:hover {
+    color: #fff;
+}
+
+.header-comment div {
+    margin-right: .25rem;
+}
+
+.header-comment div:last-child {
+    margin-right: 0;
+}
+
+/* Media Query */
+
+
+@media (min-width:1026px) and (max-width:1199px) {
+
+    .table-custom .table-col-1 td,
+    .table-custom .table-col-3 td {
+        padding: 8px 4px;
+    }
+
+    .header-comment .btn {
+        min-width: 70px;
+    }
+
+    .btn-assign-task,
+    .btn-board-round {
+        padding: .25rem;
+        font-size: 10px;
+    }
+
+    .card-col-grp {
+        height: 100px;
+    }
+
+    .card-col-grp .row .col-comment {
+        width: 80%;
+    }
+
+    .card-col-grp .row .col-icons {
+        width: 20%;
+    }
+
+    .flags-table table td img {
+        width: 20px;
+    }
+
+}
+
+@media (min-width:1026px) {
+    .sticky-toprow {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 100px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .other-dashboard-contents {
+        margin-top: 90px;
+    }
+
+    .bg-sticky {
+        background: #F8F8F8;
+        position: fixed;
+        height: 40px;
+        width: calc(100% - 115px);
+        left: 115px;
+        padding: 0.5rem 0.75rem 0 0.6rem;
+    }
+
+    .sticky-header {
+        position: sticky;
+        width: 100%;
+        background-color: #F8F8F8;
+        z-index: 2;
+        border-radius: 7px;
+    }
+
+    .bg-sticky,
+    .sticky-header {
+        top: 160px;
+    }
+
+    .table-custom-tbody {
+        background: var(--bg-grey-gradient);
+        border: 1px solid rgb(112, 112, 112, .5);
+        margin-bottom: 0.4rem;
+    }
+
+    .table-custom .table-custom-tbody .table-col-1 {
+        border-radius: 7px 0 0 7px;
+    }
+
+    .table-custom .table-custom-tbody .table-col-1 td:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .table-col-1 {
+        background: transparent;
+    }
+
+    .table-custom .table-col-1 td {
+        width: 25%;
+    }
+
+    .table-custom .table-col-1 td:nth-child(5),
+    .table-custom .table-col-1 td:nth-child(6),
+    .table-custom .table-col-1 td:nth-child(7),
+    .table-custom .table-col-1 td:nth-child(8) {
+        border-bottom: none;
+    }
+
+    .table-custom .table-col-2 td.cell-flags {
+        display: block;
+    }
+
+    .table-custom .table-col-2 .flags-table table tr td {
+        min-height: 30px;
+    }
+}
+
+@media (max-width:1399px) {
+    .table-custom {
+        font-size: 12px;
+    }
+
+    .table-custom-tbody {
+        flex-direction: column;
+    }
+
+    .table-custom .table-custom-tbody .table-col-1 {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .table-col-1,
+    .table-col-2,
+    .table-col-3 {
+        width: 100%;
+    }
+
+    .table-custom .table-col-1 td,
+    .table-custom .table-col-2 td,
+    .table-custom .table-col-3 td {
+        padding: 8px;
+    }
+
+    .table-custom .table-col-2 .flags-table,
+    .no-flag-message {
+        min-height: auto;
+    }
+
+    .table-custom .table-col-2 td.cell-flags {
+        width: 100%;
+        min-height: 35px;
+    }
+
+    .table-custom .table-col-2 .flags-table table tr {
+        border: none;
+    }
+
+    .table-custom .table-col-2 .flags-table table tr td {
+        width: 6.66%;
+    }
+
+    .table-col-3 td {
+        padding: 8px;
+    }
+
+    .card-col-grp {
+        height: 100px;
+    }
+
+    .card-col-grp .row .col-comment {
+        width: 95%;
+    }
+
+    .card-col-grp .row .col-icons {
+        width: 5%;
+    }
+
+    .table-col-3 .card-col-grp .row .col-comment {
+        width: 93%;
+    }
+
+    .table-col-3 .card-col-grp .row .col-icons {
+        width: 7%;
+    }
+}
+
+@media (max-width:1025px) {
+    .responsiveTable tbody tr {
+        align-items: start;
+    }
+
+    .responsiveTable thead tr {
+        top: 0;
+        left: 0;
+        border-bottom: none;
+    }
+
+    .table-col-1,
+    .table-col-3 {
+        width: 100%;
+    }
+
+    .responsiveTable .table-col-3 td.pivoted {
+        width: 100%;
+    }
+
+    .name-header {
+        margin-bottom: 0;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .custom-card {
+        margin-top: 0;
+    }
+
+    .table-custom {
+        margin-bottom: .5rem;
+    }
+
+    .header-comment {
+        margin-bottom: .5rem;
+    }
+
+    .table-outstanding-tasks.responsiveTable tbody tr {
+        margin-bottom: 0px;
+        border-radius: 0;
+    }
+
+    .pivoted span {
+        font-weight: 400;
+    }
+
+    .table-col-1,
+    .table-col-2,
+    .table-custom .table-col-2 .flags-table {
+        background: #FFFFFF;
+    }
+
+    .table-custom .table-custom-tbody tr.table-col-1,
+    .table-custom .table-custom-tbody tr.table-col-2,
+    .table-custom .table-custom-tbody tr.table-col-3 {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    .table-custom .table-custom-tbody:first-child .table-col-1,
+    .table-custom .table-custom-tbody .table-col-1,
+    .responsiveTable td.pivoted:nth-child(1),
+    .responsiveTable td.pivoted:nth-child(2),
+    .responsiveTable td.pivoted:nth-child(11),
+    .responsiveTable td.pivoted:nth-child(12),
+    .responsiveTable .table-col-1 td.pivoted:nth-child(5) {
+        border-radius: 0;
+    }
+
+    .table-custom td,
+    .table-custom .table-col-1 td {
+        border-bottom: none;
+    }
+
+    .card-col-grp {
+        min-width: 100%;
+        padding: 0;
+        height: 200px;
+    }
+
+    .card-col-grp .row .col-icons {
+        justify-content: end;
+    }
+
+    .responsiveTable td.pivoted.spl-cell {
+        width: 100% !important;
+    }
+
+    .main-panel .responsiveTable tbody tr:nth-child(2),
+    .main-panel .responsiveTable tbody tr:nth-child(3) {
+        border-top: none;
+    }
+
+    .responsiveTable td.pivoted.spl-cell:nth-child(1) {
+        border-radius: 0;
+    }
+
+    .table-custom .table-custom-tbody:last-child .table-col-3 {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .responsiveTable .table-col-1 td:first-child,
+    .responsiveTable .table-col-1 td:nth-child(4) {
+        border-radius: 0;
+    }
+
+    .responsiveTable .table-custom-tbody:last-child .table-col-3 td:first-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-custom .table-col-1 .flags-table table tr {
+        background-color: transparent;
+        border: none;
+    }
+
+    .table-custom .table-col-1 .flags-table table tr td {
+        width: 16.66%;
+    }
+
+    .responsiveTable .flags-table table tr td {
+        min-height: auto;
+    }
+
+    .flags-table table td img {
+        width: 24px;
+    }
+
+    .table-custom-tbody:last-child .table-col-3,
+    .table-custom-tbody:last-child .table-col-3 td,
+    .responsiveTable td.pivoted.spl-cell:nth-child(1) {
+        border-radius: 0 0 7px 7px;
+    }
+}
+
+@media (max-width:991px) {
+
+    .table-custom td {
+        min-width: auto;
+    }
+
+    .responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0;
+    }
+}
+
+@media (max-width:767px) {
+
+    .other-dashboard-contents .table-custom .table-col-1 td {
+        width: 50%;
+    }
+
+    .header-comment {
+        flex-direction: column;
+    }
+
+    .header-comment div {
+        margin-right: 0;
+    }
+
+    .header-comment .btn,
+    .header-comment div {
+        min-width: 100%;
+    }
+
+    .name-header {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .responsiveTable .table-custom-tbody:last-child .table-col-3 td:first-child,
+    .table-custom-tbody:last-child .table-col-3,
+    .table-custom-tbody:last-child .table-col-3 td,
+    .responsiveTable td.pivoted.spl-cell:nth-child(1) {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .card-col-grp span {
+        font-size: 10px;
+    }
+
+    .responsiveTable td.pivoted:nth-child(9),
+    .responsiveTable .table-col-1 td:nth-child(3),
+    .responsiveTable .table-col-1 td:nth-child(4) {
+        border-radius: 0;
+    }
+
+    .table-custom th {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .responsiveTable .table-col-3 td.pivoted,
+    .responsiveTable .table-col-2 td.cell-flags {
+        width: 100% !important;
+    }
+
+    .table-custom .table-col-2 .flags-table table tr td {
+        width: 12.5%;
+    }
+
+    .responsiveTable .table-col-1 td:nth-child(2) {
+        border-radius: 0 7px 0 0;
+    }
+
+    .responsiveTable .table-col-3 td.assign-task {
+        flex-direction: column;
+    }
+
+    .table-col-3 .card-col-grp .row .col-comment {
+        width: 80%;
+    }
+
+    .table-col-3 .card-col-grp .row .col-icons {
+        width: 20%;
+    }
+}

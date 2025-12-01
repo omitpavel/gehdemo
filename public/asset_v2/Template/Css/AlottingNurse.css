@@ -1,0 +1,86 @@
+/* CCU Offcanvases Styles */
+
+.ccu-staffing-offcanvas .form-label {
+    font-size: 12px;
+}
+
+.ccu-staffing-offcanvas .form-control {
+    background-color: #F3F3F3;
+    border-radius: 7px;
+    border: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.card-nurses-alloting {
+    background: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0 .25rem;
+    font-size: 12px;
+}
+
+.card-nurses-alloting .form-label {
+    margin-bottom: 0;
+}
+
+.card-nurses-alloting .form-control {
+    background-color: transparent;
+    height: 30px;
+}
+
+.card-nurses-alloting .form-control:disabled,
+.card-nurses-alloting .form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+.card-nurses-alloting .row:nth-child(odd),
+.card-nurses-alloting .row:nth-child(even) {
+    padding: .5rem;
+    height: 100px;
+}
+
+.card-nurses-alloting .row:nth-child(odd) {
+    background-color: #fff;
+}
+
+.card-nurses-alloting .row:nth-child(even) {
+    background-color: #F2F2F3;
+}
+
+.card-nurses-alloting .row:first-child {
+    border-radius: 7px 7px 0 0;
+}
+
+.card-nurses-alloting .row:last-child {
+    border-radius: 0 0 7px 7px;
+}
+
+.card-nurses-alloting .row h6 {
+    font-size: 14px;
+    padding-bottom: .25rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-nurses-alloting .line {
+    border-left: 1px solid rgb(112, 112, 112, .5);
+    min-height: 40px;
+}
+
+/* Media Query */
+
+
+@media(max-width:991px) {
+
+    .allotting-nurse-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+
+    .card-nurses-alloting .row:nth-child(odd),
+    .card-nurses-alloting .row:nth-child(even) {
+        height: 150px;
+    }
+}

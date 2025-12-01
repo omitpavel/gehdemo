@@ -1,0 +1,303 @@
+.card-welcome {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 60px #00000014;
+    border-radius: 22px;
+    padding: 1rem;
+    min-height: calc(100vh - 70px);
+    margin: 35px 20px 0 20px;
+}
+
+.card-welcome img {
+    width: 80%;
+}
+
+.card-welcome h5 {
+    font-size: 1.5rem;
+}
+
+.count-box-ed {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    border-radius: 10px 0 0 10px;
+    padding: 1.5rem 1rem;
+    min-height: 100px;
+}
+
+.count-box {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 95%, rgba(217, 217, 217, 1) 100%);
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgb(191 180 180);
+    border-top: 1px solid rgb(191 180 180);
+    min-height: 92px;
+}
+
+.count-box-waiting {
+    background: linear-gradient(358deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgb(191 180 180);
+}
+
+.count-box h6,
+.count-box-waiting h6,
+.count-box-ed h6 {
+    font-size: 20px;
+}
+
+.header-department {
+    font-size: 20px;
+    text-align: center;
+}
+
+.count-bluebox {
+    background: linear-gradient(180deg, rgba(28, 97, 174, 1) 50%, rgba(14, 49, 87, 1) 100%);
+    border-radius: 0px 10px 10px 0px;
+    padding: 2rem 1rem;
+    color: #fff;
+    text-align: center;
+    min-height: 90px;
+}
+
+#bg-blue .count-bluebox {
+    border-radius: 0px 10px 0 0px;
+}
+
+.bg-welcome-white {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+
+}
+
+.pt-20 {
+    padding: 20px 0;
+}
+
+.pt-40 {
+    padding: 40px 0;
+}
+
+.main-panel {
+    width: 100%;
+    padding: 0 .75rem;
+}
+
+/* Media Query */
+
+
+@media (min-width:2900px) {
+    .card-welcome h5 {
+        font-size: 38px;
+    }
+
+    .welcome-text {
+        font-size: 28px;
+    }
+
+    .count-box-ed,
+    .count-box,
+    .count-box-waiting,
+    .count-bluebox,
+    .bg-welcome-white {
+        padding: 4rem;
+    }
+
+    .count-box-ed h6,
+    .count-box h6,
+    .count-box-waiting h6,
+    .count-bluebox h6,
+    .bg-welcome-white h6 {
+        font-size: 34px;
+    }
+}
+
+@media (min-width:2500px) and (max-width:2899px) {
+
+    .card-welcome h5,
+    .header-department {
+        font-size: 38px;
+    }
+
+    .welcome-text {
+        font-size: 22px;
+    }
+
+    .pt-40,
+    .pt-20 {
+        padding: 70px 0;
+    }
+
+    .count-box-ed,
+    .count-box,
+    .count-box-waiting,
+    .count-bluebox,
+    .bg-welcome-white {
+        padding: 3.5rem;
+    }
+
+    .count-box {
+        min-height: 157px;
+    }
+
+    .count-box-ed h6,
+    .count-box h6,
+    .count-box-waiting h6,
+    .count-bluebox h6,
+    .bg-welcome-white h6 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width:2001px) and (max-width:2499px) {
+    .card-welcome h5 {
+        font-size: 28px;
+    }
+
+    .pt-40 {
+        padding: 70px 0;
+    }
+
+    .count-box-ed,
+    .count-box,
+    .count-box-waiting,
+    .count-bluebox,
+    .bg-welcome-white {
+        padding: 2.5rem;
+    }
+
+    .count-box {
+        min-height: 114px;
+    }
+
+    #bluebox-ed .count-bluebox {
+        min-height: 132px;
+    }
+
+    .count-box-ed h6,
+    .count-box h6,
+    .count-box-waiting h6,
+    .count-bluebox h6,
+    .bg-welcome-white h6,
+    .header-department {
+        font-size: 22px;
+    }
+
+    .welcome-text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1700px) and (max-width:2000px) {
+
+    .welcome-text {
+        font-size: 18px;
+    }
+
+    .pt-40 {
+        padding: 70px 0;
+    }
+
+}
+
+@media (max-width:1399px) {
+    .card-welcome {
+        margin: 35px 20px 20px 20px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .header-department {
+        font-size: 16px;
+    }
+
+    .count-box h6,
+    .count-box-waiting h6,
+    .count-box-ed h6 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:991px) {
+    .card-welcome {
+        padding: 0;
+        margin: 20px;
+    }
+
+    .main-panel {
+        padding: 0;
+    }
+
+    .pt-40 {
+        padding: 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .card-welcome {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:767px) {
+    .card-welcome {
+        border-radius: 4px;
+    }
+
+    .count-box-ed {
+        border-radius: 4px 0px 0px 4px;
+    }
+
+    .count-bluebox {
+        border-radius: 0px 4px 4px 0px;
+    }
+
+    #bg-blue .count-bluebox {
+        border-radius: 0px 4px 0 0px;
+    }
+
+    .card-welcome {
+        margin: 0 0 .5rem 0;
+    }
+
+    .card-welcome h5 {
+        font-size: 1.2rem;
+    }
+
+    .pt-40,
+    .pt-20 {
+        padding: 0;
+    }
+
+    .header-department {
+        font-size: 16px;
+    }
+
+    .count-box h6,
+    .count-box-waiting h6,
+    .count-box-ed h6 {
+        font-size: 14px;
+    }
+
+    .count-box-ed,
+    .count-box,
+    .count-box-waiting,
+    .count-bluebox {
+        padding: 1rem 0.5rem;
+    }
+
+    .count-bluebox,
+    .count-box-ed,
+    .count-box,
+    .count-box-waiting {
+        min-height: 55px;
+    }
+
+    #bluebox-ed .count-bluebox {
+        min-height: 66px;
+    }
+}
+
+@media (max-width:424px) {
+    .count-bluebox {
+        padding: 1rem .5rem;
+    }
+}

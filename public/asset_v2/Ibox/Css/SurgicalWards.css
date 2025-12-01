@@ -1,0 +1,52 @@
+.form-control,
+.form-select {
+    font-size: 14px !important;
+}
+
+.task_priority_assigned {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+}
+
+
+
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled:hover {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled svg {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled:hover svg {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled span {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled:hover span {
+    color: #bbbbbb;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}

@@ -1,0 +1,1427 @@
+.bg-ae-red,
+.bg-ae-primary,
+.bg-ae-info,
+.bg-ae-success,
+.bg-ae-purple,
+.bg-ae-orange,
+.bg-ae-warning,
+.bg-ae-pink,
+.bg-ae-maroon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: .5rem;
+    border-radius: 31px;
+    margin: auto;
+    width: 35%;
+    height: 100px;
+    margin-bottom: .5rem;
+}
+
+.bg-ae-red {
+    background: linear-gradient(180deg, rgba(215, 58, 72, 1) 0%, rgba(108, 29, 36, 1) 100%);
+}
+
+.bg-ae-primary {
+    background: linear-gradient(180deg, rgba(0, 87, 216, 1) 0%, rgba(0, 44, 108, 1) 100%);
+}
+
+.bg-ae-info {
+    background: linear-gradient(180deg, rgba(42, 165, 216, 1) 0%, rgba(21, 83, 108, 1) 100%);
+}
+
+.bg-ae-success {
+    background: linear-gradient(180deg, rgba(141, 173, 14, 1) 0%, rgba(71, 87, 7, 1) 100%);
+}
+
+.bg-ae-purple {
+    background: linear-gradient(180deg, rgba(126, 40, 214, 1) 0%, rgba(63, 20, 107, 1) 100%);
+}
+
+.bg-ae-orange {
+    background: linear-gradient(180deg, rgba(223, 69, 0, 1) 0%, rgba(112, 35, 0, 1) 100%);
+}
+
+.bg-ae-warning {
+    background: linear-gradient(180deg, rgba(223, 69, 0, 1) 0%, rgba(112, 35, 0, 1) 100%);
+}
+
+.bg-ae-pink {
+    background: linear-gradient(180deg, rgba(209, 35, 153, 1) 0%, rgba(105, 18, 77, 1) 100%);
+}
+
+.bg-ae-maroon {
+    background: linear-gradient(180deg, rgba(157, 14, 1, 1) 0%, rgba(79, 7, 1, 1) 100%);
+}
+
+.dashoard-details {
+    position: relative;
+    top: 100px;
+}
+
+.dashoard-details-bottom {
+    position: relative;
+    top: 200px;
+}
+
+h6.dashboard-name {
+    font-weight: 600;
+}
+
+.description-1,
+.description-2,
+.description-3,
+.description-4,
+.description-5,
+.description-6,
+.description-7,
+.description-8 {
+    position: absolute;
+}
+
+.description-1 img,
+.description-2 img,
+.description-3 img,
+.description-4 img,
+.description-5 img,
+.description-6 img,
+.description-7 img,
+.description-8 img {
+    width: 250px;
+}
+
+.text-description span {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    padding: 0 .5rem;
+    color: #000;
+    font-size: 12px;
+}
+
+.description-1,
+.description-3,
+.description-4 {
+    top: -90px;
+}
+
+
+.description-5,
+.description-8 {
+    top: -105px;
+}
+
+.description-2,
+.description-6,
+.description-7 {
+    top: 150px;
+}
+
+.description-2 {
+    left: 140px;
+}
+
+.description-6 {
+    left: -50px;
+}
+
+.description-7 {
+    left: 130px;
+}
+
+.description-2 .text-description span {
+    top: 35px;
+}
+
+.description-5 .text-description span {
+    left: 10px;
+}
+
+.description-6 .text-description span,
+.description-8 .text-description span {
+    top: 25px;
+}
+
+.description-7 .text-description span {
+    top: 30px;
+}
+
+.header-ae h1 {
+    position: fixed;
+    top: 100%;
+    right: 1%;
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #0066FF;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+@media (max-width:1399px) {
+
+    .bg-ae-red,
+    .bg-ae-primary,
+    .bg-ae-info,
+    .bg-ae-success,
+    .bg-ae-purple,
+    .bg-ae-orange,
+    .bg-ae-warning,
+    .bg-ae-pink,
+    .bg-ae-maroon {
+        width: 40%;
+        height: 90px;
+    }
+}
+
+@media (max-width:1199px) {
+
+    .description-1 img,
+    .description-2 img,
+    .description-3 img,
+    .description-4 img,
+    .description-5 img,
+    .description-6 img,
+    .description-7 img,
+    .description-8 img {
+        width: 185px;
+    }
+
+    .text-description span {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+.hexagon-bg {
+    position: relative;
+    top: 0;
+}
+
+.hexagon-live .hexagon-gradient,
+.hexagon-breach .hexagon-gradient,
+.hexagon-activity .hexagon-gradient,
+.hexagon-welcome .hexagon-gradient,
+.hexagon-sankey .hexagon-gradient,
+.hexagon-ed .hexagon-gradient,
+.hexagon-ambulance .hexagon-gradient,
+.hexagon-opel .hexagon-gradient,
+.hexagon-refferal .hexagon-gradient {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hexagon-live .hexagon-bg img,
+.hexagon-breach .hexagon-bg img,
+.hexagon-activity .hexagon-bg img,
+.hexagon-welcome .hexagon-bg img,
+.hexagon-sankey .hexagon-bg img,
+.hexagon-ed .hexagon-bg img,
+.hexagon-ambulance .hexagon-bg img,
+.hexagon-opel .hexagon-bg img,
+.hexagon-refferal .hexagon-bg img {
+    width: 150px;
+}
+
+.hexagon-live .hexagon-gradient img,
+.hexagon-breach .hexagon-gradient img,
+.hexagon-activity .hexagon-gradient img,
+.hexagon-welcome .hexagon-gradient img,
+.hexagon-sankey .hexagon-gradient img,
+.hexagon-ed .hexagon-gradient img,
+.hexagon-ambulance .hexagon-gradient img,
+.hexagon-opel .hexagon-gradient img,
+.hexagon-refferal .hexagon-gradient img {
+    width: 120px;
+}
+
+.hexagon-live .hexagon-gradient .hexagon-inner img,
+.hexagon-breach .hexagon-gradient .hexagon-inner img,
+.hexagon-activity .hexagon-gradient .hexagon-inner img,
+.hexagon-welcome .hexagon-gradient .hexagon-inner img,
+.hexagon-sankey .hexagon-gradient .hexagon-inner img,
+.hexagon-ed .hexagon-gradient .hexagon-inner img,
+.hexagon-ambulance .hexagon-gradient .hexagon-inner img,
+.hexagon-opel .hexagon-gradient .hexagon-inner img,
+.hexagon-refferal .hexagon-gradient .hexagon-inner img {
+    width: 100px;
+}
+
+.hexagon-live .hexagon-gradient .hexagon-inner .icon-status img,
+.hexagon-breach .hexagon-gradient .hexagon-inner .icon-status img,
+.hexagon-activity .hexagon-gradient .hexagon-inner .icon-status img,
+.hexagon-welcome .hexagon-gradient .hexagon-inner .icon-status img,
+.hexagon-sankey .hexagon-gradient .hexagon-inner .icon-status img,
+.hexagon-ed .hexagon-gradient .hexagon-inner .icon-status img,
+.hexagon-ambulance .hexagon-gradient .hexagon-inner .icon-status img,
+.hexagon-opel .hexagon-gradient .hexagon-inner .icon-status img,
+.hexagon-refferal .hexagon-gradient .hexagon-inner .icon-status img {
+    width: 40px;
+}
+
+.hexagon-inner {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+
+.hexagon-live {
+    position: absolute;
+    left: 18%;
+}
+
+.hexagon-live,
+.hexagon-breach,
+.hexagon-activity,
+.hexagon-welcome,
+.hexagon-sankey {
+    top: 190px;
+}
+
+.hexagon-live .content-live {
+    position: absolute;
+    top: -65%;
+    width: 350px;
+    left: -45%;
+}
+
+.hexagon-live .content-live,
+.hexagon-breach .content-breach,
+.hexagon-activity .content-activity,
+.hexagon-welcome .content-welcome,
+.hexagon-sankey .content-sankey,
+.hexagon-ed .content-ed,
+.hexagon-ambulance .content-ambulance,
+.hexagon-opel .content-opel,
+.hexagon-refferal .content-refferal {
+    width: 360px;
+    height: 120px;
+}
+
+.hexagon-live .content-live img,
+.hexagon-breach .content-breach img,
+.hexagon-activity .content-activity img,
+.hexagon-welcome .content-welcome img,
+.hexagon-sankey .content-sankey img,
+.hexagon-ambulance .content-ambulance img,
+.hexagon-opel .content-opel img,
+.hexagon-refferal .content-refferal img {
+    width: 320px;
+    height: auto;
+}
+
+.hexagon-ed .content-ed img {
+    width: 370px;
+    height: auto;
+}
+
+.icon-status {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hexagon-live .icon-status span.text-live {
+    position: absolute;
+    color: #fff;
+    font-weight: 500;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-live span,
+.content-breach span,
+.content-activity span,
+.content-welcome span,
+.content-sankey span,
+.content-ed span,
+.content-ambulance span,
+.content-opel span,
+.content-refferal span {
+    display: inline-block;
+    width: 285px;
+    font-size: 13px;
+    padding: 2rem 1.5rem;
+    position: relative;
+    left: 20px;
+    text-wrap: wrap;
+}
+
+.content-live span {
+    width: 300px;
+    bottom: 108%;
+    left: 0;
+    text-align: right;
+}
+
+.hexagon-live .icons-wrap,
+.hexagon-breach .icons-wrap,
+.hexagon-activity .icons-wrap,
+.hexagon-welcome .icons-wrap,
+.hexagon-sankey .icons-wrap,
+.hexagon-ed .icons-wrap,
+.hexagon-ambulance .icons-wrap,
+.hexagon-opel .icons-wrap,
+.hexagon-refferal .icons-wrap {
+    text-align: center;
+}
+
+span.dashboard-name {
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+}
+
+.hexagon-breach {
+    position: absolute;
+    left: 38%;
+}
+
+.hexagon-breach .content-breach {
+    position: absolute;
+    top: 92%;
+    left: 25%;
+}
+
+.hexagon-breach .content-breach span {
+    bottom: 95%;
+}
+
+.hexagon-activity {
+    position: absolute;
+    left: 58%;
+}
+
+.hexagon-activity .content-activity {
+    position: absolute;
+    top: -55%;
+    left: -72%;
+}
+
+.hexagon-activity .content-activity span {
+    bottom: 104%;
+    text-align: start;
+}
+
+.hexagon-sankey {
+    position: absolute;
+    left: 78%;
+}
+
+.hexagon-sankey .content-sankey {
+    position: absolute;
+    top: -55%;
+    left: -60%;
+}
+
+.hexagon-sankey .content-sankey span {
+    bottom: 104%;
+}
+
+.hexagon-ed {
+    position: absolute;
+    left: 18%;
+}
+
+.hexagon-ed,
+.hexagon-ambulance,
+.hexagon-opel,
+.hexagon-welcome,
+.hexagon-refferal {
+    top: 460px;
+}
+
+.hexagon-ed .content-ed {
+    position: absolute;
+    top: -66%;
+    left: -40%;
+}
+
+.hexagon-ed .content-ed span {
+    bottom: 133%;
+    left: 50px;
+}
+
+.hexagon-ambulance {
+    position: absolute;
+    left: 38%;
+}
+
+.hexagon-ambulance .content-ambulance {
+    position: absolute;
+    top: 95%;
+    right: -20%;
+}
+
+.hexagon-ambulance .content-ambulance span {
+    bottom: 102%;
+    left: 20px;
+}
+
+.hexagon-opel {
+    position: absolute;
+    left: 58%;
+}
+
+.hexagon-opel .content-opel {
+    position: absolute;
+    top: 95%;
+    left: 20%;
+}
+
+.hexagon-opel .content-opel span {
+    bottom: 104%;
+    left: 15px;
+    text-align: center;
+}
+
+.hexagon-welcome,
+.hexagon-refferal {
+    position: absolute;
+    left: 78%;
+}
+
+.hexagon-welcome .content-welcome,
+.hexagon-refferal .content-refferal {
+    position: absolute;
+    top: -56%;
+    left: -62%;
+}
+
+.hexagon-welcome .content-welcome span,
+.hexagon-refferal .content-refferal span {
+    bottom: 108%;
+    left: 30px;
+}
+
+.custom-hexagon-1 {
+    position: absolute;
+    right: 100%;
+    top: 45%;
+}
+
+.custom-hexagon-2 {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+}
+
+.custom-hexagon-3 {
+    position: absolute;
+    left: -60%;
+    top: 75%;
+}
+
+.custom-hexagon-4 {
+    position: absolute;
+    right: -40%;
+    top: 42%;
+}
+
+.custom-hexagon-5 {
+    position: absolute;
+    right: -85%;
+    top: 50%;
+}
+
+.custom-hexagon-6 {
+    position: absolute;
+    left: 20%;
+    top: -50%;
+}
+
+.header-ae h1 {
+    position: fixed;
+    top: 100%;
+    right: 3.5%;
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 4.5rem;
+    color: #0066FF;
+    margin-bottom: 0;
+}
+
+/* Media Query */
+
+@media (min-width:2700px) {
+
+    .header-ae h1 {
+        top: 55%;
+        right: 11%;
+    }
+}
+
+@media (max-width:2699px) and (min-width:2000px) {
+    .header-ae h1 {
+        top: 78%;
+        right: 8.5%;
+    }
+}
+
+@media (max-width:1999px) and (min-width:1800px) {
+    .header-ae h1 {
+        top: 90%;
+        right: 7%;
+    }
+}
+
+@media (max-width:1799px) and (min-width:1700px) {
+    .header-ae h1 {
+        top: 90%;
+        right: 6.5%;
+    }
+}
+
+@media (min-width:1700px) {
+    .hexagon-ed .content-ed {
+        position: absolute;
+        top: -66%;
+        left: -40%;
+    }
+}
+
+@media (max-width:1699px) and (min-width:1400px) {
+
+    .hexagon-live .hexagon-bg img,
+    .hexagon-breach .hexagon-bg img,
+    .hexagon-activity .hexagon-bg img,
+    .hexagon-welcome .hexagon-bg img,
+    .hexagon-sankey .hexagon-bg img,
+    .hexagon-ed .hexagon-bg img,
+    .hexagon-ambulance .hexagon-bg img,
+    .hexagon-opel .hexagon-bg img,
+    .hexagon-refferal .hexagon-bg img {
+        width: 140px;
+    }
+
+    .hexagon-live .hexagon-gradient img,
+    .hexagon-breach .hexagon-gradient img,
+    .hexagon-activity .hexagon-gradient img,
+    .hexagon-welcome .hexagon-gradient img,
+    .hexagon-sankey .hexagon-gradient img,
+    .hexagon-ed .hexagon-gradient img,
+    .hexagon-ambulance .hexagon-gradient img,
+    .hexagon-opel .hexagon-gradient img,
+    .hexagon-refferal .hexagon-gradient img {
+        width: 110px;
+    }
+
+    .hexagon-live .hexagon-gradient .hexagon-inner img,
+    .hexagon-breach .hexagon-gradient .hexagon-inner img,
+    .hexagon-activity .hexagon-gradient .hexagon-inner img,
+    .hexagon-welcome .hexagon-gradient .hexagon-inner img,
+    .hexagon-sankey .hexagon-gradient .hexagon-inner img,
+    .hexagon-ed .hexagon-gradient .hexagon-inner img,
+    .hexagon-ambulance .hexagon-gradient .hexagon-inner img,
+    .hexagon-opel .hexagon-gradient .hexagon-inner img,
+    .hexagon-refferal .hexagon-gradient .hexagon-inner img {
+        width: 90px;
+    }
+
+    .hexagon-live .content-live,
+    .hexagon-breach .content-breach,
+    .hexagon-activity .content-activity,
+    .hexagon-welcome .content-welcome,
+    .hexagon-sankey .content-sankey,
+    .hexagon-ed .content-ed,
+    .hexagon-ambulance .content-ambulance,
+    .hexagon-opel .content-opel,
+    .hexagon-refferal .content-refferal {
+        width: 310px;
+        height: 120px;
+    }
+
+    .hexagon-live .content-live img,
+    .hexagon-breach .content-breach img,
+    .hexagon-activity .content-activity img,
+    .hexagon-welcome .content-welcome img,
+    .hexagon-sankey .content-sankey img,
+    .hexagon-ambulance .content-ambulance img,
+    .hexagon-opel .content-opel img,
+    .hexagon-refferal .content-refferal img {
+        width: 320px;
+        height: 110px;
+    }
+
+    .hexagon-ed, .hexagon-ambulance,
+    .hexagon-opel, .hexagon-welcome,
+    .hexagon-refferal {
+        top: 440px;
+    }
+
+    span.dashboard-name {
+        top: -8px;
+    }
+
+    .hexagon-ed .content-ed {
+        left: -60%;
+        top: -64%;
+    }
+
+    .hexagon-breach .content-breach {
+        left: 5%;
+        top: 93%;
+    }
+
+    .hexagon-ambulance .content-ambulance {
+        right: 20%;
+    }
+
+    .hexagon-live .content-live {
+        top: -60%;
+        left: -50%;
+    }
+
+    .hexagon-activity .content-activity {
+        top: -52%;
+        left: -70%;
+    }
+
+    .hexagon-sankey .content-sankey {
+        top: -52%;
+        left: -70%;
+    }
+
+    .hexagon-ed .content-ed img {
+        width: 410px;
+        height: 140px;
+    }
+
+    .hexagon-ed .content-ed span {
+        bottom: 131%;
+        left: 75px;
+    }
+
+    .hexagon-welcome .content-welcome,
+    .hexagon-refferal .content-refferal {
+        top: -51%;
+        left: -70%;
+    }
+
+    .content-live span,
+    .hexagon-activity .content-activity span,
+    .hexagon-sankey .content-sankey span,
+    .hexagon-welcome .content-welcome span,
+    .hexagon-refferal .content-refferal span {
+        bottom: 98%;
+    }
+
+    .hexagon-breach .content-breach span {
+        bottom: 90%;
+    }
+
+    .hexagon-ambulance .content-ambulance span {
+        bottom: 98%;
+        left: 30px;
+    }
+
+    .hexagon-opel .content-opel span {
+        bottom: 96%;
+    }
+
+    .header-ae h1 {
+        top: 88%;
+        right: 4.5%;
+    }
+}
+
+@media (max-width:1399px) and (min-width:1200px) {
+
+    .hexagon-live .hexagon-bg img,
+    .hexagon-breach .hexagon-bg img,
+    .hexagon-activity .hexagon-bg img,
+    .hexagon-welcome .hexagon-bg img,
+    .hexagon-sankey .hexagon-bg img,
+    .hexagon-ed .hexagon-bg img,
+    .hexagon-ambulance .hexagon-bg img,
+    .hexagon-opel .hexagon-bg img,
+    .hexagon-refferal .hexagon-bg img {
+        width: 120px;
+    }
+
+    .hexagon-live .hexagon-gradient img,
+    .hexagon-breach .hexagon-gradient img,
+    .hexagon-activity .hexagon-gradient img,
+    .hexagon-welcome .hexagon-gradient img,
+    .hexagon-sankey .hexagon-gradient img,
+    .hexagon-ed .hexagon-gradient img,
+    .hexagon-ambulance .hexagon-gradient img,
+    .hexagon-opel .hexagon-gradient img,
+    .hexagon-refferal .hexagon-gradient img {
+        width: 90px;
+    }
+
+    .hexagon-live .hexagon-gradient .hexagon-inner img,
+    .hexagon-breach .hexagon-gradient .hexagon-inner img,
+    .hexagon-activity .hexagon-gradient .hexagon-inner img,
+    .hexagon-welcome .hexagon-gradient .hexagon-inner img,
+    .hexagon-sankey .hexagon-gradient .hexagon-inner img,
+    .hexagon-ed .hexagon-gradient .hexagon-inner img,
+    .hexagon-ambulance .hexagon-gradient .hexagon-inner img,
+    .hexagon-opel .hexagon-gradient .hexagon-inner img,
+    .hexagon-refferal .hexagon-gradient .hexagon-inner img {
+        width: 70px;
+    }
+
+    .hexagon-live .content-live img,
+    .hexagon-breach .content-breach img,
+    .hexagon-activity .content-activity img,
+    .hexagon-welcome .content-welcome img,
+    .hexagon-sankey .content-sankey img,
+    .hexagon-ed .content-ed img,
+    .hexagon-ambulance .content-ambulance img,
+    .hexagon-opel .content-opel img,
+    .hexagon-refferal .content-refferal img {
+        width: 280px;
+        height: auto;
+    }
+
+    .hexagon-live .content-live,
+    .hexagon-breach .content-breach,
+    .hexagon-activity .content-activity,
+    .hexagon-welcome .content-welcome,
+    .hexagon-sankey .content-sankey,
+    .hexagon-ed .content-ed,
+    .hexagon-ambulance .content-ambulance,
+    .hexagon-opel .content-opel,
+    .hexagon-refferal .content-refferal {
+        width: 270px;
+        height: 120px;
+    }
+
+    .content-live span,
+    .content-breach span,
+    .content-activity span,
+    .content-welcome span,
+    .content-sankey span,
+    .content-ed span,
+    .content-ambulance span,
+    .content-opel span,
+    .content-refferal span {
+        display: inline-block;
+        width: 245px;
+        font-size: 11px;
+        padding: 2rem 1.5rem;
+        position: relative;
+        left: 20px;
+        text-wrap: wrap;
+    }
+
+    .hexagon-ed,
+    .hexagon-ambulance,
+    .hexagon-opel,
+    .hexagon-welcome,
+    .hexagon-refferal {
+        top: 430px;
+    }
+
+    .hexagon-live .content-live {
+        left: -51%;
+        top: -68%;
+    }
+
+    .hexagon-breach .content-breach {
+        left: 8%;
+    }
+
+    .hexagon-activity .content-activity {
+        top: -58%;
+        left: -80%;
+    }
+
+    .hexagon-sankey .content-sankey {
+        top: -58%;
+        left: -55%;
+    }
+
+    .hexagon-welcome .content-welcome {
+        top: -60%;
+    }
+
+    .hexagon-ed .content-ed {
+        top: -62%;
+        left: -30%;
+    }
+
+    .hexagon-ambulance .content-ambulance {
+        right: 15%;
+    }
+
+    .content-live span {
+        bottom: 95%;
+        left: 10px;
+    }
+
+    .hexagon-activity .content-activity span {
+        bottom: 95%;
+        text-align: start;
+    }
+
+    .hexagon-welcome .content-welcome span {
+        bottom: 95%;
+        left: 25px;
+    }
+
+    .hexagon-ed .content-ed span {
+        bottom: 112%;
+        left: 30px;
+    }
+
+    .hexagon-breach .content-breach span {
+        bottom: 88%;
+    }
+
+    .hexagon-sankey .content-sankey span {
+        bottom: 96%;
+        left: 25px;
+    }
+
+    .hexagon-refferal .content-refferal span {
+        bottom: 95%;
+        left: 25px;
+    }
+
+    .hexagon-ambulance .content-ambulance span {
+        bottom: 92%;
+    }
+
+    .hexagon-opel .content-opel span {
+        bottom: 93%;
+        left: 20px;
+    }
+
+    .custom-hexagon-1 {
+        right: 85%;
+    }
+
+    .custom-hexagon-2 img {
+        width: 70px;
+    }
+
+    .custom-hexagon-3 {
+        left: -76%;
+        top: 65%;
+    }
+
+    .custom-hexagon-4 {
+        right: -45%;
+        top: 35%;
+    }
+
+    .custom-hexagon-5 {
+        top: 40%;
+        right: -100%;
+    }
+
+    .custom-hexagon-6 {
+        left: 10%;
+    }
+
+    .header-ae h1 {
+        top: 88%;
+        right: 5%;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+
+
+    .hexagon-live .hexagon-bg img,
+    .hexagon-breach .hexagon-bg img,
+    .hexagon-activity .hexagon-bg img,
+    .hexagon-welcome .hexagon-bg img,
+    .hexagon-sankey .hexagon-bg img,
+    .hexagon-ed .hexagon-bg img,
+    .hexagon-ambulance .hexagon-bg img,
+    .hexagon-opel .hexagon-bg img,
+    .hexagon-refferal .hexagon-bg img {
+        width: 100px;
+    }
+
+    .hexagon-live .hexagon-gradient img,
+    .hexagon-breach .hexagon-gradient img,
+    .hexagon-activity .hexagon-gradient img,
+    .hexagon-welcome .hexagon-gradient img,
+    .hexagon-sankey .hexagon-gradient img,
+    .hexagon-ed .hexagon-gradient img,
+    .hexagon-ambulance .hexagon-gradient img,
+    .hexagon-opel .hexagon-gradient img,
+    .hexagon-refferal .hexagon-gradient img {
+        width: 70px;
+    }
+
+    .hexagon-live .hexagon-gradient .hexagon-inner img,
+    .hexagon-breach .hexagon-gradient .hexagon-inner img,
+    .hexagon-activity .hexagon-gradient .hexagon-inner img,
+    .hexagon-welcome .hexagon-gradient .hexagon-inner img,
+    .hexagon-sankey .hexagon-gradient .hexagon-inner img,
+    .hexagon-ed .hexagon-gradient .hexagon-inner img,
+    .hexagon-ambulance .hexagon-gradient .hexagon-inner img,
+    .hexagon-opel .hexagon-gradient .hexagon-inner img,
+    .hexagon-refferal .hexagon-gradient .hexagon-inner img {
+        width: 50px;
+    }
+
+    .hexagon-live .hexagon-gradient .hexagon-inner .icon-status img,
+    .hexagon-breach .hexagon-gradient .hexagon-inner .icon-status img,
+    .hexagon-activity .hexagon-gradient .hexagon-inner .icon-status img,
+    .hexagon-welcome .hexagon-gradient .hexagon-inner .icon-status img,
+    .hexagon-sankey .hexagon-gradient .hexagon-inner .icon-status img,
+    .hexagon-ed .hexagon-gradient .hexagon-inner .icon-status img,
+    .hexagon-ambulance .hexagon-gradient .hexagon-inner .icon-status img,
+    .hexagon-opel .hexagon-gradient .hexagon-inner .icon-status img,
+    .hexagon-refferal .hexagon-gradient .hexagon-inner .icon-status img {
+        width: 25px;
+    }
+
+    .hexagon-live .content-live img,
+    .hexagon-breach .content-breach img,
+    .hexagon-activity .content-activity img,
+    .hexagon-welcome .content-welcome img,
+    .hexagon-sankey .content-sankey img,
+    .hexagon-ed .content-ed img,
+    .hexagon-ambulance .content-ambulance img,
+    .hexagon-opel .content-opel img,
+    .hexagon-refferal .content-refferal img {
+        width: 230px;
+        height: auto;
+    }
+
+    .hexagon-live .content-live,
+    .hexagon-breach .content-breach,
+    .hexagon-activity .content-activity,
+    .hexagon-welcome .content-welcome,
+    .hexagon-sankey .content-sankey,
+    .hexagon-ed .content-ed,
+    .hexagon-ambulance .content-ambulance,
+    .hexagon-opel .content-opel,
+    .hexagon-refferal .content-refferal {
+        width: 190px;
+        height: 120px;
+    }
+
+    .content-live span,
+    .content-breach span,
+    .content-activity span,
+    .content-welcome span,
+    .content-sankey span,
+    .content-ed span,
+    .content-ambulance span,
+    .content-opel span,
+    .content-refferal span {
+        display: inline-block;
+        width: 220px;
+        font-size: 10px;
+        padding: 2rem 1.5rem;
+        position: relative;
+        left: 20px;
+        text-wrap: wrap;
+    }
+
+    .hexagon-ed .content-ed img {
+        width: 260px;
+    }
+
+    .hexagon-ed,
+    .hexagon-ambulance,
+    .hexagon-opel,
+    .hexagon-welcome,
+    .hexagon-refferal {
+        top: 405px;
+    }
+
+    .hexagon-live .content-live {
+        top: -70%;
+        left: -55%;
+    }
+
+    .hexagon-breach .content-breach {
+        left: 15%;
+    }
+
+    .hexagon-activity .content-activity {
+        top: -58%;
+        left: -85%;
+    }
+
+    .hexagon-ed .content-ed {
+        top: -65%;
+        left: -60%;
+    }
+
+    .hexagon-ambulance .content-ambulance {
+        right: 45%;
+    }
+
+    .content-live span {
+        bottom: 86%;
+        left: -20px;
+    }
+
+    .hexagon-activity .content-activity span {
+        bottom: 91%;
+        text-align: start;
+    }
+
+    .hexagon-welcome .content-welcome span {
+        bottom: 85%;
+        left: 10px;
+    }
+
+    .hexagon-ed .content-ed span {
+        bottom: 105%;
+        left: 25px;
+    }
+
+    .hexagon-breach .content-breach span {
+        bottom: 80%;
+        left: 10px;
+    }
+
+    .hexagon-sankey .content-sankey span {
+        bottom: 85%;
+        left: 10px;
+    }
+
+    .hexagon-refferal .content-refferal span {
+        bottom: 95%;
+        left: 25px;
+    }
+
+    .hexagon-ambulance .content-ambulance span {
+        bottom: 85%;
+        left: 10px;
+    }
+
+    .hexagon-opel .content-opel span {
+        bottom: 85%;
+        left: 10px;
+    }
+
+    .custom-hexagon-1 {
+        right: 80%;
+        top: 30%;
+    }
+
+    .custom-hexagon-3 {
+        left: -70%;
+    }
+
+    .custom-hexagon-4 {
+        right: -46%;
+    }
+
+    .custom-hexagon-5 {
+        right: -110%;
+    }
+
+    .custom-hexagon-6 {
+        left: 0%;
+        top: -58%;
+    }
+
+    .header-ae h1 {
+        top: 82%;
+        right: 2.5%;
+    }
+
+    .hexagon-live .icon-status span.text-live {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .hexagon-live .hexagon-bg img,
+    .hexagon-breach .hexagon-bg img,
+    .hexagon-activity .hexagon-bg img,
+    .hexagon-welcome .hexagon-bg img,
+    .hexagon-sankey .hexagon-bg img,
+    .hexagon-ed .hexagon-bg img,
+    .hexagon-ambulance .hexagon-bg img,
+    .hexagon-opel .hexagon-bg img,
+    .hexagon-refferal .hexagon-bg img {
+        width: 130px;
+    }
+
+    .hexagon-live .hexagon-gradient,
+    .hexagon-breach .hexagon-gradient,
+    .hexagon-activity .hexagon-gradient,
+    .hexagon-welcome .hexagon-gradient,
+    .hexagon-sankey .hexagon-gradient,
+    .hexagon-ed .hexagon-gradient,
+    .hexagon-ambulance .hexagon-gradient,
+    .hexagon-opel .hexagon-gradient,
+    .hexagon-refferal .hexagon-gradient {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hexagon-live .hexagon-gradient img,
+    .hexagon-breach .hexagon-gradient img,
+    .hexagon-activity .hexagon-gradient img,
+    .hexagon-welcome .hexagon-gradient img,
+    .hexagon-sankey .hexagon-gradient img,
+    .hexagon-ed .hexagon-gradient img,
+    .hexagon-ambulance .hexagon-gradient img,
+    .hexagon-opel .hexagon-gradient img,
+    .hexagon-refferal .hexagon-gradient img {
+        width: 100px;
+    }
+
+    .hexagon-live .hexagon-gradient .hexagon-inner img,
+    .hexagon-breach .hexagon-gradient .hexagon-inner img,
+    .hexagon-activity .hexagon-gradient .hexagon-inner img,
+    .hexagon-welcome .hexagon-gradient .hexagon-inner img,
+    .hexagon-sankey .hexagon-gradient .hexagon-inner img,
+    .hexagon-ed .hexagon-gradient .hexagon-inner img,
+    .hexagon-ambulance .hexagon-gradient .hexagon-inner img,
+    .hexagon-opel .hexagon-gradient .hexagon-inner img,
+    .hexagon-refferal .hexagon-gradient .hexagon-inner img {
+        width: 80px;
+    }
+
+    .hexagon-live,
+    .hexagon-breach,
+    .hexagon-activity,
+    .hexagon-sankey,
+    .hexagon-welcome,
+    .hexagon-ed,
+    .hexagon-ambulance,
+    .hexagon-opel,
+    .hexagon-refferal {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .content-sm-shape-1 img,
+    .content-sm-shape-2 img,
+    .content-sm-shape-3 img,
+    .content-sm-shape-4 img,
+    .content-sm-shape-5 img,
+    .content-sm-shape-6 img,
+    .content-sm-shape-7 img,
+    .content-sm-shape-8 img,
+    .content-sm-shape-9 img {
+        width: 300px;
+        height: 140px;
+    }
+
+    .content-sm-shape-1,
+    .content-sm-shape-2,
+    .content-sm-shape-3,
+    .content-sm-shape-4,
+    .content-sm-shape-5,
+    .content-sm-shape-6,
+    .content-sm-shape-7,
+    .content-sm-shape-8,
+    .content-sm-shape-9 {
+        left: -85px;
+    }
+
+    .content-sm-shape-1 {
+        position: absolute;
+        top: 120px;
+    }
+
+    .content-sm-shape-2,
+    .content-sm-shape-3,
+    .content-sm-shape-4,
+    .content-sm-shape-5,
+    .content-sm-shape-6,
+    .content-sm-shape-7,
+    .content-sm-shape-8,
+    .content-sm-shape-9 {
+        position: absolute;
+        top: 140px;
+    }
+
+    .content-sm-shape-1 span,
+    .content-sm-shape-2 span,
+    .content-sm-shape-3 span,
+    .content-sm-shape-4 span,
+    .content-sm-shape-5 span,
+    .content-sm-shape-6 span,
+    .content-sm-shape-7 span,
+    .content-sm-shape-8 span,
+    .content-sm-shape-9 span {
+        font-size: 10px;
+        text-align: center;
+        position: absolute;
+        padding: 0 2rem;
+        top: 45px;
+    }
+
+    .content-sm-shape-1 span {
+        top: 55px;
+    }
+
+    .content-sm-shape-2 span,
+    .content-sm-shape-3 span,
+    .content-sm-shape-4 span,
+    .content-sm-shape-5 span {
+        top: 50px;
+    }
+
+    .content-sm-shape-8 span {
+        top: 50px;
+        left: 6px;
+    }
+
+    .hexagon-live {
+        top: 70px;
+    }
+
+    .hexagon-breach {
+        top: 290px;
+    }
+
+    .hexagon-activity {
+        top: 530px;
+    }
+
+    .hexagon-sankey {
+        top: 770px;
+    }
+
+    .hexagon-ed {
+        top: 1010px;
+    }
+
+    .hexagon-ambulance {
+        top: 1250px;
+    }
+
+    .hexagon-opel {
+        top: 1490px;
+
+    }
+
+    .hexagon-welcome {
+        top: 1730px;
+    }
+
+    .hexagon-refferal {
+        top: 1970px;
+    }
+
+    .header-ae-mobile h1 {
+        position: absolute;
+        top: 145%;
+        right: 0%;
+        font-family: 'Rubik';
+        font-size: 4rem;
+        font-weight: 600;
+        color: #0066FF;
+    }
+
+    .sm-hexagon-1,
+    .sm-hexagon-2 {
+        position: absolute;
+        top: 50%;
+    }
+
+    .sm-hexagon-1 {
+        left: 90%;
+    }
+
+    .sm-hexagon-2 {
+        right: 90%;
+    }
+
+    .sm-hexagon-3 {
+        position: absolute;
+        top: -8%;
+        left: 90%;
+    }
+
+    .sm-hexagon-4 {
+        position: absolute;
+        top: 35%;
+        left: 95%;
+    }
+
+    .sm-hexagon-5 {
+        position: absolute;
+        top: 25%;
+        right: 90%;
+    }
+
+    .sm-hexagon-6 {
+        position: absolute;
+        top: 67%;
+        right: 93%;
+    }
+
+    .sm-hexagon-7 {
+        position: absolute;
+        top: 25%;
+        right: 90%;
+    }
+
+    .sm-hexagon-8 {
+        position: absolute;
+        top: 47%;
+        right: 85%;
+    }
+
+    .sm-hexagon-9 {
+        position: absolute;
+        top: 45%;
+        left: 80%;
+
+    }
+
+    .sm-hexagon-10 {
+        position: absolute;
+        top: 25%;
+        right: 90%;
+    }
+
+    .sm-hexagon-11 {
+        position: absolute;
+        top: 65%;
+        left: 80%;
+    }
+
+    .sm-hexagon-12 {
+        position: absolute;
+        top: -8%;
+        left: 90%;
+    }
+
+    .sm-hexagon-13 {
+        position: absolute;
+        top: 35%;
+        left: 95%;
+    }
+
+    .sm-hexagon-14 {
+        position: absolute;
+        top: 0;
+        right: 90%;
+    }
+
+    .sm-hexagon-15 {
+        position: absolute;
+        top: 27%;
+        left: 90%;
+    }
+
+    .sm-hexagon-16 {
+        position: absolute;
+        top: 70%;
+        left: 95%;
+    }
+}

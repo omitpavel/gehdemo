@@ -1,0 +1,211 @@
+.btn-search {
+    background: linear-gradient(180deg, rgba(0, 140, 225, 1) 0%, rgba(0, 125, 202, 1) 100%);
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+    padding: .5rem;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+}
+
+.fixed-height .form-control,
+.fixed-height .btn-search {
+    min-height: 35px;
+}
+
+.btn-search:hover {
+    color: #fff;
+}
+
+.card-search-results {
+    padding: 0;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.card-search-results .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem .5rem;
+    min-height: 35px;
+}
+
+.card-search-results .name-header span {
+    font-weight: 500;
+}
+
+.table-search-results {
+    font-size: 12px;
+}
+
+.table-search-results thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.table-search-results thead tr th {
+    color: #fff;
+    font-weight: 400;
+}
+
+.table-search-results thead tr th,
+.table-search-results tbody tr td {
+    padding: 8px;
+}
+
+.table-search-results tbody tr:nth-child(odd) {
+    background-color: #F2F2F3;
+}
+
+.table-search-results tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.table-search-results .btn-info {
+    background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+    padding: 0.25rem 0.5rem;
+    box-shadow: 3px 4px 6px rgba(85, 85, 85, 0.4);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+}
+
+.table-search-results .btn-info:hover {
+    color: #fff;
+}
+
+.discharge-summary-modal.offcanvas-end {
+    width: 90%;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) and (max-width:1199px) {
+    .table-search-results .btn-info {
+        font-size: 10px;
+    }
+}
+
+@media (min-width:1026px) {
+    .table-search-results tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-search-results tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .table-search-results {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .table-search-results tbody tr td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+
+@media (max-width:1199px) {
+    .discharge-summary-modal.offcanvas-end {
+        width: 100%;
+    }
+}
+
+@media (max-width:1025px) {
+
+    .table-search-results tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .table-search-results tbody tr:nth-child(even) {
+        background-color: #CEDDF5;
+    }
+
+    .responsiveTable td.pivoted.assign-task {
+        justify-content: center;
+    }
+
+    .responsiveTable td .tdBefore {
+        white-space: nowrap;
+    }
+
+    .responsiveTable td.pivoted {
+        border-right: none;
+    }
+
+    .card-search-results {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .card-search-results .name-header {
+        padding: 0.5rem;
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000038;
+        border-radius: 7px;
+        margin-bottom: .5rem;
+    }
+
+    .card-search-results .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .table-search-results .btn-info {
+        padding: .25rem;
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width:991px) and (min-width:768px) {
+
+    .card-search-results .responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .card-search-results .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .card-search-results .responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 6px 0;
+    }
+}
+
+@media (max-width:767px) {
+
+    .card-search-results .name-header,
+    .btn-info,
+    .fixed-height .btn-search {
+        border-radius: 4px;
+    }
+
+    .card-search-results .responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .card-search-results .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 4px 0;
+    }
+
+}
+
+@media (max-width:374px) {
+    .table-search-results .btn-info {
+        font-size: 10px;
+    }
+}

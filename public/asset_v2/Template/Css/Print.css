@@ -1,0 +1,463 @@
+@media print {
+    :root {
+        --bg-grey-gradient: #F8F8F8;
+    }
+
+    @page {
+        margin: .5rem;
+        size: A4;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        background-color: #fff;
+    }
+
+    table {
+        width: 1000px;
+        border-collapse: collapse;
+        table-layout: fixed;
+        margin: .25rem;
+    }
+
+    tr {
+        page-break-inside: avoid;
+        display: block;
+        width: 100%;
+    }
+
+    .responsiveTable td .tdBefore {
+        display: none;
+    }
+
+    .responsiveTable thead tr,
+    .table-discharge-details thead tr,
+    .card-table-listing .table-listing thead {
+        display: block;
+    }
+
+    .wards-patients-details .custom-card .responsiveTable tbody tr:nth-child(odd),
+    .wards-patients-details .custom-card .responsiveTable tbody tr:nth-child(even),
+    table tbody tr:nth-child(odd),
+    .doctor-work-plan .work-plan .plan-details:nth-child(odd),
+    .nurse-work-plan .work-plan .plan-details:nth-child(odd),
+    .table-medfit tbody tr:nth-child(odd),
+    .table-bed-flags tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    table tbody tr:nth-child(even),
+    .doctor-work-plan .work-plan .plan-details:nth-child(even),
+    .nurse-work-plan .work-plan .plan-details:nth-child(even),
+    .table-medfit tbody tr:nth-child(even),
+    .table-bed-flags tbody tr:nth-child(even) {
+        background-color: #F2F2F3;
+    }
+
+    table thead tr th,
+    table tbody tr td {
+        padding: 8px 4px;
+        border-right: none;
+    }
+
+    .table-completed-tasks thead tr {
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000038;
+        border-radius: 0;
+    }
+
+    .table-completed-tasks thead tr th {
+        border-right: none;
+    }
+
+    .table-completed-tasks thead tr th:first-child,
+    .table-completed-tasks tbody tr td:first-child {
+        width: 70px;
+        min-width: 70px;
+    }
+
+    .table-completed-tasks thead tr th,
+    .table-completed-tasks tbody tr td {
+        width: 160px;
+        min-width: 160px;
+    }
+
+    .table-completed-tasks thead tr th:nth-child(2),
+    .table-completed-tasks tbody tr td:nth-child(2) {
+        width: 610px;
+        min-width: 610px;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments tbody {
+        max-height: none;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments thead th:first-child,
+    .pharmacy-comments .table-pharmacy-comments tbody td:first-child {
+        width: 600px;
+        min-width: 600px;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments thead th,
+    .pharmacy-comments .table-pharmacy-comments tbody td {
+        width: 200px;
+        min-width: 200px;
+        border-right: none;
+    }
+
+    .card-history .responsiveTable thead th:first-child,
+    .card-history .responsiveTable tbody td:first-child {
+        width: 70px !important;
+        min-width: 70px;
+        text-align: center;
+    }
+
+    .card-history .responsiveTable thead th,
+    .card-history .responsiveTable tbody td {
+        width: 465px !important;
+        min-width: 465px;
+        border-right: none;
+    }
+
+    .card-dischage-summary,
+    .card-shadow {
+        box-shadow: none;
+    }
+
+    .blue-rectangle-block {
+        background: var(--primary-blue);
+        box-shadow: 0px 3px 6px #00000038;
+        border-radius: 7px 7px 0 0;
+        padding: 0.5rem;
+        color: #fff;
+    }
+
+    .table-discharge-details thead tr,
+    .ae-summary .table-discharge-details.responsiveTable tbody tr:last-child {
+        border-radius: 0;
+    }
+
+    .treatment-section .rectangle-block-1 {
+        margin-bottom: .5rem;
+    }
+
+    .table-discharge-details tr th {
+        border-top: none;
+    }
+
+    .card-shadow.refferal {
+        margin-top: .5rem;
+    }
+
+    .patient-details-card table.table-discharge-details thead tr th,
+    .patient-details-card table.table-discharge-details tbody tr td,
+    .linked-attendance-details table.table-discharge-details thead tr th,
+    .linked-attendance-details table.table-discharge-details tbody tr td,
+    .management-plan table.table-discharge-details thead tr th,
+    .management-plan table.table-discharge-details tbody tr td,
+    .clinician table.table-discharge-details thead tr th,
+    .clinician table.table-discharge-details tbody tr td,
+    .notes-table table.table-discharge-details thead tr th,
+    .notes-table table.table-discharge-details tbody tr td {
+        width: 200px;
+        min-width: 200px;
+    }
+
+    .attendance-details table.table-discharge-details thead tr th,
+    .attendance-details table.table-discharge-details tbody tr td,
+    .alerts table.table-discharge-details thead tr th,
+    .alerts table.table-discharge-details tbody tr td {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .triage-table table.table-discharge-details thead tr th,
+    .triage-table table.table-discharge-details tbody tr td {
+        width: 125px;
+        min-width: 125px;
+    }
+
+    .refferal table.table-discharge-details thead tr th,
+    .refferal .table-discharge-details tbody tr td,
+    .treatment-section table.table-discharge-details thead tr th,
+    .treatment-section .table-discharge-details tbody tr td,
+    .ice-order-section table.table-discharge-details thead tr th,
+    .ice-order-section table.table-discharge-details tbody tr td,
+    .investigations table.table-discharge-details thead tr th,
+    .investigations table.table-discharge-details tbody tr td {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .card-table-listing .table-listing thead tr {
+        background: var(--primary-blue);
+        box-shadow: 0px 3px 6px #00000038;
+        border-radius: 0;
+    }
+
+    .card-table-listing .table-listing tbody tr {
+        border-radius: 0;
+    }
+
+    .card-table-listing table.table-listing thead tr th,
+    .card-table-listing table.table-listing tbody tr td {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .card-table-listing.bed-reservation table.table-listing thead tr th:first-child,
+    .card-table-listing.bed-reservation table.table-listing tbody tr td:first-child {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .card-table-listing.bed-reservation table.table-listing thead tr th,
+    .card-table-listing.bed-reservation table.table-listing tbody tr td {
+        width: 150px;
+        min-width: 150px;
+    }
+
+    .card-table-listing.discharge-patient-offcanvas table.table-listing thead tr th,
+    .card-table-listing.discharge-patient-offcanvas table.table-listing tbody tr td {
+        width: 125px;
+        min-width: 125px;
+    }
+
+    .reason-section p.reason,
+    .task-comments-section .handover-tasks-row .handover-tasks-col-1 .completed-tasks {
+        height: auto;
+    }
+
+    .nutrition-comment,
+    .task-comments-section {
+        height: 100%;
+    }
+
+    .nutrition-comment .form-control {
+        overflow: visible;
+        resize: none;
+        min-height: 100%;
+        height: 100%;
+    }
+
+    .handover-modal .task-comments-section .card-comment-grp,
+    .handover-modal .task-comments-section .card-comment-grp .form-control {
+        overflow: hidden;
+        resize: none;
+        height: auto;
+        min-height: auto;
+    }
+
+    .handover-modal,
+    .doctor-work-plan,
+    .nurse-work-plan,
+    .potential-dsicharge-list {
+        margin: .25rem;
+    }
+
+    .nurse-work-plan div.selectric-wrapper,
+    .doctor-work-plan div.selectric-wrapper {
+        display: none;
+    }
+
+    .doctor-work-plan .work-plan .name-header,
+    .nurse-work-plan .work-plan .name-header {
+        background: var(--primary-blue);
+    }
+
+    .table-medfit thead tr {
+        border-radius: 0;
+    }
+
+    .table-medfit thead tr th:first-child,
+    .table-medfit tbody tr td:first-child {
+        width: 190px;
+        min-width: 190px;
+    }
+
+    .table-medfit thead tr th,
+    .table-medfit tbody tr td {
+        width: 135px;
+        border-right: none !important;
+    }
+
+    .bg-sticky {
+        background: transparent;
+    }
+
+    .patients-details .wards-patients-details {
+        margin-bottom: .5rem;
+    }
+
+    .patients-details .marked-wrapper,
+    .patients-details .table-patient-row-1,
+    .patients-details .table-patient-row-2 {
+        width: 100% !important;
+    }
+
+    .patients-details .table-patient-row-1 {
+        background-color: transparent;
+    }
+
+    .patients-details .responsiveTable td .tdBefore {
+        display: block;
+    }
+
+    .table-patient-row-2 .card-col-grp .row .col-icons,
+    .medfit-contents .card-col-grp .row .col-icons {
+        display: none;
+    }
+
+    .patients-details .wards-patients-details .custom-card .card-col-grp,
+    .medfit-contents .card-col-grp {
+        height: auto;
+        min-height: 70px;
+    }
+
+    .patients-details .wards-patients-details .custom-card .table-patient-tbody {
+        background: #fdfdfd;
+    }
+
+    .btn-remove {
+        background: #FF2624;
+    }
+
+    .btn-assign-task,
+    .medfit-contents .btn-assign-task {
+        background: #1152A6;
+    }
+
+    .dp-comments-section,
+    .timeline-footer {
+        margin: 0 .25rem;
+    }
+
+    .dp-comments-section {
+        padding: .25rem 0;
+    }
+
+    .cd-horizontal-timeline .events-content li>* {
+        margin: 0;
+    }
+
+    .cd-horizontal-timeline {
+        margin: 0 .5rem;
+    }
+
+    .cd-horizontal-timeline .events-content,
+    .table-timeline {
+        box-shadow: none;
+    }
+
+    .timeline-contents {
+        box-shadow: none;
+        border-radius: 7px;
+    }
+
+    .table-timeline tr.header {
+        background: linear-gradient(180deg, rgba(21, 131, 225, 1) 50%, rgba(3, 128, 207, 1) 100%);
+        color: #fff;
+        border-radius: 6px;
+    }
+
+    .table-timeline tr.header th:nth-child(1),
+    .table-timeline tr.header th:nth-child(2),
+    .table-timeline tr.header th:nth-child(3),
+    .table-timeline tr.header th:nth-child(4),
+    .table-timeline tr.header th:nth-child(5),
+    .table-timeline tr.header th:nth-child(6) {
+        display: table-cell;
+    }
+
+    .table-timeline tr.header th:first-child {
+        border-radius: 6px 0 0 0;
+    }
+
+    .table-timeline tr.header th:first-child,
+    .table-timeline tr.table-body td:first-child {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .table-timeline tr.header th,
+    .table-timeline tr.table-body td {
+        width: 140px;
+        min-width: 140px;
+        border-right: none !important;
+    }
+
+    .table-timeline tr.header th:last-child,
+    th.cell-span {
+        width: 80px;
+        min-width: 80px;
+        border-radius: 0 6px 0 0;
+        margin-bottom: 0;
+    }
+
+    .dp-comments-section .comment-list {
+        height: auto;
+        border: .5px solid #A7A7A7;
+    }
+
+    .timeline-footer .bg-task-complete {
+        background: #48AB3F;
+    }
+
+    .timeline-footer .bg-task-not-complete {
+        background: #FF2624;
+    }
+
+    .timeline-footer .bg-task-complete,
+    .timeline-footer .bg-task-not-complete {
+        box-shadow: none;
+    }
+
+    .timeline-footer hr.line {
+        height: 1px;
+    }
+
+    .timeline-footer .sub-task-header h6 {
+        margin-bottom: .5rem;
+    }
+
+    .timeline-footer .row .col-md-6 {
+        width: 50%;
+    }
+
+    .table-bed-flags thead tr th,
+    .table-bed-flags tbody tr td {
+        width: 100px;
+        min-width: 100px;
+        border-right: none !important;
+    }
+
+    .card-table-listing.patients-discharge table.table-listing thead tr th,
+    .card-table-listing.patients-discharge table.table-listing tbody tr td {
+        width: 125px;
+        min-width: 125px;
+    }
+
+    .staffing-absent .opel-time-amber .btn.active img,
+    .staffing-absent .opel-time-red .btn.active img,
+    .staffing-absent .opel-time-black .btn.active img,
+    .ed-status-row .opel-time-green .btn.active img,
+    .ed-status-row .opel-time-amber .btn.active img,
+    .ed-status-row .opel-time-red .btn.active img,
+    .ed-status-row .opel-time-black .btn.active img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .staffing-absent .btn-ems,
+    .ed-status-row .btn-ems,
+    .bg-opel-green, .bg-opel-red,
+    .bg-opel-black, .bg-opel-amber,
+    .opel-time-green, .opel-time-amber,
+    .opel-time-red, .opel-time-black,
+    .opel-na, .form-control {
+        min-height: 30px;
+    }
+}

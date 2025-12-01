@@ -1,0 +1,126 @@
+.ems-data-details {
+    padding: .5rem 0;
+}
+
+.ems-data-details .btn-export {
+    min-width: 140px;
+    margin-bottom: .5rem;
+}
+
+.ems-top-section .form-label {
+    font-size: 12px;
+}
+
+.ems-top-section .form-control,
+.date-field .form-control {
+    border: 1px solid rgba(112, 112, 112, 0.5);
+    border-radius: 8px;
+    background-color: #F3F3F3;
+}
+
+.date-field .form-control {
+    min-height: 40px;
+}
+
+.ed-ems-tab .nav-tabs .nav-link {
+    border: 1px solid #005595;
+    background-color: #fff;
+    padding: .5rem 1.25rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 3px;
+    min-height: 40px;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.ed-ems-tab .nav-tabs li {
+    width: 13.42%;
+    margin-right: 1%;
+    margin-bottom: .5rem;
+}
+
+.ed-ems-tab .nav-tabs li:last-child {
+    margin-right: 0;
+}
+
+.ed-ems-tab .nav-tabs .nav-link {
+    margin: 0;
+    width: 100%;
+}
+
+.ed-ems-tab .nav-tabs .nav-link:hover,
+.ed-ems-tab .nav-tabs .nav-link.active {
+    background-color: #005595;
+    color: #fff;
+}
+
+.timeslot-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ems-details .safety-content-wrapper .form-control,
+.ems-details .safety-content-wrapper .form-label {
+    font-size: 12px;
+}
+
+.ems-details .staffing-absent .opel-time-amber img,
+.ems-details .staffing-absent .opel-time-red img,
+.ems-details .staffing-absent .opel-time-black img,
+.ems-details .ed-status-row .opel-time-green img,
+.ems-details .ed-status-row .opel-time-amber img,
+.ems-details .ed-status-row .opel-time-red img,
+.ems-details .ed-status-row .opel-time-black img {
+    display: block;
+}
+
+.ems-details .selectric-wrapper {
+    width: 100%;
+}
+
+.ems-details .staffing-absent .opel-time-amber .btn-ems,
+.ems-details .staffing-absent .opel-time-red .btn-ems,
+.ems-details .staffing-absent .opel-time-black .btn-ems,
+.ems-details .ed-status-row .btn-ems {
+    cursor: default;
+}
+
+/* Media Query */
+
+@media (min-width:768px) {
+    .ed-ems-tab .nav-tabs li:nth-child(7n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:767px) {
+    .ed-ems-tab .nav-tabs li {
+        margin-bottom: 5px;
+        width: 24.25%;
+        margin-right: 1%;
+    }
+
+    .ed-ems-tab .nav-tabs li:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .date-field .form-control,
+    .ed-ems-tab .nav-tabs .nav-link {
+        min-height: auto;
+    }
+
+    .ems-details .staffing-absent .opel-time-amber .btn-ems,
+    .ems-details .staffing-absent .opel-time-red .btn-ems,
+    .ems-details .staffing-absent .opel-time-black .btn-ems,
+    .ems-details .ed-status-row .btn-ems,
+    .card-sitrep-modal .selectric,
+    .ems-top-section .form-control,
+    .date-field .form-control {
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,207 @@
+  .sidebar-menu .nav-item .nav-link,
+  .sidebar-menu-2 .nav-item .nav-link {
+      font-size: 12px;
+      padding: 0 10px;
+  }
+
+  .sidebar-menu .icon-next .relative-svg {
+      position: relative;
+      rotate: 0deg;
+      margin: 0;
+  }
+
+  .sidebar-menu .nav-item.icon-next .nav-link.active {
+      padding: 0 6px;
+  }
+
+  .sidebar-menu .nav-item.icon-next .nav-link.active svg,
+  #sidebar-custom .sidebar-menu .nav-link.active .icon-next svg {
+      right: 3px;
+      bottom: 3px;
+  }
+
+  .btn-trends {
+      background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(236, 236, 237, 1) 100%);
+      border-radius: 8px;
+      box-shadow: 0px 3px 6px #00000038;
+      font-weight: 400;
+      padding: 0.5rem 1.5rem;
+  }
+
+  .surgery-demand {
+      border-radius: 7px;
+      box-shadow: 0px 3px 6px #00000038;
+  }
+
+  .table-surgery-demand {
+      font-size: 12px;
+      margin-bottom: 0.5rem;
+  }
+
+  .table-surgery-demand th {
+      background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(217, 217, 217, 1) 75%);
+      font-weight: 500;
+      box-shadow: 0px 3px 6px #00000038;
+      padding: 8px 15px;
+      text-align: center;
+
+  }
+
+  .table-surgery-demand tbody tr td {
+      border-right: 1px solid rgba(112, 112, 112, 0.5);
+      padding: 8px 15px;
+  }
+
+  .table-surgery-demand tbody tr td:last-child {
+      border-right: none;
+  }
+
+  .table-surgery-demand th:first-child {
+      border-radius: 7px 0 0px 0px;
+  }
+
+  .table-surgery-demand th:last-child {
+      border-radius: 0 7px 0px 0px;
+  }
+
+  .table-surgery-demand tbody tr:nth-child(even) {
+      background-color: rgb(255, 255, 255);
+  }
+
+  .table-surgery-demand tbody tr:last-child td:first-child {
+      border-radius: 0 0 0 7px;
+  }
+
+  .table-surgery-demand tbody tr:last-child td:last-child {
+      border-radius: 0 0 7px 0;
+  }
+
+  .responsiveTable td .tdBefore {
+      display: block;
+  }
+
+  .table-surgery-demand .table-column,
+  .table-surgery-demand .table-cell {
+      display: flex;
+      align-items: end;
+      width: 100%;
+  }
+
+  .table-surgery-demand .table-column .total-value,
+  .table-surgery-demand .table-column .capacity-value {
+      width: 50%;
+  }
+
+  .table-surgery-demand .table-cell .down-icon {
+      width: 15%;
+  }
+
+  .table-surgery-demand .table-cell .down-icon img {
+      position: relative;
+      top: -2px;
+  }
+
+  .total-value span,
+  .capacity-value span {
+      font-size: 14px;
+      font-weight: 500;
+  }
+
+  .table-surgery-demand .table-cell .total-value {
+      width: 40%;
+  }
+
+  .table-surgery-demand .table-cell .capacity-value {
+      width: 45%;
+  }
+
+
+  /* Media Query */
+
+  @media (max-width:1025px) {
+      .responsiveTable thead {
+          display: none;
+      }
+
+      .responsiveTable td {
+          min-height: 50px;
+      }
+
+      .surgery-demand {
+          box-shadow: none;
+      }
+
+      .responsiveTable td.pivoted:nth-child(1),
+      .table-surgery-demand tbody tr:last-child td:first-child {
+          border-radius: 6px 0 0 6px;
+      }
+
+      .responsiveTable td.pivoted:nth-child(5),
+      .table-surgery-demand tbody tr:last-child td:last-child {
+          border-radius: 0 6px 6px 0;
+      }
+
+      .table-surgery-demand tbody tr td.pivoted {
+          padding: 5px 7px !important;
+      }
+
+      .table-surgery-demand tbody tr td.pivoted:first-child {
+          justify-content: center;
+      }
+  }
+
+  @media (max-width:991px) {
+      .table-surgery-demand tbody tr td:last-child {
+          border-right: 1px solid rgba(112, 112, 112, 0.5);
+      }
+
+      .table-surgery-demand tbody tr td:nth-child(4) {
+          border-right: none;
+      }
+
+      .responsiveTable td.pivoted:nth-child(1),
+      .table-surgery-demand tbody tr:last-child td:first-child {
+          border-radius: 6px 0 0 0;
+      }
+
+      .responsiveTable td.pivoted:nth-child(5),
+      .table-surgery-demand tbody tr:last-child td:last-child {
+          border-radius: 0 0 0 6px;
+      }
+
+  }
+
+  @media (max-width:767px) {
+      .btn-trends {
+          border-radius: 4px;
+      }
+
+      .table-surgery-demand tbody tr td:nth-child(2) {
+          border-right: none;
+      }
+
+      .responsiveTable td.pivoted:nth-child(1),
+      .table-surgery-demand tbody tr:last-child td:first-child {
+          border-radius: 4px 0 0 0;
+      }
+
+      .responsiveTable td.pivoted:nth-child(5),
+      .table-surgery-demand tbody tr:last-child td:last-child {
+          border-radius: 0 0 0 4px;
+      }
+  }
+
+  @media (max-width:374px) {
+
+      .table-surgery-demand .table-column .total-value,
+      .table-surgery-demand .table-column .capacity-value,
+      .table-surgery-demand .table-cell .total-value,
+      .table-surgery-demand .table-cell .capacity-value {
+          font-size: 10px;
+      }
+
+      .total-value span,
+      .capacity-value span {
+          font-size: 12px;
+      }
+  }

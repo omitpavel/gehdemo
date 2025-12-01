@@ -1,0 +1,1314 @@
+.pathway-details,
+.pathway-details .pathway-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pathway-details .pathway-count {
+    margin-right: .5rem;
+}
+
+.pathway-details .pathway-count::after {
+    content: "|";
+    padding: 0 1rem;
+}
+
+.pathway-details .pathway-count:last-child {
+    margin-right: 0;
+}
+
+.pathway-details .pathway-count:last-child::after {
+    content: "";
+}
+
+.pathway-details .pathway-count h6 {
+    margin-bottom: 0;
+}
+
+.pathway-details .pathway-count h6:nth-child(2) {
+    padding-left: .25rem;
+}
+
+.medfit-row .form-control,
+.medfit-row .form-select,
+.medfit-row .ms-options-wrap>button:focus,
+.medfit-row .ms-options-wrap>button,
+.medfit-row .btn {
+    min-height: 45px;
+}
+
+.medfit-row .selectric-wrapper,
+.medfit-row .selectric,
+.medfit-row .selectric .label,
+.medfit-row .selectric .button {
+    margin-top: 0;
+    height: 45px;
+}
+
+.medfit-row .selectric .label {
+    line-height: 45px;
+}
+
+.btn-danger {
+    background: linear-gradient(180deg, rgba(215, 38, 38, 1) 0%, rgba(185, 0, 0, 1) 100%);
+}
+
+.btn-success {
+    background: linear-gradient(180deg, rgba(153, 200, 23, 1) 0%, rgba(76, 158, 0, 1) 100%);
+}
+
+.btn-danger,
+.btn-success,
+.btn-cdt {
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: .5rem;
+    font-size: 12px;
+    min-height: 40px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.btn-cdt {
+    background: linear-gradient(180deg, rgba(0, 142, 229, 1) 50%, rgba(0, 123, 199, 1) 100%);
+}
+
+.btn-cdt:hover {
+    color: #fff;
+}
+
+.medfit-row .btn-success i,
+.medfit-row .btn-danger i,
+.medfit-row .btn-cdt i {
+    position: absolute;
+    right: 6%;
+}
+
+.filter-buttons .btn img {
+    display: none;
+}
+
+.filter-buttons .btn.active img {
+    display: block;
+    position: relative;
+    left: -15px;
+}
+
+.btn-export {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: .25rem 0.5rem;
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-menu .btn-export {
+    min-height: 40px;
+}
+
+.dropdown-height .form-select {
+    height: 40px;
+}
+
+.btn-dark,
+.bg-dark {
+    background: var(--bg-black-gradient);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.discharge-tracker-contents .responsiveTable td .tdBefore {
+    display: block;
+}
+
+.custom-card {
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.medfit-text-danger {
+    color: #E30000;
+}
+
+.medfit-text-success {
+    color: #48AB3F;
+}
+
+.cdt-reviewed {
+    color: #48AB3F;
+}
+
+.cdt-requested {
+    color: var(--primary-blue);
+}
+
+.table-custom {
+    font-size: 10px;
+}
+
+.table-custom th {
+    background: var(--primary-blue);
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.table-patient-tbody {
+    display: flex;
+    width: 100%;
+}
+
+.marked-wrapper {
+    position: relative;
+    width: 2%;
+}
+
+.table-patient-row-1 {
+    background: #ffff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    border-radius: 0 0px 0px 7px;
+}
+
+.table-patient-row-2 {
+    width: 40%;
+    border-radius: 0 7px 7px 0;
+    background: var(--bg-grey-gradient);
+}
+
+.table-patient-row-2 td {
+    display: block;
+}
+
+.table-custom .table-patient-row-1 td {
+    padding: 10px;
+    width: 25%;
+    border-bottom: 1px solid rgb(112, 112, 112, .5);
+}
+
+.table-custom .table-patient-row-2 td {
+    padding: 5px 8px;
+}
+
+.table-custom td:nth-child(5),
+.table-custom td:nth-child(6),
+.table-custom td:nth-child(7),
+.table-custom td.spl-cell {
+    border-bottom: none;
+}
+
+.name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem .6rem;
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: .5rem;
+}
+
+.table-custom .table-patient-row-1 td {
+    border-bottom: none;
+    padding: 5px 8px;
+    border-bottom: 1px dashed rgb(112, 112, 112, .5);
+}
+
+.table-patient-tbody {
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.pivoted span {
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.card-col-grp {
+    background-color: #fff;
+    height: 98px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 100%;
+    border: .5px solid #A7A7A7;
+    border-radius: 5px;
+}
+
+.card-col-grp::-webkit-scrollbar {
+    width: 3px;
+}
+
+.card-col-grp .row .col-comment {
+    width: 85%;
+    text-wrap: wrap;
+}
+
+.card-col-grp .row .col-icons {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.card-col-grp .row .col-icons a,
+.comments-all-offcanvas .table-comments tbody tr a {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3px;
+    min-width: 28px;
+}
+
+.card-col-grp .row .col-comment span,
+.card-col-grp .row .col-icons a,
+.comments-all-offcanvas .table-comments tbody tr a {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.comments-all-offcanvas .table-comments tbody tr a:last-child {
+    margin-right: 0;
+}
+
+.card-col-grp .row:nth-child(odd) {
+    background-color: #FDFDFE;
+    padding: 3px;
+}
+
+.card-col-grp .row:nth-child(even) {
+    background-color: #F2F2F3;
+    padding: 3px;
+}
+
+.header-comment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header-comment .btn {
+    min-width: auto;
+}
+
+.table-custom p {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    top: -1.5px;
+}
+
+.table-row {
+    border-radius: 10px;
+}
+
+.btn-assign-task,
+.btn-remove {
+    padding: 0.25rem 0.5rem;
+    box-shadow: 3px 4px 6px rgba(85, 85, 85, 0.4);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    width: auto;
+    border: 1px solid #FFFFFF;
+    margin-right: .2rem;
+}
+
+.btn-assign-task {
+    background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+}
+
+.btn-remove {
+    background: var(--bg-red-gradient);
+    margin-right: 0;
+}
+
+.btn-assign-task:last-child {
+    margin-right: 0;
+}
+
+.header-comment .btn-assign-task:hover,
+.btn-add-comment:hover,
+.btn-remove:hover {
+    color: #fff;
+}
+
+.cdt-comment-offcanvas.offcanvas-end,
+.remove-reason-offcanvas.offcanvas-end {
+    width: 50%;
+}
+
+.offcanvas-end {
+    width: 800px;
+    top: 0;
+    border-radius: 0;
+}
+
+.comments-all-offcanvas.offcanvas-end {
+    width: 90%;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.comments-all-offcanvas .card-comments {
+    padding: 0;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.comments-all-offcanvas .table-comments {
+    font-size: 12px;
+}
+
+.comments-all-offcanvas .table-comments thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.comments-all-offcanvas .table-comments thead tr th {
+    font-weight: 500;
+}
+
+.comments-all-offcanvas .table-comments thead tr th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.comments-all-offcanvas .table-comments thead tr th:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:nth-child(odd) {
+    background-color: #F2F2F3;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.card-col-grp .row,
+.comments-all-offcanvas .table-comments tbody tr {
+    border-bottom: .5px solid #A7A7A7;
+}
+
+.card-col-grp .row:last-child,
+.comments-all-offcanvas .table-comments tbody tr:last-child {
+    border-bottom: none;
+}
+
+.card-col-grp .row.bg-priority-task,
+.comments-all-offcanvas .table-comments tbody tr.bg-priority-task {
+    background-color: rgb(255 50 50);
+    color: #fff;
+}
+
+.cdt-history-card {
+    padding-top: 1.5rem;
+}
+
+.cdt-history-card .data-area {
+    padding: .25rem .5rem;
+}
+
+.cdt-comments .table-cdt-comments,
+.cdt-comments .responsiveTable td .tdBefore {
+    font-size: 12px;
+}
+
+.header-marked {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0 7px 7px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    height: 100%;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1rem 0.5rem;
+}
+
+.bg-cdt-actions {
+    background: #FF2624;
+}
+
+.bg-equipment {
+    background: #ffbf00;
+    color: #000;
+}
+
+.bg-discharge-today {
+    background: #008000;
+}
+
+.count-discharge {
+    padding: 0 .5rem;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li.count-discharge {
+    cursor: default;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ed-referral-wrapper .card-table-listing .responsiveTable td .btn-remove {
+    width: 100%;
+}
+
+.ed-referral-wrapper .ed-referral-filters .form-control,
+.ed-referral-wrapper .ed-referral-filters .btn-dark,
+.add-patients-ed-referral .patients-ed-referral-wrapper .form-control,
+.add-patients-ed-referral .patients-ed-referral-wrapper .btn-dark {
+    min-height: 35px;
+}
+
+.ed-remove-reason-offcanvas.offcanvas-end,
+.export-columns-offcanvas.offcanvas-end {
+    width: 50%;
+}
+
+.export-columns-offcanvas.offcanvas-end .offcanvas-body .btn-primary-grey {
+    min-height: 35px;
+    margin-bottom: .5rem;
+    width: auto;
+    padding: .5rem 1rem;
+}
+
+.card-export-columns {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0 .25rem;
+}
+
+.card-export-columns .form-check {
+    margin-bottom: 0;
+    padding: .5rem 0 .5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-export-columns .form-check .form-check-input {
+    margin-top: 0;
+}
+
+.card-export-columns .row .col-md-6 {
+    padding: 0;
+}
+
+.card-export-columns .row .col-md-6:nth-child(4n + 3),
+.card-export-columns .row .col-md-6:nth-child(4n + 4) {
+    background-color: #F2F2F3;
+}
+
+.card-export-columns .row .col-md-6:nth-last-child(2) {
+    border-radius: 0 0 0 7px;
+}
+
+.card-export-columns .row .col-md-6:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+/* Other Notes Styles */
+
+.other-notes-offcanvas.offcanvas-end {
+    width: 60%;
+}
+
+.history-card {
+    padding-top: 1.5rem;
+}
+
+.history-card .data-area {
+    padding: .25rem .5rem;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .sticky-toprow,
+    .medfit-row {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 60px;
+        left: 115px;
+        padding: .75rem .75rem 0 .6rem;
+    }
+
+    .sticky-toprow {
+        height: 65px;
+    }
+
+    .dashboard-contents {
+        margin-top: 95px;
+    }
+
+    .medfit-row {
+        height: 113px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .medfit-row .ms-options-wrap>.ms-options {
+        width: 450px;
+    }
+
+    .discharge-tracker-contents {
+        margin-top: 163px;
+    }
+
+    .bg-sticky {
+        background: #F8F8F8;
+        position: fixed;
+        z-index: 2;
+        height: 40px;
+        width: calc(100% - 115px);
+        left: 115px;
+        padding: 0.5rem 0.75rem 0 0.6rem;
+    }
+
+    .sticky-header {
+        position: sticky;
+        width: 100%;
+        background-color: #F8F8F8;
+        z-index: 2;
+        border-radius: 7px;
+    }
+
+    .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-radius: 7px 0 0 7px;
+    }
+
+    .table-custom .table-patient-tbody .table-patient-row-1 td:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .table-custom .table-patient-row-1 td {
+        width: 20%;
+    }
+
+    .table-custom .table-patient-row-1 td:nth-child(12),
+    .table-custom .table-patient-row-1 td:nth-child(13) {
+        width: 40%;
+    }
+
+    .table-custom .table-patient-row-1 td:nth-child(11),
+    .table-custom .table-patient-row-1 td:nth-child(12),
+    .table-custom .table-patient-row-1 td:nth-child(13) {
+        border-bottom: none;
+    }
+
+    .table-patient-row-1 {
+        background-color: transparent;
+    }
+
+    .table-patient-tbody {
+        background: var(--bg-grey-gradient);
+        border: 1px solid rgb(112, 112, 112, .5);
+        margin-bottom: .4rem;
+    }
+
+    .btn-assign-task,
+    .btn-remove {
+        margin-bottom: .25rem;
+    }
+
+    .discharges-cdt-wrapper,
+    .ed-referral-wrapper {
+        margin-top: 56px;
+    }
+
+    .table-outstanding-tasks.responsiveTable td .tdBefore,
+    .table-comments.responsiveTable td .tdBefore,
+    .discharges-cdt-wrapper .responsiveTable td .tdBefore {
+        display: none;
+    }
+
+    .discharges-cdt-wrapper .pivoted span {
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .table-comments tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-comments tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .cdt-comments .table-cdt-comments,
+    .other-notes .table-other-notes {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .cdt-comments .table-cdt-comments thead,
+    .cdt-comments .table-cdt-comments tbody tr,
+    .other-notes .table-other-notes thead,
+    .other-notes .table-other-notes tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .cdt-comments .table-cdt-comments thead tr,
+    .other-notes .table-other-notes thead tr {
+        background: var(--primary-blue);
+        color: #fff;
+        box-shadow: 0px 3px 6px #00000038;
+        width: 100%;
+        border-right: 3px solid rgb(128, 128, 128, 0);
+    }
+
+    .cdt-comments .table-cdt-comments thead tr th,
+    .other-notes .table-other-notes thead tr th {
+        font-weight: 500;
+    }
+
+    .cdt-comments .table-cdt-comments thead tr th:first-child,
+    .other-notes .table-other-notes thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .cdt-comments .table-cdt-comments thead tr th:last-child,
+    .other-notes .table-other-notes thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .cdt-comments .table-cdt-comments th:nth-child(1),
+    .cdt-comments .table-cdt-comments tbody td:nth-child(1) {
+        width: 56%;
+    }
+
+    .cdt-comments .table-cdt-comments th:nth-child(2),
+    .cdt-comments .table-cdt-comments tbody td:nth-child(2) {
+        width: 20%;
+    }
+
+    .cdt-comments .table-cdt-comments th:nth-child(3),
+    .cdt-comments .table-cdt-comments tbody td:nth-child(3) {
+        width: 24%;
+    }
+
+    .other-notes .table-other-notes th:nth-child(1),
+    .other-notes .table-other-notes tbody td:nth-child(1) {
+        width: 56%;
+    }
+
+    .other-notes .table-other-notes th:nth-child(2),
+    .other-notes .table-other-notes tbody td:nth-child(2) {
+        width: 20%;
+    }
+
+    .other-notes .table-other-notes th:nth-child(3),
+    .other-notes .table-other-notes tbody td:nth-child(3) {
+        width: 24%;
+    }
+
+    .cdt-comments .table-cdt-comments tbody,
+    .other-notes .table-other-notes tbody {
+        flex: 1 1 auto;
+        display: block;
+        max-height: 170px;
+        overflow-y: auto;
+    }
+
+    .cdt-comments .table-cdt-comments tbody tr,
+    .other-notes .table-other-notes tbody tr {
+        border-bottom: 1px solid #dedddd;
+    }
+
+    .cdt-comments .responsiveTable td .tdBefore {
+        display: none;
+    }
+
+    .cdt-comments .table-cdt-comments tbody::-webkit-scrollbar,
+    .other-notes .table-other-notes tbody::-webkit-scrollbar {
+        width: 3px;
+    }
+}
+
+@media (min-width:1400px) {
+    .medfit-row {
+        height: 60px;
+    }
+
+    .discharge-tracker-contents {
+        margin-top: 110px;
+    }
+
+    .bg-sticky,
+    .sticky-header {
+        top: 204px;
+    }
+
+    .medfit-row .btn-export {
+        padding: .15rem;
+    }
+
+    .border-cdt-actions {
+        border: 1px solid #FF2624;
+    }
+
+    .border-equipment {
+        border: 1px solid #ffbf00;
+    }
+
+    .border-discharge-today {
+        border: 1px solid #008000;
+    }
+}
+
+@media (min-width:1500px) {
+
+    .header-comment .btn {
+        min-width: 100px;
+    }
+}
+
+@media (min-width:1700px) {
+
+    .header-comment .btn {
+        min-width: 125px;
+    }
+}
+
+@media (max-width:1399px) and (min-width:1026px) {
+
+    .bg-sticky,
+    .sticky-header {
+        top: 173px;
+    }
+}
+
+@media (max-width:1399px) {
+
+    .pathway-details .pathway-count::after {
+        content: "|";
+        padding: 0 .25rem;
+    }
+
+    li.count-discharge {
+        font-size: 12px;
+    }
+
+    .btn-export {
+        min-width: 80px;
+    }
+
+    .table-custom {
+        font-size: 12px;
+    }
+
+    .table-patient-tbody {
+        flex-direction: column;
+    }
+
+    .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .table-custom .table-patient-tbody .table-patient-row-2 {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .marked-wrapper,
+    .table-patient-row-1,
+    .table-patient-row-2 {
+        width: 100%;
+    }
+
+    .marked-wrapper {
+        min-height: 35px;
+    }
+
+    .header-marked {
+        width: 100%;
+        border-radius: 7px 7px 0 0;
+        writing-mode: unset;
+        rotate: 0deg;
+        font-size: 12px;
+    }
+
+    .table-patient-row-2 td {
+        padding: 8px;
+    }
+
+    .card-col-grp {
+        height: 100px;
+    }
+
+    .header-comment .btn {
+        min-width: 125px;
+    }
+}
+
+@media (max-width:1025px) {
+    .responsiveTable tbody tr {
+        align-items: start;
+    }
+
+    .table-patient-row-1,
+    .table-patient-row-2 {
+        width: 100%;
+    }
+
+    .discharge-tracker-contents .data-group {
+        flex-wrap: nowrap;
+    }
+
+    .responsiveTable .table-patient-row-2 td.pivoted,
+    .table-custom .table-patient-row-1 td:last-child {
+        width: 100%;
+    }
+
+    .name-header {
+        margin-bottom: 0;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .custom-card {
+        margin-top: 0;
+    }
+
+    .table-custom {
+        margin-bottom: .5rem;
+    }
+
+    .header-comment {
+        margin-bottom: .5rem;
+    }
+
+    .assign-task .btn:last-child {
+        margin-right: 0;
+    }
+
+    .discharge-tracker-contents .responsiveTable tbody tr {
+        margin-bottom: 0px;
+        border-radius: 0;
+    }
+
+    .pivoted span {
+        font-weight: 400;
+    }
+
+    .table-patient-row-1 {
+        background: #FFFFFF;
+    }
+
+    .responsiveTable td.pivoted:nth-child(1),
+    .responsiveTable td.pivoted:nth-child(2),
+    .responsiveTable td.pivoted:nth-child(11),
+    .responsiveTable td.pivoted:nth-child(12),
+    .responsiveTable .table-patient-row-1 td.pivoted:nth-child(5) {
+        border-radius: 0;
+    }
+
+    .table-custom td,
+    .table-custom .table-patient-row-1 td {
+        border-bottom: none;
+    }
+
+    .card-col-grp {
+        min-width: 100%;
+        padding: 0;
+        height: 200px;
+    }
+
+    .responsiveTable td.pivoted.spl-cell {
+        width: 100% !important;
+    }
+
+    .table-patient-tbody:last-child .responsiveTable tbody tr:nth-child(2) {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-patient-tbody tr.table-patient-row-2 {
+        border-top: none;
+
+    }
+
+    .table-patient-tbody:last-child tr.table-patient-row-2 {
+        border-radius: 0 0 7px 7px;
+
+    }
+
+    .responsiveTable .table-patient-tbody:last-child .table-patient-row-2 td:first-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-custom .table-patient-tbody:last-child .table-patient-row-3 {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-custom .table-patient-tbody .table-patient-row-2,
+    .table-custom .table-patient-tbody .table-patient-row-1,
+    .responsiveTable .table-patient-row-1 td:first-child,
+    .responsiveTable .table-patient-row-1 td:nth-child(4) {
+        border-radius: 0;
+    }
+
+    .responsiveTable .table-patient-tbody:last-child .table-patient-row-3 td:first-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-custom .table-patient-row-1 .flags-table table tr {
+        background-color: transparent;
+        border: none;
+    }
+
+    .table-custom .table-patient-row-1 .flags-table table tr td {
+        width: auto;
+    }
+
+    .responsiveTable .flags-table table tr td {
+        min-height: 30px;
+    }
+
+    .dark-gradient-warning,
+    .bg-ambo,
+    .bg-eds-yes,
+    .bg-tto-yes,
+    .bg-eds-no,
+    .bg-tto-no,
+    .bg-eds-na,
+    .bg-tto-na {
+        min-width: 50px;
+        max-width: 50px;
+    }
+
+    .table-comments.responsiveTable thead {
+        display: none;
+    }
+
+    .table-comments.responsiveTable td.pivoted {
+        width: 100%;
+    }
+
+    .table-comments.responsiveTable td {
+        min-height: 35px;
+    }
+
+    .table-comments.responsiveTable td.pivoted:nth-child(2)>div {
+        width: 100%;
+    }
+
+    .comments-all-offcanvas .table-comments tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .comments-all-offcanvas .table-comments tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .cdt-comments-section .rectangle-block-1 {
+        background: none;
+        box-shadow: none;
+    }
+
+    .cdt-comments .responsiveTable th {
+        display: none;
+    }
+
+    .cdt-comments .responsiveTable td.pivoted:nth-child(1) {
+        width: 50%;
+    }
+
+    .cdt-comments .responsiveTable td.pivoted {
+        width: 25%;
+    }
+
+    .cdt-comments .responsiveTable tr {
+        border-radius: 6px;
+        margin-bottom: 5px;
+    }
+
+    .cdt-comments .responsiveTable tr td.pivoted:first-child {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .cdt-comments .responsiveTable tr td.pivoted:last-child {
+        border-radius: 0 6px 6px 0;
+    }
+
+    .header-marked {
+        border-radius: 0;
+    }
+
+    .pathway-details .pathway-count h6,
+    li.count-discharge {
+        font-size: 12px;
+    }
+
+    .pathway-details .pathway-count {
+        margin-right: .1rem;
+    }
+
+    .pathway-details .pathway-count::after {
+        padding: 0 .25rem;
+    }
+
+    .btn-export {
+        min-width: 70px;
+    }
+
+    .ed-remove-reason-offcanvas.offcanvas-end,
+    .other-notes-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .other-notes-section .rectangle-block-1 {
+        background: none;
+        box-shadow: none;
+    }
+
+    .history-card .data-area {
+        padding: 0 .5rem;
+    }
+
+    .other-notes .responsiveTable tbody tr {
+        margin-bottom: 5px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width:1199px) {
+
+    .cdt-comment-offcanvas.offcanvas-end,
+    .remove-reason-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+
+    .btn-danger,
+    .btn-success {
+        min-width: auto;
+    }
+
+    .comments-all-offcanvas.offcanvas-end,
+    .export-columns-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .comments-all-offcanvas .card-comments {
+        padding: 0;
+    }
+
+    .table-custom td {
+        min-width: auto;
+    }
+
+    .responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0;
+    }
+
+    .table-custom p {
+        top: 0;
+    }
+}
+
+@media (max-width:767px) {
+
+    .table-custom .table-patient-row-1 td,
+    .cdt-comments .responsiveTable td.pivoted:nth-child(1),
+    .cdt-comments .responsiveTable td.pivoted {
+        width: 50%;
+    }
+
+    .responsiveTable td .tdBefore {
+        font-size: 11px;
+    }
+
+    .header-comment {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .header-comment .btn,
+    .header-comment div {
+        min-width: 100px;
+        width: 100%;
+    }
+
+    .header-comment .btn {
+        margin-right: 0;
+        margin-bottom: .25rem;
+    }
+
+    .card-col-grp span {
+        font-size: 10px;
+    }
+
+    .medfit-row .btn-danger,
+    .medfit-row .btn-success,
+    .medfit-row .btn-dark,
+    .medfit-row .bg-dark,
+    .medfit-row .btn-cdt,
+    .btn-export,
+    .other-notes .responsiveTable tbody tr,
+    .card-export-columns {
+        border-radius: 4px;
+    }
+
+    .name-header,
+    .table-custom th {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .name-header {
+        font-size: 12px;
+        padding: .25rem .5rem;
+    }
+
+    .discharge-tracker-contents .table-custom .table-patient-row-1 td:last-child {
+        width: 100% !important;
+    }
+
+    .comments-all-offcanvas .table-comments thead tr th:first-child {
+        border-radius: 4px 0 0 0;
+    }
+
+    .comments-all-offcanvas .table-comments thead tr th:last-child {
+        border-radius: 0 4px 0 0;
+    }
+
+    .comments-all-offcanvas .table-comments tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .comments-all-offcanvas .table-comments tbody tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(9),
+    .responsiveTable .table-patient-row-1 td:nth-child(3),
+    .responsiveTable .table-patient-row-1 td:nth-child(4) {
+        border-radius: 0;
+    }
+
+    .responsiveTable .table-patient-row-3 td.pivoted {
+        width: 100% !important;
+    }
+
+    .responsiveTable .table-patient-row-1 td:nth-child(2) {
+        border-radius: 0 4px 0 0;
+    }
+
+    .table-custom .table-patient-tbody:last-child .table-patient-row-2,
+    .responsiveTable .table-patient-tbody:last-child .table-patient-row-2 td:first-child {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .table-patient-row-2 .card-col-grp .row .col-comment {
+        width: 78%;
+    }
+
+    .table-patient-row-2 .card-col-grp .row .col-icons {
+        width: 22%;
+    }
+
+    .table-comments.responsiveTable td.pivoted {
+        width: 100% !important;
+    }
+
+    .filter-buttons .btn.active img {
+        left: -60px;
+    }
+
+    .cdt-comments .responsiveTable tr {
+        border-radius: 4px;
+    }
+
+    .cdt-comments .responsiveTable tr td.pivoted:first-child {
+        border-radius: 4px 0 0 0;
+    }
+
+    .cdt-comments .responsiveTable tr td.pivoted:nth-child(2) {
+        border-radius: 0 4px 0 0;
+    }
+
+    .cdt-comments .responsiveTable tr td.pivoted:last-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .card-export-columns .row .col-md-6:nth-child(4n + 3),
+    .card-export-columns .row .col-md-6:nth-child(4n + 4) {
+        background-color: #fff;
+    }
+
+    .card-export-columns .row .col-md-6:nth-child(4n + 2),
+    .card-export-columns .row .col-md-6:nth-child(4n + 4) {
+        background-color: #F2F2F3;
+    }
+
+    .card-export-columns .form-check {
+        padding: .5rem 0 .5rem 2rem;
+    }
+
+    .card-export-columns .row .col-md-6:nth-last-child(2) {
+        border-radius: 0;
+    }
+
+    .card-export-columns .row .col-md-6:last-child {
+        border-radius: 0 0 4px 4px;
+    }
+}
+
+@media (max-width:350px) {
+    .header-comment {
+        flex-direction: column;
+    }
+
+    .header-comment .btn-assign-task {
+        margin-right: 0;
+    }
+
+    .header-comment .btn {
+        min-width: 100%;
+    }
+
+    .medfit-row .btn-success i,
+    .medfit-row .btn-danger i,
+    .medfit-row .btn-cdt i {
+        right: -5%;
+    }
+}

@@ -1,0 +1,73 @@
+ .sidebar-menu .nav-item .nav-link,
+ .sidebar-menu-2 .nav-item .nav-link {
+     font-size: 12px;
+     padding: 0 10px;
+ }
+
+ .sidebar-menu .icon-next .relative-svg {
+     position: relative;
+     rotate: 0deg;
+     margin: 0;
+ }
+
+ .sidebar-menu .nav-item.icon-next .nav-link.active {
+     padding: 0 6px;
+ }
+
+ .sidebar-menu .nav-item.icon-next .nav-link.active svg,
+ #sidebar-custom .sidebar-menu .nav-link.active .icon-next svg {
+     right: 3px;
+     bottom: 3px;
+ }
+
+ .rectangle-block-1 {
+     background: transparent;
+ }
+
+ .card-theatres {
+     padding: 0 .75rem;
+     margin-bottom: .5rem;
+ }
+
+ .card-theatres label {
+     font-size: 12px;
+ }
+
+ .card-theatres .row {
+     padding: 8px 0;
+ }
+
+ .card-theatres .row:nth-child(odd) {
+     background-color: #F9F9FA;
+ }
+
+ .card-theatres .row:nth-child(even) {
+     background-color: #fff;
+ }
+
+ .card-theatres .row:last-child {
+     border-radius: 0 0 7px 7px;
+ }
+
+ .card-theatres .form-check-input:checked {
+     background-color: #0066FF;
+     border-color: #0066FF;
+ }
+
+ .card-theatres .form-check {
+     margin-bottom: 0;
+     min-height: auto;
+ }
+
+ /* Media Query */
+
+ @media (max-width:767px) {
+     .card-theatres {
+         border-radius: 4px;
+     }
+
+     .card-theatres .row:last-child {
+         border-radius: 0 0 4px 4px;
+     }
+ }
+

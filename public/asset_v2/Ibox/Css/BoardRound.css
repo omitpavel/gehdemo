@@ -1,0 +1,113 @@
+.button_ward_summary_boardround_prev_patient.btn-grey.inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.button_ward_summary_boardround_next_patient.btn-grey.inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+button.btn.click_popup_open_ibox_board_round_medfit_no.btn-red {
+    background: linear-gradient(180deg, rgb(205 8 8) 50%, rgb(114 38 57) 100%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+/*
+.custom_height_boardround_page{
+    min-height: 145px !important;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .custom_height_boardround_page{
+        min-height: 93px !important;
+    }
+}
+
+.custom_height_boardround_page_with_ic{
+    min-height: 102px !important;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .custom_height_boardround_page_with_ic{
+        min-height: 50px !important;
+    }
+}
+ */
+
+button.btn.click_popup_open_ibox_board_round_medfit_no.btn-green {
+    background: linear-gradient(180deg, rgb(5, 173, 61) 50%, rgb(0, 59, 18) 100%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.cld_comment_box {
+    border-radius: 12px;
+    height: 220px;
+}
+
+
+.offcanvas-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 1050;
+display: none;
+}
+button.btn.btn-add-attendance.addAttBtn {
+    padding: 0.25rem 0.5rem;
+    box-shadow: 0px 3px 6px #00000038;
+    background: linear-gradient(rgb(255, 6, 6) 0%, rgb(250, 9, 9) 50%, rgb(245, 5, 5) 100%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    height: 40px;
+    min-width: 70px;
+}
+@media (min-width: 992px) {
+
+#camis_patient_ward_summary_boardround_deteriorating_patient_timeline .modal-dialog {
+    max-width: 95%;
+}
+}
+
+
+.card-icons textarea.form-control{
+    background:#fff !important;
+}
+.No_record_css {
+    max-height: 400px;
+    min-height: 200px;
+    overflow-y: hidden !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-assigned-speciality {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.button_disabled {
+    cursor: not-allowed;
+}
+.ui-datepicker {
+    width: auto !important;
+}

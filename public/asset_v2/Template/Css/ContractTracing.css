@@ -1,0 +1,107 @@
+.search-fields .form-label {
+    margin-bottom: 0;
+}
+
+.search-fields input {
+    height: 40px;
+}
+
+.btn-search {
+    background: linear-gradient(180deg, rgba(0, 139, 224, 1) 50%, rgba(0, 70, 112, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: .5rem;
+    color: #fff;
+    height: 40px;
+}
+
+.btn-search:hover {
+    color: #fff;
+}
+
+.patients-tracing {
+    padding: 0;
+}
+
+.card-trace-details {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 0%, rgba(238, 238, 239, 1) 50%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    position: relative;
+}
+
+.patients-tracing .covid-patients .card-trace-details .boxshadow {
+    padding: 2rem 1rem .5rem 1rem;
+}
+
+.boxshadow {
+    box-shadow: 0px 3px 6px #00000038;
+    padding: 1rem 1rem .5rem 1rem;
+    border-radius: 7px 7px 0 0;
+}
+
+.details-area {
+    padding: 1rem 1rem;
+}
+
+.covid-notification {
+    background: linear-gradient(180deg, rgba(242, 0, 0, 1) 50%, rgba(121, 0, 0, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 10px;
+    padding: .5rem 1rem;
+}
+
+.border-bottom,
+.borderline-bottom {
+    border-bottom: 1px solid #707070 !important;
+    opacity: 50%;
+}
+
+.borderline-bottom {
+    width: 98%;
+    margin: 0 1%;
+    padding-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+/* Media Query */
+
+@media (max-width:991px) {
+
+    .borderline-bottom {
+        width: 96%;
+        margin: 0 2%;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .btn-search,
+    .card-trace-details {
+        border-radius: 4px;
+    }
+
+    .btn-search {
+        width: 100%;
+    }
+
+    .covid-notification,
+    .boxshadow {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .borderline-bottom {
+        width: 92%;
+        margin: 0 4%;
+        margin-bottom: 0.5rem;
+    }
+
+}

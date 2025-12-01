@@ -1,0 +1,1763 @@
+.breach-popup-colour-b19cd9 {
+    background-color: #b19cd9 !important;
+    color: #FFFFFF;
+}
+
+.breach_column_date_min_width {
+    min-width: 85px;
+}
+
+.bg-grey {
+    background-color: #F1F1F3 !important;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #fdfdfe !important;
+}
+
+.breach-popup-colour-FF0000 {
+    background-color: #FF0000 !important;
+    color: #FFFFFF;
+}
+
+.breach-popup-colour-00b300 {
+    background-color: #00b300 !important;
+    color: #FFFFFF;
+}
+
+.unloack_reason_value {
+    cursor: pointer;
+}
+
+.circle_progress_chart_easy_pie_label {
+    font-size: 12px;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.hand-on-breach-ambulance-change {
+    cursor: pointer;
+}
+
+.breachMonthTbleHeadwrap {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px
+}
+
+.unlock-breach-reason-container {
+    height: 28px;
+    padding: 0;
+    float: right;
+    padding-top: 38px;
+}
+
+.unlock-breach-reason-container img {
+    height: 28px;
+    float: right;
+}
+
+.breachMonthTbleHeadwrap .tableHead {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase
+}
+
+.breachMonthTbleHeadwrap .selectBoxwrap {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%)
+}
+
+.breachMonthTbleHeadwrap .selectBoxwrap .selbox {
+    width: 150px;
+    outline: none;
+    margin-right: 10px
+}
+
+.dashboardTabWrap .datepickerBreachwrap {
+    margin-bottom: 0px
+}
+
+#breach_dashboard_breach_reason_update .modal-dialog {
+    min-width: 90%;
+}
+
+.dateShowWeekSummaryBreachTabTitle {
+    width: 100%;
+    line-height: 40px;
+    padding: 0 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.datepickerBreachwrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px
+}
+
+.datepickerBreachwrap .react-datepicker-wrapper {
+    width: 100%
+}
+
+.datepickerBreachwrap svg {
+    background-color: #ddd;
+    padding: 8px;
+    width: 40px;
+    height: 40px
+}
+
+.datepickerBreachwrap .datepickerBreach {
+    height: 40px;
+    border: solid 1px #ddd;
+    text-indent: 10px;
+    width: 100%;
+    outline: none
+}
+
+.datepickerBreachwrap .datepickerBreach:focus {
+    outline: none
+}
+
+.PageMainTabNavList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px
+}
+
+.PageMainTabNavList li {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 10%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 5px;
+    position: relative;
+    transition: all .3s ease
+}
+
+.PageMainTabNavList li:first-child {
+    margin-left: 0px
+}
+
+.PageMainTabNavList li:hover {
+    cursor: pointer
+}
+
+.PageMainTabNavList li:hover:after {
+    margin-top: 0px
+}
+
+.PageMainTabNavList li:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    margin-top: -8px;
+    transition: all .3s ease;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent
+}
+
+.PageMainTabNavList li.react-tabs__tab--selected:after {
+    margin-top: 0px
+}
+
+.col1bg {
+    background-color: #17202a
+}
+
+.col1bg:after {
+    border-top: 8px solid #17202a
+}
+
+.col2bg {
+    background-color: #2471a3
+}
+
+.col2bg:after {
+    border-top: 8px solid #2471a3
+}
+
+.col3bg {
+    background-color: #f39c12
+}
+
+.col3bg:after {
+    border-top: 8px solid #f39c12
+}
+
+.col4bg {
+    background-color: #ec7063
+}
+
+.col4bg:after {
+    border-top: 8px solid #ec7063
+}
+
+.col5bg {
+    background-color: #dc7633
+}
+
+.col5bg:after {
+    border-top: 8px solid #dc7633
+}
+
+.breachvalidHead {
+    margin-bottom: 15px;
+    padding: 0px 15px
+}
+
+.brace_size_adjust {
+    font-size: 11px;
+}
+
+.breachReasonTable.month tr:last-child td {
+    font-weight: bold;
+    font-size: 14px
+}
+
+#breach_dashboard_breach_reason_update label {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#breach_dashboard_breach_reason_update .make-empty-row-in-breach-validation {
+    height: 65px;
+}
+
+#breach_dashboard_breach_reason_update .form-control {
+    font-size: 11px;
+    height: 35px;
+    padding: 0 5px;
+}
+
+#breach_dashboard_breach_reason_update .breach-reason-text-inside-span {
+    line-height: 34px;
+}
+
+#breach_dashboard_breach_reason_update .disabled-div-show {
+    background-color: #fdfdfe;
+}
+
+.breachReasonTable tr th {
+    padding: 5px 3px;
+    background-color: #0e6fb4;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    line-height: 15px;
+}
+
+#breach-month-table .breachReasonTable tr th {
+    padding: 10px 3px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.add_update_breach_reason {
+    cursor: pointer;
+}
+
+.breachReasonTable tr td.lockcell {
+    width: 15%;
+    position: relative;
+    padding-right: 40px
+}
+
+.breachReasonTable tr td.lockcell .BreachValWrap span {
+    display: block;
+    width: 100%
+}
+
+.breachReasonTable tr td.lockcell .BreachValWrap:hover {
+    cursor: pointer
+}
+
+.breachReasonTable tr td.lockcell svg {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transition: all .3s ease;
+    transform: translateY(-50%)
+}
+
+.breachReasonTable tr td.lockcell svg:hover {
+    cursor: pointer;
+    color: #13bec1
+}
+
+.dashboardTabWrap .innerRow>div:first-child {
+    padding-right: 0px
+}
+
+.dashboardTabWrap .whiteBox {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23)
+}
+
+.dashboardTabWrap .whiteBox .headSec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ddd;
+    margin-bottom: 10px
+}
+
+.dashboardTabWrap .whiteBox .headSec .head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 7px;
+}
+
+.dashboardTabWrap .whiteBox .headSec .percent {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.dashboardTabWrap .attendancePercBox {
+    width: 100%;
+}
+
+.bpsrInnerList li .btm {
+    margin-top: 1px;
+}
+
+.pie_progress__label {
+    margin-top: 11px;
+    font-size: 12px;
+}
+
+.dashboardTabWrap .attendancePercBox .padding_adjust_box_per {
+    padding: 10px 10px 0 10px;
+}
+
+.dashboardTabWrap .attendancePercBox .datepickerBreachwrap {
+    margin-bottom: 0px;
+    padding: 10px
+}
+
+.dashboardTabWrap .attendancePercBox .datepickerBreachwrap .datepickerBreach {
+    width: 100%
+}
+
+.dashboardTabWrap .attendancePercBox .datepickerBreachwrap .react-datepicker-wrapper {
+    width: 100%
+}
+
+.dashboardTabWrap .attendancePercBox .middleWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.dashboardTabWrap .attendancePercBox .middleWrap ul {
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px
+}
+
+.dashboardTabWrap .attendancePercBox .middleWrap ul li {
+    min-height: 48px;
+    margin: 8px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.dashboardTabWrap .attendancePercBox .middleWrap ul li span {
+    width: 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.dashboardTabWrap .attendancePercBox .middleWrap ul li span:last-child {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    background-color: #13bec1;
+    position: relative
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox {
+    width: 65px;
+    height: 74px;
+    position: absolute;
+    right: 30px;
+    bottom: 100%
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox .imgwrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox .txtwrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    padding: 5px 0px
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox .txtwrap>span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    padding: 2px 0px
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox .txtwrap>span:last-child {
+    font-size: 12px
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox.down .imgwrap .arrowIconPath {
+    fill: #4caf50
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox.up .imgwrap .arrowIcon {
+    transform: rotate(180deg)
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox.up .imgwrap .arrowIcon .arrowIconPath {
+    fill: red
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox.up .txtwrap {
+    padding: 15px 0px 0px 0px
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox span.label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    width: 70%;
+    position: relative
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox div.percentage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    text-align: center
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox div.percentage span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox div.percentage span.count {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700
+}
+
+.dashboardTabWrap .attendancePercBox .averageForBox div.percentage span.percent {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 33px;
+}
+
+.dashboardTabWrap .performanceMtrBox {
+    width: 100%;
+    padding: 10px
+}
+
+.dashboardTabWrap .performanceMtrBox .meterWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.dashboardTabWrap .performanceMtrBox .meterWrap .mtrinner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 31px;
+    margin-top: 0;
+}
+
+.dashboardTabWrap .performanceMtrBox .meterWrap .mtrBtmlst {
+    list-style: none;
+    width: 100%;
+    margin: 0px
+}
+
+.dashboardTabWrap .performanceMtrBox .meterWrap .mtrBtmlst li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ddd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 2.5px 0
+}
+
+.dashboardTabWrap .performanceMtrBox .meterWrap .mtrBtmlst li:last-child {
+    border-bottom: none
+}
+
+.dashboardTabWrap .totambSecinner {
+    width: 100%;
+    padding: 12px
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px 0px
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu {
+    width: 50%
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .imgwrapAmbu {
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .imgwrapAmbu img {
+    width: 80%
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .minsec {
+    width: 70%
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .minsec .headmin {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .minsec .overminWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .minsec .ambulance_data_adjust_on_date:hover {
+    cursor: pointer
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .minsec .overminWrap>div {
+    margin: 0px 10px
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .minsec .overminWrap span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .minsec .overminWrap span.top {
+    font-size: 14px
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu .minsec .overminWrap span.btm {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent {
+    width: 50%
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent .percentList {
+    list-style: none;
+    width: 100%;
+    margin: 0px
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent .percentList li {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent .percentList li .imgwrap {
+    width: 50%;
+    display: block;
+    text-align: center
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent .percentList li .imgwrap img {
+    width: 40px;
+    float: right;
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent .percentList li .percentTxt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent .percentList li .percentTxt span {
+    display: block
+}
+
+.dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent .percentList li:last-child {
+    margin-bottom: 0px
+}
+
+.dashboardTabWrap .bpsrWrap {
+    width: 100%;
+    padding: 10px
+}
+
+.dashboardTabWrap .bpsrWrap .bpsrInnerList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.dashboardTabWrap .bpsrWrap .bpsrInnerList>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    border-right: solid 1px #e5e5e5
+}
+
+.dashboardTabWrap .bpsrWrap .bpsrInnerList>li .top {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px
+}
+
+.dashboardTabWrap .bpsrWrap .bpsrInnerList>li .mid {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px
+}
+
+.dashboardTabWrap .bpsrWrap .bpsrInnerList>li .btm ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.dashboardTabWrap .bpsrWrap .bpsrInnerList>li .btm ul li {
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.dashboardTabWrap .bpsrWrap .bpsrInnerList li:last-child {
+    border: none
+}
+
+.dashboardTabWrap .breachesWrap {
+    width: 100%;
+    padding: 10px
+}
+
+.dashboardTabWrap .breachesWrap .armodBrPatiWrap {
+    width: 100%
+}
+
+.dashboardTabWrap .breachesWrap .armodBrPatiWrap .head {
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px
+}
+
+.dashboardTabWrap .breachesWrap .armodBrPatiWrap .percentWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.dashboardTabWrap .breachesWrap .armodBrPatiWrap .percentWrap .box {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 1px #ddd
+}
+
+.dashboardTabWrap .breachesWrap .armodBrPatiWrap .percentWrap .box:last-child {
+    border-right: none
+}
+
+.dashboardTabWrap .breachesWrap .armodBrPatiWrap .percentWrap .box .imgwrap {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.dashboardTabWrap .breachesWrap .armodBrPatiWrap .percentWrap .box .imgwrap img {
+    width: 60px
+}
+
+.dashboardTabWrap .breachesWrap .armodBrPatiWrap .percentWrap .box .txt {
+    width: 50%;
+    text-align: center
+}
+
+.dashboardTabWrap .breachesWrap .armodBrPatiWrap .percentWrap .box .txt span {
+    display: block;
+    width: 100%
+}
+
+.dashboardTabWrap .breachReasonTableWrap {
+    width: 100%;
+    padding: 10px
+}
+
+.dashboardTabWrap .breachReasonTableWrap table {
+    width: 100%;
+    border: solid 1px #ddd
+}
+
+.dashboardTabWrap .breachReasonTableWrap table tr th {
+    background-color: #13bec1;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px
+}
+
+.dashboardTabWrap .breachReasonTableWrap table tr th:first-child {
+    text-align: left
+}
+
+.dashboardTabWrap .breachReasonTableWrap table tr td {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    border-right: solid 1px #ddd
+}
+
+.dashboardTabWrap .breachReasonTableWrap table tr td:first-child {
+    text-align: left
+}
+
+.dashboardTabWrap .breachReasonTableWrap table tr td:last-child {
+    border: none
+}
+
+.dashboardTabWrap .breachReasonTableWrap table tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.dashboardTabWrap .presentingCompTableWrap {
+    width: 100%;
+    padding: 10px;
+}
+
+.presentingCompTableWrap .table_cover_div_presenting {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.presentingCompTableWrap .inner_table_scroll_setting_presenting {
+    max-height: 308px;
+    overflow: auto;
+}
+
+.breachReasonTableWrap .inner_table_scroll_setting_presenting {
+    max-height: 240px;
+    overflow: auto;
+}
+
+.dashboardTabWrap .presentingCompTableWrap table {
+    width: 100%
+}
+
+.dashboardTabWrap .presentingCompTableWrap table td {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    text-align: left
+}
+
+.dashboardTabWrap .AllAttendancesWrap {
+    width: 100%;
+    padding: 10px
+}
+
+.dashboardTabWrap .AllAttendancesWrap ul {
+    width: 100%;
+    list-style: none;
+    margin: 0px
+}
+
+.dashboardTabWrap .AllAttendancesWrap ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px
+}
+
+.dashboardTabWrap .AllAttendancesWrap ul li span {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 8px 10px
+}
+
+.dashboardTabWrap .AllAttendancesWrap ul li span.lft {
+    width: 70%;
+    background-color: #efefef;
+    text-align: left
+}
+
+.dashboardTabWrap .AllAttendancesWrap ul li span.rgt {
+    width: 30%;
+    background-color: #ddd;
+    text-align: center
+}
+
+.dashboardTabWrap .Past7dayWrap {
+    width: 100%;
+    padding: 10px
+}
+
+.dashboardTabWrap .Past7dayWrap table {
+    width: 100%;
+    border: solid 1px #ddd
+}
+
+.dashboardTabWrap .Past7dayWrap table tr th {
+    background-color: #13bec1;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px
+}
+
+.dashboardTabWrap .Past7dayWrap table tr th:first-child {
+    text-align: left
+}
+
+.dashboardTabWrap .Past7dayWrap table tr td {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    border-right: solid 1px #ddd
+}
+
+.dashboardTabWrap .Past7dayWrap table tr td:first-child {
+    text-align: left
+}
+
+.dashboardTabWrap .Past7dayWrap table tr td:last-child {
+    border: none
+}
+
+.dashboardTabWrap .Past7dayWrap table tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.dashboardTabWrap .presentingCompTableWrap table tr:nth-child(odd) {
+    background-color: #f1f1f1
+}
+
+.dashboardTabWrap .performanceTblsec {
+    width: 100%;
+    padding: 10px
+}
+
+.dashboardTabWrap .performanceTblsec table {
+    width: 100%;
+    border: solid 1px #ddd
+}
+
+.dashboardTabWrap .performanceTblsec table tr th {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px
+}
+
+.dashboardTabWrap .performanceTblsec table tr td {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    border-right: solid 1px #ddd
+}
+
+.dashboardTabWrap .performanceTblsec table tr td:first-child {
+    text-align: left
+}
+
+.dashboardTabWrap .performanceTblsec table tr td:last-child {
+    border: none
+}
+
+.dashboardTabWrap .performanceTblsec table tr.hlgr {
+    background-color: #13bec1 !important
+}
+
+.dashboardTabWrap .performanceTblsec table tr.hlgr td {
+    color: #fff
+}
+
+.dashboardTabWrap .performanceTblsec table tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.totambuArrivalsPopUpWrap .RodalHead .hdTxt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner {
+    width: 560px !important
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .row {
+    border: none
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .inputWrap label {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .inputWrap input[type="number"] {
+    width: 100%;
+    height: 40px;
+    text-indent: 8px;
+    border: solid 1px #ddd;
+    outline: none;
+    margin-bottom: 20px
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .buttonWrapBottom {
+    border-top: solid 1px transparent;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .buttonWrapBottom button:last-child:after {
+    display: none
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .buttonWrapBottom button {
+    width: auto;
+    height: 40px;
+    padding: 0px 20px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    color: #555;
+    outline: none;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .buttonWrapBottom button:hover {
+    background-color: transparent;
+    color: #0091c9
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .buttonWrapBottom button:hover svg {
+    color: #0091c9
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .buttonWrapBottom button:focus {
+    background-color: transparent !important;
+    outline: none;
+    box-shadow: none !important
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .buttonWrapBottom button:active {
+    background-color: transparent !important;
+    outline: none;
+    box-shadow: none !important
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .buttonWrapBottom button:after {
+    content: "";
+    width: 2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #ddd
+}
+
+.totambuArrivalsPopUpWrap .totambuArrivalsPopUpWrapInner .buttonWrapBottom button svg {
+    margin-right: 6px
+}
+
+.AddBreachReasonPopUpWrap .RodalHead .hdTxt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner {
+    width: 1199px
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .row {
+    border: none
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .addBreachReasonPopupContentWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 15px
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .addBreachReasonPopupContentWrap .inputBoxWrap {
+    width: 23%;
+    margin: .5% 1%
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .addBreachReasonPopupContentWrap .inputBoxWrap label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 4px
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .addBreachReasonPopupContentWrap .inputBoxWrap input[type="text"] {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #ddd;
+    text-indent: 10px;
+    font-size: 12px
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .selectBreachReasonWrap {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .selectBreachReasonWrap .selbox {
+    width: 100%
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .selectBreachReasonWrap .Lockico {
+    padding: 0px 20px
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .selectBreachReasonWrap .ibox__menu {
+    top: auto;
+    bottom: 100%
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .buttonWrapBottom {
+    border-top: solid 1px transparent;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .buttonWrapBottom button:last-child:after {
+    display: none
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .buttonWrapBottom button {
+    width: auto;
+    height: 40px;
+    padding: 0px 20px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    color: #555;
+    outline: none;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .buttonWrapBottom button:hover {
+    background-color: transparent;
+    color: #0091c9
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .buttonWrapBottom button:hover svg {
+    color: #0091c9
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .buttonWrapBottom button:focus {
+    background-color: transparent !important;
+    outline: none;
+    box-shadow: none !important
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .buttonWrapBottom button:active {
+    background-color: transparent !important;
+    outline: none;
+    box-shadow: none !important
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .buttonWrapBottom button:after {
+    content: "";
+    width: 2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #ddd
+}
+
+.AddBreachReasonPopUpWrap .AddBreachReasonPopUpWrapInner .buttonWrapBottom button svg {
+    margin-right: 6px
+}
+
+td.lockcell {
+    padding-right: 50px
+}
+
+.CounterBoxWrap {
+    width: 100%;
+    position: relative
+}
+
+.CounterBoxWrap .countBoX {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff
+}
+
+.bpsrInnerList .CirPercentageOuter {
+    width: 160px
+}
+
+.bpsrInnerList .CirPercentageOuter .CircularProgressbar {
+    width: 130px !important;
+    overflow: visible
+}
+
+.bpsrInnerList .CirPercentageOuter .CircularProgressbar-text {
+    font-size: 10px !important
+}
+
+.bpsrInnerList .CirPercentageOuter .CircularProgressbar-path {
+    stroke: #03a9f4 !important
+}
+
+@media screen and (max-width:1800px) {
+    .PageMainTabNavList li {
+        width: 13%
+    }
+    .dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox {
+        right: 18px
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox {
+        right: 10px
+    }
+}
+
+@media screen and (max-width:1368px) {
+    .customRow {
+        padding-right: 0px
+    }
+    .breachReasonTable tr td {
+        height: auto;
+    }
+    .breachMonthTbleHeadwrap .selectBoxwrap {
+        position: relative;
+        width: 100%;
+        transform: none;
+    }
+    .breachMonthTbleHeadwrap h3 {
+        width: 100%;
+    }
+    .customRow>.row>div {
+        padding-right: 0px
+    }
+    .AddBreachReasonPopUpWrapInner {
+        width: 1199px !important
+    }
+    .PageMainTabNavList li {
+        width: 18%
+    }
+    .dashboardTabWrap .totambSecinner .totambuinnerWrap {
+        flex-direction: column
+    }
+    .dashboardTabWrap .totambSecinner .totambuinnerWrap div.ambu {
+        width: 100%;
+        margin-bottom: 20px;
+        flex-direction: column
+    }
+    .dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent {
+        width: 100%
+    }
+    .dashboardTabWrap .totambSecinner .totambuinnerWrap div.percent .percentList li .imgwrap img {
+        width: 70px;
+        margin: 0 auto;
+        display: block;
+    }
+    .customRow {
+        padding: 0px !important
+    }
+    .dashboardTabWrap .attendancePercBox .averageForBox>div.arrowBox {
+        right: 0px
+    }
+}
+
+@media screen and (max-width:1360px) {
+    .dashboardTabWrap .performanceMtrBox .meterWrap .mtrBtmlst li {
+        padding: 1px 0
+    }
+}
+
+@media screen and (max-width:1199px) {
+    #breach_dashboard_breach_reason_update .make-empty-row-in-breach-validation {
+        height: 0;
+    }
+    .AddBreachReasonPopUpWrapInner {
+        width: 1025px !important
+    }
+    .dashboardTabWrap .innerRow>div:first-child {
+        padding-right: 5px
+    }
+    .breachValidationPagewrap .row>div {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+}
+
+.red-circle-bg {
+    background-color: #13BEC1;
+}
+
+.green-circle-bg {
+    background-color: #13BEC1;
+}
+
+.purple-circle-bg {
+    background-color: #13BEC1;
+}
+
+.blue-circle-bg {
+    background-color: #13BEC1;
+}
+
+.rectangle-block-1 .bg-white:last-child td.make-rounded-corners-of-messages {
+    border-radius: 0 0 14px 14px;
+}
+
+.all_attendance_last_width {
+    width: 20%;
+}
+
+.all_attendance_first_column {
+    padding-left: 15px;
+}
+
+.breach_validation_select_heigh_set {
+    height: 43px;
+}
+
+.selectric-breach_validation_select_heigh_set {
+    height: 43px;
+}
+
+.table_cover_div_breach_details_inner {
+    height: 216px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #DDD;
+}
+
+.table_cover_div_presenting_details_inner {
+    height: 320.5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #DDD;
+}
+
+.round_progress_chart_container .progress_chart_container_box .circle_progress_chart_easy_pie {
+    font-size: 28px;
+}
+
+.breach-full-width-span-center {
+    width: 100%;
+    text-align: center;
+}
+
+.minimum-table-height-settings {
+    height: 100%;
+}
+
+.minimum-table-height-settings-tr-first {
+    height: 38px;
+}
+
+.breach_performance_head_text_bottom {
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.gauge_chart_breach_validation_dash {
+    height: 92px;
+    margin-top: 10px;
+}
+
+.gauge_chart_breach_validation_dash_height_adjust {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.table_cover_div_presenting_breach th {
+    padding: 10px 3px;
+}
+
+.table_cover_div_presenting_breach_outer {
+    padding: 5px 5px;
+}
+
+.rectangle-block-border-radius-change {
+    border-radius: 14px 14px;
+}
+
+.table_cover_div_presenting_breach .bg-white:last-child td:first-child,
+.table_cover_div_presenting_breach .bg-grey:last-child td:first-child {
+    border-radius: 0 0 0 2px !important;
+}
+
+.table_cover_div_presenting_breach .bg-white:last-child td:last-child,
+.table_cover_div_presenting_breach .bg-grey:last-child td:last-child {
+    border-radius: 0 0 2px 0 !important;
+}
+
+@media (min-width:768px) and (max-width:1398px) {
+    .gauge_chart_breach_validation_dash {
+        height: 88px;
+        width: 225px;
+        margin-top: 0;
+        margin: 10px auto 0 auto;
+    }
+}
+
+@media (max-width:768px) {
+    .gauge_chart_breach_validation_dash {
+        height: auto;
+        margin: 10px auto 0 auto;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1450px) {
+    .breachReasonTable .hide-on-smaller-width {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .AddBreachReasonPopUpWrapInner {
+        width: 768px !important
+    }
+    .breachReasonTable tr td.lockcell {
+        width: 100%
+    }
+    #breach-table .breachReasonTable.responsiveTable td.pivoted .tdBefore {
+        line-height: 25px;
+    }
+    #breach-month-table .breachReasonTable.responsiveTable td.pivoted .tdBefore {
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .dashboardTabWrap .bpsrWrap .bpsrInnerList {
+        flex-direction: column
+    }
+    .dashboardTabWrap .bpsrWrap .bpsrInnerList>li {
+        border: none
+    }
+}
+
+@media (min-width:1025px) {
+    .breachReasonTable .column_breach_dates {
+        width: 7%;
+    }
+    .breachReasonTable .column_breach_reason {
+        width: 20%;
+    }
+    .breachReasonTable .column_patient_name {
+        width: 15%;
+    }
+    .breachReasonTable .column_row_id {
+        width: 3%;
+    }
+    #breach-table div {
+        overflow-x: inherit;
+    }
+    .breach-row-data-tr-reason-added td {
+        color: #FFFFFF !important;
+    }
+    .breach-row-data-tr-reason-added {
+        background-color: #3CE6FF !important;
+    }
+}
+
+
+/* For responsive */
+
+.text-middle {
+    position: relative;
+    /* top: 150 !important; */
+}
+
+.text-middle-breach-table {
+    position: relative;
+    /* top: 70; */
+    background: #f9f9f9!important;
+    /* background: #FDFDFE!important; */
+}
+
+.table_cover_div_presenting_details_inner {
+    border: none !important;
+}
+
+.table_cover_div_breach_details_inner {
+    border: none !important;
+}
+
+.all_attendence_table {
+    border: none !important;
+}
+
+@media (min-width:1200px) and (max-width:1440px) {
+    .table_cover_div_presenting_details_inner {
+        height: 348px;
+    }
+}
+
+#chart_tab_1 {
+    height: 125px !important;
+    width: 100% !important;
+}
+
+#gauge-chart_tab_1 {
+    width: 100%;
+    height: 105px;
+}
+
+#chart_tab_2 {
+    height: 125px !important;
+    width: 100% !important;
+}
+
+#gauge-chart_tab_2 {
+    width: 100% !important;
+    height: 105px;
+}
+
+#chart_tab_3 {
+    height: 125px !important;
+    width: 100% !important;
+}
+
+#gauge-chart_tab_3 {
+    width: 100% !important;
+    height: 105px;
+}
+
+@media (min-width: 1400px) and (max-width: 1800px) {
+    canvas {
+        width: 200px !important;
+        height: 100px !important;
+    }
+    #chart_tab_1 {
+        width: 100% !important;
+        height: 100px !important;
+    }
+    #gauge-chart_tab_1 {
+        width: 100% !important;
+        height: 100px;
+    }
+    #chart_tab_3 {
+        width: 100% !important;
+        height: 100px !important;
+    }
+    #gauge-chart_tab_3 {
+        width: 100%;
+        height: 100px;
+    }
+    #chart_tab_2 {
+        width: 100% !important;
+        height: 100px !important;
+    }
+    #gauge-chart_tab_2 {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #chart_tab_1 {
+        width: 100% !important;
+        height: 120px !important;
+    }
+    #chart_tab_2 {
+        width: 100% !important;
+        height: 120px !important;
+    }
+    #chart_tab_3 {
+        width: 100% !important;
+        height: 120px !important;
+    }
+}
+
+@media (min-width: 2560px) {
+    #chart_tab_1 {
+        width: 100% !important;
+        height: 145px !important;
+    }
+    #gauge-chart_tab_1 {
+        height: 135px !important;
+    }
+    #chart_tab_2 {
+        width: 100% !important;
+        height: 145px !important;
+    }
+    #gauge-chart_tab_2 {
+        height: 135px !important;
+    }
+    #chart_tab_3 {
+        width: 100% !important;
+        height: 145px !important;
+    }
+    #gauge-chart_tab_3 {
+        height: 135px !important;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .type_height_fix {
+        height: 208px !important;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .type_height_fix {
+        height: 208px !important;
+    }
+    .table_cover_div_breach_details_inner {
+        height: 201px !important;
+    }
+}
+
+.table_cover_div_breach_details_inner {
+    height: 215px !important;
+}
+
+.type_height_fix {
+    height: 208px !important;
+}
+
+@media (min-width: 1441px) and (max-width: 1800px) {
+    .table_cover_div_presenting_details_inner {
+        height: 318px;
+    }
+    .all_attendence_table {
+        height: 226px;
+    }
+}
+
+@media (min-width: 2800px) {
+    .table_cover_div_presenting_details_inner {
+        height: 372px;
+    }
+    .all_attendence_table {
+        height: 282px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1440px) {
+    .table_cover_div_presenting_details_inner {
+        height: 350px !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .table_cover_div_presenting_details_inner {
+        height: 342px !important;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+    .table_cover_div_presenting_details_inner {
+        height: 342px !important;
+    }
+}
+
+.tooltip {
+    z-index: 1300;
+}

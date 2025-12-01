@@ -1,0 +1,86 @@
+.responsiveTable {
+    width: 100%;
+}
+
+.responsiveTable td .tdBefore {
+    display: none;
+}
+
+@media (max-width:1025px) {
+
+    .responsiveTable table,
+    .responsiveTable thead,
+    .responsiveTable tbody,
+    .responsiveTable th,
+    .responsiveTable td,
+    .responsiveTable tr {
+        display: block;
+    }
+
+    .responsiveTable thead tr {
+        display: none;
+    }
+
+    .responsiveTable tbody tr {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        border-radius: 6px;
+        border: 1px solid #A7A7A7;
+    }
+
+    .responsiveTable tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .responsiveTable tbody tr:nth-child(even) {
+        background-color: #CEDDF5;
+    }
+
+    .responsiveTable td.pivoted {
+        padding: 5px 10px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .responsiveTable td .tdBefore {
+        display: block;
+        width: auto;
+        overflow-wrap: break-word;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: start;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+    .responsiveTable td.pivoted {
+        width: 25%
+    }
+}
+
+@media (max-width:767px) {
+    .responsiveTable tbody tr {
+        border-radius: 4px;
+    }
+
+    .responsiveTable td.pivoted {
+        width: 50%;
+        padding: 5px 10px;
+    }
+
+}
+
+@media (max-width:359px) {
+    .responsiveTable td.pivoted {
+        padding: 5px;
+    }
+}

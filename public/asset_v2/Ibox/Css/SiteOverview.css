@@ -1,0 +1,115 @@
+.bar--Admission2 {
+    fill: #ACBBC9;
+}
+
+.bar--back-show-hide {
+    fill: #EEEEEE;
+    opacity: 0.5;
+}
+
+.bar--Admission {
+    fill: #ACBBC9;
+}
+
+.bar--Discharge {
+    fill: #40A9B7;
+}
+
+.bar--Discharge2 {
+    fill: #40A9B7;
+}
+
+.axis .domain,
+.axis--y .tick line {
+    display: block;
+}
+
+#chart_mirror_side_2 .label {
+    fill: #000000;
+}
+
+#chart_mirror_side_1 .label {
+    fill: #000000;
+}
+
+.label {
+    font-size: 1.17em;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.axis--y text {
+    alignment-baseline: after-edge;
+}
+
+.gauge_chart_breach_validation_dash {
+    width: 225px;
+    margin: 0 auto;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.gauge-bottom-box {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 0 0 14px 14px;
+    padding: 12px 12px;
+    position: relative;
+    z-index: -1;
+    margin-top: -10px;
+    min-height: 104px;
+}
+
+.table-admitted th {
+    padding: 9px 8px;
+    box-shadow: 0px 3px 6px #00000038;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 10%, rgba(217, 217, 217, 1) 100%);
+    font-weight: 600;
+    border-radius: 14px 14px 0 0;
+}
+
+.table-admitted thead tr th {
+    border-right: 0;
+}
+
+.table-admitted td {
+    padding: 16px 7px;
+}
+
+.rectangle-block-2 {
+    padding: 9px 8px;
+}
+
+.admission-discharge-sub-title {
+    line-height: 35px;
+    font-size: 17px !important;
+}
+
+.admission-discharge-sub-title span {
+    font-size: 12px;
+}
+
+.admission-discharge-bar-chart-data-parent {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.admission-discharge-donut-chart {
+    width: 130px;
+    margin: 0 auto;
+    padding: 12px 0 25px 0;
+}
+
+.title-head-admissions {
+    padding: 9px 8px;
+    margin-bottom: 0px;
+}
+
+.overview-header {
+    margin: 17.4px 0;
+}
+
+.table-overview td,
+.table-overview th {
+    padding: 9.5px 8px;
+}

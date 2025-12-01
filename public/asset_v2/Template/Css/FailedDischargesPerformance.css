@@ -1,0 +1,495 @@
+.failed-performance-wrapper {
+    margin-top: 50px;
+}
+
+.failed-performance-wrapper .discharge-count-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-1 {
+    width: 14%;
+}
+
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-2 {
+    width: 19.33%;
+}
+
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-1,
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-2 {
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-2:last-child {
+    padding-right: 0;
+}
+
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-2 .planned-counts .btn-primary-grey {
+    min-height: 30px;
+    text-align: start;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding: .25rem 1rem;
+}
+
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-2 .planned-counts .btn-primary-grey.active:before {
+    content: "";
+    background-image: url(../icons/tick-circle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-2 .planned-counts .btn-primary-grey.active:after {
+    display: none;
+}
+
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-2 .planned-counts .btn-primary-grey span.btn-name {
+    padding-left: 25px;
+    width: 85%;
+}
+
+.failed-performance-wrapper .discharge-count-row .discharge-count-col-2 .planned-counts .btn-primary-grey h5 {
+    margin-bottom: 0;
+    width: 15%;
+    text-align: end;
+}
+
+.grey-count-box {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px;
+    padding: .75rem;
+    min-height: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.grey-count-box span {
+    font-size: 12px;
+    margin-bottom: .25rem;
+}
+
+.grey-count-box h5 {
+    color: var(--primary-blue);
+    font-size: 1.25rem;
+    margin-bottom: .25rem;
+}
+
+.discharge-count-col-2 .grey-count-box h5 {
+    font-size: 1rem;
+}
+
+.grey-count-box h6 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.grey-count-box .planned-counts {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.grey-count-box .planned-counts h6 {
+    width: 85%;
+}
+
+.grey-count-box .planned-counts h5 {
+    width: 15%;
+    text-align: end;
+    margin-bottom: 0;
+}
+
+.grey-count-box .hr-count-line {
+    border-top: 1px solid #dee2e6;
+    width: 100%;
+    margin: .25rem 0;
+}
+
+.card-chart-container {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px;
+    height: 385px;
+}
+
+.card-chart-container .title {
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px 7px 0 0;
+}
+
+.card-chart-container .title h6 {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+}
+
+.card-chart-container .chart-section {
+    padding: 0 .75rem;
+}
+
+.sub-reasons-wrapper {
+    margin-top: .5rem;
+}
+
+.table-failed-reasons,
+.table-failed-count,
+.table-failed-reasons-details {
+    font-size: 12px;
+    border-radius: 7px;
+}
+
+.sub-reasons-details-wrapper {
+    margin: .5rem 0;
+}
+
+.bg-white-table {
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.sub-reasons-wrapper .table-failed-reasons tbody tr.custom_not_found,
+.sub-reasons-details-wrapper .table-failed-reasons-details tbody tr.custom_not_found {
+    min-height: 104px;
+    background: none;
+}
+
+.sub-reasons-wrapper .table-failed-reasons tbody tr.custom_not_found td,
+.sub-reasons-details-wrapper .table-failed-reasons-details tbody tr.custom_not_found td {
+    text-align: center;
+    width: 100%;
+}
+
+/* Media Query */
+
+@media(min-width:1026px) {
+
+    .table-failed-reasons thead,
+    .table-failed-reasons tbody,
+    .table-failed-count thead,
+    .table-failed-count tbody,
+    .table-failed-reasons-details thead,
+    .table-failed-reasons-details tbody {
+        box-shadow: 0px 3px 6px #00000038;
+    }
+
+    .table-failed-reasons th,
+    .table-failed-count th,
+    .table-failed-reasons-details th {
+        background: var(--bg-grey-gradient);
+        font-weight: 500;
+    }
+
+    .table-failed-reasons thead,
+    .table-failed-count thead,
+    .table-failed-reasons-details thead {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .table-failed-reasons tbody,
+    .table-failed-count tbody,
+    .table-failed-reasons-details tbody {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-failed-reasons thead tr th:first-child,
+    .table-failed-count thead tr th:first-child,
+    .table-failed-reasons-details thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .table-failed-reasons thead tr th:last-child,
+    .table-failed-count thead tr th:last-child,
+    .table-failed-reasons-details thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .table-failed-reasons tbody tr:last-child td:first-child,
+    .table-failed-count tbody tr:last-child td:first-child,
+    .table-failed-reasons-details tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-failed-reasons tbody tr:last-child td:last-child,
+    .table-failed-count tbody tr:last-child td:last-child,
+    .table-failed-reasons-details tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .table-failed-reasons tr:nth-child(even),
+    .table-failed-count tr:nth-child(even),
+    .table-failed-reasons-details tr:nth-child(even) {
+        background-color: #F2F2F3;
+    }
+
+    .table-failed-reasons tr,
+    .table-failed-count tr,
+    .table-failed-reasons-details tbody tr {
+        border-bottom: 1px solid #70707050;
+    }
+
+    .table-failed-reasons tr:last-child,
+    .table-failed-count tr:last-child,
+    .table-failed-reasons-details tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    .table-failed-reasons tr:last-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-failed-reasons thead tr th,
+    .table-failed-reasons tbody tr td,
+    .table-failed-count thead tr th,
+    .table-failed-count tbody tr td {
+        border-right: 1px solid #70707050;
+    }
+
+    .table-failed-reasons thead tr th:last-child,
+    .table-failed-reasons tbody tr td:last-child,
+    .table-failed-count thead tr th:last-child,
+    .table-failed-count tbody tr td:last-child {
+        border-right: none;
+    }
+
+    .table-failed-reasons thead tr th:nth-child(1) {
+        width: 70%;
+    }
+
+    .table-failed-reasons tbody tr td:nth-child(1),
+    .table-failed-reasons tbody tr td:nth-child(2) {
+        width: 35%;
+    }
+
+    .table-failed-reasons thead tr th:nth-child(2),
+    .table-failed-reasons thead tr th:nth-child(3),
+    .table-failed-reasons tbody tr td:nth-child(3),
+    .table-failed-reasons tbody tr td:nth-child(4) {
+        width: 15%;
+    }
+
+    .table-failed-reasons thead tr th:nth-child(2),
+    .table-failed-reasons thead tr th:nth-child(3),
+    .table-failed-reasons tbody tr td:nth-child(3),
+    .table-failed-reasons tbody tr td:nth-child(4) {
+        text-align: center;
+    }
+
+    .table-failed-count thead tr th:nth-child(2),
+    .table-failed-count thead tr th:nth-child(3),
+    .table-failed-count tbody tr td:nth-child(2),
+    .table-failed-count tbody tr td:nth-child(3) {
+        text-align: center;
+    }
+
+    .sub-reasons-wrapper .table-failed-reasons,
+    .sub-reasons-details-wrapper .table-failed-reasons-details {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sub-reasons-wrapper .table-failed-reasons tbody,
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody {
+        flex: 1 1 auto;
+        display: block;
+        min-height: 104px;
+        height: 104px;
+        overflow-y: auto;
+    }
+
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody {
+        height: 250px;
+    }
+
+    .sub-reasons-wrapper .table-failed-reasons thead,
+    .sub-reasons-wrapper .table-failed-reasons tbody tr,
+    .sub-reasons-details-wrapper .table-failed-reasons-details thead,
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .sub-reasons-wrapper .table-failed-reasons thead tr,
+    .sub-reasons-details-wrapper .table-failed-reasons-details thead tr {
+        width: 100%;
+        border-right: 4px solid rgb(241 241 241);
+        border-radius: 7px;
+    }
+
+    .sub-reasons-wrapper .table-failed-reasons tbody::-webkit-scrollbar,
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .failed-performance-wrapper .responsiveTable td .tdBefore {
+        display: none;
+    }
+
+    .sub-reasons-details-wrapper .table-failed-reasons-details thead tr th,
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody tr td {
+        width: 12%;
+    }
+
+    .sub-reasons-details-wrapper .table-failed-reasons-details thead tr th:nth-child(1),
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody tr td:nth-child(1),
+    .sub-reasons-details-wrapper .table-failed-reasons-details thead tr th:nth-child(5),
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody tr td:nth-child(5),
+    .sub-reasons-details-wrapper .table-failed-reasons-details thead tr th:nth-child(6),
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody tr td:nth-child(6) {
+        width: 8%;
+    }
+
+    .sub-reasons-details-wrapper .table-failed-reasons-details thead tr th:nth-child(6),
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody tr td:nth-child(6) {
+        text-align: center;
+    }
+
+    .sub-reasons-details-wrapper .table-failed-reasons-details thead tr th:nth-child(7),
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody tr td:nth-child(7) {
+        width: 16%;
+    }
+
+    .sub-reasons-details-wrapper .table-failed-reasons-details thead tr th:nth-child(8),
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody tr td:nth-child(8) {
+        width: 24%;
+    }
+
+    .failed-performance-wrapper .discharge-count-row {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 140px;
+        height: 115px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .failed-performance-wrapper {
+        margin-top: 160px;
+    }
+}
+
+@media(max-width:1399px) {
+    .failed-performance-wrapper .discharge-count-row {
+        top: 190px;
+        height: 225px;
+    }
+
+    .failed-performance-wrapper {
+        margin-top: 325px;
+    }
+
+    .failed-performance-wrapper .discharge-count-row .discharge-count-col-1 {
+        width: 16.66%;
+    }
+
+    .failed-performance-wrapper .discharge-count-row .discharge-count-col-2 {
+        width: 50%;
+    }
+
+    .failed-performance-wrapper .discharge-count-row .discharge-count-col-1,
+    .failed-performance-wrapper .discharge-count-row .discharge-count-col-2 {
+        padding-right: .5rem;
+    }
+
+    .failed-performance-wrapper .discharge-count-row .discharge-count-col-2:last-child {
+        padding-right: 0;
+    }
+
+    .grey-count-box h5 {
+        font-size: 1rem;
+    }
+
+    .grey-count-box h6 {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1026px) and (max-width:1199px) {
+
+    .sub-reasons-wrapper .table-failed-reasons {
+        margin-bottom: .5rem;
+    }
+}
+
+@media(max-width:1025px) {
+    .failed-performance-wrapper .discharge-count-row {
+        height: auto;
+    }
+
+    .failed-performance-wrapper {
+        margin-top: 45px;
+    }
+
+    .sub-reasons-details-wrapper {
+        margin: 0;
+    }
+
+    .failed-performance-wrapper .responsiveTable tbody tr {
+        margin-bottom: 5px;
+        border-radius: 6px;
+    }
+
+    .failed-performance-wrapper .responsiveTable tbody tr:nth-child(2),
+    .failed-performance-wrapper .responsiveTable tbody tr:nth-child(3) {
+        border-top: 1px solid #A7A7A7;
+    }
+
+    .sub-reasons-wrapper .table-failed-reasons tbody tr.custom_not_found,
+    .sub-reasons-details-wrapper .table-failed-reasons-details tbody tr.custom_not_found {
+        min-height: 50px;
+    }
+}
+
+@media(max-width:991px) {
+    .card-chart-container {
+        height: auto;
+    }
+
+    .failed-performance-wrapper {
+        margin-top: 90px;
+    }
+}
+
+@media(max-width:767px) {
+    .failed-performance-wrapper {
+        margin-top: 190px;
+    }
+
+    .grey-count-box,
+    .card-chart-container,
+    .failed-performance-wrapper .responsiveTable tbody tr {
+        border-radius: 4px;
+    }
+
+    .grey-count-box {
+        padding: .5rem .75rem;
+        min-height: 60px;
+    }
+
+    .failed-performance-wrapper .discharge-count-row .discharge-count-col-1,
+    .failed-performance-wrapper .discharge-count-row .discharge-count-col-2 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .card-chart-container .title {
+        border-radius: 4px 4px 0 0;
+    }
+}

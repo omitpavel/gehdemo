@@ -1,0 +1,22 @@
+.admitted-section-allign-section-name {
+    padding-top: 9px;
+}
+
+.ambulance_live_chart_card {
+    min-height: 0;
+}
+
+/*#weekly .tile-bottom,*/
+/*#lastweek .tile-bottom {*/
+/*    padding: 16px 10px;*/
+/*}*/
+
+/*#last1000 .tile-bottom {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+
+
+.admitted-section-allign-section-name h6 {
+    height: 24px;
+}

@@ -1,0 +1,26 @@
+ .form-control,
+ .form-select,
+ p {
+     font-size: 12px;
+ }
+
+ #covid19-wards .bg-white:last-child,
+ #covid19-wards .bg-grey:last-child {
+     border-radius: 0 0 7px 7px;
+ }
+
+ .rectangle-block-1 .bg-grey {
+     background-color: #F2F2F3;
+ }
+
+ /* Media Query */
+
+
+ @media (max-width:767px) {
+
+     #covid19-wards .bg-white:last-child,
+     #covid19-wards .bg-grey:last-child {
+         border-radius: 0 0 4px 4px;
+     }
+
+ }

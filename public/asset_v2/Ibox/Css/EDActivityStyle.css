@@ -1,0 +1,1830 @@
+.legendIndiSec {
+    float: left;
+    height: 15px;
+    position: relative;
+    width: 16%;
+}
+
+.topHeadArea .legendArea {
+    z-index: 1;
+}
+
+.ed-activity-violet {
+    background-color: #705787 !important;
+    color: #FFFFFF;
+}
+
+.ed-activity-maroon {
+    background-color: #ae125b !important;
+    color: #FFFFFF;
+}
+
+.ed-activity-dark-blue {
+    background-color: #00acbc !important;
+    color: #FFFFFF;
+}
+
+.ed-activity-light-blue {
+    background-color: #e1ebf4 !important;
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection {
+    display: flex;
+    flex-direction: row;
+    align-items: left !important;
+    justify-content: left !important;
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection .head {
+    font-weight: bold !important;
+}
+
+.circle_dots {
+    border-radius: 28px;
+    width: 16px;
+    font-size: 10px;
+    color: #FFFFFF;
+    height: 16px;
+    padding-left: 4.7px;
+    padding-top: 0.8px;
+    float: right;
+    margin-right: 10px;
+}
+
+#scttered_legened_bottom .legened_style {
+    font-size: 12px;
+    float: right;
+    padding-right: 10px;
+    ;
+}
+
+.hand_over_show {
+    background: url(../Images/over_hand.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    background-size: 100%;
+    float: right;
+    padding-right: 5px;
+}
+
+.resetallbar {
+    cursor: pointer;
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection .imgWrap img {
+    width: 100%;
+}
+
+.admittedBar {
+    background: #00acbc;
+    float: left;
+    margin-right: 8%;
+    margin-top: 1%;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.breachesBar {
+    background: #705787;
+    float: left;
+    margin-right: 8%;
+    margin-top: 1%;
+    width: 16px;
+    height: 16px;
+    border-radius: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.legendIndiSec>span {
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    line-height: 17px;
+}
+
+.dischargeBar {
+    background: #ae125b;
+    float: left;
+    margin-right: 8%;
+    margin-top: 1%;
+    width: 16px;
+    height: 16px;
+    border-radius: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.forecastBar {
+    background: #add5d2;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 18px;
+    margin-top: 1%;
+    position: relative;
+    cursor: pointer;
+}
+
+.admittedleftBar {
+    background: #4865a9;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 18px;
+    margin-top: 1%;
+    position: relative;
+    cursor: pointer;
+}
+
+.indv_legends_alone {
+    float: right !important;
+}
+
+.close_scatter .show_hide_scatter_chart {
+    background: url(../Images/minus.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+}
+
+.scatter_show_hide {
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    right: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.show_hide_scatter_chart {
+    background: url(../Images/plus.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+}
+
+#activity_profile_dta_referred_cumulative .c3-target-data1 .c3-text {
+    transform: translateY(15px);
+    fill: #FFF !important;
+}
+
+#activity_profile_dta_referred_cumulative .c3-target-data2 .c3-text {
+    fill: #000 !important;
+    transform: translateY(20px);
+}
+
+.top_message_scroll_bar_exist {
+    top: 87px !important;
+}
+
+.overlaySelectionBox {
+    height: 100%;
+    position: absolute;
+    border: solid 1px #000;
+    opacity: .4;
+    background-color: #ffbf00;
+    border-radius: 3px;
+    z-index: 100;
+    pointer-events: none;
+    display: none;
+    width: 47.375px;
+    transform: translateX(105px)
+}
+
+.overlaySelectionBox.hide {
+    display: none
+}
+
+.EDActivityouter {
+    padding: 0;
+}
+
+.EDActivityouter .ibox_dashboard_top_header {
+    padding: 10px 15px
+}
+
+.EDActivityouter .PageMainTabNavList {
+    display: none
+}
+
+.EDActivityouter .PageMainTabNavList li:first-child {
+    display: none
+}
+
+.legend-top-hour-sec-style {
+    float: right;
+    height: 15px;
+    position: relative;
+    width: 20%;
+}
+
+.legend-top-hour-sec-style>span {
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    line-height: 20px;
+}
+
+.heatmapabove90 {
+    background: #705787;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.activity-date-zone-prev {
+    position: absolute;
+    z-index: 0;
+}
+
+.date-zone-top-order {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.activity-date-zone-prev-inner {
+    width: 200px;
+}
+
+.activity-date-zone-prev-inner-date {
+    width: 50px;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.activity-date-zone-prev-inner-date-field {
+    width: 150px;
+    float: left;
+    line-height: 14px;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.heatmapabove70 {
+    background: #ae125b;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.heatmapabove50 {
+    background: #00acbc;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.heatmapabove0 {
+    background: #e1ebf4;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.EDActivityouter .EDActivityinner .EDActivityinnerRow {
+    align-items: flex-start
+}
+
+.top-nav-inside-nav-style-outer {
+    display: inline-block !important;
+}
+
+.top-nav-inside-nav-style-inner {
+    display: inline-block;
+}
+
+.top-nav-inside-nav-style {
+    display: flex;
+}
+
+.EDActivityouter .whiteBox {
+    margin-bottom: 15px;
+    padding: 6px 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+}
+
+.full-legent-activity-profile-top-section {
+    padding: 10px 5px 10px 0;
+    min-height: 37px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+}
+
+.EDActivityouter .sideLft .rowTop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between
+}
+
+.EDActivityouter .sideLft .rowTop .DatePickerWrap {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideLft .rowTop .DatePickerWrap .dateImg {
+    width: 55px;
+    margin-bottom: 8px
+}
+
+.EDActivityouter .sideLft .rowTop .DatePickerWrap .dateImg img {
+    width: 100%
+}
+
+.EDActivityouter .sideLft .rowTop .DatePickerWrap .react-datepicker__input-container input {
+    width: 100%;
+    border: solid 1px #ddd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    height: 30px;
+    text-indent: 8px;
+    text-align: center
+}
+
+.EDActivityouter .sideLft .rowTop .attendance.toprowCmnBox .imgwrap img {
+    width: 60px
+}
+
+.EDActivityouter .sideLft .rowTop .breaches.toprowCmnBox .imgwrap img {
+    width: 90px
+}
+
+.EDActivityouter .sideLft .rowTop .performance.toprowCmnBox .imgwrap img {
+    width: 80px
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox {
+    width: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .imgwrap {
+    margin: 0px 15px
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .imgwrap img {
+    width: 60px
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .head>span {
+    display: block;
+    width: 100%;
+    font-size: 14px
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .count {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px
+}
+
+.EDActivityouter .sideRgt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideRgt .box {
+    width: 100%
+}
+
+.EDActivityouter .sideRgt .box .headSec {
+    width: 100%;
+    position: relative;
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.EDActivityouter .sideRgt .box .headSec .iconWrap {
+    width: 50px
+}
+
+.EDActivityouter .sideRgt .box .headSec .head {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    position: absolute;
+}
+
+.EDActivityouter .sideRgt .box .contentSec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px 0px
+}
+
+.EDActivityouter .sideRgt .conv_rate .contentSec>div {
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .conv_rate .contentSec>div:first-child {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 34px
+}
+
+.EDActivityouter .sideRgt .conv_rate .contentSec>div>span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .performance .contentSec>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideRgt .performance .contentSec>div .label {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .headSec .headCount {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0px 8px
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div .label {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div .imageWrap {
+    display: block;
+    width: 80px;
+    margin: 5px 0px
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div .imageWrap img {
+    display: block;
+    margin: 0 auto
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div .count {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .headSec .headCount {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0px 8px
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div .label {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div .imageWrap {
+    display: block;
+    width: 80px;
+    margin: 5px 0px
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div .imageWrap img {
+    display: block;
+    margin: 0 auto
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div .count {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333
+}
+
+.EDActivityouter .sideRgt .AdmittedBySpeciality .graphWrap {
+    width: 100%
+}
+
+.EDActivityouter .EDActivityGraphWrap {
+    position: relative
+}
+
+.EDActivityouter .EDActivityGraphWrap .box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 5px;
+    /*margin-bottom: 15px;*/
+    padding: 6px 6px;
+    background-color: #fff
+}
+
+.EDActivityouter .EDActivityGraphWrap .box .leftSide {
+    width: 8%
+}
+
+.EDActivityouter .EDActivityGraphWrap .box .rightSide {
+    position: relative;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.EDActivityouter .activity_profile_fixed_top_matrix_on_scroll {
+    position: fixed;
+    z-index: 3;
+    top: 62px
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .leftHeadList>li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    height: 30px !important;
+    border-radius: 3px;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffbf00; */
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .bubbleList.head li {
+    background-color: transparent
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList>li {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #12a294
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList>li .imgWrap {
+    display: block !important;
+    width: 20px !important;
+    margin-right: 8px
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList>li .imgWrap img {
+    width: 20px
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList>li .headLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    display: block;
+    text-align: center
+}
+
+.EDActivityouter .patientStillinEd .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .patientStillinEd .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 30px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffbf00; */
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .patientStillinEd .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+.EDActivityouter .DTABoxinner .box {
+    box-shadow: none
+}
+
+.EDActivityouter .DTABoxTable .BarGraphwithLineAmbulance .domain {
+    display: none
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList>li {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #12a294
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList>li .imgWrap {
+    display: block !important;
+    width: 20px !important;
+    margin-right: 8px
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList>li .imgWrap img {
+    width: 20px
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList>li .headLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff !important;
+    display: block;
+    text-align: center
+}
+
+.EDActivityouter .DTABoxTable .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .DTABoxTable .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 30px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffbf00; */
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .DTABoxTable .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55px !important
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList>li .imgWrap {
+    display: block !important;
+    width: 30px !important;
+    margin-bottom: 5px
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList>li .imgWrap img {
+    width: 25px
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList>li .headLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px !important;
+    color: #333 !important;
+    display: block;
+    text-align: center
+}
+
+.EDActivityouter .TriageBoxTable .listWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.EDActivityouter .TriageBoxTable .listWrap .bubbleList:first-child li {
+    height: 30px !important;
+    background-color: #ffbf00
+}
+
+.EDActivityouter .TriageBoxTable .listWrap .bubbleList:last-child li {
+    height: 25px !important;
+    background-color: transparent;
+    border: solid 1px #333;
+    margin: 0px 1px
+}
+
+.EDActivityouter .TriageBoxTable .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .TriageBoxTable .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .TriageBoxTable .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList>li .imgWrap {
+    display: block;
+    width: 100%
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList>li .imgWrap img {
+    width: 20px;
+    margin: 0 auto;
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList>li .headLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333;
+    display: block;
+    text-align: center
+}
+
+.EDActivityouter .commonTablebubble .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .commonTablebubble .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 30px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffbf00; */
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .commonTablebubble .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+.overlay_selection_box {
+    height: 100%;
+    position: absolute;
+    border: solid 1px #000;
+    opacity: .4;
+    background-color: #ffbf00;
+    border-radius: 3px;
+    z-index: 4;
+    pointer-events: none;
+    display: none;
+    width: 47.375px;
+    transform: translateX(105px);
+}
+
+.overlay_selection_box.hide {
+    display: none
+}
+
+.CirPercentageOuter .CircularProgressbar {
+    width: 75px
+}
+
+.CirPercentageOuter .CircularProgressbar-path {
+    stroke: red !important
+}
+
+.CirPercentageOuter .CircularProgressbar-trail {
+    stroke: #f1f1f1 !important
+}
+
+.CirPercentageOuter .CircularProgressbar-text {
+    fill: #333 !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px !important
+}
+
+.CirPercentageOuter .CircularProgressbar-background {
+    fill: green !important
+}
+
+.samp {
+    width: 100%;
+    height: 750px;
+    background-color: red
+}
+
+.PatientPerHourChartArea {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+}
+
+.PatientPerHourChartArea .topHeadArea {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection .imgWrap {
+    width: 26px;
+    margin-right: 8px
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection .head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0px
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection .head span {
+    display: block;
+    font-size: 12px;
+    color: #555
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList {
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    border-right: solid 1px #ddd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li:hover {
+    cursor: pointer
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li:last-child {
+    border: none;
+    padding-right: 0px
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBox {
+    width: 25px;
+    height: 15px;
+    display: block;
+    margin-right: 5px;
+    border-radius: 3px
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg1 {
+    background-color: #179ebe
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg2 {
+    background-color: #ed0000
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg3 {
+    background-color: #4865a9
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg4 {
+    background-color: #00c899
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg5 {
+    background-color: #ffa700
+}
+
+.stackedBarChartWrapouter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center
+}
+
+.stackedBarChartWrapouter .leftTitleSec {
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3px;
+    padding-top: 70px
+}
+
+.stackedBarChartWrapouter .leftTitleSec>span {
+    transform: rotate(-90deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap {
+    width: 93%;
+    padding: 10px 0px 10px 0px
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-legend-item text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-axis-y g.tick {
+    display: none
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-admitted .c3-bar {
+    transform: translateY(2px);
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-leftED .c3-bar {
+    transform: translateY(4px);
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-arrivals .c3-bar {
+    transform: translateY(-2px);
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-breaches .c3-bar {
+    transform: translateY(-4px);
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-arrivals .c3-texts text {
+    transform: translate(0, 15px);
+    fill: #fff !important
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-breaches .c3-texts text {
+    transform: translate(0, 15px);
+    fill: #fff !important
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-admitted .c3-texts text {
+    transform: translate(0, -15px);
+    fill: #fff !important
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-leftED .c3-texts text {
+    transform: translate(0, -15px);
+    fill: #fff !important
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-forecast .c3-texts text {
+    fill: transparent !important
+}
+
+.stackedBarChartWrapouter.hideBottomAxeslabels .leftTitleSec .axisLabel:last-child {
+    display: none
+}
+
+.StackedBarchartGroupwrap.showForcastTxt .c3-target-forecast .c3-texts text {
+    fill: #000 !important
+}
+
+.collapseBtnWrap {
+    width: 100%;
+    padding: 0px 30px
+}
+
+.BreachesTargetChartWrap {
+    width: 100%;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 15px
+}
+
+.BreachesTargetChartWrap.hide {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0
+}
+
+.BreachesGanntChartWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad11 {
+    transform: translateX(5px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad12 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad13 {
+    transform: translateX(5px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad14 {
+    transform: translateX(6px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad15 {
+    transform: translateX(12px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad16 {
+    transform: translateX(8px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad17 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad18 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad19 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad20 {
+    transform: translateX(24px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad21 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad22 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad22 .startFromfirstcell {
+    transform: translateX(-14px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad22 .startFromfirstcell .cir_first {
+    transform: translateX(13px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad23 {
+    transform: translateX(13px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad23 .startFromfirstcell {
+    transform: translateX(-14px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad23 .startFromfirstcell .cir_first {
+    transform: translateX(13px)
+}
+
+.BreachesGanntChartWrap div.left {
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3px
+}
+
+.BreachesGanntChartWrap div.left .yaxisText {
+    transform: rotate(-90deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333
+}
+
+.BreachesGanntChartWrap div.right {
+    width: 92%
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .MainLine {
+    stroke: #0075be
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .cir_mid {
+    fill: #ed0000
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .cir_first {
+    fill: #179ebe
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .cir_last {
+    fill: #4865a9
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .nxtCircle {
+    fill: transparent
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .leftEDCircle {
+    fill: #ed0000
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .leftEDTommarrow {
+    fill: #4865a9
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .leftEDDischarge {
+    fill: #4865a9
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .leftEDAdmitted {
+    fill: #ed0000
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .startCircleTxt {
+    transform: translate(8px, 22px);
+    fill: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .endCircleTxt {
+    fill: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .endnextCircleTxt {
+    fill: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .midCircleTxt {
+    fill: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .noval {
+    display: none
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .willbeFirst {
+    transform: translate(-10px, 0) !important
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .willbeFirsttxt {
+    transform: translate(10px, 20px) !important
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .yaxisline path {
+    stroke: #ddd
+}
+
+.BreachesGanntChartWrap .legendArea .legendList {
+    padding: 15px 0px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    border-right: solid 1px #ddd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li:hover {
+    cursor: pointer
+}
+
+.hide_last_cir_if_not_dis {
+    display: none;
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li:last-child {
+    border: none;
+    padding-right: 0px
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBox {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg1 {
+    background-color: #179ebe
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg2 {
+    background-color: #ed0000
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg3 {
+    background-color: #4865a9
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg4 {
+    background-color: #00c899
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg5 {
+    background-color: #ffa700
+}
+
+.targetTimeChartWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center
+}
+
+.targetTimeChartWrap .c3-legend-item {
+    margin: 10px 20px
+}
+
+.targetTimeChartWrap .c3-legend-item text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.targetTimeChartWrap .c3-legend-item .c3-legend-item-tile {
+    shape-rendering: auto;
+    stroke-linecap: round;
+    stroke-dasharray: .1 10;
+    stroke-width: 8;
+    transform: translate(6px, 1px)
+}
+
+.targetTimeChartWrap div.left {
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3px
+}
+
+.targetTimeChartWrap div.left .yaxisText {
+    transform: rotate(-90deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap
+}
+
+.targetTimeChartWrap div.right {
+    width: 93%
+}
+
+.EDActivityinnerRow .sideLft {
+    padding-right: 0px
+}
+
+.barwithlinegraphWrapDtasection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center
+}
+
+.barwithlinegraphWrapDtasection .leftTitleSec {
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3px;
+    padding-top: 70px
+}
+
+.barwithlinegraphWrapDtasection .leftTitleSec>span {
+    transform: rotate(-90deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333
+}
+
+.barwithlinegraphWrapDtasection .rightSide {
+    position: relative;
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.hourBtn {
+    position: relative
+}
+
+.hourBtn:hover {
+    cursor: pointer;
+    background-color: #3498db
+}
+
+.hourBtn svg {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.CirPercentageOuter {
+    width: 70px
+}
+
+.activity_profile_fixed_top_matrix_on_scroll {
+    display: none
+}
+
+.activity_profile_fixed_top_matrix_on_scroll.active {
+    display: block
+}
+
+.round_progress_chart_container_ed_profile {
+    margin: auto 0;
+}
+
+.round_progress_chart_container_ed_profile .progress_chart_container_box_ed_profile {
+    width: 75px;
+    margin: 0 auto;
+}
+
+.round_progress_chart_container_ed_profile .progress_chart_container_box_ed_profile h2 {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.round_progress_chart_container_ed_profile .progress_chart_container_box_ed_profile .circle_progress_chart_easy_pie_ed_profile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 75px;
+    height: 75px;
+    font-weight: bold;
+}
+
+.round_progress_chart_container_ed_profile .progress_chart_container_box_ed_profile canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+}
+
+@media (max-width:1600px) {
+    .EDActivityinnerRow .sideLft {
+        flex: 0 0 72% !important;
+        max-width: 72% !important
+    }
+    .EDActivityinnerRow .sideRgt {
+        flex: 0 0 28% !important;
+        max-width: 28% !important
+    }
+    .BreachesGanntChartWrap .legendArea .legendList li {
+        padding: 0 10px
+    }
+}
+
+@media (max-width:1368px) {
+    .EDActivityinnerRow .sideLft {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        /*margin-bottom: 10px*/
+    }
+    .EDActivityinnerRow .sideLft {
+        padding-right: 15px
+    }
+    .EDActivityinnerRow .sideRgt {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+    .EDActivityinnerRow .sideRgt .box {
+        width: 49%
+    }
+}
+
+@media (max-width:992px) {
+    .admittedBar {
+        width: 13px;
+        margin-right: 5%;
+    }
+    .breachesBar {
+        width: 13px;
+        margin-right: 5%;
+    }
+    .dischargeBar {
+        width: 13px;
+        margin-right: 5%;
+    }
+    .forecastBar {
+        width: 13px;
+        margin-right: 5%;
+    }
+    .admittedleftBar {
+        width: 13px;
+        margin-right: 5%;
+    }
+    .headLabel {
+        word-break: break-word;
+    }
+    .leftHeadList {
+        word-break: break-word;
+    }
+    .EDActivityouter .heatMeaterBubbleBoxWrap .leftHeadList>li {
+        font-size: 10px;
+    }
+    .EDActivityouter .DTABoxTable .rightSide .bubbleList>li {
+        font-size: 10px;
+    }
+    .EDActivityouter .TriageBoxTable .listWrap .bubbleList:last-child li {
+        font-size: 10px;
+    }
+    .EDActivityouter .commonTablebubble .leftHeadList>li .headLabel {
+        font-size: 10px;
+        line-height: 13px;
+        ;
+    }
+    .EDActivityouter .commonTablebubble .rightSide .bubbleList>li {
+        font-size: 10px;
+    }
+    .stackedBarChartWrapouter .leftTitleSec>span {
+        font-size: 12px;
+    }
+    .BreachesGanntChartWrap div.left .yaxisText {
+        font-size: 12px;
+    }
+    .targetTimeChartWrap div.left .yaxisText {
+        font-size: 12px;
+    }
+    .barwithlinegraphWrapDtasection .leftTitleSec>span {
+        font-size: 12px;
+    }
+    .EDActivityouter .commonTablebubble .leftHeadList>li .imgWrap {
+        display: none !important;
+    }
+    .EDActivityouter .sideLft .rowTop .attendance.toprowCmnBox .imgwrap {
+        display: none !important;
+    }
+    .EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap {
+        width: 100%;
+    }
+    .EDActivityouter .sideLft .rowTop .breaches.toprowCmnBox .imgwrap {
+        display: none !important;
+    }
+    .EDActivityouter .sideLft .rowTop .performance.toprowCmnBox .imgwrap {
+        display: none !important;
+    }
+    .EDActivityouter .heatMeaterBubbleBoxWrap .rightSide .bubbleList>li {
+        font-size: 10px;
+    }
+    #scttered_legened_bottom .indv_legends_alone {
+        padding: 5px 0 !important;
+    }
+}
+
+@media (max-width:768px) {
+    .EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .head>span {
+        font-size: 10px;
+    }
+    #scttered_legened_bottom .indv_legends_alone {
+        padding: 5px 0 !important;
+    }
+    .EDActivityinnerRow .sideRgt .box {
+        width: 100%
+    }
+    .PatientPerHourChartArea .topHeadArea .legendArea {
+        padding-top: 5px;
+    }
+    .EDActivityouter .heatMeaterBubbleBoxWrap .leftHeadList>li {
+        font-size: 10px;
+    }
+    .EDActivityouter .DTABoxTable .rightSide .bubbleList>li {
+        font-size: 10px;
+    }
+    .EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .head {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:540px) {
+    .EDActivityinnerRow .sideRgt .box {
+        width: 100%
+    }
+    .legendIndiSec>span {
+        font-size: 9px;
+        ;
+    }
+    .PatientPerHourChartArea .topHeadArea .legendArea {
+        padding-top: 5px;
+    }
+    .EDActivityouter .heatMeaterBubbleBoxWrap .leftHeadList>li {
+        font-size: 9px;
+    }
+    .EDActivityouter .DTABoxTable .rightSide .bubbleList>li {
+        font-size: 9px;
+    }
+}
+
+
+/*.boxWrapper {*/
+
+
+/*    border-radius: 5px;*/
+
+
+/*}*/
+
+
+/*.boxWrapper .box {*/
+
+
+/*    border-radius: 0 0 5px 5px !important;*/
+
+
+/*}*/
+
+
+/*.boxWrapper .DTABoxinner {*/
+
+
+/*    border-radius: 0 0 5px 5px !important;*/
+
+
+/*}*/
+
+svg#scatterChart_Main {
+    font-size: 11px;
+}
+
+svg#scatterChart_Main .tick {
+    opacity: 0 !important;
+}
+
+svg#scatterChart_Main .domain {
+    opacity: 0 !important;
+}

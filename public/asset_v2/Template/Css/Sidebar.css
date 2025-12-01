@@ -1,0 +1,137 @@
+.sidebar-menu {
+    width: 100px;
+    min-height: calc(100vh - 90px);
+    margin: 0 0 6px 0;
+    background: linear-gradient(90deg, rgba(253, 253, 254, 1) 45%, rgba(217, 217, 217, 1) 100%);
+    border-radius: 10px;
+}
+
+.sidebar-menu ul {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.sidebar-menu ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+.sidebar-menu .nav-item .nav-link {
+    color: #000;
+    font-size: 12px;
+    padding: 0 12px;
+    text-align: center;
+}
+
+.sidebar-menu .nav-item .nav-link.active,
+.sidebar-menu .nav-item .nav-link:hover {
+    color: var(--primary-blue);
+}
+
+.cyan-border.active {
+    border: 2px solid #0066FF;
+    border-radius: 9px;
+    width: 100px;
+}
+
+.sidebar-menu .nav-item .nav-link .link-name {
+    display: block;
+    padding-top: .5rem;
+}
+
+.borderline {
+    border-bottom: 1px solid #cecdcd;
+    margin: 0 10px;
+}
+
+/* Mobile Menu Styles */
+
+@media (max-width: 991px) {
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 15;
+        top: 0;
+        right: 0;
+        background: url('.././images/mobile-menu-bg.png') no-repeat center fixed;
+        background-size: cover;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 10px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #000;
+        display: block;
+        transition: 0.3s;
+        text-align: left;
+    }
+
+    .sidenav .sidenav-link {
+        padding-top: 0px;
+    }
+
+    .sidenav .sidenav-link a {
+        box-shadow: 0px 3px 6px #00000038;
+        border: 0.5px solid #828282;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 8px 8px 8px 15px;
+    }
+
+    .sidenav .sidenav-link a svg {
+        position: absolute;
+        right: 20px;
+        margin-top: 5px;
+    }
+
+    .sidenav .sidenav-link a.active {
+        color: #0066FF;
+        border: 0.5px solid #0066FF;
+    }
+
+    .sidenav .sidenav-link a.active svg {
+        fill: #0066FF;
+        opacity: 1;
+    }
+
+    .sidenav a:hover {
+        color: #0066FF;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .sidenav .navbar-brand {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 36px;
+    }
+
+    .icons-bar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px 12px 8px 10px;
+    }
+
+    .icons-bar ul li {
+        background-color: #F8F8F8;
+        margin-right: 10px;
+
+    }
+}

@@ -1,0 +1,478 @@
+@page {
+    size: A4;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.print-handover-details {
+    margin: 4px;
+}
+
+.handover-print-data {
+    border: 0.5px solid rgb(128, 128, 128, .5);
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+.handover-contents {
+    margin: 5px 1px 5px 5px;
+}
+
+.handover-print-data,
+.handover-print-data ul li {
+    font-size: 9px;
+}
+
+.print-handover-details .ward-name,
+.handover-print-data .top-row {
+    border-radius: 4px;
+    background-color: #F2F2F2;
+    padding: 2px 2px;
+    margin-bottom: 4px;
+}
+
+.handover-print-data .top-row {
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+    padding: 4px 6px;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.print-handover-details .ward-name {
+    padding: 4px 6px;
+    border: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.print-handover-details .ward-name h6,
+.handover-print-data .top-row h6 {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.print-handover-details .ward-name h6 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.handover-print-data .handover-icons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.handover-print-data .handover-icons-wrapper .flag-group {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.handover-print-data .handover-icons-wrapper .flag-group img {
+    cursor: pointer;
+    width: 35px;
+}
+
+.handover-print-data .handover-icons-wrapper .flag-group span {
+    display: block;
+    font-size: 7px;
+    padding: 1px 0;
+    line-height: 8px;
+    font-weight: 500;
+}
+
+.handover-print-data .handover-patient-details {
+    border: 0.5px solid rgb(128, 128, 128, .5);
+    border-radius: 4px;
+}
+
+.handover-print-data .handover-patient-details ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 2px 4px;
+    margin-bottom: 0;
+    min-height: 20px;
+}
+
+.handover-print-data .handover-patient-details ul:nth-child(odd),
+.handover-print-data .handover-patient-details .col-12 ul:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.handover-print-data .handover-patient-details ul:nth-child(even),
+.handover-print-data .handover-patient-details .col-12 ul:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.handover-print-data .handover-patient-details .col-sm-6:first-child ul:first-child {
+    border-radius: 4px 0 0 0;
+}
+
+.handover-print-data .handover-patient-details .col-sm-6:nth-child(2) ul:first-child {
+    border-radius: 0 4px 0 0;
+}
+
+.handover-print-data .handover-patient-details .col-12 ul:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+.handover-print-data .handover-patient-details .col-12 ul:first-child,
+.handover-print-data .handover-patient-details .col-lg-6 ul:first-child {
+    border-radius: 0;
+}
+
+.handover-print-data .handover-patient-details .border-handover-end {
+    border-right: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.handover-print-data .handover-patient-details ul li {
+    min-width: 80px;
+}
+
+.handover-print-data .handover-patient-details ul li.label-primary {
+    font-weight: 500;
+}
+
+.handover-print-data .no-records-div {
+    padding: 1rem;
+    text-align: center;
+}
+
+.handover-print-data h6.patient-name {
+    padding: 5px;
+    margin-bottom: 0;
+    background-color: #F2F2F2;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.handover-print-data .handover-patient-details .col-lg-6:first-child ul:last-child,
+.handover-print-data .handover-patient-details .col-md-6:first-child ul:last-child {
+    border-radius: 0 0 0 4px;
+}
+
+.handover-print-data .handover-patient-details .col-lg-6:last-child ul:last-child,
+.handover-print-data .handover-patient-details .col-md-6:last-child ul:last-child {
+    border-radius: 0 0 4px 0;
+}
+
+.handover-print-data .reason-block ul,
+.handover-print-data .medical-details ul,
+.handover-print-data ul.comment-handover {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.handover-print-data .form-control,
+.handover-print-data .form-select {
+    height: 30px;
+    border-radius: 4px;
+}
+
+.handover-print-data p,
+.handover-print-data .form-label {
+    margin-bottom: 4px;
+}
+
+table.table-values {
+    border-collapse: separate;
+    border: 0.5px solid rgb(128, 128, 128, .5);
+    width: calc(100% - 4px);
+    border-radius: 4px;
+    margin: 0 2px;
+    font-size: 10px;
+}
+
+table.table-values tr {
+    vertical-align: top;
+    background-color: #fff;
+    width: 100%;
+}
+
+table.table-values thead tr {
+    background-color: #F2F2F2;
+}
+
+table.table-values thead tr th {
+    font-weight: 500;
+}
+
+table.table-values th,
+table.table-values td {
+    padding: 2px 4px;
+    min-width: 200px;
+    width: 200px;
+    border-right: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+table.table-values th:last-child,
+table.table-values td:last-child {
+    border-right: none;
+}
+
+table.table-values thead tr {
+    border-radius: 4px 4px 0 0;
+}
+
+table.table-values tbody tr:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+table.table-values thead tr th:first-child {
+    border-radius: 4px 0 0 0;
+}
+
+table.table-values thead tr th:last-child {
+    border-radius: 0 4px 0 0;
+}
+
+table.table-values tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+}
+
+table.table-values tbody tr:last-child td:last-child {
+    border-radius: 0 0 4px 0;
+}
+
+.handover-print-data .task-comments-section {
+    border-radius: 4px;
+    border: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.handover-print-data .task-comments-section .header-task {
+    margin-bottom: 0;
+}
+
+.handover-print-data .task-comments-section .header-task h6 {
+    background: var(--bg-grey-gradient);
+    padding: 3px 4px;
+    font-weight: 500;
+    border-radius: 4px 4px 0px 0px;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
+.handover-print-data .task-comments-section .handover-tasks-row {
+    display: flex;
+}
+
+.handover-print-data .task-comments-section .handover-tasks-row .handover-tasks-col-1 {
+    width: 100%;
+    border-radius: 0 0px 0px 4px;
+    padding: 0;
+}
+
+.handover-print-data .task-comments-section .handover-tasks-row .handover-tasks-col-1 .completed-tasks {
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-width: 100%;
+    border-top: 0.2px solid rgb(128, 128, 128, .5);
+}
+
+.handover-print-data .task-comments-section .handover-tasks-row .handover-tasks-col-1 .completed-tasks .cell {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.handover-print-data .task-comments-section .handover-tasks-row .handover-tasks-col-1 .completed-tasks div.cell {
+    padding: 1px 4px;
+}
+
+.handover-print-data .task-comments-section .handover-tasks-row .handover-tasks-col-1 p.comment {
+    margin-bottom: 0;
+    font-size: 9px;
+}
+
+.handover-print-data .task-comments-section .handover-tasks-row .handover-tasks-col-1 .completed-tasks .row .col-sm-4 {
+    min-height: auto;
+    border-bottom: 0.2px solid rgb(128, 128, 128, .5);
+    border-right: 0.2px solid rgb(128, 128, 128, .5);
+}
+
+.handover-print-data .task-comments-section .handover-tasks-row .handover-tasks-col-1 .completed-tasks .row .col-sm-4:nth-child(3n+0) {
+    border-right: none;
+}
+
+.handover-print-data .task-comments-section .handover-tasks-row .handover-tasks-col-1 .completed-tasks .row .col-sm-4.no-border {
+    border-bottom: none;
+}
+
+.handover-print-data ul.comment-handover {
+    border: 0.5px solid rgb(128, 128, 128, .5);
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 1px 4px;
+}
+
+.handover-print-data ul.comment-handover span.left-label,
+.handover-print-data .reason-block span.left-label {
+    font-weight: 500;
+}
+
+.handover-print-data .pac-count-box {
+    background: #F2F2F3 0% 0% no-repeat padding-box;
+    border: 1px solid #7B7B7B;
+    border-radius: 7px;
+    position: relative;
+    text-align: center;
+    padding: 0.2rem 1rem;
+    width: 85px;
+    height: 122px;
+}
+
+.handover-print-data .pac-count-box>h6 {
+    margin: 0.2rem 0;
+}
+
+.handover-print-data .pac-count-box .ews-wrapper {
+    top: 2%;
+    left: 8%;
+    font-size: 10px;
+}
+
+.handover-print-data .pac-count-box .ews-wrapper {
+    background-image: url(../icons/ews-triangle-red-dp.svg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+.handover-print-data .pac-count-box .ews-low-value {
+    background-image: url(../icons/ews-triangle-grey-dp.svg);
+}
+
+.handover-print-data .pac-count-box .ews-text {
+    font-size: 14px;
+    transform: translate(-50%, -50%);
+}
+
+.handover-print-data .pac-count-box span.ews-header {
+    display: block;
+    margin-top: -5px;
+    text-align: center;
+    width: 40px;
+    position: relative;
+    top: 100%;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+/* Media Query */
+
+
+@media (max-width:1025px) {
+    .responsiveTable thead tr {
+        top: 0;
+        left: 0;
+        border-bottom: none;
+    }
+
+    .handover-print-data .handover-tasks-col-1 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .responsiveTable tbody tr {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    .responsiveTable tbody tr:nth-child(2) {
+        border-radius: 0 0 4px 4px;
+    }
+}
+
+
+@media (max-width:991px) {
+
+    .handover-print-data .task-comments-section .handover-tasks-row {
+        flex-direction: column;
+    }
+
+    .handover-print-data .handover-icons-wrapper .flag-group {
+        width: 55px;
+        height: 50px;
+    }
+}
+
+@media (max-width:575px) {
+
+    .handover-print-data .form-control,
+    .handover-print-data .form-select {
+        border-radius: 4px;
+    }
+
+    .handover-print-data .task-comments-section .header-task h6 {
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .handover-print-data .task-comments-section .handover-tasks-row .handover-tasks-col-1 {
+        padding: 4px;
+    }
+
+    .handover-print-data .handover-patient-details .col-md-6:last-child ul:nth-last-child(2),
+    .handover-print-data .responsiveTable tbody tr:nth-child(2) {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .handover-print-data .handover-patient-details .col-md-6:last-child ul:last-child {
+        display: none;
+    }
+
+    .handover-print-data .handover-patient-details .col-md-6:first-child ul:last-child {
+        border-radius: 0;
+    }
+
+    .handover-print-data .handover-icons-wrapper {
+        justify-content: center;
+    }
+
+    .handover-print-data .handover-icons-wrapper .flag-group {
+        width: 50px;
+        height: 65px;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .handover-print-data .handover-icons-wrapper .flag-group img {
+        width: 40px;
+    }
+
+    .handover-print-data .handover-icons-wrapper .flag-group span {
+        padding: 2px;
+    }
+
+    .handover-print-data .handover-patient-details {
+        border-radius: 4px;
+    }
+
+    .handover-print-data h6.patient-name,
+    .handover-print-data .handover-patient-details .col-sm-6:first-child ul:first-child {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .handover-print-data .handover-patient-details .col-lg-6:last-child ul:last-child,
+    .handover-print-data .handover-patient-details .col-12 ul:last-child {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .handover-print-data .border-handover-end {
+        border-right: none;
+    }
+
+    .handover-print-data .reason-section .handover-patient-details ul {
+        display: block;
+    }
+
+    .handover-print-data .handover-patient-details .col-sm-6:nth-child(2) ul:first-child {
+        border-radius: 0;
+    }
+}

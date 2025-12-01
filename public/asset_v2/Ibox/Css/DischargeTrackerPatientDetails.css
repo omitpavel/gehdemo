@@ -1,0 +1,119 @@
+
+.dtoc_prev_patient.btn-grey.inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.dtoc_next_patient.btn-grey.inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+.bottom-save-button-disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.top-btn-row {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ width: 100%;
+}
+
+.top-btn-row .btn-col:nth-child(1),
+.top-btn-row .btn-col:nth-child(2),
+.top-btn-row .btn-col:nth-child(4),
+.top-btn-row .btn-col:nth-child(5) {
+    width: 25%;
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.top-btn-row .btn-col:nth-child(5) {
+    padding-right: 0;
+}
+
+.top-btn-row .btn-col:nth-child(3) {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: .5rem;
+}
+
+.btn-breach-grey {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(236, 236, 237, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    min-width: 130px;
+}
+
+#grey-btns-group svg {
+    margin-right: 10px;
+}
+
+
+.show-history-offcanvas .table-history {
+    font-size: 12px;
+}
+
+.show-history-offcanvas .table-history thead tr {
+    background-color: #009AB9;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 14px;
+    color: #fff;
+}
+
+.show-history-offcanvas .table-history thead tr th {
+    font-weight: 500;
+}
+
+.show-history-offcanvas .table-history thead tr th:first-child,
+.show-history-offcanvas .table-history thead tr th:last-child {
+    border-radius: 0;
+}
+
+.show-history-offcanvas .table-history tbody tr:nth-child(odd) {
+    background-color: #F9F9FA;
+}
+
+
+.show-history-offcanvas .table-history td .tdBefore {
+   display: none
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #dad55e !important;
+    background: #fffa90 !important;
+    color: #777620 !important;
+}
+.ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 1px solid #003eff !important;
+    background: #007fff !important;
+    font-weight: normal !important;
+    color: #ffffff !important;
+}
+.patient_already_added {
+    opacity: 0.4;
+    pointer-events: none;
+}
+.class_show_red
+{
+    background-color:transparent;
+}
+
+.class_show_green
+{
+    background-color:transparent;
+}
+.export_all_active {
+    background: linear-gradient(180deg, rgba(0, 142, 229, 1) 50%, rgba(0, 123, 199, 1) 100%);
+    color: #fff;
+}

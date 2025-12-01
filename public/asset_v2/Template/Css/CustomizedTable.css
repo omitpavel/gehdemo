@@ -1,0 +1,219 @@
+.card-custom-table .ward-patients-wrapper {
+    border: 1px solid rgb(112, 112, 112, .5);
+    padding: 0 .25rem;
+    border-radius: 7px;
+    margin-bottom: .4rem;
+}
+
+.card-custom-table .ward-patients-wrapper .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    color: #fff;
+    border-radius: 7px;
+    margin: 0.4rem 0;
+}
+
+.card-custom-table .table-custom {
+    font-size: 12px;
+}
+
+.card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td textarea.form-control {
+    height: 65px;
+    padding: 3px 5px;
+}
+
+.card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .tdBefore {
+    width: 28%;
+}
+
+.card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .wrapper-buttons {
+    width: 72%;
+    justify-content: end;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .card-custom-table .table-patient-tbody {
+        background: var(--bg-grey-gradient);
+        border: 1px solid rgb(112, 112, 112, .5);
+        margin-bottom: .4rem;
+        display: flex;
+        width: 100%;
+        border-radius: 7px;
+        box-shadow: 0px 3px 6px #00000038;
+    }
+
+    .card-custom-table .table-patient-row-1 {
+        background: var(--bg-grey-gradient);
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        border-radius: 7px;
+    }
+
+    .card-custom-table .table-custom .table-patient-row-1 td {
+        padding: 5px 8px;
+        border-bottom: 1px dashed rgb(112, 112, 112, .5);
+    }
+
+    .card-custom-table .custom-card .responsiveTable td .tdBefore {
+        display: block;
+    }
+
+    .card-custom-table .table-custom .table-patient-row-1 td.pivoted span {
+        font-weight: 600;
+    }
+
+    .card-custom-table .table-custom .table-patient-row-1 td {
+        width: 33.33%;
+    }
+
+    .card-custom-table .table-custom .table-patient-row-1 td:nth-child(4),
+    .card-custom-table .table-custom .table-patient-row-1 td:nth-child(5),
+    .card-custom-table .table-custom .table-patient-row-1 td:nth-child(6) {
+        border-bottom: none;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        border-radius: 0 7px 7px 0;
+        background: var(--bg-grey-gradient);
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td:first-child {
+        padding: 5px 8px 2px 8px;
+        border-radius: 0 0 6px 0;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td:last-child {
+        padding: 0 8px 4px 8px;
+    }
+}
+
+@media (min-width:1026px) and (max-width:1199px) {
+
+    .card-custom-table .table-patient-row-1 {
+        width: 55%;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 {
+        width: 45%;
+    }
+}
+
+@media (max-width:1199px) {
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .tdBefore {
+        width: 25%;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .wrapper-buttons {
+        width: 75%;
+        justify-content: end;
+    }
+}
+
+@media (max-width:1025px) {
+
+    .card-custom-table {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .card-custom-table tbody.table-patient-tbody:nth-child(even) tr.table-patient-row-1:nth-child(odd),
+    .card-custom-table tbody.table-patient-tbody:nth-child(even) tr.table-patient-row-2:nth-child(even) {
+        background-color: #CEDDF5;
+    }
+
+    .card-custom-table tbody.table-patient-tbody:nth-child(odd) tr.table-patient-row-1:nth-child(odd),
+    .card-custom-table tbody.table-patient-tbody:nth-child(odd) tr.table-patient-row-2:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody {
+        box-shadow: none;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-bottom: none;
+        margin-bottom: 0;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 {
+        border-top: none;
+        border-radius: 0 0 7px 7px;
+        background: none;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-1 td {
+        width: 25%;
+    }
+
+    .card-custom-table .table-custom .table-patient-row-2 td textarea {
+        height: 40px;
+    }
+
+    .card-custom-table .table-custom .table-patient-row-2 td .selectric-wrapper {
+        margin-top: .25rem;
+    }
+}
+
+@media (max-width:991px) {
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .tdBefore {
+        width: 50%;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .btn-assign-task {
+        width: 50%;
+    }
+}
+
+@media (max-width:767px) {
+
+    .card-custom-table .ward-patients-wrapper,
+    .card-custom-table .ward-patients-wrapper .name-header {
+        border-radius: 4px;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .card-custom-table .responsiveTable td .tdBefore {
+        font-size: 12px;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-1 td {
+        width: 50%;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td {
+        width: 100%;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .tdBefore {
+        width: 35%;
+    }
+
+    .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .btn-assign-task {
+        width: 65%;
+    }
+}

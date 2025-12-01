@@ -1,0 +1,857 @@
+.pharmacy-dashboard-contents .responsiveTable td .tdBefore {
+    display: block;
+}
+
+.form-select {
+    min-height: 35px;
+}
+
+.custom-card {
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: 0.5rem;
+}
+
+.medfit-text-danger {
+    color: #E30000;
+}
+
+.medfit-text-success {
+    color: #48AB3F;
+}
+
+.table-custom {
+    font-size: 10px;
+}
+
+.table-custom th {
+    background: var(--primary-blue);
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.table-patient-tbody {
+    display: flex;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.table-patient-row-1 {
+    background: var(--bg-grey-gradient);
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    border-radius: 0 0px 0px 7px;
+}
+
+.table-patient-row-2 {
+    width: 32%;
+    background: var(--bg-grey-gradient);
+}
+
+.table-patient-row-3 {
+    width: 38%;
+}
+
+.table-custom .table-patient-row-1 td {
+    padding: 10px;
+    width: 25%;
+    border-bottom: 1px solid rgb(112, 112, 112, .5);
+}
+
+.table-custom td:nth-child(5),
+.table-custom td:nth-child(6),
+.table-custom td:nth-child(7),
+.table-custom td.spl-cell {
+    border-bottom: none;
+}
+
+.table-custom .table-patient-row-1 td {
+    border-bottom: none;
+    padding: 5px 8px;
+    border-bottom: 1px dashed rgb(112, 112, 112, .5);
+}
+
+.table-custom .table-patient-row-2 td,
+.table-custom .table-patient-row-3 td {
+    padding: 5px 8px;
+    width: 100%;
+    display: block;
+}
+
+.pivoted span {
+    font-weight: 600;
+}
+
+.card-col-grp {
+    background-color: #fff;
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 100%;
+    border: .5px solid #A7A7A7;
+    border-radius: 5px;
+}
+
+.pharmacy-block .comment-pharmacy textarea::-webkit-scrollbar,
+.card-col-grp::-webkit-scrollbar {
+    width: 3px;
+}
+
+.card-col-grp .row .col-comment {
+    width: 100%;
+    text-wrap: wrap;
+}
+
+.card-col-grp .row .col-comment span {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.card-col-grp .row:nth-child(odd) {
+    background-color: #FDFDFE;
+    padding: 3px;
+}
+
+.card-col-grp .row:nth-child(even) {
+    background-color: #F2F2F3;
+    padding: 3px;
+}
+
+.table-custom p {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    top: -1.5px;
+}
+
+.table-row {
+    border-radius: 10px;
+}
+
+.custom-card .btn:hover {
+    color: #fff;
+}
+
+.pharmacy-block {
+    display: flex;
+    align-items: center;
+}
+
+.pharmacy-block .comment-pharmacy {
+    width: 70%;
+    margin-right: 5px;
+}
+
+.pharmacy-block .btn-grp-pharmacy {
+    width: 30%;
+}
+
+.pharmacy-block .btn-grp-pharmacy .row {
+    display: flex;
+    flex-direction: column;
+}
+
+.pharmacy-block .btn-grp-pharmacy .row .col {
+    width: 100%;
+}
+
+.pharmacy-block .btn-grp-pharmacy .row .col .btn {
+    margin-bottom: 3px;
+}
+
+.pharmacy-block .btn-grp-pharmacy .row .col:last-child .btn {
+    margin-bottom: 0;
+}
+
+.pharmacy-block .btn-grp-pharmacy .row .btn-darkcyan,
+.pharmacy-block .btn-grp-pharmacy .row .btn-black {
+    min-height: 42px;
+    padding: .25rem 1rem;
+    font-size: 12px;
+}
+
+.pharmacy-block .btn-grp-pharmacy .row .btn-darkcyan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pharmacy-block .btn-grp-pharmacy .row .btn-black .date-time-stamp {
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.pharmacy-block .comment-pharmacy textarea {
+    height: 100px;
+    border: .5px solid #A7A7A7;
+    border-radius: 5px;
+    padding: .25rem;
+    font-size: 12px;
+}
+
+.btn-assign-task,
+.btn-board-round {
+    padding: 0.25rem 0.5rem;
+    box-shadow: 3px 4px 6px rgba(85, 85, 85, 0.4);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+}
+
+.btn-assign-task {
+    background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+}
+
+.btn-board-round {
+    background: linear-gradient(180deg, rgba(16, 176, 179, 1) 0%, rgba(9, 132, 134, 1) 100%);
+}
+
+.header-comment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header-comment .btn {
+    min-width: 100px;
+}
+
+.table-patient-row-2 .header-comment .btn {
+    min-width: 125px;
+}
+
+.header-comment .btn:hover {
+    color: #fff;
+}
+
+.header-comment div {
+    margin-right: .25rem;
+}
+
+.header-comment div:last-child {
+    margin-right: 0;
+}
+
+.task-all-offcanvas.offcanvas-end {
+    width: 90%;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.task-all-offcanvas .tasks-card {
+    padding: 0;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.task-all-offcanvas .table-tasks {
+    font-size: 12px;
+}
+
+.task-all-offcanvas .table-tasks thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.task-all-offcanvas .table-tasks thead tr th {
+    font-weight: 500;
+}
+
+
+/* Pharmacist Screened Tab Styles */
+
+.screened-patients-contents {
+    margin-top: 90px;
+}
+
+.card-screened-patients {
+    padding: 0;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.card-screened-patients .name {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem .5rem;
+    min-height: 35px;
+}
+
+.card-screened-patients .name span {
+    font-weight: 500;
+}
+
+.card-screened-patients .table-screened-patients {
+    font-size: 12px;
+}
+
+.card-screened-patients .table-screened-patients thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.card-screened-patients .table-screened-patients th {
+    font-weight: 500;
+    padding: 8px;
+    color: #fff;
+}
+
+.btn-history,
+.bg-history-danger,
+.bg-history-success {
+    background: var(--primary-blue-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: .5rem;
+    color: #fff;
+    padding: .3rem .5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-history:hover {
+    color: #fff;
+}
+
+.bg-history-danger {
+    background: var(--bg-red-gradient);
+}
+
+.bg-history-success {
+    background: var(--bg-green-gradient);
+}
+
+button.btn-history-disabled,
+button.btn-history-disabled:hover {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.screened-offcanvas .card-comment-history .table-comments-history tbody {
+    max-height: 450px;
+}
+
+.screened-offcanvas.offcanvas-end {
+    width: 50%;
+}
+
+/* Media Query */
+
+@media (min-width:1400px) {
+
+    .table-custom .table-patient-row-2 td {
+        padding: 8px 3px 8px 5px;
+    }
+
+    .table-custom .table-patient-row-3 td {
+        padding: 8px 5px 8px 2px;
+    }
+
+}
+
+@media (min-width:1026px) {
+    .sticky-toprow {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 50px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .pharmacy-dashboard-contents {
+        margin-top: 90px;
+    }
+
+    .bg-sticky {
+        background: #F8F8F8;
+        position: fixed;
+        z-index: 2;
+        height: 40px;
+        width: calc(100% - 115px);
+        left: 115px;
+        padding: 0.5rem 0.75rem 0 0.6rem;
+    }
+
+    .sticky-header {
+        position: sticky;
+        width: 100%;
+        background-color: #F8F8F8;
+        z-index: 2;
+        border-radius: 7px;
+    }
+
+    .bg-sticky,
+    .sticky-header {
+        top: 105px;
+    }
+
+    .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-radius: 7px 0 0 7px;
+    }
+
+    .table-custom .table-patient-tbody .table-patient-row-1 td:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .table-custom .table-patient-row-1 td {
+        width: 33.33%;
+    }
+
+    .table-custom .table-patient-row-1 td:nth-child(7),
+    .table-custom .table-patient-row-1 td:nth-child(8),
+    .table-custom .table-patient-row-1 td:nth-child(9) {
+        border-bottom: none;
+    }
+
+    .table-patient-row-1 {
+        background: transparent;
+    }
+
+    .table-patient-tbody {
+        background: var(--bg-grey-gradient);
+        border: 1px solid rgb(112, 112, 112, .5);
+        margin-bottom: .4rem;
+    }
+
+    .btn-assign-task,
+    .btn-board-round {
+        margin-bottom: .25rem;
+    }
+
+    .card-screened-patients .table-screened-patients thead tr th:nth-child(1),
+    .card-screened-patients .table-screened-patients tbody tr td:nth-child(1),
+    .card-screened-patients .table-screened-patients thead tr th:nth-child(2),
+    .card-screened-patients .table-screened-patients tbody tr td:nth-child(2),
+    .card-screened-patients .table-screened-patients thead tr th:nth-child(3),
+    .card-screened-patients .table-screened-patients tbody tr td:nth-child(3),
+    .card-screened-patients .table-screened-patients thead tr th:nth-child(5),
+    .card-screened-patients .table-screened-patients tbody tr td:nth-child(5),
+    .card-screened-patients .table-screened-patients thead tr th:nth-child(6),
+    .card-screened-patients .table-screened-patients tbody tr td:nth-child(6) {
+        width: 15%;
+    }
+
+    .card-screened-patients .table-screened-patients thead tr th:nth-child(4),
+    .card-screened-patients .table-screened-patients tbody tr td:nth-child(4) {
+        width: 5%;
+    }
+
+    .card-screened-patients .table-screened-patients thead tr th:nth-child(7),
+    .card-screened-patients .table-screened-patients tbody tr td:nth-child(7),
+    .card-screened-patients .table-screened-patients thead tr th:nth-child(8),
+    .card-screened-patients .table-screened-patients tbody tr td:nth-child(8) {
+        width: 10%;
+    }
+
+    .card-screened-patients .table-screened-patients tbody tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .card-screened-patients .table-screened-patients tbody tr:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .card-screened-patients .table-screened-patients tr:last-child td:first-child {
+        border-radius: 0px 0 0 7px;
+    }
+
+    .card-screened-patients .table-screened-patients tr:last-child td:last-child {
+        border-radius: 0px 0 7px 0;
+    }
+
+    .task-all-offcanvas .table-tasks thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .task-all-offcanvas .table-tasks thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .task-all-offcanvas .table-tasks tbody tr:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .task-all-offcanvas .table-tasks tbody tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .table-tasks tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-tasks tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+}
+
+@media (max-width: 1399px) {
+    .table-custom {
+        font-size: 12px;
+    }
+
+    .table-patient-tbody {
+        flex-direction: column;
+    }
+
+    .table-patient-row-1,
+    .table-patient-row-2,
+    .table-patient-row-3 {
+        width: 100%;
+    }
+
+    .table-custom .table-patient-tbody:first-child .table-patient-row-1 {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .table-patient-row-2 td {
+        padding: 8px;
+    }
+
+    .card-col-grp,
+    .pharmacy-block .card-col-grp {
+        height: 100px;
+    }
+}
+
+@media (max-width:1025px) {
+
+    .screened-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .responsiveTable tbody tr {
+        align-items: start;
+    }
+
+    .responsiveTable thead tr {
+        top: 0;
+        left: 0;
+        border-bottom: none;
+    }
+
+    .responsiveTable td .tdBefore {
+        white-space: normal;
+    }
+
+    .pivoted span {
+        font-weight: 400;
+    }
+
+    .table-patient-row-1,
+    .table-patient-row-2 {
+        width: 100%;
+    }
+
+    .responsiveTable .table-patient-row-2 td.pivoted {
+        width: 100%;
+    }
+
+    .name-header {
+        margin-bottom: 0;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .custom-card {
+        margin-top: 0;
+    }
+
+    .table-custom {
+        margin-bottom: .5rem;
+    }
+
+    .header-comment {
+        margin-bottom: .5rem;
+    }
+
+    .pharmacy-dashboard-contents .responsiveTable tbody tr {
+        margin-bottom: 0px;
+        border-radius: 0;
+    }
+
+    .btn-history,
+    .bg-history-danger,
+    .bg-history-success,
+    .bg-amber {
+        font-size: 12px;
+    }
+
+    span.screen-time {
+        font-size: 10px;
+    }
+
+    .table-patient-row-1 {
+        background: #FFFFFF;
+    }
+
+    .table-custom .table-patient-tbody:first-child .table-patient-row-1,
+    .responsiveTable td.pivoted:nth-child(1),
+    .responsiveTable td.pivoted:nth-child(2),
+    .responsiveTable td.pivoted:nth-child(11),
+    .responsiveTable td.pivoted:nth-child(12),
+    .responsiveTable .table-patient-row-1 td.pivoted:nth-child(5) {
+        border-radius: 0;
+    }
+
+    .card-screened-patients .responsiveTable td.pivoted:nth-child(1) {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .table-custom td,
+    .table-custom .table-patient-row-1 td {
+        border-bottom: none;
+    }
+
+    .card-col-grp {
+        min-width: 100%;
+        padding: 0;
+        height: 150px;
+    }
+
+    .responsiveTable td.pivoted.spl-cell {
+        width: 100% !important;
+    }
+
+    .pharmacy-dashboard-contents .responsiveTable tbody tr:nth-child(2),
+    .pharmacy-dashboard-contents .responsiveTable tbody tr:nth-child(3) {
+        border-top: none;
+    }
+
+    .responsiveTable td.pivoted.spl-cell:nth-child(1) {
+        border-radius: 0;
+    }
+
+    .table-custom .table-patient-tbody:last-child .table-patient-row-3 {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .responsiveTable .table-patient-row-1 td:first-child,
+    .responsiveTable .table-patient-row-1 td:nth-child(4) {
+        border-radius: 0;
+    }
+
+    .responsiveTable .table-patient-tbody:last-child .table-patient-row-3 td:first-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-patient-tbody:last-child .table-patient-row-2 td {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .screened-patients-contents {
+        margin-top: 0;
+    }
+
+    .card-screened-patients {
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .card-screened-patients .name {
+        border-radius: 8px;
+        margin-bottom: .5rem;
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000038;
+    }
+
+    .screened-offcanvas .card-comment-history .responsiveTable td.pivoted:nth-child(1) {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .task-all-offcanvas .tasks-card {
+        box-shadow: none;
+        border-radius: 6px;
+    }
+
+    .table-tasks.responsiveTable td.pivoted {
+        width: 100% !important;
+        min-height: 35px;
+    }
+
+    .table-tasks.responsiveTable td.pivoted:nth-child(2)>div {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+
+    .task-all-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .table-custom td {
+        min-width: auto;
+    }
+
+    .responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0;
+    }
+
+    .card-screened-patients .responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .card-screened-patients .responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 6px 0;
+    }
+}
+
+@media (max-width:767px) {
+
+    .pharmacy-dashboard-contents .table-custom .table-patient-row-1 td {
+        width: 50%;
+    }
+
+    .header-comment {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .header-comment div {
+        margin-right: 0;
+    }
+
+    .header-comment .btn,
+    .header-comment div {
+        min-width: 100% !important;
+    }
+
+    .table-custom th,
+    .name-header{
+        border-radius: 4px 4px 0 0;
+    }
+
+    .table-patient-tbody:last-child .table-patient-row-2 td{
+        border-radius: 0 0 4px 4px;
+    }
+
+    .card-col-grp span {
+        font-size: 10px;
+    }
+
+    .card-screened-patients .name,
+    .btn-history,
+    .btn-danger,
+    .btn-success,
+    .bg-history-danger,
+    .bg-history-success,
+    .task-all-offcanvas .tasks-card {
+        border-radius: 4px;
+    }
+
+    .responsiveTable td.pivoted:nth-child(9),
+    .responsiveTable .table-patient-row-1 td:nth-child(3),
+    .responsiveTable .table-patient-row-1 td:nth-child(4),
+    .card-screened-patients .responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0;
+    }
+
+    .responsiveTable .table-patient-row-3 td.pivoted {
+        width: 100% !important;
+    }
+
+    .responsiveTable .table-patient-tbody:last-child .table-patient-row-3 td:first-child {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .responsiveTable .table-patient-row-1 td:nth-child(2),
+    .iv-history .responsiveTable td.pivoted:nth-child(2),
+    .card-screened-patients .responsiveTable td.pivoted:nth-child(2) {
+        border-radius: 0 4px 0 0;
+    }
+
+    .responsiveTable .table-patient-row-3 td.assign-task {
+        flex-direction: column;
+    }
+
+    .btn-assign-task,
+    .btn-board-round {
+        margin-right: 0;
+        margin-bottom: .25rem;
+    }
+
+    .card-screened-patients .responsiveTable td.pivoted:nth-child(7),
+    .screened-offcanvas .card-comment-history .responsiveTable td.pivoted:nth-child(3) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .card-screened-patients .responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 4px 0;
+    }
+
+    .screened-offcanvas .card-comment-history .responsiveTable td.pivoted:nth-child(1) {
+        border-radius: 4px 0 0 0;
+    }
+
+    .screened-offcanvas .card-comment-history .responsiveTable td.pivoted:nth-child(2) {
+        border-left: none;
+    }
+
+    .pharmacy-block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pharmacy-block .comment-pharmacy,
+    .pharmacy-block .btn-grp-pharmacy {
+        width: 100%;
+        margin: 0;
+    }
+
+    .pharmacy-block .btn-grp-pharmacy .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pharmacy-block .comment-pharmacy textarea {
+        margin-bottom: .25rem;
+    }
+}
+
+@media (max-width:575px) {
+
+    .pharmacy-block .btn-grp-pharmacy .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pharmacy-block .btn-grp-pharmacy .row .col {
+        width: 100%;
+    }
+
+    .pharmacy-block .btn-grp-pharmacy .row .btn-darkcyan,
+    .pharmacy-block .btn-grp-pharmacy .row .btn-black {
+        font-size: 12px;
+    }
+}

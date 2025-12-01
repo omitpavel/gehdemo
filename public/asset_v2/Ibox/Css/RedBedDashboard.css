@@ -1,0 +1,20 @@
+.modal-popup-loader-content {
+    background: rgba(256, 256, 256, 0.5) url('../Images/loading-detail.gif') center center no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+}
+#complex-dashboard-donut .apexcharts-series path {
+    cursor: pointer;
+}
+.ms-options-wrap>.ms-options>ul>li.optgroup .label {
+    display: inline;
+    padding-right: 7px;
+}
+.optgroup-all{
+    position: unset !important;
+}
+.btn-export{
+    min-height: unset;
+}

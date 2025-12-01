@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.196" height="60" viewBox="0 0 85.196 60">
+  <defs>
+    <filter id="hexagon-fill-svgrepo-com" x="0" y="0" width="85.196" height="60" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2851" data-name="Group 2851" transform="translate(20.293 10.25)">
+    <g transform="matrix(1, 0, 0, 1, -20.29, -10.25)" filter="url(#hexagon-fill-svgrepo-com)">
+      <path id="hexagon-fill-svgrepo-com-2" data-name="hexagon-fill-svgrepo-com" d="M18.806.515a4.162,4.162,0,0,1,4.012,0l16.65,9.157a4.162,4.162,0,0,1,2.157,3.647V31.291a4.163,4.163,0,0,1-2.157,3.647L22.818,44.1a4.162,4.162,0,0,1-4.012,0L2.156,34.938A4.162,4.162,0,0,1,0,31.291V13.32A4.162,4.162,0,0,1,2.156,9.672Z" transform="translate(64.9 10.25) rotate(90)" fill="none" stroke="#e80000" stroke-width="1.5"/>
+    </g>
+    <path id="activity-heart-svgrepo-com" d="M15.014,11.194H14.05L12.6,14.086,10.676,8.3,9.23,11.194H8.266m3.367-6.135a5.244,5.244,0,0,0-7.556-.8,5.741,5.741,0,0,0-.858,7.953,82.709,82.709,0,0,0,7.407,7.244,2.219,2.219,0,0,0,.73.53.978.978,0,0,0,.554,0,2.219,2.219,0,0,0,.73-.53,82.712,82.712,0,0,0,7.407-7.244,5.7,5.7,0,0,0-.858-7.953A5.259,5.259,0,0,0,11.633,5.059Z" transform="translate(10.666 9.785)" fill="none" stroke="#e80000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

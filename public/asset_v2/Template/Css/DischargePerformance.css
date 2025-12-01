@@ -1,0 +1,553 @@
+.btn-export {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: .25rem 0.5rem;
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h6.graph-title {
+    padding-bottom: .1rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.tile-shape-left {
+    border-radius: 7px 0 0 7px;
+    background: var(--bg-grey-gradient);
+    padding: .5rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.tile-shape-left h6 {
+    font-size: 12px;
+}
+
+.blue-tile-right-1,
+.blue-tile-right-2,
+.blue-tile-right-3,
+.blue-tile-right-4,
+.blue-tile-right-5,
+.blue-tile-right-6 {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 0 7px 7px 0;
+    padding: .5rem .75rem;
+    margin-left: -15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.blue-tile-right-1 {
+    background-color: #00BCD4;
+}
+
+.blue-tile-right-2 {
+    background-color: #00A9BF;
+}
+
+.blue-tile-right-3 {
+    background-color: #0096AA;
+}
+
+.blue-tile-right-4 {
+    background-color: #005E6A;
+}
+
+.blue-tile-right-5 {
+    background-color: #003840;
+}
+
+.blue-tile-right-6 {
+    background-color: #00262A;
+}
+
+.blue-tile-right-1 h6,
+.blue-tile-right-2 h6,
+.blue-tile-right-3 h6,
+.blue-tile-right-4 h6,
+.blue-tile-right-5 h6,
+.blue-tile-right-6 h6 {
+    margin-bottom: 0;
+}
+
+.complex-discharge-data,
+.current-provider-data {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.complex-discharge-data .complex-patient-details {
+    padding: .25rem;
+    height: 295px;
+    overflow-y: auto;
+}
+
+.complex-discharge-data .complex-patient-details .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem .5rem;
+    min-height: 35px;
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: .25rem;
+}
+
+.table-complex-discharge {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: none;
+    font-size: 12px;
+    border-radius: 7px;
+}
+
+.table-complex-discharge th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.table-complex-discharge th:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+.complex-discharge-data .complex-patient-details .table-complex-discharge {
+    font-size: 10px;
+}
+
+.current-provider-data .table-complex-discharge thead tr:first-child {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0 0;
+}
+
+.current-provider-data .table-complex-discharge tbody tr {
+    cursor: pointer;
+}
+
+.table-complex-discharge th {
+    background: var(--bg-grey-gradient);
+    font-weight: 400;
+}
+
+.card-table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #F8F8F8;
+    background-clip: border-box;
+    border: none;
+
+}
+
+.card-table .progress {
+    background: rgba(218, 0, 0, 0);
+    font-size: 20px;
+    height: 30px;
+    overflow: hidden;
+    border: none;
+    box-shadow: none;
+    width: 150px;
+    padding: 3px 6px 3px 0;
+
+}
+
+.card-table .progress-bar {
+    background: #BCD4EC;
+    border-radius: 3px;
+}
+
+.border-dashed {
+    border-right: 2px dashed #707070;
+}
+
+.stranded-section .rectangle-block-1 {
+    min-height: 349px;
+}
+
+.stranded-section .rectangle-block-1 .rectangle-block-2 p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.stranded-section .rectangle-block-1 .los-box-1,
+.stranded-section .rectangle-block-1 .los-box-2,
+.stranded-section .rectangle-block-1 .los-box-3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.stranded-section .rectangle-block-1 .los-box-1 .thumb-icon,
+.stranded-section .rectangle-block-1 .los-box-2 .thumb-icon,
+.stranded-section .rectangle-block-1 .los-box-3 .thumb-icon {
+    padding-left: .5rem;
+}
+
+.stranded-section .rectangle-block-1 .legend-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+
+.stranded-section .rectangle-block-1 .legend-box h6.count-patients {
+    margin: 0 .9rem;
+    font-weight: 600;
+}
+
+/* Media Query */
+
+@media (min-width: 1400px) {
+    h6.graph-title {
+        padding-bottom: .4rem;
+    }
+
+    .tile-shape-left,
+    .blue-tile-right-1,
+    .blue-tile-right-2,
+    .blue-tile-right-3,
+    .blue-tile-right-4,
+    .blue-tile-right-5,
+    .blue-tile-right-6 {
+        min-height: 81px;
+    }
+
+    .stranded-section .rectangle-block-1 .chart-area {
+        text-align: center;
+        min-height: 238px;
+        height: 238px;
+    }
+}
+
+@media (min-width: 1026px) {
+
+    .patient-data-row {
+        background: #ffff;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: 7px;
+        border: 1px solid rgb(112, 112, 112, .5);
+        margin-bottom: .25rem;
+    }
+
+    .table-complex-discharge .patient-data-row td {
+        background: var(--bg-grey-gradient);
+        padding: 5px 8px;
+        border-bottom: 1px dashed rgb(112, 112, 112, .5);
+        min-height: 55px;
+    }
+
+    .table-complex-discharge .patient-data-row td {
+        width: 20%;
+    }
+
+    .table-complex-discharge .patient-data-row td:nth-child(8) {
+        width: 60%;
+    }
+
+    .table-complex-discharge .patient-data-row td:nth-child(6),
+    .table-complex-discharge .patient-data-row td:nth-child(7),
+    .table-complex-discharge .patient-data-row td:nth-child(8) {
+        border-bottom: none;
+    }
+
+    .table-complex-discharge .patient-data-row td:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .table-complex-discharge .patient-data-row td:nth-child(5) {
+        border-radius: 0 7px 0 0;
+    }
+
+    .table-complex-discharge .patient-data-row td:nth-child(6) {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-complex-discharge .patient-data-row td:nth-child(8) {
+        border-radius: 0 0 7px 0;
+    }
+
+    .responsiveTable td .tdBefore {
+        display: block;
+    }
+
+    .complex-patient-details .table-complex-discharge .pivoted span {
+        font-weight: 600;
+        word-wrap: break-word;
+    }
+
+    .current-provider-data .table-complex-discharge {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .current-provider-data .table-complex-discharge thead,
+    .current-provider-data .table-complex-discharge tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .current-provider-data .table-complex-discharge tbody {
+        flex: 1 1 auto;
+        display: block;
+        height: 304px;
+        overflow-y: auto;
+    }
+
+    .complex-discharge-data .complex-patient-details::-webkit-scrollbar,
+    .current-provider-data .table-complex-discharge tbody::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .current-provider-data .table-complex-discharge tbody {
+        height: 316px;
+    }
+
+    .current-provider-data .table-complex-discharge thead,
+    .current-provider-data .table-complex-discharge tbody tr {
+        table-layout: auto;
+    }
+
+    .current-provider-data .table-complex-discharge thead tr th:nth-child(1) {
+        width: 75%;
+    }
+
+    .current-provider-data .table-complex-discharge tbody tr td:nth-child(1) {
+        width: 5%;
+        text-align: center;
+    }
+
+    .current-provider-data .table-complex-discharge tbody td:nth-child(2) {
+        width: 70%;
+    }
+
+    .current-provider-data .table-complex-discharge thead tr th:nth-child(2),
+    .current-provider-data .table-complex-discharge tbody tr td:nth-child(3) {
+        text-align: center;
+        width: 25%;
+    }
+
+    .current-provider-data .table-complex-discharge tbody tr:last-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .current-provider-data .table-complex-discharge tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .current-provider-data .table-complex-discharge tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+}
+
+
+@media (max-width:1399px) {
+    h6.graph-title {
+        padding-bottom: .1rem;
+    }
+
+    .stranded-section .rectangle-block-1 .legend-box span {
+        font-size: 12px;
+    }
+
+    .current-provider-data .table-complex-discharge tbody {
+        height: 332px;
+    }
+}
+
+@media (max-width:1025px) and (min-width:992px) {
+    .complex-discharge-data .responsiveTable td {
+        min-height: 60px;
+    }
+
+    .complex-discharge-data .table-complex-discharge.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .stranded-section .rectangle-block-1 {
+        min-height: 402px;
+    }
+
+    .stranded-section .rectangle-block-1 .chart-box {
+        padding-top: 3.5rem;
+    }
+}
+
+@media (max-width:1025px) {
+    .responsiveTable thead {
+        display: none;
+    }
+
+    .complex-discharge-data .rectangle-block-2 {
+        border-radius: 7px;
+    }
+
+    .complex-discharge-data .complex-patient-details {
+        height: auto;
+        padding: .5rem 0 .25rem 0;
+    }
+
+    .current-provider-data .table-complex-discharge thead tr th,
+    .current-provider-data .table-complex-discharge tbody tr td {
+        padding: 8px 4px;
+    }
+
+    .current-provider-data .table-complex-discharge tbody {
+        height: 368px;
+    }
+
+    .current-provider-data .table-complex-discharge tr:last-child td:first-child {
+        border-radius: 0 0 0 6px;
+    }
+
+    .current-provider-data .table-complex-discharge tr:last-child td:last-child {
+        border-radius: 0 0 6px 0;
+    }
+
+    .current-provider-data .table-complex-discharge thead tr th:nth-child(3),
+    .current-provider-data .table-complex-discharge tbody tr td:nth-child(3) {
+        text-align: center;
+    }
+
+    .table-complex-discharge.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .complex-discharge-data {
+        box-shadow: none;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+
+    .complex-discharge-data .table-complex-discharge.responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .stranded-section .rectangle-block-1 {
+        min-height: 402px;
+    }
+
+    .stranded-section .rectangle-block-1 .chart-box {
+        padding-top: 3.5rem;
+    }
+
+    .stranded-section .rectangle-block-1 .legend-box {
+        height: 25px;
+    }
+}
+
+@media (max-width:991px) {
+
+    .tile-shape-left,
+    .blue-tile-right-1,
+    .blue-tile-right-2,
+    .blue-tile-right-3,
+    .blue-tile-right-4,
+    .blue-tile-right-5,
+    .blue-tile-right-6 {
+        min-height: 40px;
+    }
+
+    .table-complex-discharge.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .tile-shape-left,
+    .blue-tile-right-1,
+    .blue-tile-right-2,
+    .blue-tile-right-3,
+    .blue-tile-right-4,
+    .blue-tile-right-5,
+    .blue-tile-right-6 {
+        min-height: 50px;
+    }
+
+    .tile-shape-left {
+        border-radius: 4px 0 0 4px;
+    }
+
+    .blue-tile-right-1,
+    .blue-tile-right-2,
+    .blue-tile-right-3,
+    .blue-tile-right-4,
+    .blue-tile-right-5,
+    .blue-tile-right-6 {
+        border-radius: 0 4px 4px 0;
+    }
+
+    .complex-discharge-data,
+    .current-provider-data,
+    .btn-export,
+    .complex-discharge-data .rectangle-block-2,
+    .complex-discharge-data .complex-patient-details .name-header {
+        border-radius: 4px;
+    }
+
+    .table-complex-discharge.responsiveTable td.pivoted:nth-child(6),
+    .current-provider-data .table-complex-discharge tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+
+    .table-complex-discharge th:first-child {
+        border-radius: 4px 0 0 0;
+    }
+
+    .table-complex-discharge th:last-child {
+        border-radius: 0 4px 0 0;
+    }
+
+    .complex-discharge-data .table-complex-discharge.responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 4px 0;
+    }
+
+    .complex-discharge-data .table-complex-discharge.responsiveTable td.pivoted:nth-child(7),
+    .current-provider-data .table-complex-discharge tr:last-child td:first-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .stranded-section .rectangle-block-1 {
+        min-height: 330px;
+    }
+
+    .stranded-section .rectangle-block-1 .legend-box {
+        justify-content: start;
+        padding: 0 4rem;
+        min-width: 300px;
+    }
+
+    .stranded-section .rectangle-block-1 .los-box-1 .thumb-icon,
+    .stranded-section .rectangle-block-1 .los-box-2 .thumb-icon,
+    .stranded-section .rectangle-block-1 .los-box-3 .thumb-icon {
+        position: absolute;
+        left: 70%;
+        padding-left: 0;
+    }
+}

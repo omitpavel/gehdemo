@@ -1,0 +1,38 @@
+@media print {
+    #contentWrap button.btn {
+        display: none!important;
+    }
+
+    .work-plan-wrapper .work-plan .name-header {
+        background: linear-gradient(180deg, rgba(0, 142, 229, 1) 50%, rgba(0, 123, 199, 1) 100%) !important;
+        color: #fff !important;
+        padding: 0.5rem;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0px 3px 6px #00000038;
+    }
+
+}
+@media print {
+    .no-page-break {
+        page-break-inside: avoid;
+    }
+    .plan-details:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+    .mb-2 {
+        margin-bottom: 0.5rem!important;
+    }
+}
+@media print {
+    .plan-details:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .mb-2 {
+        margin-bottom: 0.5rem !important;
+    }
+
+     .plan-details:nth-child(even) {
+        background-color: #F2F2F2;
+    }
+}

@@ -1,0 +1,487 @@
+.search-fields .form-label {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.search-fields .form-select,
+.search-fields .form-control {
+    height: 37px;
+}
+
+.btn-search,
+.btn-trace {
+    background: var(--primary-blue-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: .5rem;
+    color: #fff;
+    height: 37px;
+}
+
+.btn-trace {
+    padding: .3rem .5rem;
+    height: auto;
+    width: 100%;
+}
+
+.btn-search:hover,
+.btn-trace:hover {
+    color: #fff;
+}
+
+.border-bottom,
+.borderline-bottom {
+    border-bottom: 1px solid #707070 !important;
+    opacity: 50%;
+}
+
+.borderline-bottom {
+    width: 99%;
+    margin: 0 .5%;
+    margin-bottom: .5rem;
+}
+
+.patients-tracing {
+    padding: 0;
+}
+
+table {
+    font-size: 12px;
+}
+
+.patients-tracing .card-tracing-details {
+    padding: 0;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    margin-bottom: .5rem;
+}
+
+.patients-tracing .card-tracing-details .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem .5rem;
+    min-height: 35px;
+}
+
+.patients-tracing .card-tracing-details span {
+    font-weight: 500;
+}
+
+.patients-tracing .table-contact-tracing th {
+    background: var(--primary-blue);
+    font-weight: 500;
+    padding: 8px;
+    color: #fff;
+}
+
+.contact-patient-details {
+    margin-bottom: .5rem;
+}
+
+.contact-patient-details .rectangle-block-1 .row .col-md-3:nth-child(1),
+.contact-patient-details .rectangle-block-1 .row .col-md-3:nth-child(2),
+.contact-patient-details .rectangle-block-1 .row .col-md-3:nth-child(3),
+.contact-patient-details .rectangle-block-1 .row .col-md-3:nth-child(4) {
+    border-bottom: 1px dashed rgb(112, 112, 112, .5);
+    padding-bottom: .5rem;
+}
+
+.contact-patient-details .rectangle-block-1 .value {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.contact-patient-details .blue-rectangle-block {
+    background: linear-gradient(180deg, rgba(16, 176, 179, 1) 0%, rgba(9, 132, 134, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0 0;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.contact-patient-details .blue-rectangle-block h6 {
+    font-size: 12px;
+}
+
+.contact-patient-details .form-label {
+    font-size: 12px;
+    margin-bottom: .25rem;
+}
+
+.contact-patient-details .form-control {
+    background-color: #F3F3F3;
+}
+
+.contact-tracing-contents {
+    border: 1px solid rgb(112, 112, 112, .5);
+    padding: 0 .25rem;
+    border-radius: 7px;
+}
+
+.contact-tracing-contents h6 {
+    padding: .5rem;
+    border-bottom: 1px solid rgb(112, 112, 112);
+}
+
+.contact-tracing-contents .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: 0.5rem;
+}
+
+.other-notes-offcanvas.offcanvas-end {
+    width: 60%;
+}
+
+.history-card {
+    padding-top: 1.5rem;
+}
+
+.history-card .data-area {
+    padding: .25rem .5rem;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+    .fixed-section {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 130px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .patients-tracing {
+        border-radius: 7px;
+        margin-top: 123px;
+    }
+
+    .infections-wrapper .card-table-listing {
+        margin-bottom: .5rem;
+    }
+
+    .patients-tracing .table-contact-tracing tr:last-child td:first-child {
+        border-radius: 0px 0 0 7px;
+    }
+
+    .patients-tracing .table-contact-tracing tr:last-child td:last-child {
+        border-radius: 0px 0 7px 0;
+    }
+
+    .patients-tracing .table-contact-tracing tbody tr:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .patients-tracing .table-contact-tracing tbody tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .patients-tracing .table-contact-tracing tbody tr {
+        border-bottom: 1px solid #A7A7A7;
+    }
+
+    .patients-tracing .table-contact-tracing tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    .patients-tracing .table-contact-tracing tr th,
+    .patients-tracing .table-contact-tracing tr td {
+        border-right: 1px solid #A7A7A7;
+        text-align: center;
+        width: 12.5%;
+    }
+
+    .patients-tracing .table-contact-tracing tr th:last-child,
+    .patients-tracing .table-contact-tracing tr td:last-child {
+        border-right: none;
+        width: 10%;
+    }
+
+    .patients-tracing .table-contact-tracing tr th:nth-child(5),
+    .patients-tracing .table-contact-tracing tr td:nth-child(5) {
+        width: 40%;
+    }
+
+    .patients-tracing .table-contact-tracing tr {
+        height: 35px;
+    }
+
+    .contact-tracing-contents .table-patient-tbody {
+        background: var(--bg-grey-gradient);
+        border: 1px solid rgb(112, 112, 112, .5);
+        margin-bottom: .5rem;
+        display: flex;
+        width: 100%;
+        border-radius: 7px;
+        box-shadow: 0px 3px 6px #00000038;
+    }
+
+    .contact-tracing-contents .table-patient-row-1 {
+        background: var(--bg-grey-gradient);
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: 0 0px 0px 7px;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-radius: 7px;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-tbody .table-patient-row-2 {
+        width: 25%;
+        border-radius: 0 7px 7px 0;
+        background: var(--bg-grey-gradient);
+    }
+
+    .contact-tracing-contents .responsiveTable td .tdBefore {
+        display: block;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-row-2 td {
+        width: 25%;
+        padding: 5px 8px;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-row-2 td textarea.form-control {
+        height: 70px;
+        padding: 3px 5px;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-row-1 td {
+        border-bottom: none;
+        padding: 5px 8px;
+        border-bottom: 1px dashed rgb(112, 112, 112, .5);
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-row-1 td.pivoted span {
+        font-weight: 600;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-row-1 td {
+        width: 20%;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-row-1 td:nth-child(6),
+    .contact-tracing-contents .table-custom .table-patient-row-1 td:nth-child(7),
+    .contact-tracing-contents .table-custom .table-patient-row-1 td:nth-child(8),
+    .contact-tracing-contents .table-custom .table-patient-row-1 td:nth-child(9),
+    .contact-tracing-contents .table-custom .table-patient-row-1 td:nth-child(10) {
+        border-bottom: none;
+    }
+
+    .infections-wrapper .card-table-listing .table-listing thead tr {
+        background: linear-gradient(180deg, rgba(133, 29, 147, 1) 0%, rgba(54, 4, 61, 1) 100%);
+    }
+
+    .other-notes .table-other-notes {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .other-notes .table-other-notes thead,
+    .other-notes .table-other-notes tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .other-notes .table-other-notes thead tr {
+        background: var(--primary-blue);
+        color: #fff;
+        box-shadow: 0px 3px 6px #00000038;
+        width: 100%;
+        border-right: 3px solid rgb(128, 128, 128, 0);
+    }
+
+    .other-notes .table-other-notes thead tr th {
+        font-weight: 500;
+    }
+
+    .other-notes .table-other-notes thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .other-notes .table-other-notes thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .other-notes .table-other-notes th:nth-child(1),
+    .other-notes .table-other-notes tbody td:nth-child(1) {
+        width: 56%;
+    }
+
+    .other-notes .table-other-notes th:nth-child(2),
+    .other-notes .table-other-notes tbody td:nth-child(2) {
+        width: 20%;
+    }
+
+    .other-notes .table-other-notes th:nth-child(3),
+    .other-notes .table-other-notes tbody td:nth-child(3) {
+        width: 24%;
+    }
+
+    .other-notes .table-other-notes tbody {
+        flex: 1 1 auto;
+        display: block;
+        max-height: 170px;
+        overflow-y: auto;
+    }
+
+    .other-notes .table-other-notes tbody tr {
+        border-bottom: 1px solid #dedddd;
+    }
+
+    .other-notes .table-other-notes tbody::-webkit-scrollbar {
+        width: 3px;
+    }
+}
+
+@media (max-width:1199px) {
+    .other-notes-offcanvas.offcanvas-end {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .patients-tracing .card-tracing-details {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .patients-tracing .card-tracing-details .name-header {
+        padding: 0.75rem;
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000038;
+        border-radius: 7px;
+        margin-bottom: .5rem;
+    }
+
+    .patients-tracing .table-contact-tracing.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+
+    tbody.table-patient-tbody:nth-child(even) tr.table-patient-row-1:nth-child(odd),
+    tbody.table-patient-tbody:nth-child(even) tr.table-patient-row-2:nth-child(even) {
+        background-color: #CEDDF5;
+    }
+
+    tbody.table-patient-tbody:nth-child(odd) tr.table-patient-row-1:nth-child(odd),
+    tbody.table-patient-tbody:nth-child(odd) tr.table-patient-row-2:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-bottom: none;
+        margin-bottom: 0;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-tbody .table-patient-row-2 {
+        border-radius: 0 0 7px 7px;
+        border-top: none;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-tbody .table-patient-row-2 td {
+        width: 100%;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-tbody .table-patient-row-2 td input {
+        height: 50px;
+    }
+
+    .other-notes-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .other-notes-section .rectangle-block-1 {
+        background: none;
+        box-shadow: none;
+    }
+
+    .history-card .data-area {
+        padding: 0 .5rem;
+    }
+
+    .other-notes .responsiveTable tbody tr {
+        margin-bottom: 5px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .patients-tracing .table-contact-tracing.responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .patients-tracing .table-contact-tracing.responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .patients-tracing .table-contact-tracing.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .btn-search,
+    .btn-trace,
+    .card-tracing-details,
+    .contact-tracing-contents,
+    .contact-tracing-contents .name-header,
+    .contact-tracing-contents .table-patient-tbody,
+    .other-notes .responsiveTable tbody tr {
+        border-radius: 4px;
+    }
+
+    .btn-search {
+        width: 100%;
+    }
+
+    .borderline-bottom {
+        display: none;
+    }
+
+    .patients-tracing .table-contact-tracing.responsiveTable td.pivoted:nth-child(7) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .patients-tracing .table-contact-tracing.responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 4px 0;
+    }
+
+    .contact-patient-details .blue-rectangle-block,
+    .contact-tracing-contents .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .contact-tracing-contents .table-custom .table-patient-tbody .table-patient-row-2 {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .contact-patient-details .rectangle-block-1 .row .col-md-3 {
+        border-bottom: 1px dashed rgb(112, 112, 112, .5);
+        padding-bottom: .5rem;
+    }
+
+    .contact-patient-details .rectangle-block-1 .row .col-md-3:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+
+    }
+}

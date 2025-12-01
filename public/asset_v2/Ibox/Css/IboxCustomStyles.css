@@ -1,0 +1,2177 @@
+
+.message-no-data {
+    border-radius: 0 0 7px 7px !important;
+    text-align: center;
+    border-right: none;
+}
+
+
+.permission_denied_alert{
+    cursor: pointer;
+}
+.No_record_css {
+    max-height: 400px;
+    min-height: 200px;
+    overflow-y: hidden !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.no_records_found{
+    height: 60px;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 100%, rgba(238, 238, 239, 1) 100%);
+    /*box-shadow: 0px 3px 6px #00000038;*/
+}
+
+
+.triangle-wrapper .ews-text-lower {
+    position: absolute;
+    top: 64% !important;
+    left: 49% !important;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000 !important;
+}
+.triangle-wrapper .ews-text-lower {
+    position: absolute;
+    top: 64%!important;
+    left: 49%!important;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000!important;
+}
+.head_live_box_title
+{
+    background: #d54444;
+    background: #d54444;
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+
+
+.custom_table_data_not_found {
+    padding-top: 25px;
+    padding-bottom: 4px;
+    height: 60px;
+    text-align: center;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 14px;
+    background: #fff!important;
+}
+
+.permission_restricted{
+    cursor: not-allowed !important;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
+.infection_risk_disabled{
+    cursor: not-allowed !important;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
+
+.permission_denied_div{
+    cursor: not-allowed !important;
+    opacity: 0.5;
+
+}
+.medifit-text-success{
+    color:#44bf43;
+}
+.notification_text_top_header {
+    background-color: #ffc107;
+    padding: 4px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 2px 1px #AAAAAA;
+}
+
+.notification_text_top_header marquee {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.ibox-mouse-pointer {
+    cursor: pointer;
+}
+.all_attendence_table {
+    padding: 0;
+    height: 253px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #DDD;
+}
+
+
+@media (min-width: 1441px) and (max-width:1540px){
+    #table-breach-dashboard_last7{
+        height: 282px !important;
+    }
+    .admitted_responsive{
+        padding: 18px 6px !important;
+    }
+
+}
+@media (min-width: 1025px) and (max-width:1440px){
+    #table-breach-dashboard_last7{
+        height: 282px !important;
+    }
+    .text_responsive_attendence{
+        width: 45% !important;
+    }
+
+}
+@media (min-width: 992px) and (max-width:1024px){
+    #table-breach-dashboard_last7{
+        height: 266px !important;
+    }
+
+
+}
+/*@media (min-width: 1025px) and (max-width:1600px){*/
+/*    .margin-top-10{*/
+/*        margin-top: 10px;*/
+/*    }*/
+
+/*}*/
+
+
+.task_priority_assigned {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25) !important;
+}
+
+#table-breach-dashboard_last7{
+    padding: 0;
+    height: 265px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.shape-box-column, .shape-box-column-1, .shape-box-column-2{
+    width: 12%;
+}
+
+/* #blue-row, #box-2{
+    margin: 10px !important;
+} */
+
+@media (min-width: 992px){
+    .pb-lg-1 {
+        padding-bottom: 0.25rem!important;
+    }
+}
+@media (min-width: 768px){
+    .pb-md-1 {
+        padding-bottom: 0.25rem!important;
+    }
+}
+
+
+
+.home-page-hexagone-disabled {
+    cursor: not-allowed;
+}
+
+.home-page-hexagone-disabled svg path {
+    stroke: #CCCCCC;
+}
+
+.ibox-side-menu-disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: none;
+    color: black;
+}
+
+
+.ibox-side-menu-disabled-icon {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+i.bi.bi-check-circle.fs-5 {
+    display: contents;
+}
+
+
+.ibox-common-modal-styles .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.ibox-common-modal-styles .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.ibox-common-modal-styles .nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.ibox-common-modal-styles .nav-tabs .nav-item.show .nav-link,
+.ibox-common-modal-styles .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.ibox-common-modal-styles .nav-link {
+    display: block;
+    padding: 0.5rem 1rem !important;
+}
+
+.ibox-common-modal-styles .nav-tabs .nav-link {
+    margin-left: 0 !important;
+    color: #000;
+}
+
+
+
+.margin_right_zero {
+    margin-right: 0 !important;
+}
+
+.loading-save-svg-to-show-on-save {
+    width: 25px;
+    height: 25px;
+}
+
+
+.loading-delete-svg-to-show-on-delete {
+    width: 25px;
+    height: 25px;
+}
+
+.btn-full {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.ibox_modal_footer_button_class {
+    /* flex-direction: row;
+    align-items: center;
+    justify-content: center */
+}
+
+.ibox_modal_footer_button_class button {
+    /* padding: 0px 18px;
+    line-height: 45px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #555;
+    border: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px !important;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; */
+}
+
+.ibox_modal_footer_button_class button:after {
+    /* content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0 */
+}
+
+.ibox_modal_footer_button_class button svg {
+    /* margin-right: 6px !important;
+    color: #555 */
+}
+
+.ibox_modal_footer_button_class button:hover {
+    /* background-color: transparent;
+    color: #000000 */
+}
+
+.ibox_modal_footer_button_class button:hover svg {
+    /* color: #000000 */
+}
+
+.ibox_modal_footer_button_class .bottom-save-button:hover {
+    /* background-color: transparent;
+    color: #0091C9; */
+}
+
+.ibox_modal_footer_button_class .bottom-save-button:hover svg {
+    /* color: #0091C9;
+    background-color: transparent; */
+}
+
+.ibox_modal_footer_button_class .bottom-save-button:hover span {
+    /* color: #0091C9;
+    background-color: transparent; */
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled:hover {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled svg {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled:hover svg {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled span {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled:hover span {
+    color: #bbbbbb;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.button-event-trigger-disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled:hover {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled svg {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled:hover svg {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled span {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled:hover span {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button:hover {
+    background-color: transparent;
+    color: #000000;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button:hover svg {
+    color: #000000;
+    background-color: transparent;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button:hover span {
+    color: #000000;
+    background-color: transparent;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled:hover {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled svg {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled:hover svg {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled span {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled:hover span {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button:hover {
+    background-color: transparent;
+    color: #0091c9;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button:hover svg {
+    color: #0091c9;
+    background-color: transparent;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button:hover span {
+    color: #0091c9;
+    background-color: transparent;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled:hover {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled svg {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled:hover svg {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled span {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled:hover span {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button:hover {
+    background-color: transparent;
+    color: #0091c9;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button:hover svg {
+    color: #0091c9;
+    background-color: transparent;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button:hover span {
+    color: #0091c9;
+    background-color: transparent;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled:hover {
+    background-color: transparent;
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled svg {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled:hover svg {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled span {
+    color: #BBBBBB;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled:hover span {
+    color: #BBBBBB;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .btn-secondary:disabled {
+    background-color: transparent;
+    color: #BBBBBB;
+}
+
+.ibox_modal_footer_button_class .btn-secondary:disabled span {
+    color: #BBBBBB;
+}
+
+.ibox_modal_footer_button_class .btn-secondary:disabled svg {
+    color: #BBBBBB;
+}
+
+.ibox_modal_footer_button_class button:focus {
+    background-color: transparent !important;
+    outline: none;
+    box-shadow: 0px 3px 6px #00000038 !important;
+}
+
+.ibox_modal_footer_button_class button:active {
+    background-color: transparent !important;
+    outline: none;
+    box-shadow: none !important
+}
+
+.ibox_modal_footer_button_class button:last-child:after {
+    display: none
+}
+
+
+.align-text-center-and-left-on-responsive-tables {
+    text-align: center;
+}
+
+.input-field-minimum-height-set {
+    height: 35px;
+}
+
+.cursor_pointer{
+    cursor: pointer;
+}
+.click_popup_open_ibox_board_mobility_score {
+    padding: 7px;
+}
+
+.content_display_none {
+    display: none !important;
+}
+
+
+
+
+.popup_reason_to_reside_sub_content_block {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+}
+
+
+.page-data-loader_two{
+    background: rgba(256, 256, 256, 0.5) url(../Images/loading-detail.gif) center center no-repeat;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    display: none;
+}
+
+
+.popup_reason_to_reside_sub_head {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0px 15px;
+    margin: 5px 0;
+    background-color: #EEE;
+    border-radius: 5px;
+    line-height: 35px;
+}
+
+.popup_reason_to_reside_list_data {
+    font-size: 12px;
+    padding: 0 0 0 15px;
+}
+
+.popup_reason_to_reside_list_data_radio {
+    margin-top: 5px;
+    position: absolute;
+}
+
+.popup_reason_to_reside_list_data_content {
+    padding-left: 25px;
+    line-height: 25px;
+}
+
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled:hover {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled svg {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled:hover svg {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled span {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-save-button-disabled:hover span {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.button-event-trigger-disabled {
+cursor: not-allowed;
+pointer-events: none;
+}
+
+
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled:hover {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled svg {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled:hover svg {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled span {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-delete-button-disabled:hover span {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled:hover {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled svg {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled:hover svg {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled span {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-cancel-button-disabled:hover span {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled:hover {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled svg {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled:hover svg {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled span {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-next-button-disabled:hover span {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled:hover {
+background-color: transparent;
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled svg {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled:hover svg {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled span {
+color: #BBBBBB;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .bottom-prev-button-disabled:hover span {
+color: #BBBBBB;
+background-color: transparent;
+cursor: not-allowed;
+pointer-events: none;
+}
+
+.ibox_modal_footer_button_class .btn-secondary:disabled {
+background-color: transparent;
+color: #BBBBBB;
+}
+
+.ibox_modal_footer_button_class .btn-secondary:disabled span {
+color: #BBBBBB;
+}
+
+.ibox_modal_footer_button_class .btn-secondary:disabled svg {
+color: #BBBBBB;
+}
+
+.flag_inactive {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+.patient_task_to_be_completed_selected{
+    background-color: #0066FF;
+    color: #fff;
+}
+
+.board_round_assign_task_popup_wrap div.RodalComment {
+padding: 15px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .selbox.disabled {
+pointer-events: none
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .form-group {
+margin-bottom: 5px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DateInput {
+height: 31px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+position: relative
+}
+
+.boardround_patient_task_estimated_date_for_completion {
+height: 33px;
+}
+
+.boardround_patient_task_estimated_time_for_completion {
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap .react-datepicker-wrapper {
+width: 100%
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap .datePickerIco {
+position: absolute;
+right: 0;
+top: 0;
+width: 50px;
+height: 33px;
+background-color: #ddd;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+pointer-events: none
+}
+
+.boardround_patient_task_description {
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .selectric .label {
+display: block;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0 33px 0 10px;
+font-size: 13px;
+line-height: 33px;
+color: #444;
+height: 33px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap input[type="text"].datePicker {
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker {
+height: 33px;
+position: relative
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker input[type="text"] {
+height: 33px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker .react-timekeeper {
+z-index: 5
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker .timepickerTrigger {
+position: absolute;
+width: 50px;
+height: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+right: 0;
+top: 0;
+outline: none;
+border: none;
+background-color: #ddd;
+border-radius: 0 5px 5px 0;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner input[type="text"] {
+width: 100%;
+border: solid 1px #ddd;
+border-radius: 5px;
+padding: 5px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner textarea {
+width: 100%;
+border: solid 1px #ddd;
+border-radius: 5px;
+min-height: 120px;
+padding: 8px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.red {
+background-color: #2196f3;
+color: #fff
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.red.active {
+background-color: #f44336;
+color: #fff
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.black {
+background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 13px;
+line-height: 30px;
+color: #fff;
+border-radius: 5px;
+border: solid 1px #ddd;
+margin: 0 0 5px 0;
+outline: none;
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .boardround_patient_task_description_inner {
+margin-bottom: 5px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner button.task_priority_inner {
+background: linear-gradient(to bottom, #BBBBBB 0%, #CCCCCC 50%, #999999 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner button.task_priority_inner.task_priority_assigned {
+background: linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 50, 50) 50%, rgb(229, 0, 0) 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .buttonWrapBottom button.inactive {
+pointer-events: none;
+opacity:
+
+
+
+@media (max-width:768px) {
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner {
+width: 100% !important
+}
+}
+
+.board_round_assign_task_popup_wrap {
+width: 768px
+}
+
+@media (max-width:1025px) {
+.board_round_assign_task_popup_wrap {
+width: 95%;
+top: 0% !important;
+}
+}
+
+.board_round_assign_task_popup_wrap div.RodalComment {
+padding: 15px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .selbox.disabled {
+pointer-events: none
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .form-group {
+margin-bottom: 5px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DateInput {
+height: 31px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+position: relative
+}
+
+.boardround_patient_task_estimated_date_for_completion {
+height: 33px;
+}
+
+.boardround_patient_task_estimated_time_for_completion {
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap .react-datepicker-wrapper {
+width: 100%
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap .datePickerIco {
+position: absolute;
+right: 0;
+top: 0;
+width: 50px;
+height: 33px;
+background-color: #ddd;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+pointer-events: none
+}
+
+.boardround_patient_task_description {
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .selectric .label {
+display: block;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0 33px 0 10px;
+font-size: 13px;
+line-height: 33px;
+color: #444;
+height: 33px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap input[type="text"].datePicker {
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker {
+height: 33px;
+position: relative
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker input[type="text"] {
+height: 33px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker .react-timekeeper {
+z-index: 5
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker .timepickerTrigger {
+position: absolute;
+width: 50px;
+height: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+right: 0;
+top: 0;
+outline: none;
+border: none;
+background-color: #ddd;
+border-radius: 0 5px 5px 0;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner input[type="text"] {
+width: 100%;
+border: solid 1px #ddd;
+border-radius: 5px;
+padding: 5px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner textarea {
+width: 100%;
+border: solid 1px #ddd;
+border-radius: 5px;
+min-height: 120px;
+padding: 8px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.red {
+background-color: #2196f3;
+color: #fff
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.red.active {
+background-color: #f44336;
+color: #fff
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.black {
+background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 13px;
+line-height: 30px;
+color: #fff;
+border-radius: 5px;
+border: solid 1px #ddd;
+margin: 0 0 5px 0;
+outline: none;
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .boardround_patient_task_description_inner {
+margin-bottom: 5px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner button.task_priority_inner {
+background: linear-gradient(to bottom, #BBBBBB 0%, #CCCCCC 50%, #999999 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner button.task_priority_inner.task_priority_assigned {
+background: linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 50, 50) 50%, rgb(229, 0, 0) 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .buttonWrapBottom button.inactive {
+pointer-events: none;
+opacity: .5
+}
+
+
+
+
+@media (max-width:768px) {
+.board_round_assign_task_popup_wrap {
+min-width: auto;
+width: 98%;
+}
+}
+
+@media (max-width:768px) {
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner {
+width: 100% !important
+}
+}
+
+.board_round_assign_task_popup_wrap {
+width: 768px
+}
+
+@media (max-width:1025px) {
+.board_round_assign_task_popup_wrap {
+width: 95%;
+top: 0% !important;
+}
+}
+
+.board_round_assign_task_popup_wrap div.RodalComment {
+padding: 15px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .selbox.disabled {
+pointer-events: none
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .form-group {
+margin-bottom: 5px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DateInput {
+height: 31px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+position: relative
+}
+
+.boardround_patient_task_estimated_date_for_completion {
+height: 33px;
+}
+
+.boardround_patient_task_estimated_time_for_completion {
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap .react-datepicker-wrapper {
+width: 100%
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap .datePickerIco {
+position: absolute;
+right: 0;
+top: 0;
+width: 50px;
+height: 33px;
+background-color: #ddd;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+pointer-events: none
+}
+
+.boardround_patient_task_description {
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .selectric .label {
+display: block;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0 33px 0 10px;
+font-size: 13px;
+line-height: 33px;
+color: #444;
+height: 33px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap input[type="text"].datePicker {
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker {
+height: 33px;
+position: relative
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker input[type="text"] {
+height: 33px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker .react-timekeeper {
+z-index: 5
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker .timepickerTrigger {
+position: absolute;
+width: 50px;
+height: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+right: 0;
+top: 0;
+outline: none;
+border: none;
+background-color: #ddd;
+border-radius: 0 5px 5px 0;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner input[type="text"] {
+width: 100%;
+border: solid 1px #ddd;
+border-radius: 5px;
+padding: 5px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner textarea {
+width: 100%;
+border: solid 1px #ddd;
+border-radius: 5px;
+min-height: 120px;
+padding: 8px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.red {
+background-color: #2196f3;
+color: #fff
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.red.active {
+background-color: #f44336;
+color: #fff
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.black {
+background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 13px;
+line-height: 30px;
+color: #fff;
+border-radius: 5px;
+border: solid 1px #ddd;
+margin: 0 0 5px 0;
+outline: none;
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .boardround_patient_task_description_inner {
+margin-bottom: 5px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner button.task_priority_inner {
+background: linear-gradient(to bottom, #BBBBBB 0%, #CCCCCC 50%, #999999 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner button.task_priority_inner.task_priority_assigned {
+background: linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 50, 50) 50%, rgb(229, 0, 0) 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .buttonWrapBottom button.inactive {
+pointer-events: none;
+opacity: .5
+}
+
+
+
+.board_round_assign_task_popup_wrap {
+max-width: 650px;
+}
+
+@media (max-width:768px) {
+.board_round_assign_task_popup_wrap {
+min-width: auto;
+width: 98%;
+}
+}
+
+@media (max-width:768px) {
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner {
+width: 100% !important
+}
+}
+
+.board_round_assign_task_popup_wrap {
+width: 768px
+}
+
+@media (max-width:1025px) {
+.board_round_assign_task_popup_wrap {
+width: 95%;
+top: 0% !important;
+}
+}
+
+.board_round_assign_task_popup_wrap div.RodalComment {
+padding: 15px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .selbox.disabled {
+pointer-events: none
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .form-group {
+margin-bottom: 5px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DateInput {
+height: 31px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+position: relative
+}
+
+.boardround_patient_task_estimated_date_for_completion {
+height: 33px;
+}
+
+.boardround_patient_task_estimated_time_for_completion {
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap .react-datepicker-wrapper {
+width: 100%
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap .datePickerIco {
+position: absolute;
+right: 0;
+top: 0;
+width: 50px;
+height: 33px;
+background-color: #ddd;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+pointer-events: none
+}
+
+.boardround_patient_task_description {
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .selectric .label {
+display: block;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0 33px 0 10px;
+font-size: 13px;
+line-height: 33px;
+color: #444;
+height: 33px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .DatePickerWrap input[type="text"].datePicker {
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker {
+height: 33px;
+position: relative
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker input[type="text"] {
+height: 33px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker .react-timekeeper {
+z-index: 5
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .timePicker .timepickerTrigger {
+position: absolute;
+width: 50px;
+height: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+right: 0;
+top: 0;
+outline: none;
+border: none;
+background-color: #ddd;
+border-radius: 0 5px 5px 0;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner input[type="text"] {
+width: 100%;
+border: solid 1px #ddd;
+border-radius: 5px;
+padding: 5px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner textarea {
+width: 100%;
+border: solid 1px #ddd;
+border-radius: 5px;
+min-height: 120px;
+padding: 8px
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.red {
+background-color: #2196f3;
+color: #fff
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.red.active {
+background-color: #f44336;
+color: #fff
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button.black {
+background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .buttonWrap button {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 13px;
+line-height: 30px;
+color: #fff;
+border-radius: 5px;
+border: solid 1px #ddd;
+margin: 0 0 5px 0;
+outline: none;
+height: 33px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner .boardround_patient_task_description_inner {
+margin-bottom: 5px;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner button.task_priority_inner {
+background: linear-gradient(to bottom, #BBBBBB 0%, #CCCCCC 50%, #999999 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .board_round_assign_task_popup_inner button.task_priority_inner.task_priority_assigned {
+background: linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 50, 50) 50%, rgb(229, 0, 0) 100%);
+border: 1px solid #FFFFFF;
+color: #FFFFFF;
+}
+
+.board_round_assign_task_popup_wrap .buttonWrapBottom button.inactive {
+pointer-events: none;
+opacity: .5
+}
+
+
+
+
+.ward_summary_boardround_pharmacy_popup_wrap {
+width: 991px;
+top: 0% !important;
+max-width: 99%;
+}
+
+@media (max-width:1025px) {
+.ward_summary_boardround_pharmacy_popup_wrap {
+width: 95%;
+top: 0% !important;
+}
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap div.RodalComment {
+padding: 10px
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner {
+width: 100%
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .topRow {
+margin-bottom: 10px
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .topRow span.updated {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 12px;
+color: #555;
+display: block;
+width: 100%;
+text-align: center;
+padding: 10px 0px;
+min-height: 38px
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .topRow .redBtnGrouplistTop {
+list-style: none;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .topRow .redBtnGrouplistTop li {
+width: 32%;
+min-height: 80px
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .topRow .redBtnGrouplistTop li .btnRed {
+background-color: #f44336;
+color: #fff
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .topRow .redBtnGrouplistTop li .innerBtn.active .icon {
+visibility: visible;
+opacity: 1
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .topRow .redBtnGrouplistTop li .innerBtn {
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 10px 0px 10px 40px;
+position: relative;
+border: none;
+outline: none;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 14px;
+border-radius: 5px
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .topRow .redBtnGrouplistTop li .innerBtn .icon {
+position: absolute;
+left: 10px;
+top: 50%;
+transform: translateY(-50%);
+border-radius: 50%;
+border: solid 1px #fff;
+display: block;
+width: 26px;
+height: 26px;
+padding: 4px;
+visibility: hidden;
+opacity: 0;
+transition: all .3s ease
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .antiBioticRow {
+width: 100%;
+margin-bottom: 10px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .antiBioticRow span.updated {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 12px;
+color: #555;
+display: block;
+width: 100%;
+text-align: center;
+padding: 10px 0px
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .antiBioticRow .box.antibiotContBox {
+flex-direction: column
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .antiBioticRow .box.antibiotContBox span.head {
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 20px;
+color: #333;
+display: block;
+width: 100%;
+text-align: center;
+line-height: 41px;
+text-transform: uppercase;
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .antiBioticRow .box {
+width: 32%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+min-height: 80px
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .antiBioticRow .box button.active .icon {
+visibility: visible;
+opacity: 1
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .antiBioticRow .box button {
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 10px 0px;
+position: relative;
+border: none;
+outline: none;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 14px;
+border-radius: 5px;
+background-color: #34b2e4;
+color: #fff
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .antiBioticRow .box button .icon {
+position: absolute;
+left: 10px;
+top: 50%;
+transform: translateY(-50%);
+border-radius: 50%;
+border: solid 1px #fff;
+display: block;
+width: 26px;
+height: 26px;
+padding: 4px;
+visibility: hidden;
+opacity: 0;
+transition: all .3s ease
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .pharmacyCommentwrap {
+width: 100%;
+margin-bottom: 10px
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .pharmacyCommentwrap textarea {
+width: 100%;
+border: solid 1px #ddd;
+border-radius: 5px;
+outline: none;
+padding: 10px;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 14px;
+min-height: 150px
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .commentsTable {
+width: 100%;
+margin-bottom: 10px;
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .commentsTable table {
+width: 100%;
+border-radius: 0;
+;
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .commentsTable table th {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 12px;
+text-align: center;
+padding: 8px 6px;
+background-color: #1abc9c;
+color: #fff
+}
+
+.boardround_patient_allowed_to_be_moved_comment {
+margin-top: 10px;
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .commentsTable table td {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 11px;
+padding: 6px;
+text-align: center;
+border: 1px solid #ddd;
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .commentsTable table td:first-child {
+text-align: left
+}
+
+.ward_summary_boardround_pharmacy_popup_wrap .pharmacyPopinner .commentsTable table td.copycell:hover {
+cursor: pointer
+}
+
+.task_priority_assigned {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+
+.btn-large.btn-breach-grey.btn-icon-modal.ibox_boardround_patient_flag_infection_risk_active {
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+
+
+
+.header_row_title_span_1 {
+color: #000000 !important;
+text-align: left;
+}
+
+.text_size_style_dp_his {
+font-size: 13px;
+line-height: 18px;
+line-height: 30px;
+}
+
+.header_row_title_span_2 {
+color: #000000 !important;
+font-weight: bold;
+padding-left: 5px;
+text-align: left;
+}
+
+.text_size_style_dp_his_tit {
+font-size: 14px;
+font-weight: bold;
+line-height: 30px;
+}
+
+.header_row_title_span_1 {
+color: #000000 !important;
+text-align: left;
+}
+
+.text_size_style_dp_his {
+font-size: 13px;
+line-height: 18px;
+line-height: 30px;
+}
+
+.header_row_title_span_2 {
+color: #000000 !important;
+font-weight: bold;
+padding-left: 5px;
+text-align: left;
+}
+
+.text_size_style_dp_his_tit {
+font-size: 14px;
+font-weight: bold;
+line-height: 30px;
+}
+
+.text-component img {
+display: block;
+margin: 0 auto;
+}
+
+.bed_status_icons_img {
+width: 90%;
+width: 100%;
+text-align: center;
+cursor: pointer;
+}
+
+.ews_score_red_new_large {
+background: url(../images/triangle_back_red_new_large.png) no-repeat scroll 0 0;
+margin: 0 auto;
+text-align: center;
+font-size: 15px;
+padding-top: 1px;
+width: 60px;
+font-weight: bold;
+height: 51px;
+}
+
+.main_task_to_show_history_data_under {
+font-size: 14px;
+text-align: left;
+padding-left: 25px;
+line-height: 35px;
+}
+
+
+.text_size_style_dp_his_top
+{
+font-size: 14px;
+font-weight: bold;
+line-height: 27px;
+padding-top: 10px;
+border-bottom: 1px solid #FFFFFF;
+margin-bottom: 15px;
+padding-bottom: 7px;
+}
+.main_task_to_show_history_data_under {
+font-size: 14px;
+text-align: left;
+padding-left: 25px;
+line-height: 35px;
+}
+
+.main_task_to_show_history_data_under {
+font-size: 14px;
+text-align: left;
+padding-left: 25px;
+line-height: 35px;
+}
+.dp_form_no {
+padding: 3px 13px;
+border-radius: 4px;
+color: #FFFFFF;
+background-color: red;
+}
+
+.dp_form_yes {
+padding: 3px 13px;
+border-radius: 4px;
+color: #FFFFFF;
+background-color: rgb(9, 219, 82);
+}
+
+div#dp_task {
+text-align: center;
+}
+
+.mobile-score ul.score-list li:last-child {
+    width: 100% !important;
+    list-style: none;
+}
+
+
+button.btn.click_popup_open_ibox_board_round_medfit_no.btn-red {
+    background: linear-gradient(180deg, rgb(205 8 8) 50%, rgb(114 38 57) 100%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+
+button.btn.click_popup_open_ibox_board_round_medfit_no.btn-green {
+    background: linear-gradient(180deg, rgb(5, 173, 61) 50%, rgb(0, 59, 18) 100%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+
+
+.custom-table .table-discharge-details thead {
+    display: block;
+}
+
+.custom-table .table-discharge-details tbody {
+    display: block;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.custom-table .table-discharge-details thead th,
+.custom-table .table-discharge-details tbody td {
+    width: 25%;
+}
+
+
+.btn-opel-5 {
+    background: linear-gradient(180deg, rgb(13 10 212) 50%, rgb(19 81 220) 100%);
+}
+
+
+
+
+.No_record_css {
+    max-height: 400px;
+    min-height: 200px;
+    overflow-y: hidden !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 100%, rgba(238, 238, 239, 1) 100%);
+}
+
+
+.tooltip {
+    z-index: 1300;
+}
+
+
+
+.selectric-items .disabled {
+    opacity: 1;
+    cursor: default !important;
+    background: none !important;
+    color: #000!important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }

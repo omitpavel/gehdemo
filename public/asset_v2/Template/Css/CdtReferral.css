@@ -1,0 +1,375 @@
+.referral-filters .form-control,
+.referral-filters .btn-export,
+.referral-filters .btn-dark,
+.referral-filters .bg-dark {
+    min-height: 37px;
+}
+
+.wrapper-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-buttons .btn.btn:not(:last-child) {
+    margin-right: .25rem;
+}
+
+.referral-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 .wrapper-buttons {
+    flex-direction: column;
+    padding: .25rem 0;
+}
+
+.referral-contents .card-custom-table .table-custom .wrapper-buttons .btn.btn:not(:last-child) {
+    margin-right: 0;
+}
+
+.card-custom-table .btn-approve,
+.card-custom-table .btn-review,
+.card-custom-table .btn-reject,
+.card-custom-table .btn-blue-gradient,
+.title-comment-offcanvas .btn-delete {
+    padding: 0.25rem 0.5rem;
+    box-shadow: 3px 4px 6px rgba(85, 85, 85, 0.4);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #FFFFFF;
+    min-width: 90px;
+    min-height: 30px;
+}
+
+.referral-contents .card-custom-table .btn {
+    width: 100%;
+    margin-bottom: .25rem;
+}
+
+.referral-contents .card-custom-table .btn:last-child {
+    margin-bottom: 0;
+}
+
+.title-comment-offcanvas .btn-delete {
+    min-width: 80px;
+    width: 100%;
+}
+
+.card-custom-table .btn-approve {
+    background: var(--bg-green-gradient);
+}
+
+.card-custom-table .btn-review {
+    background: var(--bg-amber-gradient);
+    color: #000;
+}
+
+.card-custom-table .btn-reject,
+.title-comment-offcanvas .btn-delete {
+    background: var(--bg-red-gradient);
+}
+
+.card-custom-table .btn-blue-gradient {
+    background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+}
+
+.card-custom-table .btn-approve:hover,
+.card-custom-table .btn-reject:hover,
+.title-comment-offcanvas .btn-delete:hover,
+.card-custom-table .btn-blue-gradient:hover {
+    color: #fff;
+}
+
+.accept-offcanvas.offcanvas-end,
+.review-reason-offcanvas.offcanvas-end,
+.reject-reason-offcanvas.offcanvas-end {
+    width: 50%;
+}
+
+.card-col-grp .row .col-icons a {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3px;
+}
+
+.card-col-grp .row .col-icons a:last-child {
+    margin-right: 0;
+}
+
+.title-comment-offcanvas.offcanvas-end {
+    width: 60%;
+}
+
+.history-card {
+    padding-top: 1.5rem;
+}
+
+.history-card .data-area {
+    padding: .25rem .5rem;
+}
+
+.title-comments .table-discharge-comments,
+.title-comments .responsiveTable td .tdBefore {
+    font-size: 12px;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .sticky-toprow {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 105px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .dashboard-contents {
+        margin-top: 95px;
+    }
+
+    .bg-sticky {
+        background: #F8F8F8;
+        position: fixed;
+        height: 40px;
+        width: calc(100% - 115px);
+        left: 115px;
+        padding: 0.5rem 0.75rem 0 0.6rem;
+    }
+
+    .sticky-header {
+        position: sticky;
+        width: 100%;
+        background-color: #F8F8F8;
+        z-index: 2;
+        border-radius: 7px;
+    }
+
+    .bg-sticky,
+    .sticky-header {
+        top: 160px;
+    }
+
+    .referral-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-1 {
+        width: 85%;
+    }
+
+    .referral-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 {
+        width: 15%;
+    }
+
+    .review-contents .card-custom-table .table-custom .table-patient-row-1 td:nth-child(1),
+    .review-contents .card-custom-table .table-custom .table-patient-row-1 td:nth-child(4),
+    .reject-contents .card-custom-table .table-custom .table-patient-row-1 td:nth-child(1),
+    .reject-contents .card-custom-table .table-custom .table-patient-row-1 td:nth-child(4) {
+        width: 24%;
+    }
+
+    .review-contents .card-custom-table .table-custom .table-patient-row-1 td,
+    .reject-contents .card-custom-table .table-custom .table-patient-row-1 td {
+        width: 38%;
+    }
+
+    .review-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 .wrapper-buttons,
+    .reject-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 .wrapper-buttons {
+        margin: .25rem 0;
+    }
+
+    .review-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 .wrapper-buttons .btn {
+        margin-right: .25rem;
+    }
+
+    .review-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 .wrapper-buttons .btn:last-child {
+        margin-right: 0;
+    }
+
+    .title-comments .table-discharge-comments {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .title-comments .table-discharge-comments thead,
+    .title-comments .table-discharge-comments tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .title-comments .table-discharge-comments thead tr {
+        background: var(--primary-blue);
+        color: #fff;
+        box-shadow: 0px 3px 6px #00000038;
+        width: 100%;
+        border-right: 3px solid rgb(128, 128, 128, 0);
+    }
+
+    .title-comments .table-discharge-comments thead tr th {
+        font-weight: 500;
+    }
+
+    .title-comments .table-discharge-comments thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .title-comments .table-discharge-comments thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .title-comments .table-discharge-comments th:nth-child(1),
+    .title-comments .table-discharge-comments tbody td:nth-child(1) {
+        width: 50%;
+    }
+
+    .title-comments .table-discharge-comments th:nth-child(2),
+    .title-comments .table-discharge-comments tbody td:nth-child(2),
+    .title-comments .table-discharge-comments th:nth-child(4),
+    .title-comments .table-discharge-comments tbody td:nth-child(4) {
+        width: 12%;
+    }
+
+    .title-comments .table-discharge-comments th:nth-child(3),
+    .title-comments .table-discharge-comments tbody td:nth-child(3) {
+        width: 24%;
+    }
+
+    .title-comments .table-discharge-comments tbody {
+        flex: 1 1 auto;
+        display: block;
+        max-height: 170px;
+        overflow-y: auto;
+    }
+
+    .title-comments .table-discharge-comments tbody tr {
+        border-bottom: 1px solid #dedddd;
+    }
+
+    .title-comments .responsiveTable td .tdBefore {
+        display: none;
+    }
+
+    .title-comments .table-discharge-comments tbody::-webkit-scrollbar {
+        width: 3px;
+    }
+}
+
+@media (max-width:1399px) {
+
+    .card-custom-table .btn-approve,
+    .card-custom-table .btn-review,
+    .card-custom-table .btn-reject,
+    .card-custom-table .btn-blue-gradient {
+        min-width: 60px;
+    }
+}
+
+@media (max-width:1199px) {
+
+    .title-comment-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .referral-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 .wrapper-buttons {
+        flex-direction: row;
+    }
+
+    .referral-contents .card-custom-table .btn,
+    .referral-contents .card-custom-table .table-custom .wrapper-buttons .btn.btn:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: .25rem;
+    }
+
+    .referral-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 .wrapper-buttons {
+        width: 100%;
+    }
+
+    .referral-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 tr,
+    .referral-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td {
+        width: 50%;
+    }
+
+    .review-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 tr,
+    .review-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td,
+    .reject-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 tr,
+    .reject-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td {
+        width: 100%;
+    }
+
+    .review-contents .card-custom-table .wrapper-buttons .btn,
+    .reject-contents .card-custom-table .wrapper-buttons .btn {
+        min-width: 120px;
+        margin-bottom: .25rem;
+    }
+
+    .title-comments-section .rectangle-block-1 {
+        background: none;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .accept-offcanvas.offcanvas-end,
+    .review-reason-offcanvas.offcanvas-end,
+    .reject-reason-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .bg-red,
+    .bg-green,
+    .card-custom-table .btn-approve,
+    .card-custom-table .btn-review,
+    .card-custom-table .btn-reject,
+    .title-comment-offcanvas .btn-delete {
+        border-radius: 4px;
+    }
+
+    .wrapper-buttons,
+    .referral-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 .wrapper-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .wrapper-buttons .btn {
+        width: 100%;
+        margin-bottom: .2rem;
+    }
+
+    .wrapper-buttons .btn.btn:not(:last-child),
+    .referral-contents .card-custom-table .btn,
+    .referral-contents .card-custom-table .table-custom .wrapper-buttons .btn.btn:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .referral-contents .card-custom-table .btn,
+    .referral-contents .card-custom-table .table-custom .wrapper-buttons .btn.btn:not(:last-child) {
+        margin-bottom: .25rem;
+    }
+
+    .review-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp {
+        flex-direction: column;
+    }
+
+    .review-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .tdBefore,
+    .review-contents .card-custom-table .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .wrapper-buttons {
+        width: 100%;
+    }
+}

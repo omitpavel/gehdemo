@@ -1,0 +1,1939 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/Poppins/Poppins-LightItalic.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Poppins/Poppins-Bold.ttf) format('truetype')
+}
+
+.popBold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700
+}
+
+.popReg {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+.popLight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300
+}
+
+.popBoldi {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700 !important
+}
+
+.popRegi {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 400 !important
+}
+
+.popLighti {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 300 !important
+}
+
+.bgcol1 {
+    background-color: #e67e22
+}
+
+.bgcol2,
+.bgcol3,
+.bgcol4,
+.bgcol5,
+.bgcol6 {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+}
+
+.bgcol7 {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+
+}
+
+.EDActivityouter .iboxane_header {
+    padding: 10px 15px
+}
+
+.EDActivityouter .breachValidTabList {
+    display: none
+}
+
+.EDActivityouter .breachValidTabList li:first-child {
+    display: none
+}
+
+.EDActivityouter .EDActivityinner .EDActivityinnerRow {
+    align-items: flex-start
+}
+
+.EDActivityouter .whiteBox {
+    margin-bottom: 15px;
+    padding: 6px 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+}
+
+.EDActivityouter .sideLft .rowTop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between
+}
+
+.EDActivityouter .sideLft .rowTop .DatePickerWrap {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideLft .rowTop .DatePickerWrap .dateImg {
+    width: 55px;
+    margin-bottom: 8px
+}
+
+.EDActivityouter .sideLft .rowTop .DatePickerWrap .dateImg img {
+    width: 100%
+}
+
+.EDActivityouter .sideLft .rowTop .DatePickerWrap .react-datepicker__input-container input {
+    width: 100%;
+    border: solid 1px #ddd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    height: 30px;
+    text-indent: 8px;
+    text-align: center
+}
+
+.EDActivityouter .sideLft .rowTop .attendance.toprowCmnBox .imgwrap img {
+    width: 60px
+}
+
+.EDActivityouter .sideLft .rowTop .breaches.toprowCmnBox .imgwrap img {
+    width: 90px
+}
+
+.EDActivityouter .sideLft .rowTop .performance.toprowCmnBox .imgwrap img {
+    width: 80px
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox {
+    width: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .imgwrap {
+    margin: 0px 15px
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .imgwrap img {
+    width: 60px
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .head>span {
+    display: block;
+    width: 100%;
+    font-size: 14px
+}
+
+.EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .count {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px
+}
+
+.EDActivityouter .sideRgt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideRgt .box {
+    width: 100%
+}
+
+.EDActivityouter .sideRgt .box .headSec {
+    width: 100%;
+    position: relative;
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.EDActivityouter .sideRgt .box .headSec .iconWrap {
+    width: 50px
+}
+
+.EDActivityouter .sideRgt .box .headSec .head {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .box .contentSec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px 0px
+}
+
+.EDActivityouter .sideRgt .conv_rate .contentSec>div {
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .conv_rate .contentSec>div:first-child {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 34px
+}
+
+.EDActivityouter .sideRgt .conv_rate .contentSec>div>span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .performance .contentSec>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideRgt .performance .contentSec>div .label {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .headSec .headCount {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0px 8px
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div .label {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div .imageWrap {
+    display: block;
+    width: 80px;
+    margin: 5px 0px
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div .imageWrap img {
+    display: block;
+    margin: 0 auto
+}
+
+.EDActivityouter .sideRgt .AmbulanceArrival .contentSec>div .count {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .headSec .headCount {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0px 8px
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div .label {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    text-align: center
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div .imageWrap {
+    display: block;
+    width: 80px;
+    margin: 5px 0px
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div .imageWrap img {
+    display: block;
+    margin: 0 auto
+}
+
+.EDActivityouter .sideRgt .walkingBoxWrap .contentSec>div .count {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333
+}
+
+.EDActivityouter .sideRgt .AdmittedBySpeciality .graphWrap {
+    width: 100%
+}
+
+.EDActivityouter .EDActivityGraphWrap {
+    position: relative
+}
+
+/* .EDActivityouter .EDActivityGraphWrap .boxWrapper {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+} */
+
+.EDActivityouter .EDActivityGraphWrap .box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 5px;
+    /* margin-bottom: 15px; */
+    padding: 0 6px;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+    /* box-shadow: 0px 3px 6px #00000021; */
+}
+
+.EDActivityouter .EDActivityGraphWrap .box .leftSide {
+    width: 8%
+}
+
+.EDActivityouter .EDActivityGraphWrap .box .rightSide {
+    position: relative;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.EDActivityouter .FixedTabletop {
+    position: fixed;
+    z-index: 5;
+    top: 85px;
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap {
+    position: relative;
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .leftHeadList>li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    height: 30px;
+    border-radius: 3px;
+    width: 100%;
+    color: #000;
+    margin-bottom: 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .heatMeaterBubbleBoxWrap .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+
+.EDActivityouter .headToprow {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 6px;
+}
+
+h3.headToprow {
+    margin-bottom: 0;
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList>li {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    height: 30px !important;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList>li .imgWrap {
+    display: block !important;
+    width: 20px !important;
+    margin-right: 8px
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList>li .imgWrap img {
+    width: 20px
+}
+
+.EDActivityouter .patientStillinEd .leftHeadList>li .headLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    display: block;
+    text-align: center
+}
+
+.EDActivityouter .patientStillinEd .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .patientStillinEd .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 30px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .patientStillinEd .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+.EDActivityouter .DTABoxinner {
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.EDActivityGraphWrap ul {
+    padding-left: 0;
+}
+
+.EDActivityouter .DTABoxinner .box {
+    box-shadow: none
+}
+
+.EDActivityouter .DTABoxTable .BarGraphwithLineAmbulance .domain {
+    display: none
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList>li {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    height: 30px !important;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList>li .imgWrap {
+    display: block !important;
+    width: 20px !important;
+    margin-right: 8px
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList>li .imgWrap img {
+    width: 20px
+}
+
+.EDActivityouter .DTABoxTable .leftHeadList>li .headLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff !important;
+    display: block;
+    text-align: center
+}
+
+.EDActivityouter .DTABoxTable .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .DTABoxTable .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 30px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .DTABoxTable .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55px !important
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList>li .imgWrap {
+    display: block !important;
+    width: 30px !important;
+    margin-bottom: 5px
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList>li .imgWrap img {
+    width: 25px
+}
+
+.EDActivityouter .TriageBoxTable .leftHeadList>li .headLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px !important;
+    color: #333 !important;
+    display: block;
+    text-align: center
+}
+
+.EDActivityouter .TriageBoxTable .listWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.EDActivityouter .TriageBoxTable .listWrap .bubbleList:first-child li {
+    height: 30px !important;
+}
+
+.EDActivityouter .TriageBoxTable .listWrap .bubbleList:last-child li {
+    height: 25px !important;
+    background-color: transparent;
+    border: solid 1px #333;
+    margin: 0px 1px
+}
+
+.EDActivityouter .TriageBoxTable .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .TriageBoxTable .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .TriageBoxTable .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30px
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList>li .imgWrap {
+    display: block;
+    width: 100%
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList>li .imgWrap img {
+    width: 20px
+}
+
+.EDActivityouter .commonTablebubble .leftHeadList>li .headLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #333;
+    display: block;
+    text-align: center;
+    line-height: 14px;
+}
+
+.EDActivityouter .commonTablebubble .rightSide .bubbleList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.EDActivityouter .commonTablebubble .rightSide .bubbleList>li {
+    width: 4.16%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #fff;
+    border-radius: 5px
+}
+
+.EDActivityouter .commonTablebubble .rightSide .bubbleList>li:hover {
+    cursor: pointer
+}
+
+.overlaySelectionBox {
+    height: calc(100% - 40px);
+    position: absolute;
+    border: solid 1px #000;
+    opacity: .4;
+    border-radius: 3px;
+    z-index: 100;
+    pointer-events: none;
+    display: none;
+    width: 47.375px;
+    transform: translateX(105px);
+    background-color: #ffbf00;
+}
+
+.overlaySelectionBox.hide {
+    display: none
+}
+
+.CirPercentageOuter .CircularProgressbar {
+    width: 75px
+}
+
+.CirPercentageOuter .CircularProgressbar-path {
+    stroke: red !important
+}
+
+.CirPercentageOuter .CircularProgressbar-trail {
+    stroke: #f1f1f1 !important
+}
+
+.CirPercentageOuter .CircularProgressbar-text {
+    fill: #333 !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px !important
+}
+
+.CirPercentageOuter .CircularProgressbar-background {
+    fill: green !important
+}
+
+.samp {
+    width: 100%;
+    height: 750px;
+    background-color: red
+}
+
+.PatientPerHourChartArea {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000021;
+}
+
+.PatientPerHourChartArea .topHeadArea {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    padding-left: 17px
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection .imgWrap {
+    width: 26px;
+    margin-right: 8px
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection .head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0px
+}
+
+.PatientPerHourChartArea .topHeadArea .headSection .head span {
+    display: block;
+    font-size: 12px;
+    color: #555
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList {
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    border-right: solid 1px #ddd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li:hover {
+    cursor: pointer
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li:last-child {
+    border: none;
+    padding-right: 0px
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBox {
+    width: 25px;
+    height: 15px;
+    display: block;
+    margin-right: 5px;
+    border-radius: 3px
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg1 {
+    background-color: #179ebe
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg2 {
+    background-color: #ed0000
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg3 {
+    background-color: #4865a9
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg4 {
+    background-color: #00c899
+}
+
+.PatientPerHourChartArea .topHeadArea .legendArea .legendList li .colBg5 {
+    background-color: #ffa700
+}
+
+.stackedBarChartWrapouter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center
+}
+
+.stackedBarChartWrapouter .leftTitleSec {
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3px;
+    padding-top: 70px
+}
+
+.stackedBarChartWrapouter .leftTitleSec>span {
+    transform: rotate(-90deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap {
+    width: 93%;
+    padding: 10px 0px 10px 0px
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-legend-item text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-axis-y g.tick {
+    display: none
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-bar {
+    stroke: white !important;
+    stroke-width: 2px
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-arrivals .c3-texts text {
+    transform: translate(0, 15px);
+    fill: #fff !important
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-breaches .c3-texts text {
+    transform: translate(0, 15px);
+    fill: #fff !important
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-admitted .c3-texts text {
+    transform: translate(0, -15px);
+    fill: #fff !important
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-leftED .c3-texts text {
+    transform: translate(0, -15px);
+    fill: #fff !important
+}
+
+.stackedBarChartWrapouter .StackedBarchartGroupwrap .c3-target-forecast .c3-texts text {
+    fill: transparent !important
+}
+
+.stackedBarChartWrapouter.hideBottomAxeslabels .leftTitleSec .axisLabel:last-child {
+    display: none
+}
+
+.StackedBarchartGroupwrap.showForcastTxt .c3-target-forecast .c3-texts text {
+    fill: #000 !important
+}
+
+.collapseBtnWrap {
+    width: 100%;
+    padding: 0px 30px
+}
+
+.BreachesTargetChartWrap {
+    width: 100%;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 10px
+}
+
+.BreachesTargetChartWrap.hide {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0
+}
+
+.BreachesGanntChartWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad11 {
+    transform: translateX(5px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad12 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad13 {
+    transform: translateX(5px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad14 {
+    transform: translateX(6px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad15 {
+    transform: translateX(12px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad16 {
+    transform: translateX(8px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad17 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad18 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad19 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad20 {
+    transform: translateX(24px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad21 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad22 {
+    transform: translateX(10px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad22 .startFromfirstcell {
+    transform: translateX(-14px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad22 .startFromfirstcell .cir_first {
+    transform: translateX(13px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad23 {
+    transform: translateX(13px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad23 .startFromfirstcell {
+    transform: translateX(-14px)
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart.pad23 .startFromfirstcell .cir_first {
+    transform: translateX(13px)
+}
+
+.BreachesGanntChartWrap div.left {
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3px
+}
+
+.BreachesGanntChartWrap div.left .yaxisText {
+    transform: rotate(-90deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333
+}
+
+.BreachesGanntChartWrap div.right {
+    width: 92%
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .MainLine {
+    stroke: #0075be
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .cir_mid {
+    fill: #ed0000
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .cir_first {
+    fill: #179ebe
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .cir_last {
+    fill: #4865a9
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .nxtCircle {
+    fill: transparent
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .leftEDCircle {
+    fill: #ed0000
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .leftEDTommarrow {
+    fill: #4865a9
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .leftEDDischarge {
+    fill: #4865a9
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .leftEDAdmitted {
+    fill: #ed0000
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .startCircleTxt {
+    transform: translate(8px, 22px);
+    fill: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .endCircleTxt {
+    fill: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .endnextCircleTxt {
+    fill: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .midCircleTxt {
+    fill: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .noval {
+    display: none
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .willbeFirst {
+    transform: translate(-10px, 0) !important
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .willbeFirsttxt {
+    transform: translate(10px, 20px) !important
+}
+
+.BreachesGanntChartWrap .BreachesGanntChart .yaxisline path {
+    stroke: #ddd
+}
+
+.BreachesGanntChartWrap .legendArea .legendList {
+    padding: 15px 0px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    border-right: solid 1px #ddd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li:hover {
+    cursor: pointer
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li:last-child {
+    border: none;
+    padding-right: 0px
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBox {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg1 {
+    background-color: #179ebe
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg2 {
+    background-color: #ed0000
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg3 {
+    background-color: #4865a9
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg4 {
+    background-color: #00c899
+}
+
+.BreachesGanntChartWrap .legendArea .legendList li .colBg5 {
+    background-color: #ffa700
+}
+
+.targetTimeChartWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center
+}
+
+.targetTimeChartWrap .c3-legend-item {
+    margin: 10px 20px
+}
+
+.targetTimeChartWrap .c3-legend-item text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.targetTimeChartWrap .c3-legend-item .c3-legend-item-tile {
+    shape-rendering: auto;
+    stroke-linecap: round;
+    stroke-dasharray: .1 10;
+    stroke-width: 8;
+    transform: translate(6px, 1px)
+}
+
+.targetTimeChartWrap div.left {
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3px
+}
+
+.targetTimeChartWrap div.left .yaxisText {
+    transform: rotate(-90deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap
+}
+
+.targetTimeChartWrap div.right {
+    width: 93%
+}
+
+.EDActivityinnerRow .sideLft {
+    padding-right: 0px
+}
+
+.barwithlinegraphWrapDtasection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center
+}
+
+.barwithlinegraphWrapDtasection .leftTitleSec {
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3px;
+    padding-top: 70px
+}
+
+.barwithlinegraphWrapDtasection .leftTitleSec>span {
+    transform: rotate(-90deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333
+}
+
+.barwithlinegraphWrapDtasection .rightSide {
+    position: relative;
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.hourBtn {
+    position: relative
+}
+
+.hourBtn:hover {
+    cursor: pointer;
+    background-color: #3498db
+}
+
+.hourBtn svg {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.CirPercentageOuter {
+    width: 70px
+}
+
+.FixedTabletop {
+    display: none
+}
+
+.FixedTabletop.active {
+    display: block
+}
+
+/* Ed Activity Styles */
+
+.topbar-menu,
+.marquee-text {
+    z-index: 999;
+}
+
+.ed-activity-greybox {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 10%, rgba(238, 238, 239, 1) 60%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: .95rem .5rem .7rem .5rem;
+    min-height: 62px;
+}
+
+.ed-activity-greybox h6 {
+    font-size: 12px;
+}
+
+.fs-lg-4 {
+    font-size: 1.5rem;
+}
+
+.leftside-head {
+    list-style: none;
+    padding-left: 0;
+}
+
+.leftside-bg-ed {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000021;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0.5rem;
+    height: 35px;
+    width: 100%;
+}
+
+.leftside-target-bg-ed {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000021;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: .5rem;
+    height: 70px;
+    width: 95%;
+}
+
+.chart-box {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000021;
+    border-radius: 7px;
+    padding: 0 0 .25rem 0;
+    margin-bottom: 10px;
+}
+
+.chart-box .header-chart {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+    padding: 0.5rem 1rem;
+    margin-bottom: .5rem;
+}
+
+.chart-box .header-chart h6.title {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.leftside-head li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.leftside-bg {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000021;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0.5rem 1rem;
+    height: 35px;
+}
+
+.ed-hour-rightside {
+    position: relative;
+    width: 102%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.rightside-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+    padding: 0.1rem 0;
+}
+
+.ed-hour-rightside .rightside-list.rightside-head li {
+    background-color: transparent;
+    border: none;
+}
+
+.ed-hour-rightside .rightside-list li {
+    width: 3.8%;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin: 0px 1px;
+}
+
+.bg-ed-legends,
+.bg-background-list {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+.bg-ed-legends {
+    padding: .5rem 1rem;
+    margin-bottom: .25rem;
+}
+
+.bg-ed-legends-blue-box,
+.bg-ed-legends-cyan-box,
+.bg-ed-legends-purple-box,
+.bg-ed-legends-maroon-box {
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.bg-ed-legends-blue-box,
+.bg-col-blue {
+    background-color: rgb(190, 214, 238, .4);
+}
+
+.bg-ed-legends-cyan-box,
+.bg-col-cyan {
+    background-color: var(--primary-blue);
+}
+
+.bg-ed-legends-purple-box,
+.bg-col-purple {
+    background-color: #705787;
+}
+
+.bg-col-grey {
+    background-color: #C8C8C9;
+    color: #fff;
+}
+
+.bg-ed-legends-maroon-box,
+.bg-col-maroon {
+    background-color: #AE125B;
+}
+
+.bg-col-red {
+    background-color: red;
+}
+
+.bg-col-green {
+    background-color: green;
+}
+
+.bg-col-amber {
+    background-color: #ffbf00;
+}
+
+.bg-col-black {
+    background-color: black;
+}
+
+.bg-col-cyan,
+.bg-col-purple,
+.bg-col-maroon,
+.bg-col-red,
+.bg-col-green,
+.bg-col-amber,
+.bg-col-black {
+    color: #fff;
+}
+
+.bg-col-transparent {
+    background-color: transparent;
+    border: 1px solid #707070;
+    margin: 0px 1px;
+}
+
+.text-purple {
+    color: #705787;
+}
+
+.text-maroon {
+    color: #AE125B;
+}
+
+.text-ed-blue {
+    color: #BED6EE;
+}
+
+.text-ed-cyan {
+    color: #00ACBC;
+}
+
+.text-ed-grey {
+    color: #C8C8C9;
+}
+
+.arrival-card {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000021;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+.leftside-target-bg {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000021;
+    border-radius: 7px;
+    text-align: left;
+    padding: 1rem 1rem;
+    height: 75px;
+}
+
+.leftside-head {
+    list-style: none;
+    padding-left: 0;
+}
+
+.progress-bg-card {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 30%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000021;
+    border-radius: 7px;
+    padding: .25rem .5rem;
+    width: 100%;
+}
+
+.progress-bg-card h6,
+.progress-bg-card span {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.ed-breach-performance {
+    width: 100%;
+}
+
+.ed-breach-performance .progress-bg-card {
+    padding: 0;
+}
+
+.ed-breach-performance .progress-bg-card .rectangle-block-1,
+.ed-breach-performance .progress-bg-card .rectangle-block-2 {
+    box-shadow: none;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance {
+    font-size: 12px;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance thead tr {
+    background-color: var(--primary-blue);
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance thead tr th {
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance tbody tr:nth-child(odd) {
+    background-color: #F2F2F3;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance tbody tr td {
+    text-align: center;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance tbody tr td:first-child {
+    text-align: start;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance tbody tr:last-child td {
+    font-weight: 600;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance tbody tr:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance th,
+.ed-breach-performance .progress-bg-card .breach-performance td {
+    border-right: 1px solid #A7A7A7;
+}
+
+.ed-breach-performance .progress-bg-card .breach-performance th:last-child,
+.ed-breach-performance .progress-bg-card .breach-performance td:last-child {
+    border-right: none;
+}
+
+.chart-block {
+    width: 100%;
+}
+
+.chart-block .progress-bg-card {
+    padding: 0;
+}
+
+.chart-block .progress-bg-card .header-chart {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+    padding: 0.75rem 1rem;
+}
+
+.chart-block .progress-bg-card .header-chart h6.title {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.mt-20 {
+    margin-top: -20px;
+}
+
+.mt-10 {
+    margin-top: -10px;
+}
+
+#span-10 {
+    font-size: 10px;
+}
+
+.ed-activity-greybox .date-box input {
+    background: transparent;
+    width: 100%;
+    font-size: 13px;
+}
+
+.performance-count {
+    margin-top: -15px;
+    text-align: center;
+    padding: 0;
+    padding-left: 5px;
+}
+
+.box-graph-blue {
+    background: var(--primary-blue);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ed Activity Styles End*/
+
+@media (min-width:1400px) {
+    .ed-breach-performance .progress-bg-card .breach-performance tbody tr td:first-child {
+        width: 100px;
+    }
+
+    .ed-breach-performance .progress-bg-card .breach-performance thead tr th,
+    .ed-breach-performance .progress-bg-card .breach-performance tbody tr td {
+        padding: 8px 3px;
+    }
+
+    .ed-activity-top-row .left-area {
+        flex: 0 0 72% !important;
+        max-width: 72% !important
+    }
+
+    .ed-activity-top-row .right-area {
+        flex: 0 0 28% !important;
+        max-width: 28% !important
+    }
+}
+
+@media (max-width:1600px) {
+
+    .EDActivityinnerRow .sideLft {
+        flex: 0 0 72% !important;
+        max-width: 72% !important
+    }
+
+    .EDActivityinnerRow .sideRgt {
+        flex: 0 0 28% !important;
+        max-width: 28% !important
+    }
+
+    .BreachesGanntChartWrap .legendArea .legendList li {
+        padding: 0 10px
+    }
+}
+
+@media (max-width:1368px) {
+    .EDActivityinnerRow .sideLft {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .EDActivityinnerRow .sideLft {
+        padding-right: 15px
+    }
+
+    .EDActivityinnerRow .sideRgt {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+
+    .EDActivityinnerRow .sideRgt .box {
+        width: 49%
+    }
+}
+
+@media (max-width:991px) {
+    .EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .head {
+        font-size: 14px
+    }
+
+    .EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .head>span {
+        font-size: 12px
+    }
+
+    .EDActivityouter .sideLft .rowTop .attendance.toprowCmnBox .imgwrap img {
+        width: 40px
+    }
+
+    .EDActivityouter .sideLft .rowTop .breaches.toprowCmnBox .imgwrap img {
+        width: 55px
+    }
+
+    .EDActivityouter .sideLft .rowTop .performance.toprowCmnBox .imgwrap img {
+        width: 55px
+    }
+
+    .EDActivityouter .FixedTabletop {
+        top: 0;
+    }
+
+    .ed-activity-greybox {
+        border-radius: 4px;
+        padding: 0.5rem 0.75rem;
+        min-height: 50px;
+    }
+
+    .ed-activity-greybox .date-box input {
+        height: 32px;
+    }
+
+    .ed-activity-greybox .cyan-circle {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .EDActivityouter .sideLft .rowTop .DatePickerWrap {
+        width: 49%
+    }
+
+    .EDActivityouter .sideLft .rowTop .toprowCmnBox {
+        width: 49%
+    }
+
+    .EDActivityouter .sideLft .rowTop {
+        flex-direction: row;
+        flex-wrap: wrap
+    }
+
+    .BreachesGanntChartWrap .legendArea .legendList {
+        flex-wrap: wrap
+    }
+
+    .EDActivityouter .sideLft .rowTop .toprowCmnBox {
+        justify-content: flex-start;
+        flex-direction: column
+    }
+
+    .EDActivityinnerRow .sideRgt .box {
+        width: 100%
+    }
+
+    .EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap {
+        width: 90%;
+        text-align: center
+    }
+
+    .EDActivityouter .sideLft .rowTop .toprowCmnBox .contentWrap .count {
+        display: block;
+        width: 100%
+    }
+
+    .ed-activity-greybox .date-box input {
+        background: transparent;
+        width: 100%;
+        height: 30px;
+        padding-top: .5rem;
+    }
+
+    .ed-activity-greybox h5 {
+        font-size: 1.5rem;
+    }
+
+    .ed-activity-greybox .cyan-circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ed-activity-greybox .cyan-circle svg {
+        width: 16px;
+    }
+
+    .bg-ed-legends {
+        border-radius: 4px;
+        padding: .5rem;
+    }
+
+    .bg-ed-legends h6 {
+        font-size: 12px;
+    }
+
+    .chart-box .header-chart,
+    .chart-block .progress-bg-card .header-chart {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .ed-breach-performance .progress-bg-card .breach-performance tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .ed-breach-performance .progress-bg-card .breach-performance tbody tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+}

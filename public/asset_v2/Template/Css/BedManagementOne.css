@@ -1,0 +1,509 @@
+.bed-management .rectangle-block-2 {
+    padding: .7rem .5rem;
+}
+
+.count-details-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.count-details-row .count-details-col {
+    width: 17%;
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.count-details-row .count-details-col-2 {
+    width: 15%;
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.count-details-row .count-details-col-2:last-child {
+    padding-right: 0;
+}
+
+.count-details-row .count-details-col-2 .grey-rectangle-1 h5 {
+    padding-top: 0;
+}
+
+.blue-tile-top {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35px;
+    background: var(--primary-blue);
+    color: #fff;
+}
+
+.blue-tile-top h6 {
+    font-size: 12px;
+}
+
+.tile-count-bottom {
+    border-radius: 7px;
+    background: var(--bg-grey-gradient);
+    padding: .5rem .25rem;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -10px;
+    vertical-align: middle;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.data-details {
+    text-align: center;
+}
+
+.data-details .header-data-details {
+    margin-bottom: 0;
+    font-size: 11px;
+}
+
+.data-details .value-data-details {
+    margin-bottom: 0;
+    color: var(--primary-blue);
+    font-size: 18px;
+    padding-top: .25rem;
+}
+
+.grey-rectangle-1 {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px;
+    padding: .5rem;
+    min-height: 83px;
+}
+
+.count-details-row .grey-rectangle-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grey-rectangle-1 h5 {
+    padding-top: 0.2rem;
+    font-size: 20px;
+}
+
+.grey-rectangle-1 p {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.grey-rectangle-1 h6 {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.separation {
+    border-top: 1px solid #dee2e6;
+    width: 100%;
+    margin: .25rem 0;
+}
+
+.ward-name {
+    font-weight: 600;
+}
+
+.ward-name span {
+    font-size: 10px;
+}
+
+.black-tile {
+    background: linear-gradient(180deg, rgba(161, 161, 161, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    padding: .75rem .5rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    min-height: 40px;
+
+}
+
+.black-tile h6 {
+    font-weight: 400;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.bed-management .tile-shape-bottom {
+    min-height: 40px;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+}
+
+.bed-management .tile-shape-bottom .row {
+    padding-top: 6px;
+}
+
+.text-green {
+    color: #6EC07C;
+}
+
+.text-blue {
+    color: #166AAE;
+}
+
+.text-maroon {
+    color: #B90E5C;
+}
+
+.text-orange {
+    color: #FFA500;
+}
+
+.text-cyan {
+    color: #0066FF;
+    font-size: 1.5rem;
+}
+
+h6.text-cyan {
+    margin-bottom: 0;
+}
+
+.bed-count-header-row {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    min-height: 35px;
+}
+
+.bed-count-header-row,
+.bed-count-header-subrow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.bed-count-header-row .bed-count-header-col-1 {
+    width: 30%;
+}
+
+.bed-count-header-row .bed-count-header-col-2 {
+    width: 70%;
+}
+
+.bed-count-header-subrow .bed-count-subrow-col-1 {
+    width: 44%;
+}
+
+.bed-count-header-subrow .bed-count-subrow-col-2 {
+    width: 56%;
+}
+
+.bed-count-header-subrow .bed-count-subrow-col-1 {
+    display: flex;
+    align-items: center;
+}
+
+.bed-count-header-row .header-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.bed-count-header-row .header-row .empty-col h6 {
+    margin: 5px 0 2px 0;
+    font-size: 10px;
+}
+
+.bed-count-header-subrow .bed-count-subrow-col-2 .empty-count {
+    display: flex;
+    align-items: center;
+}
+
+.bed-count-header-subrow .bed-count-subrow-col-2 .empty-count .bed-count-header-subcol {
+    width: 25%;
+    text-align: center;
+    padding: .2rem 0;
+}
+
+.bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol {
+    width: 33.33%;
+    text-align: center;
+}
+
+.bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(1) h6,
+.bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(2) h6,
+.bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(3) h6 {
+    font-size: 8px;
+}
+
+ul.bed-count-row {
+    margin-bottom: 0;
+}
+
+ul.bed-count-row:nth-child(odd) {
+    background-color: #fff;
+    padding: .25rem 0;
+}
+
+ul.bed-count-row:nth-child(even) {
+    background-color: #F2F2F3;
+    padding: .25rem 0;
+}
+
+ul.bed-count-row:last-child {
+    border-radius: 0 0 7px 7px;
+}
+
+.bg-total ul.bed-count-row {
+    background: var(--primary-blue-gradient);
+    color: #fff;
+    border-radius: 0;
+}
+
+.bed-count-row {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.bed-mngmt-leftside-bg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    white-space: inherit;
+    margin-bottom: 0;
+    text-align: left;
+    padding: 0 .5rem;
+    height: 35px;
+    font-size: 12px;
+    width: 66%;
+    cursor: pointer;
+    line-height: 16px;
+}
+
+li.bed-mngmt-rightside-list {
+    width: 20%;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0px 2px;
+    background-color: transparent;
+}
+
+li.bed-mngmt-rightside-list:nth-child(2),
+li.bed-mngmt-rightside-list:nth-child(3),
+li.bed-mngmt-rightside-list:nth-child(4) {
+    border: 1px solid #707070;
+}
+
+li.bed-mngmt-rightside-list:nth-child(5) {
+    border: 1px solid #166AAE;
+}
+
+li.bed-mngmt-rightside-list:nth-child(6) {
+    border: 1px solid #6EC07C;
+}
+
+li.bed-mngmt-rightside-list:nth-child(7) {
+    border: 1px solid #B90E5C;
+}
+
+li.bed-mngmt-rightside-list:nth-child(8) {
+    border: 1px solid #FFA500;
+}
+
+.bg-total li.bed-mngmt-rightside-list {
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.round-bottom,
+.bg-white {
+    border-radius: 0px 0px 7px 7px;
+}
+
+.beds-count.offcanvas {
+    width: 95%;
+}
+
+.patient-details .row .col-7 .form-label {
+    font-size: 10px;
+}
+
+.ward-header-row.bg-reverse-barrier,
+.bg-blue.bg-reverse-barrier {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+
+/* Media Query */
+
+@media (min-width:1400px) {
+    .grey-rectangle-1 h6 {
+        font-size: 11px;
+    }
+
+    .bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(1) h6,
+    .bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(2) h6,
+    .bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(3) h6 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1199px) {
+
+    .bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(1) h6,
+    .bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(2) h6,
+    .bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(3) h6 {
+        font-size: 10px;
+    }
+
+    .bed-count-header-row .bed-count-header-col-1 {
+        width: 31%;
+    }
+
+    .bed-count-header-row .bed-count-header-col-2 {
+        width: 69%;
+    }
+}
+
+@media (max-width:1399px) and (min-width:1200px) {
+    .grey-rectangle-1 h6 {
+        font-size: 11px;
+    }
+}
+
+@media (max-width:1300px) and (min-width:1200px) {
+    .grey-rectangle-1 h6 {
+        font-size: 9px;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    .count-details-row {
+        flex-wrap: wrap;
+    }
+
+    .count-details-row .count-details-col,
+    .count-details-row .count-details-col-2 {
+        width: 33.33%;
+    }
+
+    .count-details-row .count-details-col:nth-child(3),
+    .count-details-row .count-details-col-2 {
+        padding-right: 0;
+    }
+
+    .text-cyan {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:991px) {
+    .count-details-row {
+        flex-wrap: wrap;
+    }
+
+    .count-details-row .count-details-col,
+    .count-details-row .count-details-col-2 {
+        width: 33.33%;
+    }
+
+    .count-details-row .count-details-col:nth-child(3),
+    .count-details-row .count-details-col:nth-child(6),
+    .count-details-row .count-details-col-2 {
+        padding-right: 0;
+    }
+}
+
+@media (max-width:767px) {
+
+    .count-details-row .count-details-col,
+    .count-details-row .count-details-col-2 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .text-cyan {
+        font-size: 1.25rem;
+    }
+
+
+    .grey-rectangle-1 p {
+        font-size: 8px;
+    }
+
+    .grey-rectangle-1 {
+        min-height: 70px;
+    }
+
+    .round-bottom,
+    .bg-white,
+    ul.bed-count-row:last-child {
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .bg-total ul.bed-count-row {
+        border-radius: 0;
+    }
+
+    .grey-rectangle-1 {
+        padding: .65rem .5rem .5rem .5rem;
+        min-height: 55px;
+        border-radius: 4px;
+    }
+
+    .grey-rectangle-1 h6 {
+        font-size: 10px;
+    }
+
+    .grey-rectangle-1 span {
+        font-size: 8px;
+    }
+
+    .grey-rectangle-3 {
+        border-radius: 0 4px 4px 0;
+    }
+
+    .bed-management .tile-shape-bottom {
+        border-radius: 0;
+    }
+
+    .black-tile h6,
+    .tile-shape-bottom h6 {
+        font-size: 10px;
+    }
+
+    h6.text-blue,
+    h6.text-green,
+    h6.text-maroon,
+    h6.text-orange {
+        font-size: 12px;
+    }
+
+    .bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(1) h6,
+    .bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(2) h6,
+    .bed-count-header-subrow .bed-count-subrow-col-1 .bed-count-header-subcol:nth-child(3) h6 {
+        font-size: 8px;
+    }
+
+    .blue-tile-top {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .tile-count-bottom {
+        border-radius: 4px;
+    }
+}

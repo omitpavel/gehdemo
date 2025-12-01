@@ -1,0 +1,125 @@
+/* Ic Patients Styles */
+.patients-count-box {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 10%, rgba(236, 236, 237, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+}
+
+.table-infection-control thead tr {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.table-infection-control th {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 10%, rgba(217, 217, 217, 1) 100%);
+    font-weight: 500;
+    padding: 8px;
+
+}
+
+.table-infection-control th:first-child {
+    border-radius: 10px 0 0 0px;
+}
+
+.table-infection-control th:last-child {
+    border-radius: 0 10px 0px 0;
+}
+
+.table-infection-control tr:last-child td:first-child {
+    border-radius: 0px 0 0 14px;
+}
+
+.table-infection-control tr:last-child td:last-child {
+    border-radius: 0px 0 14px 0;
+}
+
+.table-infection-control tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.table-infection-control tbody tr:nth-child(even) {
+    background-color: #F1F1F3;
+}
+
+/* Ic Patients Styles End */
+
+/* Side room Tool Styles */
+
+.bg-green {
+    background-color: #39AB39;
+    border-radius: 5px;
+    color: #fff;
+    padding: .15rem .15rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.bg-darkorange {
+    background-color: #CE8900;
+    border-radius: 5px;
+    color: #fff;
+    padding: .15rem .15rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Side room Tool Styles End */
+
+
+/* covid 19 Styles  */
+
+
+.btn-primary,
+.bg-primary {
+    background: linear-gradient(180deg, rgba(0, 142, 229, 1) 50%, rgba(0, 123, 199, 1) 100%);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.bg-purple {
+    background-color: #6B5280;
+    border-radius: 8px;
+    padding: .75rem;
+    color: #fff;
+}
+
+.bg-maroon {
+    background: linear-gradient(180deg, rgba(148, 2, 30, 1) 50%, rgba(86, 1, 17, 1) 100%);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.bg-darkcyan {
+    background: linear-gradient(180deg, rgba(16, 176, 179, 1) 50%, rgba(9, 132, 134, 1) 100%);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.fs-13 h6 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 0.2rem 0;
+}
+
+#covid19-wards .bg-white:last-child,
+#covid19-wards .bg-grey:last-child {
+    border-radius: 0 0 14px 14px;
+}
+
+/* covid 19 Styles End */
+
+
+/* Media Query */
+
+
+@media (max-width:767px) {
+
+    #covid19-wards .bg-white:last-child,
+    #covid19-wards .bg-grey:last-child {
+        border-radius: 0 0 4px 4px;
+    }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.196" height="82.124" viewBox="0 0 85.196 82.124">
+  <defs>
+    <filter id="hexagon-fill-svgrepo-com" x="0" y="0" width="85.196" height="82.124" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2853" data-name="Group 2853" transform="translate(20.293 10.25)">
+    <g transform="matrix(1, 0, 0, 1, -20.29, -10.25)" filter="url(#hexagon-fill-svgrepo-com)">
+      <path id="hexagon-fill-svgrepo-com-2" data-name="hexagon-fill-svgrepo-com" d="M18.806.515a4.162,4.162,0,0,1,4.012,0l16.65,9.157a4.162,4.162,0,0,1,2.157,3.647V31.291a4.163,4.163,0,0,1-2.157,3.647L22.818,44.1a4.162,4.162,0,0,1-4.012,0L2.156,34.938A4.162,4.162,0,0,1,0,31.291V13.32A4.162,4.162,0,0,1,2.156,9.672Z" transform="translate(64.9 10.25) rotate(90)" fill="none" stroke="#d97b00" stroke-width="1.5"/>
+    </g>
+    <path id="liver-svgrepo-com_1_" data-name="liver-svgrepo-com (1)" d="M25.856,98.447c-3.813-.023-6.067,2.287-6.387,4.5-.7,5.349-1.268,10.111,2.178,11.594,1.086.468,7.148-4.919,11.422-6.1a25.831,25.831,0,0,0,.18-8.041s-.166-.962-.9-1.123a32.074,32.074,0,0,0-6.494-.83Zm13.71.528a25.805,25.805,0,0,0-4.88.486c-.342.069-.545.783-.507.973a26.154,26.154,0,0,1-.123,7.649c8.493-3.544,9.231-5.957,9.135-7C43.039,99.44,41.5,98.98,39.566,98.974Zm-7.031,10.534a27.49,27.49,0,0,0-5.817,3.3,6.062,6.062,0,0,0,3.813-.174,5.872,5.872,0,0,0,2-3.129Z" transform="translate(-7.49 -84.099)" fill="#d97b00"/>
+  </g>
+</svg>

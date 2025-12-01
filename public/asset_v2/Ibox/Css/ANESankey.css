@@ -1,0 +1,33 @@
+.opel_show_status_active {
+    background: linear-gradient(180deg, rgba(85, 219, 230, 1) 50%, rgba(89, 163, 170, 1) 100%) !important;
+    color: #fff;
+}
+
+.bars-black {
+    background: url("../Images/black-bars.svg");
+    height: 1.34rem;
+}
+
+.bars-red {
+    background: url("../Images/red-bars.svg");
+    height: 1.34rem;
+}
+
+.bars-orange {
+    background: url("../Images/orange-bars.svg");
+    height: 1.34rem;
+}
+
+.bars-green {
+    background: url("../Images/green-bar.svg");
+    height: 1.34rem;
+}
+
+.card-ed .form-control {
+    background-color: #F8F8F8;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    top: 0 !important;
+}

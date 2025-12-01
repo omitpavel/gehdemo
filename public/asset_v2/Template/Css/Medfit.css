@@ -1,0 +1,690 @@
+.btn-export {
+    min-width: 100px;
+    min-height: 45px;
+}
+
+.medically-fit {
+    align-items: center;
+}
+
+.medically-fit .bg-patients-count {
+    min-height: 45px;
+}
+
+.card-medfit {
+    padding: 0;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.cdt-reviewed {
+    color: #48AB3F;
+}
+
+.cdt-requested {
+    color: var(--primary-blue);
+}
+
+.table-medfit {
+    font-size: 12px;
+}
+
+.table-medfit thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.table-medfit thead tr th {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.table-medfit thead tr th,
+.table-medfit tbody tr td {
+    border-right: 1px solid #A7A7A7;
+}
+
+.table-medfit thead tr th:last-child,
+.table-medfit tbody tr td:last-child {
+    border-right: none;
+}
+
+.table-medfit thead tr th:first-child {
+    border-radius: 7px 0 0px 0px;
+    text-align: start;
+}
+
+.table-medfit thead tr th:last-child {
+    border-radius: 0 7px 0px 0px;
+}
+
+.table-medfit tbody tr td {
+    text-align: center;
+}
+
+.table-medfit tbody tr:last-child td {
+    font-weight: 600;
+}
+
+.table-medfit tbody tr td:first-child {
+    text-align: start;
+}
+
+.table-medfit tbody tr:nth-child(odd) {
+    background-color: #F2F2F3;
+}
+
+.table-medfit tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.card-medfit .date-header {
+    margin-bottom: .5rem;
+}
+
+.card-medfit .date-header span {
+    padding: .5rem 1rem;
+    font-weight: 500;
+}
+
+.medfit-contents {
+    margin-top: .5rem;
+}
+
+.medfit-contents .btn-export {
+    min-width: 130px;
+    margin-bottom: .5rem;
+}
+
+.medfit-contents .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem .6rem;
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: .5rem;
+}
+
+.medfit-contents .custom-card {
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.medfit-contents .table-custom {
+    font-size: 10px;
+}
+
+.medfit-contents .table-patient-tbody {
+    display: flex;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.medfit-contents .responsiveTable td .tdBefore {
+    display: block;
+}
+
+.medfit-contents .marked-wrapper {
+    position: relative;
+    width: 2%;
+}
+
+.medfit-contents .marked-wrapper .header-marked {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0 7px 7px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    height: 100%;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1rem 0.5rem;
+}
+
+.medfit-contents .marked-wrapper .bg-cdt-actions {
+    background: #FF2624;
+}
+
+.medfit-contents .marked-wrapper .bg-equipment {
+    background: #ffbf00;
+    color: #000;
+}
+
+.medfit-contents .marked-wrapper .bg-discharge-today {
+    background: #008000;
+}
+
+.medfit-contents .table-patient-row-1 {
+    background: #ffff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    border-radius: 0 0px 0px 7px;
+}
+
+.medfit-contents .table-patient-row-2 {
+    width: 40%;
+    border-radius: 0 7px 7px 0;
+    background: var(--bg-grey-gradient);
+}
+
+.medfit-contents .table-custom .table-patient-row-1 td {
+    padding: 10px;
+    width: 25%;
+    border-bottom: 1px solid rgb(112, 112, 112, .5);
+}
+
+.medfit-contents .table-custom .table-patient-row-1 td {
+    border-bottom: none;
+    padding: 5px 8px;
+    border-bottom: 1px dashed rgb(112, 112, 112, .5);
+}
+
+.medfit-contents .table-patient-row-2 td {
+    width: 100%;
+    display: block;
+}
+
+.medfit-contents .table-custom .table-patient-row-2 td.spl-cell {
+    border-bottom: none;
+}
+
+.medfit-contents .header-comment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.medfit-contents .table-custom p {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    top: -1.5px;
+}
+
+.medfit-contents .btn-assign-task {
+    padding: 0.25rem 0.5rem;
+    box-shadow: 3px 4px 6px rgba(85, 85, 85, 0.4);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+}
+
+.medfit-contents .btn-assign-task {
+    background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+}
+
+.medfit-contents .header-comment .btn {
+    min-width: 110px;
+}
+
+.medfit-contents .card-col-grp {
+    background-color: #fff;
+    height: 92px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 100%;
+    border: 0.5px solid #A7A7A7;
+    border-radius: 5px;
+}
+
+.medfit-contents .card-col-grp::-webkit-scrollbar {
+    width: 3px;
+}
+
+.medfit-contents .card-col-grp .row:nth-child(odd) {
+    background-color: #FDFDFE;
+}
+
+.medfit-contents .card-col-grp .row:nth-child(even) {
+    background-color: #F2F2F3;
+}
+
+.medfit-contents .card-col-grp .row:nth-child(odd),
+.medfit-contents .card-col-grp .row:nth-child(even) {
+    padding: 3px;
+    border-bottom: .5px solid #A7A7A7;
+}
+
+.medfit-contents .card-col-grp .row:last-child {
+    border-bottom: none;
+}
+
+.medfit-contents .card-col-grp .row .col-comment {
+    width: 90%;
+    text-wrap: wrap;
+}
+
+.medfit-contents .card-col-grp .row .col-icons {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.medfit-contents .card-col-grp .row .col-comment span {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.medfit-contents .pivoted span {
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.card-col-grp .row .col-icons a,
+.comments-all-offcanvas .table-comments tbody tr a {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3px;
+}
+
+.comments-all-offcanvas.offcanvas-end {
+    width: 90%;
+}
+
+.comments-all-offcanvas .card-comments {
+    padding: 0;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.comments-all-offcanvas .table-comments {
+    font-size: 12px;
+}
+
+.comments-all-offcanvas .table-comments thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.comments-all-offcanvas .table-comments thead tr th {
+    font-weight: 500;
+}
+
+.comments-all-offcanvas .table-comments thead tr th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.comments-all-offcanvas .table-comments thead tr th:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:nth-child(odd) {
+    background-color: #F2F2F3;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:nth-child(odd),
+.comments-all-offcanvas .table-comments tbody tr:nth-child(even) {
+    border-bottom: .5px solid #A7A7A7;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:last-child {
+    border-bottom: none;
+}
+
+.medfit-contents .card-col-grp .row.bg-priority-task,
+.comments-all-offcanvas .table-comments tbody tr.bg-priority-task {
+    background-color: rgb(255 50 50);
+    color: #fff;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.comments-all-offcanvas .table-comments tbody tr:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+/* Media Query */
+
+@media (min-width:1400px) {
+
+    .medfit-contents .border-cdt-actions {
+        border: 1px solid #FF2624;
+    }
+
+    .medfit-contents .border-equipment {
+        border: 1px solid #ffbf00;
+    }
+
+    .medfit-contents .border-discharge-today {
+        border: 1px solid #008000;
+    }
+}
+
+@media (min-width:1026px) {
+
+    .medfit-contents .table-patient-tbody {
+        background: var(--bg-grey-gradient);
+        border: 1px solid rgb(112, 112, 112, .5);
+        margin-bottom: 0.4rem;
+    }
+
+    .medfit-contents .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-radius: 7px 0 0 7px;
+    }
+
+    .medfit-contents .table-patient-row-1 {
+        background-color: transparent;
+    }
+
+    .medfit-contents .table-custom .table-patient-row-1 td {
+        width: 20%;
+    }
+
+    .medfit-contents .table-custom .table-patient-row-1 td:nth-child(12),
+    .medfit-contents .table-custom .table-patient-row-1 td:nth-child(13) {
+        width: 40%;
+    }
+
+    .medfit-contents .table-custom .table-patient-row-1 td:nth-child(11),
+    .medfit-contents .table-custom .table-patient-row-1 td:nth-child(12),
+    .medfit-contents .table-custom .table-patient-row-1 td:nth-child(13) {
+        border-bottom: none;
+    }
+
+    .medfit-contents .table-custom .table-patient-tbody .table-patient-row-1 td:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .medfit-contents .btn-assign-task {
+        margin-bottom: 0.25rem;
+    }
+
+    .table-medfit tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-medfit tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .table-comments tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-comments tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .table-medfit thead tr th:nth-child(1),
+    .table-medfit tbody tr td:nth-child(1) {
+        width: 25%;
+    }
+
+    .table-medfit thead tr th,
+    .table-medfit tbody tr td,
+    .medfit-no .table-medfit thead tr th:nth-child(1),
+    .medfit-no .table-medfit tbody tr td:nth-child(1) {
+        width: 15%;
+    }
+
+    .medfit-no .table-medfit thead tr th,
+    .medfit-no .table-medfit tbody tr td {
+        width: 10.625%;
+    }
+}
+
+@media (max-width:1399px) {
+    .medfit-contents .table-custom {
+        font-size: 12px;
+    }
+
+    .medfit-contents .table-patient-tbody {
+        flex-direction: column;
+    }
+
+    .medfit-contents .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .medfit-contents .table-custom .table-patient-tbody .table-patient-row-2 {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .medfit-contents .marked-wrapper,
+    .medfit-contents .table-patient-row-1,
+    .medfit-contents .table-patient-row-2 {
+        width: 100%;
+    }
+
+    .medfit-contents .marked-wrapper {
+        min-height: 35px;
+    }
+
+    .medfit-contents .marked-wrapper .header-marked {
+        width: 100%;
+        border-radius: 7px 7px 0 0;
+        writing-mode: unset;
+        rotate: 0deg;
+        font-size: 12px;
+    }
+
+    .medfit-contents .table-patient-row-2 td {
+        padding: 8px;
+    }
+
+    .medfit-contents .card-col-grp {
+        height: 100px;
+    }
+}
+
+@media (max-width:1025px) {
+
+    .medfit-contents .table-patient-tbody {
+        display: block;
+    }
+
+    .medfit-contents .table-patient-row-1,
+    .medfit-contents .table-patient-row-2 {
+        width: 100%;
+    }
+
+    .responsiveTable td .tdBefore {
+        white-space: nowrap;
+    }
+
+    .pivoted span,
+    .medfit-contents .pivoted span {
+        font-weight: 400;
+    }
+
+    .medfit-contents .dark-gradient-warning,
+    .medfit-contents .bg-ambo,
+    .medfit-contents .bg-eds-yes,
+    .medfit-contents .bg-tto-yes,
+    .medfit-contents .bg-eds-no,
+    .medfit-contents .bg-tto-no,
+    .medfit-contents .bg-eds-na,
+    .medfit-contents .bg-tto-na {
+        min-width: 50px;
+        max-width: 50px;
+    }
+
+    .table-medfit tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .table-medfit tbody tr:nth-child(even) {
+        background-color: #CEDDF5;
+    }
+
+    .responsiveTable td.pivoted {
+        border-right: none;
+    }
+
+    .card-medfit {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .medfit-contents .marked-wrapper .header-marked {
+        border-radius: 0;
+    }
+
+    .medfit-contents .custom-card {
+        margin-top: 0;
+    }
+
+    .medfit-contents .name-header {
+        border-radius: 7px 7px 0 0;
+        margin-bottom: 0;
+    }
+
+    .medfit-contents .table-custom {
+        margin-bottom: 0.5rem;
+    }
+
+    .medfit-contents .table-patient-tbody:last-child tr.table-patient-row-2 {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .medfit-contents .responsiveTable tbody tr {
+        margin-bottom: 0px;
+        border-radius: 0;
+    }
+
+    .medfit-contents .responsiveTable tbody tr {
+        align-items: start;
+    }
+
+    .medfit-contents .table-custom td,
+    .medfit-contents .table-custom .table-patient-row-1 td {
+        border-right: none;
+    }
+
+    .medfit-contents .table-custom td,
+    .medfit-contents .table-custom .table-patient-row-1 td {
+        border-bottom: none;
+    }
+
+    .medfit-contents .table-patient-tbody tr.table-patient-row-2 {
+        border-top: none;
+    }
+
+    .medfit-contents .responsiveTable td.pivoted:nth-child(1),
+    .medfit-contents .responsiveTable td.pivoted:nth-child(2),
+    .medfit-contents .responsiveTable td.pivoted:nth-child(11),
+    .medfit-contents .responsiveTable td.pivoted:nth-child(12),
+    .medfit-contents .responsiveTable .table-patient-row-1 td.pivoted:nth-child(5) {
+        border-radius: 0;
+    }
+
+    .medfit-contents .responsiveTable td.pivoted.spl-cell {
+        width: 100% !important;
+    }
+
+    .medfit-contents .responsiveTable .table-patient-tbody:last-child .table-patient-row-2 td:first-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .medfit-contents .header-comment {
+        margin-bottom: 0.5rem;
+    }
+
+    .medfit-contents .card-col-grp .row .col-icons {
+        justify-content: end;
+    }
+
+    .medfit-contents .table-custom .table-patient-tbody .table-patient-row-1,
+    .medfit-contents .table-custom .table-patient-tbody .table-patient-row-2 {
+        border-radius: 0;
+    }
+}
+
+@media (max-width:991px) {
+
+    .comments-all-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .responsiveTable td.pivoted:nth-child(2n+2) {
+        border-right: none;
+    }
+
+    .btn-export {
+        border-radius: 4px;
+    }
+
+    .medfit-contents .name-header {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .medfit-contents .table-custom .table-patient-tbody:last-child .table-patient-row-2,
+    .medfit-contents .responsiveTable .table-patient-tbody:last-child .table-patient-row-2 td:first-child {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .medfit-contents .header-comment .btn {
+        min-width: 100px;
+    }
+
+    .medfit-contents .card-col-grp .row .col-comment {
+        width: 80%;
+    }
+
+    .medfit-contents .card-col-grp .row .col-icons {
+        width: 20%;
+    }
+
+    .medfit-contents .table-custom .table-patient-row-1 td {
+        width: 50%;
+    }
+
+    .medfit-contents .table-custom .table-patient-row-1 td:last-child {
+        width: 100% !important;
+    }
+
+    .comments-all-offcanvas .table-comments thead tr th:first-child {
+        border-radius: 4px 0 0 0;
+    }
+
+    .comments-all-offcanvas .table-comments thead tr th:last-child {
+        border-radius: 0 4px 0 0;
+    }
+
+    .comments-all-offcanvas .table-comments tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .comments-all-offcanvas .table-comments tbody tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+}

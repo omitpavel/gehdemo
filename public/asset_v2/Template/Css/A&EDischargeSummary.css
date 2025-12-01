@@ -1,0 +1,441 @@
+.ae-summary-offcanvas.offcanvas-end {
+    width: 90%;
+}
+
+.card-dischage-summary .form-control {
+    background-color: #F3F3F3;
+}
+
+.card-dischage-summary .rectangle-block-1 {
+    border-radius: 7px;
+}
+
+.card-shadow {
+    box-shadow: 0px 20px 60px #00000014;
+    border-radius: 7px;
+}
+
+.card-shadow table:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.card-shadow table:last-child tr:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+.blue-rectangle-block {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0 0;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.blue-rectangle-block h6,
+.table-discharge-details {
+    font-size: 12px;
+}
+
+.table-discharge-details thead tr {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.table-discharge-details thead tr th {
+    font-weight: 500;
+}
+
+.attendance-details .table-discharge-details tr th,
+.patient-details-card .table-discharge-details tr th {
+    font-weight: 400;
+}
+
+.attendance-details .table-discharge-details tr td,
+.patient-details-card .table-discharge-details tbody tr td {
+    font-weight: 600;
+}
+
+.attendance-details .table-discharge-details thead tr,
+.patient-details-card .table-discharge-details thead tr {
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.table-discharge-details tr {
+    border-bottom: 1px solid #A7A7A7;
+}
+
+.table-discharge-details tr th {
+    border-top: 1px solid #A7A7A7;
+}
+
+.table-discharge-details tr:last-child {
+    border-bottom: none;
+}
+
+.attendance-details .table-discharge-details tr td:last-child,
+.attendance-details .table-discharge-details tr th:last-child,
+.table-discharge-details thead tr th:last-child,
+.table-discharge-details tbody tr td:last-child {
+    border-right: none;
+}
+
+.bg-header-grey {
+    background: #ccc;
+    box-shadow: 0px 3px 6px #00000038;
+    color: #000;
+    padding: .5rem;
+    font-size: 12px;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+    .table-discharge-details tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .table-discharge-details tbody tr:nth-child(even) {
+        background-color: #F2F2F3;
+    }
+
+    .attendance-details .table-discharge-details tbody tr:nth-child(odd),
+    .patient-details-card .table-discharge-details tbody tr:nth-child(odd) {
+        background-color: transparent;
+    }
+
+    .attendance-details .table-discharge-details tr td,
+    .attendance-details .table-discharge-details tr th,
+    .table-discharge-details thead tr th,
+    .table-discharge-details tbody tr td,
+    .refferal .row .col-lg-6:nth-child(1),
+    .treatment-section .row .col-lg-6:nth-child(1),
+    .ice-order-section .row .col-lg-6:nth-child(1) {
+        border-right: 1px solid #A7A7A7;
+    }
+
+    .attendance-details .table-discharge-details tr td {
+        width: 25%;
+    }
+
+    .alerts .table-discharge-details tbody tr td:nth-child(1),
+    .alerts .table-discharge-details tbody tr td:nth-child(3) {
+        width: 15%;
+    }
+
+    .alerts .table-discharge-details tbody tr td:nth-child(2),
+    .alerts .table-discharge-details tbody tr td:nth-child(4) {
+        width: 35%;
+    }
+
+    .linked-attendance-details .table-discharge-details tbody tr td:nth-child(1),
+    .linked-attendance-details .table-discharge-details tbody tr td:nth-child(3) {
+        width: 15%;
+    }
+
+    .linked-attendance-details .table-discharge-details tbody tr td:nth-child(2),
+    .linked-attendance-details .table-discharge-details tbody tr td:nth-child(4) {
+        width: 30%;
+    }
+
+    .linked-attendance-details .table-discharge-details tbody tr td:nth-child(5) {
+        width: 10%;
+    }
+
+    .triage-table .table-discharge-details tbody tr td:nth-child(1) {
+        width: 10%;
+    }
+
+    .triage-table .table-discharge-details tbody tr td:nth-child(2),
+    .triage-table .table-discharge-details tbody tr td:nth-child(5),
+    .triage-table .table-discharge-details tbody tr td:nth-child(8) {
+        width: 12%;
+    }
+
+    .triage-table .table-discharge-details tbody tr td:nth-child(3),
+    .triage-table .table-discharge-details tbody tr td:nth-child(4),
+    .triage-table .table-discharge-details tbody tr td:nth-child(7) {
+        width: 8%;
+    }
+
+    .triage-table .table-discharge-details tbody tr td:nth-child(6) {
+        width: 30%;
+    }
+
+    .management-plan .table-discharge-details tbody tr td:nth-child(1),
+    .management-plan .table-discharge-details tbody tr td:nth-child(3) {
+        width: 15%;
+    }
+
+    .management-plan .table-discharge-details tbody tr td:nth-child(2),
+    .management-plan .table-discharge-details tbody tr td:nth-child(4) {
+        width: 32%;
+    }
+
+    .management-plan .table-discharge-details tbody tr td:nth-child(5) {
+        width: 6%;
+    }
+
+    .clinician .table-discharge-details tbody tr td {
+        width: 22.5%;
+    }
+
+    .clinician .table-discharge-details tbody tr td:nth-child(5) {
+        width: 10%;
+    }
+
+    .notes-table .table-discharge-details tbody tr td {
+        width: 16.66%;
+    }
+
+    .notes-table .table-discharge-details tbody tr td:nth-child(3) {
+        width: 44%;
+    }
+
+    .notes-table .table-discharge-details tbody tr td:nth-child(5) {
+        width: 6%;
+    }
+
+    .investigations .table-discharge-details tbody tr td {
+        width: 22%;
+    }
+
+    .investigations .table-discharge-details tbody tr td:nth-child(3) {
+        width: 50%;
+    }
+
+    .investigations .table-discharge-details tbody tr td:nth-child(4) {
+        width: 6%;
+    }
+
+    .refferal .table-discharge-details tbody tr td {
+        width: 50%;
+    }
+
+    .refferal .outcome-section .table-discharge-details tbody tr td {
+        width: 25%;
+    }
+
+    .refferal .outcome-section .table-discharge-details tbody tr td:nth-child(3) {
+        width: 50%;
+    }
+
+    .ice-order-section .table-discharge-details tbody tr td {
+        width: 33.33%;
+    }
+
+    .ice-order-section .outcome-section .table-discharge-details tbody tr td {
+        width: 50%;
+    }
+
+    .treatment-section .table-discharge-details tbody tr td,
+    .treatment-section .outcome-section .table-discharge-details tbody tr td {
+        width: 30%;
+    }
+
+    .treatment-section .table-discharge-details tbody tr td:nth-child(4),
+    .treatment-section .outcome-section .table-discharge-details tbody tr td:nth-child(4) {
+        width: 10%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ae-summary-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .ae-summary-offcanvas.offcanvas-end .offcanvas-footer .btn-primary-grey span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1025px) {
+
+    .card-dischage-summary .rectangle-block-1 {
+        background: none;
+    }
+
+    .ae-summary .table-discharge-details.responsiveTable tbody tr {
+        margin-bottom: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    .attendance-details .table-discharge-details tr td,
+    .patient-details-card .table-discharge-details tbody tr td {
+        font-weight: 400;
+    }
+
+    .ae-summary .table-discharge-details.responsiveTable tbody tr:last-child {
+        border-radius: 0 0 6px 6px;
+    }
+
+    .ae-summary .responsiveTable td.pivoted:nth-child(1),
+    .ae-summary .patient-details-card .table-discharge-details tr:first-child,
+    .responsiveTable td.pivoted:nth-child(6),
+    .responsiveTable td.pivoted:nth-child(8),
+    .ae-summary .triage-table .table-discharge-details.responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0;
+    }
+
+    .alerts .responsiveTable tr:last-child td.pivoted:nth-child(1),
+    .ae-summary .patient-details-card .table-discharge-details tr:last-child td:first-child,
+    .ae-summary .management-plan .table-discharge-details.responsiveTable td.pivoted:nth-child(6),
+    .card-shadow.management-plan table:last-child tr:last-child td:first-child,
+    .card-shadow.clinician table:last-child tr:last-child td:first-child,
+    .card-shadow.notes-table:last-child tr:last-child td:first-child,
+    .card-shadow.investigations:last-child tr:last-child td:first-child {
+        border-radius: 0 0 0 6px;
+    }
+
+    .ae-summary .patient-details-card .table-discharge-details tr:last-child td:last-child,
+    .ae-summary .management-plan .table-discharge-details.responsiveTable td.pivoted:nth-child(10),
+    .card-shadow.management-plan table:last-child tr:last-child td:last-child,
+    .card-shadow.clinician table:last-child tr:last-child td:last-child,
+    .card-shadow.notes-table:last-child tr:last-child td:last-child {
+        border-radius: 0 0 6px 0;
+    }
+
+    .treatment-section .table-discharge-details.responsiveTable td.pivoted {
+        width: 25%;
+    }
+
+    .ice-order-section .table-discharge-details.responsiveTable td.pivoted {
+        width: 33%;
+    }
+
+    .ice-order-section .outcome-section .table-discharge-details.responsiveTable td.pivoted {
+        width: 50%;
+    }
+
+    .ice-order-section .table-discharge-details.responsiveTable tr,
+    .ice-order-section .outcome-section .table-discharge-details.responsiveTable tr {
+        min-height: 70px;
+    }
+
+    .treatment-section .table-discharge-details.responsiveTable tbody tr:last-child,
+    .ice-order-section .table-discharge-details.responsiveTable tbody tr:last-child {
+        border-radius: 0 0 0 6px;
+    }
+
+    .treatment-section .outcome-section .table-discharge-details.responsiveTable tbody tr:last-child,
+    .ice-order-section .outcome-section .table-discharge-details.responsiveTable tbody tr:last-child {
+        border-radius: 0 0 6px 0;
+    }
+
+    .treatment-section .table-discharge-details.responsiveTable tr:last-child td:last-child,
+    .treatment-section .outcome-section .table-discharge-details.responsiveTable tr:last-child td:first-child,
+    .ice-order-section .table-discharge-details.responsiveTable tr:last-child td:last-child,
+    .ice-order-section .outcome-section .table-discharge-details.responsiveTable tr:last-child td:first-child {
+        border-radius: 0;
+    }
+}
+
+@media (max-width:991px) {
+
+    .ae-summary .responsiveTable td.pivoted:nth-child(1),
+    .ae-summary .responsiveTable td.pivoted:nth-child(5),
+    .ae-summary .notes-table .table-discharge-details.responsiveTable td.pivoted:nth-child(5),
+    .ae-summary .management-plan .table-discharge-details.responsiveTable tr:first-child td.pivoted:nth-child(5),
+    .ae-summary .triage-table .table-discharge-details.responsiveTable td.pivoted:nth-child(5),
+    .treatment-section .table-discharge-details.responsiveTable tbody tr:last-child,
+    .ice-order-section .table-discharge-details.responsiveTable tbody tr:last-child,
+    .refferal .table-discharge-details.responsiveTable tbody tr:last-child {
+        border-radius: 0;
+    }
+
+    .card-shadow.management-plan table:last-child tr:last-child td:last-child,
+    .card-shadow.notes-table:last-child tr:last-child td:last-child,
+    .ae-summary .triage-table .table-discharge-details.responsiveTable td.pivoted:nth-child(5),
+    .ae-summary .management-plan .table-discharge-details tr:last-child.responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .card-shadow.investigations:last-child tr:last-child td:last-child,
+    .ae-summary .triage-table .table-discharge-details.responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 6px 0;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+
+    .alerts .responsiveTable tr:last-child td.pivoted:nth-child(4) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .ae-summary .responsiveTable td.pivoted:nth-child(4),
+    .ae-summary .patient-details-card .table-discharge-details tr:last-child td:last-child {
+        border-radius: 0;
+    }
+
+    .alerts .responsiveTable tr:last-child td.pivoted:nth-child(1),
+    .ae-summary .notes-table .table-discharge-details.responsiveTable tr:last-child td.pivoted:nth-child(5),
+    .card-shadow.clinician table:last-child tr:last-child td:last-child,
+    .ae-summary .patient-details-card .table-discharge-details .details-hospital tr:last-child td:last-child {
+        border-radius: 0 0 0 6px;
+    }
+
+    .ice-order-section .table-discharge-details.responsiveTable tr,
+    .ice-order-section .outcome-section .table-discharge-details.responsiveTable tr {
+        min-height: auto;
+    }
+}
+
+@media (max-width:767px) {
+
+    .card-dischage-summary,
+    .card-dischage-summary .rectangle-block-1 {
+        border-radius: 4px;
+    }
+
+    .blue-rectangle-block,
+    .care-block .rectangle-block-2 {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .ae-summary .responsiveTable td.pivoted:nth-child(2),
+    .responsiveTable td.pivoted:nth-child(6),
+    .ae-summary .triage-table .table-discharge-details.responsiveTable td.pivoted:nth-child(2),
+    .ae-summary .investigations .table-discharge-details.responsiveTable td.pivoted:nth-child(2),
+    .ae-summary .management-plan .table-discharge-details.responsiveTable td.pivoted:nth-child(2),
+    .ae-summary .notes-table .table-discharge-details.responsiveTable td.pivoted:nth-child(2),
+    .ae-summary .clinician .table-discharge-details .responsiveTable tbody tr:nth-child(1),
+    .ae-summary .clinician .table-discharge-details.responsiveTable td.pivoted:nth-child(2),
+    .ae-summary .patient-details-card .table-discharge-details tr:last-child td:last-child,
+    .card-shadow.management-plan table:last-child tr:last-child td:first-child,
+    .card-shadow.refferal table:last-child tr:last-child td:last-child,
+    .card-shadow.ice-order-section table:last-child tr:last-child td:last-child {
+        border-radius: 0;
+    }
+
+    .ae-summary .notes-table .table-discharge-details.responsiveTable td.pivoted:nth-child(5),
+    .ae-summary .patient-details-card .table-discharge-details.responsiveTable td.pivoted:nth-child(5),
+    .ae-summary .investigations .table-discharge-details.responsiveTable tr:last-child td.pivoted:nth-child(3),
+    .ae-summary .clinician .table-discharge-details.responsiveTable td.pivoted:nth-child(5),
+    .ae-summary .management-plan .table-discharge-details.responsiveTable tr:last-child td.pivoted:nth-child(5),
+    .ae-summary .triage-table .table-discharge-details.responsiveTable td.pivoted:nth-child(7),
+    .card-shadow.notes-table table:last-child tr:last-child td:last-child,
+    .card-shadow.management-plan table tr:last-child tr:last-child td:first-child,
+    .alerts .responsiveTable tr:last-child td.pivoted:nth-child(3),
+    .card-shadow table:last-child tr:last-child td:first-child,
+    .card-shadow.refferal table:last-child tr:last-child td:last-child,
+    .card-shadow.treatment-section table:last-child tr:last-child td:nth-child(3),
+    .card-shadow.linked-attendance-details table:last-child tr:last-child td:last-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .ae-summary .investigations .table-discharge-details.responsiveTable tr:last-child td.pivoted:nth-child(4),
+    .alerts .responsiveTable tr:last-child td.pivoted:nth-child(4),
+    .card-shadow table:last-child tr:last-child td:last-child,
+    .ae-summary .triage-table .table-discharge-details.responsiveTable td.pivoted:nth-child(8),
+    .card-shadow.treatment-section .outcome-section table:last-child tr:last-child td:last-child,
+    .card-shadow.ice-order-section .outcome-section table:last-child tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+
+    .treatment-section .table-discharge-details.responsiveTable td.pivoted,
+    .ice-order-section .table-discharge-details.responsiveTable td.pivoted,
+    .ice-order-section .outcome-section .table-discharge-details.responsiveTable td.pivoted {
+        width: 50%;
+    }
+}

@@ -1,0 +1,220 @@
+.legend-top-hour-sec-style {
+    float: right;
+    height: 15px;
+    position: relative;
+    width: 20%;
+}
+img {
+    max-width: 100%;
+}
+
+.ed-activity-greybox .date-box {
+    background: transparent;
+    width: 100%;
+    font-size: 13px;
+}
+.legend-top-hour-sec-style>span {
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    line-height: 20px;
+}
+
+.heatmapabove90 {
+    background: #705787;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.activity-date-zone-prev {
+    position: absolute;
+    z-index: 0;
+}
+
+.date-zone-top-order {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.activity-date-zone-prev-inner {
+    width: 200px;
+}
+
+.activity-date-zone-prev-inner-date {
+    width: 50px;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.activity-date-zone-prev-inner-date-field {
+    width: 150px;
+    float: left;
+    line-height: 14px;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.heatmapabove70 {
+    background: #ae125b;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.heatmapabove50 {
+    background: #00acbc;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.heatmapabove0 {
+    background: #e1ebf4;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+    .top-nav-inside-nav-style-outer {
+        display: inline-block !important;
+    }
+
+    .top-nav-inside-nav-style-inner {
+        display: inline-block;
+    }
+
+    .top-nav-inside-nav-style {
+        display: flex;
+    }
+
+    .full-legent-activity-profile-top-section {
+        padding: 10px 5px 10px 0;
+        min-height: 37px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 5px;
+    }
+ .legend-top-hour-sec-style {
+    float: right;
+    height: 15px;
+    position: relative;
+    width: 20%;
+}
+
+.legend-top-hour-sec-style>span {
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    line-height: 20px;
+}
+
+.heatmapabove90 {
+    background: #705787;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.activity-date-zone-prev {
+    position: absolute;
+    z-index: 0;
+}
+
+.date-zone-top-order {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.activity-date-zone-prev-inner {
+    width: 200px;
+}
+
+.activity-date-zone-prev-inner-date {
+    width: 50px;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.activity-date-zone-prev-inner-date-field {
+    width: 150px;
+    float: left;
+    line-height: 14px;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.heatmapabove70 {
+    background: #ae125b;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.heatmapabove50 {
+    background: #00acbc;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+.heatmapabove0 {
+    background: #e1ebf4;
+    float: left;
+    margin-right: 8%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-top: 1%;
+    position: relative;
+}
+
+    .top-nav-inside-nav-style-outer {
+        display: inline-block !important;
+    }
+
+    .top-nav-inside-nav-style-inner {
+        display: inline-block;
+    }
+
+    .top-nav-inside-nav-style {
+        display: flex;
+    }
+
+    .full-legent-activity-profile-top-section {
+        padding: 10px 5px 10px 0;
+        min-height: 37px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 5px;
+    }

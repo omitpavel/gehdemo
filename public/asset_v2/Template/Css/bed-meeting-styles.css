@@ -1,0 +1,351 @@
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00D2D6;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+#bed-meeting-tab h6 {
+    font-size: 16px;
+}
+
+#bed-meeting-tab h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* ED Performance Styles */
+
+.card {
+    box-shadow: 0px 10px 30px #00000029;
+    border-radius: 15px;
+    min-height: 300px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: none;
+}
+
+tr td {
+    padding: 10px 15px;
+}
+
+.table-ed-performance td,
+.table-ed-performance th {
+    padding: 5px 15px;
+}
+
+.table-ed-performance td {
+    border-right: 1px solid #9A9A9A;
+}
+
+.table-ed-performance td:last-child {
+    border-right: none;
+}
+
+
+.table-ed-performance tr:first-child th {
+    border-radius: 15px 15px 0 0;
+}
+
+#ed-table-1 tr:first-child th:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+.table-ed-performance tr:nth-child(1) th:nth-child(2) {
+    border-radius: 0 15px 0 0;
+}
+
+.bg-dark-blue {
+    background: linear-gradient(180deg, rgba(0, 152, 219, 1) 50%, rgba(15, 31, 65, 1) 100%);
+    color: #fff;
+    font-weight: 500;
+}
+
+.bg-table-grey {
+    background: #E1E6EF;
+}
+
+.bg-table-grey th {
+    background: #E1E6EF;
+}
+
+.bg-table-lightblue {
+    background: #EFF4FF;
+}
+
+.bg-table-dark-grey,
+.bg-table-black {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.bg-table-dark-grey {
+    background: #565B65;
+
+}
+
+.bg-table-black {
+    background: #343A46;
+}
+
+/* ED Performance Styles End */
+
+/* Inpatient Demand Styles  */
+
+
+ .bg-ed-primary {
+    background-color: #325294;
+    color: #fff;
+    font-weight: 400;
+    padding: 0 1rem;
+    border-radius: 15px 15px 0px 0px;
+    min-height: 50px;
+}
+
+.bg-ed-primary h6,
+.bg-ed-primary h5 {
+    margin-bottom: 0;
+}
+
+.bg-blue {
+    background: #5184EC;
+    padding: .5rem 2rem .5rem 1rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    /* width: 150px; */
+}
+
+.bg-shape {
+    background: #325294;
+    padding: .5rem 1rem;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border-radius: 25px 0 0 25px;
+    height: 54px;
+}
+
+.pt-14 {
+    padding-top: 14px;
+}
+
+.bg-table-total {
+    background: linear-gradient(180deg, rgba(0, 210, 214, 1) 50%, rgba(0, 105, 107, 1) 100%);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.table-counts td,
+.table-counts th {
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+.table-counts td {
+    border-right: 1px solid #9A9A9A;
+}
+
+.table-counts td:last-child {
+    border-right: none;
+}
+
+.table-counts tr:first-child th:first-child {
+    background: #011C54;
+    border-radius: 15px 0 0px 0px;
+}
+
+.table-counts tr:first-child th:nth-child(2) {
+    background: #012E8B;
+    color: #fff;
+}
+
+.table-counts tr:first-child th:nth-child(3) {
+    background: linear-gradient(1deg, rgba(0, 17, 52, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    color: #fff;
+}
+
+.table-counts tr:first-child th:nth-child(4) {
+    background: #012E8B;
+    color: #fff;
+    border-radius: 0 15px 0px 0px;
+}
+
+.bg-table-skyblue {
+    background: #B8C9E9;
+}
+
+.bg-table-lavender {
+    background: #89A5DB;
+}
+
+.leftside-head {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.leftside-bg {
+    padding-left: 2rem;
+    padding-top: .5rem;
+    font-weight: 600;
+}
+
+.leftside-head li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.ed-hour-rightside {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.rightside-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+    padding: 0.1rem 0;
+}
+
+.ed-hour-rightside .rightside-list li {
+    width: 3.8%;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0px 1px;
+}
+
+.bg-col-red {
+    background-color: #CD0000;
+    color: #fff;
+}
+
+.bg-col-yellow {
+    background-color: #F9B73A;
+}
+
+/* Inpatient Demand Styles End */
+
+/* Other Inpatient Areas Styles  */
+
+.bg-table-cyan {
+    background: linear-gradient(180deg, rgba(0, 210, 214, 1) 50%, rgba(0, 105, 107, 1) 100%);
+}
+
+.bg-amber {
+    background: #E2E21E;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#other-areas td {
+    border-right: 1px solid #9A9A9A;
+}
+
+#other-areas td:last-child {
+    border-right: none;
+}
+
+/* Other Inpatient Areas Styles End */
+
+.table-wards {
+    font-size: 12px;
+}
+
+.table-wards td,
+.table-wards th {
+    padding: 5px 10px;
+}
+
+.table-wards td {
+    border-right: 1px solid #9A9A9A;
+}
+
+.table-wards td:last-child,
+.table-wards tr:nth-child(2) th:last-child {
+    border-right: none;
+}
+
+.table-wards tr:nth-child(2) th {
+    font-weight: 500;
+    border-right: 1px solid #9A9A9A;
+}
+
+#ward-table .bg-ed-primary {
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bg-ed-primary .bg-total-cell {
+    background-color: #09296A;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#ward-textarea .form-control {
+    background-color: #EDF1F9;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+    font-size: 14px;
+}
+
+/* Media Query */
+
+
+@media screen and (max-width:767px) {
+    #bed-meeting-tab h6 {
+        font-size: 14px;
+    }
+
+    .bg-shape {
+        height: 50px;
+        right: -3px;
+    }
+
+    #bed-meeting-tab .bg-blue {
+        padding: 0.5rem 3rem 0.5rem 1rem;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:424px) {
+
+    .fs-16 {
+        font-size: 14px;
+    }
+
+    .bg-shape {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+}

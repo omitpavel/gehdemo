@@ -1,0 +1,174 @@
+.filters .form-select {
+    min-height: 35px;
+}
+
+.medfit-text-danger {
+    color: #E30000;
+}
+
+.medfit-text-success {
+    color: #48AB3F;
+}
+
+.card-allow-to-move {
+    padding: 0;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.card-allow-to-move .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem .5rem;
+    min-height: 35px;
+}
+
+.card-allow-to-move .name-header span {
+    font-weight: 500;
+}
+
+table {
+    font-size: 11px;
+}
+
+.form-select {
+    min-height: 40px;
+}
+
+.card-allow-to-move .table-moved-patients thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.card-allow-to-move .table-moved-patients th {
+    font-weight: 500;
+    padding: 8px;
+    color: #fff;
+}
+
+span.text-not-move {
+    font-weight: 600;
+    color: #E30000;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .sticky-toprow {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 54px;
+        left: 115px;
+        padding: .5rem .75rem 0 .6rem;
+    }
+
+    .other-dashboard-contents {
+        margin-top: 46px;
+    }
+
+    .bg-sticky {
+        background: #F8F8F8;
+        position: fixed;
+        height: 40px;
+        width: calc(100% - 115px);
+        left: 115px;
+        padding: 0.5rem 0.75rem 0 0.6rem;
+    }
+
+    .sticky-header {
+        position: sticky;
+        width: 100%;
+        background-color: #F8F8F8;
+        z-index: 2;
+        border-radius: 7px;
+    }
+
+    .bg-sticky,
+    .sticky-header {
+        top: 160px;
+    }
+
+    .card-allow-to-move .table-moved-patients tr:last-child td:first-child {
+        border-radius: 0px 0 0 7px;
+    }
+
+    .card-allow-to-move .table-moved-patients tr:last-child td:last-child {
+        border-radius: 0px 0 7px 0;
+    }
+
+    .card-allow-to-move .table-moved-patients tbody tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .card-allow-to-move .table-moved-patients tbody tr:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .card-allow-to-move .table-moved-patients thead th:nth-child(4),
+    .card-allow-to-move .table-moved-patients tbody tr td:nth-child(4) {
+        width: 10%;
+    }
+
+    .card-allow-to-move .table-moved-patients thead th,
+    .card-allow-to-move .table-moved-patients tbody tr td {
+        width: 12.85%;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .card-allow-to-move {
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .card-allow-to-move .name-header {
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000038;
+        margin-bottom: .5rem;
+        border-radius: 7px;
+    }
+
+    .card-allow-to-move .table-moved-patients.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-allow-to-move .table-moved-patients.responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .card-allow-to-move .table-moved-patients.responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 6px 0;
+    }
+
+    .card-allow-to-move .table-moved-patients.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .patients-count-box,
+    .card-allow-to-move .name-header {
+        border-radius: 4px;
+    }
+
+    .card-allow-to-move .table-moved-patients.responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0;
+    }
+
+    .card-allow-to-move .table-moved-patients.responsiveTable td.pivoted:nth-child(7) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .card-allow-to-move .table-moved-patients.responsiveTable td.pivoted:nth-child(8) {
+        border-radius: 0 0 4px 0;
+    }
+}

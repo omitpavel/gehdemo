@@ -1,0 +1,208 @@
+.card-status,
+.card-status-chart {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0.95rem 0.5rem 0.7rem 0.5rem;
+    min-height: 60px;
+}
+
+.card-status-chart {
+    min-height: calc(100vh - 160px);
+}
+
+.card-status .card-body,
+.card-status-chart .card-body {
+    padding: 1rem 0.5rem;
+}
+
+.card-status h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.card-status-chart .card-body h6,
+.card-status h6 {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.ae-sankey-data,
+.sankey-patients-details .card-patients-sankey {
+    padding: 0;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.sankey-patients-details.offcanvas-end {
+    width: 95%;
+}
+
+.ae-sankey-data .table-ae-sankey,
+.sankey-patients-details .card-patients-sankey .table-patients-sankey {
+    font-size: 12px;
+}
+
+.ae-sankey-data .table-ae-sankey thead tr,
+.sankey-patients-details .card-patients-sankey .table-patients-sankey thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.cell-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 30px;
+    cursor: pointer;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .cell-data {
+        padding: 8px;
+    }
+
+    .ae-sankey-data .table-ae-sankey thead tr th,
+    .sankey-patients-details .card-patients-sankey .table-patients-sankey thead tr th {
+        font-weight: 500;
+    }
+
+    .ae-sankey-data .table-ae-sankey tbody tr:nth-child(odd),
+    .sankey-patients-details .card-patients-sankey .table-patients-sankey tbody tr:nth-child(odd),
+    .cell-data:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .ae-sankey-data .table-ae-sankey tbody tr:nth-child(even),
+    .sankey-patients-details .card-patients-sankey .table-patients-sankey tbody tr:nth-child(even),
+    .cell-data:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .ae-sankey-data .table-ae-sankey tbody tr td {
+        vertical-align: top;
+        padding: 0;
+    }
+
+    .ae-sankey-data .table-ae-sankey thead tr th,
+    .ae-sankey-data .table-ae-sankey tbody tr td {
+        border-right: 1px solid #A7A7A7;
+    }
+
+    .ae-sankey-data .table-ae-sankey thead tr th:last-child,
+    .ae-sankey-data .table-ae-sankey tbody tr td:last-child {
+        border-right: none;
+    }
+
+    .ae-sankey-data .table-ae-sankey thead tr th:first-child,
+    .sankey-patients-details .card-patients-sankey .table-patients-sankey thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .ae-sankey-data .table-ae-sankey thead tr th:last-child,
+    .sankey-patients-details .card-patients-sankey .table-patients-sankey thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .ae-sankey-data .table-ae-sankey tbody tr:last-child td:first-child,
+    .ae-sankey-data .table-ae-sankey tbody tr:last-child td:first-child .cell-data:last-child,
+    .sankey-patients-details .card-patients-sankey .table-patients-sankey tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .ae-sankey-data .table-ae-sankey tbody tr:last-child td:last-child,
+    .ae-sankey-data .table-ae-sankey tbody tr:last-child td:last-child .cell-data:last-child,
+    .sankey-patients-details .card-patients-sankey .table-patients-sankey tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+}
+
+@media (min-width:992px) {
+    .sankey-sticky-toprow {
+        position: fixed;
+        width: calc(100% - 115px);
+        background: #F8F8F8;
+        z-index: 3;
+        top: 60px;
+        height: 130px;
+        left: 115px;
+        padding: 0.5rem 0.75rem 0 0.6rem;
+    }
+
+    .card-status-chart {
+        margin-top: 125px;
+    }
+
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    .sankey-sticky-toprow {
+        height: 200px;
+    }
+
+    .card-status-chart {
+        margin-top: 195px;
+    }
+}
+
+@media (max-width:1025px) {
+    .sankey-patients-details.offcanvas-end {
+        width: 100%;
+    }
+
+    .ae-sankey-data .table-ae-sankey tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    div.cell-data {
+        width: 100%;
+    }
+
+    .sankey-patients-details .card-patients-sankey {
+        box-shadow: none;
+    }
+
+    .sankey-patients-details .card-patients-sankey .responsiveTable thead {
+        display: none;
+    }
+
+    .sankey-patients-details .card-patients-sankey .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+}
+
+@media (max-width:991px) {
+    .sankey-patients-details .card-patients-sankey .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+
+    .ae-sankey-data .table-ae-sankey tbody tr td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+}
+
+@media (max-width:767px) {
+    .card-status {
+        border-radius: 4px;
+        min-height: 60px;
+    }
+
+    .card-status-chart {
+        border-radius: 4px;
+    }
+
+    .ae-sankey-data .table-ae-sankey tbody tr:last-child td:last-child,
+    .sankey-patients-details .card-patients-sankey .responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .ae-sankey-data .table-ae-sankey tbody tr td.pivoted:nth-child(5) {
+        border-radius: 0;
+    }
+}

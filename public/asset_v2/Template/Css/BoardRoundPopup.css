@@ -1,0 +1,1764 @@
+.offcanvas-end {
+    top: 0;
+    border-radius: 0;
+}
+
+.offcanvas.offcanvas-end table,
+.offcanvas.offcanvas-end ul,
+.offcanvas.offcanvas-end li,
+.offcanvas.offcanvas-end .form-control,
+.offcanvas.offcanvas-end .form-select {
+    font-size: 12px;
+}
+
+.allow-move .form-control,
+.allow-move .form-select,
+.cld-offcanvas .form-control,
+.edd-offcanvas .form-control,
+.assign-task-offcanvas .form-control,
+.assign-task-offcanvas .form-select,
+.assign-task-offcanvas .selectric,
+.task-details-offcanvas .form-control,
+.pharmacy-offcanvas .form-control {
+    background-color: #F3F3F3;
+    border-radius: 7px;
+    border: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.assign-task-offcanvas .selectric .button {
+    background-color: transparent;
+}
+
+.assign-task-offcanvas .form-control {
+    min-height: 35px;
+}
+
+.text-red {
+    color: #FF0000;
+}
+
+.next-kin-offcanvas ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgb(128, 128, 128, .5);
+    list-style: none;
+}
+
+.next-kin-offcanvas ul li {
+    padding: .5rem;
+    width: 50%;
+}
+
+.bg-ul-grey {
+    background-color: #F9F9FA;
+}
+
+.pharmacy-comments-section .rectangle-block-2 {
+    background: var(--primary-blue);
+    color: #fff;
+}
+
+.pharmacy-comments .table-pharmacy-comments tbody td span {
+    font-weight: 400;
+}
+
+.pharmacy-comments .table-pharmacy-comments tbody .icon-copy {
+    text-align: center;
+}
+
+.show-history-offcanvas.offcanvas-end {
+    width: 90%;
+}
+
+.cld-offcanvas.offcanvas-end,
+.next-kin-offcanvas.offcanvas-end,
+.doctor-night-offcanvas.offcanvas-end,
+.edd-offcanvas.offcanvas-end,
+.off-the-ward-offcanvas.offcanvas-end,
+.plasma-offcanvas.offcanvas-end,
+.medically-fit-offcanvas.offcanvas-end,
+.reason-reside-offcanvas.offcanvas-end,
+.red2green-offcanvas.offcanvas-end,
+.escalation-status-offcanvas.offcanvas-end {
+    width: 50%;
+}
+
+.boardround-outstanding-tasks.offcanvas-end {
+    width: 85%;
+}
+
+.allow-move-offcanvas.offcanvas-end,
+.pharmacy-offcanvas.offcanvas-end,
+.assign-task-offcanvas.offcanvas-end,
+.one-to-one-offcanvas.offcanvas-end,
+.leaflet-one-offcanvas.offcanvas-end,
+.leaflet-two-offcanvas.offcanvas-end,
+.nof-offcanvas.offcanvas-end,
+.dp-tasks-offcanvas.offcanvas-end,
+.discharge-handover-offcanvas.offcanvas-end,
+.task-details-offcanvas.offcanvas-end,
+.mobile-score-offcanvas.offcanvas-end,
+.ward-movement-offcanvas.offcanvas-end,
+.sepsis-assessment-offcanvas.offcanvas-end,
+.aki-assessment-offcanvas.offcanvas-end,
+.add-attendance-offcanvas.offcanvas-end {
+    width: 60%;
+}
+
+.infection-risk-offcanvas.offcanvas-end {
+    width: 55%;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.allow-move-offcanvas .wards-section .ward-data {
+    border: 0.5px solid rgb(128, 128, 128, .3);
+    border-radius: 10px;
+}
+
+.allow-move-offcanvas .wards-section .ward-data .locations-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.allow-move-offcanvas .wards-section .ward-data .locations-box .form-check {
+    font-size: 12px;
+    padding: .3rem 1.75rem;
+    margin-bottom: 0;
+    width: 33.33%;
+}
+
+.time-wrapper {
+    position: relative;
+}
+
+.time-wrapper svg {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+.header-primary {
+    color: #0082D2;
+    padding: .5rem 0;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+    text-transform: uppercase;
+}
+
+.reside-contents .reason-content-block {
+    margin-bottom: .5rem;
+}
+
+.reside-contents .reason-content-block:last-child {
+    margin-bottom: 0;
+}
+
+.reside-contents ul.reason-list {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.reside-contents .reasons-list-block {
+    padding-left: .25rem;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.reside-contents .reasons-list-block:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.reside-contents .reasons-list-block:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.reside-contents ul.reason-list li {
+    padding: .5rem 0;
+}
+
+.reside-contents ul.reason-list li:first-child {
+    width: 5%;
+}
+
+.reside-contents ul.reason-list li:last-child {
+    width: 95%;
+}
+
+.reside-contents .form-check-input {
+    width: 1.4em;
+    height: 1.4em;
+    margin-top: 0;
+}
+
+.reason-reside-offcanvas .reside-contents .reason-content-block {
+    margin-bottom: 0;
+}
+
+.reason-reside-offcanvas .medfit-section {
+    display: block;
+    padding: 0;
+    min-height: 80px;
+    margin-bottom: 0;
+}
+
+.reason-reside-offcanvas .medfit-section .medfit-buttons {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.reason-reside-offcanvas .medfit-section .medfit-buttons .btn {
+    width: 49%;
+}
+
+.reason-reside-offcanvas .medfit-section .medfit-buttons .btn:first-child {
+    margin-right: 2%;
+}
+
+.reason-reside-offcanvas .content-section .rectangle-block-1 {
+    background: transparent;
+}
+
+.reason-reside-offcanvas .reside-contents {
+    padding: .5rem;
+}
+
+.reason-reside-offcanvas .reside-contents .disabled-effects {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.reason-reside-offcanvas .header-primary h6 {
+    margin-bottom: 0;
+}
+
+.reason-reside-offcanvas .medfit-card {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: .5rem;
+}
+
+.reason-reside-offcanvas .medfit-card span {
+    font-size: 12px;
+}
+
+.reason-reside-offcanvas .card-R2G,
+.red2green-offcanvas .card-R2G {
+    background: transparent;
+}
+
+.red-green-sticky {
+    position: fixed;
+    background: #fff;
+    z-index: 3;
+    top: 54px;
+    height: 200px;
+    padding: .5rem 0;
+    width: calc(50% - 42px);
+}
+
+.reason-reside-offcanvas .card-R2G,
+.red2green-offcanvas .card-R2G {
+    height: 600px;
+    overflow-y: auto;
+    margin-top: 185px;
+    padding: .5rem;
+}
+
+.reason-reside-offcanvas .btn-danger,
+.reason-reside-offcanvas .btn-success,
+.red2green-offcanvas button.btn-danger,
+.red2green-offcanvas button.btn-success {
+    width: 40%;
+}
+
+.reason-reside-offcanvas .card-R2G::-webkit-scrollbar,
+.red2green-offcanvas .card-R2G::-webkit-scrollbar,
+.reason-reside-offcanvas .red-reason-block::-webkit-scrollbar,
+.red2green-offcanvas .red-reason-block::-webkit-scrollbar {
+    width: 3px;
+}
+
+.reason-reside-offcanvas .medfit-card label,
+.red2green-offcanvas .medfit-card label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.reason-reside-offcanvas .red-reason-block,
+.red2green-offcanvas .red-reason-block {
+    background-color: #F3F3F3;
+    border: 0.5px solid rgb(128, 128, 128, .5);
+    border-radius: 7px;
+    height: 80px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.reason-reside-offcanvas .red-reason-block span,
+.red2green-offcanvas .red-reason-block span {
+    display: block;
+    font-size: 12px;
+}
+
+.reason-reside-offcanvas .red-reason-block span:nth-child(odd),
+.red2green-offcanvas .red-reason-block span:nth-child(odd) {
+    background-color: #F2F2F2;
+    padding: .25rem .5rem;
+}
+
+.reason-reside-offcanvas .red-reason-block span:nth-child(even),
+.red2green-offcanvas .red-reason-block span:nth-child(even) {
+    background-color: #fff;
+    padding: .25rem .5rem;
+}
+
+.reason-reside-offcanvas .search-icon,
+.red2green-offcanvas .search-icon {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.reason-reside-offcanvas .red2green-section .reside-contents,
+.red2green-offcanvas .red2green-section .reside-contents {
+    padding: 0;
+}
+
+.reason-reside-offcanvas .red2green-section .reside-contents .reasons-list-block,
+.red2green-offcanvas .red2green-section .reside-contents .reasons-list-block {
+    border-bottom: none;
+    padding-left: 0;
+}
+
+.reason-reside-offcanvas .red2green-section .reside-contents .reasons-list-block .reason-list,
+.red2green-offcanvas .red2green-section .reside-contents .reasons-list-block .reason-list {
+    padding: 0 .5rem;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.reason-reside-offcanvas .red2green-section .reside-contents .reasons-list-block .reason-list:first-child,
+.red2green-offcanvas .red2green-section .reside-contents .reasons-list-block .reason-list:first-child {
+    border-top: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.reason-reside-offcanvas .red2green-section .reside-contents .reasons-list-block .reason-list:nth-child(odd),
+.red2green-offcanvas .red2green-section .reside-contents .reasons-list-block .reason-list:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.reason-reside-offcanvas .red2green-section .reside-contents .reasons-list-block .reason-list:nth-child(even),
+.red2green-offcanvas .red2green-section .reside-contents .reasons-list-block .reason-list:nth-child(even) {
+    background-color: #fff;
+
+}
+
+.ward-movement-offcanvas .card-movement,
+.show-history-offcanvas .card-history,
+.iv-history .card-history {
+    padding: 0;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+
+.show-history-offcanvas .card-history .date-header {
+    background: var(--bg-grey-gradient);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.show-history-offcanvas .card-history .date-header span {
+    font-weight: 500;
+}
+
+.ward-movement-offcanvas .card-movement .table-ward-movement,
+.show-history-offcanvas .table-history {
+    font-size: 12px;
+}
+
+.ward-movement-offcanvas .card-movement .table-ward-movement thead tr,
+.show-history-offcanvas .table-history thead tr,
+.iv-history .table-history thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.ward-movement-offcanvas .card-movement .table-ward-movement thead tr th,
+.show-history-offcanvas .table-history thead tr th,
+.iv-history .table-history thead tr th {
+    font-weight: 500;
+}
+
+.edd-reason .form-control {
+    background-color: #F3F3F3;
+}
+
+.cld-offcanvas .form-control {
+    min-height: 240px;
+}
+
+/* Dialysis Modal Styles */
+
+.dialysis-offcanvas.offcanvas-end {
+    width: 40%;
+}
+
+.bg-on-dialysis,
+.bg-requiring-dialysis {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    color: #fff;
+    padding: 1rem;
+    height: 90px;
+}
+
+.bg-on-dialysis {
+    background: var(--bg-green-gradient);
+}
+
+.bg-requiring-dialysis {
+    background: var(--bg-red-gradient);
+}
+
+.bg-on-dialysis .border-line,
+.bg-requiring-dialysis .border-line {
+    width: 2px;
+    height: 60px;
+}
+
+.bg-on-dialysis .border-line {
+    background: linear-gradient(90deg, rgba(62, 185, 62, 1) 50%, rgba(12, 80, 12, 1) 100%);
+}
+
+.bg-requiring-dialysis .border-line {
+    background: linear-gradient(90deg, rgba(242, 14, 14, 1) 50%, rgba(128, 5, 5, 1) 100%);
+}
+
+.bg-on-dialysis h5,
+.bg-requiring-dialysis h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Dp Tasks Offcanvas Styles */
+
+.offcanvas-end {
+    width: 800px;
+    top: 0;
+    border-radius: 0;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.dp-tasks .tasks-content-block {
+    margin-bottom: .5rem;
+}
+
+.dp-tasks ul.tasks-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.dp-tasks .tasks-list li:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+.dp-tasks .tasks-list li:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+.dp-tasks ul.tasks-list li {
+    padding: .5rem .75rem;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.dp-note {
+    color: #E10000;
+    padding: .5rem 7rem;
+    font-size: 12px;
+}
+
+/* Leaflet-1 Modal Styles */
+
+.leaflet-offcanvas .modal-dialog,
+.aki-assessment-offcanvas .modal-dialog {
+    max-width: 500px;
+}
+
+.leaflet-one-offcanvas .questions-list ul,
+.aki-assessment-offcanvas .questions-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.leaflet-one-offcanvas .questions-list ul li,
+.aki-assessment-offcanvas .questions-list ul li {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.leaflet-one-offcanvas .questions-list ul li:nth-child(odd),
+.aki-assessment-offcanvas .questions-list ul li:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.leaflet-one-offcanvas .questions-list ul li:nth-child(even),
+.aki-assessment-offcanvas .questions-list ul li:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+/* Leaflet-2 / Doctor At Night Modal Styles */
+
+.doctor-night-offcanvas .form-check-input,
+.one-to-one-offcanvas .form-check-input,
+.leaflet-two-offcanvas .form-check-input,
+.mobile-score-offcanvas .form-check-input,
+.escalation-status-offcanvas .form-check-input,
+.sepsis-assessment-offcanvas .form-check-input {
+    margin-top: 0;
+}
+
+.form-check-input[type=checkbox] {
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.leaflet-two-offcanvas .reasons-list-block,
+.doctor-night-offcanvas .reasons-list-block,
+.escalation-status-offcanvas .reasons-list-block,
+.sepsis-assessment-offcanvas .reasons-list-block {
+    padding-left: 0;
+}
+
+.one-to-one-offcanvas ul.reason-list,
+.leaflet-two-offcanvas ul.reason-list,
+.doctor-night-offcanvas ul.reason-list,
+.escalation-status-offcanvas ul.reason-list,
+.sepsis-assessment-offcanvas ul.reason-list {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.one-to-one-offcanvas ul.reason-list li,
+.leaflet-two-offcanvas ul.reason-list li,
+.doctor-night-offcanvas ul.reason-list li,
+.escalation-status-offcanvas ul.reason-list li,
+.sepsis-assessment-offcanvas ul.reason-list li {
+    padding: 0.25rem 0.5rem;
+}
+
+.one-to-one-offcanvas ul.reason-list li:first-child,
+.leaflet-two-offcanvas ul.reason-list li:first-child,
+.doctor-night-offcanvas ul.reason-list li:first-child,
+.escalation-status-offcanvas ul.reason-list li:first-child,
+.sepsis-assessment-offcanvas ul.reason-list li:first-child {
+    width: 3%;
+    padding: .25rem 0;
+}
+
+.one-to-one-offcanvas ul.reason-list li:last-child,
+.leaflet-two-offcanvas ul.reason-list li:last-child,
+.doctor-night-offcanvas ul.reason-list li:last-child,
+.escalation-status-offcanvas ul.reason-list li:last-child,
+.sepsis-assessment-offcanvas ul.reason-list li:last-child {
+    width: 97%;
+}
+
+.one-to-one-offcanvas ul.reason-list,
+.doctor-night-offcanvas ul.reason-list,
+.leaflet-two-offcanvas ul.reason-list,
+.escalation-status-offcanvas ul.reason-list,
+.sepsis-assessment-offcanvas ul.reason-list {
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+    min-height: 35px;
+    padding: 0 .5rem;
+}
+
+.one-to-one-offcanvas ul.reason-list:first-child,
+.doctor-night-offcanvas ul.reason-list:first-child,
+.leaflet-two-offcanvas ul.reason-list:first-child,
+.escalation-status-offcanvas ul.reason-list:first-child,
+.sepsis-assessment-offcanvas ul.reason-list:first-child {
+    border-top: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.one-to-one-offcanvas ul.reason-list:nth-child(odd),
+.doctor-night-offcanvas ul.reason-list:nth-child(odd),
+.leaflet-two-offcanvas ul.reason-list:nth-child(odd),
+.escalation-status-offcanvas ul.reason-list:nth-child(odd),
+.sepsis-assessment-offcanvas ul.reason-list:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.one-to-one-offcanvas ul.reason-list:nth-child(even),
+.doctor-night-offcanvas ul.reason-list:nth-child(even),
+.leaflet-two-offcanvas ul.reason-list:nth-child(even),
+.escalation-status-offcanvas ul.reason-list:nth-child(even),
+.sepsis-assessment-offcanvas ul.reason-list:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+
+/* Task Details Offcanvas Styles */
+
+.task-details-offcanvas .reasons-list-block {
+    padding-left: 0;
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 7px;
+}
+
+.task-details-offcanvas ul.reason-list {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.task-details-offcanvas ul.reason-list:first-child {
+    border-radius: 7px 7px 0 0;
+}
+
+.task-details-offcanvas ul.reason-list:last-child {
+    border-radius: 0 0 7px 7px;
+}
+
+.task-details-offcanvas ul.reason-list li {
+    padding: 0.25rem 0.5rem;
+}
+
+.task-details-offcanvas ul.reason-list li:first-child {
+    width: 20%;
+    padding: .25rem 0;
+}
+
+.task-details-offcanvas ul.reason-list li:last-child {
+    width: 80%;
+}
+
+.task-details-offcanvas ul.reason-list {
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+    min-height: 35px;
+    padding: 0 .5rem;
+}
+
+.task-details-offcanvas ul.reason-list:last-child {
+    border-bottom: none;
+}
+
+.task-details-offcanvas ul.reason-list:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.task-details-offcanvas ul.reason-list:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+/* History Offcanvas Styles */
+
+.history-offcanvas.offcanvas-end {
+    width: 90%;
+}
+
+.history-offcanvas .card-history {
+    padding: 0 0 0.75rem 0;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.history-offcanvas .card-history .date-header {
+    background: var(--bg-grey-gradient);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.history-offcanvas .card-history .date-header span {
+    font-weight: 500;
+}
+
+.history-offcanvas .table-history {
+    font-size: 12px;
+}
+
+.history-offcanvas .table-history thead tr {
+    background-color: #009AB9;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.history-offcanvas .table-history thead tr th {
+    font-weight: 500;
+}
+
+.history-offcanvas .table-history thead tr th:first-child,
+.history-offcanvas .table-history thead tr th:last-child {
+    border-radius: 0;
+}
+
+.history-offcanvas .table-history tbody tr:nth-child(odd) {
+    background-color: #F9F9FA;
+}
+
+/* Off The Ward Modal Styles */
+
+.off-the-ward-offcanvas .modal-dialog {
+    max-width: 650px;
+}
+
+/* Mobile Score Offcanvas Styles */
+
+.mobile-score .bg-score-value,
+.mobile-score .content-block .header-primary {
+    background: var(--primary-blue);
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.mobile-score .content-block .header-primary {
+    width: 10%;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.mobile-score .content-block .header-primary h6 {
+    margin-bottom: 0;
+}
+
+.mobile-score .content-block {
+    margin-bottom: .5rem;
+}
+
+.mobile-score .list-block {
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.mobile-score ul.score-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 95%;
+}
+
+.mobile-score ul.score-list li {
+    border-right: 0.5px solid rgb(128, 128, 128, .5);
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.mobile-score ul.score-list li:first-child {
+    font-weight: 500;
+}
+
+.mobile-score ul.score-list li:last-child {
+    border-bottom: none;
+}
+
+.mobile-score .list-block .radio-box {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-score .list-block:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.mobile-score .list-block:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.mobile-score .border-blue {
+    border-top: 2px solid #007DCA;
+    width: 100%;
+}
+
+.mobile-score ul.score-list li {
+    padding: .5rem;
+}
+
+.radio-btn-grp .bg-radio-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0.5rem 1rem;
+}
+
+.bg-radio-btn.active {
+    border: 1px solid #0066FF;
+}
+
+/* NOF Offcanvas Styles */
+
+.nof-list .nof-content-block {
+    margin-bottom: .5rem;
+}
+
+.nof-list ul.nof-content-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: inside;
+}
+
+.nof-list .nof-content-list li:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+.nof-list .nof-content-list li:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+.nof-list ul.nof-content-list li {
+    padding: .5rem .75rem;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+/* Other Modals */
+
+.board-round .modal-dialog {
+    max-width: 500px;
+}
+
+.reset-pin-modal .modal-dialog {
+    max-width: 400px;
+}
+
+.medically-fit-offcanvas p,
+.medically-fit-offcanvas label {
+    font-size: 12px;
+}
+
+.pharmacy-history-card {
+    padding-top: .5rem;
+}
+
+.pharmacy-history-card .data-area {
+    padding: .25rem .5rem;
+}
+
+.iv-header h6 {
+    margin-bottom: 0;
+}
+
+.iv-history .iv-header {
+    text-align: center;
+    background: var(--primary-blue);
+    color: #fff;
+    padding: .5rem;
+    border-radius: 7px;
+    margin-bottom: .25rem;
+}
+
+.task-details-offcanvas .form-label {
+    font-size: 12px;
+    margin-bottom: .25rem;
+}
+
+.task-details-offcanvas p.task-list {
+    border: 0.5px solid rgb(128, 128, 128, .5);
+    border-radius: 7px;
+    padding: .25rem .5rem;
+    background-color: #F3F3F3;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.discharge-handover-offcanvas {
+    width: 70%;
+}
+
+.card-discharge-handover {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.card-discharge-handover .form-content {
+    padding: 0.75rem;
+}
+
+.card-discharge-handover .form-content .text-blue {
+    color: var(--primary-blue);
+}
+
+.card-discharge-handover .form-content .text-reject-reason {
+    color: #FE0000;
+}
+
+.card-discharge-handover .form-content .text-blue span {
+    color: #000;
+    font-size: 1.25rem;
+}
+
+.card-discharge-handover .form-content .form-label {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.card-discharge-handover .form-content .form-check-label {
+    font-size: 12px;
+}
+
+.card-discharge-handover .form-content .form-check {
+    min-height: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-discharge-handover .header-content {
+    background-color: var(--primary-blue);
+    padding: .5rem .75rem;
+    color: #fff;
+    border-radius: 7px 7px 0 0;
+}
+
+.discharge-handover-offcanvas .offcanvas-footer .btn-primary-grey span {
+    padding-left: 0;
+}
+
+.discharge-handover-offcanvas .offcanvas-footer .icon-next {
+    position: relative;
+    left: 55%;
+    top: 50%;
+    transform: translate(-55%, -10%);
+}
+
+.board-round-tasks-offcanvas .bg-complete {
+    background: linear-gradient(180deg, rgba(69, 190, 69, 1) 50%, rgba(52, 176, 52, 1) 100%);
+    color: #fff;
+}
+
+.board-round-tasks-offcanvas span.timestamp-complete {
+    display: block;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+.board-round-tasks-offcanvas .btn-primary-grey.bg-complete {
+    padding: .4rem 1rem;
+}
+
+.board-round-tasks-offcanvas .btn-primary-grey {
+    min-height: 50px;
+}
+
+.infection-risk-offcanvas .header-button-group {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.infection-history-section .table-infection-history {
+    font-size: 12px;
+}
+
+.infection-risk-offcanvas .header-button-group .infection-history-btn {
+    width: 70%;
+    margin-right: .5rem;
+}
+
+.infection-risk-offcanvas .header-button-group .infection-history-btn .btn {
+    text-transform: uppercase;
+}
+
+.infection-risk-offcanvas .header-button-group .close-btn {
+    width: 30%;
+}
+
+.infection-risk-offcanvas .card-infection-data .header-chart .btn-primary-grey,
+.infection-risk-offcanvas .card-infection-data .data-section .btn-primary-grey,
+.add-more .btn-primary-grey {
+    padding: .25rem 2.25rem;
+    min-width: auto;
+    min-height: 35px;
+    width: auto;
+}
+
+.infection-risk-offcanvas .card-infection-data .data-section .btn-primary-grey {
+    width: 100%;
+    padding: .25rem 1rem;
+}
+
+.card-infection-data {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    margin-bottom: .5rem;
+}
+
+.card-infection-data .header-chart {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+    padding: .4rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infection-risk-offcanvas .card-infection-data.past-infections-section textarea {
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.card-infection-data .header-chart h6 {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.section-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+}
+
+.section-buttons .btn img,
+.section-buttons .btn.active img {
+    display: none;
+}
+
+.primary-btn .btn:hover,
+.section-buttons .btn.active {
+    background: var(--blue);
+    color: #fff;
+}
+
+.card-infection-data .data-section {
+    padding: .5rem;
+}
+
+.card-infection-data .header-chart .btn-primary-grey,
+.add-more .btn-primary-grey {
+    padding: .25rem 2.25rem;
+    min-width: auto;
+    min-height: 35px;
+    width: auto;
+}
+
+.card-infection-data .form-label {
+    margin-bottom: .25rem;
+    font-size: 12px;
+}
+
+.card-infection-data .form-control,
+.card-infection-data .form-select {
+    min-height: 37px;
+}
+
+.add-more .btn-primary-grey {
+    width: 100%;
+}
+
+.delete-task {
+    opacity: .5;
+    pointer-events: none;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+    .pharmacy-comments .table-pharmacy-comments {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments thead tr {
+        background: var(--bg-grey-gradient);
+        box-shadow: 0px 3px 6px #00000038;
+        width: 100%;
+        border-right: 3px solid rgb(128, 128, 128, 0);
+    }
+
+    .pharmacy-comments .table-pharmacy-comments thead tr th {
+        font-weight: 500;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments thead,
+    .pharmacy-comments .table-pharmacy-comments tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments tbody {
+        flex: 1 1 auto;
+        display: block;
+        max-height: 170px;
+        overflow-y: auto;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments tbody tr {
+        border-bottom: 1px solid #dedddd;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments th,
+    .pharmacy-comments .table-pharmacy-comments td {
+        border-right: 1px solid #dedddd;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments th:last-child,
+    .pharmacy-comments .table-pharmacy-comments td:last-child {
+        border-right: none;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments th:nth-child(1),
+    .pharmacy-comments .table-pharmacy-comments tbody td:nth-child(1) {
+        width: 50%;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments th:nth-child(2),
+    .pharmacy-comments .table-pharmacy-comments tbody td:nth-child(2) {
+        width: 15%;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments th:nth-child(3),
+    .pharmacy-comments .table-pharmacy-comments tbody td:nth-child(3) {
+        width: 25%;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments th:nth-child(4),
+    .pharmacy-comments .table-pharmacy-comments tbody td:nth-child(4) {
+        width: 10%;
+    }
+
+    .table-pharmacy-comments tr:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .table-pharmacy-comments tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments tbody tr:last-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments tbody::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement thead tr th:first-child,
+    .show-history-offcanvas .table-history thead tr th:first-child,
+    .iv-history .table-history thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement thead tr th:last-child,
+    .show-history-offcanvas .table-history thead tr th:last-child,
+    .iv-history .table-history thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .show-history-offcanvas .table-history tbody tr:last-child td:first-child,
+    .ward-movement-offcanvas .card-movement .table-ward-movement tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .show-history-offcanvas .table-history tbody tr:last-child td:last-child,
+    .ward-movement-offcanvas .card-movement .table-ward-movement tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement tbody tr:nth-child(odd),
+    .show-history-offcanvas .table-history tbody tr:nth-child(odd),
+    .iv-history .table-history tbody tr:nth-child(odd) {
+        background-color: #F2F2F3;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement tbody tr:nth-child(even),
+    .show-history-offcanvas .table-history tbody tr:nth-child(even),
+    .iv-history .table-history tbody tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .iv-history .table-history tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .iv-history .table-history tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .iv-history .table-history tbody tr.no-records,
+    .iv-history .table-history tbody tr.no-records td:last-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .iv-history .responsiveTable th:nth-child(2),
+    .iv-history .responsiveTable th:nth-child(3),
+    .iv-history .responsiveTable td:nth-child(2),
+    .iv-history .responsiveTable td:nth-child(3) {
+        text-align: center;
+
+    }
+
+    .show-history-offcanvas .table-history th,
+    .show-history-offcanvas .table-history tbody td {
+        width: 12.5%;
+    }
+
+    .show-history-offcanvas .table-history th:nth-child(2),
+    .show-history-offcanvas .table-history tbody td:nth-child(2) {
+        width: 25%;
+    }
+
+    .infection-history-section .table-infection-history {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .infection-history-section .table-infection-history {
+        box-shadow: 0px 3px 6px #00000038;
+        border-radius: 7px;
+    }
+
+    .infection-history-section .table-infection-history thead,
+    .infection-history-section .table-infection-history tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .infection-history-section .table-infection-history thead tr {
+        background: var(--primary-blue);
+        color: #fff;
+        box-shadow: 0px 3px 6px #00000038;
+        width: 100%;
+        border-right: 3px solid rgb(128, 128, 128, 0);
+    }
+
+    .infection-history-section .table-infection-history thead tr th {
+        font-weight: 500;
+    }
+
+    .infection-history-section .table-infection-history thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .infection-history-section .table-infection-history thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .infection-history-section .table-infection-history th,
+    .infection-history-section .table-infection-history tbody td {
+        width: 20%;
+    }
+
+    .infection-history-section .table-infection-history th:nth-child(1),
+    .infection-history-section .table-infection-history tbody td:nth-child(1) {
+        width: 50%;
+    }
+
+    .infection-history-section .table-infection-history th:nth-child(2),
+    .infection-history-section .table-infection-history tbody td:nth-child(2),
+    .infection-history-section .table-infection-history th:nth-child(3),
+    .infection-history-section .table-infection-history tbody td:nth-child(3) {
+        width: 15%;
+    }
+
+    .infection-history-section .table-infection-history tbody {
+        flex: 1 1 auto;
+        display: block;
+        max-height: 170px;
+        overflow-y: auto;
+    }
+
+    .infection-history-section .table-infection-history tbody tr {
+        border-bottom: 1px solid #dedddd;
+    }
+
+    .infection-history-section .responsiveTable td .tdBefore {
+        display: none;
+    }
+
+    .infection-history-section .table-infection-history tbody::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .infection-history-modal .modal-dialog {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .pharmacy-offcanvas.offcanvas-end {
+        width: 60%;
+    }
+
+    .section-buttons {
+        width: 75%;
+    }
+
+    .infection-history-modal .modal-dialog {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .boardround-outstanding-tasks.offcanvas-end,
+    .history-offcanvas.offcanvas-end,
+    .assign-task-offcanvas.offcanvas-end,
+    .show-history-offcanvas.offcanvas-end,
+    .allow-move-offcanvas.offcanvas-end,
+    .next-kin-offcanvas.offcanvas-end,
+    .doctor-night-offcanvas.offcanvas-end,
+    .edd-offcanvas.offcanvas-end,
+    .pharmacy-offcanvas.offcanvas-end,
+    .discharge-handover-offcanvas,
+    .plasma-offcanvas.offcanvas-end,
+    .infection-risk-offcanvas.offcanvas-end,
+    .medically-fit-offcanvas.offcanvas-end,
+    .reason-reside-offcanvas.offcanvas-end,
+    .red2green-offcanvas.offcanvas-end,
+    .escalation-status-offcanvas.offcanvas-end,
+    .leaflet-one-offcanvas.offcanvas-end,
+    .leaflet-two-offcanvas.offcanvas-end,
+    .nof-offcanvas.offcanvas-end,
+    .dp-tasks-offcanvas.offcanvas-end,
+    .discharge-handover-offcanvas.offcanvas-end,
+    .task-details-offcanvas.offcanvas-end,
+    .mobile-score-offcanvas.offcanvas-end,
+    .off-the-ward-offcanvas.offcanvas-end,
+    .cld-offcanvas.offcanvas-end,
+    .one-to-one-offcanvas.offcanvas-end,
+    .ward-movement-offcanvas.offcanvas-end,
+    .sepsis-assessment-offcanvas.offcanvas-end,
+    .aki-assessment-offcanvas.offcanvas-end,
+    .add-attendance-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .infection-history-modal .modal-dialog {
+        max-width: 100%;
+    }
+
+    .dialysis-offcanvas.offcanvas-end {
+        width: 50%;
+    }
+
+    .ae-summary-offcanvas .table-ae-summary th,
+    .ae-summary-offcanvas .sub-header h6 {
+        font-size: 12px;
+    }
+
+    .red-green-sticky {
+        width: calc(100% - 42px);
+    }
+}
+
+@media (max-width: 1025px) {
+    .pharmacy-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .pharmacy-comments .responsiveTable tbody tr {
+        margin-bottom: 0;
+        border-radius: 0;
+        border-bottom: none;
+    }
+
+    .pharmacy-comments .responsiveTable tbody tr:last-child {
+        border-bottom: 0.5px solid #A7A7A7;
+        border-radius: 0 0 4px 4px;
+    }
+
+    .pharmacy-comments .responsiveTable tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .pharmacy-comments .responsiveTable tbody tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+
+    .pharmacy-comments .responsiveTable td.pivoted:nth-child(1),
+    .pharmacy-comments .responsiveTable td.pivoted:nth-child(2) {
+        border-radius: 0;
+    }
+
+    .dialysis-offcanvas.offcanvas-end {
+        width: 60%;
+    }
+
+    .ward-movement-offcanvas .card-movement,
+    .show-history-offcanvas .card-history,
+    .iv-history .card-history {
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .responsiveTable thead {
+        display: none;
+    }
+
+    .responsiveTable tbody tr {
+        margin-bottom: 5px;
+        align-items: unset;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement.responsiveTable td:nth-child(6),
+    .table-history.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .iv-history .responsiveTable td.pivoted:nth-child(1) {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .iv-history .responsiveTable td:nth-child(1) {
+        width: 20%;
+    }
+
+    .iv-history .responsiveTable td:nth-child(2),
+    .iv-history .responsiveTable td:nth-child(3) {
+        width: 40%;
+    }
+
+    .iv-history .responsiveTable td:nth-child(3) {
+        border-radius: 0 6px 6px 0;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement.responsiveTable td:nth-child(5) {
+        border-radius: 0 6px 0 0;
+    }
+
+    .iv-history .table-history tbody tr.no-records,
+    .iv-history .table-history tbody tr.no-records td.pivoted,
+    .table-history tbody tr.no-records,
+    .table-history tbody tr.no-records td.pivoted {
+        width: 100% !important;
+    }
+
+    .iv-history .table-history tbody tr.no-records td.pivoted,
+    .table-history tbody tr.no-records td.pivoted {
+        border-radius: 6px;
+        align-items: center;
+    }
+}
+
+@media (min-width:768px) {
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check {
+        background-color: #FFFFFF;
+    }
+
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:nth-child(n+4):nth-child(-n+6),
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:nth-child(n+10):nth-child(-n+12),
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:nth-child(n+16):nth-child(-n+18),
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:nth-child(n+22):nth-child(-n+24),
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:nth-child(n+28):nth-child(-n+30) {
+        background-color: #F2F2F3;
+    }
+
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:first-child {
+        border-radius: 10px 0 0 0;
+    }
+
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:nth-child(3) {
+        border-radius: 0 10px 0 0;
+    }
+
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:last-child {
+        border-radius: 0 0 0 10px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1025px) {
+    .pharmacy-comments .responsiveTable td.pivoted {
+        width: 25%;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement.responsiveTable td:nth-child(6) {
+        border-radius: 0;
+    }
+}
+
+@media (max-width:991px) {
+
+    .history-offcanvas .card-history {
+        padding: 0 0 .25rem 0;
+    }
+
+    .assign-task-offcanvas.offcanvas-end,
+    .reason-reside-offcanvas.offcanvas-end {
+        top: 0;
+    }
+
+    .table-history.responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .table-history.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement.responsiveTable td:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .pharmacy-comments .responsiveTable tbody tr:last-child td:first-child {
+        border-radius: 0;
+    }
+
+    .pharmacy-comments .table-pharmacy-comments tbody .icon-copy svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .show-history-offcanvas.offcanvas-end,
+    .ae-summary-offcanvas.offcanvas-end,
+    .allow-move-offcanvas.offcanvas-end,
+    .next-kin-offcanvas.offcanvas-end,
+    .doctor-night-offcanvas.offcanvas-end,
+    .edd-offcanvas.offcanvas-end,
+    .medically-fit-offcanvas.offcanvas-end,
+    .dialysis-offcanvas.offcanvas-end {
+        width: 100%;
+
+    }
+
+    .card-pharmacy,
+    .bg-on-dialysis,
+    .bg-requiring-dialysis,
+    .radio-btn-grp .bg-radio-btn,
+    .offcanvas .form-control,
+    .offcanvas .form-select,
+    .iv-history .iv-header,
+    .allow-move-offcanvas .wards-section .ward-data {
+        border-radius: 4px;
+    }
+
+    .bg-on-dialysis,
+    .bg-requiring-dialysis {
+        padding: 1rem;
+        height: 80px;
+    }
+
+    .bg-on-dialysis .border-line,
+    .bg-requiring-dialysis .border-line {
+        height: 50px;
+    }
+
+    .header-primary h6 {
+        font-size: 12px;
+    }
+
+    .dp-note {
+        padding: 1rem;
+    }
+
+    .mobile-score .content-block .header-primary {
+        width: 25%;
+    }
+
+    .mobile-score ul.score-list {
+        width: 90%;
+    }
+
+    .mobile-score .list-block .radio-box {
+        width: 10%;
+        border: none;
+    }
+
+    .leaflet-two-offcanvas ul.reason-list li:first-child,
+    .one-to-one-offcanvas ul.reason-list li:first-child,
+    .doctor-night-offcanvas ul.reason-list li:first-child,
+    .sepsis-assessment-offcanvas ul.reason-list li:first-child,
+    .escalation-status-offcanvas ul.reason-list li:first-child {
+        width: 7%;
+    }
+
+    .leaflet-two-offcanvas ul.reason-list li:last-child,
+    .one-to-one-offcanvas ul.reason-list li:last-child,
+    .doctor-night-offcanvas ul.reason-list li:last-child,
+    .sepsis-assessment-offcanvas ul.reason-list li:last-child,
+    .escalation-status-offcanvas ul.reason-list li:last-child {
+        width: 93%;
+    }
+
+    .task-details-offcanvas ul.reason-list li:first-child {
+        width: 30%;
+    }
+
+    .task-details-offcanvas ul.reason-list li:last-child {
+        width: 70%;
+    }
+
+    .reside-contents ul.reason-list li:first-child {
+        width: 10%;
+    }
+
+    .reside-contents ul.reason-list li:last-child {
+        width: 90%;
+    }
+
+    .show-history-offcanvas .card-history,
+    .ae-summary-offcanvas .card-summary,
+    .ae-summary-offcanvas .table-ae-summary th,
+    .task-details-offcanvas p.task-list,
+    .reason-reside-offcanvas .medfit-card,
+    .reason-reside-offcanvas .red-reason-block,
+    .red2green-offcanvas .red-reason-block {
+        border-radius: 4px;
+    }
+
+    .card-pharmacy .header-section,
+    .card-infection-data .header-chart {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .card-infection-data .header-chart {
+        flex-direction: column;
+    }
+
+    .section-buttons {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section-buttons div,
+    .card-infection-data .header-chart .btn-primary-grey {
+        width: 100%;
+    }
+
+    .card-infection-data .header-chart h6,
+    .card-infection-data .header-chart .btn-primary-grey:first-child {
+        margin-bottom: .5rem;
+    }
+
+    .pharmacy-comments .responsiveTable tr:last-child td.pivoted:nth-child(3),
+    .table-history.responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .iv-history .responsiveTable td.pivoted {
+        min-height: 30px;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement.responsiveTable td:nth-child(5),
+    .iv-history .responsiveTable td.pivoted:nth-child(3),
+    .table-history.responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .ward-movement-offcanvas .card-movement .table-ward-movement.responsiveTable td:nth-child(6) {
+        border-radius: 0 0 4px 0;
+    }
+
+    .card-discharge-handover .form-content {
+        padding: 0.75rem .5rem;
+    }
+
+    .reason-reside-offcanvas .btn-danger,
+    .reason-reside-offcanvas .btn-success,
+    .red2green-offcanvas button.btn-danger,
+    .red2green-offcanvas button.btn-success {
+        width: 35%;
+    }
+
+    .add-more .btn-primary-grey {
+        padding: .25rem .75rem;
+    }
+
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check {
+        width: 100%;
+    }
+
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:nth-child(even) {
+        background-color: #F2F2F3;
+    }
+
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:first-child {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .allow-move-offcanvas .wards-section .ward-data .locations-box .form-check:last-child {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .infection-risk-offcanvas .header-button-group {
+        width: 70%;
+    }
+
+    .infection-risk-offcanvas .header-button-group .infection-history-btn {
+        width: 60%;
+    }
+
+    .infection-risk-offcanvas .header-button-group .close-btn {
+        width: 40%;
+    }
+
+    .infection-risk-offcanvas .header-button-group .infection-history-btn .btn,
+    .infection-risk-offcanvas .header-button-group .close-btn .btn-grey {
+        padding: .5rem .25rem;
+    }
+
+    .infection-risk-offcanvas .card-infection-data .section-buttons div,
+    .infection-risk-offcanvas .card-infection-data .header-chart .btn-primary-grey {
+        width: 100%;
+    }
+}
+
+@media (max-width:359px) {
+    .offcanvas-body {
+        padding: 1rem 0.75rem;
+    }
+
+    .red-green-sticky {
+        width: calc(100% - 35px);
+    }
+
+    .reason-reside-offcanvas .btn-danger,
+    .reason-reside-offcanvas .btn-success,
+    .red2green-offcanvas button.btn-danger,
+    .red2green-offcanvas button.btn-success {
+        padding: .5rem .25rem;
+    }
+}

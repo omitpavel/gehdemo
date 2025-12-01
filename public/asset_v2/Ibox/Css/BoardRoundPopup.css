@@ -1,0 +1,22 @@
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+#camis_patient_board_round_info_modal{
+   pointer-events: none!important;
+    cursor: not-allowed;
+}
+
+.form-check-input[type=checkbox]{
+    box-shadow: none;
+}
+
+.custom_comment_height_boardround_popup{
+    min-height: 200px !important;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .custom_comment_height_boardround_popup{
+        min-height: 214px !important;
+    }
+}
+

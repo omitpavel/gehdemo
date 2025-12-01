@@ -1,0 +1,22 @@
+li.optionGroup.disabled {
+    font-weight: bold;
+    color: #000 !important;
+    !i;
+    !;
+    font-size: 16px;
+}
+
+
+.ui-state-highlight {
+    border: 1px dashed #FF1493 !important;
+    background-image: url("../../Template/icons/bootstrap-icons/plus-lg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff !important;
+    height: 60px;
+    width: calc(100% - .5rem);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    background-size: 40px 40px;
+}

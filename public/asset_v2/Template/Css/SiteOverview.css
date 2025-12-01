@@ -1,0 +1,1094 @@
+.performance-chart {
+    padding: .5rem 1rem;
+}
+
+.performance-chart .progress-bg {
+    height: 1.7rem;
+    border: 1px solid #4C9E00;
+    padding: 2px 0;
+    border-radius: 5px;
+}
+
+.performance-chart .bar-progress {
+    display: flex;
+    align-items: center;
+    height: 1.34rem;
+    min-width: auto;
+    background: url(../icons/ash-bars.svg);
+}
+
+.performance-chart .bars-green {
+    background: url(../icons/green-bar.svg);
+    height: 1.34rem;
+}
+
+.performance-chart .bars-ash {
+    height: 1.6rem;
+    background-size: contain;
+}
+
+h4.performance-value {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.rectangle-block-3,
+.rectangle-box-guage {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.gauge-head {
+    text-align: start;
+    padding: .5rem 1rem 0 1rem;
+}
+
+.ae-container {
+    padding: .5rem .75rem;
+}
+
+.rectangle-block-4 {
+    background: var(--bg-grey-gradient);
+    border-radius: 0px 0px 7px 7px;
+    padding: .5rem .75rem;
+    min-height: 35px;
+}
+
+.rectangle-block-3 .ae-container p,
+.rectangle-block-4 p {
+    font-size: 12px;
+}
+
+.header-ae {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    color: #6D3AC7;
+    margin-bottom: 0;
+}
+
+.raise-value {
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+.down-value {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.raise-value svg {
+    fill: #D72626;
+    margin-top: -30px;
+}
+
+.raise-value span {
+    top: 25%;
+    color: #fff;
+}
+
+.down-value svg {
+    fill: #00B9C9;
+    margin-top: -30px;
+}
+
+.down-value span {
+    top: -35%;
+    color: #fff;
+
+}
+
+.raise-value span,
+.down-value span {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.waiting-time-wrapper {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    margin-top: .5rem;
+    min-height: 137px;
+}
+
+.waiting-time-wrapper .table-waiting-time {
+    font-size: 12px;
+}
+
+.waiting-time-wrapper .table-waiting-time tbody tr {
+    height: 34px;
+}
+
+.waiting-time-wrapper .table-waiting-time tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+.waiting-time-wrapper .table-waiting-time tbody tr:nth-child(even) {
+    background-color: #F2F2F3;
+}
+
+.waiting-time-wrapper .table-waiting-time tbody tr:last-child {
+    font-weight: 500;
+}
+
+.waiting-time-wrapper .table-waiting-time tbody tr td:last-child {
+    text-align: center;
+}
+
+.waiting-time-wrapper .table-waiting-time tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.waiting-time-wrapper .table-waiting-time tbody tr:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+.waiting-time-wrapper .table-waiting-time tbody tr:first-child td:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.waiting-time-wrapper .table-waiting-time tbody tr:first-child td:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+.gauge-bottom-box {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 0 0 7px 7px;
+    padding: 1.5rem .5rem .75rem .5rem;
+    position: relative;
+    z-index: -1;
+    margin-top: -10px;
+    min-height: 92px;
+}
+
+.gauge-bottom-box .hr-line {
+    margin: 10px 0;
+}
+
+.dta-wrapper {
+    margin-top: .45rem;
+}
+
+.table-admitted {
+    font-size: 12px;
+}
+
+.table-admitted th {
+    font-weight: 600;
+}
+
+.table-admitted td:last-child {
+    text-align: center;
+}
+
+.table-empty-beds td {
+    padding: 4px 8px;
+}
+
+.rectangle-block-3 .bg-white:last-child td:first-child,
+.rectangle-block-3 .bg-grey:last-child td:first-child,
+.bottom-box-3 .bg-white:last-child td:first-child,
+.bottom-box-3 .bg-grey:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.rectangle-block-3 .bg-white:last-child td:last-child,
+.rectangle-block-3 .bg-grey:last-child td:last-child,
+.bottom-box-3 .bg-white:last-child td:last-child,
+.bottom-box-3 .bg-grey:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+.table-overview {
+    font-size: 12px;
+}
+
+.table-overview td,
+.table-overview th {
+    padding: 10px 8px;
+}
+
+.table-overview tr td {
+    border-right: 1px solid rgb(112, 112, 112, .5);
+    cursor: pointer;
+}
+
+.table-overview tr td:first-child {
+    cursor: default;
+}
+
+.table-overview tr td:last-child {
+    border-right: none;
+}
+
+.table-overview thead tr {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.table-overview th {
+    background: var(--bg-grey-gradient);
+    font-weight: 500;
+}
+
+.table-overview th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.table-overview th:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+.table-cyan-row {
+    background: var(--primary-blue);
+    color: #fff;
+}
+
+.mt-10 {
+    margin-top: -10px;
+}
+
+.square-box-cyan,
+.square-box-blue {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+.square-box-cyan {
+    background-color: var(--primary-blue);
+}
+
+.square-box-blue {
+    background-color: #A9C2D9;
+}
+
+.bottom-box-3 {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: .5rem 0 0 0;
+    position: relative;
+    z-index: 2;
+    margin-top: -34px;
+}
+
+.table-empty-beds tr th,
+.table-empty-beds tr td {
+    text-align: center;
+    font-size: 12px;
+}
+
+.table-empty-beds .table-cyan-row th {
+    font-weight: 500;
+}
+
+.ems-block {
+    margin-bottom: .5rem;
+}
+
+.ems-block .bg-ems,
+.ems-block .bg-ems-0 {
+    padding: .96rem .5rem;
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 11px;
+}
+
+.ems-block .bg-ems-0 {
+    background: var(--primary-blue);
+}
+
+.ems-block .bg-ems .line {
+    border: 1px solid #fff;
+    min-height: 15px;
+    margin: 0 .25rem;
+}
+
+.ems-block .bg-ems span {
+    font-weight: 500;
+}
+
+.ems-block .bg-ems-1 {
+    background: linear-gradient(180deg, rgba(75, 195, 75, 1) 50%, rgba(49, 174, 49, 1) 100%);
+}
+
+.ems-block .bg-ems-2 {
+    background: linear-gradient(180deg, rgba(255, 201, 40, 1) 50%, rgba(238, 181, 12, 1) 100%);
+    color: #000;
+}
+
+.ems-block .bg-ems-3 {
+    background: linear-gradient(180deg, rgba(255, 20, 20, 1) 50%, rgba(222, 6, 6, 1) 100%);
+}
+
+.ems-block .bg-ems-4 {
+    background: linear-gradient(180deg, rgba(83, 82, 82, 1) 50%, rgba(4, 4, 4, 1) 100%);
+}
+
+.ems-block .bg-ems-internal-4 {
+    background: linear-gradient(180deg, rgb(255, 155, 40) 50%, rgb(238, 110, 12) 100%);
+}
+
+.itu-wrapper,
+.dp-wrapper,
+.bed-count-wrapper,
+.medfit-wrapper,
+.medfit-no-wrapper {
+    margin-bottom: .5rem;
+}
+
+.dp-wrapper,
+.bed-count-wrapper,
+.itu-wrapper {
+    position: relative;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+.dp-wrapper .title-wrapper,
+.bed-count-wrapper .title-wrapper,
+.itu-wrapper .title-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0 7px 7px 0;
+    background: #000454;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 100%;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.bed-count-wrapper .rectangle-block-1,
+.dp-wrapper .rectangle-block-1,
+.itu-wrapper .rectangle-block-1 {
+    padding: 1rem .5rem;
+    position: relative;
+    left: 30px;
+    width: calc(100% - 30px);
+}
+
+.card-countbox {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: .75rem .5rem;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.bed-count-wrapper .rectangle-block-1 .card-countbox .row {
+    align-items: center;
+}
+
+.bed-count-wrapper .rectangle-block-1 .card-countbox .row span {
+    font-size: 11px;
+}
+
+.dp-wrapper .rectangle-block-1 .card-countbox,
+.itu-wrapper .rectangle-block-1 .card-countbox {
+    padding: 1.1rem .5rem;
+}
+
+.card-countbox h6 {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: end;
+}
+
+.dp-wrapper .title-wrapper {
+    background: #340473;
+}
+
+.dp-wrapper .card-countbox,
+.dp-wrapper .card-countbox h6,
+.itu-wrapper .card-countbox,
+.itu-wrapper .card-countbox h6 {
+    text-align: center;
+}
+
+.dp-wrapper .card-countbox h6,
+.itu-wrapper .card-countbox h6 {
+    margin-top: .5rem;
+    font-size: 22px;
+}
+
+.itu-wrapper .title-wrapper {
+    background: #6D3AC7;
+}
+
+.pending-medfit-wrapper {
+    margin-bottom: .5rem;
+}
+
+.pending-medfit-wrapper .rectangle-block-1 {
+    padding: 1rem .5rem;
+    font-size: 12px;
+}
+
+.pending-medfit-wrapper .rectangle-block-1 .total-count-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(112, 112, 112, .5);
+    padding-bottom: .25rem;
+}
+
+.pending-medfit-wrapper .rectangle-block-1 .details-count {
+    padding-top: .5rem;
+}
+
+.pending-medfit-wrapper .pending-countbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 0%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.pending-medfit-wrapper .row .col-6:nth-child(1) .pending-countbox {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.pending-medfit-wrapper .row .col-6:nth-child(2) .pending-countbox {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.pending-medfit-wrapper .pending-countbox h6 {
+    margin-bottom: 0;
+}
+
+.pending-medfit-wrapper .pending-countbox h6:nth-child(2) {
+    font-size: 22px;
+}
+
+.medically-fit-box,
+.therapy-fit-box {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.medically-fit-box .cell-1,
+.therapy-fit-box .cell-1 {
+    width: 70%;
+}
+
+.medically-fit-box .cell-2,
+.therapy-fit-box .cell-2 {
+    width: 30%;
+    text-align: center;
+}
+
+.medically-fit-box .cell-2 h6,
+.therapy-fit-box .cell-2 h6 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.medically-fit-box .bg-medically-fit-yes,
+.medically-fit-box .bg-medically-fit-no,
+.therapy-fit-box .bg-therapy-fit-yes,
+.therapy-fit-box .bg-therapy-fit-no {
+    width: 60px;
+    height: 24px;
+    background: #009E44;
+    color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: .25rem;
+}
+
+.medically-fit-box .bg-medically-fit-no,
+.therapy-fit-box .bg-therapy-fit-no {
+    background: #FF0000;
+}
+
+.rtl-table {
+    display: flex;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.rtl-table .header-table {
+    width: 40px;
+    background: #6D3AC7;
+    border-radius: 0 7px 7px 0;
+    padding: .5rem 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rtl-los-table .header-table {
+    background: #340473;
+}
+
+.rtl-table .rectangle-block-1 {
+    width: calc(101% - 40px);
+    z-index: 2;
+    margin-left: -1%;
+}
+
+.emergency-admission-wrapper .rectangle-block-1 {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.emergency-admission-wrapper .rectangle-block-2 {
+    padding: .5rem;
+}
+
+.emergency-admission-wrapper .rectangle-block-1 h6 {
+    font-size: 12px;
+}
+
+.emergency-admission-wrapper .table-admission {
+    font-size: 12px;
+}
+
+.emergency-admission-wrapper .table-admission thead tr th {
+    font-weight: 500;
+    text-align: center;
+}
+
+.emergency-admission-wrapper .table-admission thead tr {
+    height: 50px;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr {
+    height: 40px;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr.bg-row-1,
+.emergency-admission-wrapper .table-admission tbody tr.bg-row-2,
+.emergency-admission-wrapper .table-admission tbody tr.bg-row-3 {
+    font-weight: 500;
+    color: #fff;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr.bg-row-1 {
+    background-color: #000454;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr.bg-row-2 {
+    background-color: #340473;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr.bg-row-3 {
+    background-color: #6D3AC7;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr:first-child td {
+    text-align: start;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr:nth-child(3) {
+    background-color: #F2F2F3;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr td:first-child {
+    text-align: start;
+    width: 37%;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr td {
+    text-align: center;
+    border-right: 1px solid rgb(112, 112, 112, .5);
+    width: 21%;
+    cursor: pointer;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr td:first-child {
+    cursor: default;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr td:last-child {
+    border-right: none;
+}
+
+.emergency-admission-wrapper .table-admission tbody tr:nth-child(2) td:last-child,
+.emergency-admission-wrapper .table-admission tbody tr:nth-child(3) td:last-child {
+    text-align: center;
+}
+
+.emergency-admission-wrapper .table-admission tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.emergency-admission-wrapper .table-admission tbody:last-child tr:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+.admission-discharge-details {
+    border-radius: 7px;
+}
+
+.admission-discharge-details,
+.admission-discharge-details .header,
+.admission-discharge-details .ward-title {
+    background: var(--bg-grey-gradient);
+    font-size: 12px;
+    box-shadow: 0px 3px 6px #00000038;
+    text-align: center;
+}
+
+.admission-discharge-details .header {
+    font-size: 14px;
+    padding: .5rem 0;
+    border-radius: 7px 7px 0 0;
+    font-weight: 500;
+}
+
+.admission-discharge-details .ward-title {
+    padding: .5rem;
+    font-weight: 500;
+}
+
+.admission-discharge-details .row .col-lg-6:first-child {
+    border-right: 1px solid rgb(112, 112, 112, 1);
+}
+
+.table-admission-discharge-details {
+    font-size: 12px;
+}
+
+.table-admission-discharge-details thead tr {
+    background: linear-gradient(180deg, rgba(229, 229, 229, 1) 0%, rgba(155, 155, 155, 1) 100%);
+}
+
+.table-admission-discharge-details thead tr th {
+    font-weight: 500;
+}
+
+.table-admission-discharge-details thead tr th,
+.table-admission-discharge-details tbody tr td {
+    text-align: center;
+    border-right: 1px solid rgb(112, 112, 112, .5);
+    padding: 6px 5px;
+}
+
+.table-admission-discharge-details tbody tr:nth-child(odd) {
+    background: #FFFFFF;
+}
+
+.table-admission-discharge-details tbody tr:nth-child(even) {
+    background: #F2F2F3;
+}
+
+.admission-discharge-details .row .col-lg-6:first-child .table-admission-discharge-details tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.admission-discharge-details .row .col-lg-6:last-child .table-admission-discharge-details tbody tr:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+.admission-discharge-details .row .col-lg-6 .table-admission-discharge-details thead tr th:last-child,
+.admission-discharge-details .row .col-lg-6 .table-admission-discharge-details tbody tr td:last-child {
+    border-right: none;
+}
+
+/* Media Query */
+
+@media (min-width:1400px) {
+    .admission-discharge-details {
+        min-height: 491px;
+    }
+}
+
+@media (min-width:1400px) and (max-width:1440px) {
+
+    .ems-block .bg-ems,
+    .ems-block .bg-ems-0 {
+        font-size: 10px;
+    }
+
+    .pending-medfit-wrapper .rectangle-block-1 .total-count-row span {
+        font-size: 10px;
+        margin-bottom: .5rem;
+    }
+
+    .card-countbox h6 {
+        font-size: 14px;
+    }
+
+    .table-overview td,
+    .table-overview th {
+        padding: 10px 1px;
+    }
+}
+
+@media (min-width:992px) {
+
+    .los-details .table-overview thead tr th,
+    .boardround-details .table-overview thead tr th,
+    .los-details .table-overview tbody tr td,
+    .boardround-details .table-overview tbody tr td {
+        width: 21%;
+    }
+
+    .los-details .table-overview thead tr th:nth-child(1),
+    .boardround-details .table-overview thead tr th:nth-child(1),
+    .los-details .table-overview tbody tr td:nth-child(1),
+    .boardround-details .table-overview tbody tr td:nth-child(1) {
+        width: 28%;
+    }
+}
+
+@media (max-width:1399px) {
+
+    .gauge-bottom-box {
+        min-height: 91px;
+    }
+
+    .rectangle-block-3 {
+        min-height: 101px;
+    }
+
+    .table-admitted td {
+        padding: 8px 7px;
+    }
+
+    .dp-wrapper .rectangle-block-1 .card-countbox,
+    .itu-wrapper .rectangle-block-1 .card-countbox {
+        padding: .6rem .5rem;
+    }
+
+    .rtl-table .header-table {
+        width: 6%;
+    }
+
+    .rtl-table .rectangle-block-1 {
+        width: 95%;
+    }
+
+    .rtl-table .header-table {
+        padding: .25rem .5rem;
+    }
+
+    .emergency-admission-wrapper .table-admission tbody tr td:first-child {
+        text-align: start;
+        width: 33%;
+    }
+
+    .emergency-admission-wrapper .table-admission tbody tr {
+        height: 37px;
+    }
+
+    .emergency-admission-wrapper .table-admission thead tr {
+        height: 45px;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    .rtl-table .header-table {
+        width: 9%;
+    }
+
+    .rtl-table .rectangle-block-1 {
+        width: 92%;
+    }
+}
+
+@media (max-width:991px) {
+
+    .card-countbox,
+    .dp-wrapper .rectangle-block-1 .card-countbox,
+    .itu-wrapper .rectangle-block-1 .card-countbox,
+    .pending-medfit-wrapper .pending-countbox,
+    .pending-medfit-wrapper .rectangle-block-1,
+    .medically-fit-box,
+    .therapy-fit-box {
+        padding: .75rem .5rem;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    .fs-10 {
+        font-size: 9px;
+    }
+
+    .gauge-bottom-box .hr-line {
+        margin: 14px 0;
+    }
+
+    .los-details .table-overview thead tr th,
+    .boardround-details .table-overview thead tr th,
+    .los-details .table-overview tbody tr td,
+    .boardround-details .table-overview tbody tr td {
+        width: 18.33%;
+    }
+
+    .table-overview td,
+    .table-overview th {
+        padding: 8px;
+    }
+
+    .emergency-admission-wrapper .table-admission tbody tr td:first-child {
+        width: 26%;
+    }
+
+    .emergency-admission-wrapper .table-admission thead tr,
+    .emergency-admission-wrapper .table-admission tbody tr {
+        height: 35px;
+    }
+
+    .table-admission-discharge-details thead tr th,
+    .table-admission-discharge-details tbody tr td {
+        width: 20%;
+    }
+
+    .table-admission-discharge-details thead tr th:nth-child(2),
+    .table-admission-discharge-details tbody tr td:nth-child(2) {
+        width: 60%;
+    }
+
+    .admission-discharge-details .row .col-lg-6:first-child .table-admission-discharge-details tbody tr:last-child td:last-child,
+    .admission-discharge-details .row .col-lg-6:first-child .table-admission-discharge-details tbody tr:last-child td:first-child {
+        border-radius: 0;
+    }
+
+    .admission-discharge-details .row .col-lg-6:last-child .table-admission-discharge-details tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .admission-discharge-details .row .col-lg-6:last-child .table-admission-discharge-details tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .admission-discharge-details .ward-title {
+        border-top: 1px solid rgb(112, 112, 112, .4);
+        border-bottom: 1px solid rgb(112, 112, 112, .4);
+    }
+
+    .admission-discharge-details .row .col-lg-6:first-child {
+        border-right: none;
+    }
+}
+
+@media (max-width:767px) {
+
+    .rectangle-block-3,
+    .rectangle-box-guage,
+    .bottom-box-3,
+    .waiting-time-wrapper,
+    .ems-block .bg-ems,
+    .ems-block .bg-ems-0,
+    .card-countbox,
+    .medically-fit-box,
+    .therapy-fit-box {
+        border-radius: 4px;
+    }
+
+    .gauge-bottom-box {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .gauge-bottom-box,
+    .rectangle-block-3 {
+        min-height: auto;
+    }
+
+    .bottom-box-3 {
+        padding: 0.5rem 0 0 0;
+    }
+
+    .table-overview td,
+    .table-overview th {
+        padding: 8px 4px;
+    }
+
+    .dp-wrapper .title-wrapper,
+    .bed-count-wrapper .title-wrapper,
+    .itu-wrapper .title-wrapper {
+        border-radius: 0 4px 4px 0;
+    }
+
+    .pending-medfit-wrapper .row .col-6:nth-child(1) .pending-countbox {
+        border-radius: 4px 0px 0px 4px;
+    }
+
+    .pending-medfit-wrapper .row .col-6:nth-child(2) .pending-countbox {
+        border-radius: 0px 4px 4px 0px;
+
+    }
+
+    .table-overview th:first-child,
+    .waiting-time-wrapper .table-waiting-time tbody tr:first-child td:first-child {
+        border-radius: 4px 0 0 0;
+    }
+
+    .table-overview th:last-child,
+    .waiting-time-wrapper .table-waiting-time tbody tr:first-child td:last-child {
+        border-radius: 0 4px 0 0;
+    }
+
+    .rectangle-block-3 .bg-white:last-child td:first-child,
+    .rectangle-block-3 .bg-grey:last-child td:first-child,
+    .bottom-box-3 .bg-white:last-child td:first-child,
+    .bottom-box-3 .bg-grey:last-child td:first-child,
+    .waiting-time-wrapper .table-waiting-time tbody tr:last-child td:first-child,
+    .itu-wrapper .table-itu tbody tr:last-child td:first-child,
+    .dp-wrapper .table-dp-discharges tbody tr:last-child td:first-child,
+    .bed-count-wrapper .table-bed-count tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 4px;
+    }
+
+    .rectangle-block-3 .bg-white:last-child td:last-child,
+    .rectangle-block-3 .bg-grey:last-child td:last-child,
+    .bottom-box-3 .bg-white:last-child td:last-child,
+    .bottom-box-3 .bg-grey:last-child td:last-child,
+    .waiting-time-wrapper .table-waiting-time tbody tr:last-child td:last-child,
+    .itu-wrapper .table-itu tbody tr:last-child td:last-child,
+    .dp-wrapper .table-dp-discharges tbody tr:last-child td:last-child,
+    .bed-count-wrapper .table-bed-count tbody tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+
+    .gauge-bottom-box .hr-line {
+        margin: 8px 0;
+    }
+
+    .fs-10 {
+        font-size: 11px;
+    }
+
+    .los-details .table-overview thead tr th,
+    .boardround-details .table-overview thead tr th,
+    .los-details .table-overview tbody tr td,
+    .boardround-details .table-overview tbody tr td {
+        width: 11.66%;
+    }
+
+    .los-details .table-overview thead tr th:nth-child(1),
+    .boardround-details .table-overview thead tr th:nth-child(1),
+    .los-details .table-overview tbody tr td:nth-child(1),
+    .boardround-details .table-overview tbody tr td:nth-child(1) {
+        width: 12%;
+    }
+
+    .rtl-table .header-table {
+        width: 8%;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .rtl-table .rectangle-block-1 {
+        width: 93%;
+    }
+
+    .admission-discharge-details .header {
+        font-size: 12px;
+    }
+
+    .table-admission-discharge-details thead tr th,
+    .table-admission-discharge-details tbody tr td {
+        width: 30%;
+    }
+
+    .table-admission-discharge-details thead tr th:nth-child(2),
+    .table-admission-discharge-details tbody tr td:nth-child(2) {
+        width: 40%;
+    }
+
+    .emergency-admission-wrapper .table-admission tbody tr td:first-child {
+        width: 30%;
+    }
+
+    .admission-discharge-details .row .col-lg-6:first-child {
+        border-right: none;
+    }
+}
+
+@media (max-width:424px) {
+    .table-overview {
+        font-size: 11px;
+    }
+
+    .rtl-table .header-table {
+        width: 10%;
+    }
+
+    .rtl-table .rectangle-block-1 {
+        width: 91%;
+    }
+}
+
+@media (max-width:359px) {
+    .header-ae {
+        font-size: 2rem;
+    }
+
+    .table-overview {
+        font-size: 10px;
+    }
+
+    .table-overview td,
+    .table-overview th {
+        padding: 4px 3px;
+    }
+
+    .bg-black-box {
+        padding: .5rem;
+    }
+
+    .bg-black-box h6 {
+        font-size: 10px;
+    }
+
+    .fs-13 {
+        font-size: 11px;
+    }
+}

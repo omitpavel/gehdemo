@@ -1,0 +1,1625 @@
+@font-face {
+    font-family: American Captain;
+    src: url(../fonts/american-captain/American\ Captain.ttf);
+}
+
+@font-face {
+    font-family: Oxygen;
+    src: url(../fonts/oxygen/Oxygen-Bold.ttf);
+}
+
+h6 {
+    font-size: 12px;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+.bed-count,
+.tasks,
+.acuity-header,
+.edd-header {
+    display: flex;
+}
+
+.acuity-header:before,
+.edd-header:before,
+.bed-count:before,
+.tasks:before,
+.header-sideroom:before,
+.header-bay-1:before,
+.header-bay-2:before,
+.header-bay-3:before,
+.header-bay-4:before {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 35px;
+    height: 105px;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1rem 0.5rem;
+}
+
+.acuity-header:before {
+    background: linear-gradient(180deg, rgba(27, 137, 226, 1) 20%, rgba(16, 56, 89, 1) 100%);
+    content: "ACUITY";
+}
+
+.edd-header:before {
+    background: linear-gradient(180deg, rgba(0, 208, 226, 1) 50%, rgba(0, 166, 181, 1) 100%);
+    content: "EDD";
+}
+
+.bed-count:before {
+    background: linear-gradient(180deg, rgba(0, 208, 226, 1) 50%, rgba(0, 166, 181, 1) 100%);
+    content: "EMPTY BED";
+}
+
+.tasks:before {
+    background: linear-gradient(180deg, rgba(0, 208, 226, 1) 50%, rgba(0, 166, 181, 1) 100%);
+    content: "TASKS";
+}
+
+.card-width .row {
+    margin: 0;
+}
+
+.ps-35 {
+    padding-left: 35px;
+}
+
+.wrapper-head {
+    position: relative;
+    left: -13px;
+}
+
+.header-sideroom:before,
+.header-bay-1:before,
+.header-bay-2:before,
+.header-bay-3:before,
+.header-bay-4:before {
+    background: linear-gradient(180deg, rgba(0, 208, 226, 1) 50%, rgba(0, 166, 181, 1) 100%);
+    height: 132px;
+    position: absolute;
+    left: -20px;
+    top: 34px;
+    z-index: -1;
+    padding-left: 20px;
+}
+
+.header-sideroom:before {
+    content: "SIDE ROOM";
+}
+
+.header-bay-1:before {
+    content: "BAY 01";
+}
+
+.header-bay-2:before {
+    content: "BAY 02";
+}
+
+.header-bay-3:before {
+    content: "BAY 03";
+}
+
+.header-bay-4:before {
+    content: "BAY 04";
+}
+
+.medical-details-card {
+    padding-left: 10px;
+}
+
+.medical-card {
+    padding-left: 8px;
+}
+
+.grey-tile-bottom {
+    border-radius: 10px;
+    background: #fff;
+    padding: 0.5rem;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 3px 6px #00000038;
+    min-height: 105px;
+    left: -5px;
+    width: 100%;
+}
+
+.grey-tile-bottom h6 {
+    margin-bottom: 0;
+}
+
+.tile-shape-whitebottom {
+    border-radius: 10px;
+    background: #fff;
+    padding: .4rem;
+    box-shadow: 0px 3px 6px #00000038;
+    position: relative;
+    z-index: 2;
+    vertical-align: middle;
+    left: -5px;
+    width: 100%;
+}
+
+.rectangle-count {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 2px;
+    min-height: 87px;
+}
+
+.calender-box {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px;
+    padding: .3rem 0.5rem;
+}
+
+.calender-box h6 {
+    font-size: 12px;
+}
+
+.calender-date-bg {
+    background-color: #cce5fe;
+    border-radius: 6px;
+    padding: .4rem;
+    margin-bottom: 0;
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.green-box-medical,
+.maroon-box-medical {
+    padding: .5rem .25rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.green-box-medical {
+    background: linear-gradient(180deg, rgba(120, 211, 135, 1) 50%, rgba(60, 106, 68, 1) 100%);
+    margin-top: -14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.maroon-box-medical {
+    background: linear-gradient(180deg, rgba(212, 5, 96, 1) 50%, rgba(106, 40, 80, 1) 100%);
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.maroon-circle,
+.purple-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.maroon-circle {
+    background-color: #A41458;
+}
+
+.purple-circle {
+    background-color: #5B347D;
+}
+
+.tile-left-medical {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    padding: .25rem .5rem;
+    position: relative;
+    z-index: 1;
+    min-height: 51px;
+}
+
+.tile-left-medical h6 {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.tile-right-medical {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px;
+    padding: .5rem 1.5rem;
+    z-index: 2;
+    margin-left: -20px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    min-width: 30px;
+}
+
+.tile-right-medical-maroon {
+    background: linear-gradient(180deg, rgba(212, 5, 96, 1) 50%, rgba(106, 40, 80, 1) 100%);
+
+}
+
+.tile-right-medical-purple {
+    background: linear-gradient(180deg, rgba(134, 106, 158, 1) 50%, rgba(83, 41, 119, 1) 100%);
+}
+
+.bg-wine-red {
+    background: linear-gradient(180deg, rgba(135, 31, 61, 1) 50%, rgba(68, 16, 31, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    min-height: 106px;
+}
+
+.next-icon {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.hand-click-icon {
+    position: relative;
+    top: -8px;
+    left: 5px;
+    z-index: 6;
+}
+
+.icon-carrier {
+    margin-top: -15px;
+}
+
+.card-medical {
+    box-shadow: 0px 3px 20px #00000029;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: .75rem;
+    margin-top: -10px;
+    min-height: 140px;
+}
+
+.card-medical span,
+.bg-yellow span,
+.card-medical p,
+.bg-ash span,
+.bg-green span,
+.bg-black span {
+    font-size: 12px;
+}
+
+.bg-black,
+.bg-yellow,
+.bg-green,
+.bg-red {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bg-black {
+    background-color: #000000;
+    border-radius: 5px 0px 0px 5px;
+    z-index: 2;
+    min-height: 35px;
+    color: #fff;
+}
+
+.bg-black h6 {
+    padding-top: 3px;
+}
+
+.bg-yellow {
+    background-color: #FEBD2B;
+}
+
+.bg-green {
+    background-color: #48AB3F;
+    color: #fff;
+}
+
+.bg-red {
+    background-color: #FF2624;
+}
+
+.bg-ash {
+    background-color: #878787;
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+}
+
+.bg-black-head {
+    background-color: #000;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.ash-circle,
+.green-circle,
+.red-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+}
+
+.ash-circle span,
+.green-circle span,
+.red-circle span {
+    font-size: 9px;
+}
+
+.ash-circle {
+    background-color: #ACACAA;
+    color: #fff;
+}
+
+.green-circle {
+    background-color: #48AB3F;
+}
+
+.red-circle {
+    background-color: #FC0000;
+}
+
+.red-square,
+.orange-square {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.red-square {
+    background-color: #FF2624;
+}
+
+.orange-square {
+    background-color: #FFA200;
+}
+
+.position-red {
+    position: relative;
+    top: 0;
+    left: 5px;
+}
+
+.fs-12 span {
+    font-size: 14px !important;
+}
+
+.triangle-wrapper {
+    position: relative;
+}
+
+.polygon-text {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+}
+
+.wrapper-icons {
+    position: relative;
+    top: -10px;
+}
+
+.ward-hexagon-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ward-icon-1 {
+    position: absolute;
+    top: 8px;
+    left: 27px;
+}
+
+.ward-icon-2 {
+    position: absolute;
+    top: 9px;
+    left: 25px;
+}
+
+.ward-icon-3,
+.ward-icon-4 {
+    position: absolute;
+    top: 8px;
+    left: 26px;
+}
+
+.ward-icon-5 {
+    position: absolute;
+    top: 9px;
+    left: 24px;
+}
+
+.ward-hexagon-2 {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.ward-hexagon-3 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.ward-hexagon-4 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.ward-hexagon-5 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.ward-hexagon-6 {
+    position: absolute;
+    top: 8px;
+    left: 80px;
+}
+
+.ward-hexagon-7 {
+    position: absolute;
+    top: 38px;
+    left: 80px;
+}
+
+.border-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-cyan {
+    border: 1px solid #66B4A4;
+    color: #66B4A4;
+}
+
+.border-purple {
+    border: 1px solid #C9809D;
+    color: #C9809D;
+}
+
+.border-blue {
+    border: 1px solid #6AC6D3;
+    color: #6AC6D3;
+}
+
+.border-grey {
+    border: 1px solid #919191;
+    color: #919191;
+}
+
+.bg-box-black {
+    background-color: #000;
+    color: #fff;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+
+/* Allebone - Medical Styles  */
+
+.btn-allebone,
+.btn-allebone-center {
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 8px;
+    padding: .75rem 1rem;
+}
+
+.btn-allebone {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 10%, rgba(236, 236, 237, 1) 100%);
+    position: relative;
+}
+
+.btn-allebone .btn-icon {
+    position: absolute;
+    left: 6%;
+    top: 32%;
+}
+
+.btn-allebone-center {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 60%, rgba(217, 217, 217, 1) 100%);
+}
+
+.allebone-card {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px;
+    min-height: 900px;
+}
+
+.allebone-card p {
+    font-weight: 500;
+}
+
+.allebone-card span {
+    font-size: 12px;
+}
+
+.allebone-card .form-control {
+    border: 0.5px solid #808080;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.btn-black {
+    background: linear-gradient(180deg, rgba(159, 159, 159, 1) 20%, rgba(0, 0, 0, 1) 95%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-maroon {
+    background: linear-gradient(180deg, rgba(205, 8, 95, 1) 50%, rgba(114, 38, 81, 1) 100%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.round-edge {
+    border-radius: 10px;
+}
+
+.card-table {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+}
+
+.table-allebone tr:nth-child(1) td:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+.table-allebone tr:nth-child(1) td:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+.table-allebone tr:last-child td:first-child {
+    border-radius: 0 0 0 8px;
+}
+
+.table-allebone tr:last-child td:last-child {
+    border-radius: 0 0 8px 0;
+}
+
+.table-allebone {
+    font-size: 12px;
+}
+
+.table-allebone .btn {
+    font-size: 8px;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    min-width: 50px;
+}
+
+.pac-data {
+    font-size: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: self-end;
+    justify-content: space-between;
+}
+
+.weight-header {
+    font-size: 8px;
+    text-align: end;
+}
+
+.pac-data .polygon-text {
+    top: 9px;
+    left: 11px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.acuity-block .row {
+    margin: 3px;
+}
+
+.acuity-block .row-cols-lg-5>* {
+    padding: 2px;
+}
+
+.acuity-block span {
+    font-size: 7px;
+    color: #fff;
+    text-align: center;
+    white-space: pre-wrap;
+    position: relative;
+    bottom: -30px;
+    padding: 0 3px;
+    display: table;
+    margin: 0 auto;
+
+}
+
+.allebone-rectangle {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    min-height: 50px;
+    min-width: 38px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+}
+
+.rectangle-1 {
+    background: linear-gradient(180deg, rgba(143, 143, 143, 1) 50%, rgba(33, 33, 33, 1) 100%);
+}
+
+.rectangle-2 {
+    background: linear-gradient(180deg, rgba(19, 190, 193, 1) 50%, rgba(7, 121, 123, 1) 100%);
+}
+
+.rectangle-3 {
+    background: linear-gradient(180deg, rgba(191, 12, 93, 1) 50%, rgba(132, 31, 83, 1) 100%);
+}
+
+.rectangle-4 {
+    background: linear-gradient(180deg, rgba(121, 212, 136, 1) 50%, rgba(0, 165, 43, 1) 100%);
+    line-height: .5em;
+}
+
+.rectangle-5 {
+    background: linear-gradient(180deg, rgba(255, 127, 80, 1) 50%, rgba(230, 67, 7, 1) 100%);
+}
+
+.white-box {
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: .5rem .85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    margin: 0 5px;
+}
+
+.card-icons {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 10px;
+    padding: .5rem .25rem;
+    min-height: 375px;
+}
+
+.btn-grp-pharmacy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.btn-grp-pharmacy .btn-darkcyan,
+.btn-grp-pharmacy .btn-black {
+    padding: .5rem;
+    font-size: 11px;
+}
+
+.card-hex-icons {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    min-height: 70px;
+}
+
+.icon-wrap {
+    position: relative;
+    top: 0;
+    left: -4%;
+}
+
+.icon-wrap span {
+    font-size: 6px;
+    line-height: 7px;
+    text-align: center;
+}
+
+.hex-shape-1>svg,
+.hex-shape-2>svg,
+.hex-shape-3>svg,
+.hex-shape-4>svg,
+.hex-shape-5>svg,
+.hex-shape-6>svg,
+.hex-shape-7>svg,
+.hex-shape-8>svg,
+.hex-shape-9>svg,
+.hex-shape-10>svg,
+.hex-shape-11>svg,
+.hex-shape-12>svg,
+.hex-shape-13>svg,
+.hex-shape-14>svg,
+.hex-shape-15>svg,
+.hex-shape-16>svg,
+.hex-shape-17>svg,
+.hex-shape-18>svg,
+.hex-shape-19>svg,
+.hex-shape-20>svg,
+.hex-shape-21>svg,
+.hex-shape-22>svg,
+.hex-shape-23>svg,
+.hex-shape-24>svg,
+.hex-shape-25>svg,
+.hex-shape-26>svg,
+.hex-shape-27>svg,
+.hex-shape-28>svg,
+.hex-shape-29>svg,
+.hex-shape-30>svg,
+.hex-shape-31>svg,
+.hex-shape-32>svg,
+.hex-shape-33>svg,
+.hex-shape-34>svg,
+.hex-shape-35>svg,
+.hex-shape-36>svg,
+.hex-shape-37>svg,
+.hex-shape-38>svg,
+.hex-shape-39>svg {
+    width: 50px;
+    height: 50px;
+}
+
+.hex-shape-1,
+.hex-shape-6,
+.hex-shape-20,
+.hex-shape-31 {
+    position: absolute;
+    left: 3%;
+    top: 0;
+}
+
+
+.hexshape-icon-1 span {
+    position: absolute;
+    top: 135%;
+    left: 30%;
+}
+
+.hex-shape-2,
+.hex-shape-7,
+.hex-shape-21,
+.hex-shape-32 {
+    position: absolute;
+    left: 18%;
+    top: 0%;
+}
+
+.hexshape-icon-2 {
+    position: absolute;
+    top: 20%;
+    left: 33%;
+}
+
+.hexshape-icon-2 span {
+    position: absolute;
+    top: 135%;
+    left: -35%
+}
+
+.hex-shape-3,
+.hex-shape-8,
+.hex-shape-22,
+.hex-shape-33 {
+    position: absolute;
+    left: 33%;
+    top: 0;
+}
+
+.hexshape-icon-3 span {
+    position: absolute;
+    top: 140%;
+    left: -5%
+}
+
+.hex-shape-4,
+.hex-shape-9,
+.hex-shape-23,
+.hex-shape-34 {
+    position: absolute;
+    left: 47%;
+    top: 0;
+}
+
+
+.hexshape-icon-4 span {
+    position: absolute;
+    top: 135%;
+    left: 20%;
+}
+
+.hex-shape-5,
+.hex-shape-10,
+.hex-shape-24,
+.hex-shape-35 {
+    position: absolute;
+    left: 61%;
+    top: 0;
+}
+
+.hexshape-icon-5 {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+}
+
+.hexshape-icon-5 span {
+    position: absolute;
+    top: 140%;
+    left: 5%;
+}
+
+.hexshape-icon-6 span {
+    position: absolute;
+    top: 135%;
+    left: 10%;
+}
+
+.hexshape-icon-7 span {
+    position: absolute;
+    top: 145%;
+    left: 0%;
+}
+
+.hexshape-icon-9 span {
+    position: absolute;
+    top: 145%;
+    left: 0%;
+}
+
+.hexshape-icon-10 span {
+    position: absolute;
+    top: 145%;
+    left: 5%;
+}
+
+.hexshape-icon-12 span {
+    position: absolute;
+    top: 135%;
+    left: -34%;
+}
+
+.hexshape-icon-13 span {
+    position: absolute;
+    top: 145%;
+    left: -80%;
+}
+
+.hexshape-icon-14 span {
+    position: absolute;
+    top: 145%;
+    left: -78%;
+}
+
+.hexshape-icon-15 span {
+    position: absolute;
+    top: 140%;
+    left: 0%;
+}
+
+.hexshape-icon-16 span {
+    position: absolute;
+    top: 135%;
+    left: 0%;
+}
+
+.hexshape-icon-17 span {
+    position: absolute;
+    top: 134%;
+    left: -5%;
+}
+
+.hexshape-icon-18 span {
+    position: absolute;
+    top: 145%;
+    left: 0%;
+}
+
+.hexshape-icon-19 span {
+    position: absolute;
+    top: 155%;
+    left: 0%;
+}
+
+.hexshape-icon-21 span {
+    position: absolute;
+    top: 135%;
+    left: 0%;
+}
+
+.hexshape-icon-20 span {
+    position: absolute;
+    top: 145%;
+    left: 0%;
+}
+
+.hexshape-icon-22 span,
+.hexshape-icon-23 span {
+    position: absolute;
+    top: 135%;
+    left: 0%;
+}
+
+.hexshape-icon-25 span {
+    position: absolute;
+    top: 135%;
+    left: 25%;
+}
+
+.hexshape-icon-27 span {
+    position: absolute;
+    top: 140%;
+    left: 5%;
+}
+
+.hexshape-icon-28 span {
+    position: absolute;
+    top: 140%;
+    left: -1%;
+}
+
+.hexshape-icon-34 span {
+    position: absolute;
+    top: 135%;
+    left: 0%;
+}
+
+.hexshape-icon-30 span,
+.hexshape-icon-24 span,
+
+.hexshape-icon-37 span {
+    position: absolute;
+    top: 140%;
+    left: 20%;
+}
+
+.hexshape-icon-8 span,
+.hexshape-icon-11 span,
+
+.hexshape-icon-29 span,
+
+
+.hexshape-icon-36 span,
+
+.hexshape-icon-38 span,
+.hexshape-icon-39 span {
+    position: absolute;
+    top: 135%;
+    left: -10%;
+}
+
+.hexshape-icon-26 span {
+    position: absolute;
+    top: 135%;
+    left: 10%;
+}
+
+.hexshape-icon-31 span {
+    position: absolute;
+    top: 140%;
+    left: 0%;
+}
+
+.hexshape-icon-32 span {
+    position: absolute;
+    top: 135%;
+    left: 0%;
+}
+
+.hexshape-icon-33 span {
+    position: absolute;
+    top: 135%;
+    left: 15%;
+}
+
+.hexshape-icon-35 span {
+    position: absolute;
+    top: 135%;
+    left: -20%;
+}
+
+.hexshape-icon-37 span {
+    position: absolute;
+    top: 135%;
+    left: 35%;
+}
+
+.hex-shape-11,
+.hex-shape-36 {
+    position: absolute;
+    left: 76%;
+    top: 0;
+}
+
+.hex-shape-12,
+.hex-shape-37 {
+    position: absolute;
+    left: 90%;
+    top: 0;
+}
+
+.hex-shape-13,
+.hex-shape-38 {
+    position: absolute;
+    left: 10%;
+    top: 0;
+}
+
+.hex-shape-14,
+.hex-shape-39 {
+    position: absolute;
+    left: 60%;
+    top: 0;
+}
+
+.hex-shape-15 {
+    position: absolute;
+    left: 1%;
+    top: 0;
+}
+
+.hex-shape-16 {
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
+
+.hex-shape-17 {
+    position: absolute;
+    left: 41%;
+    top: 0;
+}
+
+.hex-shape-18 {
+    position: absolute;
+    left: 64%;
+    top: 0;
+}
+
+.hex-shape-19 {
+    position: absolute;
+    left: 85%;
+    top: 0;
+}
+
+.hex-shape-25 {
+    position: absolute;
+    left: 7%;
+    top: 0;
+}
+
+.hex-shape-26 {
+    position: absolute;
+    left: 31%;
+    top: 0;
+}
+
+.hex-shape-27 {
+    position: absolute;
+    left: 57%;
+    top: 0;
+}
+
+.hex-shape-28 {
+    position: absolute;
+    left: 79%;
+    top: 0;
+}
+
+.hex-shape-29 {
+    position: absolute;
+    left: 8%;
+    top: 0;
+}
+
+.hex-shape-30 {
+    position: absolute;
+    left: 59%;
+    top: 0;
+}
+
+.hexshape-icon-1,
+.hexshape-icon-3,
+.hexshape-icon-4,
+.hexshape-icon-6,
+.hexshape-icon-7,
+.hexshape-icon-8,
+.hexshape-icon-9,
+.hexshape-icon-10,
+.hexshape-icon-11,
+.hexshape-icon-12,
+
+.hexshape-icon-15,
+.hexshape-icon-21,
+.hexshape-icon-22,
+.hexshape-icon-23,
+.hexshape-icon-26,
+.hexshape-icon-27,
+.hexshape-icon-29,
+.hexshape-icon-30,
+.hexshape-icon-31,
+.hexshape-icon-32,
+.hexshape-icon-33,
+.hexshape-icon-34,
+.hexshape-icon-35,
+.hexshape-icon-36,
+.hexshape-icon-37,
+.hexshape-icon-38,
+.hexshape-icon-39 {
+    position: absolute;
+    top: 17%;
+    left: 29%;
+}
+
+.hexshape-icon-13,
+.hexshape-icon-14 {
+    position: absolute;
+    top: 17%;
+    left: 29%;
+}
+
+.hexshape-icon-16,
+.hexshape-icon-17 {
+    position: absolute;
+    top: 18%;
+    left: 28%;
+}
+
+.hexshape-icon-18 {
+    position: absolute;
+    top: 17%;
+    left: 30%;
+}
+
+.hexshape-icon-19 {
+    position: absolute;
+    top: 18%;
+    left: 33%;
+}
+
+.hexshape-icon-20 {
+    position: absolute;
+    top: 14%;
+    left: 28%;
+}
+
+.hexshape-icon-24 {
+    position: absolute;
+    top: 18%;
+    left: 27%;
+}
+
+.hexshape-icon-25 {
+    position: absolute;
+    top: 18%;
+    left: 26%;
+}
+
+.hexshape-icon-28 {
+    position: absolute;
+    top: 17%;
+    left: 30%;
+}
+
+
+.btn-darkcyan {
+    background: linear-gradient(180deg, rgba(19, 190, 193, 1) 50%, rgba(7, 121, 123, 1) 100%);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px #00000038;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+}
+
+.card-icons svg {
+    margin-left: 20px;
+}
+
+.card-task {
+    border: 0.5px solid #808080;
+    border-radius: 10px;
+    background-color: #fff;
+    min-height: 350px;
+}
+
+.card-R2G {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(238, 238, 239, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    min-height: 130px;
+}
+
+.allebone-block .rectangle-block-1 {
+    border-radius: 8px;
+}
+
+.allebone-block .rectangle-block-2 {
+    border-radius: 8px 8px 0 0;
+}
+
+.text-purple {
+    color: #6A527F;
+}
+
+.btn-danger {
+    background: linear-gradient(180deg, rgba(253, 19, 19, 1) 50%, rgba(228, 8, 8, 1) 100%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: .5rem;
+    min-width: 130px;
+}
+
+.btn-danger svg {
+    margin-right: 10px;
+}
+
+.btn-success {
+    background: linear-gradient(180deg, rgba(69, 190, 69, 1) 50%, rgba(52, 176, 52, 1) 100%);
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: .5rem;
+    min-width: 130px;
+}
+
+.btn-primary,
+.bg-primary {
+    background: linear-gradient(180deg, rgba(0, 142, 229, 1) 50%, rgba(0, 123, 199, 1) 100%);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.bg-gradient-red {
+    background: linear-gradient(180deg, rgba(228, 74, 17, 1) 50%, rgba(193, 54, 2, 1) 100%);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.btn-primary,
+.btn-dark {
+    padding: 0.5rem .75rem;
+}
+
+.btn-dark,
+.bg-dark {
+    background: linear-gradient(180deg, rgba(127, 130, 130, 1) 20%, rgba(30, 30, 30, 1) 100%);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.bg-info {
+    background: linear-gradient(180deg, rgba(19, 190, 193, 1) 50%, rgba(7, 121, 123, 1) 100%);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.grp-btns .btn {
+    font-size: 12px;
+    min-width: 170px;
+    padding: .5rem .75rem;
+}
+
+.grp-btns svg {
+    margin-left: 7px;
+}
+
+.white-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.checkbox-card .card-body {
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border: 0.5px solid #808080;
+    border-radius: 8px;
+}
+
+.skyblue-box {
+    background: linear-gradient(180deg, rgba(178, 202, 226, 1) 50%, rgba(152, 177, 200, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: .5rem .75rem;
+    min-height: 100px;
+    position: relative;
+}
+
+.white-circle-right {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 6px #00000029;
+    position: absolute;
+    top: 15%;
+    left: 92%;
+}
+
+.card-boxes {
+    background-color: #fff;
+    border: 0.5px solid #808080;
+    border-radius: 5px;
+    min-height: 83px;
+}
+
+.grp-btns-bg {
+    background: linear-gradient(180deg, rgba(0, 199, 217, 1) 50%, rgba(0, 121, 131, 1) 100%);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 8px;
+    padding: .5rem 1rem;
+}
+
+.form-control {
+    font-size: 14px;
+}
+
+.btn-row .btn {
+    min-width: 260px;
+    font-size: 13px;
+}
+
+.grp-grey-btns .btn-allebone {
+    position: relative;
+    padding: 1.25rem .25rem .25rem .25rem;
+    font-size: 12px;
+}
+
+.btn-icon {
+    position: absolute;
+    left: 5%;
+    top: 35%;
+}
+
+
+/* Allebone - Medical Styles End */
+
+
+@media (max-width:1399px) {
+    .icon-wrap {
+        left: 0;
+    }
+
+    .hex-shape-13,
+    .hex-shape-38 {
+        left: 11%;
+    }
+
+    .hex-shape-15 {
+        left: -1%;
+    }
+
+    .hex-shape-25 {
+        left: 6%;
+    }
+
+    .hex-shape-28 {
+        left: 82%;
+    }
+
+    .hex-shape-29 {
+        left: 21%;
+    }
+
+    .hex-shape-30 {
+        left: 68%;
+    }
+}
+
+@media (max-width:1300px) {
+    .btn-allebone .btn-icon {
+        left: 3%;
+    }
+}
+
+@media (min-width:768px) {
+    #col-width-adjust .col-lg-5 {
+        width: 47%;
+    }
+
+    #col-width-adjust .col-lg-2 {
+        width: 6%;
+    }
+}
+
+@media (max-width:991px) {
+    .allebone-card {
+        min-height: auto;
+    }
+
+    .bg-red {
+        padding: 0;
+    }
+
+    .green-box-medical h6,
+    .maroon-box-medical h6 {
+        font-size: 10px;
+    }
+
+    .wrapper-icons {
+        top: -7px;
+        left: -25px;
+    }
+
+    .hex-shape-13,
+    .hex-shape-38 {
+        left: 10%;
+    }
+
+    .hex-shape-14 {
+        left: 57%;
+    }
+
+    .hex-shape-25 {
+        left: 5%;
+    }
+
+    .hex-shape-28 {
+        left: 81%;
+    }
+
+    .hex-shape-29 {
+        left: 23%;
+    }
+
+    .hex-shape-39 {
+        left: 56%;
+    }
+}
+
+@media (max-width:767px) {
+    .icon-wrap {
+        left: 0%;
+    }
+
+    .hex-shape-14 {
+        left: 59%;
+    }
+
+    .hex-shape-29 {
+        left: 21%;
+    }
+
+    .hex-shape-39 {
+        left: 58%;
+    }
+
+    .bg-wine-red h6 {
+        font-size: 8px;
+    }
+
+    .icon-carrier {
+        margin-top: 0;
+    }
+
+    .card-medical span,
+    .bg-yellow span,
+    .card-medical p,
+    .bg-ash span,
+    .bg-green span,
+    .bg-black span {
+        font-size: 11px;
+    }
+
+    .wrapper-icons {
+        left: -25px;
+    }
+
+    .ward-hexagon-6 {
+        top: 10px;
+    }
+
+    .wrapper-head {
+        left: 0;
+    }
+
+    .medical-card,
+    .medical-details-card {
+        padding-left: 0;
+    }
+
+    .header-sideroom:before,
+    .header-bay-1:before,
+    .header-bay-2:before,
+    .header-bay-3:before,
+    .header-bay-4:before {
+        left: -35px;
+    }
+}
+
+@media (max-width:575px) {
+    .icon-wrap {
+        left: -4%;
+    }
+
+    .hex-shape-13,
+    .hex-shape-38 {
+        left: 0%;
+    }
+
+    .hex-shape-14 {
+        left: 55%;
+    }
+
+    .hex-shape-25 {
+        left: 2%;
+    }
+
+    .hex-shape-29 {
+        left: 10%;
+    }
+
+    .hex-shape-30 {
+        left: 58%;
+    }
+}

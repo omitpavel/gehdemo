@@ -1,0 +1,2944 @@
+.grey-rectangle-1 {
+    background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    box-shadow: 0px 3px 6px #00000030;
+    border-radius: 10px;
+    padding: .75rem 0.5rem;
+    min-height: 70px;
+
+}
+
+.grey-rectangle-1 h6 {
+    font-size: 12px;
+}
+
+.fs-10 h6 {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.grey-rectangle-1 h5 {
+    font-size: 20px;
+}
+
+.row-cols-lg-7>* {
+    flex: 0 0 auto;
+    width: 14.28571429%
+}
+
+/* Hexagon styles */
+
+.main-hexagone {
+    display: flex;
+    --s: 80px;
+    /* size  */
+    --m: 3px;
+    /* margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+
+}
+
+.main-hexagone .container {
+    font-size: 0;
+    /*disable white space between inline block element */
+}
+
+.main-hexagone .container div {
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s)*1.1547);
+    display: inline-block;
+    font-size: initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    margin-bottom: calc(var(--m) - var(--s)*0.2885);
+    background: linear-gradient(151deg, rgba(253, 253, 254, 1) 20%, rgba(127, 127, 127, 1) 100%);
+    border: 1px solid red;
+
+
+}
+
+.main-hexagone .container::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 110%;
+    shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),
+            #000 0 var(--f));
+}
+
+.main-hexagone .container div h6 {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+    vertical-align: middle;
+}
+
+#hexagon {
+    width: 150px;
+    height: 80px;
+    background: #d1cccc;
+    position: relative;
+    top: 40px
+}
+
+#hexagon::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 40px solid #d1cccc;
+}
+
+#hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 40px solid #d1cccc;
+}
+
+
+#hexagon-1 {
+    width: 80px;
+    height: 40px;
+    background: #d6d4d4;
+    position: absolute;
+    top: 60px;
+    left: -60px;
+    z-index: 2;
+}
+
+#hexagon-1::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 25px solid #d6d4d4;
+}
+
+#hexagon-1::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 25px solid #d6d4d4;
+}
+
+#hexagon-2 {
+    width: 80px;
+    height: 40px;
+    background: #d6d4d4;
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    z-index: 2;
+}
+
+#hexagon-2::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 25px solid #d6d4d4;
+}
+
+#hexagon-2::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 25px solid #d6d4d4;
+}
+
+#hexagon h6 {
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+
+
+/* Hexagone Position Styles */
+
+
+.medical-wards-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.medical-ward-1 {
+    position: absolute;
+    left: 12%;
+    top: 50px;
+}
+
+.medical-ward-2 {
+    position: absolute;
+    left: 36%;
+    top: 50px;
+}
+
+.medical-ward-3 {
+    position: absolute;
+    left: 0%;
+    top: 100px;
+}
+
+.medical-ward-4 {
+    position: absolute;
+    left: 24%;
+    top: 100px;
+}
+
+.medical-ward-5 {
+    position: absolute;
+    left: 48%;
+    top: 100px;
+}
+
+.medical-ward-6 {
+    position: absolute;
+    left: 12%;
+    top: 150px;
+}
+
+.medical-ward-7 {
+    position: absolute;
+    left: 36%;
+    top: 150px;
+}
+
+.medical-ward-8 {
+    position: absolute;
+    left: 60%;
+    top: 150px;
+}
+
+.medical-ward-9 {
+    position: absolute;
+    left: 0%;
+    top: 200px;
+}
+
+.medical-ward-10 {
+    position: absolute;
+    left: 24%;
+    top: 200px;
+}
+
+.medical-ward-11 {
+    position: absolute;
+    left: 48%;
+    top: 200px;
+}
+
+.medical-ward-12 {
+    position: absolute;
+    left: 12%;
+    top: 250px;
+}
+
+.medical-ward-13 {
+    position: absolute;
+    left: 36%;
+    top: 250px;
+}
+
+.medical-ward-14 {
+    position: absolute;
+    left: 0%;
+    top: 300px;
+}
+
+.medical-ward-15 {
+    position: absolute;
+    left: 24%;
+    top: 300px;
+}
+
+.medical-ward-16 {
+    position: absolute;
+    left: 48%;
+    top: 300px;
+}
+
+.ward-name-1 span,
+.ward-name-2 span,
+.ward-name-3 span,
+.ward-name-4 span,
+.ward-name-5 span,
+.ward-name-6 span,
+.ward-name-7 span,
+.ward-name-8 span,
+.ward-name-9 span,
+.ward-name-10 span,
+.ward-name-11 span,
+.ward-name-12 span,
+.ward-name-13 span,
+.ward-name-14 span,
+.ward-name-15 span,
+.ward-name-16 span,
+.ward-name-18 span,
+.ward-name-19 span,
+.ward-name-20 span,
+.ward-name-21 span,
+.ward-name-22 span,
+.ward-name-23 span,
+.ward-name-24 span,
+.ward-name-25 span,
+.ward-name-26 span,
+.ward-name-27 span,
+.ward-name-28 span,
+.ward-name-29 span,
+.ward-name-30 span,
+.ward-name-31 span,
+.ward-name-32 span,
+.ward-name-33 span,
+.ward-name-34 span,
+.ward-name-35 span,
+.ward-name-36 span,
+.ward-name-37 span,
+.ward-name-38 span,
+.ward-name-39 span,
+.ward-name-40 span,
+.ward-name-41 span,
+.ward-name-42 span,
+.ward-name-43 span {
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.ward-name-1 span,
+.ward-name-3 span,
+.ward-name-5 span,
+.ward-name-6 span,
+.ward-name-7 span,
+.ward-name-8 span,
+.ward-name-11 span,
+.ward-name-12 span,
+.ward-name-13 span {
+    top: 30px;
+    left: 22%;
+}
+
+.ward-name-15 span {
+    top: 40px;
+    left: 25%;
+}
+
+.ward-name-4 span,
+.ward-name-9 span,
+.ward-name-10 span,
+.ward-name-14 span,
+.ward-name-16 span {
+    top: 30px;
+    left: 18%;
+}
+
+.ward-name-17 span {
+    position: absolute;
+    top: 70px;
+    left: 30%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ward-name-18 span,
+.ward-name-19 span {
+    top: 32px;
+    left: 30%;
+}
+
+.ward-name-20 span,
+.ward-name-21 span,
+.ward-name-28 span {
+    top: 30px;
+    left: 16%;
+}
+
+.ward-name-22 span {
+    top: 30px;
+    left: 22%;
+}
+
+.ward-name-23 span {
+    top: 30px;
+    left: 28%;
+}
+
+.ward-name-24 span,
+.ward-name-25 span,
+.ward-name-27 span {
+    top: 30px;
+    left: 12%;
+}
+
+.ward-name-26 span {
+    top: 30px;
+    left: 22%;
+}
+
+
+.nye-ward-1 {
+    position: absolute;
+    left: 0%;
+    top: 50px;
+}
+
+.nye-wards-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.nye-ward-2 {
+    position: absolute;
+    left: -15%;
+    top: 140px;
+}
+
+.nye-ward-3 {
+    position: absolute;
+    left: 65%;
+    top: 140px;
+}
+
+.surgical-wards-wrapper {
+    position: relative;
+    top: 0;
+    left: 2%;
+    margin-left: 13%;
+}
+
+.surgical-ward-1 {
+    position: absolute;
+    left: 8%;
+    top: 50px;
+}
+
+.surgical-ward-2 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+}
+
+.surgical-ward-3 {
+    position: absolute;
+    left: 29%;
+    top: 100px;
+}
+
+.surgical-ward-4 {
+    position: absolute;
+    left: 71%;
+    top: 100px;
+}
+
+.surgical-ward-5 {
+    position: absolute;
+    left: 8%;
+    top: 150px;
+}
+
+.surgical-ward-6 {
+    position: absolute;
+    left: 50%;
+    top: 150px;
+}
+
+.surgical-ward-7 {
+    position: absolute;
+    left: 29%;
+    top: 200px;
+}
+
+.surgical-ward-8 {
+    position: absolute;
+    left: 71%;
+    top: 200px;
+}
+
+.surgical-ward-9 {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+}
+
+.pt-325 {
+    padding-top: 325px;
+}
+
+.other-wards-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.other-ward-1 {
+    position: absolute;
+    left: 15%;
+    top: 100px;
+}
+
+.other-ward-2 {
+    position: absolute;
+    left: 30%;
+    top: 50px;
+}
+
+.other-ward-3 {
+    position: absolute;
+    left: 30%;
+    top: 150px;
+}
+
+.other-ward-4 {
+    position: absolute;
+    left: 45%;
+    top: 100px;
+}
+
+.ward-name-29 span {
+    top: 25px;
+    left: 20%;
+}
+
+.ward-name-30 span {
+    top: 35px;
+    left: 18%;
+}
+
+.ward-name-31 span {
+    top: 33px;
+    left: 28%;
+}
+
+.ward-name-32 span {
+    top: 30px;
+    left: 12%;
+}
+
+.virtual-wards-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.virtual-ward-1 {
+    position: absolute;
+    left: 0%;
+    top: 150px;
+}
+
+.virtual-ward-2 {
+    position: absolute;
+    left: 10.25%;
+    top: 100px;
+}
+
+.virtual-ward-3 {
+    position: absolute;
+    left: 20.5%;
+    top: 50px;
+}
+
+.virtual-ward-4 {
+    position: absolute;
+    left: 20.5%;
+    top: 150px;
+}
+
+.virtual-ward-5 {
+    position: absolute;
+    left: 31%;
+    top: 100px;
+}
+
+.virtual-ward-6 {
+    position: absolute;
+    left: 41.25%;
+    top: 50px;
+}
+
+.virtual-ward-7 {
+    position: absolute;
+    left: 41.25%;
+    top: 150px;
+}
+
+.virtual-ward-8 {
+    position: absolute;
+    left: 51.5%;
+    top: 100px;
+}
+
+.virtual-ward-9 {
+    position: absolute;
+    left: 62%;
+    top: 50px;
+}
+
+.virtual-ward-10 {
+    position: absolute;
+    left: 62%;
+    top: 150px;
+}
+
+.virtual-ward-11 {
+    position: absolute;
+    left: 72.5%;
+    top: 100px;
+}
+
+.ward-name-33 span,
+.ward-name-41 span,
+.ward-name-42 span {
+    top: 35px;
+    left: 22%;
+}
+
+.ward-name-34 span {
+    top: 40px;
+    left: 35%;
+}
+
+.ward-name-35 span,
+.ward-name-40 span {
+    top: 40px;
+    left: 30%;
+}
+
+.ward-name-36 span,
+.ward-name-39 span {
+    top: 35px;
+    left: 10%;
+}
+
+.ward-name-37 span {
+    top: 30px;
+    left: 10%;
+}
+
+.ward-name-38 span {
+    top: 30px;
+    left: 15%;
+}
+
+.ward-name-43 span {
+    top: 30px;
+    left: 18%;
+}
+
+@media (min-width:2601px) {
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 7%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 21%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 14%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 28%;
+    }
+
+    .medical-ward-8 {
+        left: 35%;
+    }
+
+    .nye-ward-2 {
+        left: -12%;
+    }
+
+    .nye-ward-3 {
+        left: 65%;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 32%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 20%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 44%;
+    }
+
+    .other-ward-1 {
+        left: 9%;
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 17%;
+    }
+
+    .other-ward-4 {
+        left: 25%;
+    }
+
+    .virtual-ward-2 {
+        left: 6%;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 12%;
+    }
+
+    .virtual-ward-5 {
+        left: 18%;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 24%;
+    }
+
+    .virtual-ward-8 {
+        left: 30%;
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 36%;
+    }
+
+    .virtual-ward-11 {
+        left: 42%;
+    }
+}
+
+@media (min-width:2001px) and (max-width:2600px) {
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 9%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 27%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 18%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 36%;
+    }
+
+    .medical-ward-8 {
+        left: 45%;
+    }
+
+    .nye-ward-3 {
+        left: 52%;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 40%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 24%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 56%;
+    }
+
+    .other-ward-1 {
+        left: 11%;
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 22%;
+    }
+
+    .other-ward-4 {
+        left: 33%;
+    }
+
+    .virtual-ward-2 {
+        left: 8%;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 15.75%;
+    }
+
+    .virtual-ward-5 {
+        left: 23.5%;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 31.5%;
+    }
+
+    .virtual-ward-8 {
+        left: 39.25%;
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 47%;
+    }
+
+    .virtual-ward-11 {
+        left: 54.5%;
+    }
+}
+
+@media (min-width:1700px) and (max-width:2000px) {
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 11%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 33%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 22%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 44%;
+    }
+
+    .medical-ward-8 {
+        left: 55%;
+    }
+
+    .nye-ward-3 {
+        left: 60%;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 46%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 27%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 65%;
+    }
+
+    .other-ward-1 {
+        left: 13%;
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 26%;
+    }
+
+    .other-ward-4 {
+        left: 39%;
+    }
+
+    .virtual-ward-2 {
+        left: 9.25%;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 18.5%;
+    }
+
+    .virtual-ward-5 {
+        left: 27.75%;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 37%;
+    }
+
+    .virtual-ward-8 {
+        left: 46.25%;
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 55.5%;
+    }
+
+    .virtual-ward-11 {
+        left: 64.5%;
+    }
+}
+
+@media (min-width:1201px) and (max-width:1400px) {
+
+    .medical-wards-wrapper svg,
+    .nye-wards-wrapper svg,
+    .surgical-wards-wrapper svg,
+    .other-wards-wrapper svg,
+    .virtual-wards-wrapper svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-2 span,
+    .ward-name-3 span,
+    .ward-name-4 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-9 span,
+    .ward-name-10 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span,
+    .ward-name-14 span,
+    .ward-name-15 span,
+    .ward-name-16 span,
+    .ward-name-18 span,
+    .ward-name-19 span,
+    .ward-name-20 span,
+    .ward-name-21 span,
+    .ward-name-22 span,
+    .ward-name-23 span,
+    .ward-name-24 span,
+    .ward-name-25 span,
+    .ward-name-26 span,
+    .ward-name-27 span,
+    .ward-name-28 span,
+    .ward-name-29 span,
+    .ward-name-30 span,
+    .ward-name-31 span,
+    .ward-name-32 span,
+    .ward-name-33 span,
+    .ward-name-34 span,
+    .ward-name-35 span,
+    .ward-name-36 span,
+    .ward-name-37 span,
+    .ward-name-38 span,
+    .ward-name-39 span,
+    .ward-name-40 span,
+    .ward-name-41 span,
+    .ward-name-42 span,
+    .ward-name-43 span {
+        top: 20px;
+        font-size: 8px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-3 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span {
+        top: 25px;
+    }
+
+    .ward-name-15 span {
+        top: 28px;
+    }
+
+    .ward-name-17 span {
+        top: 40px;
+        left: 22%;
+        font-size: 14px;
+    }
+
+    .ward-name-34 span {
+        top: 27px;
+        left: 35%;
+    }
+
+    .ward-name-35 span,
+    .ward-name-40 span {
+        top: 27px;
+        left: 30%;
+    }
+
+    .nye-ward-1>svg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .medical-ward-3,
+    .medical-ward-4,
+    .medical-ward-5,
+    .surgical-ward-3,
+    .surgical-ward-4 {
+        top: 85px;
+    }
+
+    .medical-ward-6,
+    .medical-ward-7,
+    .medical-ward-8,
+    .surgical-ward-5,
+    .surgical-ward-6 {
+        top: 120px;
+    }
+
+    .medical-ward-9,
+    .medical-ward-10,
+    .medical-ward-11,
+    .surgical-ward-7,
+    .surgical-ward-8 {
+        top: 155px;
+    }
+
+    .medical-ward-12,
+    .medical-ward-13,
+    .surgical-ward-9 {
+        top: 190px;
+    }
+
+    .medical-ward-14,
+    .medical-ward-15,
+    .medical-ward-16 {
+        top: 225px;
+    }
+
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 11%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 33%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 22%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 44%;
+    }
+
+    .medical-ward-8 {
+        left: 55%;
+    }
+
+    .nye-ward-2 {
+        left: -16%;
+        top: 90px;
+    }
+
+    .nye-ward-3 {
+        left: 65%;
+        top: 90px;
+    }
+
+    .surgical-wards-wrapper {
+        margin-left: 0;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 42%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 25%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 59%;
+    }
+
+    .other-ward-1,
+    .other-ward-4 {
+        top: 85px;
+    }
+
+    .other-ward-1 {
+        left: 13%;
+
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 26%;
+    }
+
+    .other-ward-3 {
+        top: 120px;
+    }
+
+    .other-ward-4 {
+        left: 39%;
+    }
+
+    .virtual-ward-1,
+    .virtual-ward-4,
+    .virtual-ward-7,
+    .virtual-ward-10 {
+        top: 120px;
+    }
+
+    .virtual-ward-2,
+    .virtual-ward-5,
+    .virtual-ward-8,
+    .virtual-ward-11 {
+        top: 85px;
+    }
+
+    .virtual-ward-2 {
+        left: 9%;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 18%;
+    }
+
+    .virtual-ward-5 {
+        left: 27%;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 36%;
+    }
+
+    .virtual-ward-8 {
+        left: 45%;
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 54%;
+    }
+
+    .virtual-ward-11 {
+        left: 63%;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+
+    .medical-wards-wrapper svg,
+    .nye-wards-wrapper svg,
+    .surgical-wards-wrapper svg,
+    .other-wards-wrapper svg,
+    .virtual-wards-wrapper svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-2 span,
+    .ward-name-3 span,
+    .ward-name-4 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-9 span,
+    .ward-name-10 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span,
+    .ward-name-14 span,
+    .ward-name-15 span,
+    .ward-name-16 span,
+    .ward-name-18 span,
+    .ward-name-19 span,
+    .ward-name-20 span,
+    .ward-name-21 span,
+    .ward-name-22 span,
+    .ward-name-23 span,
+    .ward-name-24 span,
+    .ward-name-25 span,
+    .ward-name-26 span,
+    .ward-name-27 span,
+    .ward-name-28 span,
+    .ward-name-29 span,
+    .ward-name-30 span,
+    .ward-name-31 span,
+    .ward-name-32 span,
+    .ward-name-33 span,
+    .ward-name-34 span,
+    .ward-name-35 span,
+    .ward-name-36 span,
+    .ward-name-37 span,
+    .ward-name-38 span,
+    .ward-name-39 span,
+    .ward-name-40 span,
+    .ward-name-41 span,
+    .ward-name-42 span,
+    .ward-name-43 span {
+        top: 20px;
+        font-size: 8px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-3 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span {
+        top: 25px;
+    }
+
+    .ward-name-15 span {
+        top: 28px;
+    }
+
+    .ward-name-17 span {
+        top: 40px;
+        left: 22%;
+        font-size: 14px;
+    }
+
+    .ward-name-34 span {
+        top: 27px;
+        left: 35%;
+    }
+
+    .ward-name-35 span,
+    .ward-name-40 span {
+        top: 27px;
+        left: 30%;
+    }
+
+    .nye-ward-1>svg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .medical-ward-3,
+    .medical-ward-4,
+    .medical-ward-5,
+    .surgical-ward-3,
+    .surgical-ward-4 {
+        top: 85px;
+    }
+
+    .medical-ward-6,
+    .medical-ward-7,
+    .medical-ward-8,
+    .surgical-ward-5,
+    .surgical-ward-6 {
+        top: 120px;
+    }
+
+    .medical-ward-9,
+    .medical-ward-10,
+    .medical-ward-11,
+    .surgical-ward-7,
+    .surgical-ward-8 {
+        top: 155px;
+    }
+
+    .medical-ward-12,
+    .medical-ward-13,
+    .surgical-ward-9 {
+        top: 190px;
+    }
+
+    .medical-ward-14,
+    .medical-ward-15,
+    .medical-ward-16 {
+        top: 225px;
+    }
+
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 14%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 42%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 28%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 56%;
+    }
+
+    .medical-ward-8 {
+        left: 70%;
+    }
+
+    .nye-ward-2 {
+        left: -15%;
+        top: 90px;
+    }
+
+    .nye-ward-3 {
+        left: 65%;
+        top: 90px;
+    }
+
+    .surgical-wards-wrapper {
+        margin-left: 0;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 52%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 30%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 74%;
+    }
+
+    .other-ward-1,
+    .other-ward-4 {
+        top: 85px;
+    }
+
+    .other-ward-1 {
+        left: 18%;
+
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 35%;
+    }
+
+    .other-ward-3 {
+        top: 120px;
+    }
+
+    .other-ward-4 {
+        left: 52%;
+    }
+
+    .virtual-ward-1,
+    .virtual-ward-4,
+    .virtual-ward-7,
+    .virtual-ward-10 {
+        top: 120px;
+    }
+
+    .virtual-ward-2,
+    .virtual-ward-5,
+    .virtual-ward-8,
+    .virtual-ward-11 {
+        top: 85px;
+    }
+
+    .virtual-ward-2 {
+        left: 12%;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 24%;
+    }
+
+    .virtual-ward-5 {
+        left: 36%;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 48%;
+    }
+
+    .virtual-ward-8 {
+        left: 60%;
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 72%;
+    }
+
+    .virtual-ward-11 {
+        left: 84%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1024px) {
+
+    .medical-wards-wrapper svg,
+    .nye-wards-wrapper svg,
+    .surgical-wards-wrapper svg,
+    .other-wards-wrapper svg,
+    .virtual-wards-wrapper svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-2 span,
+    .ward-name-3 span,
+    .ward-name-4 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-9 span,
+    .ward-name-10 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span,
+    .ward-name-14 span,
+    .ward-name-15 span,
+    .ward-name-16 span,
+    .ward-name-18 span,
+    .ward-name-19 span,
+    .ward-name-20 span,
+    .ward-name-21 span,
+    .ward-name-22 span,
+    .ward-name-23 span,
+    .ward-name-24 span,
+    .ward-name-25 span,
+    .ward-name-26 span,
+    .ward-name-27 span,
+    .ward-name-28 span,
+    .ward-name-29 span,
+    .ward-name-30 span,
+    .ward-name-31 span,
+    .ward-name-32 span,
+    .ward-name-33 span,
+    .ward-name-34 span,
+    .ward-name-35 span,
+    .ward-name-36 span,
+    .ward-name-37 span,
+    .ward-name-38 span,
+    .ward-name-39 span,
+    .ward-name-40 span,
+    .ward-name-41 span,
+    .ward-name-42 span,
+    .ward-name-43 span {
+        top: 20px;
+        font-size: 8px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-3 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span {
+        top: 25px;
+    }
+
+    .ward-name-15 span {
+        top: 28px;
+    }
+
+    .ward-name-17 span {
+        top: 40px;
+        left: 22%;
+        font-size: 14px;
+    }
+
+    .ward-name-34 span {
+        top: 27px;
+        left: 35%;
+    }
+
+    .ward-name-35 span,
+    .ward-name-40 span {
+        top: 27px;
+        left: 30%;
+    }
+
+    .nye-ward-1>svg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .medical-ward-3,
+    .medical-ward-4,
+    .medical-ward-5,
+    .surgical-ward-3,
+    .surgical-ward-4 {
+        top: 85px;
+    }
+
+    .medical-ward-6,
+    .medical-ward-7,
+    .medical-ward-8,
+    .surgical-ward-5,
+    .surgical-ward-6 {
+        top: 120px;
+    }
+
+    .medical-ward-9,
+    .medical-ward-10,
+    .medical-ward-11,
+    .surgical-ward-7,
+    .surgical-ward-8 {
+        top: 155px;
+    }
+
+    .medical-ward-12,
+    .medical-ward-13,
+    .surgical-ward-9 {
+        top: 190px;
+    }
+
+    .medical-ward-14,
+    .medical-ward-15,
+    .medical-ward-16 {
+        top: 225px;
+    }
+
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 14%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 42%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 28%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 56%;
+    }
+
+    .medical-ward-8 {
+        left: 70%;
+    }
+
+    .nye-ward-2 {
+        left: -22%;
+        top: 70px;
+    }
+
+    .nye-ward-3 {
+        left: 72%;
+        top: 70px;
+    }
+
+    .surgical-wards-wrapper {
+        margin-left: 0;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 52%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 30%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 74%;
+    }
+
+    .other-ward-1,
+    .other-ward-4 {
+        top: 85px;
+    }
+
+    .other-ward-1 {
+        left: 18%;
+
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 35%;
+    }
+
+    .other-ward-3 {
+        top: 120px;
+    }
+
+    .other-ward-4 {
+        left: 52%;
+    }
+
+    .virtual-ward-1,
+    .virtual-ward-4,
+    .virtual-ward-7,
+    .virtual-ward-10 {
+        top: 120px;
+    }
+
+    .virtual-ward-2,
+    .virtual-ward-5,
+    .virtual-ward-8,
+    .virtual-ward-11 {
+        top: 85px;
+    }
+
+    .virtual-ward-2 {
+        left: 12%;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 24%;
+    }
+
+    .virtual-ward-5 {
+        left: 36%;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 48%;
+    }
+
+    .virtual-ward-8 {
+        left: 60%;
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 72%;
+    }
+
+    .virtual-ward-11 {
+        left: 84%;
+    }
+}
+
+@media (max-width:991px) {
+    .nye-wards-wrapper {
+        top: 300px;
+    }
+
+    .surgical-wards-wrapper {
+        top: 575px;
+    }
+
+    .other-wards-wrapper {
+        top: 550px;
+    }
+
+    .virtual-wards-wrapper {
+        top: 800px;
+    }
+
+    .medical-ward-3,
+    .medical-ward-9,
+    .medical-ward-14 {
+        left: 15%;
+    }
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 26%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 37%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 48%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 59%;
+    }
+
+    .medical-ward-8 {
+        left: 70%;
+    }
+
+    .nye-ward-1 {
+        left: 36%;
+    }
+
+    .nye-ward-2 {
+        left: -12%;
+    }
+
+    .nye-ward-3 {
+        left: 65%;
+    }
+
+    .surgical-wards-wrapper {
+        margin-left: 0;
+    }
+
+    .surgical-ward-1,
+    .surgical-ward-5 {
+        left: 20%;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 42%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 31%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 53%;
+    }
+
+    .other-ward-1 {
+        left: 28%;
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 39%;
+    }
+
+    .other-ward-4 {
+        left: 50%;
+    }
+
+    .virtual-ward-1 {
+        left: 4%;
+    }
+
+    .virtual-ward-2 {
+        left: 15%;
+        top: 95px;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 26%;
+    }
+
+    .virtual-ward-5 {
+        left: 37%;
+        top: 95px;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 48%;
+    }
+
+    .virtual-ward-8 {
+        left: 59%;
+        top: 95px;
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 70%;
+    }
+
+    .virtual-ward-11 {
+        left: 81%;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    .medical-wards-wrapper svg,
+    .nye-wards-wrapper svg,
+    .surgical-wards-wrapper svg,
+    .other-wards-wrapper svg,
+    .virtual-wards-wrapper svg {
+        width: 65px;
+        height: 65px;
+    }
+
+    .nye-ward-1>svg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-2 span,
+    .ward-name-3 span,
+    .ward-name-4 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-9 span,
+    .ward-name-10 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span,
+    .ward-name-14 span,
+    .ward-name-15 span,
+    .ward-name-16 span,
+    .ward-name-18 span,
+    .ward-name-19 span,
+    .ward-name-20 span,
+    .ward-name-21 span,
+    .ward-name-22 span,
+    .ward-name-23 span,
+    .ward-name-24 span,
+    .ward-name-25 span,
+    .ward-name-26 span,
+    .ward-name-27 span,
+    .ward-name-28 span,
+    .ward-name-29 span,
+    .ward-name-30 span,
+    .ward-name-31 span,
+    .ward-name-32 span,
+    .ward-name-33 span,
+    .ward-name-34 span,
+    .ward-name-35 span,
+    .ward-name-36 span,
+    .ward-name-37 span,
+    .ward-name-38 span,
+    .ward-name-39 span,
+    .ward-name-40 span,
+    .ward-name-41 span,
+    .ward-name-42 span,
+    .ward-name-43 span {
+        /* top: 25px;
+        left: 20%; */
+        font-size: 8px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-3 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span {
+        top: 20px;
+        left: 22%;
+    }
+
+    .ward-name-2 span {
+        top: 15px;
+    }
+
+    .ward-name-15 span {
+        top: 25px;
+    }
+
+    .ward-name-4 span,
+    .ward-name-9 span,
+    .ward-name-10 span,
+    .ward-name-14 span,
+    .ward-name-16 span {
+        top: 20px;
+        left: 14%;
+    }
+
+    .ward-name-18 span,
+    .ward-name-19 span {
+        top: 20px;
+        left: 30%;
+    }
+
+    .ward-name-20 span,
+    .ward-name-21 span,
+    .ward-name-22 span,
+    .ward-name-24 span,
+    .ward-name-25 span,
+    .ward-name-26 span,
+    .ward-name-27 span,
+    .ward-name-28 span,
+    .ward-name-31 span,
+    .ward-name-32 span,
+    .ward-name-37 span,
+    .ward-name-43 span {
+        top: 20px;
+    }
+
+    .ward-name-29 span {
+        top: 15px;
+    }
+
+    .ward-name-30 span {
+        top: 25px;
+    }
+
+    .ward-name-23 span,
+    .ward-name-33 span,
+    .ward-name-41 span,
+    .ward-name-42 span {
+        top: 23px;
+    }
+
+    .ward-name-34 span,
+    .ward-name-35 span,
+    .ward-name-40 span {
+        top: 27px;
+    }
+
+    .ward-name-38 span {
+        top: 23px;
+    }
+
+    .ward-name-36 span,
+    .ward-name-39 span {
+        top: 23px;
+        left: 10%;
+    }
+
+    .medical-ward-3,
+    .medical-ward-4,
+    .medical-ward-5 {
+        top: 85px;
+    }
+
+    .medical-ward-6,
+    .medical-ward-7,
+    .medical-ward-8 {
+        top: 115px;
+    }
+
+    .medical-ward-9,
+    .medical-ward-10,
+    .medical-ward-11 {
+        top: 150px;
+    }
+
+    .medical-ward-12,
+    .medical-ward-13 {
+        top: 180px;
+    }
+
+    .medical-ward-14,
+    .medical-ward-15,
+    .medical-ward-16 {
+        top: 215px;
+    }
+
+    .medical-ward-3,
+    .medical-ward-9,
+    .medical-ward-14 {
+        left: 18%;
+    }
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 28%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 38%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 48%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 58%;
+    }
+
+    .medical-ward-8 {
+        left: 68%;
+    }
+
+    .nye-wards-wrapper {
+        top: 200px;
+    }
+
+    .ward-name-17 span {
+        position: absolute;
+        top: 40px;
+        left: 16%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .nye-ward-2 {
+        left: -10%;
+        top: 100px;
+    }
+
+    .nye-ward-3 {
+        left: 60%;
+        top: 100px;
+    }
+
+    .surgical-wards-wrapper {
+        top: 400px;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-4 {
+        top: 85px;
+    }
+
+    .surgical-ward-5,
+    .surgical-ward-6 {
+        top: 115px;
+    }
+
+    .surgical-ward-7,
+    .surgical-ward-8 {
+        top: 150px;
+    }
+
+    .surgical-ward-9 {
+        top: 180px;
+    }
+
+    .surgical-ward-1,
+    .surgical-ward-5 {
+        left: 23%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 33%;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 43%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 53%;
+    }
+
+    .other-wards-wrapper {
+        top: 280px;
+    }
+
+    .other-ward-1 {
+        left: 32%;
+    }
+
+    .other-ward-1,
+    .other-ward-4 {
+        top: 85px;
+    }
+
+    .other-ward-3 {
+        top: 120px;
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 42%;
+    }
+
+    .other-ward-4 {
+        left: 52%;
+    }
+
+    .virtual-wards-wrapper {
+        top: 500px;
+    }
+
+    .virtual-ward-1,
+    .virtual-ward-4,
+    .virtual-ward-7 {
+        top: 130px;
+    }
+
+    .virtual-ward-10 {
+        top: 130px;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-6,
+    .virtual-ward-9 {
+        top: 65px;
+    }
+
+    .virtual-ward-11 {
+        top: 100px;
+        left: 75%;
+    }
+
+    .virtual-ward-1 {
+        left: 5%;
+    }
+
+    .virtual-ward-2 {
+        left: 15%;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 25%;
+    }
+
+    .virtual-ward-5 {
+        left: 35%;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 45%;
+    }
+
+    .virtual-ward-8 {
+        left: 55%;
+
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 65%;
+    }
+}
+
+@media (min-width:425px) and (max-width:575px) {
+
+    .medical-wards-wrapper svg,
+    .nye-wards-wrapper svg,
+    .surgical-wards-wrapper svg,
+    .other-wards-wrapper svg,
+    .virtual-wards-wrapper svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nye-ward-1>svg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-2 span,
+    .ward-name-3 span,
+    .ward-name-4 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-9 span,
+    .ward-name-10 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span,
+    .ward-name-14 span,
+    .ward-name-15 span,
+    .ward-name-16 span,
+    .ward-name-18 span,
+    .ward-name-19 span,
+    .ward-name-20 span,
+    .ward-name-21 span,
+    .ward-name-22 span,
+    .ward-name-23 span,
+    .ward-name-24 span,
+    .ward-name-25 span,
+    .ward-name-26 span,
+    .ward-name-27 span,
+    .ward-name-28 span,
+    .ward-name-29 span,
+    .ward-name-30 span,
+    .ward-name-31 span,
+    .ward-name-32 span,
+    .ward-name-33 span,
+    .ward-name-34 span,
+    .ward-name-35 span,
+    .ward-name-36 span,
+    .ward-name-37 span,
+    .ward-name-38 span,
+    .ward-name-39 span,
+    .ward-name-40 span,
+    .ward-name-41 span,
+    .ward-name-42 span,
+    .ward-name-43 span {
+        /* top: 25px;
+        left: 20%; */
+        font-size: 7px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-3 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span {
+        top: 20px;
+        left: 22%;
+    }
+
+    .ward-name-2 span {
+        top: 15px;
+    }
+
+    .ward-name-15 span {
+        top: 25px;
+    }
+
+    .ward-name-4 span,
+    .ward-name-9 span,
+    .ward-name-10 span,
+    .ward-name-14 span,
+    .ward-name-16 span {
+        top: 18px;
+        left: 14%;
+    }
+
+    .ward-name-18 span,
+    .ward-name-19 span {
+        top: 20px;
+        left: 30%;
+    }
+
+    .ward-name-20 span,
+    .ward-name-21 span,
+    .ward-name-22 span,
+    .ward-name-24 span,
+    .ward-name-25 span,
+    .ward-name-26 span,
+    .ward-name-27 span,
+    .ward-name-28 span,
+    .ward-name-31 span,
+    .ward-name-32 span,
+    .ward-name-37 span,
+    .ward-name-43 span {
+        top: 18px;
+    }
+
+    .ward-name-29 span {
+        top: 15px;
+    }
+
+    .ward-name-30 span {
+        top: 20px;
+    }
+
+    .ward-name-23 span,
+    .ward-name-33 span,
+    .ward-name-41 span,
+    .ward-name-42 span {
+        top: 21px;
+    }
+
+    .ward-name-34 span,
+    .ward-name-35 span,
+    .ward-name-40 span {
+        top: 25px;
+    }
+
+    .ward-name-38 span {
+        top: 23px;
+    }
+
+    .ward-name-36 span,
+    .ward-name-39 span {
+        top: 22px;
+        left: 10%;
+    }
+
+    .medical-ward-3,
+    .medical-ward-4,
+    .medical-ward-5 {
+        top: 80px;
+    }
+
+    .medical-ward-6,
+    .medical-ward-7,
+    .medical-ward-8 {
+        top: 110px;
+    }
+
+    .medical-ward-9,
+    .medical-ward-10,
+    .medical-ward-11 {
+        top: 140px;
+    }
+
+    .medical-ward-12,
+    .medical-ward-13 {
+        top: 170px;
+    }
+
+    .medical-ward-14,
+    .medical-ward-15,
+    .medical-ward-16 {
+        top: 200px;
+    }
+
+    .medical-ward-3,
+    .medical-ward-9,
+    .medical-ward-14 {
+        left: 10%;
+    }
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 23%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 36%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 49%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 62%;
+    }
+
+    .medical-ward-8 {
+        left: 75%;
+    }
+
+    .nye-wards-wrapper {
+        top: 200px;
+    }
+
+    .ward-name-17 span {
+        position: absolute;
+        top: 40px;
+        left: 16%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .nye-ward-2 {
+        left: -10%;
+        top: 100px;
+    }
+
+    .nye-ward-3 {
+        left: 62%;
+        top: 100px;
+    }
+
+    .surgical-wards-wrapper {
+        top: 400px;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-4 {
+        top: 80px;
+    }
+
+    .surgical-ward-5,
+    .surgical-ward-6 {
+        top: 110px;
+    }
+
+    .surgical-ward-7,
+    .surgical-ward-8 {
+        top: 140px;
+    }
+
+    .surgical-ward-9 {
+        top: 170px;
+    }
+
+    .surgical-ward-1,
+    .surgical-ward-5 {
+        left: 21%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 34%;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 47%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 60%;
+    }
+
+    .other-wards-wrapper {
+        top: 280px;
+    }
+
+    .other-ward-1,
+    .other-ward-4 {
+        top: 80px;
+    }
+
+    .other-ward-3 {
+        top: 110px;
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 43%;
+    }
+
+    .other-ward-4 {
+        left: 56%;
+    }
+
+    .virtual-wards-wrapper {
+        top: 450px;
+    }
+
+    .virtual-ward-1,
+    .virtual-ward-4,
+    .virtual-ward-7 {
+        top: 125px;
+    }
+
+    .virtual-ward-10 {
+        top: 215px;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-6 {
+        top: 65px;
+    }
+
+    .virtual-ward-9 {
+        top: 155px;
+    }
+
+    .virtual-ward-11 {
+        top: 185px;
+        left: 60%;
+    }
+
+    .virtual-ward-1 {
+        left: 8%;
+    }
+
+    .virtual-ward-2 {
+        left: 21%;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 34%;
+    }
+
+    .virtual-ward-5 {
+        left: 47%;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 60%;
+    }
+
+    .virtual-ward-8 {
+        left: 73%;
+
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 47%;
+    }
+}
+
+@media (max-width:424px) {
+
+    .medical-wards-wrapper svg,
+    .nye-wards-wrapper svg,
+    .surgical-wards-wrapper svg,
+    .other-wards-wrapper svg,
+    .virtual-wards-wrapper svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nye-ward-1>svg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-2 span,
+    .ward-name-3 span,
+    .ward-name-4 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-9 span,
+    .ward-name-10 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span,
+    .ward-name-14 span,
+    .ward-name-15 span,
+    .ward-name-16 span,
+    .ward-name-18 span,
+    .ward-name-19 span,
+    .ward-name-20 span,
+    .ward-name-21 span,
+    .ward-name-22 span,
+    .ward-name-23 span,
+    .ward-name-24 span,
+    .ward-name-25 span,
+    .ward-name-26 span,
+    .ward-name-27 span,
+    .ward-name-28 span,
+    .ward-name-29 span,
+    .ward-name-30 span,
+    .ward-name-31 span,
+    .ward-name-32 span,
+    .ward-name-33 span,
+    .ward-name-34 span,
+    .ward-name-35 span,
+    .ward-name-36 span,
+    .ward-name-37 span,
+    .ward-name-38 span,
+    .ward-name-39 span,
+    .ward-name-40 span,
+    .ward-name-41 span,
+    .ward-name-42 span,
+    .ward-name-43 span {
+        /* top: 25px;
+        left: 20%; */
+        font-size: 7px;
+    }
+
+    .ward-name-1 span,
+    .ward-name-3 span,
+    .ward-name-5 span,
+    .ward-name-6 span,
+    .ward-name-7 span,
+    .ward-name-8 span,
+    .ward-name-11 span,
+    .ward-name-12 span,
+    .ward-name-13 span {
+        top: 20px;
+        left: 22%;
+    }
+
+    .ward-name-2 span {
+        top: 15px;
+    }
+
+    .ward-name-15 span {
+        top: 25px;
+    }
+
+    .ward-name-4 span,
+    .ward-name-9 span,
+    .ward-name-10 span,
+    .ward-name-14 span,
+    .ward-name-16 span {
+        top: 18px;
+        left: 14%;
+    }
+
+    .ward-name-18 span,
+    .ward-name-19 span {
+        top: 20px;
+        left: 30%;
+    }
+
+    .ward-name-20 span,
+    .ward-name-21 span,
+    .ward-name-22 span,
+    .ward-name-24 span,
+    .ward-name-25 span,
+    .ward-name-26 span,
+    .ward-name-27 span,
+    .ward-name-28 span,
+    .ward-name-31 span,
+    .ward-name-32 span,
+    .ward-name-37 span,
+    .ward-name-43 span {
+        top: 18px;
+    }
+
+    .ward-name-29 span {
+        top: 15px;
+    }
+
+    .ward-name-30 span {
+        top: 20px;
+    }
+
+    .ward-name-23 span,
+    .ward-name-33 span,
+    .ward-name-41 span,
+    .ward-name-42 span {
+        top: 21px;
+    }
+
+    .ward-name-34 span,
+    .ward-name-35 span,
+    .ward-name-40 span {
+        top: 25px;
+    }
+
+    .ward-name-38 span {
+        top: 23px;
+    }
+
+    .ward-name-36 span,
+    .ward-name-39 span {
+        top: 22px;
+        left: 10%;
+    }
+
+    .medical-ward-3,
+    .medical-ward-4,
+    .medical-ward-5 {
+        top: 80px;
+    }
+
+    .medical-ward-6,
+    .medical-ward-7,
+    .medical-ward-8 {
+        top: 110px;
+    }
+
+    .medical-ward-9,
+    .medical-ward-10,
+    .medical-ward-11 {
+        top: 140px;
+    }
+
+    .medical-ward-12,
+    .medical-ward-13 {
+        top: 170px;
+    }
+
+    .medical-ward-14,
+    .medical-ward-15,
+    .medical-ward-16 {
+        top: 200px;
+    }
+
+    .medical-ward-3,
+    .medical-ward-9,
+    .medical-ward-14 {
+        left: 5%;
+    }
+
+    .medical-ward-1,
+    .medical-ward-6,
+    .medical-ward-12 {
+        left: 19%;
+    }
+
+    .medical-ward-4,
+    .medical-ward-10,
+    .medical-ward-15 {
+        left: 33%;
+    }
+
+    .medical-ward-2,
+    .medical-ward-7,
+    .medical-ward-13 {
+        left: 47%;
+    }
+
+    .medical-ward-5,
+    .medical-ward-11,
+    .medical-ward-16 {
+        left: 61%;
+    }
+
+    .medical-ward-8 {
+        left: 75%;
+    }
+
+    .nye-wards-wrapper {
+        top: 200px;
+    }
+
+    .ward-name-17 span {
+        position: absolute;
+        top: 40px;
+        left: 16%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .nye-ward-2 {
+        left: -10%;
+        top: 100px;
+    }
+
+    .nye-ward-3 {
+        left: 62%;
+        top: 100px;
+    }
+
+    .surgical-wards-wrapper {
+        top: 400px;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-4 {
+        top: 80px;
+    }
+
+    .surgical-ward-5,
+    .surgical-ward-6 {
+        top: 110px;
+    }
+
+    .surgical-ward-7,
+    .surgical-ward-8 {
+        top: 140px;
+    }
+
+    .surgical-ward-9 {
+        top: 170px;
+    }
+
+    .surgical-ward-1,
+    .surgical-ward-5 {
+        left: 19%;
+    }
+
+    .surgical-ward-3,
+    .surgical-ward-7 {
+        left: 33%;
+    }
+
+    .surgical-ward-2,
+    .surgical-ward-6,
+    .surgical-ward-9 {
+        left: 47%;
+    }
+
+    .surgical-ward-4,
+    .surgical-ward-8 {
+        left: 61%;
+    }
+
+    .other-wards-wrapper {
+        top: 250px;
+    }
+    .other-ward-1 {
+        left: 29%;
+    }
+
+    .other-ward-1,
+    .other-ward-4 {
+        top: 80px;
+    }
+
+    .other-ward-3 {
+        top: 110px;
+    }
+
+    .other-ward-2,
+    .other-ward-3 {
+        left: 43%;
+    }
+
+    .other-ward-4 {
+        left: 57%;
+    }
+
+    .virtual-wards-wrapper {
+        top: 420px;
+    }
+
+    .virtual-ward-1,
+    .virtual-ward-4,
+    .virtual-ward-7 {
+        top: 125px;
+    }
+
+    .virtual-ward-10 {
+        top: 215px;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-6 {
+        top: 65px;
+    }
+
+    .virtual-ward-9 {
+        top: 155px;
+    }
+
+    .virtual-ward-11 {
+        top: 185px;
+        left: 62%;
+    }
+
+    .virtual-ward-1 {
+        left: 6%;
+    }
+
+    .virtual-ward-2 {
+        left: 20%;
+    }
+
+    .virtual-ward-3,
+    .virtual-ward-4 {
+        left: 34%;
+    }
+
+    .virtual-ward-5 {
+        left: 48%;
+    }
+
+    .virtual-ward-6,
+    .virtual-ward-7 {
+        left: 62%;
+    }
+
+    .virtual-ward-8 {
+        left: 76%;
+
+    }
+
+    .virtual-ward-9,
+    .virtual-ward-10 {
+        left: 48%;
+    }
+}

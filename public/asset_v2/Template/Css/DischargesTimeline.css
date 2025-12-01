@@ -1,0 +1,322 @@
+.timeline-modal .modal-dialog {
+    max-width: none;
+    margin: 0.5rem;
+}
+
+.card-discharge-timeline {
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+    background: var(--bg-grey-gradient);
+    padding: 0;
+}
+
+.medfit-text-danger {
+    color: #E30000;
+}
+
+.medfit-text-success {
+    color: #48AB3F;
+}
+
+.table-dischages-timeline,
+.table-medfit-timeline {
+    font-size: 12px;
+}
+
+.table-dischages-timeline thead tr,
+.table-medfit-timeline thead tr {
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+}
+
+.table-dischages-timeline thead tr th,
+.table-medfit-timeline thead tr th {
+    color: #fff;
+    font-weight: 500;
+}
+
+.table-dischages-timeline thead tr th,
+.table-medfit-timeline thead tr th,
+.table-dischages-timeline tbody tr td,
+.table-medfit-timeline tbody tr td {
+    border-right: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.table-dischages-timeline thead tr th:last-child,
+.table-medfit-timeline thead tr th:last-child,
+.table-dischages-timeline tbody tr td:last-child,
+.table-medfit-timeline tbody tr td:last-child {
+    border-right: none;
+}
+
+.table-dischages-timeline thead tr th:first-child,
+.table-medfit-timeline thead tr th:first-child {
+    border-radius: 7px 0 0px 0px;
+    text-align: start;
+}
+
+.table-dischages-timeline thead tr th:last-child,
+.table-medfit-timeline thead tr th:last-child {
+    border-radius: 0 7px 0px 0px;
+}
+
+
+.table-dischages-timeline tbody tr:nth-child(odd),
+.table-medfit-timeline tbody tr:nth-child(odd) {
+    background-color: #F2F2F3;
+}
+
+.table-dischages-timeline tbody tr:nth-child(even),
+.table-medfit-timeline tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .table-dischages-timeline tbody tr:last-child,
+    .table-medfit-timeline tbody tr:last-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .table-dischages-timeline tbody tr:last-child td:first-child,
+    .table-medfit-timeline tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 7px;
+    }
+
+    .table-dischages-timeline tbody tr:last-child td:last-child,
+    .table-medfit-timeline tbody tr:last-child td:last-child {
+        border-radius: 0 0 7px 0;
+    }
+
+    .card-discharge-timeline .responsiveTable td .tdBefore {
+        display: none;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline thead th:nth-child(4),
+    .card-discharge-timeline .table-dischages-timeline thead th:nth-child(5),
+    .card-discharge-timeline .table-dischages-timeline thead th:nth-child(6),
+    .card-discharge-timeline .table-dischages-timeline thead th:nth-child(7) {
+        text-align: center;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline,
+    .card-discharge-timeline .table-medfit-timeline {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline thead,
+    .card-discharge-timeline .table-dischages-timeline tbody tr,
+    .card-discharge-timeline .table-medfit-timeline thead,
+    .card-discharge-timeline .table-medfit-timeline tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline tbody,
+    .card-discharge-timeline .table-medfit-timeline tbody {
+        flex: 1 1 auto;
+        display: block;
+        height: 375px;
+        overflow-y: auto;
+    }
+
+    .card-discharge-timeline .table-medfit-timeline tbody {
+        height: 342px;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline tr,
+    .card-discharge-timeline .table-medfit-timeline tr {
+        border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+    }
+
+    .card-discharge-timeline .table-dischages-timeline tr:last-child,
+    .card-discharge-timeline .table-medfit-timeline tr:last-child {
+        border-bottom: none;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline th,
+    .card-discharge-timeline .table-dischages-timeline td {
+        width: 10%;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline th:nth-child(1),
+    .card-discharge-timeline .table-dischages-timeline td:nth-child(1) {
+        width: 12%;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline th:nth-child(2),
+    .card-discharge-timeline .table-dischages-timeline th:nth-child(3),
+    .card-discharge-timeline .table-dischages-timeline td:nth-child(2),
+    .card-discharge-timeline .table-dischages-timeline td:nth-child(3) {
+        width: 24%;
+    }
+
+    .card-discharge-timeline {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card-discharge-timeline .table-medfit-timeline th:nth-child(1),
+    .card-discharge-timeline .table-medfit-timeline th:nth-child(3),
+    .card-discharge-timeline .table-medfit-timeline td:nth-child(1),
+    .card-discharge-timeline .table-medfit-timeline td:nth-child(3) {
+        width: 35%;
+    }
+
+    .card-discharge-timeline .table-medfit-timeline th:nth-child(2),
+    .card-discharge-timeline .table-medfit-timeline td:nth-child(2) {
+        width: 30%;
+        text-align: center;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline tbody::-webkit-scrollbar,
+    .card-discharge-timeline .table-medfit-timeline tbody::-webkit-scrollbar {
+        width: 3px;
+    }
+}
+
+@media (max-width:1399px) and (min-width:1200px) {
+
+    .card-discharge-timeline .table-dischages-timeline th,
+    .card-discharge-timeline .table-dischages-timeline td {
+        width: 8%;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline th:nth-child(1),
+    .card-discharge-timeline .table-dischages-timeline td:nth-child(1) {
+        width: 14%;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline th:nth-child(2),
+    .card-discharge-timeline .table-dischages-timeline th:nth-child(3),
+    .card-discharge-timeline .table-dischages-timeline td:nth-child(2),
+    .card-discharge-timeline .table-dischages-timeline td:nth-child(3) {
+        width: 23%;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline th:nth-child(6),
+    .card-discharge-timeline .table-dischages-timeline td:nth-child(6) {
+        width: 13%;
+    }
+
+    .card-discharge-timeline .table-dischages-timeline th:nth-child(7),
+    .card-discharge-timeline .table-dischages-timeline td:nth-child(7) {
+        width: 11%;
+    }
+}
+
+@media (max-width:1025px) {
+
+    .card-discharge-timeline .responsiveTable td .tdBefore {
+        white-space: nowrap;
+    }
+
+    .card-discharge-timeline .responsiveTable tbody tr {
+        margin-bottom: 5px;
+    }
+
+    .table-dischages-timeline tbody tr:nth-child(odd),
+    .table-medfit-timeline tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .table-dischages-timeline tbody tr:nth-child(even),
+    .table-medfit-timeline tbody tr:nth-child(even) {
+        background-color: #CEDDF5;
+    }
+
+    .table-dischages-timeline thead tr th:first-child,
+    .table-dischages-timeline tbody tr td:first-child,
+    .table-medfit-timeline thead tr th:first-child,
+    .table-medfit-timeline tbody tr td:first-child {
+        width: 20%;
+    }
+
+    .card-discharge-timeline .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .card-discharge-timeline .responsiveTable td.pivoted {
+        border-right: none;
+    }
+
+    .card-discharge-timeline {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .card-discharge-timeline.medfit>div {
+        border-radius: 7px;
+        box-shadow: 0px 3px 6px #00000038;
+        background: var(--bg-grey-gradient);
+        padding: 0;
+        margin-bottom: .5rem;
+    }
+
+    .card-discharge-timeline .responsiveTable tbody tr {
+        border-radius: 6px;
+    }
+
+    .card-discharge-timeline .responsiveTable td.pivoted:nth-child(1) {
+        border-radius: 6px 0 0 0;
+    }
+
+    .card-discharge-timeline.medfit .responsiveTable td.pivoted:nth-child(1) {
+        border-radius: 6px 0 0 6px;
+    }
+}
+
+@media (max-width:991px) {
+
+    .table-dischages-timeline thead tr th:first-child,
+    .table-dischages-timeline tbody tr td:first-child,
+    .table-medfit-timeline thead tr th:first-child,
+    .table-medfit-timeline tbody tr td:first-child {
+        width: 25%;
+    }
+
+    .card-discharge-timeline .responsiveTable td.pivoted:nth-child(5) {
+        border-radius: 0 0 0 6px;
+    }
+
+    .card-discharge-timeline .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .card-discharge-timeline .responsiveTable td.pivoted {
+        width: 50%;
+    }
+
+    .card-discharge-timeline .responsiveTable tbody tr,
+    .card-discharge-timeline.medfit>div {
+        border-radius: 4px;
+    }
+
+    .card-discharge-timeline .responsiveTable td.pivoted:nth-child(5),
+    .card-discharge-timeline .responsiveTable td.pivoted:nth-child(6) {
+        border-radius: 0;
+    }
+
+    .card-discharge-timeline .responsiveTable td.pivoted:nth-child(2) {
+        border-radius: 0 4px 0 0;
+    }
+
+    .card-discharge-timeline.medfit .responsiveTable td.pivoted:nth-child(3),
+    .card-discharge-timeline .responsiveTable td.pivoted:nth-child(7) {
+        border-radius: 0 0 0 4px;
+    }
+
+}

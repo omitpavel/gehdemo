@@ -1,0 +1,48 @@
+
+#flags_selected_data_val_tab2_input {
+    border-radius: 8px;
+    width:100%;
+    background: white;
+    min-height: 35px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+#flags_selected_data_val_tab2_itemList {
+    width: 388px;
+    top: 20%;
+}
+
+#flags_selected_data_val_tab2_itemList li {
+    width: 33.33%;
+    float: left;
+    background-color: #337ab7;
+    color: #FFFFFF;
+}
+
+.form-group .selectric-wrapper {
+    display: none;
+}
+
+.search_flag_data {
+    min-height: 40px;
+}
+
+.multiselect-wrapper {
+    width: 100% !important;
+}
+
+
+@media (max-width:1200px) {
+    .search_flag_data {
+        width: 100%
+    }
+}
+
+@media (max-width:767px) {
+    #flags_selected_data_val_tab2_input {
+        border-radius: 4px;
+    }
+}
+

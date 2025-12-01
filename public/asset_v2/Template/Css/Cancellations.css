@@ -1,0 +1,156 @@
+  .sidebar-menu .nav-item .nav-link,
+  .sidebar-menu-2 .nav-item .nav-link {
+      font-size: 12px;
+      padding: 0 10px;
+  }
+
+  .sidebar-menu .icon-next .relative-svg {
+      position: relative;
+      rotate: 0deg;
+      margin: 0;
+  }
+
+  .sidebar-menu .nav-item.icon-next .nav-link.active {
+      padding: 0 6px;
+  }
+
+  .sidebar-menu .nav-item.icon-next .nav-link.active svg,
+  #sidebar-custom .sidebar-menu .nav-link.active .icon-next svg {
+      right: 3px;
+      bottom: 3px;
+  }
+
+  .btn-bg {
+      background: linear-gradient(180deg, rgba(253, 253, 254, 1) 50%, rgba(236, 236, 237, 1) 100%);
+      border-radius: 8px;
+      box-shadow: 0px 3px 6px #00000038;
+      font-weight: 400;
+      padding: 0.5rem 1.5rem;
+      min-height: 40px;
+      min-width: 125px;
+  }
+
+  .form-select {
+      min-height: 40px;
+  }
+
+  .cancellations-details {
+      border-radius: 7px;
+      box-shadow: 0px 3px 6px #00000038;
+  }
+
+  .table-cancellation {
+      font-size: 12px;
+      margin-bottom: 0.5rem;
+  }
+
+  .table-cancellation th {
+      background-color: #535353;
+      color: #fff;
+      font-weight: 500;
+      box-shadow: 0px 3px 6px #00000038;
+      padding: 8px 20px;
+
+  }
+
+  .table-cancellation tbody tr td {
+      padding: 8px 20px;
+  }
+
+  .table-cancellation tbody tr:last-child td:first-child {
+      border-radius: 0 0 0 7px;
+  }
+
+  .table-cancellation tbody tr:last-child td:last-child {
+      border-radius: 0 0 7px;
+  }
+
+  .table-cancellation th:first-child {
+      border-radius: 7px 0 0 0;
+  }
+
+  .table-cancellation th:last-child {
+      border-radius: 0 7px 0 0;
+  }
+
+  /* Media Query */
+
+  @media (min-width:1026px) {
+      .table-cancellation tbody tr:nth-child(odd) {
+          background-color: #F8F8F8;
+      }
+
+      .table-cancellation tbody tr:nth-child(even) {
+          background-color: #FFFFFF;
+      }
+  }
+
+  @media (max-width:1025px) {
+      .responsiveTable thead {
+          display: none;
+      }
+
+      .responsiveTable tbody tr {
+          margin-bottom: 5px;
+      }
+
+      .responsiveTable td {
+          min-height: 60px;
+      }
+
+      .cancellations-details {
+          box-shadow: none;
+      }
+
+      .responsiveTable td.pivoted:nth-child(1) {
+          border-radius: 6px 0 0 6px;
+      }
+
+      .responsiveTable td.pivoted:nth-child(5) {
+          border-radius: 0 6px 6px 0;
+      }
+
+      .table-cancellation tbody tr:last-child td:first-child {
+          border-radius: 6px 0 0 0;
+      }
+
+      .responsiveTable td.pivoted:nth-child(6),
+      .table-cancellation tbody tr:last-child td:last-child {
+          border-radius: 0 0 0 6px;
+      }
+  }
+
+  @media (max-width:991px) {
+      .table-cancellation tbody tr td:nth-child(4) {
+          border-right: none;
+      }
+
+      .responsiveTable td.pivoted {
+          padding: 5px 10px !important;
+      }
+
+      .responsiveTable td.pivoted:nth-child(1) {
+          border-radius: 6px 0 0 0;
+      }
+
+      .responsiveTable td.pivoted:nth-child(5),
+      .responsiveTable td.pivoted:nth-child(6) {
+          border-radius: 0;
+      }
+
+  }
+
+  @media (max-width:767px) {
+
+      .sm-width button {
+          width: 100%;
+      }
+
+      .btn-bg {
+          border-radius: 4px;
+      }
+
+      .responsiveTable td.pivoted:nth-child(9) {
+          border-radius: 0 0 0 4px;
+      }
+  }

@@ -1,0 +1,30 @@
+.theatre_filter_title {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #CCCCCC;
+    width: 100%;
+    padding: 10px 10px;
+    line-height: 25px;
+}
+
+.theatre_filter_save_section {
+    border-top: 1px solid #CCCCCC;
+    width: 100%;
+    padding: 10px 0px;
+    line-height: 25px;
+}
+
+
+.select_button{
+    background: linear-gradient(to bottom, #1152A6 0%, #4175B8 50%, #0E4285 100%);
+    padding: 0.25rem 0.5rem;
+    box-shadow: 3px 4px 6px rgba(85, 85, 85, 0.4);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}

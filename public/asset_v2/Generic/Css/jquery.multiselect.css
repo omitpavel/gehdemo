@@ -1,0 +1,181 @@
+.ms-options-wrap {
+    position: relative;
+}
+
+.ms-options-wrap,
+.ms-options-wrap * {
+    box-sizing: border-box;
+}
+
+.ms-options-wrap>button:focus,
+.ms-options-wrap>button {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    padding: .375rem 2.25rem .375rem .75rem;
+    margin-top: 1px;
+    font-size: 14px;
+    color: #212529;
+    outline-offset: -2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 7px;
+    min-height: 40px;
+}
+
+.ms-options-wrap>button[disabled] {
+    background-color: #e5e9ed;
+    color: #808080;
+    opacity: 0.6;
+}
+
+.ms-options-wrap>button:after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    border: 6px solid rgba(0, 0, 0, 0);
+    border-top-color: #999;
+    margin-top: -3px;
+}
+
+.ms-options-wrap.ms-has-selections>button {
+    color: #333;
+}
+
+.ms-options-wrap>.ms-options {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    background: white;
+    z-index: 2000;
+    border: 1px solid #aaa;
+    overflow: auto;
+    visibility: hidden;
+}
+
+.ms-options-wrap.ms-active>.ms-options {
+    visibility: visible
+}
+
+.ms-options-wrap>.ms-options>.ms-search input {
+    width: 100%;
+    padding: 4px 5px;
+    border: none;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+    outline: none;
+}
+
+.ms-options-wrap>.ms-options>.no-result-message {
+    padding: 4px 5px;
+    display: none;
+}
+
+.ms-options-wrap>.ms-options .ms-selectall {
+    display: inline-block;
+    font-size: .9em;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.ms-options-wrap>.ms-options .ms-selectall:hover {
+    text-decoration: underline;
+}
+
+.ms-options-wrap>.ms-options>.ms-selectall.global {
+    margin: 4px 5px;
+}
+
+.ms-options-wrap>.ms-options>ul,
+.ms-options-wrap>.ms-options>ul>li.optgroup ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ms-options-wrap>.ms-options>ul li.ms-hidden {
+    display: none;
+}
+
+.ms-options-wrap>.ms-options>ul li:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+.ms-options-wrap>.ms-options>ul li:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+.ms-options-wrap>.ms-options>ul>li.optgroup {
+    padding: 5px;
+}
+
+.ms-options-wrap>.ms-options>ul>li.optgroup+li.optgroup {
+    border-top: 1px solid #aaa;
+}
+
+.ms-options-wrap>.ms-options>ul>li.optgroup .label {
+    display: block;
+    padding: 5px 0 0 0;
+    font-weight: bold;
+}
+
+.ms-options-wrap>.ms-options>ul label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 6px 4px 4px 25px;
+    border-bottom: 0.5px solid rgb(128, 128, 128, .5);
+    font-size: 12px;
+}
+
+.ms-options-wrap>.ms-options>ul li:first-child label {
+    border-top: 0.5px solid rgb(128, 128, 128, .5);
+}
+
+.ms-options-wrap>.ms-options>ul li:last-child label {
+    border-bottom: none;
+}
+
+.ms-options-wrap>.ms-options.checkbox-autofit>ul label,
+.ms-options-wrap>.ms-options.hide-checkbox>ul label {
+    padding: 4px;
+}
+
+.ms-options-wrap>.ms-options>ul label.focused,
+.ms-options-wrap>.ms-options>ul label:hover {
+    background-color: #efefef;
+    border-color: #999;
+}
+
+.ms-options-wrap>.ms-options>ul li.selected label {
+    background-color: #efefef;
+}
+
+.ms-options-wrap>.ms-options>ul input[type="checkbox"] {
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: 6px;
+    top: 8px;
+}
+
+.ms-options-wrap>.ms-options.hide-checkbox>ul input[type="checkbox"] {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media(max-width:767px) {
+    .ms-options-wrap>button {
+        border-radius: 4px;
+    }
+}

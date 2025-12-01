@@ -1,0 +1,2385 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLm21llEA.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype')
+}
+
+.popBold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700
+}
+
+.popReg {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+.popLight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    outline: none !important
+}
+
+a:hover {
+    color: #17539a
+}
+
+img {
+    max-width: 100%
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+li {
+    margin: 0;
+    padding: 0
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font-size: 14px
+}
+
+table {
+    border-collapse: collapse
+}
+
+.aneDashboardWrap .iboxane_header {
+    padding-top: 5px;
+    padding-bottom: 0px
+}
+
+.loaderWrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s ease
+}
+
+.loaderWrap.show {
+    visibility: visible;
+    pointer-events: all;
+    opacity: .7
+}
+
+.loaderWrap.hide {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0
+}
+
+.loaderWrapInner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 150px);
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s ease
+}
+
+.loaderWrapInner.show {
+    visibility: visible;
+    pointer-events: all;
+    opacity: .7
+}
+
+.loaderWrapInner.hide {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0
+}
+
+.subnavTrigger {
+    position: relative
+}
+
+.subnavTrigger .subNavWrap {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 150px;
+    right: 0;
+    top: 100%;
+    transform: translateY(10px);
+    transition: all .3s ease;
+    z-index: 5
+}
+
+.subnavTrigger .subNavWrap ul {
+    width: 100%;
+    list-style: none
+}
+
+.subnavTrigger .subNavWrap ul li {
+    width: 100%;
+    padding: 8px 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border-bottom: solid 1px #ddd;
+    transition: all .3s ease
+}
+
+.subnavTrigger .subNavWrap ul li:hover {
+    cursor: pointer;
+    background-color: #f1f1f1
+}
+
+.subnavTrigger .subNavWrap ul li:last-child {
+    border-bottom: none
+}
+
+.subnavTrigger:hover .subNavWrap {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0)
+}
+
+.iboxane_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0px
+}
+
+.iboxane_header .logoWrap {
+    margin-right: 20px
+}
+
+.iboxane_header .logowithtextSec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.iboxane_header .logowithtextSec>a {
+    margin-right: 30px;
+    border-right: solid 1px #ddd;
+    padding-right: 30px
+}
+
+.iboxane_header .logowithtextSec .headerBesideTxt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.iboxane_header .rgt_nav_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.iboxane_header .rgt_nav_wrap .addAttBtn {
+    background: #a62218;
+    background: linear-gradient(0deg, #a62218 0%, #f44336 100%);
+    color: #fff;
+    padding: 8px 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    outline: none
+}
+
+.iboxane_header .rgt_nav_wrap .opelData {
+    padding: 8px 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #ddd;
+    border-radius: 3px;
+    color: #fff
+}
+
+.iboxane_header .rgt_nav_wrap .opel1 {
+    background: #005e2b;
+    background: linear-gradient(0deg, #005e2b 0%, #00b050 94%)
+}
+
+.iboxane_header .rgt_nav_wrap .opel2 {
+    background: #8b6800;
+    background: linear-gradient(0deg, #8b6800 0%, #ffbf00 94%)
+}
+
+.iboxane_header .rgt_nav_wrap .opel3 {
+    background: #6b0700;
+    background: linear-gradient(0deg, #6b0700 0%, #f44336 94%)
+}
+
+.iboxane_header .rgt_nav_wrap .opel4 {
+    background: #444;
+    background: linear-gradient(0deg, #444 0%, #000 94%)
+}
+
+.iboxane_header .rgt_nav_wrap button {
+    background-color: "#0075be";
+    color: #fbfbfb;
+    border: solid 1px #b3f3f4;
+    transition: all .3s ease
+}
+
+.iboxane_header .rgt_nav_wrap button:hover {
+    background-color: #f44336
+}
+
+.Ibox_AEAdminApp_wrap {
+    padding: 0
+}
+
+.logoWrap {
+    width: 110px
+}
+
+.IboxTpMtrRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border-bottom: solid 1px #e8e8e8;
+    padding-bottom: 5px;
+    margin-bottom: 5px
+}
+
+.IboxTpMtrRow .box {
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+    height: 100%
+}
+
+.IboxTpMtrRow .ConvandbreachBx {
+    width: 17%
+}
+
+.IboxTpMtrRow .PerformancemeterBx {
+    width: 40%
+}
+
+.IboxTpMtrRow .PerformancTblBx {
+    width: 43%;
+    padding-left: 20px
+}
+
+.IboxTpMtrRow .PerformancTblBx table {
+    width: 100%
+}
+
+.IboxTpMtrRow .PerformancTblBx table thead tr th {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 0px
+}
+
+.IboxTpMtrRow .PerformancTblBx table tbody tr td {
+    font-size: 14px;
+    padding: 0px 2px
+}
+
+.IboxTpMtrRow .PerformancTblBx table tbody tr:nth-child(odd) {
+    background-color: #e8e8e8
+}
+
+.IboxConvandBreaches {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around
+}
+
+.IboxConvandBreaches div {
+    padding: 12px;
+    font-size: 24px;
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-weight: 700
+}
+
+.IboxConvandBreaches span {
+    display: block;
+    font-weight: normal;
+    font-size: 18px
+}
+
+.IboxConvandBreaches .convertion {
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    width: 175px;
+    margin-left: 0px
+}
+
+.IboxConvandBreaches .breaches * {
+    font-weight: 700
+}
+
+.IboxConvandBreaches .breaches.resView {
+    display: none
+}
+
+.performanceMtrWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.performanceMtrWrap .meterBx {
+    width: 34%
+}
+
+.performanceMtrWrap .performBox {
+    width: 22%;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-weight: 700
+}
+
+.performanceMtrWrap .performBox span {
+    display: block;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.perform_listWrap {
+    width: 44%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+.perform_listWrap ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    float: left;
+    padding: 0px;
+    border: solid 1px #ddd;
+    border-radius: 5px
+}
+
+.perform_listWrap ul li {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    background-color: #e8e8e8;
+    border-radius: 0px;
+    padding: 4px 5px;
+    box-sizing: border-box;
+    margin-bottom: 1px;
+    float: left
+}
+
+.perform_listWrap ul li span {
+    display: block;
+    float: left;
+    font-size: 13px;
+    padding: 0px 4px;
+    box-sizing: border-box
+}
+
+.perform_listWrap ul li span:first-child {
+    text-align: left;
+    width: 70%
+}
+
+.perform_listWrap ul li span:nth-child(even) {
+    width: 30%
+}
+
+.perform_listWrap ul li .perTxt {
+    font-weight: 700
+}
+
+.perform_listWrap ul li:first-child {
+    background-color: transparent;
+    font-weight: bold
+}
+
+.perform_listWrap ul li:last-child {
+    margin-bottom: 0px
+}
+
+.padmiDataTablewrap {
+    position: relative;
+    text-align: center
+}
+
+.padmiDataTablewrap .BoxHead {
+    padding: 3px 60px;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+    display: inline-block;
+    font-size: 14px
+}
+
+.padmiDataTablewrap .BoxHead .reactIco {
+    margin-right: 10px;
+    vertical-align: middle
+}
+
+.padmiDataTablewrap ul {
+    list-style: none;
+    margin: 0px;
+    padding: 20px 0px 6px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e8e8e8;
+    width: 100%;
+    border-radius: 3px;
+    top: -15px;
+    position: relative;
+    z-index: 1
+}
+
+.padmiDataTablewrap ul li {
+    width: 33.33%;
+    padding: 3px;
+    border-right: solid 1px #a9a9a9;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 0 1px -1px #ffffff
+}
+
+.padmiDataTablewrap ul li span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+.padmiDataTablewrap ul li:last-child {
+    border-right: none
+}
+
+ul.timelapseTbl {
+    padding-top: 14px;
+    margin: 0px;
+    border-radius: 5px;
+    display: block;
+    list-style: none;
+    width: 100%;
+    float: left;
+    overflow: hidden
+}
+
+ul.timelapseTbl li {
+    width: 20%;
+    float: left;
+    text-align: center
+}
+
+ul.timelapseTbl li span.timeHd {
+    font-size: 10px;
+    padding: 10px 0px;
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700
+}
+
+ul.timelapseTbl li span {
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    padding: 8px 12px
+}
+
+ul.timelapseTbl li.col1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+    background-color: #2fb07d
+}
+
+ul.timelapseTbl li.col1 span.timeHd {
+    background-color: #00b060
+}
+
+ul.timelapseTbl li.col2 {
+    background-color: #ffe44a
+}
+
+ul.timelapseTbl li.col2 span.timeHd {
+    background-color: #ffc000
+}
+
+ul.timelapseTbl li.col3 {
+    background-color: #fc8432
+}
+
+ul.timelapseTbl li.col3 span.timeHd {
+    background-color: #fc6600
+}
+
+ul.timelapseTbl li.col4 {
+    background-color: #e53935
+}
+
+ul.timelapseTbl li.col4 span.timeHd {
+    background-color: #b71c1c
+}
+
+ul.timelapseTbl li.col5 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    background-color: #9450c2
+}
+
+ul.timelapseTbl li.col5 span.timeHd {
+    background-color: #7030a0
+}
+
+.patientRecListwrap {
+    width: 100%;
+    float: left;
+    padding: 10px 15px;
+    box-shadow: 0 0 7px 0 #c5c5c5;
+    border-radius: 5px
+}
+
+.patientRecListwrap .headArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700
+}
+
+.patientRecListwrap .headArea>span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px
+}
+
+.patientRecListwrap ul.listAreaBody {
+    list-style: none;
+    width: 100%;
+    display: inline-block
+}
+
+.patientRecListwrap ul.listAreaBody li {
+    padding: 2px 0px;
+    border-bottom: solid 1px #eee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px
+}
+
+.patientRecListwrap ul.listAreaBody li span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.patientRecListwrap ul.listAreaBody li.noPatientDataList {
+    text-align: center;
+    background-color: #f2f2f2;
+    border-bottom: none
+}
+
+.patientRecListwrap ul.listAreaBody li.noPatientDataList>div {
+    background-color: transparent;
+    text-align: center;
+    width: 100%
+}
+
+.patientRecListwrap ul.listAreaBody li:last-child {
+    border-bottom: none
+}
+
+.DtaSecWrapper {
+    width: 100%;
+    float: left
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list {
+    list-style: none;
+    width: 100%;
+    float: left;
+    border: none;
+    margin-bottom: 5px;
+    padding-top: 12px
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li {
+    float: left;
+    width: 33.33%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    border: none;
+    border: solid .5px #fff
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li a {
+    padding: 0px
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .col1 {
+    background-color: #d32f2f
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .col11 {
+    background-color: #ef5350
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .col2 {
+    background-color: #c2185b
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .col22 {
+    background-color: #e91e63
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .col3 {
+    background-color: #d32f2f
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .col33 {
+    background-color: #ef5350
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li div {
+    width: 100%;
+    float: left
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li div>div {
+    padding: 6px
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li div span {
+    display: block
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li div:last-child {
+    font-weight: normal;
+    font-size: 11px
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .DTAHeadTP {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    position: relative;
+    color: #fff
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .DTAHeadTP:hover {
+    cursor: pointer
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .DTAHeadTP .handClickMenIco {
+    position: absolute;
+    right: 6px;
+    bottom: 18px
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .DTAHeadTP .headTP {
+    background-color: #08516d
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .DTAHeadTP .headBTM {
+    background-color: #0d6a8e;
+    position: relative;
+    min-height: 44px
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .DTAHeadTP .headBTM span.circle {
+    position: absolute;
+    left: 12px;
+    top: 9px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .DTAHeadTP .headBTM span.circle.grey {
+    background-color: grey
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li .DTAHeadTP .headBTM span.circle.blue {
+    background-color: #17539a
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li.react-tabs__tab--selected .headTP {
+    background-color: #0091c9 !important
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li.react-tabs__tab--selected .headBTM {
+    background-color: #3cb7e6 !important
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li>a.active .headTP {
+    background-color: #0091c9 !important
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li>a.active .headBTM {
+    background-color: #3cb7e6 !important
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li.col1 .topHd {
+    background-color: #ff0000
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li.col2 .topHd {
+    background-color: #8b1e42
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden
+}
+
+.DtaSecWrapper ul.react-tabs__tab-list li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden
+}
+
+.datalistwrap {
+    width: 100%;
+    float: left;
+    background-color: #e8e8e8;
+    padding: 8px
+}
+
+.datalistwrap .headersec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #fff;
+    padding: 8px 10px;
+    margin-bottom: 5px
+}
+
+.datalistwrap ul.datalist {
+    list-style: none;
+    width: 100%;
+    float: left;
+    margin: 0px
+}
+
+.datalistwrap ul.datalist li {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+.datalistwrap ul.datalist li div.tiemsec {
+    width: 100%;
+    padding: 10px 0px
+}
+
+.datalistwrap ul.datalist li div.tiemsec span {
+    display: block
+}
+
+.datalistwrap ul.datalist li div.col1 {
+    background-color: #08516d;
+    color: #fff
+}
+
+.datalistwrap ul.datalist li .listRowDatalist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #b3b3b3;
+    box-shadow: 0 1px 0 0 #cecaca
+}
+
+.listRowDatalistWrap {
+    position: relative;
+    background-color: #fff
+}
+
+.addCmntTrigger {
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 10px
+}
+
+.addCmntTrigger {
+    cursor: pointer
+}
+
+.rodalOverlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(7, 94, 134, 0.47);
+    transition: all .3s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 995;
+    overflow-x: auto
+}
+
+.rodalOverlay:focus {
+    outline: none
+}
+
+.rodalOverlay .rodalModal {
+    min-height: 300px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    margin-top: -100px;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease
+}
+
+.rodalOverlay .rodalModal button {
+    font-size: 12px
+}
+
+.rodalOverlay .rodalModal .rodal-dialog {
+    width: 100% !important
+}
+
+.rodalOverlay .rodalModal .rodal-dialog .RodalHead {
+    padding: 15px 10px;
+    width: 100%;
+    background-color: #13bec1;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    position: relative
+}
+
+.rodalOverlay .rodalModal .rodal-dialog .RodalHead .closeModal {
+    position: absolute;
+    right: 20px;
+    transition: all .3s ease
+}
+
+.rodalOverlay .rodalModal .rodal-dialog .RodalHead .closeModal:hover {
+    cursor: pointer;
+    color: #000
+}
+
+.rodalOverlay .rodalModal .rodal-dialog .RodalComment {
+    width: 100%;
+    float: left;
+    padding: 15px 5px
+}
+
+.rodalOverlay .rodalModal.AddCommentModal {
+    width: 30%
+}
+
+.rodalModal.EDStatusModal {
+    width: 100%
+}
+
+.rodalModal.EDStatusModal textarea {
+    height: 150px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 14px;
+    border: solid 1px #ddd;
+    outline: none
+}
+
+.rodalModal.EDStatusModal textarea:focus {
+    outline: none;
+    box-shadow: none
+}
+
+.opelOptSelboxWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
+.rodalOverlay.show {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.rodalOverlay.show .rodalModal {
+    margin-top: 0px;
+    transform: translate(-50%, -50%)
+}
+
+.AddCommentModal {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+.AddCommentModal textarea {
+    height: 150px !important;
+    font-size: 14px
+}
+
+.graphTotsec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.graphTotsec .indiCountText {
+    width: 70%
+}
+
+.graphTotsec .indiCountText span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    float: left;
+    padding: 0px 3px
+}
+
+.graphTotsec .graphTotbox {
+    background-color: #ddd;
+    width: 30%;
+    padding: 5px 0px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #333
+}
+
+.graphTotsec .graphTotbox span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.graphWrap {
+    width: 100%
+}
+
+.DTAText {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    transform: translateY(20px)
+}
+
+.DTAText.in {
+    fill: #000
+}
+
+.DTAText.out {
+    fill: #000
+}
+
+.barNibTxt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px
+}
+
+.limitLine {
+    fill: none;
+    stroke: #fc0303;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    transform: translateY(20px)
+}
+
+.limitLine_grid {
+    stroke: #000;
+    stroke-dasharray: 2;
+    stroke-dashoffset: 0
+}
+
+.DtaSvgGraph {
+    margin-top: -5px;
+    vertical-align: top;
+    overflow-y: visible
+}
+
+.graphMajResTxt {
+    fill: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 10px
+}
+
+.circleDot {
+    transform: translateY(20px)
+}
+
+.foHourTxtarea {
+    fill: #000
+}
+
+.foHourTxt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px
+}
+
+g.x_axis_grid {
+    position: relative;
+    z-index: 0
+}
+
+g.x_axis_grid .domain {
+    opacity: 0
+}
+
+g.x_axis_grid .tick line {
+    stroke-dasharray: 2;
+    stroke-dashoffset: 0
+}
+
+.GraphBarG {
+    position: relative;
+    z-index: 10
+}
+
+.EDStatusModal .edstatusTabList {
+    margin-bottom: 20px
+}
+
+.EDStatusModal .edstatusTabList li a {
+    color: #333
+}
+
+.EDStatusModal .OpelBtnGroup {
+    width: 100%;
+    float: left;
+    margin-bottom: 14px
+}
+
+.EDStatusModal .OpelBtnGroup button {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 23px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: none;
+    justify-content: space-between;
+    border: none
+}
+
+.EDStatusModal .OpelBtnGroup button:focus {
+    outline: none;
+    box-shadow: none
+}
+
+.EDStatusModal .OpelBtnGroup button .tickIcowrap {
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .3s ease
+}
+
+.EDStatusModal .OpelBtnGroup button.active {
+    box-shadow: none
+}
+
+.EDStatusModal .OpelBtnGroup button.active .tickIcowrap {
+    display: inline-block;
+    transition: all .3s ease
+}
+
+.EDStatusModal .OpelBtnGroup button.active:focus {
+    outline: none;
+    box-shadow: none !important;
+    border: none
+}
+
+.EDStatusModal .OpelBtnGroup .OpelSelBadge.cl1 button {
+    background-color: #00b050
+}
+
+.EDStatusModal .OpelBtnGroup .OpelSelBadge.cl1 .tickICO {
+    color: #00b050
+}
+
+.EDStatusModal .OpelBtnGroup .OpelSelBadge.cl2 button {
+    background-color: #ffbf00
+}
+
+.EDStatusModal .OpelBtnGroup .OpelSelBadge.cl2 .tickICO {
+    color: #ffbf00
+}
+
+.EDStatusModal .OpelBtnGroup .OpelSelBadge.cl3 button {
+    background-color: #f44336
+}
+
+.EDStatusModal .OpelBtnGroup .OpelSelBadge.cl3 .tickICO {
+    color: #f44336
+}
+
+.EDStatusModal .OpelBtnGroup .OpelSelBadge.cl4 button {
+    background-color: #000000
+}
+
+.EDStatusModal .OpelBtnGroup .OpelSelBadge.cl4 .tickICO {
+    color: #000000
+}
+
+.EDStatusModal .OpelSelBadge {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px
+}
+
+.edStatusRow {
+    padding: 20px 15px 5px 15px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.edStatusRow>div {
+    margin-right: 10px
+}
+
+.btn-full {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.edstatusModalFtrBtnWrap {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.edstatusModalFtrBtnWrap button {
+    padding: 0px 18px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #555;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px !important;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.edstatusModalFtrBtnWrap button:after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.edstatusModalFtrBtnWrap button svg {
+    margin-right: 6px;
+    color: #555
+}
+
+.edstatusModalFtrBtnWrap button:hover {
+    background-color: transparent;
+    color: #0091c9
+}
+
+.edstatusModalFtrBtnWrap button:hover svg {
+    color: #0091c9
+}
+
+.edstatusModalFtrBtnWrap button:focus {
+    background-color: transparent !important;
+    outline: none;
+    box-shadow: none !important
+}
+
+.edstatusModalFtrBtnWrap button:active {
+    background-color: transparent !important;
+    outline: none;
+    box-shadow: none !important
+}
+
+.edstatusModalFtrBtnWrap button:last-child:after {
+    display: none
+}
+
+.bm-burger-bars-hover {
+    background: #a90000
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+    color: #fff
+}
+
+.bm-cross {
+    background: #fff
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 0
+}
+
+.bm-menu {
+    background: #1f2f38;
+    padding: 20px 10px 10px 10px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+.bm-morph-shape {
+    fill: #fff
+}
+
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 10px
+}
+
+.bm-item-list a i {
+    margin-right: 10px
+}
+
+.bm-item {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 0px;
+    transition: all .3s ease
+}
+
+.bm-item svg {
+    margin-right: 8px
+}
+
+.bm-item:last-child {
+    border: none
+}
+
+.bm-item:hover {
+    padding-left: 5px
+}
+
+.bm-overlay {
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.bm-item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%
+}
+
+.bm-item-list .bm-item {
+    width: 100%
+}
+
+.bm-burger-button {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    top: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 11px;
+    z-index: 994 !important;
+    box-shadow: 0 0 8px -3px #555;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center center;
+    outline: none
+}
+
+.bm-burger-button>span {
+    width: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%
+}
+
+.bm-burger-button>span .bm-burger-bars {
+    width: 100%;
+    height: 3px !important;
+    margin-bottom: 3px;
+    background-color: #fff;
+    border: solid 2px #000;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    display: block
+}
+
+.bm-burger-button>span .bm-burger-bars:last-child {
+    margin-bottom: 0px
+}
+
+.ResponsiveNav {
+    display: none
+}
+
+.ResponsiveNav .logoWrap.bm-item {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none
+}
+
+.ResponsiveNav .resNavlist {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.ResponsiveNav .resNavlist li {
+    width: 100%;
+    margin-bottom: 0px;
+    border-bottom: solid 1px #f1f1f1;
+    padding: 15px 0px;
+    display: flex
+}
+
+.ResponsiveNav .resNavlist li>a {
+    display: flex
+}
+
+.ResponsiveNav .resNavlist li .iconWrap {
+    color: #333;
+    margin-right: 10px
+}
+
+.ResponsiveNav .resNavlist li .linkTxt {
+    color: #333
+}
+
+.ResponsiveNav .resNavlist li.subnavTrigger .subNavWrap {
+    left: 20px;
+    top: 100%
+}
+
+.ResponsiveNav .resNavlist li.subnavTrigger .subNavWrap>ul {
+    padding: 10px 0px
+}
+
+.ResponsiveNav .resNavlist li.subnavTrigger .subNavWrap>ul>li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 0px;
+    background-color: transparent;
+    border: none;
+    font-size: 12px
+}
+
+.ResponsiveNav .resNavlist li.subnavTrigger .subNavWrap>ul>li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #bbb;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.ResponsiveNav .resNavlist li.subnavTrigger .subNavWrap>ul>li a {
+    font-size: 12px
+}
+
+.ResponsiveNav .bm-item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%
+}
+
+.ResponsiveNav .bm-item-list .bm-item {
+    width: 100%
+}
+
+.ResponsiveNav .bm-burger-bars-hover {
+    background: #a90000
+}
+
+.ResponsiveNav .bm-cross-button {
+    height: 24px;
+    width: 24px;
+    color: #fff
+}
+
+.ResponsiveNav .bm-cross {
+    background: #fff
+}
+
+.ResponsiveNav .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+.ResponsiveNav .bm-menu {
+    background: #fff;
+    padding: 20px 10px 10px 10px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23)
+}
+
+.ResponsiveNav .bm-morph-shape {
+    fill: #fff
+}
+
+.ResponsiveNav .bm-item-list {
+    color: #b8b7ad;
+    padding: 10px
+}
+
+.ResponsiveNav .bm-item-list a {
+    color: #333
+}
+
+.ResponsiveNav .bm-item-list a i {
+    margin-right: 10px
+}
+
+.ResponsiveNav .bm-item {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 0px;
+    border-bottom: solid 1px #f1f1f1;
+    transition: all .3s ease
+}
+
+.ResponsiveNav .bm-item:last-child {
+    border: none
+}
+
+.ResponsiveNav .bm-overlay {
+    left: 0;
+    top: 0;
+    background: #f00
+}
+
+.topCmnRightNavList {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.topCmnRightNavList li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 14px;
+    border-right: solid 1px #ddd;
+    transition: all .3s ease
+}
+
+.topCmnRightNavList li:last-child {
+    padding-right: 0px
+}
+
+.topCmnRightNavList li a {
+    color: #000;
+    display: flex
+}
+
+.topCmnRightNavList li span.iconWrap {
+    margin-right: 8px;
+    transition: all .3s ease
+}
+
+.topCmnRightNavList li span.linkTxt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .3s ease
+}
+
+.topCmnRightNavList li:hover {
+    cursor: pointer
+}
+
+.topCmnRightNavList li:hover>span {
+    color: "#0075be"
+}
+
+.topCmnRightNavList li:last-child {
+    border: none
+}
+
+.datepickerWithIconCmn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px
+}
+
+.datepickerWithIconCmn .react-datepicker-wrapper {
+    width: 100%
+}
+
+.datepickerWithIconCmn .react-datepicker-wrapper .react-datepicker__input-container {
+    width: 100%
+}
+
+.datepickerWithIconCmn svg {
+    background-color: #ddd;
+    padding: 8px;
+    width: 40px;
+    height: 40px
+}
+
+.datepickerWithIconCmn .datepickerInput {
+    height: 40px;
+    border: solid 1px #ddd;
+    text-indent: 10px;
+    width: 100%;
+    outline: none
+}
+
+.datepickerWithIconCmn .datepickerInput:focus {
+    outline: none
+}
+
+.footerWrap.show {
+    display: flex
+}
+
+.footerWrap {
+    display: none;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 8px 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff
+}
+
+.footerWrap>div {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px
+}
+
+.footerWrap>div a {
+    color: #000
+}
+
+.TickerTopWrap {
+    background-color: #ffc107;
+    border-radius: 5px;
+    margin: 0px 20px;
+    padding: 4px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.TickerTopWrap marquee {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px
+}
+
+.EditCommentWrapDTA.ne {
+    display: none
+}
+
+.EditCommentWrapDTA {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.EditCommentWrapDTA p.textArea {
+    width: 85%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #222;
+    padding: 5px;
+    text-align: left;
+    margin-bottom: 0px
+}
+
+.EditCommentWrapDTA .EditBtn {
+    width: 15%;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.PatientRecordWrapAandEDB {
+    width: 100%;
+    max-height: 520px;
+    overflow-y: auto
+}
+
+.dtaTabListwrap {
+    width: 100%;
+    max-height: 520px;
+    overflow-y: auto
+}
+
+.noPatientDataList {
+    margin-bottom: 0px !important
+}
+
+.noPatientDataList>div {
+    padding: 12px 0px;
+    font-size: 14px;
+    background-color: #fff
+}
+
+.perfTableaand {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+
+.perfTableaand th {
+    padding: 5px 0px !important
+}
+
+.perfTableaand tr:last-child td {
+    font-weight: 700
+}
+
+.barNibTxt.in {
+    transform: translate(0, -3px);
+    alignment-baseline: middle;
+    fill: #000;
+    text-anchor: end
+}
+
+.barNibTxt.out {
+    transform: translate(20px, 0)
+}
+
+.shadowBox {
+    width: 100%;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.08)
+}
+
+.pad5 {
+    padding: 5px
+}
+
+.pad10 {
+    padding: 10px
+}
+
+.pad15 {
+    padding: 15px
+}
+
+.pad20 {
+    padding: 20px
+}
+
+#chartjs-tooltip {
+    padding: 2px;
+    height: auto;
+    background-color: rgba(5, 105, 151, 0.8);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif !important;
+    transform: translate(-50%, -125%)
+}
+
+#chartjs-tooltip:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(5, 105, 151, 0.8)
+}
+
+.mar5row {
+    margin-left: -5px;
+    margin-right: -5px
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 0px
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5)
+}
+
+.customRow .row {
+    margin-left: -30px;
+    margin-right: -30px
+}
+
+@media (max-width:1368px) {
+    .customRow .row {
+        margin-left: -15px;
+        margin-right: 0px
+    }
+}
+
+.responsiveTable {
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.whiteBox {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23)
+}
+
+.whiteBox .headSec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ddd;
+    margin-bottom: 10px
+}
+
+.whiteBox .headSec .head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.whiteBox .headSec .percent {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.RodalHead {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.RodalHead .hdTxt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0px
+}
+
+.RodalHead button {
+    padding: 8px 10px;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease
+}
+
+.RodalHead button:hover {
+    background-color: #000 !important
+}
+
+.RodalHead button.saveandexit {
+    background: #f44336;
+    background-image: -webkit-linear-gradient(top, #f44336, #a51c12);
+    background-image: -moz-linear-gradient(top, #f44336, #a51c12);
+    background-image: -ms-linear-gradient(top, #f44336, #a51c12);
+    background-image: -o-linear-gradient(top, #f44336, #a51c12);
+    background-image: linear-gradient(to bottom, #f44336, #a51c12)
+}
+
+.RodalHead button.move {
+    background-color: #607d8b
+}
+
+.sinceMidnightCol {
+    padding-left: 0px !important;
+    padding-right: 0px !important
+}
+
+.AdmissionListTable {
+    padding-left: 0px !important
+}
+
+.dtaCol {
+    padding-right: 0px !important
+}
+
+.resTabTrigger {
+    display: none;
+    width: 100%;
+    padding: 10px 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #607d8b;
+    color: #fff;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    border-radius: 2px
+}
+
+.logoWrapRightNav {
+    display: block;
+    width: 100%;
+    border: none !important;
+    box-shadow: none !important
+}
+
+.logoWrapRightNav img {
+    width: 118px;
+    display: block;
+    margin: 0 auto
+}
+
+.nodataMessage {
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 0px;
+    display: block
+}
+
+.noDataTableRow td {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px !important;
+    color: #111 !important;
+    text-align: center !important;
+    background-color: #f5f5f5 !important;
+    padding: 15px 7px !important;
+    width: 100% !important
+}
+
+table thead tr th {
+    border-right: solid 2px #fff
+}
+
+.react-tabs__tab-panel--selected {
+    position: relative
+}
+
+.cmnfullErrmsg {
+    width: 100%;
+    color: #f00;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px 0px
+}
+
+.pagenotfoundWrap {
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.pagenotfoundWrap .fnfBoxsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.pagenotfoundWrap .fnfBoxsec .digit {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 195px;
+    color: #13bec1;
+    text-align: center;
+    display: block;
+    line-height: 1
+}
+
+.pagenotfoundWrap .fnfBoxsec .text {
+    display: block;
+    clear: both;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 8px;
+    color: #878787;
+    margin-bottom: 20px
+}
+
+.pagenotfoundWrap .fnfBoxsec .reason {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 50px
+}
+
+.pagenotfoundWrap .fnfBoxsec .gotoHome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: solid 1px #ddd;
+    border-radius: 8px;
+    transition: all .3s ease
+}
+
+.pagenotfoundWrap .fnfBoxsec .gotoHome:hover {
+    background-color: #13bec1;
+    border: solid 1px transparent
+}
+
+.pagenotfoundWrap .fnfBoxsec .gotoHome:hover .ico {
+    fill: #fff
+}
+
+.pagenotfoundWrap .fnfBoxsec .gotoHome:hover .txt {
+    color: #fff
+}
+
+.pagenotfoundWrap .fnfBoxsec .gotoHome .ico {
+    margin-right: 10px
+}
+
+.pagenotfoundWrap .fnfBoxsec .gotoHome .txt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000
+}
+
+.iboxane_header.pnfPage .logowithtextSec>a {
+    margin-right: 0px;
+    border-right: none;
+    padding-right: 0px;
+    margin-left: 10px
+}
+
+.modebar-container {
+    display: none
+}
+
+.datepickerBreachwrap .datepickerInput {
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border: solid 1px #ddd
+}
+
+.TimeGraphEdOverview .col2 {
+    background-color: #2471a3
+}
+
+.TimeGraphEdOverview .col3 {
+    background-color: #e53935
+}
+
+.TimeGraphEdOverview .col1 {
+    background-color: #2fb07d
+}
+
+.TimeGraphEdOverview path.domain {
+    display: none
+}
+
+.TimeGraphEdOverview .y_axis_grid line {
+    opacity: .09
+}
+
+.TimeGraphEdOverview .x_axis_grid text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000
+}
+
+.TimeGraphEdOverview .x_axis_grid line {
+    opacity: 0
+}
+
+.TimeGraphEdOverview .yAxisTitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #000
+}
+
+.graphWrap {
+    position: relative
+}
+
+.graphWrap .topLabelLst {
+    list-style: none;
+    margin: 0px;
+    position: relative;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center
+}
+
+.graphWrap .topLabelLst li {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5px
+}
+
+.graphWrap .topLabelLst li .colBox {
+    display: block;
+    width: 15px;
+    height: 15px
+}
+
+.graphWrap .topLabelLst li .col2 {
+    background-color: #2471a3
+}
+
+.graphWrap .topLabelLst li .col3 {
+    background-color: #e53935
+}
+
+.graphWrap .topLabelLst li .col1 {
+    background-color: #2fb07d
+}
+
+.graphWrap .topLabelLst li p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #111;
+    font-size: 12px;
+    margin: 0px 10px 0px 0px
+}
+
+.virtualWardsWrap .selectric {
+    background-color: #fff !important
+}
+
+.virtualWardsWrap .selectric .label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px !important
+}
+
+.virtualWardsWrap .selectric b.button {
+    background-color: #fff !important
+}
+
+.virtualWardsWrap .selectric b.button:before {
+    content: "";
+    width: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    height: 20px;
+    left: 0px;
+    transform: translateY(-50%)
+}
+
+.virtualWardsWrap .selectric-items .selectric-scroll ul li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.donutChartWrapInner {
+    width: 100%
+}
+
+#DonutchartTherapiesc3 {
+    width: 100%
+}
+
+.selectric-wrapper {
+    width: 100%
+}

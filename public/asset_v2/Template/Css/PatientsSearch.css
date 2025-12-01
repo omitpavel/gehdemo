@@ -1,0 +1,183 @@
+.date-range .form-control,
+.date-range .btn-search {
+    height: 35px;
+}
+
+.table-search-patient {
+    font-size: 12px;
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+}
+
+.table-search-patient thead tr {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px 7px 0 0;
+}
+
+.table-search-patient thead tr th {
+    font-weight: 500;
+}
+
+.table-search-patient thead tr th,
+.table-search-patient tbody tr td {
+    padding: 8px;
+}
+
+.table-search-patient thead tr th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.table-search-patient thead tr th:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+.table-search-patient tbody tr:nth-child(odd) {
+    background-color: #F2F2F3;
+}
+
+.table-search-patient tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.table-search-patient tbody tr td:first-child {
+    text-align: start;
+}
+
+.table-search-patient tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+
+.table-search-patient tbody tr:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+
+.table-btns {
+    display: flex;
+    width: 100%;
+}
+
+.table-btns .btn-search,
+.table-btns .btn-export {
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000038;
+    padding: .5rem;
+    color: #fff;
+    font-size: 12px;
+    width: 50%;
+}
+
+.table-btns .btn-search {
+    background: linear-gradient(180deg, rgba(0, 140, 225, 1) 0%, rgba(0, 125, 202, 1) 100%);
+}
+
+.table-btns .btn-export {
+    background: linear-gradient(180deg, rgba(16, 176, 179, 1) 0%, rgba(9, 132, 134, 1) 100%);
+}
+
+/* Media Query */
+
+@media (max-width:1025px) {
+
+
+    .table-search-patient tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .table-search-patient tbody tr:nth-child(even) {
+        background-color: #CEDDF5;
+    }
+
+    .responsiveTable td .tdBefore {
+        white-space: nowrap;
+    }
+
+    .table-search-patient {
+        box-shadow: none;
+    }
+
+    .table-search-patient tbody tr td:nth-child(1),
+    .table-search-patient tbody tr:last-child td:first-child {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .table-search-patient tbody tr td:nth-child(4),
+    .table-search-patient tbody tr:last-child td:last-child {
+        border-radius: 0 6px 6px 0;
+    }
+
+    .table-search-patient tbody tr td:nth-child(4) {
+        width: 40%;
+    }
+
+    .table-btns .btn-search,
+    .table-btns .btn-export {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+
+    .table-search-patient tbody tr td.pivoted:nth-child(1) {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .table-search-patient tbody tr td.pivoted:nth-child(4) {
+        border-radius: 0 6px 6px 0;
+    }
+}
+
+@media (max-width:991px) {
+
+    .responsiveTable td.pivoted:nth-child(5),
+    .responsiveTable td.pivoted:nth-child(6),
+    .responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0;
+    }
+
+    .table-search-patient tbody tr td:nth-child(4) {
+        width: 25%;
+    }
+
+    .table-btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-btns .btn-search {
+        margin-bottom: .25rem;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:767px) {
+
+    .table-search-patient tbody tr td:nth-child(4) {
+        width: 50%;
+    }
+
+    .table-btns .btn-search,
+    .table-btns .btn-export {
+        border-radius: 4px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(9) {
+        border-radius: 0;
+    }
+
+    .responsiveTable td.pivoted:nth-child(1),
+    .table-search-patient tbody tr:last-child td:first-child {
+        border-radius: 4px 0 0 0;
+    }
+
+    .table-search-patient tbody tr td:nth-child(3) {
+        border-radius: 0 0 0 4px;
+    }
+
+    .table-search-patient tbody tr td:nth-child(4),
+    .table-search-patient tbody tr:last-child td:last-child {
+        border-radius: 0 0 4px 0;
+    }
+}

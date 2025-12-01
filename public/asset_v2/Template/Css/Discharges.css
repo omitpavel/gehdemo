@@ -1,0 +1,383 @@
+.btn-export {
+    background: var(--bg-grey-gradient);
+    box-shadow: 0px 3px 6px #00000038;
+    border-radius: 7px;
+    padding: 0.5rem;
+    min-width: 90px;
+}
+
+.discharge-row {
+    margin-bottom: .5rem;
+}
+
+.discharge-row .form-control,
+.discharge-row .form-select,
+.discharge-row .bg-patients-count,
+.discharge-row .btn,
+.discharge-row .ms-options-wrap>button {
+    min-height: 40px;
+}
+
+.discharge-row .selectric {
+    padding: 2px 0;
+}
+
+.discharge-row .selectric .button {
+    top: 2px;
+}
+
+.discharge-row .selectric .label {
+    line-height: 34px;
+}
+
+.btn-dark,
+.bg-dark {
+    background: var(--bg-black-gradient);
+    border-radius: 7px;
+    color: #fff;
+}
+
+.card-discharges .ward-patients-wrapper {
+    border: 1px solid rgb(112, 112, 112, .5);
+    padding: 0 .25rem;
+    border-radius: 7px;
+    margin-bottom: .4rem;
+}
+
+.card-discharges .ward-patients-wrapper .name-header {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    background: var(--primary-blue);
+    box-shadow: 0px 3px 6px #00000038;
+    color: #fff;
+    border-radius: 7px;
+    margin: 0.4rem 0;
+}
+
+.card-discharges .table-custom {
+    font-size: 12px;
+}
+
+.card-discharges .table-custom .table-patient-row-2 td.class_show_red .selectric {
+    background: #F8AE9F;
+}
+
+.card-discharges .table-custom .table-patient-row-2 td.class_show_green .selectric {
+    background: #ADF8AC;
+}
+
+.card-discharges .table-custom .table-patient-row-2 td .selectric .button {
+    background-color: transparent;
+}
+
+.card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td textarea.form-control {
+    height: 60px;
+    padding: 3px 5px;
+}
+
+.card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .tdBefore {
+    width: 60%;
+}
+
+.card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .btn-assign-task {
+    width: 40%;
+    margin-bottom: .25rem;
+}
+
+/* Other Notes Styles */
+
+.other-notes-offcanvas.offcanvas-end {
+    width: 60%;
+}
+
+.history-card {
+    padding-top: 1.5rem;
+}
+
+.history-card .data-area {
+    padding: .25rem .5rem;
+}
+
+/* Media Query */
+
+@media (min-width:1026px) {
+
+    .card-discharges .table-patient-tbody {
+        background: var(--bg-grey-gradient);
+        border: 1px solid rgb(112, 112, 112, .5);
+        margin-bottom: .4rem;
+        display: flex;
+        width: 100%;
+        border-radius: 7px;
+        box-shadow: 0px 3px 6px #00000038;
+    }
+
+    .card-discharges .table-patient-row-1 {
+        background: var(--bg-grey-gradient);
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        border-radius: 7px;
+    }
+
+    .card-discharges .table-custom .table-patient-row-1 td {
+        border-bottom: none;
+        padding: 5px 8px;
+        border-bottom: 1px dashed rgb(112, 112, 112, .5);
+    }
+
+    .card-discharges .custom-card .responsiveTable td .tdBefore {
+        display: block;
+    }
+
+    .card-discharges .table-custom .table-patient-row-1 td.pivoted span {
+        font-weight: 600;
+    }
+
+    .card-discharges .table-custom .table-patient-row-1 td {
+        width: 35%;
+    }
+
+    .card-discharges .table-custom .table-patient-row-1 td:nth-child(3n+1) {
+        width: 30%;
+    }
+
+    .card-discharges .table-custom .table-patient-row-1 td:last-child {
+        width: 70%;
+    }
+
+    .card-discharges .table-custom .table-patient-row-1 td:nth-child(7),
+    .card-discharges .table-custom .table-patient-row-1 td:nth-child(8) {
+        border-bottom: none;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        border-radius: 0 7px 7px 0;
+        background: var(--bg-grey-gradient);
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td:first-child {
+        padding: 5px 8px 2px 8px;
+        border-radius: 0 0 6px 0;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td:last-child {
+        padding: 0 8px 4px 8px;
+    }
+
+    .other-notes .table-other-notes {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .other-notes .table-other-notes thead,
+    .other-notes .table-other-notes tbody tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .other-notes .table-other-notes thead tr {
+        background: var(--primary-blue);
+        color: #fff;
+        box-shadow: 0px 3px 6px #00000038;
+        width: 100%;
+        border-right: 3px solid rgb(128, 128, 128, 0);
+    }
+
+    .other-notes .table-other-notes thead tr th {
+        font-weight: 500;
+    }
+
+    .other-notes .table-other-notes thead tr th:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    .other-notes .table-other-notes thead tr th:last-child {
+        border-radius: 0 7px 0 0;
+    }
+
+    .other-notes .table-other-notes th:nth-child(1),
+    .other-notes .table-other-notes tbody td:nth-child(1) {
+        width: 56%;
+    }
+
+    .other-notes .table-other-notes th:nth-child(2),
+    .other-notes .table-other-notes tbody td:nth-child(2) {
+        width: 20%;
+    }
+
+    .other-notes .table-other-notes th:nth-child(3),
+    .other-notes .table-other-notes tbody td:nth-child(3) {
+        width: 24%;
+    }
+
+    .other-notes .table-other-notes tbody {
+        flex: 1 1 auto;
+        display: block;
+        max-height: 170px;
+        overflow-y: auto;
+    }
+
+    .other-notes .table-other-notes tbody tr {
+        border-bottom: 1px solid #dedddd;
+    }
+
+    .other-notes .table-other-notes tbody::-webkit-scrollbar {
+        width: 3px;
+    }
+}
+
+@media (min-width:1026px) and (max-width:1199px) {
+
+    .card-discharges .table-patient-row-1,
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 {
+        width: 50%;
+    }
+}
+
+@media (max-width:1199px) {
+    .other-notes-offcanvas.offcanvas-end {
+        width: 70%;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .tdBefore {
+        width: 55%;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .btn-assign-task {
+        width: 45%;
+    }
+}
+
+@media (max-width:1025px) {
+
+    .card-discharges {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .card-discharges tbody.table-patient-tbody:nth-child(even) tr.table-patient-row-1:nth-child(odd),
+    .card-discharges tbody.table-patient-tbody:nth-child(even) tr.table-patient-row-2:nth-child(even) {
+        background-color: #CEDDF5;
+    }
+
+    .card-discharges tbody.table-patient-tbody:nth-child(odd) tr.table-patient-row-1:nth-child(odd),
+    .card-discharges tbody.table-patient-tbody:nth-child(odd) tr.table-patient-row-2:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody {
+        box-shadow: none;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-bottom: none;
+        margin-bottom: 0;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 {
+        border-top: none;
+        border-radius: 0 0 7px 7px;
+        background: none;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-1 td {
+        width: 25%;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-1 td:last-child,
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td {
+        width: 50%;
+    }
+
+    .card-discharges .table-custom .table-patient-row-2 td textarea {
+        height: 40px;
+    }
+
+    .card-discharges .table-custom .table-patient-row-2 td .selectric-wrapper {
+        margin-top: .25rem;
+    }
+
+    .other-notes-offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .other-notes-section .rectangle-block-1 {
+        background: none;
+        box-shadow: none;
+    }
+
+    .history-card .data-area {
+        padding: 0 .5rem;
+    }
+
+    .other-notes .responsiveTable tbody tr {
+        margin-bottom: 5px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width:991px) {
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .tdBefore {
+        width: 50%;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .btn-assign-task {
+        width: 50%;
+    }
+}
+
+@media (max-width:767px) {
+
+    .btn-dark,
+    .bg-dark,
+    .btn-export,
+    .other-notes .responsiveTable tbody tr,
+    .card-discharges .ward-patients-wrapper,
+    .card-discharges .ward-patients-wrapper .name-header {
+        border-radius: 4px;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-1 {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .card-discharges .responsiveTable td .tdBefore {
+        font-size: 12px;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-1 td {
+        width: 50%;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td {
+        width: 100%;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .tdBefore {
+        width: 35%;
+    }
+
+    .card-discharges .table-custom .table-patient-tbody .table-patient-row-2 td .note-grp .btn-assign-task {
+        width: 65%;
+    }
+}

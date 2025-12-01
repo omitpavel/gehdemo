@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="90" viewBox="0 0 149.289 141.906">
+  <defs>
+    <filter id="hexagon-fill-svgrepo-com" x="0" y="0" width="149.289" height="141.906" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#hexagon-fill-svgrepo-com)">
+    <path id="hexagon-fill-svgrepo-com-2" data-name="hexagon-fill-svgrepo-com" d="M46.494,1.274a10.29,10.29,0,0,1,9.918,0L97.574,23.913a10.291,10.291,0,0,1,5.332,9.017V77.359a10.291,10.291,0,0,1-5.332,9.017L56.412,109.015a10.29,10.29,0,0,1-9.918,0L5.331,86.376A10.291,10.291,0,0,1,0,77.359V32.93a10.291,10.291,0,0,1,5.331-9.017Z" transform="translate(129.79 9.5) rotate(90)" fill="#fff"/>
+  </g>
+</svg>

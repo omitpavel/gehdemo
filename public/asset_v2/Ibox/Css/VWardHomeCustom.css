@@ -1,0 +1,11 @@
+@media (min-width:1200px) {
+    .virtual-ward-col .virtual_ward{
+        margin-top: 66px!important;
+        margin-left: -60px;
+    }
+
+    .virtual-ward-col .honey_col h3 {
+        padding-left: 160px;
+        text-align: start;
+    }
+}
