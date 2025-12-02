@@ -3,37 +3,36 @@
 namespace App\Http\Controllers\Iboards\Symphony;
 
 use Illuminate\Http\Request;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\Governance\GovernanceController;
 use App\Http\Controllers\Common\CommonController;
 use App\Http\Controllers\Common\CommonSymphonyController;
 use Illuminate\Support\Facades\View;
-use App\Models\Iboards\Symphony\Data\SymphonyAttendance;
 use App\Models\Iboards\Symphony\View\SymphonyAttendanceView;
-use Illuminate\Support\Facades\DB;
-
 
 class AmbulanceArrivalsController extends Controller
 {
     public function Index()
     {
         $common_controller                  = new CommonController;
-        $common_symphony_controller = new CommonSymphonyController;
+        $common_symphony_controller         = new CommonSymphonyController;
         $process_array                      = array();
         $success_array                      = array();
+
         $common_controller->SetDefaultConstantsValue($process_array, $success_array);
         $common_symphony_controller->SetSymphonyDefaultConstantsValue($process_array, $success_array);
-        $process_array["start_date"] = YesterdayDateOnFormat();
-        CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"day");
+
+        CalculateStartEndDateAccordingSelection($process_array["start_date"], $process_array["end_date"], "day");
+        $success_array["page_sub_title"]                    = date('D jS F, H:i');
         $process_array["tab_filter_mode"]                   = 1;
         $success_array["tab_filter_mode"]                   = 1;
-        $success_array["page_sub_title"]                = date('l jS F H:i');
-        $this->ArrivalDataProcess($success_array,$process_array);
+        $this->ArrivalDataProcess($success_array, $process_array);
         $success_array['date_filter_tab_1_date_to_show']    = PredefinedDateFormatShowOnCalendarDashboard($process_array["start_date"]);
         $success_array["filter_value_selected"]             = PredefinedStandardDateFormatChangeDateAlone($process_array["start_date"]);
+
+
         return view('Dashboards.Symphony.AmbulanceArrivals.Index', compact('success_array'));
     }
+
     public function ContentDataLoad(Request $request)
     {
 
@@ -57,8 +56,8 @@ class AmbulanceArrivalsController extends Controller
                 if(CheckSpecificPermission('ambulance_dashboard_live_view')){
                     $process_array["start_date"]  = ($filter_value != "") ? $filter_value : CurrentDateOnFormat();
                     CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"day");
-
                     $this->ArrivalDataProcess($success_array,$process_array);
+                    $success_array = json_decode(file_get_contents('demo_data/ane/ambulanceday.json'), true);
                     $success_array['date_filter_tab_1_date_to_show'] = PredefinedDateFormatShowOnCalendarDashboard($process_array["start_date"]);
                     $success_array["filter_value_selected"]     = PredefinedStandardDateFormatChangeDateAlone($process_array["start_date"]);
                     $view = View::make('Dashboards.Symphony.AmbulanceArrivals.IndexDataLoadTabContent1', compact('success_array'));
@@ -75,6 +74,7 @@ class AmbulanceArrivalsController extends Controller
                     $success_array["week_filter_array"]                               = LastNumberOfWeeksArrayForDropdownOperation($process_array["date_time_now"],120);
                     CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"week");
                     $this->ArrivalDataProcess($success_array,$process_array);
+                    $success_array = json_decode(file_get_contents('demo_data/ane/ambulanceweek.json'), true);
                     $success_array["filter_value_selected"]     = date("Y-m-d",strtotime($process_array["start_date"]));
                     $view = View::make('Dashboards.Symphony.AmbulanceArrivals.IndexDataLoadTabContent2', compact('success_array'));
                     $sections = $view->render();
@@ -90,6 +90,7 @@ class AmbulanceArrivalsController extends Controller
                     $success_array["month_filter_array"]                              = LastNumberOfMonthsArrayForDropdownOperation($process_array["date_time_now"],12);
                     CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"month");
                     $this->ArrivalDataProcess($success_array,$process_array);
+                    $success_array = json_decode(file_get_contents('demo_data/ane/ambulancemonth.json'), true);
                     $success_array["filter_value_selected"]     = date("Y-m-d",strtotime($process_array["start_date"]));
                     $view = View::make('Dashboards.Symphony.AmbulanceArrivals.IndexDataLoadTabContent3', compact('success_array'));
                     $sections = $view->render();
@@ -103,6 +104,7 @@ class AmbulanceArrivalsController extends Controller
                 if(CheckSpecificPermission('ambulance_dashboard_last_thousand_arrival_view')){
                     CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"day");
                     $this->ArrivalDataProcess($success_array,$process_array);
+                    $success_array = json_decode(file_get_contents('demo_data/ane/ambulancelastthousand.json'), true);
                     $view = View::make('Dashboards.Symphony.AmbulanceArrivals.IndexDataLoadTabContent4', compact('success_array'));
                     $sections = $view->render();
                     return $sections;
@@ -131,17 +133,17 @@ class AmbulanceArrivalsController extends Controller
         {
             $process_array["start_date_last_week"]                  = $process_array["start_date"];
             CalculateStartEndDateAccordingSelection($process_array["start_date_last_week"],$process_array["end_date_last_week"],"week");
-            $ambulance_patient_data                                 = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date"], $process_array["end_date"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
-            $ambulance_patient_data_week_top                        = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date_last_week"], $process_array["end_date_last_week"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
+            $ambulance_patient_data                                 = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date"], $process_array["end_date"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->where('symphony_still_in_ae','=',0)->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
+            $ambulance_patient_data_week_top                        = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date_last_week"], $process_array["end_date_last_week"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->where('symphony_still_in_ae','=',0)->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
         }
         elseif($success_array["tab_filter_mode"] == 2)
         {
-            $ambulance_patient_data                                 = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date"], $process_array["end_date"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
+            $ambulance_patient_data                                 = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date"], $process_array["end_date"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->where('symphony_still_in_ae','=',0)->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
             $ambulance_patient_data_week_top                        = $ambulance_patient_data;
         }
         elseif($success_array["tab_filter_mode"] == 3)
         {
-            $ambulance_patient_data                                 = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date"], $process_array["end_date"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
+            $ambulance_patient_data                                 = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date"], $process_array["end_date"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->where('symphony_still_in_ae','=',0)->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
             $ambulance_patient_data_week_top                        = $ambulance_patient_data;
             $first_day_of_month                                     = date("D",strtotime($process_array['start_date']));
             $number_of_days_month                                   = (int)date("t",strtotime($process_array["start_date"]));
@@ -154,7 +156,7 @@ class AmbulanceArrivalsController extends Controller
             $process_array["end_date_last_1000"]    = "";
             CalculateStartEndDateAccordingSelection($process_array["start_date_last_1000"], $process_array["end_date_last_1000"], "last 1000");
 
-            $ambulance_patient_data                                 = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date_last_1000"], $process_array["end_date_last_1000"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->limit(1000)->get()->toArray();
+            $ambulance_patient_data                                 = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["start_date_last_1000"], $process_array["end_date_last_1000"]))->where('symphony_still_in_ae','=',0)->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->limit(1000)->get()->toArray();
             $ambulance_patient_data_week_top                        = array();
         }
 
@@ -166,7 +168,7 @@ class AmbulanceArrivalsController extends Controller
         $process_array["predicted_start_date"]                      = date('Y-m-d 00:00:00', strtotime($process_array["start_date"] . '-56 day'));
         $process_array["predicted_end_date"]                        = $process_array["start_date"];
         $process_array["predicted_count_days"]                      = 56;
-        $ambulance_patient_data_predicted                           = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["predicted_start_date"], $process_array["predicted_end_date"]))->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
+        $ambulance_patient_data_predicted                           = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', array($process_array["predicted_start_date"], $process_array["predicted_end_date"]))->where('symphony_still_in_ae','=',0)->whereIn('symphony_atd_type', $process_array["ibox_symphony_main_patient_category"])->whereIn('symphony_arrival_mode', $process_array["ibox_symphony_ambulance_parameter"])->orderBy('symphony_registration_date_time', 'ASC')->get()->toArray();
 
 
 

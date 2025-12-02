@@ -51,7 +51,7 @@
             $('.all_tab_content_loader_image_1').hide();
             if (!$('#data_summary_filter_1').hasClass('selectric-initialized')) {
                 // Add a delay to ensure the content is fully rendered
-                setTimeout(function () {
+                setTimeout(function() {
                     $('#data_summary_filter_1').selectric();
                 }, 100);
             }
@@ -59,7 +59,6 @@
         }
         jQuery(document).ready(function($) {
             $('.loader-bg hide-on-first-load').hide();
-
             $(document).on("click", "#week_summary_tab, #week_summary_tab_reponsive", function(e) {
                 if (check_first_tab_switch == 0) {
                     if (check_first_tab_loading == 0) {
@@ -150,7 +149,7 @@
                     "filter_mode": 1,
                 },
                 success: function(page_load_data) {
-                    if(page_load_data != '{{PermissionDenied()}}'){
+                    if (page_load_data != '{{ PermissionDenied() }}') {
                         check_first_tab_loading = 0;
                         $('.week_summary_tab_content_data_load').show();
 
@@ -158,7 +157,7 @@
                         $('.all_tab_content_loader_image_1').hide();
                         if (!$('#data_summary_filter_1').hasClass('selectric-initialized')) {
                             // Add a delay to ensure the content is fully rendered
-                            setTimeout(function () {
+                            setTimeout(function() {
                                 $('#data_summary_filter_1').selectric();
                             }, 100);
                         }
@@ -197,7 +196,7 @@
                     "filter_mode": 2,
                 },
                 success: function(page_load_data) {
-                    if(page_load_data != '{{PermissionDenied()}}'){
+                    if (page_load_data != '{{ PermissionDenied() }}') {
                         check_second_tab_loading = 0;
                         $('.month_summary_tab_content_data_load').show();
 
@@ -205,7 +204,7 @@
                         $('.all_tab_content_loader_image_2').hide();
                         if (!$('#data_summary_filter_2').hasClass('selectric-initialized')) {
                             // Add a delay to ensure the content is fully rendered
-                            setTimeout(function () {
+                            setTimeout(function() {
                                 $('#data_summary_filter_2').selectric();
                             }, 100);
                         }
@@ -245,7 +244,7 @@
                     "filter_mode": 3,
                 },
                 success: function(page_load_data) {
-                    if(page_load_data != '{{PermissionDenied()}}'){
+                    if (page_load_data != '{{ PermissionDenied() }}') {
                         check_third_tab_loading = 0;
                         $('.last_thousand_summary_tab_content_data_load').show();
                         $('.last_thousand_summary_tab_content_data_load').html(page_load_data);
@@ -270,28 +269,29 @@
 
 
         }
-        @if(CheckSpecificPermission('referral_to_speciality_week_view'))
+        @if (CheckSpecificPermission('referral_to_speciality_week_view'))
             $(document).ready(function() {
                 $('#week_summary_tab').click();
                 var myTabs = new bootstrap.Tab($('#week_summary_tab'));
                 myTabs.show();
+
+                var filter_value = $('#data_summary_filter_1').val();
+                WeekSummaryReferralSpecialityDataLoad('{{ \Carbon\Carbon::now()->startOfWeek()->format('Y-m-d') }}');
             });
-        @elseif(CheckSpecificPermission('referral_to_speciality_month_view'))
+        @elseif (CheckSpecificPermission('referral_to_speciality_month_view'))
 
             $(document).ready(function() {
                 $('#month_summary_tab').click();
                 var myTabs = new bootstrap.Tab($('#month_summary_tab'));
                 myTabs.show();
             });
-        @elseif(CheckSpecificPermission('referral_to_speciality_last_1000_view'))
+        @elseif (CheckSpecificPermission('referral_to_speciality_last_1000_view'))
 
             $(document).ready(function() {
                 $('#last_thousand_summary_tab').click();
                 var myTabs = new bootstrap.Tab($('#last_thousand_summary_tab'));
                 myTabs.show();
             });
-
         @endif
-
     </script>
 @endpush

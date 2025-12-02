@@ -92,6 +92,8 @@ class ReferralToSpecialityController extends Controller
                     return PermissionDenied();
                 }
             }
+            $success_array["data_summary"]     = json_decode(file_get_contents('demo_data/ane/speciality_referral.txt'), true);
+
             $success_array["filter_mode"]                   = $filter_mode;
             $view                                           = View::make('Dashboards.Symphony.ReferralToSpeciality.IndexDataLoadTabContent', compact('success_array'));
             $sections                                       = $view->render();
@@ -151,7 +153,7 @@ class ReferralToSpecialityController extends Controller
                 }
             }
         }
-        
+
         if (isset($speciality_data_array))
         {
             if (is_array($speciality_data_array))

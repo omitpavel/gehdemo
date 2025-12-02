@@ -1,0 +1,13 @@
+{
+    "date_time_now": "2024-02-13 16:10:44",
+    "script_error_message": "Oops! Something Went Wrong.",
+    "ibox_tab_switch_refresh_time": 9999,
+    "flash_message_to_show": "This is a Test Server. Larvel Test",
+    "total_patients_ed_now": 38,
+    "total_patients_ed_now_minors": 38,
+    "total_patients_ed_now_majors": 8,
+    "average_waiting_times_majors": "2 Hr & 19 Min",
+    "average_waiting_times_minors": "2 Hr & 36 Min",
+    "total_patients_ed_now_paed_eds": 6,
+    "average_waiting_times_paed_eds": "2 Hr & 41 Min"
+}

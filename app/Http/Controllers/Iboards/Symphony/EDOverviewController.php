@@ -31,7 +31,7 @@ class EDOverviewController extends Controller
         CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"day");
         $this->EdOverviewAttendanceDataProcess($success_array,$process_array);
         $this->EdOverviewReferalPlotingDataSummary($success_array,$process_array);
-
+        $success_array = json_decode(file_get_contents('demo_data/ane/symphony_ed_overview.txt'), true);
 
         return view('Dashboards.Symphony.EDOverview.Index', compact('success_array'));
     }
@@ -61,8 +61,7 @@ class EDOverviewController extends Controller
                     $process_array["referral_type"] = 'ED';
                     $process_array["start_date"]    = CurrentDateOnFormat();
                     CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"day");
-                    $this->EdOverviewAttendanceDataProcess($success_array,$process_array);
-                    $this->EdOverviewReferalPlotingDataSummary($success_array,$process_array);
+                    $success_array = json_decode(file_get_contents('demo_data/ane/symphony_ed_overview.txt'), true);
                     $view = View::make('Dashboards.Symphony.EDOverview.IndexDataLoadTabContent1', compact('success_array'));
                     $sections = $view->render();
                     return $sections;
@@ -80,6 +79,7 @@ class EDOverviewController extends Controller
                     CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"day");
                     $this->EdOverviewAttendanceDataProcess($success_array,$process_array);
                     $this->EdOverviewReferalPlotingDataSummary($success_array,$process_array);
+                    $success_array = json_decode(file_get_contents('demo_data/ane/symphony_ed_overview.txt'), true);
                     $success_array['date_filter_tab_2_date_to_show'] = PredefinedDateFormatShowOnCalendarDashboardSecond($process_array["start_date"]);
                     $success_array["filter_value_selected"]     = PredefinedStandardDateFormatChangeDateAlone($process_array["start_date"]);
                     $view = View::make('Dashboards.Symphony.EDOverview.IndexDataLoadTabContent2', compact('success_array'));
@@ -498,7 +498,7 @@ class EDOverviewController extends Controller
         $success_array["box_plot_graph_green_data"]                                 = $green_colour_data_text;
         $success_array["box_plot_graph_red_data"]                                   = $red_colour_data_text;
         $success_array["box_plot_graph_blue_data"]                                  = $blue_colour_data_text;
-
+        $success_array = json_decode(file_get_contents('demo_data/ane/symphony_ed_overview.txt'), true);
 
     }
 
@@ -637,6 +637,7 @@ class EDOverviewController extends Controller
                 $process_array["start_date"]    = CurrentDateOnFormat();
                 CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"day");
                 $this->EdOverviewReferalPlotingDataSummary($success_array,$process_array);
+                $success_array = json_decode(file_get_contents('demo_data/ane/symphony_ed_overview.txt'), true);
                 $view = View::make('Dashboards.Symphony.EDOverview.IndexDataLoadBxPlotRightCommonTab1', compact('success_array'));
                 $sections = $view->render();
                 return $sections;
@@ -651,7 +652,7 @@ class EDOverviewController extends Controller
                 CalculateStartEndDateAccordingSelection($process_array["start_date"],$process_array["end_date"],"day");
 
                 $this->EdOverviewReferalPlotingDataSummary($success_array,$process_array);
-
+                $success_array = json_decode(file_get_contents('demo_data/ane/symphony_ed_overview.txt'), true);
                 $view = View::make('Dashboards.Symphony.EDOverview.IndexDataLoadBxPlotRightCommonTab2', compact('success_array'));
                 $sections = $view->render();
                 return $sections;

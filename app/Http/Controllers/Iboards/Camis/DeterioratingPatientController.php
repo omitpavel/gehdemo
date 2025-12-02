@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\View;
 use Sentinel;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
 use Carbon\CarbonPeriod;
 class DeterioratingPatientController extends Controller
 {
@@ -157,7 +157,16 @@ class DeterioratingPatientController extends Controller
 
         $dp_patients = CamisIboxDeterioratingPatient::whereIn('camis_patient_ward_id', $active_wards)->where('type', 1)->pluck('patient_id')->toArray();
 
-        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::leftJoin($vitalpac_table, "{$patients_table}.camis_patient_id", '=', "{$vitalpac_table}.camis_patient_id")
+        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::leftJoin(
+            $vitalpac_table,
+            function ($join) use ($patients_table, $vitalpac_table) {
+                $join->on(
+                    DB::raw("{$patients_table}.camis_patient_id COLLATE utf8mb4_general_ci"),
+                    '=',
+                    DB::raw("{$vitalpac_table}.camis_patient_id COLLATE utf8mb4_general_ci")
+                );
+            }
+        )
         ->select("{$patients_table}.*", "{$vitalpac_table}.totalews")
 
         ->with([
@@ -253,7 +262,16 @@ class DeterioratingPatientController extends Controller
 
         $dp_patients = CamisIboxDeterioratingPatient::whereIn('camis_patient_ward_id', $active_wards)->where('type', 2)->pluck('patient_id')->toArray();
 
-        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::whereIn("{$patients_table}.camis_patient_id", $dp_patients)->leftJoin($vitalpac_table, "{$patients_table}.camis_patient_id", '=', "{$vitalpac_table}.camis_patient_id")
+        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::whereIn("{$patients_table}.camis_patient_id", $dp_patients)->leftJoin(
+            $vitalpac_table,
+            function ($join) use ($patients_table, $vitalpac_table) {
+                $join->on(
+                    DB::raw("{$patients_table}.camis_patient_id COLLATE utf8mb4_general_ci"),
+                    '=',
+                    DB::raw("{$vitalpac_table}.camis_patient_id COLLATE utf8mb4_general_ci")
+                );
+            }
+        )
         ->select("{$patients_table}.*", "{$vitalpac_table}.totalews")
 
         ->with([
@@ -348,7 +366,16 @@ class DeterioratingPatientController extends Controller
         $active_wards = Wards::where('status', 1)->where('disabled_on_all_dashboard_except_ward_summary', 0)->pluck('id')->toArray();
         $dp_patients = CamisIboxDeterioratingPatient::whereIn('camis_patient_ward_id', $active_wards)->where('type', 5)->pluck('patient_id')->toArray();
 
-        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::whereIn("{$patients_table}.camis_patient_id", $dp_patients)->leftJoin($vitalpac_table, "{$patients_table}.camis_patient_id", '=', "{$vitalpac_table}.camis_patient_id")
+        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::whereIn("{$patients_table}.camis_patient_id", $dp_patients)->leftJoin(
+            $vitalpac_table,
+            function ($join) use ($patients_table, $vitalpac_table) {
+                $join->on(
+                    DB::raw("{$patients_table}.camis_patient_id COLLATE utf8mb4_general_ci"),
+                    '=',
+                    DB::raw("{$vitalpac_table}.camis_patient_id COLLATE utf8mb4_general_ci")
+                );
+            }
+        )
         ->select("{$patients_table}.*", "{$vitalpac_table}.totalews")
 
         ->with([
@@ -439,7 +466,16 @@ class DeterioratingPatientController extends Controller
         $active_wards = Wards::where('status', 1)->where('disabled_on_all_dashboard_except_ward_summary', 0)->pluck('id')->toArray();
 
         $dp_patients = CamisIboxDeterioratingPatient::whereIn('camis_patient_ward_id', $active_wards)->where('type', 3)->pluck('patient_id')->toArray();
-        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::whereIn("{$patients_table}.camis_patient_id", $dp_patients)->leftJoin($vitalpac_table, "{$patients_table}.camis_patient_id", '=', "{$vitalpac_table}.camis_patient_id")
+        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::whereIn("{$patients_table}.camis_patient_id", $dp_patients)->leftJoin(
+            $vitalpac_table,
+            function ($join) use ($patients_table, $vitalpac_table) {
+                $join->on(
+                    DB::raw("{$patients_table}.camis_patient_id COLLATE utf8mb4_general_ci"),
+                    '=',
+                    DB::raw("{$vitalpac_table}.camis_patient_id COLLATE utf8mb4_general_ci")
+                );
+            }
+        )
         ->select("{$patients_table}.*", "{$vitalpac_table}.totalews")
 
         ->with([
@@ -532,7 +568,16 @@ class DeterioratingPatientController extends Controller
         $active_wards = Wards::where('status', 1)->where('disabled_on_all_dashboard_except_ward_summary', 0)->pluck('id')->toArray();
 
         $dp_patients = CamisIboxBoardRoundPatientTasks::whereIn('camis_patient_ward_id', $active_wards)->where('task_category', 6)->where('task_completed_status', 0)->where('task_not_applicable_status', 0)->pluck('patient_id')->unique()->toArray();
-        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::whereIn("{$patients_table}.camis_patient_id", $dp_patients)->leftJoin($vitalpac_table, "{$patients_table}.camis_patient_id", '=', "{$vitalpac_table}.camis_patient_id")
+        $patient_query = CamisIboxWardPatientInformationWithBedDetailsView::whereIn("{$patients_table}.camis_patient_id", $dp_patients)->leftJoin(
+            $vitalpac_table,
+            function ($join) use ($patients_table, $vitalpac_table) {
+                $join->on(
+                    DB::raw("{$patients_table}.camis_patient_id COLLATE utf8mb4_general_ci"),
+                    '=',
+                    DB::raw("{$vitalpac_table}.camis_patient_id COLLATE utf8mb4_general_ci")
+                );
+            }
+        )
         ->select("{$patients_table}.*", "{$vitalpac_table}.totalews")
 
         ->with([

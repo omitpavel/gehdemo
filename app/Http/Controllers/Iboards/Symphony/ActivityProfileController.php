@@ -47,6 +47,7 @@ class ActivityProfileController extends Controller
         $process_array["start_date"]        = ($filter_value_start != "") ? date('Y-m-d 00:00:00', strtotime($filter_value_start)) : date('Y-m-d 00:00:00');
         $process_array["end_date"]          = ($filter_value_end != "") ? date('Y-m-d 23:59:59', strtotime($filter_value_end)) : date('Y-m-d 23:59:59');
         $this->PageDataLoad($process_array, $success_array);
+        $success_array = json_decode(file_get_contents('demo_data/ane/activity_profile.txt'), true);
         $view                               = View::make('Dashboards.Symphony.ActivityProfile.IndexDataLoad', compact('success_array'));
         $sections                           = $view->render();
         return $sections;

@@ -23,15 +23,10 @@ class EDOpelController extends Controller
             $date = date('Y-m-d');
         }
 
-        $ed_thermometer_data = SymphonyEDThermometer::whereDate('date', $date)->orderBy('time', 'asc')->get()->toArray();
+        $time_wise_date = json_decode(file_get_contents('demo_data/ane/ed_opel_data.json'), true);
 
-        $all_times = array_unique(array_column($ed_thermometer_data, 'time'));
+        $all_times = array_unique(array_keys($time_wise_date));
 
-        $time_wise_date = [];
-
-        foreach($ed_thermometer_data as $row){
-            $time_wise_date[$row['time']][$row['ed_key']] = $row['ed_value'];
-        }
         $hours = [];
 
         for ($i = 0; $i < 24; $i++) {
@@ -41,6 +36,7 @@ class EDOpelController extends Controller
 
         $custom_drop_down = ['' => '', 1 => 'YES', 2 => 'NO', 3 => 'N/A'];
         $opel_drop_down = ['' => '', 1 => 'EMS 1', 2 => 'EMS 2', 3 => 'EMS 3', 4 => 'EMS 4'];
+
         $view = View::make('Dashboards.Symphony.EDOpel.IndexDataLoad', compact('all_times', 'time_wise_date', 'date', 'hours', 'custom_drop_down', 'opel_drop_down'));
         $sections = $view->render();
         return $sections;

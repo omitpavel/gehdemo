@@ -37,7 +37,7 @@ class BreachValidationController extends Controller
         $common_symphony_controller->SetSymphonyDefaultConstantsValue($process_array, $success_array);
         $success_array["page_sub_title"] = date('l jS F H:i');
         $process_array["start_date"]                        = CurrentDateOnFormat();
-//        $process_array["start_date"]                        = Carbon::parse('2023-11-27');
+        //        $process_array["start_date"]                        = Carbon::parse('2023-11-27');
         CalculateStartEndDateAccordingSelection($process_array["start_date"], $process_array["end_date"], "day");
         $this->BreachValidationBreachDataprocess($success_array, $process_array);
         $success_array['date_filter_tab_1_date_to_show']    = PredefinedDateFormatShowOnCalendarDashboard($process_array["start_date"]);
@@ -58,11 +58,9 @@ class BreachValidationController extends Controller
         $common_controller->SetDefaultConstantsValue($process_array, $success_array);
         $common_symphony_controller->SetSymphonyDefaultConstantsValue($process_array, $success_array);
 
-        if ($tab_filter_mode == 1 || $tab_filter_mode == 2 || $tab_filter_mode == 3 || $tab_filter_mode == 4 || $tab_filter_mode == 5)
-        {
-            if ($tab_filter_mode == 1)
-            {
-                if(CheckSpecificPermission('breach_reason_view')){
+        if ($tab_filter_mode == 1 || $tab_filter_mode == 2 || $tab_filter_mode == 3 || $tab_filter_mode == 4 || $tab_filter_mode == 5) {
+            if ($tab_filter_mode == 1) {
+                if (CheckSpecificPermission('breach_reason_view')) {
                     $process_array["start_date"]                        = ($filter_value != "") ? $filter_value : CurrentDateOnFormat();
                     CalculateStartEndDateAccordingSelection($process_array["start_date"], $process_array["end_date"], "day");
                     $this->BreachValidationBreachDataprocess($success_array, $process_array);
@@ -76,12 +74,12 @@ class BreachValidationController extends Controller
                     return PermissionDenied();
                 }
             }
-            if ($tab_filter_mode == 2)
-            {
-                if(CheckSpecificPermission('breach_dashboard_view')){
+            if ($tab_filter_mode == 2) {
+                if (CheckSpecificPermission('breach_dashboard_view')) {
                     $process_array["start_date"]                        = ($filter_value != "") ? $filter_value : CurrentDateOnFormat();
                     CalculateStartEndDateAccordingSelection($process_array["start_date"], $process_array["end_date"], "day");
                     $this->BreachValidationBreachDaySummaryDataprocess($success_array, $process_array, $tab_filter_mode);
+                    $success_array = json_decode(file_get_contents('demo_data/ane/breach1.txt'), true);
                     $success_array['date_filter_tab_2_date_to_show']    = PredefinedDateFormatShowOnCalendarDashboard($process_array["start_date"]);
                     $success_array["filter_value_selected"]             = PredefinedStandardDateFormatChangeDateAlone($process_array["start_date"]);
 
@@ -93,12 +91,12 @@ class BreachValidationController extends Controller
                 }
             }
 
-            if ($tab_filter_mode == 3)
-            {
-                if(CheckSpecificPermission('breach_monthly_dashboard_view')){
+            if ($tab_filter_mode == 3) {
+                if (CheckSpecificPermission('breach_monthly_dashboard_view')) {
                     $process_array["start_date"]                        = ($filter_value != "") ? $filter_value : CurrentDateOnFormat();
                     CalculateStartEndDateAccordingSelection($process_array["start_date"], $process_array["end_date"], "month");
                     $this->BreachValidationBreachDaySummaryDataprocess($success_array, $process_array, $tab_filter_mode);
+                    $success_array = json_decode(file_get_contents('demo_data/ane/breach3.txt'), true);
                     $success_array["filter_value_selected"]             = date("Y-m-d", strtotime($process_array["start_date"]));
                     $success_array["month_filter_array"]                = LastNumberOfMonthsArrayForDropdownOperation($process_array["date_time_now"], 12);
 
@@ -110,9 +108,8 @@ class BreachValidationController extends Controller
                 }
             }
 
-            if ($tab_filter_mode == 4)
-            {
-                if(CheckSpecificPermission('breach_monthly_report_view')){
+            if ($tab_filter_mode == 4) {
+                if (CheckSpecificPermission('breach_monthly_report_view')) {
                     $process_array["start_date"]                        = ($filter_value != "") ? $filter_value : CurrentDateOnFormat();
                     CalculateStartEndDateAccordingSelection($process_array["start_date"], $process_array["end_date"], "month");
                     $this->BreachValidationBreachMonthOverall($success_array, $process_array);
@@ -127,13 +124,13 @@ class BreachValidationController extends Controller
                 }
             }
 
-            if ($tab_filter_mode == 5)
-            {
-                if(CheckSpecificPermission('breach_weekly_dashboard_view')){
+            if ($tab_filter_mode == 5) {
+                if (CheckSpecificPermission('breach_weekly_dashboard_view')) {
                     $process_array["start_date"]                = ($filter_value != "") ? $filter_value : CurrentDateOnFormat();
                     $success_array["week_filter_array"]         = LastNumberOfWeeksArrayForDropdownOperation($process_array["date_time_now"], 120);
                     CalculateStartEndDateAccordingSelection($process_array["start_date"], $process_array["end_date"], "week");
                     $this->BreachValidationBreachDaySummaryDataprocess($success_array, $process_array, $tab_filter_mode);
+                    $success_array = json_decode(file_get_contents('demo_data/ane/breach2.txt'), true);
                     $success_array["filter_value_selected"]     = date("Y-m-d", strtotime($process_array["start_date"]));
                     $view = View::make('Dashboards.Symphony.BreachValidation.IndexDataLoadTabContent4', compact('success_array'));
                     $sections = $view->render();
@@ -142,9 +139,7 @@ class BreachValidationController extends Controller
                     return PermissionDenied();
                 }
             }
-        }
-        else
-        {
+        } else {
             return false;
         }
     }
@@ -154,15 +149,14 @@ class BreachValidationController extends Controller
     {
 
         $common_symphony_controller         = new CommonSymphonyController;
-        $total_attendance                   = SymphonyBreachAttendanceView::whereBetween('symphony_discharge_date', array($process_array["start_date"], $process_array["end_date"]))->orderBy('symphony_discharge_date', 'ASC')->get()->toArray();
+        $total_attendance                   = SymphonyBreachAttendanceView::orderBy('symphony_discharge_date', 'ASC')->get()->toArray();
+
         $total_attendance_breached          = $common_symphony_controller->GetBreachedArrayProcessFrom240Minutes($total_attendance, $process_array);
         $breach_record_array                = array();
         $prev_attendance_number             = "";
-        if (count($total_attendance_breached) > 0)
-        {
+        if (count($total_attendance_breached) > 0) {
             $x = 0;
-            foreach ($total_attendance_breached as $row)
-            {
+            foreach ($total_attendance_breached as $row) {
                 $breach_record_array[$x]["attendance_id"]                       = ValuePresentThenSetForVariable($row, "symphony_attendance_id", 0);
                 $breach_record_array[$x]["pas_number"]                          = ValuePresentThenSetForVariable($row, "symphony_pas_number", 0);
                 $breach_record_array[$x]["patient_sex"]                          = ValuePresentThenSetForVariable($row, "symphony_patient_sex", 0);
@@ -187,14 +181,11 @@ class BreachValidationController extends Controller
                 $x++;
             }
         }
-        if (count($breach_record_array) > 0)
-        {
+        if (count($breach_record_array) > 0) {
             $x = 0;
-            foreach ($breach_record_array as $row)
-            {
+            foreach ($breach_record_array as $row) {
                 $breach_record_array[$x]["next_attendance_number"]              = "";
-                if (isset($breach_record_array[$x + 1]["attendance_id"]))
-                {
+                if (isset($breach_record_array[$x + 1]["attendance_id"])) {
                     $breach_record_array[$x]["next_attendance_number"]          = $breach_record_array[$x + 1]["attendance_id"];
                 }
                 $x++;
@@ -209,7 +200,7 @@ class BreachValidationController extends Controller
     {
 
 
-        if(CheckSpecificPermission('add_breach_reason_popup_view')){
+        if (CheckSpecificPermission('add_breach_reason_popup_view')) {
             $common_controller                      = new CommonController;
             $common_symphony_controller             = new CommonSymphonyController;
             $process_array                          = array();
@@ -219,11 +210,9 @@ class BreachValidationController extends Controller
             $common_controller->SetDefaultConstantsValue($process_array, $success_array);
             $common_symphony_controller->SetSymphonyDefaultConstantsValue($process_array, $success_array);
             $success_array['breach_reason']         = BreachReason::where("status", '=', 1)->orderBy('reason_name', 'ASC')->pluck('reason_name', 'id')->toArray();
-            if ($attendace_id != "")
-            {
+            if ($attendace_id != "") {
                 $breach_data_processed              = SymphonyAttendanceView::where('symphony_attendance_id', $attendace_id)->first()->toArray();
-                if (count($breach_data_processed) > 0)
-                {
+                if (count($breach_data_processed) > 0) {
                     $breach_record_array["attendance_id"]                                   = ValuePresentThenSetForVariable($breach_data_processed, "symphony_attendance_id", 0);
                     $breach_record_array["pas_number"]                                      = ValuePresentThenSetForVariable($breach_data_processed, "symphony_pas_number", 0);
                     $breach_record_array["patient_name"]                                    = ucwords(strtolower(ValuePresentThenSetForVariable($breach_data_processed, "symphony_patient_name", 0)));
@@ -281,58 +270,43 @@ class BreachValidationController extends Controller
 
 
                     $breach_record_array["time_from_reg_to_triage_colour"]                  = "";
-                    if (intval($breach_record_array["time_in_department_over_four_hour"]) > 0 && $breach_record_array["dta_speciality"] != "" && strtolower($breach_record_array["discharge_outcome"]) != "discharge to home")
-                    {
+                    if (intval($breach_record_array["time_in_department_over_four_hour"]) > 0 && $breach_record_array["dta_speciality"] != "" && strtolower($breach_record_array["discharge_outcome"]) != "discharge to home") {
                         $breach_record_array["time_in_department_over_four_hour_colour"] = "breach-popup-colour-b19cd9";
-                    }
-                    else
-                    {
-                        if ($breach_record_array["patients_ed_department_right"] != "" || $breach_record_array["patients_in_department_right"]  != "")
-                        {
-                            if ($breach_record_array["patients_ed_department_right"] != "")
-                            {
+                    } else {
+                        if ($breach_record_array["patients_ed_department_right"] != "" || $breach_record_array["patients_in_department_right"]  != "") {
+                            if ($breach_record_array["patients_ed_department_right"] != "") {
                                 $breach_record_array["patients_ed_department_colour"]               = "breach-popup-colour-b19cd9";
                             }
-                            if ($breach_record_array["patients_in_department_right"] != "")
-                            {
+                            if ($breach_record_array["patients_in_department_right"] != "") {
                                 $breach_record_array["patients_in_department_colour"]               = "breach-popup-colour-b19cd9";
                             }
-                            if ($breach_record_array["time_from_reg_to_ed_doctor_right"] != "")
-                            {
+                            if ($breach_record_array["time_from_reg_to_ed_doctor_right"] != "") {
                                 $breach_record_array["time_from_reg_to_ed_doctor_colour"]           = "breach-popup-colour-b19cd9";
                             }
-                        }
-                        else
-                        {
+                        } else {
                             $top_val_range                          = "";
                             $top_val_range_index                    = "";
                             $time_to_triage_modal_val_check         = intval($breach_record_array["time_from_reg_to_triage"]) - 15;
                             $time_to_doctor_modal_val_check         = intval($breach_record_array["time_from_reg_to_ed_doctor"]) - 60;
                             $time_to_referral_modal_val_check       = intval($breach_record_array["time_from_reg_to_referal"]) - 90;
-                            if ($time_to_triage_modal_val_check > 0 || $time_to_doctor_modal_val_check > 0 || $time_to_referral_modal_val_check > 0)
-                            {
+                            if ($time_to_triage_modal_val_check > 0 || $time_to_doctor_modal_val_check > 0 || $time_to_referral_modal_val_check > 0) {
                                 $top_val_range                      = $time_to_triage_modal_val_check;
                                 $top_val_range_index                = "Triage";
-                                if ($time_to_doctor_modal_val_check > $top_val_range)
-                                {
+                                if ($time_to_doctor_modal_val_check > $top_val_range) {
                                     $top_val_range                  = $time_to_doctor_modal_val_check;
                                     $top_val_range_index            = "Assessment";
                                 }
-                                if ($time_to_referral_modal_val_check > $top_val_range)
-                                {
+                                if ($time_to_referral_modal_val_check > $top_val_range) {
                                     $top_val_range                  = $time_to_referral_modal_val_check;
                                     $top_val_range_index            = "Late";
                                 }
-                                if ($top_val_range_index == "Late")
-                                {
+                                if ($top_val_range_index == "Late") {
                                     $breach_record_array["time_from_reg_to_referal_colour"]             = "breach-popup-colour-b19cd9";
                                 }
-                                if ($top_val_range_index == "Assessment")
-                                {
+                                if ($top_val_range_index == "Assessment") {
                                     $breach_record_array["time_from_reg_to_ed_doctor_colour"]           = "breach-popup-colour-b19cd9";
                                 }
-                                if ($top_val_range_index == "Triage")
-                                {
+                                if ($top_val_range_index == "Triage") {
                                     $breach_record_array["time_from_reg_to_triage_colour"]              = "breach-popup-colour-b19cd9";
                                 }
                             }
@@ -352,7 +326,7 @@ class BreachValidationController extends Controller
 
     public function BreachReasonDataStore(Request $request)
     {
-        if(CheckSpecificPermission('add_breach_reason_popup_update')){
+        if (CheckSpecificPermission('add_breach_reason_popup_update')) {
             $history_controller                                         = new HistoryController;
             $history_opel_status                                        = "App\Models\History\HistorySymphonyBreachReasonUserUpdate";
             $date_time_now                                              = CurrentDateOnFormat();
@@ -362,33 +336,25 @@ class BreachValidationController extends Controller
             $user_name                                                  = Session()->get('LOGGED_USER_NAME', '');
             $success_array["message"]                                   = ErrorOccuredMessage();
             $success_array["status"]                                    = 0;
-            if ($breach_reason_id != "" && $user_id != "" && $attendace_id != "")
-            {
+            if ($breach_reason_id != "" && $user_id != "" && $attendace_id != "") {
                 $gov_text_before_arr                                    = SymphonyBreachReasonUserUpdate::where('attendance_number', '=', $attendace_id)->first();
                 $breach_reason_data                                     = SymphonyBreachReasonUserUpdate::updateOrCreate(['attendance_number' => $attendace_id], ['breach_reason_update_id' => $breach_reason_id, 'breach_reason_updated_user' => $user_id]);
                 $history_controller->HistoryTableDataInsertFromUpdateCreate($breach_reason_data, $history_opel_status);
                 $breach_data_stored_return                              = BreachReason::where('id', '=', $breach_reason_id)->first();
 
-                if ($breach_reason_data->wasRecentlyCreated)
-                {
+                if ($breach_reason_data->wasRecentlyCreated) {
                     $success_array["message"]                           = DataAddedMessage();
                     $updated_array                                      = $breach_reason_data->getOriginal();
                     $gov_text_before                                    = array();
-                    if (count($updated_array) > 0 && isset($updated_array["id"]))
-                    {
+                    if (count($updated_array) > 0 && isset($updated_array["id"])) {
                         $this->GovernanceBreachReasonUpdatePreCall($attendace_id, $updated_array["id"], $gov_text_before, $breach_data_stored_return->reason_name, 1);
                     }
-                }
-                else
-                {
+                } else {
                     $success_array["message"]                           = DataUpdatedMessage();
-                    if (count($breach_reason_data->getChanges()) > 0)
-                    {
+                    if (count($breach_reason_data->getChanges()) > 0) {
                         $updated_array                                  = $breach_reason_data->getOriginal();
-                        if (count($updated_array) > 0 && isset($updated_array["id"]))
-                        {
-                            if ($gov_text_before_arr)
-                            {
+                        if (count($updated_array) > 0 && isset($updated_array["id"])) {
+                            if ($gov_text_before_arr) {
                                 $gov_text_before                        = $gov_text_before_arr->toArray();
                                 $this->GovernanceBreachReasonUpdatePreCall($attendace_id, $updated_array["id"], $gov_text_before, $breach_data_stored_return->reason_name, 2);
                             }
@@ -415,14 +381,11 @@ class BreachValidationController extends Controller
         $gov_data                                   = array();
         $gov_text_after_arr                         = SymphonyBreachReasonUserUpdate::where('id', '=', $id)->first();
         $functional_identity                        = RetriveSpecificConstantSettingValues("ibox_frontend_governance_symphony_ane_breach_reason", "ibox_governance_frontend_functional_names");
-        if ($operation == 1)
-        {
-            if ($gov_text_after_arr)
-            {
+        if ($operation == 1) {
+            if ($gov_text_after_arr) {
                 $gov_text_after = $gov_text_after_arr->toArray();
             }
-            if (isset($gov_text_after["id"]))
-            {
+            if (isset($gov_text_after["id"])) {
                 $gov_data["gov_text_before"] = "";
                 $gov_data["gov_text_after"] = json_encode($gov_text_after);
                 $gov_data["gov_attendance_id"] = $attendance_id;
@@ -431,14 +394,11 @@ class BreachValidationController extends Controller
                 $gov_data["gov_description"] = $gov_desc;
             }
         }
-        if ($operation == 2)
-        {
-            if ($gov_text_after_arr)
-            {
+        if ($operation == 2) {
+            if ($gov_text_after_arr) {
                 $gov_text_after = $gov_text_after_arr->toArray();
             }
-            if (isset($gov_text_after["id"]) && isset($gov_text_before["id"]))
-            {
+            if (isset($gov_text_after["id"]) && isset($gov_text_before["id"])) {
                 $gov_data["gov_text_before"] = json_encode($gov_text_before);
                 $gov_data["gov_text_after"] = json_encode($gov_text_after);
                 $gov_data["gov_attendance_id"] = $attendance_id;
@@ -447,10 +407,8 @@ class BreachValidationController extends Controller
                 $gov_data["gov_description"] = $gov_desc;
             }
         }
-        if ($operation == 3)
-        {
-            if (isset($gov_text_before["id"]))
-            {
+        if ($operation == 3) {
+            if (isset($gov_text_before["id"])) {
                 $gov_data["gov_text_before"] = json_encode($gov_text_before);
                 $gov_data["gov_text_after"] = "";
                 $gov_data["gov_attendance_id"] = $attendance_id;
@@ -459,10 +417,8 @@ class BreachValidationController extends Controller
                 $gov_data["gov_description"] = $gov_desc;
             }
         }
-        if (!empty($gov_data))
-        {
-            if (count($gov_data) > 0)
-            {
+        if (!empty($gov_data)) {
+            if (count($gov_data) > 0) {
                 $governance = new GovernanceController;
                 $governance->GovernanceStoreSymphonyData($gov_data);
             }
@@ -479,8 +435,7 @@ class BreachValidationController extends Controller
     public function CalculatedEDSummaryColumnSum($data_process, $index_name)
     {
         $return_val                     = 0;
-        if (count($data_process) > 0)
-        {
+        if (count($data_process) > 0) {
             $return_val                 = array_sum(array_column($data_process, $index_name));
         }
         return $return_val;
@@ -568,20 +523,13 @@ class BreachValidationController extends Controller
     public function PerformancePercentageTablebackgroundCalculation($percentage)
     {
         $return_class = '';
-        if($percentage > 95)
-        {
+        if ($percentage > 95) {
             $return_class = 'high';
-        }
-        else if($percentage > 90)
-        {
+        } else if ($percentage > 90) {
             $return_class = 'mid';
-        }
-        else if($percentage > 80)
-        {
+        } else if ($percentage > 80) {
             $return_class = 'avg';
-        }
-        else
-        {
+        } else {
             $return_class = 'low';
         }
 
@@ -596,13 +544,13 @@ class BreachValidationController extends Controller
         $todays_attendence_all_category                                             = SymphonyAttendanceView::whereBetween('symphony_discharge_date', array($process_array["start_date"], $process_array["end_date"]))->orderBy('symphony_discharge_date', 'ASC')->get()->toArray();
         $todays_discharged_all_category                                             = SymphonyAttendanceView::whereBetween('symphony_discharge_date', array($process_array["start_date"], $process_array["end_date"]))->orderBy('symphony_discharge_date', 'ASC')->get()->toArray();
 
-        $daily_key_value_data = SymphonyAttendanceCalculatedDailyEDSummary::where('ed_summary_key_value','LIKE', '%_speciality_%')->select('ed_summary_key_value', DB::raw('SUM(ed_summary_value) as total'))
-        ->whereBetween('ed_summary_date', [Carbon::parse($process_array["start_date"])->toDateString(), Carbon::parse($process_array["end_date"])->toDateString()])
-        ->groupBy('ed_summary_key_value')
-        ->pluck('total', 'ed_summary_key_value')
-        ->toArray();
+        $daily_key_value_data = SymphonyAttendanceCalculatedDailyEDSummary::where('ed_summary_key_value', 'LIKE', '%_speciality_%')->select('ed_summary_key_value', DB::raw('SUM(ed_summary_value) as total'))
+            ->whereBetween('ed_summary_date', [Carbon::parse($process_array["start_date"])->toDateString(), Carbon::parse($process_array["end_date"])->toDateString()])
+            ->groupBy('ed_summary_key_value')
+            ->pluck('total', 'ed_summary_key_value')
+            ->toArray();
 
-        $speciality_name = ['ed' => 'ED', 'medicine' =>'Medicine', 'surgery' => 'Surgery', 'gynecology' => 'Gynecology', 'paediatrics' => 'Paediatrics', 'amhat' => 'AMHAT', 'trauma & orthopaedics' => 'Trauma & Orthopaedics'];
+        $speciality_name = ['ed' => 'ED', 'medicine' => 'Medicine', 'surgery' => 'Surgery', 'gynecology' => 'Gynecology', 'paediatrics' => 'Paediatrics', 'amhat' => 'AMHAT', 'trauma & orthopaedics' => 'Trauma & Orthopaedics'];
 
 
         $performance_by_speciality = [];
@@ -625,10 +573,8 @@ class BreachValidationController extends Controller
         $replace_name                                                               = $common_symphony_controller->GetAneMainPatientCategoryReplace("UTC", $process_array);
         $attendence_all_category_wise["UTC"]["attendence_count"]                    = 0;
         $attendence_all_category_wise["UTC"]["name_show_text"]                      = $replace_name;
-        if (!empty($attendence_category))
-        {
-            foreach ($attendence_category as $key => $row)
-            {
+        if (!empty($attendence_category)) {
+            foreach ($attendence_category as $key => $row) {
 
                 $attendence_all_category_wise[$key]["attendence_count"]             = $row;
                 $replace_name                                                       = $common_symphony_controller->GetAneMainPatientCategoryReplace($key, $process_array);
@@ -643,33 +589,24 @@ class BreachValidationController extends Controller
         $discharged_all_admitted_discharged_breached                                = $common_symphony_controller->AdmittedDischargedBreachedArrayProcess($process_array['todays_discharged_all_category'], $process_array);
         $attendence_category_breach_reason_index                                    = $common_controller->ArrayColumnCategoryWiseGrouping($discharged_all_admitted_discharged_breached['breached_patients'], 'breach_reason_name');
         $breach_reason_count_array                                                  = array();
-        if (!empty($attendence_category_breach_reason_index))
-        {
+        if (!empty($attendence_category_breach_reason_index)) {
             $x                                                                      = 0;
-            foreach ($attendence_category_breach_reason_index as $key => $data)
-            {
+            foreach ($attendence_category_breach_reason_index as $key => $data) {
                 $breach_reason_count_array[$x]["breach_name"]                       = $key;
                 $breach_reason_count_array[$x]["admitted_count"]                    = 0;
                 $breach_reason_count_array[$x]["discharged_count"]                  = 0;
                 $breach_reason_count_array[$x]["breach_count"]                      = count($data);
                 $breach_reason_count_array[$x]["total_count"]                       = count($data);
 
-                if (!empty($data))
-                {
-                    foreach ($data as $row)
-                    {
-                        if (isset($row["symphony_discharge_date"]))
-                        {
-                            if ($row["symphony_discharge_date"] != null)
-                            {
-                                if (isset($row["symphony_discharge_outcome_val"]))
-                                {
-                                    if ($row["symphony_discharge_outcome_val"] == 0)
-                                    {
+                if (!empty($data)) {
+                    foreach ($data as $row) {
+                        if (isset($row["symphony_discharge_date"])) {
+                            if ($row["symphony_discharge_date"] != null) {
+                                if (isset($row["symphony_discharge_outcome_val"])) {
+                                    if ($row["symphony_discharge_outcome_val"] == 0) {
                                         $breach_reason_count_array[$x]["discharged_count"]++;
                                     }
-                                    if ($row["symphony_discharge_outcome_val"] == 1)
-                                    {
+                                    if ($row["symphony_discharge_outcome_val"] == 1) {
                                         $breach_reason_count_array[$x]["admitted_count"]++;
                                     }
                                 }
@@ -680,14 +617,12 @@ class BreachValidationController extends Controller
                 $x++;
             }
         }
-        if (count($breach_reason_count_array) > 1)
-        {
+        if (count($breach_reason_count_array) > 1) {
             MultiArraySortCustom($breach_reason_count_array, "breach_count", "desc");
         }
         $success_array["breach_reason"]                                             = $breach_reason_count_array;
 
-        if ($tab_filter_mode == 2)
-        {
+        if ($tab_filter_mode == 2) {
             $process_array["past_seven_days_date_start"]                    = $process_array["start_date"];
             CalculateStartEndDateAccordingSelection($process_array["past_seven_days_date_start"], $process_array["past_seven_days_date_end"], "last seven");
             $attendence_past_7_days_processed                               = $this->CalculatedEDSummaryAttendance($process_array["past_seven_days_date_start"], $process_array["past_seven_days_date_end"]);
@@ -695,8 +630,7 @@ class BreachValidationController extends Controller
             $breach_days_7_arr                                              = array();
             $past_seven_days                                                = array();
 
-            for ($x = 0; $x < 7; $x++)
-            {
+            for ($x = 0; $x < 7; $x++) {
                 $date_day_index_format                                      = date("Y-m-d", strtotime($process_array["past_seven_days_date_end"]));
                 $date_day_index                                             = date("jS M Y", strtotime($date_day_index_format . " - $x days"));
                 $date_day_index_array                                       = date("Y-m-d", strtotime($date_day_index_format . " - $x days"));
@@ -710,14 +644,10 @@ class BreachValidationController extends Controller
                 $breach_days_7_arr[$date_day_index_array]                   = array();
             }
 
-            if (count($attendence_past_7_days_processed) > 0)
-            {
-                foreach ($attendence_past_7_days_processed as $row)
-                {
-                    if (isset($past_seven_days[$row['ed_summary_date']]))
-                    {
-                        if (isset($row['symphony_attendance']) && $row['symphony_attendance'] != '' && $row['symphony_attendance'] != 0)
-                        {
+            if (count($attendence_past_7_days_processed) > 0) {
+                foreach ($attendence_past_7_days_processed as $row) {
+                    if (isset($past_seven_days[$row['ed_summary_date']])) {
+                        if (isset($row['symphony_attendance']) && $row['symphony_attendance'] != '' && $row['symphony_attendance'] != 0) {
                             $past_seven_days[$row['ed_summary_date']]["type_1_2_3"]         = $row['symphony_attendance'];
                             $past_seven_days[$row['ed_summary_date']]["discharged"]         = $row['symphony_discharged'];
                             $past_seven_days[$row['ed_summary_date']]["breaches"]           = $row['symphony_breached'];
@@ -728,9 +658,7 @@ class BreachValidationController extends Controller
                 }
             }
             $success_array["past_seven_days"]                       = $past_seven_days;
-        }
-        elseif ($tab_filter_mode == 5)
-        {
+        } elseif ($tab_filter_mode == 5) {
             $past_7_weeks_date_filter_start                                 = date("Y-m-d 00:00:00", strtotime($process_array["start_date"] . " -49 days"));
             $past_7_weeks_date_filter_end                                   = date("Y-m-d 23:59:59", strtotime($past_7_weeks_date_filter_start . " +48 days"));
             $attendence_past_7_weeks_processed                              = $this->CalculatedEDSummaryAttendance($past_7_weeks_date_filter_start, $past_7_weeks_date_filter_end);
@@ -739,8 +667,7 @@ class BreachValidationController extends Controller
             $breach_weeks_7_arr                                             = array();
             $past_seven_weeks                                               = array();
 
-            for ($x = 0; $x < 7; $x++)
-            {
+            for ($x = 0; $x < 7; $x++) {
                 $days_mul                                                   = $x * 7;
                 $date_week_index_format                                     = date("Y-m-d", strtotime($past_7_weeks_date_filter_end . ' monday this week'));
                 $date_week_index                                            = date("jS M", strtotime($date_week_index_format . " - $days_mul days"));
@@ -757,21 +684,16 @@ class BreachValidationController extends Controller
                 $breach_weeks_7_arr[$date_week_index_array]                = array();
             }
 
-            if (!empty($attendence_past_7_weeks_processed))
-            {
-                foreach ($attendence_past_7_weeks_processed as $row)
-                {
+            if (!empty($attendence_past_7_weeks_processed)) {
+                foreach ($attendence_past_7_weeks_processed as $row) {
                     $date_format_for_index                                  = date("Y-m-d", strtotime($row["ed_summary_date"] . ' monday this week'));
                     $attendence_weeks_7_arr[$date_format_for_index][]       = $row;
                 }
             }
 
-            foreach ($past_seven_weeks as $key => $row)
-            {
-                if (isset($attendence_weeks_7_arr[$row["date_val_org"]]))
-                {
-                    if (is_array($attendence_weeks_7_arr[$row["date_val_org"]]))
-                    {
+            foreach ($past_seven_weeks as $key => $row) {
+                if (isset($attendence_weeks_7_arr[$row["date_val_org"]])) {
+                    if (is_array($attendence_weeks_7_arr[$row["date_val_org"]])) {
                         $past_seven_weeks[$key]["type_1_2_3"]               = array_sum(array_column($attendence_weeks_7_arr[$row["date_val_org"]], 'symphony_attendance'));
                         $past_seven_weeks[$key]["breaches"]                 = array_sum(array_column($attendence_weeks_7_arr[$row["date_val_org"]], 'symphony_breached'));
                         $past_seven_weeks[$key]["discharges"]               = array_sum(array_column($attendence_weeks_7_arr[$row["date_val_org"]], 'symphony_discharged'));
@@ -780,9 +702,7 @@ class BreachValidationController extends Controller
                 }
             }
             $success_array["past_seven_weeks"]                              = $past_seven_weeks;
-        }
-        else
-        {
+        } else {
             $past_7_months_date_filter_start                                = date("Y-m-01", strtotime($process_array["start_date"] . " -5 month"));
             $past_7_months_date_filter_end                                  = date("Y-m-t", strtotime($past_7_months_date_filter_start . " +5 month"));
             $attendence_past_7_months_data_processed                        = $this->CalculatedEDSummaryAttendance($past_7_months_date_filter_start, $past_7_months_date_filter_end);
@@ -791,8 +711,7 @@ class BreachValidationController extends Controller
             $breach_months_7_arr                                            = array();
             $past_seven_months                                              = array();
 
-            for ($x = 0; $x < 6; $x++)
-            {
+            for ($x = 0; $x < 6; $x++) {
                 $date_month_index_format                                    = date("Y-m-01", strtotime($past_7_months_date_filter_end));
                 $date_month_index                                           = date("M Y", strtotime($date_month_index_format . " - $x month"));
                 $date_month_index_array                                     = date("Y-m-01", strtotime($date_month_index_format . " - $x month"));
@@ -805,20 +724,15 @@ class BreachValidationController extends Controller
                 $attendence_months_7_arr[$date_month_index_array]           = array();
                 $breach_months_7_arr[$date_month_index_array]               = array();
             }
-            if (!empty($attendence_past_7_months_data_processed))
-            {
-                foreach ($attendence_past_7_months_data_processed as $row)
-                {
+            if (!empty($attendence_past_7_months_data_processed)) {
+                foreach ($attendence_past_7_months_data_processed as $row) {
                     $date_format_for_index                                  = date("Y-m-01", strtotime($row["ed_summary_date"]));
                     $attendence_months_7_arr[$date_format_for_index][]      = $row;
                 }
             }
-            foreach ($past_seven_months as $key => $row)
-            {
-                if (isset($attendence_months_7_arr[$row["date_val_org"]]))
-                {
-                    if (is_array($attendence_months_7_arr[$row["date_val_org"]]))
-                    {
+            foreach ($past_seven_months as $key => $row) {
+                if (isset($attendence_months_7_arr[$row["date_val_org"]])) {
+                    if (is_array($attendence_months_7_arr[$row["date_val_org"]])) {
                         $past_seven_months[$key]["type_1_2_3"]              = array_sum(array_column($attendence_months_7_arr[$row["date_val_org"]], 'symphony_attendance'));
                         $past_seven_months[$key]["discharges"]              = array_sum(array_column($attendence_months_7_arr[$row["date_val_org"]], 'symphony_discharged'));
                         $past_seven_months[$key]["breaches"]                = array_sum(array_column($attendence_months_7_arr[$row["date_val_org"]], 'symphony_breached'));
@@ -839,8 +753,7 @@ class BreachValidationController extends Controller
         $breach_data_array["ambulance"]["breach_count"]                 = count($ambulance_walkin_data_array['ambulance_arrival']);
         $breach_data_array["walk_in"]["breach_count"]                   = count($ambulance_walkin_data_array['walkin_arrival']);
         $breach_data_array["ambulance"]["breach_perc"]                  = PercentageCalculationOfValues($breach_data_array["ambulance"]["breach_count"], $breach_data_array["total"], 0);
-        if ($breach_data_array["walk_in"]["breach_count"] > 0)
-        {
+        if ($breach_data_array["walk_in"]["breach_count"] > 0) {
             $breach_data_array["walk_in"]["breach_perc"]                = number_format(100 - $breach_data_array["ambulance"]["breach_perc"]);
         }
         $success_array["breach_data"]                                   = $breach_data_array;
@@ -848,16 +761,15 @@ class BreachValidationController extends Controller
 
 
 
-        foreach($speciality_name as $speciality_key => $speciality_value){
+        foreach ($speciality_name as $speciality_key => $speciality_value) {
             $performance_by_speciality[$speciality_key]['name'] = $speciality_value;
-            $performance_by_speciality[$speciality_key]['attendance'] = $daily_key_value_data['symphony_attendance_speciality_'.$speciality_key] ?? 0;
-            $performance_by_speciality[$speciality_key]['breached'] = $daily_key_value_data['symphony_breached_speciality_'.$speciality_key] ?? 0;
-            $performance_by_speciality[$speciality_key]['admitted'] = $daily_key_value_data['symphony_admitted_speciality_'.$speciality_key] ?? 0;
-            $performance_by_speciality[$speciality_key]['discharged'] = $daily_key_value_data['symphony_discharged_speciality_'.$speciality_key] ?? 0;
+            $performance_by_speciality[$speciality_key]['attendance'] = $daily_key_value_data['symphony_attendance_speciality_' . $speciality_key] ?? 0;
+            $performance_by_speciality[$speciality_key]['breached'] = $daily_key_value_data['symphony_breached_speciality_' . $speciality_key] ?? 0;
+            $performance_by_speciality[$speciality_key]['admitted'] = $daily_key_value_data['symphony_admitted_speciality_' . $speciality_key] ?? 0;
+            $performance_by_speciality[$speciality_key]['discharged'] = $daily_key_value_data['symphony_discharged_speciality_' . $speciality_key] ?? 0;
             $performance_by_speciality[$speciality_key]['graph_perc'] = PerformanceCalculationAne($performance_by_speciality[$speciality_key]['breached'], $performance_by_speciality[$speciality_key]['attendance']);
             $performance_by_speciality[$speciality_key]['admitted_perc'] = PercentageCalculationOfValues($performance_by_speciality[$speciality_key]['admitted'], $performance_by_speciality[$speciality_key]['attendance']);
             $performance_by_speciality[$speciality_key]['breached_perc'] = PercentageCalculationOfValues($performance_by_speciality[$speciality_key]['breached'], $performance_by_speciality[$speciality_key]['attendance']);
-
         }
         $success_array['performance_by_speciality'] = $performance_by_speciality;
 
@@ -875,48 +787,35 @@ class BreachValidationController extends Controller
 
         $min_over_30                                                        = 0;
         $min_over_60                                                        = 0;
-        if ($tab_filter_mode == 2)
-        {
+        if ($tab_filter_mode == 2) {
             $ambulance_arrival_updated_date                                 = date("Y-m-d", strtotime($process_array["start_date"]));
             $ambulance_arrival_data_over_minutes                            = AmbulanceArrivalOverMinutes::where('ambulance_arrival_updated_date', '=', $ambulance_arrival_updated_date)->first();
-            if (isset($ambulance_arrival_data_over_minutes->min_30_count))
-            {
+            if (isset($ambulance_arrival_data_over_minutes->min_30_count)) {
                 $min_over_30 = $ambulance_arrival_data_over_minutes->min_30_count;
             }
-            if (isset($ambulance_arrival_data_over_minutes->min_60_count))
-            {
+            if (isset($ambulance_arrival_data_over_minutes->min_60_count)) {
                 $min_over_60 = $ambulance_arrival_data_over_minutes->min_60_count;
             }
-        }
-        elseif ($tab_filter_mode == 5)
-        {
+        } elseif ($tab_filter_mode == 5) {
             $process_array["week_start_date_ambulance"]                        = $process_array["start_date"];
             CalculateStartEndDateAccordingSelection($process_array["week_start_date_ambulance"], $process_array["week_end_date_ambulance"], "week");
             $ambulance_arrival_data_over_minutes_array                          = AmbulanceArrivalOverMinutes::whereBetween('ambulance_arrival_updated_date', [$process_array["week_start_date_ambulance"], $process_array["week_end_date_ambulance"]])->get();
-            if (!empty($ambulance_arrival_data_over_minutes_array))
-            {
-                if (count($ambulance_arrival_data_over_minutes_array) > 0)
-                {
-                    foreach ($ambulance_arrival_data_over_minutes_array as $row)
-                    {
+            if (!empty($ambulance_arrival_data_over_minutes_array)) {
+                if (count($ambulance_arrival_data_over_minutes_array) > 0) {
+                    foreach ($ambulance_arrival_data_over_minutes_array as $row) {
                         $min_over_30    = $min_over_30 + $row->min_30_count;
                         $min_over_60    = $min_over_60 + $row->min_60_count;
                     }
                 }
             }
-        }
-        else
-        {
+        } else {
             $process_array["month_start_date_ambulance"]                    = $process_array["start_date"];
             CalculateStartEndDateAccordingSelection($process_array["month_start_date_ambulance"], $process_array["month_end_date_ambulance"], "month");
             $ambulance_arrival_data_over_minutes_array                      = AmbulanceArrivalOverMinutes::whereBetween('ambulance_arrival_updated_date', [$process_array["month_start_date_ambulance"], $process_array["month_end_date_ambulance"]])->get();
 
-            if (!empty($ambulance_arrival_data_over_minutes_array))
-            {
-                if (count($ambulance_arrival_data_over_minutes_array) > 0)
-                {
-                    foreach ($ambulance_arrival_data_over_minutes_array as $row)
-                    {
+            if (!empty($ambulance_arrival_data_over_minutes_array)) {
+                if (count($ambulance_arrival_data_over_minutes_array) > 0) {
+                    foreach ($ambulance_arrival_data_over_minutes_array as $row) {
                         $min_over_30    = $min_over_30 + $row->min_30_count;
                         $min_over_60    = $min_over_60 + $row->min_60_count;
                     }
@@ -955,8 +854,8 @@ class BreachValidationController extends Controller
 
 
         $performance_array["breach_total"]                              = count($discharged_all_admitted_discharged_breached['breached_patients']);
-        $performance_array["admitted_perc"]                             = PerformanceCalculationAne($performance_array["admitted_breached_patient_count"] , $performance_array["admitted_count"], 2) . '% (' . $performance_array["admitted_count"] . ')';
-        $performance_array["non_admitted_perc"]                         = PerformanceCalculationAne($performance_array["non_admitted_breached_patient_count"] , $performance_array["non_admitted_count"], 2) . '% (' . $performance_array["non_admitted_count"] . ')';
+        $performance_array["admitted_perc"]                             = PerformanceCalculationAne($performance_array["admitted_breached_patient_count"], $performance_array["admitted_count"], 2) . '% (' . $performance_array["admitted_count"] . ')';
+        $performance_array["non_admitted_perc"]                         = PerformanceCalculationAne($performance_array["non_admitted_breached_patient_count"], $performance_array["non_admitted_count"], 2) . '% (' . $performance_array["non_admitted_count"] . ')';
         $performance_array["performance"]                               = PerformanceCalculationAne($performance_array["breach_total"], $performance_array["total_discharges"], 2);
         $performance_array["performance_graph"]                         = PerformanceCalculationAne($performance_array["breach_total"], $performance_array["total_discharges"], 0);
         $success_array["performance"]                                   = $performance_array;
@@ -971,8 +870,7 @@ class BreachValidationController extends Controller
         $forecast_year_attendance_total                                 = 0;
         $forecast_year_admitted_total                                   = 0;
 
-        if (count($attendence_data_processed_for_previous) > 0)
-        {
+        if (count($attendence_data_processed_for_previous) > 0) {
             $forecast_year_attendance_total                             = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_attendance'));
             $forecast_year_admitted_total                               = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_admitted_total_excluded_wards'));
         }
@@ -980,8 +878,7 @@ class BreachValidationController extends Controller
         $attendence_array["admitted_total"]                             = count($main_cat_admitted_discharged_breached['admitted_patients']);
         $attendence_array["coversion_rate"]                             = PercentageCalculationOfValues($attendence_array["admitted_total"], $attendence_array["type_1_2_3"], 0);
 
-        if ($tab_filter_mode == 2)
-        {
+        if ($tab_filter_mode == 2) {
             $process_array["forecast_date_section_start"]                     = $process_array["date_time_now"];
             CalculateStartEndDateAccordingSelection($process_array["forecast_date_section_start"], $process_array["forecast_date_section_end"], "last seven");
 
@@ -990,8 +887,7 @@ class BreachValidationController extends Controller
             $forecast_year_attendance_total                                 = 0;
             $forecast_year_admitted_total                                   = 0;
 
-            if (count($attendence_data_processed_for_previous) > 0)
-            {
+            if (count($attendence_data_processed_for_previous) > 0) {
                 $forecast_year_attendance_total                             = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_attendance'));
                 $forecast_year_admitted_total                               = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_admitted'));
             }
@@ -1006,17 +902,14 @@ class BreachValidationController extends Controller
             $forecast_year_attendance_total                                 = 0;
             $forecast_year_admitted_total                                   = 0;
 
-            if (count($attendence_data_processed_for_previous) > 0)
-            {
+            if (count($attendence_data_processed_for_previous) > 0) {
                 $forecast_year_attendance_total                             = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_attendance'));
                 $forecast_year_admitted_total                               = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_admitted'));
             }
 
             $attendence_array["attendence_forcasted_count_second"]              = round($forecast_year_attendance_total / 30, 0);
             $attendence_array["attendence_admitted_forcasted_count_second"]     = round($forecast_year_admitted_total / 30, 0);
-        }
-        elseif ($tab_filter_mode == 5)
-        {
+        } elseif ($tab_filter_mode == 5) {
             $process_array["forecast_date_section_start"]                     = $process_array["date_time_now"];
             CalculateStartEndDateAccordingSelection($process_array["forecast_date_section_start"], $process_array["forecast_date_section_end"], "last 4 weeks");
 
@@ -1025,8 +918,7 @@ class BreachValidationController extends Controller
             $forecast_year_attendance_total                                 = 0;
             $forecast_year_admitted_total                                   = 0;
 
-            if (count($attendence_data_processed_for_previous) > 0)
-            {
+            if (count($attendence_data_processed_for_previous) > 0) {
                 $forecast_year_attendance_total                             = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_attendance'));
                 $forecast_year_admitted_total                               = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_admitted'));
             }
@@ -1043,17 +935,14 @@ class BreachValidationController extends Controller
             $forecast_year_attendance_total                                 = 0;
             $forecast_year_admitted_total                                   = 0;
 
-            if (count($attendence_data_processed_for_previous) > 0)
-            {
+            if (count($attendence_data_processed_for_previous) > 0) {
                 $forecast_year_attendance_total                             = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_attendance'));
                 $forecast_year_admitted_total                               = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_admitted'));
             }
 
             $attendence_array["attendence_forcasted_count_second"]              = round($forecast_year_attendance_total / 12, 0);
             $attendence_array["attendence_admitted_forcasted_count_second"]     = round($forecast_year_admitted_total / 12, 0);
-        }
-        else
-        {
+        } else {
             $process_array["forecast_date_section_start"]                     = $process_array["date_time_now"];
             CalculateStartEndDateAccordingSelection($process_array["forecast_date_section_start"], $process_array["forecast_date_section_end"], "last_90");
 
@@ -1062,19 +951,15 @@ class BreachValidationController extends Controller
             $forecast_year_attendance_total                                 = 0;
             $forecast_year_admitted_total                                   = 0;
 
-            if (count($attendence_data_processed_for_previous) > 0)
-            {
+            if (count($attendence_data_processed_for_previous) > 0) {
                 $forecast_year_attendance_total                             = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_attendance'));
                 $forecast_year_admitted_total                               = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_admitted'));
             }
 
-            if ($tab_filter_mode == 3)
-            {
+            if ($tab_filter_mode == 3) {
                 $attendence_array["attendence_forcasted_count_first"]           = round($forecast_year_attendance_total / 3, 0);
                 $attendence_array["attendence_admitted_forcasted_count_first"]  = round($forecast_year_admitted_total / 3, 0);
-            }
-            else
-            {
+            } else {
                 $attendence_array["attendence_forcasted_count_first"]           = round($forecast_year_attendance_total / 90, 0);
                 $attendence_array["attendence_admitted_forcasted_count_first"]  = round($forecast_year_admitted_total / 90, 0);
             }
@@ -1087,19 +972,15 @@ class BreachValidationController extends Controller
             $forecast_year_attendance_total                                 = 0;
             $forecast_year_admitted_total                                   = 0;
 
-            if (count($attendence_data_processed_for_previous) > 0)
-            {
+            if (count($attendence_data_processed_for_previous) > 0) {
                 $forecast_year_attendance_total                             = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_attendance'));
                 $forecast_year_admitted_total                               = array_sum(array_column($attendence_data_processed_for_previous, 'symphony_admitted'));
             }
 
-            if ($tab_filter_mode == 3)
-            {
+            if ($tab_filter_mode == 3) {
                 $attendence_array["attendence_forcasted_count_second"]              = round($forecast_year_attendance_total / 12, 0);
                 $attendence_array["attendence_admitted_forcasted_count_second"]     = round($forecast_year_admitted_total / 12, 0);
-            }
-            else
-            {
+            } else {
                 $attendence_array["attendence_forcasted_count_second"]              = round($forecast_year_attendance_total / 365, 0);
                 $attendence_array["attendence_admitted_forcasted_count_second"]     = round($forecast_year_admitted_total / 365, 0);
             }
@@ -1114,23 +995,19 @@ class BreachValidationController extends Controller
         $attendence_array["attendence_forcasted_arrow_percentage_first"]        = "bi-caret-up-fill";
         $attendence_array["attendence_forcasted_arrow_percentage_second"]       = "bi-caret-up-fill";
 
-        if ($attendence_array["type_1_2_3"] > $attendence_array["attendence_forcasted_count_first"])
-        {
+        if ($attendence_array["type_1_2_3"] > $attendence_array["attendence_forcasted_count_first"]) {
             $attendence_array["attendence_forcasted_arrow_count_first"]         = "bi-caret-down-fill text-danger";
         }
 
-        if ($attendence_array["type_1_2_3"] > $attendence_array["attendence_forcasted_count_second"])
-        {
+        if ($attendence_array["type_1_2_3"] > $attendence_array["attendence_forcasted_count_second"]) {
             $attendence_array["attendence_forcasted_arrow_count_second"]         = "bi-caret-down-fill text-danger";
         }
 
-        if ($attendence_array["coversion_rate"] > $attendence_array["attendence_forcast_conversion_rate_first"])
-        {
+        if ($attendence_array["coversion_rate"] > $attendence_array["attendence_forcast_conversion_rate_first"]) {
             $attendence_array["attendence_forcasted_arrow_percentage_first"]         = "bi-caret-down-fill text-danger";
         }
 
-        if ($attendence_array["coversion_rate"] > $attendence_array["attendence_forcast_conversion_rate_second"])
-        {
+        if ($attendence_array["coversion_rate"] > $attendence_array["attendence_forcast_conversion_rate_second"]) {
             $attendence_array["attendence_forcasted_arrow_percentage_second"]         = "bi-caret-down-fill text-danger";
         }
         $success_array["attendence"]                                    = $attendence_array;
@@ -1213,67 +1090,76 @@ class BreachValidationController extends Controller
         $month_overall_summary_array                    = array();
         $month_overall_summary_array_total              = array();
 
-        for ($xy = 0; $xy < $number_of_days; $xy++)
-        {
-            $arr_create_date                            = date("Y-m-d", strtotime($process_array["start_date"] . " + $xy days"));
-            if (strtotime($arr_create_date) <= $current_day_check)
-            {
-                $month_overall_summary_array[$arr_create_date]['date']                                          = date('D jS M Y', strtotime($arr_create_date));
-                $month_overall_summary_array[$arr_create_date]['symphony_attendance_less_than_one_hour']        = 0;
-                $month_overall_summary_array[$arr_create_date]['symphony_attendance_one_to_two_hour']           = 0;
-                $month_overall_summary_array[$arr_create_date]['symphony_attendance_two_to_three_hour']         = 0;
-                $month_overall_summary_array[$arr_create_date]['symphony_attendance_three_to_four_hour']        = 0;
-                $month_overall_summary_array[$arr_create_date]['symphony_attendance_four_hours_plus']           = 0;
-                $month_overall_summary_array[$arr_create_date]['symphony_attendance']                           = 0;
-                $month_overall_summary_array[$arr_create_date]['symphony_discharged']                           = 0;
-                $month_overall_summary_array[$arr_create_date]['symphony_breached']                             = 0;
-                $month_overall_summary_array[$arr_create_date]['symphony_breached_performance']                 = 100;
+        for ($xy = 0; $xy < $number_of_days; $xy++) {
+            $arr_create_date = date("Y-m-d", strtotime($process_array["start_date"] . " + $xy days"));
+
+            if (strtotime($arr_create_date) <= $current_day_check) {
+                $month_overall_summary_array[$arr_create_date]['date'] = date('D jS M Y', strtotime($arr_create_date));
+
+                // Random realistic numbers 1–99
+                $month_overall_summary_array[$arr_create_date]['symphony_attendance_less_than_one_hour'] = rand(1, 99);
+                $month_overall_summary_array[$arr_create_date]['symphony_attendance_one_to_two_hour']    = rand(1, 99);
+                $month_overall_summary_array[$arr_create_date]['symphony_attendance_two_to_three_hour']  = rand(1, 99);
+                $month_overall_summary_array[$arr_create_date]['symphony_attendance_three_to_four_hour'] = rand(1, 99);
+                $month_overall_summary_array[$arr_create_date]['symphony_attendance_four_hours_plus']    = rand(1, 99);
+
+                $month_overall_summary_array[$arr_create_date]['symphony_attendance']   = rand(1, 99);
+                $month_overall_summary_array[$arr_create_date]['symphony_discharged']   = rand(1, 99);
+                $month_overall_summary_array[$arr_create_date]['symphony_breached']     = rand(1, 99);
+
+                // Keep performance as 100 unless you want random here too
+                $month_overall_summary_array[$arr_create_date]['symphony_breached_performance'] = rand(1, 99);
             }
         }
-        $month_overall_summary_array_total['symphony_attendance_less_than_one_hour']                            = 0;
-        $month_overall_summary_array_total['symphony_attendance_one_to_two_hour']                               = 0;
-        $month_overall_summary_array_total['symphony_attendance_two_to_three_hour']                             = 0;
-        $month_overall_summary_array_total['symphony_attendance_three_to_four_hour']                            = 0;
-        $month_overall_summary_array_total['symphony_attendance_four_hours_plus']                               = 0;
-        $month_overall_summary_array_total['symphony_attendance']                                               = 0;
-        $month_overall_summary_array_total['symphony_discharged']                                               = 0;
-        $month_overall_summary_array_total['symphony_breached']                                                 = 0;
-        $month_overall_summary_array_total['symphony_breached_performance']                                     = 100;
+
+        // TOTALS – if you also want these random, use rand(1,99).
+        // If you want them to remain 0, leave them as they are.
+        // Here I set them random as well (optional):
+        $month_overall_summary_array_total['symphony_attendance_less_than_one_hour'] = rand(1, 99);
+        $month_overall_summary_array_total['symphony_attendance_one_to_two_hour']    = rand(1, 99);
+        $month_overall_summary_array_total['symphony_attendance_two_to_three_hour']  = rand(1, 99);
+        $month_overall_summary_array_total['symphony_attendance_three_to_four_hour'] = rand(1, 99);
+        $month_overall_summary_array_total['symphony_attendance_four_hours_plus']    = rand(1, 99);
+        $month_overall_summary_array_total['symphony_attendance']                    = rand(1, 99);
+        $month_overall_summary_array_total['symphony_discharged']                    = rand(1, 99);
+        $month_overall_summary_array_total['symphony_breached']                      = rand(1, 99);
+        $month_overall_summary_array_total['symphony_breached_performance']          = rand(1, 99);
+
+
         $yz                                                                                                     = 0;
-        if (count($attendence_data_processed_month_data) > 0)
-        {
-            foreach ($attendence_data_processed_month_data as $row)
-            {
-                $date_to_check  = $row['ed_summary_date'];
-                if (isset($month_overall_summary_array[$date_to_check]))
-                {
-                    $month_overall_summary_array[$date_to_check]['symphony_attendance_less_than_one_hour']      = $row['symphony_attendance_less_than_one_hour'] ?? 0;
-                    $month_overall_summary_array[$date_to_check]['symphony_attendance_one_to_two_hour']         = $row['symphony_attendance_one_to_two_hour'] ?? 0;
-                    $month_overall_summary_array[$date_to_check]['symphony_attendance_two_to_three_hour']       = $row['symphony_attendance_two_to_three_hour'] ?? 0;
-                    $month_overall_summary_array[$date_to_check]['symphony_attendance_three_to_four_hour']      = $row['symphony_attendance_three_to_four_hour'] ?? 0;
-                    $month_overall_summary_array[$date_to_check]['symphony_attendance_four_hours_plus']         = $row['symphony_attendance_four_hours_plus'] ?? 0;
-                    $month_overall_summary_array[$date_to_check]['symphony_attendance']                         = $row['symphony_attendance'] ?? 0;
-                    $month_overall_summary_array[$date_to_check]['symphony_discharged']                         = $row['symphony_discharged'] ?? 0;
-                    $month_overall_summary_array[$date_to_check]['symphony_breached']                           = $row['symphony_breached'] ?? 0;
-                    if (isset($row['symphony_attendance']) && isset($row['symphony_breached']) && $row['symphony_attendance'] != 0 &&  $row['symphony_breached'] != 0)
-                    {
-                        $month_overall_summary_array[$date_to_check]['symphony_breached_performance']           = PerformanceCalculationAne($row['symphony_breached'], $row['symphony_discharged'], 0);
-                        $month_overall_summary_array_total['symphony_breached_performance']                     = $month_overall_summary_array_total['symphony_breached_performance'] + $month_overall_summary_array[$date_to_check]['symphony_breached_performance'];
-                        $yz++;
-                    }
-                    $month_overall_summary_array_total['symphony_attendance_less_than_one_hour']                = ($month_overall_summary_array_total['symphony_attendance_less_than_one_hour'] ?? 0) + ($row['symphony_attendance_less_than_one_hour'] ?? 0);
-                    $month_overall_summary_array_total['symphony_attendance_one_to_two_hour']                   = ($month_overall_summary_array_total['symphony_attendance_one_to_two_hour'] ?? 0) + ($row['symphony_attendance_one_to_two_hour'] ?? 0);
-                    $month_overall_summary_array_total['symphony_attendance_two_to_three_hour']                 = ($month_overall_summary_array_total['symphony_attendance_two_to_three_hour'] ?? 0) + ($row['symphony_attendance_two_to_three_hour'] ?? 0);
-                    $month_overall_summary_array_total['symphony_attendance_three_to_four_hour']                = ($month_overall_summary_array_total['symphony_attendance_three_to_four_hour'] ?? 0) + ($row['symphony_attendance_three_to_four_hour'] ?? 0);
-                    $month_overall_summary_array_total['symphony_attendance_four_hours_plus']                   = ($month_overall_summary_array_total['symphony_attendance_four_hours_plus'] ?? 0) + ($row['symphony_attendance_four_hours_plus'] ?? 0);
-                    $month_overall_summary_array_total['symphony_attendance']                                   = ($month_overall_summary_array_total['symphony_attendance'] ?? 0) + ($row['symphony_attendance'] ?? 0);
-                    $month_overall_summary_array_total['symphony_discharged']                                   = ($month_overall_summary_array_total['symphony_discharged'] ?? 0) + ($row['symphony_discharged'] ?? 0);
-                    $month_overall_summary_array_total['symphony_breached']                                     = ($month_overall_summary_array_total['symphony_breached'] ?? 0) + ($row['symphony_breached'] ?? 0);
-                }
-            }
-        }
-        if ($yz > 0)
-        {
+        // if (count($attendence_data_processed_month_data) > 0)
+        // {
+        //     foreach ($attendence_data_processed_month_data as $row)
+        //     {
+        //         $date_to_check  = $row['ed_summary_date'];
+        //         if (isset($month_overall_summary_array[$date_to_check]))
+        //         {
+        //             $month_overall_summary_array[$date_to_check]['symphony_attendance_less_than_one_hour']      = $row['symphony_attendance_less_than_one_hour'] ?? 0;
+        //             $month_overall_summary_array[$date_to_check]['symphony_attendance_one_to_two_hour']         = $row['symphony_attendance_one_to_two_hour'] ?? 0;
+        //             $month_overall_summary_array[$date_to_check]['symphony_attendance_two_to_three_hour']       = $row['symphony_attendance_two_to_three_hour'] ?? 0;
+        //             $month_overall_summary_array[$date_to_check]['symphony_attendance_three_to_four_hour']      = $row['symphony_attendance_three_to_four_hour'] ?? 0;
+        //             $month_overall_summary_array[$date_to_check]['symphony_attendance_four_hours_plus']         = $row['symphony_attendance_four_hours_plus'] ?? 0;
+        //             $month_overall_summary_array[$date_to_check]['symphony_attendance']                         = $row['symphony_attendance'] ?? 0;
+        //             $month_overall_summary_array[$date_to_check]['symphony_discharged']                         = $row['symphony_discharged'] ?? 0;
+        //             $month_overall_summary_array[$date_to_check]['symphony_breached']                           = $row['symphony_breached'] ?? 0;
+        //             if (isset($row['symphony_attendance']) && isset($row['symphony_breached']) && $row['symphony_attendance'] != 0 &&  $row['symphony_breached'] != 0)
+        //             {
+        //                 $month_overall_summary_array[$date_to_check]['symphony_breached_performance']           = PerformanceCalculationAne($row['symphony_breached'], $row['symphony_discharged'], 0);
+        //                 $month_overall_summary_array_total['symphony_breached_performance']                     = $month_overall_summary_array_total['symphony_breached_performance'] + $month_overall_summary_array[$date_to_check]['symphony_breached_performance'];
+        //                 $yz++;
+        //             }
+        //             $month_overall_summary_array_total['symphony_attendance_less_than_one_hour']                = ($month_overall_summary_array_total['symphony_attendance_less_than_one_hour'] ?? 0) + ($row['symphony_attendance_less_than_one_hour'] ?? 0);
+        //             $month_overall_summary_array_total['symphony_attendance_one_to_two_hour']                   = ($month_overall_summary_array_total['symphony_attendance_one_to_two_hour'] ?? 0) + ($row['symphony_attendance_one_to_two_hour'] ?? 0);
+        //             $month_overall_summary_array_total['symphony_attendance_two_to_three_hour']                 = ($month_overall_summary_array_total['symphony_attendance_two_to_three_hour'] ?? 0) + ($row['symphony_attendance_two_to_three_hour'] ?? 0);
+        //             $month_overall_summary_array_total['symphony_attendance_three_to_four_hour']                = ($month_overall_summary_array_total['symphony_attendance_three_to_four_hour'] ?? 0) + ($row['symphony_attendance_three_to_four_hour'] ?? 0);
+        //             $month_overall_summary_array_total['symphony_attendance_four_hours_plus']                   = ($month_overall_summary_array_total['symphony_attendance_four_hours_plus'] ?? 0) + ($row['symphony_attendance_four_hours_plus'] ?? 0);
+        //             $month_overall_summary_array_total['symphony_attendance']                                   = ($month_overall_summary_array_total['symphony_attendance'] ?? 0) + ($row['symphony_attendance'] ?? 0);
+        //             $month_overall_summary_array_total['symphony_discharged']                                   = ($month_overall_summary_array_total['symphony_discharged'] ?? 0) + ($row['symphony_discharged'] ?? 0);
+        //             $month_overall_summary_array_total['symphony_breached']                                     = ($month_overall_summary_array_total['symphony_breached'] ?? 0) + ($row['symphony_breached'] ?? 0);
+        //         }
+        //     }
+        // }
+        if ($yz > 0) {
             $month_overall_summary_array_total['symphony_breached_performance']                                 = (int)($month_overall_summary_array_total['symphony_breached_performance'] / $yz);
         }
         $success_array['month_overall_summary_array']                                                           = $month_overall_summary_array;
@@ -1366,33 +1252,25 @@ class BreachValidationController extends Controller
         $success_array["status"]                                    = 0;
 
 
-        if ($min_30_count != "" && $min_60_count != "" && $reg_date_selected != "")
-        {
+        if ($min_30_count != "" && $min_60_count != "" && $reg_date_selected != "") {
             $gov_text_before_arr                                    = AmbulanceArrivalOverMinutes::where('ambulance_arrival_updated_date', '=', $reg_date_selected)->first();
             $ambulance_count_data                                   = AmbulanceArrivalOverMinutes::updateOrCreate(['ambulance_arrival_updated_date' => $reg_date_selected], ['min_30_count' => $min_30_count, 'min_60_count' => $min_60_count, 'user_updated' => $user_id]);
             $history_controller->HistoryTableDataInsertFromUpdateCreate($ambulance_count_data, $history_opel_status);
             $user_info_update                                       = 0;
-            if ($ambulance_count_data->wasRecentlyCreated)
-            {
+            if ($ambulance_count_data->wasRecentlyCreated) {
                 $user_info_update                                   = 1;
                 $success_array["message"]                           = DataAddedMessage();
                 $updated_array                                      = $ambulance_count_data->getOriginal();
                 $gov_text_before                                    = array();
-                if (count($updated_array) > 0 && isset($updated_array["id"]))
-                {
+                if (count($updated_array) > 0 && isset($updated_array["id"])) {
                     $this->GovernanceAmbulanceDataPreCall($updated_array["id"], $gov_text_before, 1);
                 }
-            }
-            else
-            {
-                if (count($ambulance_count_data->getChanges()) > 0)
-                {
+            } else {
+                if (count($ambulance_count_data->getChanges()) > 0) {
                     $user_info_update = 1;
                     $updated_array = $ambulance_count_data->getOriginal();
-                    if (count($updated_array) > 0 && isset($updated_array["id"]))
-                    {
-                        if ($gov_text_before_arr)
-                        {
+                    if (count($updated_array) > 0 && isset($updated_array["id"])) {
+                        if ($gov_text_before_arr) {
                             $gov_text_before = $gov_text_before_arr->toArray();
                             $this->GovernanceAmbulanceDataPreCall($updated_array["id"], $gov_text_before, 2);
                         }
@@ -1416,18 +1294,14 @@ class BreachValidationController extends Controller
         $gov_text_after = array();
 
         $functional_identity = RetriveSpecificConstantSettingValues("ibox_frontend_governance_ibox_breach_ambulance_count", "ibox_governance_frontend_functional_names");
-        if ($operation == 1)
-        {
-            if (isset($id) && $id != '')
-            {
+        if ($operation == 1) {
+            if (isset($id) && $id != '') {
                 $gov_text_after_arr = AmbulanceArrivalOverMinutes::where('id', '=', $id)->first();
-                if ($gov_text_after_arr)
-                {
+                if ($gov_text_after_arr) {
                     $gov_text_after = $gov_text_after_arr->toArray();
                 }
             }
-            if (isset($gov_text_after["id"]))
-            {
+            if (isset($gov_text_after["id"])) {
                 $gov_data["gov_text_before"] = "";
                 $gov_data["gov_text_after"] = json_encode($gov_text_after);
                 $gov_data["gov_updation_status"] = $operation;
@@ -1435,18 +1309,14 @@ class BreachValidationController extends Controller
                 $gov_data["gov_description"] = 'Over 30 Min - ' . $gov_text_after["min_30_count"] . ', Over 60 Min - ' . $gov_text_after["min_60_count"] . ' For Date : ' . $gov_text_after["ambulance_arrival_updated_date"];
             }
         }
-        if ($operation == 2)
-        {
-            if (isset($id) && $id != '')
-            {
+        if ($operation == 2) {
+            if (isset($id) && $id != '') {
                 $gov_text_after_arr = AmbulanceArrivalOverMinutes::where('id', '=', $id)->first();
-                if ($gov_text_after_arr)
-                {
+                if ($gov_text_after_arr) {
                     $gov_text_after = $gov_text_after_arr->toArray();
                 }
             }
-            if (isset($gov_text_after["id"]) && isset($gov_text_before["id"]))
-            {
+            if (isset($gov_text_after["id"]) && isset($gov_text_before["id"])) {
                 $gov_data["gov_text_before"] = json_encode($gov_text_before);
                 $gov_data["gov_text_after"] = json_encode($gov_text_after);
                 $gov_data["gov_updation_status"] = $operation;
@@ -1454,10 +1324,8 @@ class BreachValidationController extends Controller
                 $gov_data["gov_description"] = 'Over 30 Min - ' . $gov_text_after["min_30_count"] . ', Over 60 Min - ' . $gov_text_after["min_60_count"] . ' For Date : ' . $gov_text_after["ambulance_arrival_updated_date"];
             }
         }
-        if (!empty($gov_data))
-        {
-            if (count($gov_data) > 0)
-            {
+        if (!empty($gov_data)) {
+            if (count($gov_data) > 0) {
                 $governance = new GovernanceController;
                 $governance->GovernanceStoreIboxData($gov_data);
             }

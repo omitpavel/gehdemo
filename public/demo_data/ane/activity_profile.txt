@@ -1,0 +1,1415 @@
+{
+  "date_time_now": "2025-12-02 04:29:35",
+  "script_error_message": "Oops! Something Went Wrong.",
+  "ibox_tab_switch_refresh_time": 180000,
+  "flash_message_to_show": "",
+  "top_matrix": {
+    "category_breach_details": {
+      "total": {
+        "arrived": 1400,
+        "breach": 108,
+        "performance": "92",
+        "performance_text_colour": "#ffb22b"
+      },
+      "Majors": {
+        "arrived": 272,
+        "breach": 39,
+        "performance": "85",
+        "performance_text_colour": "#ffb22b"
+      },
+      "Others": {
+        "arrived": 881,
+        "breach": 47,
+        "performance": "94",
+        "performance_text_colour": "#ffb22b"
+      },
+      "MiAMi": {
+        "arrived": 75,
+        "breach": 6,
+        "performance": "92",
+        "performance_text_colour": "#ffb22b"
+      },
+      "Paeds": {
+        "arrived": 57,
+        "breach": 9,
+        "performance": "84",
+        "performance_text_colour": "#f44336"
+      },
+      "Resus": {
+        "arrived": 6,
+        "breach": 1,
+        "performance": "83",
+        "performance_text_colour": "#f44336"
+      },
+      "Ambulatory Majors": {
+        "arrived": 109,
+        "breach": 6,
+        "performance": "94",
+        "performance_text_colour": "#ffb22b"
+      }
+    }
+  },
+  "date_filter_tab_1_date_to_show": "Thu 7th Sep 2023",
+  "date_filter_tab_1_date_to_show_day": "07",
+  "date_filter_tab_1_date_to_show_day_week": "Thursday",
+  "date_filter_tab_1_date_to_show_month": "September",
+  "filter_value_selected": "2023-09-07",
+  "attendence_total": 1400,
+  "breaches": 108,
+  "performance_overall": "92",
+  "conversion_rate_admitted_count": 164,
+  "conversion_rate_admitted_percentage": "86",
+  "performance_admitted_percentage": "100",
+  "performance_non_admitted_percentage": "100",
+  "total_admitted_performance": 164,
+  "total_non_admitted_performance": 996,
+  "ambulance_arrival_total_count": 143,
+  "ambulance_arrival_home_count": 76,
+  "ambulance_arrival_home_percentage": "53",
+  "ambulance_arrival_admitted_count": 67,
+  "ambulance_arrival_admitted_percentage": "47",
+  "walk_in_arrival_total_count": 1016,
+  "walk_in_arrival_home_count": 919,
+  "walk_in_arrival_home_percentage": "90",
+  "walk_in_arrival_admitted_count": 97,
+  "walk_in_arrival_admitted_percentage": "10",
+  "triage_category_x": "['1', '2', '3', '4', '5']",
+  "triage_category_y": "[2, 58, 285, 777, 4]",
+  "dta_waits_x": "['Less Than 2 Hours','2 To 4 Hours','Greater Than 4 Hours']",
+  "dta_waits_y": "[14,13,260]",
+  "admitted_by_speciality_x": "['Amhat', 'ED', 'Gynecology', 'Medicine', 'Paediatrics', 'Surgery', 'Trauma & Orthopaedics']",
+  "admitted_by_speciality_y": "[6, 771, 19, 141, 121, 63, 38]",
+  "right_matrix_breach": {
+    "utc": {
+      "attendance": 159,
+      "breached": 3,
+      "performance": "98"
+    },
+    "majors": {
+      "attendance": 181,
+      "breached": 1,
+      "performance": "99"
+    },
+    "resus": {
+      "attendance": 1,
+      "breached": 1,
+      "performance": "70"
+    },
+    "paed_eds": {
+      "attendance": 186,
+      "breached": 2,
+      "performance": "98"
+    },
+    "others": {
+      "attendance": 245,
+      "breached": 6,
+      "performance": "97"
+    },
+    "total": {
+      "attendance": 772,
+      "breached": 13,
+      "performance": "98"
+    }
+  },
+  "still_in_ae_utc_patients_still_in_ed_max": 25,
+  "still_in_ae_utc_patients_still_in_ed_min": 3,
+  "still_in_ae_majors_patients_still_in_ed_max": 25,
+  "still_in_ae_majors_patients_still_in_ed_min": 4,
+  "still_in_ae_resus_patients_still_in_ed_max": 25,
+  "still_in_ae_resus_patients_still_in_ed_min": 3,
+  "still_in_ae_others_patients_still_in_ed_max": 25,
+  "still_in_ae_others_patients_still_in_ed_min": 4,
+  "still_in_ae_paed_eds_patients_still_in_ed_max": 25,
+  "still_in_ae_paed_eds_patients_still_in_ed_min": 4,
+  "patients_still_in_ed": [
+    {
+      "hour": "00",
+      "still_in_ae_utc": 3,
+      "still_in_ae_majors": 20,
+      "still_in_ae_resus": 9,
+      "still_in_ae_others": 25,
+      "still_in_ae_paed_eds": 23
+    },
+    {
+      "hour": "01",
+      "still_in_ae_utc": 25,
+      "still_in_ae_majors": 20,
+      "still_in_ae_resus": 16,
+      "still_in_ae_others": 10,
+      "still_in_ae_paed_eds": 17
+    },
+    {
+      "hour": "02",
+      "still_in_ae_utc": 21,
+      "still_in_ae_majors": 11,
+      "still_in_ae_resus": 3,
+      "still_in_ae_others": 8,
+      "still_in_ae_paed_eds": 25
+    },
+    {
+      "hour": "03",
+      "still_in_ae_utc": 16,
+      "still_in_ae_majors": 13,
+      "still_in_ae_resus": 11,
+      "still_in_ae_others": 7,
+      "still_in_ae_paed_eds": 9
+    },
+    {
+      "hour": "04",
+      "still_in_ae_utc": 13,
+      "still_in_ae_majors": 6,
+      "still_in_ae_resus": 5,
+      "still_in_ae_others": 15,
+      "still_in_ae_paed_eds": 6
+    },
+    {
+      "hour": "05",
+      "still_in_ae_utc": 14,
+      "still_in_ae_majors": 14,
+      "still_in_ae_resus": 22,
+      "still_in_ae_others": 11,
+      "still_in_ae_paed_eds": 4
+    },
+    {
+      "hour": "06",
+      "still_in_ae_utc": 17,
+      "still_in_ae_majors": 20,
+      "still_in_ae_resus": 6,
+      "still_in_ae_others": 15,
+      "still_in_ae_paed_eds": 5
+    },
+    {
+      "hour": "07",
+      "still_in_ae_utc": 20,
+      "still_in_ae_majors": 12,
+      "still_in_ae_resus": 23,
+      "still_in_ae_others": 22,
+      "still_in_ae_paed_eds": 14
+    },
+    {
+      "hour": "08",
+      "still_in_ae_utc": 21,
+      "still_in_ae_majors": 9,
+      "still_in_ae_resus": 25,
+      "still_in_ae_others": 5,
+      "still_in_ae_paed_eds": 4
+    },
+    {
+      "hour": "09",
+      "still_in_ae_utc": 24,
+      "still_in_ae_majors": 10,
+      "still_in_ae_resus": 12,
+      "still_in_ae_others": 5,
+      "still_in_ae_paed_eds": 10
+    },
+    {
+      "hour": "10",
+      "still_in_ae_utc": 6,
+      "still_in_ae_majors": 15,
+      "still_in_ae_resus": 11,
+      "still_in_ae_others": 17,
+      "still_in_ae_paed_eds": 23
+    },
+    {
+      "hour": "11",
+      "still_in_ae_utc": 14,
+      "still_in_ae_majors": 8,
+      "still_in_ae_resus": 14,
+      "still_in_ae_others": 14,
+      "still_in_ae_paed_eds": 9
+    },
+    {
+      "hour": "12",
+      "still_in_ae_utc": 24,
+      "still_in_ae_majors": 11,
+      "still_in_ae_resus": 25,
+      "still_in_ae_others": 24,
+      "still_in_ae_paed_eds": 23
+    },
+    {
+      "hour": "13",
+      "still_in_ae_utc": 5,
+      "still_in_ae_majors": 22,
+      "still_in_ae_resus": 23,
+      "still_in_ae_others": 8,
+      "still_in_ae_paed_eds": 20
+    },
+    {
+      "hour": "14",
+      "still_in_ae_utc": 10,
+      "still_in_ae_majors": 8,
+      "still_in_ae_resus": 17,
+      "still_in_ae_others": 15,
+      "still_in_ae_paed_eds": 11
+    },
+    {
+      "hour": "15",
+      "still_in_ae_utc": 23,
+      "still_in_ae_majors": 25,
+      "still_in_ae_resus": 20,
+      "still_in_ae_others": 10,
+      "still_in_ae_paed_eds": 24
+    },
+    {
+      "hour": "16",
+      "still_in_ae_utc": 13,
+      "still_in_ae_majors": 4,
+      "still_in_ae_resus": 10,
+      "still_in_ae_others": 4,
+      "still_in_ae_paed_eds": 13
+    },
+    {
+      "hour": "17",
+      "still_in_ae_utc": 15,
+      "still_in_ae_majors": 11,
+      "still_in_ae_resus": 5,
+      "still_in_ae_others": 9,
+      "still_in_ae_paed_eds": 21
+    },
+    {
+      "hour": "18",
+      "still_in_ae_utc": 25,
+      "still_in_ae_majors": 13,
+      "still_in_ae_resus": 9,
+      "still_in_ae_others": 23,
+      "still_in_ae_paed_eds": 18
+    },
+    {
+      "hour": "19",
+      "still_in_ae_utc": 15,
+      "still_in_ae_majors": 23,
+      "still_in_ae_resus": 17,
+      "still_in_ae_others": 7,
+      "still_in_ae_paed_eds": 11
+    },
+    {
+      "hour": "20",
+      "still_in_ae_utc": 7,
+      "still_in_ae_majors": 10,
+      "still_in_ae_resus": 20,
+      "still_in_ae_others": 20,
+      "still_in_ae_paed_eds": 11
+    },
+    {
+      "hour": "21",
+      "still_in_ae_utc": 21,
+      "still_in_ae_majors": 16,
+      "still_in_ae_resus": 21,
+      "still_in_ae_others": 15,
+      "still_in_ae_paed_eds": 14
+    },
+    {
+      "hour": "22",
+      "still_in_ae_utc": 10,
+      "still_in_ae_majors": 7,
+      "still_in_ae_resus": 19,
+      "still_in_ae_others": 18,
+      "still_in_ae_paed_eds": 5
+    },
+    {
+      "hour": "23",
+      "still_in_ae_utc": 4,
+      "still_in_ae_majors": 6,
+      "still_in_ae_resus": 7,
+      "still_in_ae_others": 23,
+      "still_in_ae_paed_eds": 8
+    }
+  ],
+  "top_hour_data": [
+    {
+      "hour": "00",
+      "ane_attendance_arrivals": 20,
+      "ane_attendance_left_ed": 41,
+      "ane_attendance_breaches": 3,
+      "ane_attendance_admitted": 5,
+      "ane_attendance_discharged": 36,
+      "ane_attendance_forecast": 4,
+      "ane_attendance_still_in_ed": 24,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "01",
+      "ane_attendance_arrivals": 15,
+      "ane_attendance_left_ed": 38,
+      "ane_attendance_breaches": 2,
+      "ane_attendance_admitted": 9,
+      "ane_attendance_discharged": 29,
+      "ane_attendance_forecast": 4,
+      "ane_attendance_still_in_ed": 8,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "02",
+      "ane_attendance_arrivals": 13,
+      "ane_attendance_left_ed": 27,
+      "ane_attendance_breaches": 2,
+      "ane_attendance_admitted": 6,
+      "ane_attendance_discharged": 21,
+      "ane_attendance_forecast": 3,
+      "ane_attendance_still_in_ed": 10,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "03",
+      "ane_attendance_arrivals": 9,
+      "ane_attendance_left_ed": 16,
+      "ane_attendance_breaches": 1,
+      "ane_attendance_admitted": 7,
+      "ane_attendance_discharged": 9,
+      "ane_attendance_forecast": 4,
+      "ane_attendance_still_in_ed": 36,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "04",
+      "ane_attendance_arrivals": 15,
+      "ane_attendance_left_ed": 20,
+      "ane_attendance_breaches": 1,
+      "ane_attendance_admitted": 6,
+      "ane_attendance_discharged": 14,
+      "ane_attendance_forecast": 4,
+      "ane_attendance_still_in_ed": 39,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "05",
+      "ane_attendance_arrivals": 20,
+      "ane_attendance_left_ed": 11,
+      "ane_attendance_breaches": 2,
+      "ane_attendance_admitted": 2,
+      "ane_attendance_discharged": 9,
+      "ane_attendance_forecast": 4,
+      "ane_attendance_still_in_ed": 13,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "06",
+      "ane_attendance_arrivals": 13,
+      "ane_attendance_left_ed": 9,
+      "ane_attendance_breaches": 4,
+      "ane_attendance_admitted": 2,
+      "ane_attendance_discharged": 7,
+      "ane_attendance_forecast": 3,
+      "ane_attendance_still_in_ed": 40,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "07",
+      "ane_attendance_arrivals": 23,
+      "ane_attendance_left_ed": 13,
+      "ane_attendance_breaches": 2,
+      "ane_attendance_admitted": 2,
+      "ane_attendance_discharged": 11,
+      "ane_attendance_forecast": 6,
+      "ane_attendance_still_in_ed": 21,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "08",
+      "ane_attendance_arrivals": 48,
+      "ane_attendance_left_ed": 11,
+      "ane_attendance_breaches": 4,
+      "ane_attendance_admitted": 3,
+      "ane_attendance_discharged": 8,
+      "ane_attendance_forecast": 14,
+      "ane_attendance_still_in_ed": 18,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "09",
+      "ane_attendance_arrivals": 79,
+      "ane_attendance_left_ed": 37,
+      "ane_attendance_breaches": 2,
+      "ane_attendance_admitted": 14,
+      "ane_attendance_discharged": 23,
+      "ane_attendance_forecast": 19,
+      "ane_attendance_still_in_ed": 24,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "10",
+      "ane_attendance_arrivals": 76,
+      "ane_attendance_left_ed": 49,
+      "ane_attendance_breaches": 4,
+      "ane_attendance_admitted": 17,
+      "ane_attendance_discharged": 32,
+      "ane_attendance_forecast": 19,
+      "ane_attendance_still_in_ed": 28,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "11",
+      "ane_attendance_arrivals": 73,
+      "ane_attendance_left_ed": 47,
+      "ane_attendance_breaches": 4,
+      "ane_attendance_admitted": 12,
+      "ane_attendance_discharged": 35,
+      "ane_attendance_forecast": 18,
+      "ane_attendance_still_in_ed": 38,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "12",
+      "ane_attendance_arrivals": 61,
+      "ane_attendance_left_ed": 69,
+      "ane_attendance_breaches": 4,
+      "ane_attendance_admitted": 24,
+      "ane_attendance_discharged": 45,
+      "ane_attendance_forecast": 15,
+      "ane_attendance_still_in_ed": 12,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "13",
+      "ane_attendance_arrivals": 65,
+      "ane_attendance_left_ed": 67,
+      "ane_attendance_breaches": 2,
+      "ane_attendance_admitted": 19,
+      "ane_attendance_discharged": 48,
+      "ane_attendance_forecast": 17,
+      "ane_attendance_still_in_ed": 19,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "14",
+      "ane_attendance_arrivals": 70,
+      "ane_attendance_left_ed": 63,
+      "ane_attendance_breaches": 1,
+      "ane_attendance_admitted": 20,
+      "ane_attendance_discharged": 43,
+      "ane_attendance_forecast": 16,
+      "ane_attendance_still_in_ed": 26,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "15",
+      "ane_attendance_arrivals": 52,
+      "ane_attendance_left_ed": 54,
+      "ane_attendance_breaches": 1,
+      "ane_attendance_admitted": 21,
+      "ane_attendance_discharged": 33,
+      "ane_attendance_forecast": 14,
+      "ane_attendance_still_in_ed": 40,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "16",
+      "ane_attendance_arrivals": 77,
+      "ane_attendance_left_ed": 79,
+      "ane_attendance_breaches": 2,
+      "ane_attendance_admitted": 29,
+      "ane_attendance_discharged": 50,
+      "ane_attendance_forecast": 22,
+      "ane_attendance_still_in_ed": 19,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "17",
+      "ane_attendance_arrivals": 75,
+      "ane_attendance_left_ed": 71,
+      "ane_attendance_breaches": 1,
+      "ane_attendance_admitted": 19,
+      "ane_attendance_discharged": 52,
+      "ane_attendance_forecast": 20,
+      "ane_attendance_still_in_ed": 9,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "18",
+      "ane_attendance_arrivals": 83,
+      "ane_attendance_left_ed": 50,
+      "ane_attendance_breaches": 1,
+      "ane_attendance_admitted": 12,
+      "ane_attendance_discharged": 38,
+      "ane_attendance_forecast": 19,
+      "ane_attendance_still_in_ed": 19,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "19",
+      "ane_attendance_arrivals": 74,
+      "ane_attendance_left_ed": 63,
+      "ane_attendance_breaches": 1,
+      "ane_attendance_admitted": 13,
+      "ane_attendance_discharged": 50,
+      "ane_attendance_forecast": 19,
+      "ane_attendance_still_in_ed": 7,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "20",
+      "ane_attendance_arrivals": 57,
+      "ane_attendance_left_ed": 51,
+      "ane_attendance_breaches": 3,
+      "ane_attendance_admitted": 8,
+      "ane_attendance_discharged": 43,
+      "ane_attendance_forecast": 14,
+      "ane_attendance_still_in_ed": 9,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "21",
+      "ane_attendance_arrivals": 44,
+      "ane_attendance_left_ed": 54,
+      "ane_attendance_breaches": 2,
+      "ane_attendance_admitted": 11,
+      "ane_attendance_discharged": 43,
+      "ane_attendance_forecast": 10,
+      "ane_attendance_still_in_ed": 22,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "22",
+      "ane_attendance_arrivals": 22,
+      "ane_attendance_left_ed": 47,
+      "ane_attendance_breaches": 4,
+      "ane_attendance_admitted": 14,
+      "ane_attendance_discharged": 33,
+      "ane_attendance_forecast": 6,
+      "ane_attendance_still_in_ed": 18,
+      "ane_attendance_performance": "100"
+    },
+    {
+      "hour": "23",
+      "ane_attendance_arrivals": 16,
+      "ane_attendance_left_ed": 45,
+      "ane_attendance_breaches": 1,
+      "ane_attendance_admitted": 12,
+      "ane_attendance_discharged": 33,
+      "ane_attendance_forecast": 6,
+      "ane_attendance_still_in_ed": 39,
+      "ane_attendance_performance": "98"
+    }
+  ],
+  "ane_attendance_arrivals_top_hour_data_max": 83,
+  "ane_attendance_arrivals_top_hour_data_min": 9,
+  "ane_attendance_left_ed_top_hour_data_max": 79,
+  "ane_attendance_left_ed_top_hour_data_min": 9,
+  "ane_attendance_breaches_top_hour_data_max": 4,
+  "ane_attendance_breaches_top_hour_data_min": 1,
+  "ane_attendance_admitted_top_hour_data_max": 29,
+  "ane_attendance_admitted_top_hour_data_min": 2,
+  "ane_attendance_discharged_top_hour_data_max": 52,
+  "ane_attendance_discharged_top_hour_data_min": 7,
+  "ane_attendance_forecast_top_hour_data_max": 22,
+  "ane_attendance_forecast_top_hour_data_min": 3,
+  "ane_attendance_still_in_ed_top_hour_data_max": 40,
+  "ane_attendance_still_in_ed_top_hour_data_min": 7,
+  "patient_per_hour_1": "['admitted',-5, -9, -6, -7, -6, -2, -2, -2, -3, -14, -17, -12, -24, -19, -20, -21, -29, -19, -12, -13, -8, -11, -14, -12]",
+  "patient_per_hour_2": "['leftED',-36, -29, -21, -9, -14, -9, -7, -11, -8, -23, -32, -35, -45, -48, -43, -33, -50, -52, -38, -50, -43, -43, -33, -33]",
+  "patient_per_hour_3": "['arrivals',20, 15, 13, 9, 15, 20, 13, 23, 48, 79, 76, 73, 61, 65, 70, 52, 77, 75, 83, 74, 57, 44, 22, 16]",
+  "patient_per_hour_4": "['forecast',4, 4, 3, 4, 4, 4, 3, 6, 14, 19, 19, 18, 15, 17, 16, 14, 22, 20, 19, 19, 14, 10, 6, 6]",
+  "patient_per_hour_5": "['breaches',0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]",
+  "triage_patients_seen_triage_times_max": 74,
+  "triage_patients_seen_triage_times_min": 1,
+  "triage_greater_than_triage_times_max": 29,
+  "triage_greater_than_triage_times_min": 1,
+  "triage_avg_time_triage_times_max": 76,
+  "triage_avg_time_triage_times_min": 2,
+  "triage_longer_time_triage_times_max": 185,
+  "triage_longer_time_triage_times_min": 2,
+  "triage_times": [
+    {
+      "hour": "00",
+      "triage_patients_seen": 18,
+      "triage_greater_than": 3,
+      "triage_avg_time": 34,
+      "triage_longer_time": 63
+    },
+    {
+      "hour": "01",
+      "triage_patients_seen": 15,
+      "triage_greater_than": 4,
+      "triage_avg_time": 55,
+      "triage_longer_time": 67
+    },
+    {
+      "hour": "02",
+      "triage_patients_seen": 16,
+      "triage_greater_than": 3,
+      "triage_avg_time": 44,
+      "triage_longer_time": 79
+    },
+    {
+      "hour": "03",
+      "triage_patients_seen": 6,
+      "triage_greater_than": 1,
+      "triage_avg_time": 18,
+      "triage_longer_time": 20
+    },
+    {
+      "hour": "04",
+      "triage_patients_seen": 16,
+      "triage_greater_than": 3,
+      "triage_avg_time": 45,
+      "triage_longer_time": 84
+    },
+    {
+      "hour": "05",
+      "triage_patients_seen": 17,
+      "triage_greater_than": 5,
+      "triage_avg_time": 56,
+      "triage_longer_time": 127
+    },
+    {
+      "hour": "06",
+      "triage_patients_seen": 13,
+      "triage_greater_than": 1,
+      "triage_avg_time": 29,
+      "triage_longer_time": 41
+    },
+    {
+      "hour": "07",
+      "triage_patients_seen": 19,
+      "triage_greater_than": 3,
+      "triage_avg_time": 43,
+      "triage_longer_time": 72
+    },
+    {
+      "hour": "08",
+      "triage_patients_seen": 45,
+      "triage_greater_than": 8,
+      "triage_avg_time": 37,
+      "triage_longer_time": 100
+    },
+    {
+      "hour": "09",
+      "triage_patients_seen": 67,
+      "triage_greater_than": 15,
+      "triage_avg_time": 37,
+      "triage_longer_time": 100
+    },
+    {
+      "hour": "10",
+      "triage_patients_seen": 74,
+      "triage_greater_than": 25,
+      "triage_avg_time": 49,
+      "triage_longer_time": 120
+    },
+    {
+      "hour": "11",
+      "triage_patients_seen": 65,
+      "triage_greater_than": 25,
+      "triage_avg_time": 60,
+      "triage_longer_time": 172
+    },
+    {
+      "hour": "12",
+      "triage_patients_seen": 68,
+      "triage_greater_than": 29,
+      "triage_avg_time": 70,
+      "triage_longer_time": 158
+    },
+    {
+      "hour": "13",
+      "triage_patients_seen": 58,
+      "triage_greater_than": 21,
+      "triage_avg_time": 54,
+      "triage_longer_time": 118
+    },
+    {
+      "hour": "14",
+      "triage_patients_seen": 68,
+      "triage_greater_than": 23,
+      "triage_avg_time": 54,
+      "triage_longer_time": 142
+    },
+    {
+      "hour": "15",
+      "triage_patients_seen": 54,
+      "triage_greater_than": 21,
+      "triage_avg_time": 63,
+      "triage_longer_time": 139
+    },
+    {
+      "hour": "16",
+      "triage_patients_seen": 50,
+      "triage_greater_than": 19,
+      "triage_avg_time": 54,
+      "triage_longer_time": 122
+    },
+    {
+      "hour": "17",
+      "triage_patients_seen": 66,
+      "triage_greater_than": 23,
+      "triage_avg_time": 55,
+      "triage_longer_time": 128
+    },
+    {
+      "hour": "18",
+      "triage_patients_seen": 53,
+      "triage_greater_than": 17,
+      "triage_avg_time": 56,
+      "triage_longer_time": 136
+    },
+    {
+      "hour": "19",
+      "triage_patients_seen": 45,
+      "triage_greater_than": 14,
+      "triage_avg_time": 76,
+      "triage_longer_time": 185
+    },
+    {
+      "hour": "20",
+      "triage_patients_seen": 35,
+      "triage_greater_than": 17,
+      "triage_avg_time": 76,
+      "triage_longer_time": 143
+    },
+    {
+      "hour": "21",
+      "triage_patients_seen": 10,
+      "triage_greater_than": 3,
+      "triage_avg_time": 46,
+      "triage_longer_time": 68
+    },
+    {
+      "hour": "22",
+      "triage_patients_seen": 1,
+      "triage_greater_than": 3,
+      "triage_avg_time": 4,
+      "triage_longer_time": 4
+    },
+    {
+      "hour": "23",
+      "triage_patients_seen": 1,
+      "triage_greater_than": 3,
+      "triage_avg_time": 2,
+      "triage_longer_time": 2
+    }
+  ],
+  "ed_clinician_patients_seen_ed_clinician_times_max": 4,
+  "ed_clinician_patients_seen_ed_clinician_times_min": 1,
+  "ed_clinician_greater_than_ed_clinician_times_max": 4,
+  "ed_clinician_greater_than_ed_clinician_times_min": 1,
+  "ed_clinician_avg_time_ed_clinician_times_max": 631,
+  "ed_clinician_avg_time_ed_clinician_times_min": 112,
+  "ed_clinician_longer_time_ed_clinician_times_max": 652,
+  "ed_clinician_longer_time_ed_clinician_times_min": 112,
+  "ed_clinician_times": [
+    {
+      "hour": "00",
+      "ed_clinician_patients_seen": 2,
+      "ed_clinician_greater_than": 2,
+      "ed_clinician_avg_time": 631,
+      "ed_clinician_longer_time": 631
+    },
+    {
+      "hour": "01",
+      "ed_clinician_patients_seen": 4,
+      "ed_clinician_greater_than": 4,
+      "ed_clinician_avg_time": 238,
+      "ed_clinician_longer_time": 296
+    },
+    {
+      "hour": "02",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 372,
+      "ed_clinician_longer_time": 372
+    },
+    {
+      "hour": "03",
+      "ed_clinician_patients_seen": 3,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 139,
+      "ed_clinician_longer_time": 287
+    },
+    {
+      "hour": "04",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 138,
+      "ed_clinician_longer_time": 160
+    },
+    {
+      "hour": "05",
+      "ed_clinician_patients_seen": 4,
+      "ed_clinician_greater_than": 2,
+      "ed_clinician_avg_time": 138,
+      "ed_clinician_longer_time": 278
+    },
+    {
+      "hour": "06",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 248,
+      "ed_clinician_longer_time": 248
+    },
+    {
+      "hour": "07",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 150,
+      "ed_clinician_longer_time": 177
+    },
+    {
+      "hour": "08",
+      "ed_clinician_patients_seen": 2,
+      "ed_clinician_greater_than": 2,
+      "ed_clinician_avg_time": 202,
+      "ed_clinician_longer_time": 275
+    },
+    {
+      "hour": "09",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 157,
+      "ed_clinician_longer_time": 157
+    },
+    {
+      "hour": "10",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 585,
+      "ed_clinician_longer_time": 585
+    },
+    {
+      "hour": "11",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 509,
+      "ed_clinician_longer_time": 652
+    },
+    {
+      "hour": "12",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 204,
+      "ed_clinician_longer_time": 204
+    },
+    {
+      "hour": "13",
+      "ed_clinician_patients_seen": 4,
+      "ed_clinician_greater_than": 4,
+      "ed_clinician_avg_time": 525,
+      "ed_clinician_longer_time": 563
+    },
+    {
+      "hour": "14",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 239,
+      "ed_clinician_longer_time": 239
+    },
+    {
+      "hour": "15",
+      "ed_clinician_patients_seen": 2,
+      "ed_clinician_greater_than": 2,
+      "ed_clinician_avg_time": 551,
+      "ed_clinician_longer_time": 551
+    },
+    {
+      "hour": "16",
+      "ed_clinician_patients_seen": 3,
+      "ed_clinician_greater_than": 2,
+      "ed_clinician_avg_time": 289,
+      "ed_clinician_longer_time": 379
+    },
+    {
+      "hour": "17",
+      "ed_clinician_patients_seen": 2,
+      "ed_clinician_greater_than": 2,
+      "ed_clinician_avg_time": 485,
+      "ed_clinician_longer_time": 528
+    },
+    {
+      "hour": "18",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 112,
+      "ed_clinician_longer_time": 112
+    },
+    {
+      "hour": "19",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 380,
+      "ed_clinician_longer_time": 380
+    },
+    {
+      "hour": "20",
+      "ed_clinician_patients_seen": 3,
+      "ed_clinician_greater_than": 2,
+      "ed_clinician_avg_time": 403,
+      "ed_clinician_longer_time": 431
+    },
+    {
+      "hour": "21",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 160,
+      "ed_clinician_longer_time": 160
+    },
+    {
+      "hour": "22",
+      "ed_clinician_patients_seen": 1,
+      "ed_clinician_greater_than": 1,
+      "ed_clinician_avg_time": 182,
+      "ed_clinician_longer_time": 210
+    },
+    {
+      "hour": "23",
+      "ed_clinician_patients_seen": 2,
+      "ed_clinician_greater_than": 2,
+      "ed_clinician_avg_time": 215,
+      "ed_clinician_longer_time": 314
+    }
+  ],
+  "ane_attendance_ambulance_arrival_method_max": 16,
+  "ane_attendance_ambulance_arrival_method_min": 2,
+  "ane_attendance_walk_in_arrival_method_max": 70,
+  "ane_attendance_walk_in_arrival_method_min": 4,
+  "arrival_method": [
+    {
+      "hour": "00",
+      "ane_attendance_ambulance": 6,
+      "ane_attendance_walk_in": 14
+    },
+    {
+      "hour": "01",
+      "ane_attendance_ambulance": 5,
+      "ane_attendance_walk_in": 10
+    },
+    {
+      "hour": "02",
+      "ane_attendance_ambulance": 4,
+      "ane_attendance_walk_in": 9
+    },
+    {
+      "hour": "03",
+      "ane_attendance_ambulance": 5,
+      "ane_attendance_walk_in": 4
+    },
+    {
+      "hour": "04",
+      "ane_attendance_ambulance": 4,
+      "ane_attendance_walk_in": 11
+    },
+    {
+      "hour": "05",
+      "ane_attendance_ambulance": 4,
+      "ane_attendance_walk_in": 16
+    },
+    {
+      "hour": "06",
+      "ane_attendance_ambulance": 3,
+      "ane_attendance_walk_in": 10
+    },
+    {
+      "hour": "07",
+      "ane_attendance_ambulance": 2,
+      "ane_attendance_walk_in": 23
+    },
+    {
+      "hour": "08",
+      "ane_attendance_ambulance": 5,
+      "ane_attendance_walk_in": 43
+    },
+    {
+      "hour": "09",
+      "ane_attendance_ambulance": 12,
+      "ane_attendance_walk_in": 67
+    },
+    {
+      "hour": "10",
+      "ane_attendance_ambulance": 9,
+      "ane_attendance_walk_in": 67
+    },
+    {
+      "hour": "11",
+      "ane_attendance_ambulance": 4,
+      "ane_attendance_walk_in": 69
+    },
+    {
+      "hour": "12",
+      "ane_attendance_ambulance": 9,
+      "ane_attendance_walk_in": 52
+    },
+    {
+      "hour": "13",
+      "ane_attendance_ambulance": 5,
+      "ane_attendance_walk_in": 60
+    },
+    {
+      "hour": "14",
+      "ane_attendance_ambulance": 6,
+      "ane_attendance_walk_in": 64
+    },
+    {
+      "hour": "15",
+      "ane_attendance_ambulance": 3,
+      "ane_attendance_walk_in": 49
+    },
+    {
+      "hour": "16",
+      "ane_attendance_ambulance": 7,
+      "ane_attendance_walk_in": 70
+    },
+    {
+      "hour": "17",
+      "ane_attendance_ambulance": 6,
+      "ane_attendance_walk_in": 69
+    },
+    {
+      "hour": "18",
+      "ane_attendance_ambulance": 16,
+      "ane_attendance_walk_in": 67
+    },
+    {
+      "hour": "19",
+      "ane_attendance_ambulance": 6,
+      "ane_attendance_walk_in": 68
+    },
+    {
+      "hour": "20",
+      "ane_attendance_ambulance": 7,
+      "ane_attendance_walk_in": 50
+    },
+    {
+      "hour": "21",
+      "ane_attendance_ambulance": 6,
+      "ane_attendance_walk_in": 38
+    },
+    {
+      "hour": "22",
+      "ane_attendance_ambulance": 4,
+      "ane_attendance_walk_in": 18
+    },
+    {
+      "hour": "23",
+      "ane_attendance_ambulance": 2,
+      "ane_attendance_walk_in": 14
+    }
+  ],
+  "triage_category_1_triage_cat_max": 10,
+  "triage_category_1_triage_cat_min": 1,
+  "triage_category_2_triage_cat_max": 7,
+  "triage_category_2_triage_cat_min": 1,
+  "triage_category_3_triage_cat_max": 27,
+  "triage_category_3_triage_cat_min": 1,
+  "triage_category_4_triage_cat_max": 48,
+  "triage_category_4_triage_cat_min": 1,
+  "triage_category_5_triage_cat_max": 9,
+  "triage_category_5_triage_cat_min": 1,
+  "triage_cat": [
+    {
+      "hour": "00",
+      "triage_category_1": 10,
+      "triage_category_2": 2,
+      "triage_category_3": 7,
+      "triage_category_4": 9,
+      "triage_category_5": 8
+    },
+    {
+      "hour": "01",
+      "triage_category_1": 4,
+      "triage_category_2": 1,
+      "triage_category_3": 5,
+      "triage_category_4": 9,
+      "triage_category_5": 8
+    },
+    {
+      "hour": "02",
+      "triage_category_1": 7,
+      "triage_category_2": 4,
+      "triage_category_3": 11,
+      "triage_category_4": 5,
+      "triage_category_5": 2
+    },
+    {
+      "hour": "03",
+      "triage_category_1": 2,
+      "triage_category_2": 1,
+      "triage_category_3": 2,
+      "triage_category_4": 3,
+      "triage_category_5": 7
+    },
+    {
+      "hour": "04",
+      "triage_category_1": 6,
+      "triage_category_2": 7,
+      "triage_category_3": 10,
+      "triage_category_4": 6,
+      "triage_category_5": 7
+    },
+    {
+      "hour": "05",
+      "triage_category_1": 8,
+      "triage_category_2": 1,
+      "triage_category_3": 7,
+      "triage_category_4": 9,
+      "triage_category_5": 1
+    },
+    {
+      "hour": "06",
+      "triage_category_1": 2,
+      "triage_category_2": 1,
+      "triage_category_3": 4,
+      "triage_category_4": 9,
+      "triage_category_5": 7
+    },
+    {
+      "hour": "07",
+      "triage_category_1": 6,
+      "triage_category_2": 4,
+      "triage_category_3": 10,
+      "triage_category_4": 5,
+      "triage_category_5": 2
+    },
+    {
+      "hour": "08",
+      "triage_category_1": 4,
+      "triage_category_2": 3,
+      "triage_category_3": 12,
+      "triage_category_4": 30,
+      "triage_category_5": 4
+    },
+    {
+      "hour": "09",
+      "triage_category_1": 4,
+      "triage_category_2": 1,
+      "triage_category_3": 21,
+      "triage_category_4": 45,
+      "triage_category_5": 9
+    },
+    {
+      "hour": "10",
+      "triage_category_1": 8,
+      "triage_category_2": 2,
+      "triage_category_3": 24,
+      "triage_category_4": 47,
+      "triage_category_5": 1
+    },
+    {
+      "hour": "11",
+      "triage_category_1": 3,
+      "triage_category_2": 4,
+      "triage_category_3": 11,
+      "triage_category_4": 48,
+      "triage_category_5": 2
+    },
+    {
+      "hour": "12",
+      "triage_category_1": 7,
+      "triage_category_2": 1,
+      "triage_category_3": 27,
+      "triage_category_4": 40,
+      "triage_category_5": 3
+    },
+    {
+      "hour": "13",
+      "triage_category_1": 5,
+      "triage_category_2": 2,
+      "triage_category_3": 23,
+      "triage_category_4": 33,
+      "triage_category_5": 8
+    },
+    {
+      "hour": "14",
+      "triage_category_1": 4,
+      "triage_category_2": 3,
+      "triage_category_3": 20,
+      "triage_category_4": 46,
+      "triage_category_5": 2
+    },
+    {
+      "hour": "15",
+      "triage_category_1": 8,
+      "triage_category_2": 2,
+      "triage_category_3": 15,
+      "triage_category_4": 38,
+      "triage_category_5": 9
+    },
+    {
+      "hour": "16",
+      "triage_category_1": 2,
+      "triage_category_2": 1,
+      "triage_category_3": 18,
+      "triage_category_4": 31,
+      "triage_category_5": 1
+    },
+    {
+      "hour": "17",
+      "triage_category_1": 9,
+      "triage_category_2": 1,
+      "triage_category_3": 17,
+      "triage_category_4": 48,
+      "triage_category_5": 1
+    },
+    {
+      "hour": "18",
+      "triage_category_1": 2,
+      "triage_category_2": 3,
+      "triage_category_3": 10,
+      "triage_category_4": 41,
+      "triage_category_5": 4
+    },
+    {
+      "hour": "19",
+      "triage_category_1": 3,
+      "triage_category_2": 1,
+      "triage_category_3": 11,
+      "triage_category_4": 33,
+      "triage_category_5": 7
+    },
+    {
+      "hour": "20",
+      "triage_category_1": 8,
+      "triage_category_2": 1,
+      "triage_category_3": 7,
+      "triage_category_4": 27,
+      "triage_category_5": 1
+    },
+    {
+      "hour": "21",
+      "triage_category_1": 8,
+      "triage_category_2": 4,
+      "triage_category_3": 2,
+      "triage_category_4": 8,
+      "triage_category_5": 7
+    },
+    {
+      "hour": "22",
+      "triage_category_1": 1,
+      "triage_category_2": 3,
+      "triage_category_3": 1,
+      "triage_category_4": 7,
+      "triage_category_5": 1
+    },
+    {
+      "hour": "23",
+      "triage_category_1": 7,
+      "triage_category_2": 5,
+      "triage_category_3": 8,
+      "triage_category_4": 1,
+      "triage_category_5": 5
+    }
+  ],
+  "dta_total_patient_dta_max": 30,
+  "dta_total_patient_dta_min": 5,
+  "dta_assigned_patient_dta_max": 24,
+  "dta_assigned_patient_dta_min": 1,
+  "dta": [
+    {
+      "hour": "00",
+      "dta_total_patient": 30,
+      "dta_assigned_patient": 22
+    },
+    {
+      "hour": "01",
+      "dta_total_patient": 18,
+      "dta_assigned_patient": 3
+    },
+    {
+      "hour": "02",
+      "dta_total_patient": 17,
+      "dta_assigned_patient": 13
+    },
+    {
+      "hour": "03",
+      "dta_total_patient": 24,
+      "dta_assigned_patient": 15
+    },
+    {
+      "hour": "04",
+      "dta_total_patient": 21,
+      "dta_assigned_patient": 9
+    },
+    {
+      "hour": "05",
+      "dta_total_patient": 22,
+      "dta_assigned_patient": 1
+    },
+    {
+      "hour": "06",
+      "dta_total_patient": 26,
+      "dta_assigned_patient": 24
+    },
+    {
+      "hour": "07",
+      "dta_total_patient": 8,
+      "dta_assigned_patient": 5
+    },
+    {
+      "hour": "08",
+      "dta_total_patient": 29,
+      "dta_assigned_patient": 21
+    },
+    {
+      "hour": "09",
+      "dta_total_patient": 15,
+      "dta_assigned_patient": 2
+    },
+    {
+      "hour": "10",
+      "dta_total_patient": 14,
+      "dta_assigned_patient": 7
+    },
+    {
+      "hour": "11",
+      "dta_total_patient": 10,
+      "dta_assigned_patient": 8
+    },
+    {
+      "hour": "12",
+      "dta_total_patient": 5,
+      "dta_assigned_patient": 3
+    },
+    {
+      "hour": "13",
+      "dta_total_patient": 21,
+      "dta_assigned_patient": 6
+    },
+    {
+      "hour": "14",
+      "dta_total_patient": 21,
+      "dta_assigned_patient": 4
+    },
+    {
+      "hour": "15",
+      "dta_total_patient": 25,
+      "dta_assigned_patient": 10
+    },
+    {
+      "hour": "16",
+      "dta_total_patient": 25,
+      "dta_assigned_patient": 17
+    },
+    {
+      "hour": "17",
+      "dta_total_patient": 24,
+      "dta_assigned_patient": 7
+    },
+    {
+      "hour": "18",
+      "dta_total_patient": 9,
+      "dta_assigned_patient": 6
+    },
+    {
+      "hour": "19",
+      "dta_total_patient": 29,
+      "dta_assigned_patient": 6
+    },
+    {
+      "hour": "20",
+      "dta_total_patient": 22,
+      "dta_assigned_patient": 17
+    },
+    {
+      "hour": "21",
+      "dta_total_patient": 5,
+      "dta_assigned_patient": 5
+    },
+    {
+      "hour": "22",
+      "dta_total_patient": 15,
+      "dta_assigned_patient": 8
+    },
+    {
+      "hour": "23",
+      "dta_total_patient": 5,
+      "dta_assigned_patient": 1
+    }
+  ]
+}

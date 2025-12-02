@@ -1,0 +1,330 @@
+{
+  "tab_filter_mode": "5",
+  "date_time_now": "2025-12-02 09:45:29",
+  "script_error_message": "Oops! Something Went Wrong.",
+  "ibox_tab_switch_refresh_time": 180000,
+  "flash_message_to_show": "",
+  "week_filter_array": [
+    {
+      "filter_text": "Mon 1st Dec 2025  To  Sun 7th Dec 2025",
+      "filter_value": "2025-12-01"
+    },
+    {
+      "filter_text": "Mon 24th Nov 2025  To  Sun 30th Nov 2025",
+      "filter_value": "2025-11-24"
+    },
+    {
+      "filter_text": "Mon 17th Nov 2025  To  Sun 23rd Nov 2025",
+      "filter_value": "2025-11-17"
+    },
+    {
+      "filter_text": "Mon 10th Nov 2025  To  Sun 16th Nov 2025",
+      "filter_value": "2025-11-10"
+    },
+    {
+      "filter_text": "Mon 3rd Nov 2025  To  Sun 9th Nov 2025",
+      "filter_value": "2025-11-03"
+    },
+    {
+      "filter_text": "Mon 27th Oct 2025  To  Sun 2nd Nov 2025",
+      "filter_value": "2025-10-27"
+    },
+    {
+      "filter_text": "Mon 20th Oct 2025  To  Sun 26th Oct 2025",
+      "filter_value": "2025-10-20"
+    },
+    {
+      "filter_text": "Mon 13th Oct 2025  To  Sun 19th Oct 2025",
+      "filter_value": "2025-10-13"
+    },
+    {
+      "filter_text": "Mon 6th Oct 2025  To  Sun 12th Oct 2025",
+      "filter_value": "2025-10-06"
+    },
+    {
+      "filter_text": "Mon 29th Sep 2025  To  Sun 5th Oct 2025",
+      "filter_value": "2025-09-29"
+    }
+  ],
+  "all_attendence": {
+    "ED": {
+      "attendence_count": 1043,
+      "name_show_text": "ED"
+    },
+    "UTC": {
+      "attendence_count": 487,
+      "name_show_text": "UTC"
+    }
+  },
+  "all_attendence_hour": {
+    "ED_zero_to_four": 151,
+    "ED_four_to_eight": 209,
+    "ED_eight_to_twelve": 232,
+    "ED_twelve_to_twenty_four": 289,
+    "ED_twenty_four_plus": 162,
+    "UTC_zero_to_four": 77,
+    "UTC_four_to_eight": 91,
+    "UTC_eight_to_twelve": 111,
+    "UTC_twelve_to_twenty_four": 125,
+    "UTC_twenty_four_plus": 83
+  },
+  "breach_reason": [
+    {
+      "breach_name": "Awaiting Bed",
+      "total_count": 26,
+      "admitted_count": 21,
+      "discharged_count": 5
+    },
+    {
+      "breach_name": "Clinician Delay",
+      "total_count": 18,
+      "admitted_count": 10,
+      "discharged_count": 8
+    },
+    {
+      "breach_name": "Diagnostic Delay (Radiology)",
+      "total_count": 12,
+      "admitted_count": 7,
+      "discharged_count": 5
+    },
+    {
+      "breach_name": "Diagnostic Delay (Pathology)",
+      "total_count": 8,
+      "admitted_count": 4,
+      "discharged_count": 4
+    },
+    {
+      "breach_name": "Ambulance Handover Delay",
+      "total_count": 7,
+      "admitted_count": 6,
+      "discharged_count": 1
+    },
+    {
+      "breach_name": "Senior Review Delay",
+      "total_count": 5,
+      "admitted_count": 3,
+      "discharged_count": 2
+    }
+  ],
+  "past_seven_weeks": [
+    {
+      "date_val": "24th Nov To 30th Nov",
+      "date_val_org": "2025-11-24",
+      "type_1_2_3": 1043,
+      "discharges": 834,
+      "breaches": 21,
+      "performance": "96"
+    },
+    {
+      "date_val": "17th Nov To 23rd Nov",
+      "date_val_org": "2025-11-17",
+      "type_1_2_3": 998,
+      "discharges": 798,
+      "breaches": 24,
+      "performance": "95"
+    },
+    {
+      "date_val": "10th Nov To 16th Nov",
+      "date_val_org": "2025-11-10",
+      "type_1_2_3": 1022,
+      "discharges": 818,
+      "breaches": 27,
+      "performance": "94"
+    },
+    {
+      "date_val": "3rd Nov To 9th Nov",
+      "date_val_org": "2025-11-03",
+      "type_1_2_3": 1085,
+      "discharges": 868,
+      "breaches": 32,
+      "performance": "93"
+    },
+    {
+      "date_val": "27th Oct To 2nd Nov",
+      "date_val_org": "2025-10-27",
+      "type_1_2_3": 965,
+      "discharges": 772,
+      "breaches": 26,
+      "performance": "95"
+    },
+    {
+      "date_val": "20th Oct To 26th Oct",
+      "date_val_org": "2025-10-20",
+      "type_1_2_3": 1012,
+      "discharges": 810,
+      "breaches": 29,
+      "performance": "94"
+    },
+    {
+      "date_val": "13th Oct To 19th Oct",
+      "date_val_org": "2025-10-13",
+      "type_1_2_3": 987,
+      "discharges": 790,
+      "breaches": 25,
+      "performance": "95"
+    }
+  ],
+  "ed_attendance_summary_show": [
+    {
+      "name": "",
+      "week": "Week",
+      "month": "Dec",
+      "quater": "Q3",
+      "year": "25/26"
+    },
+    {
+      "name": "Performance",
+      "week": "96",
+      "month": "95",
+      "quater": "94",
+      "year": "94"
+    },
+    {
+      "name": "Breaches",
+      "week": 21,
+      "month": 104,
+      "quater": 331,
+      "year": 331
+    },
+    {
+      "name": "Attendance",
+      "week": 1043,
+      "month": 4148,
+      "quater": 10668,
+      "year": 10668
+    },
+    {
+      "name": "Discharges",
+      "week": 834,
+      "month": 3318,
+      "quater": 8535,
+      "year": 8535
+    },
+    {
+      "week": "high",
+      "month": "high",
+      "quater": "high",
+      "year": "high"
+    }
+  ],
+  "breach_data": {
+    "ambulance": {
+      "breach_perc": "58",
+      "breach_count": 44
+    },
+    "walk_in": {
+      "breach_perc": 42,
+      "breach_count": 32
+    },
+    "total": 76
+  },
+  "performance_by_speciality": {
+    "ed": {
+      "name": "ED",
+      "attendance": 410,
+      "breached": 18,
+      "admitted": 95,
+      "discharged": 315,
+      "graph_perc": "95",
+      "admitted_perc": "23",
+      "breached_perc": "4"
+    },
+    "medicine": {
+      "name": "Medicine",
+      "attendance": 220,
+      "breached": 9,
+      "admitted": 110,
+      "discharged": 110,
+      "graph_perc": "94",
+      "admitted_perc": "50",
+      "breached_perc": "4"
+    },
+    "surgery": {
+      "name": "Surgery",
+      "attendance": 145,
+      "breached": 7,
+      "admitted": 54,
+      "discharged": 91,
+      "graph_perc": "93",
+      "admitted_perc": "37",
+      "breached_perc": "5"
+    },
+    "gynecology": {
+      "name": "Gynecology",
+      "attendance": 70,
+      "breached": 3,
+      "admitted": 12,
+      "discharged": 58,
+      "graph_perc": "96",
+      "admitted_perc": "17",
+      "breached_perc": "4"
+    },
+    "paediatrics": {
+      "name": "Paediatrics",
+      "attendance": 110,
+      "breached": 4,
+      "admitted": 19,
+      "discharged": 91,
+      "graph_perc": "95",
+      "admitted_perc": "17",
+      "breached_perc": "4"
+    },
+    "amhat": {
+      "name": "AMHAT",
+      "attendance": 45,
+      "breached": 2,
+      "admitted": 17,
+      "discharged": 28,
+      "graph_perc": "94",
+      "admitted_perc": "38",
+      "breached_perc": "4"
+    },
+    "trauma & orthopaedics": {
+      "name": "Trauma & Orthopaedics",
+      "attendance": 43,
+      "breached": 2,
+      "admitted": 14,
+      "discharged": 29,
+      "graph_perc": "94",
+      "admitted_perc": "33",
+      "breached_perc": "5"
+    }
+  },
+  "ambulance_arrival": {
+    "total": 310,
+    "home_count": 96,
+    "admitted_count": 178,
+    "home_perc": "31",
+    "admitted_perc": "57",
+    "min_over_30": 64,
+    "min_over_60": 21
+  },
+  "performance": {
+    "total": 1043,
+    "total_discharges": 834,
+    "admitted_count": 209,
+    "non_admitted_count": 834,
+    "admitted_breached_patient_count": 41,
+    "non_admitted_breached_patient_count": 35,
+    "breach_total": 76,
+    "admitted_perc": "20.04% (209)",
+    "non_admitted_perc": "79.96% (834)",
+    "performance": "92.70",
+    "performance_graph": "93"
+  },
+  "attendence": {
+    "type_1_2_3": 1043,
+    "admitted_total": 209,
+    "coversion_rate": "20.0",
+    "attendence_forcasted_count_first": 1065,
+    "attendence_admitted_forcasted_count_first": 215,
+    "attendence_forcasted_count_second": 1090,
+    "attendence_admitted_forcasted_count_second": 222,
+    "attendence_forcast_conversion_rate_first": "20.2",
+    "attendence_forcast_conversion_rate_second": "20.4",
+    "attendence_forcasted_arrow_count_first": "bi-caret-up-fill",
+    "attendence_forcasted_arrow_count_second": "bi-caret-up-fill",
+    "attendence_forcasted_arrow_percentage_first": "bi-caret-up-fill",
+    "attendence_forcasted_arrow_percentage_second": "bi-caret-up-fill"
+  }
+}

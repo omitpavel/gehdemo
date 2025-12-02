@@ -605,7 +605,7 @@ class CommonController extends Controller
             }
         }
 
-     
+
 
         foreach ($array_return as $key => $row)
         {

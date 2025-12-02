@@ -64,8 +64,8 @@ class SankeyController extends Controller
         $common_controller                                                  = new CommonController;
         $common_controller                                                  = new CommonController;
         $common_symphony_controller                                         = new CommonSymphonyController;
-        $query = SymphonyAttendanceView::whereBetween('symphony_registration_date_time', [$process_array["start_date"], $process_array["end_date"]])->get()->toArray();
-        $left_ed_data_processed                                                     = $common_controller->ArrayFindInBetweenDateTimeOfFields($query, $process_array["start_date"], $process_array["end_date"], 'symphony_discharge_date');
+        $query = SymphonyAttendanceView::get()->toArray();
+        $left_ed_data_processed = $query;
 
 
 
@@ -739,7 +739,7 @@ class SankeyController extends Controller
         $success_array['sankey']['nodes']                                   = $nodes;
         $success_array['sankey']['links']                                   = $links;
         $success_array['sankey']['column']                                  = array('Arrival Mode', 'Triage', 'Location', 'Time', 'Breach', 'Speciality');
-        $success_array['sankey_link']['total_patients']                     = SymphonyAttendanceView::whereBetween('symphony_arrival_date', [$process_array["start_date"], $process_array["end_date"]])->count();
+        $success_array['sankey_link']['total_patients']                     = SymphonyAttendanceView::count();
 
         if(session()->has('list_array')){
             session()->forget('list_array');
