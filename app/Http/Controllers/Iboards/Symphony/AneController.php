@@ -1102,7 +1102,7 @@ class AneController extends Controller
 
         $success_array = array();
         $process_array = array();
-        $process_array["attendance_data"]     = SymphonyAttendanceView::where('symphony_attendance_id', $request->attendance_id)->where('symphony_still_in_ae', '=', 1)->first()->toArray();
+        $process_array["attendance_data"]     = SymphonyAttendanceView::where('symphony_still_in_ae', '=', 1)->inRandomOrder()->first()->toArray();
 
         if ($process_array["attendance_data"] != null) {
             $success_array["attendance_data"] =  $process_array["attendance_data"];

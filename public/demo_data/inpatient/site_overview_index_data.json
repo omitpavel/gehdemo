@@ -1,0 +1,288 @@
+{
+  "date_time_now": "2025-12-02 12:06:21",
+  "script_error_message": "Oops! Something Went Wrong.",
+  "ibox_tab_switch_refresh_time": 180000,
+  "flash_message_to_show": "",
+  "attendance": {
+    "type_1_2_3": 12
+  },
+  "symphony_average_attendance": 145,
+  "symphony_average_admission": 38,
+  "attendance_color": "#0066FF",
+  "attendance_class": "raise-value",
+  "attendance_difference": 127,
+  "dta_in_ed": [
+    {
+      "val": 66,
+      "keyvalue": "medical"
+    },
+    {
+      "val": 27,
+      "keyvalue": "surgical"
+    },
+    {
+      "val": 68,
+      "keyvalue": "other"
+    }
+  ],
+  "in_ed_corridor": 42,
+  "in_ambulance_bay": 35,
+  "longest_wait_ambulance_bay": "29 Min",
+  "top_matrix": {
+    "performance": {
+      "admitted_value": "87.50",
+      "nonadmitted_value": "12.50",
+      "admitted_performance_text_colour": "#129c4a",
+      "nonadmitted_performance_text_colour": "#000000"
+    },
+    "conversion_rate": "23.40",
+    "breaches_value": 97,
+    "performance_value": "72.30",
+    "performance_text_colour": "#129c4a",
+    "performance_value_guage_colour": "bars-green",
+    "performance_value_guage_border_colour": "bars-border-green"
+  },
+  "still_in_ae_patients_list": 97,
+  "discharges": {
+    "total_poteintial": 18,
+    "total_definite": 12
+  },
+  "bed": {
+    "available": 24,
+    "restrict": 61,
+    "escalation": 175,
+    "occupied": 239,
+    "total": 273
+  },
+  "it_level": {
+    "level_0": 194,
+    "level_1": 12,
+    "level_2": 45,
+    "level_3": 94
+  },
+  "medfit": {
+    "medfit_no": 283,
+    "medfit_yes": 159,
+    "p0": 159,
+    "p1": 34,
+    "p2": 50,
+    "p3": 97
+  },
+  "therapy": {
+    "therapy_yes": 42,
+    "therapy_no": 246
+  },
+  "patient_los": {
+    "medical": {
+      "los_0_to_6": 38,
+      "los_7_to_13": 22,
+      "los_14_to_20": 142,
+      "los_21_more": 199
+    },
+    "surgical": {
+      "los_0_to_6": 14,
+      "los_7_to_13": 11,
+      "los_14_to_20": 120,
+      "los_21_more": 40
+    },
+    "overall": {
+      "los_0_to_6": 52,
+      "los_7_to_13": 33,
+      "los_14_to_20": 15,
+      "los_21_more": 239
+    }
+  },
+  "medfit_cdt_patient": 124,
+  "medical_ward_admissions": 14,
+  "medical_ward_discharges": 11,
+  "surgical_other_ward_admissions": 223,
+  "surgical_other_ward_discharges": 93,
+  "surgical_patient_admission_discharge_count": {
+    "RLTCOT": {
+      "admission": 71,
+      "discharge": 158
+    },
+    "RLTFNW": {
+      "admission": 131,
+      "discharge": 63
+    },
+    "RLTMSW": {
+      "admission": 207,
+      "discharge": 110
+    },
+    "RLTMILBY": {
+      "admission": 196,
+      "discharge": 216
+    },
+    "RLTSAUIP": {
+      "admission": 181,
+      "discharge": 245
+    },
+    "RLTCATEXTRACAP": {
+      "admission": 248,
+      "discharge": 83
+    },
+    "RLTDEL": {
+      "admission": 137,
+      "discharge": 201
+    },
+    "RLTDISCHARGE": {
+      "admission": 56,
+      "discharge": 133
+    },
+    "RLTDRA": {
+      "admission": 87,
+      "discharge": 117
+    },
+    "RLTFEL": {
+      "admission": 190,
+      "discharge": 146
+    },
+    "RLTITU": {
+      "admission": 189,
+      "discharge": 182
+    },
+    "RLTROM": {
+      "admission": 237,
+      "discharge": 149
+    }
+  },
+  "medical_patient_admission_discharge_count": {
+    "RLTAMU01": {
+      "admission": 200,
+      "discharge": 77
+    },
+    "RLTAMU02": {
+      "admission": 66,
+      "discharge": 65
+    },
+    "RLTADA": {
+      "admission": 84,
+      "discharge": 29
+    },
+    "RLTALE": {
+      "admission": 87,
+      "discharge": 139
+    },
+    "RLTBOB": {
+      "admission": 174,
+      "discharge": 68
+    },
+    "RLTCCU": {
+      "admission": 156,
+      "discharge": 43
+    },
+    "RLTELI": {
+      "admission": 180,
+      "discharge": 123
+    },
+    "RLTMAR": {
+      "admission": 64,
+      "discharge": 48
+    },
+    "RLTMEL": {
+      "admission": 65,
+      "discharge": 156
+    },
+    "RLTMERIWARD": {
+      "admission": 74,
+      "discharge": 196
+    },
+    "RLTNAS": {
+      "admission": 185,
+      "discharge": 93
+    },
+    "RLTVIC": {
+      "admission": 111,
+      "discharge": 100
+    }
+  },
+  "row_def_admission_discharge": 0,
+  "medical_ward_array": [],
+  "surgical_ward_array": [],
+  "ward_shown_array": {
+    "RLTADA": "Adam Bede",
+    "RLTAMU01": "Acute Medical Unit 01",
+    "RLTAMU02": "Acute Medical Unit 02",
+    "RLTFEL": "Felix Holt Stroke",
+    "RLTALE": "Alex",
+    "RLTELI": "Elizabeth",
+    "RLTNAS": "Nason",
+    "RLTDRA": "Drayton",
+    "RLTVIC": "Victori",
+    "RLTBOB": "Bob Jakin",
+    "RLTMAR": "Mary Garth",
+    "RLTDPUOVN": "DPU Overnight Capacity",
+    "RLTMEL": "Melly",
+    "RLTITU": "Intensive Therapy Unit",
+    "RLTDEL": "Delivery Suite",
+    "RLTCCU": "CCU",
+    "RLTROM": "Romola",
+    "RLTCATEXTRACAP": "Caterina Extra Capacity",
+    "RLTSDECIP": "SDEC (Same Day Emergency Care)",
+    "RLTFNW": "Florence Nightingale",
+    "RLTMSW": "Mary Seacole",
+    "RLTSDECPW": "SDEC Planned Admissions Ward",
+    "RLTSAUIP": "SAU Inpatient",
+    "RLTDISCHARGE": "Discharge Lounge",
+    "RLTMERIWARD": "Meriden GEH Ward",
+    "RLTCOT": "Coton",
+    "RLTMILBY": "Milby",
+    "RLTFAU": "Frailty Assessment Unit"
+  },
+  "boardround": {
+    "medical": {
+      "ward_complete_board_round": 10,
+      "ward_partial_complete_board_round": 2,
+      "ward_not_complete_board_round": 6
+    },
+    "surgical": {
+      "ward_complete_board_round": 8,
+      "ward_partial_complete_board_round": 1,
+      "ward_not_complete_board_round": 5
+    },
+    "overall": {
+      "ward_complete_board_round": 18,
+      "ward_partial_complete_board_round": 3,
+      "ward_not_complete_board_round": 11
+    }
+  },
+  "admit_discharge_by_hour": {
+    "medical": {
+      "00_11": {
+        "admission": 186,
+        "discharge": 99
+      },
+      "12_15": {
+        "admission": 87,
+        "discharge": 41
+      },
+      "16_24": {
+        "admission": 130,
+        "discharge": 176
+      }
+    },
+    "surgical": {
+      "00_11": {
+        "admission": 43,
+        "discharge": 168
+      },
+      "12_15": {
+        "admission": 167,
+        "discharge": 209
+      },
+      "16_24": {
+        "admission": 234,
+        "discharge": 79
+      }
+    }
+  },
+  "ane_opel_status": {
+    "opel": "2",
+    "status": 2
+  },
+  "ward_opel_status": {
+    "opel": 3,
+    "status": 3
+  }
+}

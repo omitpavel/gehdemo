@@ -225,16 +225,16 @@ class StrandedPatientsController extends Controller
         $all_wards                                                      = Wards::where('status', 1)->pluck('id')->toArray();
         if ($process_array['los_type'] == '0-6')
         {
-            $all_details                                                = CamisIboxWardPatientInformationWithBedDetailsView::whereNotNull('camis_patient_id')->where('camis_patient_admission_date', '>=', Carbon::now()->subDays(6));
+            $all_details                                                = CamisIboxWardPatientInformationWithBedDetailsView::whereNotNull('camis_patient_id');
         }elseif ($process_array['los_type'] == '7-13')
         {
-            $all_details                                                = CamisIboxWardPatientInformationWithBedDetailsView::whereNotNull('camis_patient_id')->where('camis_patient_admission_date', '<=', Carbon::now()->subDays(7)) ->where('camis_patient_admission_date', '>=', Carbon::now()->subDays(13));
+            $all_details                                                = CamisIboxWardPatientInformationWithBedDetailsView::whereNotNull('camis_patient_id');
         }elseif ($process_array['los_type'] == '14-20'){
-            $all_details                                                = CamisIboxWardPatientInformationWithBedDetailsView::whereNotNull('camis_patient_id')->where('camis_patient_admission_date', '<=', Carbon::now()->subDays(14)) ->where('camis_patient_admission_date', '>=', Carbon::now()->subDays(20));
+            $all_details                                                = CamisIboxWardPatientInformationWithBedDetailsView::whereNotNull('camis_patient_id');
         }
         else
         {
-            $all_details                                                = CamisIboxWardPatientInformationWithBedDetailsView::whereNotNull('camis_patient_id')->where('camis_patient_admission_date', '<', Carbon::now()->subDays(21));
+            $all_details                                                = CamisIboxWardPatientInformationWithBedDetailsView::whereNotNull('camis_patient_id');
         }
         $patient_array                                                  = $all_details->when($process_array['medfit_type'] != 'all', function ($q) use ($process_array, $medfit_yes)
         {
@@ -286,7 +286,7 @@ class StrandedPatientsController extends Controller
             {
                 $q->where('task_completed_status', 0)
                     ->where('task_not_applicable_status', 0);
-            }])->where('disabled_on_all_dashboard_except_ward_summary', 0)->get()->toArray();
+            }])->where('disabled_on_all_dashboard_except_ward_summary', 0)->inRandomOrder()->limit(50)->get()->toArray();
 
 
         $ward_wise_patients = array_reduce($patient_array, function ($carry, $item)

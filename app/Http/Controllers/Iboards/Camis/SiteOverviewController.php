@@ -754,7 +754,7 @@ class SiteOverViewController extends Controller
         $success_array['ane_opel_status'] = ['opel' => GetANEOpelStatus(), 'status' => 1];
         $ward_opel_status = OpelCurrentStatus::where('ane_opel_status_data_type', 2)->first();
         $success_array['ward_opel_status'] = ['opel' => $ward_opel_status->ane_opel_status_data ?? 0, 'status' => $ward_opel_status->ane_opel_status_data_show_status ?? 0];
-
+        $success_array = json_decode(file_get_contents('demo_data/inpatient/site_overview_index_data.json'), true);
         return view('Dashboards.Camis.SiteOverview.IndexDataLoad', compact('success_array'));
     }
 
@@ -762,7 +762,7 @@ class SiteOverViewController extends Controller
     public function BedWisePatientList(Request $request)
     {
         $wards_ids = Wards::whereIn('ward_type_primary', [13, 14, 16])->where('disabled_on_all_dashboard_except_ward_summary', 0)->where('status', 1)->pluck('id')->toArray();
-        $all_inpatient = CamisIboxWardPatientInformationWithBedDetailsView::with(['IboxBedStatus', 'Ward.PrimaryWardType', 'BoardRoundEstimatedDischargeDate', 'BoardRoundLevel', 'BoardRoundMedicallyFitData', 'BoardRoundCdt', 'PotentialDefinite', 'BoardRoundPathwayRequirement', 'BoardRoundTherapyFitData'])->whereIn('ibox_ward_id', $wards_ids)->where('disabled_on_all_dashboard_except_ward_summary', 0)->where('ibox_bed_type', 'Bed')->get()->toArray();
+        $patient_list = CamisIboxWardPatientInformationWithBedDetailsView::with(['IboxBedStatus', 'Ward.PrimaryWardType', 'BoardRoundEstimatedDischargeDate', 'BoardRoundLevel', 'BoardRoundMedicallyFitData', 'BoardRoundCdt', 'PotentialDefinite', 'BoardRoundPathwayRequirement', 'BoardRoundTherapyFitData'])->whereIn('ibox_ward_id', $wards_ids)->where('disabled_on_all_dashboard_except_ward_summary', 0)->where('ibox_bed_type', 'Bed')->get()->toArray();
         $wards_to_excludes = Wards::where('ward_bed_matrix_status', 0)->where('disabled_on_all_dashboard_except_ward_summary', 0)->pluck('ward_short_name')->toArray();
         $other_ward = Wards::where('ward_type_primary', 16)->pluck('ward_short_name')->toArray();
         $wards_to_exclude = array_merge($wards_to_excludes, $other_ward);
@@ -812,308 +812,308 @@ class SiteOverViewController extends Controller
 
         $selected_surgical_other_ward_set = array_merge($selected_surgical_emergency_ward_set, $selected_others_ward_set);
         $merged_wards = array_merge($selected_medical_ward_set, $selected_surgical_other_ward_set);
-        $patient_list = [];
+        //$patient_list = [];
 
-        foreach ($all_inpatient as $row) {
-            $ward_name = $row['ibox_ward_short_name'] ?? null;
-            $patient_id = $row['camis_patient_id'] ?? null;
-            $bed_status = $row['ibox_bed_status']['status'] ?? null;
-            $bed_status_camis = strtolower($row['ibox_bed_status_camis'] ?? '');
-            $escalation_status = $row['ibox_bed_escalation_status'] ?? null;
-            $ward_short_name = $row['ibox_ward_short_name'];
-            if (!$request->filled('type')) {
-                continue;
-            }
-            if ($request->type == 'all') {
-                if (!in_array($ward_name, $wards_to_exclude)) {
-                    if (!(empty($patient_id) && $bed_status == 1)) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'empty') {
-                if (!in_array($ward_name, $wards_to_exclude)) {
-                    $is_skip = empty($patient_id) && $bed_status == 1;
+        // foreach ($all_inpatient as $row) {
+        //     $ward_name = $row['ibox_ward_short_name'] ?? null;
+        //     $patient_id = $row['camis_patient_id'] ?? null;
+        //     $bed_status = $row['ibox_bed_status']['status'] ?? null;
+        //     $bed_status_camis = strtolower($row['ibox_bed_status_camis'] ?? '');
+        //     $escalation_status = $row['ibox_bed_escalation_status'] ?? null;
+        //     $ward_short_name = $row['ibox_ward_short_name'];
+        //     if (!$request->filled('type')) {
+        //         continue;
+        //     }
+        //     if ($request->type == 'all') {
+        //         if (!in_array($ward_name, $wards_to_exclude)) {
+        //             if (!(empty($patient_id) && $bed_status == 1)) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'empty') {
+        //         if (!in_array($ward_name, $wards_to_exclude)) {
+        //             $is_skip = empty($patient_id) && $bed_status == 1;
 
-                    if (!$is_skip && empty($patient_id) && $bed_status_camis == 'open') {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'occupied') {
-                if (!in_array($ward_name, $wards_to_exclude)) {
-                    if (!empty($patient_id)) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'escalation') {
-                if (!in_array($ward_name, $wards_to_exclude)) {
-                    if (empty($patient_id) && $bed_status == 1) {
-                        continue;
-                    }
+        //             if (!$is_skip && empty($patient_id) && $bed_status_camis == 'open') {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'occupied') {
+        //         if (!in_array($ward_name, $wards_to_exclude)) {
+        //             if (!empty($patient_id)) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'escalation') {
+        //         if (!in_array($ward_name, $wards_to_exclude)) {
+        //             if (empty($patient_id) && $bed_status == 1) {
+        //                 continue;
+        //             }
 
-                    if ($escalation_status == 1) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'restricted') {
-                if (!in_array($ward_name, $wards_to_exclude)) {
-                    if (empty($patient_id) && $bed_status == 2) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'definite') {
-                if (isset($row['potential_definite']['potential_definite_date']) && date('Y-m-d', strtotime($row['potential_definite']['potential_definite_date'])) == date('Y-m-d')) {
-                    if ($row['potential_definite']['type'] == 2) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'potential') {
-                if (isset($row['potential_definite']['potential_definite_date']) && date('Y-m-d', strtotime($row['potential_definite']['potential_definite_date'])) == date('Y-m-d')) {
-                    if ($row['potential_definite']['type'] == 1) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'itu_1') {
-                if (strtolower($row['ibox_ward_short_name']) == 'rltitu') {
-                    if (isset($row['board_round_level']['level']) && $row['board_round_level']['level'] == 2) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'itu_2') {
-                if (strtolower($row['ibox_ward_short_name']) == 'rltitu') {
-                    if (isset($row['board_round_level']['level']) && $row['board_round_level']['level'] == 3) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'itu_3') {
-                if (strtolower($row['ibox_ward_short_name']) == 'rltitu') {
-                    if (isset($row['board_round_level']['level']) && $row['board_round_level']['level'] == 4) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'pathway_0') {
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
-                    ($row['board_round_cdt']['cdt_status'] ?? null) == 1 &&
-                    ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1 &&
-                    stripos($row['board_round_pathway_requirement']['dtoc_pathway_text'] ?? '', 'pathway 0') !== false
-                ) {
-                    $patient_list[] = $row;
-                }
-            } elseif ($request->type == 'pathway_1') {
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
-                    ($row['board_round_cdt']['cdt_status'] ?? null) == 1 &&
-                    ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1 &&
-                    stripos($row['board_round_pathway_requirement']['dtoc_pathway_text'] ?? '', 'pathway 1') !== false
-                ) {
-                    $patient_list[] = $row;
-                }
-            } elseif ($request->type == 'pathway_2') {
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
-                    ($row['board_round_cdt']['cdt_status'] ?? null) == 1 &&
-                    ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1 &&
-                    stripos($row['board_round_pathway_requirement']['dtoc_pathway_text'] ?? '', 'pathway 2') !== false
-                ) {
-                    $patient_list[] = $row;
-                }
-            } elseif ($request->type == 'pathway_3') {
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
-                    ($row['board_round_cdt']['cdt_status'] ?? null) == 1 &&
-                    ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1 &&
-                    stripos($row['board_round_pathway_requirement']['dtoc_pathway_text'] ?? '', 'pathway 3') !== false
-                ) {
-                    $patient_list[] = $row;
-                }
-            } elseif ($request->type == 'medfit_yes') {
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
-                    ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1
-                ) {
-                    $patient_list[] = $row;
-                }
-            } elseif ($request->type == 'therapy_yes') {
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
-                    ($row['board_round_therapy_fit_data']['patient_therapy_fit_status'] ?? null) == 1
-                ) {
-                    $patient_list[] = $row;
-                }
-            } elseif ($request->type == 'medfit_no') {
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes)
-                ) {
-                    $isMedicallyFit = $row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null;
+        //             if ($escalation_status == 1) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'restricted') {
+        //         if (!in_array($ward_name, $wards_to_exclude)) {
+        //             if (empty($patient_id) && $bed_status == 2) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'definite') {
+        //         if (isset($row['potential_definite']['potential_definite_date']) && date('Y-m-d', strtotime($row['potential_definite']['potential_definite_date'])) == date('Y-m-d')) {
+        //             if ($row['potential_definite']['type'] == 2) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'potential') {
+        //         if (isset($row['potential_definite']['potential_definite_date']) && date('Y-m-d', strtotime($row['potential_definite']['potential_definite_date'])) == date('Y-m-d')) {
+        //             if ($row['potential_definite']['type'] == 1) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'itu_1') {
+        //         if (strtolower($row['ibox_ward_short_name']) == 'rltitu') {
+        //             if (isset($row['board_round_level']['level']) && $row['board_round_level']['level'] == 2) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'itu_2') {
+        //         if (strtolower($row['ibox_ward_short_name']) == 'rltitu') {
+        //             if (isset($row['board_round_level']['level']) && $row['board_round_level']['level'] == 3) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'itu_3') {
+        //         if (strtolower($row['ibox_ward_short_name']) == 'rltitu') {
+        //             if (isset($row['board_round_level']['level']) && $row['board_round_level']['level'] == 4) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'pathway_0') {
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
+        //             ($row['board_round_cdt']['cdt_status'] ?? null) == 1 &&
+        //             ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1 &&
+        //             stripos($row['board_round_pathway_requirement']['dtoc_pathway_text'] ?? '', 'pathway 0') !== false
+        //         ) {
+        //             $patient_list[] = $row;
+        //         }
+        //     } elseif ($request->type == 'pathway_1') {
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
+        //             ($row['board_round_cdt']['cdt_status'] ?? null) == 1 &&
+        //             ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1 &&
+        //             stripos($row['board_round_pathway_requirement']['dtoc_pathway_text'] ?? '', 'pathway 1') !== false
+        //         ) {
+        //             $patient_list[] = $row;
+        //         }
+        //     } elseif ($request->type == 'pathway_2') {
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
+        //             ($row['board_round_cdt']['cdt_status'] ?? null) == 1 &&
+        //             ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1 &&
+        //             stripos($row['board_round_pathway_requirement']['dtoc_pathway_text'] ?? '', 'pathway 2') !== false
+        //         ) {
+        //             $patient_list[] = $row;
+        //         }
+        //     } elseif ($request->type == 'pathway_3') {
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
+        //             ($row['board_round_cdt']['cdt_status'] ?? null) == 1 &&
+        //             ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1 &&
+        //             stripos($row['board_round_pathway_requirement']['dtoc_pathway_text'] ?? '', 'pathway 3') !== false
+        //         ) {
+        //             $patient_list[] = $row;
+        //         }
+        //     } elseif ($request->type == 'medfit_yes') {
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
+        //             ($row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null) == 1
+        //         ) {
+        //             $patient_list[] = $row;
+        //         }
+        //     } elseif ($request->type == 'therapy_yes') {
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes) &&
+        //             ($row['board_round_therapy_fit_data']['patient_therapy_fit_status'] ?? null) == 1
+        //         ) {
+        //             $patient_list[] = $row;
+        //         }
+        //     } elseif ($request->type == 'medfit_no') {
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes)
+        //         ) {
+        //             $isMedicallyFit = $row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? null;
 
-                    if ($isMedicallyFit != 1) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif ($request->type == 'therapy_no') {
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes)
-                ) {
-                    $isMedicallyFit = $row['board_round_therapy_fit_data']['patient_therapy_fit_status'] ?? null;
+        //             if ($isMedicallyFit != 1) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif ($request->type == 'therapy_no') {
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_excludes)
+        //         ) {
+        //             $isMedicallyFit = $row['board_round_therapy_fit_data']['patient_therapy_fit_status'] ?? null;
 
-                    if ($isMedicallyFit != 1) {
-                        $patient_list[] = $row;
-                    }
-                }
-            } elseif (stripos($request->type ?? '', 'los_') !== false) {
-                $admissionDate = Carbon::parse($row['camis_patient_admission_date']);
-                $length_of_stay = $admissionDate->diffInDays(Carbon::now());
-                $los_string = explode('_', $request->type);
-                $ward_type = end($los_string);
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_exclude)
-                ) {
+        //             if ($isMedicallyFit != 1) {
+        //                 $patient_list[] = $row;
+        //             }
+        //         }
+        //     } elseif (stripos($request->type ?? '', 'los_') !== false) {
+        //         $admissionDate = Carbon::parse($row['camis_patient_admission_date']);
+        //         $length_of_stay = $admissionDate->diffInDays(Carbon::now());
+        //         $los_string = explode('_', $request->type);
+        //         $ward_type = end($los_string);
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_exclude)
+        //         ) {
 
-                    if (stripos($request->type ?? '', 'los_0_6') !== false) {
-                        if ($length_of_stay >= 0 && $length_of_stay <= 6 && $ward_type == 'medical') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
-                                $patient_list[] = $row;
-                            }
-                        } elseif ($length_of_stay >= 0 && $length_of_stay <= 6 && $ward_type == 'surgical') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                                $patient_list[] = $row;
-                            }
-                        } elseif ($length_of_stay >= 0 && $length_of_stay <= 6 && $ward_type == 'all') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == ['surgical', 'medical']) {
-                                $patient_list[] = $row;
-                            }
-                        }
-                    } elseif (stripos($request->type ?? '', 'los_7_13') !== false) {
-                        if ($length_of_stay >= 7 && $length_of_stay <= 13 && $ward_type == 'medical') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
-                                $patient_list[] = $row;
-                            }
-                        } elseif ($length_of_stay >= 7 && $length_of_stay <= 13 && $ward_type == 'surgical') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                                $patient_list[] = $row;
-                            }
-                        } elseif ($length_of_stay >= 7 && $length_of_stay <= 13 && $ward_type == 'all') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
-                                $patient_list[] = $row;
-                            }
-                        }
-                    } elseif (stripos($request->type ?? '', 'los_14_20') !== false) {
-                        if ($length_of_stay >= 14 && $length_of_stay <= 20 && $ward_type == 'medical') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
-                                $patient_list[] = $row;
-                            }
-                        } elseif ($length_of_stay >= 14 && $length_of_stay <= 20 && $ward_type == 'surgical') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                                $patient_list[] = $row;
-                            }
-                        } elseif ($length_of_stay >= 14 && $length_of_stay <= 20 && $ward_type == 'all') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
-                                $patient_list[] = $row;
-                            }
-                        }
-                    } elseif (stripos($request->type ?? '', 'los_21_plus') !== false) {
-                        if ($length_of_stay >= 21 && $ward_type == 'medical') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
-                                $patient_list[] = $row;
-                            }
-                        } elseif ($length_of_stay >= 21 && $ward_type == 'surgical') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                                $patient_list[] = $row;
-                            }
-                        } elseif ($length_of_stay >= 21 && $ward_type == 'all') {
-                            if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
-                                $patient_list[] = $row;
-                            }
-                        }
-                    }
-                }
-            } elseif (stripos($request->type ?? '', 'admit_') !== false) {
-                $admit_string = explode('_', $request->type);
-                $ward_type = end($admit_string);
-                $admission_type = strtolower($row['ip_admission_type_description']);
-                $camis_patient_admission_date = $row['camis_patient_admission_date_time'];
-                $dateTime = Carbon::parse($camis_patient_admission_date);
-                $hour = $dateTime->hour;
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_exclude)
-                ) {
-                    if (in_array($ward_short_name, $merged_wards)) {
-                        if (strpos($admission_type, 'non-elective') !== false && $dateTime->isToday()) {
-                            if (stripos($request->type ?? '', 'admit_00_11') !== false) {
-                                if ($hour >= 0 && $hour <= 12 && $ward_type == 'medical') {
-                                    if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
-                                        $patient_list[] = $row;
-                                    }
-                                } elseif ($hour >= 0 && $hour <= 12 && $ward_type == 'surgical') {
-                                    if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                                        $patient_list[] = $row;
-                                    }
-                                } elseif ($hour >= 0 && $hour <= 12 && $ward_type == 'all') {
-                                    if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
-                                        $patient_list[] = $row;
-                                    }
-                                }
-                            } elseif (stripos($request->type ?? '', 'admit_12_15') !== false) {
-                                if ($hour >= 12 && $hour <= 15 && $ward_type == 'medical') {
-                                    if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
-                                        $patient_list[] = $row;
-                                    }
-                                } elseif ($hour >= 12 && $hour <= 15 && $ward_type == 'surgical') {
-                                    if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                                        $patient_list[] = $row;
-                                    }
-                                } elseif ($hour >= 12 && $hour <= 15 && $ward_type == 'all') {
-                                    if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
-                                        $patient_list[] = $row;
-                                    }
-                                }
-                            } elseif (stripos($request->type ?? '', 'admit_16_23') !== false) {
-                                if ($hour >= 16 && $hour <= 23 && $ward_type == 'medical') {
-                                    if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
-                                        $patient_list[] = $row;
-                                    }
-                                } elseif ($hour >= 16 && $hour <= 23 && $ward_type == 'surgical') {
-                                    if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                                        $patient_list[] = $row;
-                                    }
-                                } elseif ($hour >= 16 && $hour <= 23 && $ward_type == 'all') {
-                                    if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
-                                        $patient_list[] = $row;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            } elseif (stripos($request->type ?? '', 'overall_inpatient_') !== false) {
-                $admit_string = explode('_', $request->type);
-                $ward = end($admit_string);
-                $admission_type = strtolower($row['ip_admission_type_description']);
-                $camis_patient_admission_date = $row['camis_patient_admission_date_time'];
-                $dateTime = Carbon::parse($camis_patient_admission_date);
+        //             if (stripos($request->type ?? '', 'los_0_6') !== false) {
+        //                 if ($length_of_stay >= 0 && $length_of_stay <= 6 && $ward_type == 'medical') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 } elseif ($length_of_stay >= 0 && $length_of_stay <= 6 && $ward_type == 'surgical') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 } elseif ($length_of_stay >= 0 && $length_of_stay <= 6 && $ward_type == 'all') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == ['surgical', 'medical']) {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 }
+        //             } elseif (stripos($request->type ?? '', 'los_7_13') !== false) {
+        //                 if ($length_of_stay >= 7 && $length_of_stay <= 13 && $ward_type == 'medical') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 } elseif ($length_of_stay >= 7 && $length_of_stay <= 13 && $ward_type == 'surgical') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 } elseif ($length_of_stay >= 7 && $length_of_stay <= 13 && $ward_type == 'all') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 }
+        //             } elseif (stripos($request->type ?? '', 'los_14_20') !== false) {
+        //                 if ($length_of_stay >= 14 && $length_of_stay <= 20 && $ward_type == 'medical') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 } elseif ($length_of_stay >= 14 && $length_of_stay <= 20 && $ward_type == 'surgical') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 } elseif ($length_of_stay >= 14 && $length_of_stay <= 20 && $ward_type == 'all') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 }
+        //             } elseif (stripos($request->type ?? '', 'los_21_plus') !== false) {
+        //                 if ($length_of_stay >= 21 && $ward_type == 'medical') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 } elseif ($length_of_stay >= 21 && $ward_type == 'surgical') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 } elseif ($length_of_stay >= 21 && $ward_type == 'all') {
+        //                     if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
+        //                         $patient_list[] = $row;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     } elseif (stripos($request->type ?? '', 'admit_') !== false) {
+        //         $admit_string = explode('_', $request->type);
+        //         $ward_type = end($admit_string);
+        //         $admission_type = strtolower($row['ip_admission_type_description']);
+        //         $camis_patient_admission_date = $row['camis_patient_admission_date_time'];
+        //         $dateTime = Carbon::parse($camis_patient_admission_date);
+        //         $hour = $dateTime->hour;
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_exclude)
+        //         ) {
+        //             if (in_array($ward_short_name, $merged_wards)) {
+        //                 if (strpos($admission_type, 'non-elective') !== false && $dateTime->isToday()) {
+        //                     if (stripos($request->type ?? '', 'admit_00_11') !== false) {
+        //                         if ($hour >= 0 && $hour <= 12 && $ward_type == 'medical') {
+        //                             if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                                 $patient_list[] = $row;
+        //                             }
+        //                         } elseif ($hour >= 0 && $hour <= 12 && $ward_type == 'surgical') {
+        //                             if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                                 $patient_list[] = $row;
+        //                             }
+        //                         } elseif ($hour >= 0 && $hour <= 12 && $ward_type == 'all') {
+        //                             if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
+        //                                 $patient_list[] = $row;
+        //                             }
+        //                         }
+        //                     } elseif (stripos($request->type ?? '', 'admit_12_15') !== false) {
+        //                         if ($hour >= 12 && $hour <= 15 && $ward_type == 'medical') {
+        //                             if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                                 $patient_list[] = $row;
+        //                             }
+        //                         } elseif ($hour >= 12 && $hour <= 15 && $ward_type == 'surgical') {
+        //                             if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                                 $patient_list[] = $row;
+        //                             }
+        //                         } elseif ($hour >= 12 && $hour <= 15 && $ward_type == 'all') {
+        //                             if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
+        //                                 $patient_list[] = $row;
+        //                             }
+        //                         }
+        //                     } elseif (stripos($request->type ?? '', 'admit_16_23') !== false) {
+        //                         if ($hour >= 16 && $hour <= 23 && $ward_type == 'medical') {
+        //                             if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                                 $patient_list[] = $row;
+        //                             }
+        //                         } elseif ($hour >= 16 && $hour <= 23 && $ward_type == 'surgical') {
+        //                             if (isset($row['ward']['primary_ward_type']['ward_type']) && strtolower($row['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                                 $patient_list[] = $row;
+        //                             }
+        //                         } elseif ($hour >= 16 && $hour <= 23 && $ward_type == 'all') {
+        //                             if (isset($row['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($row['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
+        //                                 $patient_list[] = $row;
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     } elseif (stripos($request->type ?? '', 'overall_inpatient_') !== false) {
+        //         $admit_string = explode('_', $request->type);
+        //         $ward = end($admit_string);
+        //         $admission_type = strtolower($row['ip_admission_type_description']);
+        //         $camis_patient_admission_date = $row['camis_patient_admission_date_time'];
+        //         $dateTime = Carbon::parse($camis_patient_admission_date);
 
-                if (
-                    !empty($row['camis_patient_id']) &&
-                    !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_exclude)
-                ) {
-                    if (strpos($admission_type, 'non-elective') !== false && $dateTime->isToday()) {
-                        if ($row['ibox_ward_short_name'] == $ward) {
-                            $patient_list[] = $row;
-                        }
-                    }
-                }
-            }
-        }
+        //         if (
+        //             !empty($row['camis_patient_id']) &&
+        //             !in_array($row['ibox_ward_short_name'] ?? '', $wards_to_exclude)
+        //         ) {
+        //             if (strpos($admission_type, 'non-elective') !== false && $dateTime->isToday()) {
+        //                 if ($row['ibox_ward_short_name'] == $ward) {
+        //                     $patient_list[] = $row;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
         $ward_wise_patient = array_reduce($patient_list, function ($carry, $item) {
             $ward_name = $item['ibox_ward_name'];
 
@@ -1135,62 +1135,62 @@ class SiteOverViewController extends Controller
     public function MedfitPatientPatientList(Request $request)
     {
         $wards_ids = Wards::whereIn('ward_type_primary', [13, 14, 16])->where('disabled_on_all_dashboard_except_ward_summary', 0)->where('status', 1)->pluck('id')->toArray();
-        $all_inpatient = CamisIboxWardPatientInformationWithBedDetailsView::with(['IboxBedStatus', 'Ward.PrimaryWardType', 'BoardRoundEstimatedDischargeDate', 'BoardRoundLevel', 'BoardRoundMedicallyFitData', 'BoardRoundCdt', 'PotentialDefinite', 'BoardRoundPathwayRequirement', 'BoardRoundTherapyFitData'])->whereIn('ibox_ward_id', $wards_ids)->where('disabled_on_all_dashboard_except_ward_summary', 0)->where('ibox_bed_type', 'Bed')->get()->toArray();
+        $patient_list = CamisIboxWardPatientInformationWithBedDetailsView::with(['IboxBedStatus', 'Ward.PrimaryWardType', 'BoardRoundEstimatedDischargeDate', 'BoardRoundLevel', 'BoardRoundMedicallyFitData', 'BoardRoundCdt', 'PotentialDefinite', 'BoardRoundPathwayRequirement', 'BoardRoundTherapyFitData'])->whereIn('ibox_ward_id', $wards_ids)->where('disabled_on_all_dashboard_except_ward_summary', 0)->where('ibox_bed_type', 'Bed')->get()->toArray();
         $wards_to_excludes = Wards::where('ward_bed_matrix_status', 0)->where('disabled_on_all_dashboard_except_ward_summary', 0)->pluck('ward_short_name')->toArray();
         $other_ward = Wards::where('ward_type_primary', 16)->pluck('ward_short_name')->toArray();
         $wards_to_exclude = array_merge($wards_to_excludes, $other_ward);
 
-        $patient_list = [];
+        //$patient_list = [];
 
-        foreach ($all_inpatient as $row) {
-            $ward_name = $row['ibox_ward_short_name'] ?? null;
-            $patient_id = $row['camis_patient_id'] ?? null;
-            $bed_status = $row['ibox_bed_status']['status'] ?? null;
-            $bed_status_camis = strtolower($row['ibox_bed_status_camis'] ?? '');
-            $escalation_status = $row['ibox_bed_escalation_status'] ?? null;
-            $board_round_cdt = $row['board_round_cdt']['cdt_status'] ?? 0;
-            $board_round_medfit = $row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? 0;
-            $board_round_therapy = $row['board_round_therapy_fit_data']['patient_therapy_fit_status'] ?? 0;
+        // foreach ($all_inpatient as $row) {
+        //     $ward_name = $row['ibox_ward_short_name'] ?? null;
+        //     $patient_id = $row['camis_patient_id'] ?? null;
+        //     $bed_status = $row['ibox_bed_status']['status'] ?? null;
+        //     $bed_status_camis = strtolower($row['ibox_bed_status_camis'] ?? '');
+        //     $escalation_status = $row['ibox_bed_escalation_status'] ?? null;
+        //     $board_round_cdt = $row['board_round_cdt']['cdt_status'] ?? 0;
+        //     $board_round_medfit = $row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? 0;
+        //     $board_round_therapy = $row['board_round_therapy_fit_data']['patient_therapy_fit_status'] ?? 0;
 
-            if (empty($patient_id) || in_array($ward_name, $wards_to_exclude)) {
-                continue;
-            }
+        //     if (empty($patient_id) || in_array($ward_name, $wards_to_exclude)) {
+        //         continue;
+        //     }
 
-            $medfit_required = (int) $request->medfit;
-            if ((int) $board_round_medfit != $medfit_required) {
-                continue;
-            }
+        //     $medfit_required = (int) $request->medfit;
+        //     if ((int) $board_round_medfit != $medfit_required) {
+        //         continue;
+        //     }
 
-            if ($request->filled('cdt_status')) {
-                if ($request->cdt_status == 'cdt_yes') {
-                    if ($board_round_cdt != 1) {
-                        continue;
-                    }
-                }
+        //     if ($request->filled('cdt_status')) {
+        //         if ($request->cdt_status == 'cdt_yes') {
+        //             if ($board_round_cdt != 1) {
+        //                 continue;
+        //             }
+        //         }
 
-                if ($request->cdt_status == 'cdt_no') {
-                    if ($board_round_cdt == 1) {
-                        continue;
-                    }
-                }
-            }
-            if ($request->filled('therapy_status')) {
+        //         if ($request->cdt_status == 'cdt_no') {
+        //             if ($board_round_cdt == 1) {
+        //                 continue;
+        //             }
+        //         }
+        //     }
+        //     if ($request->filled('therapy_status')) {
 
-                if ($request->therapy_status == 'therapy_yes') {
-                    if ($board_round_therapy != 1) {
-                        continue;
-                    }
-                }
+        //         if ($request->therapy_status == 'therapy_yes') {
+        //             if ($board_round_therapy != 1) {
+        //                 continue;
+        //             }
+        //         }
 
-                if ($request->therapy_status == 'therapy_no') {
-                    if ($board_round_therapy == 1) {
-                        continue;
-                    }
-                }
-            }
+        //         if ($request->therapy_status == 'therapy_no') {
+        //             if ($board_round_therapy == 1) {
+        //                 continue;
+        //             }
+        //         }
+        //     }
 
-            $patient_list[] = $row;
-        }
+        //     $patient_list[] = $row;
+        // }
 
 
         $ward_wise_patient = array_reduce($patient_list, function ($carry, $item) {
@@ -1209,64 +1209,64 @@ class SiteOverViewController extends Controller
     public function TherapyPatientPatientList(Request $request)
     {
         $wards_ids = Wards::whereIn('ward_type_primary', [13, 14, 16])->where('disabled_on_all_dashboard_except_ward_summary', 0)->where('status', 1)->pluck('id')->toArray();
-        $all_inpatient = CamisIboxWardPatientInformationWithBedDetailsView::with(['IboxBedStatus', 'Ward.PrimaryWardType', 'BoardRoundEstimatedDischargeDate', 'BoardRoundLevel', 'BoardRoundMedicallyFitData', 'BoardRoundCdt', 'PotentialDefinite', 'BoardRoundPathwayRequirement', 'BoardRoundTherapyFitData'])->whereIn('ibox_ward_id', $wards_ids)->where('disabled_on_all_dashboard_except_ward_summary', 0)->where('ibox_bed_type', 'Bed')->get()->toArray();
+        $patient_list = CamisIboxWardPatientInformationWithBedDetailsView::with(['IboxBedStatus', 'Ward.PrimaryWardType', 'BoardRoundEstimatedDischargeDate', 'BoardRoundLevel', 'BoardRoundMedicallyFitData', 'BoardRoundCdt', 'PotentialDefinite', 'BoardRoundPathwayRequirement', 'BoardRoundTherapyFitData'])->whereIn('ibox_ward_id', $wards_ids)->where('disabled_on_all_dashboard_except_ward_summary', 0)->where('ibox_bed_type', 'Bed')->get()->toArray();
         $wards_to_excludes = Wards::where('ward_bed_matrix_status', 0)->where('disabled_on_all_dashboard_except_ward_summary', 0)->pluck('ward_short_name')->toArray();
         $other_ward = Wards::where('ward_type_primary', 16)->pluck('ward_short_name')->toArray();
         $wards_to_exclude = array_merge($wards_to_excludes, $other_ward);
 
         $patient_list = [];
 
-        foreach ($all_inpatient as $row) {
-            $ward_name = $row['ibox_ward_short_name'] ?? null;
-            $patient_id = $row['camis_patient_id'] ?? null;
-            $bed_status = $row['ibox_bed_status']['status'] ?? null;
-            $bed_status_camis = strtolower($row['ibox_bed_status_camis'] ?? '');
-            $escalation_status = $row['ibox_bed_escalation_status'] ?? null;
-            $board_round_cdt = $row['board_round_cdt']['cdt_status'] ?? 0;
-            $board_round_medfit = $row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? 0;
-            $board_round_therapy = $row['board_round_therapy_fit_data']['patient_therapy_fit_status'] ?? 0;
-            if (empty($patient_id) || in_array($ward_name, $wards_to_exclude)) {
-                continue;
-            }
+        // foreach ($all_inpatient as $row) {
+        //     $ward_name = $row['ibox_ward_short_name'] ?? null;
+        //     $patient_id = $row['camis_patient_id'] ?? null;
+        //     $bed_status = $row['ibox_bed_status']['status'] ?? null;
+        //     $bed_status_camis = strtolower($row['ibox_bed_status_camis'] ?? '');
+        //     $escalation_status = $row['ibox_bed_escalation_status'] ?? null;
+        //     $board_round_cdt = $row['board_round_cdt']['cdt_status'] ?? 0;
+        //     $board_round_medfit = $row['board_round_medically_fit_data']['patient_medically_fit_status'] ?? 0;
+        //     $board_round_therapy = $row['board_round_therapy_fit_data']['patient_therapy_fit_status'] ?? 0;
+        //     if (empty($patient_id) || in_array($ward_name, $wards_to_exclude)) {
+        //         continue;
+        //     }
 
-            $therapy_required = (int) $request->therapy;
-            if ((int) $board_round_therapy != $therapy_required) {
-                continue;
-            }
+        //     $therapy_required = (int) $request->therapy;
+        //     if ((int) $board_round_therapy != $therapy_required) {
+        //         continue;
+        //     }
 
-            if ($request->filled('cdt_status')) {
-                if ($request->cdt_status == 'cdt_yes') {
-                    if ($board_round_cdt != 1) {
-                        continue;
-                    }
-                }
+        //     if ($request->filled('cdt_status')) {
+        //         if ($request->cdt_status == 'cdt_yes') {
+        //             if ($board_round_cdt != 1) {
+        //                 continue;
+        //             }
+        //         }
 
-                if ($request->cdt_status == 'cdt_no') {
-                    if ($board_round_cdt == 1) {
-                        continue;
-                    }
-                }
-            }
-            if ($request->filled('medfit_status')) {
+        //         if ($request->cdt_status == 'cdt_no') {
+        //             if ($board_round_cdt == 1) {
+        //                 continue;
+        //             }
+        //         }
+        //     }
+        //     if ($request->filled('medfit_status')) {
 
-                if ($request->medfit_status == 'medfit_yes') {
-                    if ($board_round_medfit != 1) {
-                        continue;
-                    }
-                }
+        //         if ($request->medfit_status == 'medfit_yes') {
+        //             if ($board_round_medfit != 1) {
+        //                 continue;
+        //             }
+        //         }
 
-                if ($request->medfit_status == 'medfit_no') {
-                    if ($board_round_medfit == 1) {
-                        continue;
-                    }
-                }
-            }
-
-
+        //         if ($request->medfit_status == 'medfit_no') {
+        //             if ($board_round_medfit == 1) {
+        //                 continue;
+        //             }
+        //         }
+        //     }
 
 
-            $patient_list[] = $row;
-        }
+
+
+        //     $patient_list[] = $row;
+        // }
 
         $ward_wise_patient = array_reduce($patient_list, function ($carry, $item) {
             $ward_name = $item['ibox_ward_name'];
@@ -1330,88 +1330,88 @@ class SiteOverViewController extends Controller
 
         $selected_surgical_other_ward_set = array_merge($selected_surgical_emergency_ward_set, $selected_others_ward_set);
         $merged_wards = array_merge($selected_medical_ward_set, $selected_surgical_other_ward_set);
-        $patient_discharge_today_list           = CamisIboxDischargeToday::with(['Ward.PrimaryWardType', 'PatientInformation'])->whereBetween('camis_patient_discharge_date', [$specific_date . ' 00:00:01', $specific_date . ' 23:59:59'])->orderBy('camis_patient_ward', 'ASC')->get()->toArray();
-        $patient_list = [];
-        foreach ($patient_discharge_today_list as $discharge_data) {
-            if (isset($discharge_data['ward']['primary_ward_type']['ward_type'])) {
-                $ward_short_name = $discharge_data['ibox_ward_short_name'];
-                $ward_type = strtolower($discharge_data['ward']['primary_ward_type']['ward_type']);
-                $admission_type = strtolower($discharge_data['ibox_admission_type_description']);
-                $camis_patient_discharge_date = $discharge_data['camis_patient_discharge_date'];
-                $dateTime = Carbon::parse($camis_patient_discharge_date);
-                $hour = $dateTime->hour;
-                if (
-                    !isset($discharge_data['ward']) ||
-                    !isset($discharge_data['ward']['status'], $discharge_data['ward']['disabled_on_all_dashboard_except_ward_summary']) ||
-                    $discharge_data['ward']['status'] != 1 ||
-                    $discharge_data['ward']['disabled_on_all_dashboard_except_ward_summary'] != 0
-                ) {
-                    continue;
-                }
+        $patient_list           = CamisIboxDischargeToday::with(['Ward.PrimaryWardType', 'PatientInformation'])->orderBy('camis_patient_ward', 'ASC')->get()->toArray();
+        //$patient_list = [];
+        // foreach ($patient_discharge_today_list as $discharge_data) {
+        //     if (isset($discharge_data['ward']['primary_ward_type']['ward_type'])) {
+        //         $ward_short_name = $discharge_data['ibox_ward_short_name'];
+        //         $ward_type = strtolower($discharge_data['ward']['primary_ward_type']['ward_type']);
+        //         $admission_type = strtolower($discharge_data['ibox_admission_type_description']);
+        //         $camis_patient_discharge_date = $discharge_data['camis_patient_discharge_date'];
+        //         $dateTime = Carbon::parse($camis_patient_discharge_date);
+        //         $hour = $dateTime->hour;
+        //         if (
+        //             !isset($discharge_data['ward']) ||
+        //             !isset($discharge_data['ward']['status'], $discharge_data['ward']['disabled_on_all_dashboard_except_ward_summary']) ||
+        //             $discharge_data['ward']['status'] != 1 ||
+        //             $discharge_data['ward']['disabled_on_all_dashboard_except_ward_summary'] != 0
+        //         ) {
+        //             continue;
+        //         }
 
-                if (!in_array($ward_short_name, $merged_wards)) {
-                    continue;
-                }
+        //         if (!in_array($ward_short_name, $merged_wards)) {
+        //             continue;
+        //         }
 
-                if (stripos($request->type ?? '', 'discharge_00_11') !== false && strpos($admission_type, 'non-elective') !== false) {
-                    if ($hour >= 0 && $hour <= 12 && $ward_type == 'medical') {
-                        if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'medical') {
-                            $patient_list[] = $discharge_data;
-                        }
-                    } elseif ($hour >= 0 && $hour <= 12 && $ward_type == 'surgical') {
-                        if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                            $patient_list[] = $discharge_data;
-                        }
-                    } elseif ($hour >= 0 && $hour <= 12 && $ward_type == 'all') {
-                        if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($discharge_data['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
-                            $patient_list[] = $discharge_data;
-                        }
-                    }
-                } elseif (stripos($request->type ?? '', 'discharge_12_15') !== false && strpos($admission_type, 'non-elective') !== false) {
+        //         if (stripos($request->type ?? '', 'discharge_00_11') !== false && strpos($admission_type, 'non-elective') !== false) {
+        //             if ($hour >= 0 && $hour <= 12 && $ward_type == 'medical') {
+        //                 if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             } elseif ($hour >= 0 && $hour <= 12 && $ward_type == 'surgical') {
+        //                 if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             } elseif ($hour >= 0 && $hour <= 12 && $ward_type == 'all') {
+        //                 if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($discharge_data['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             }
+        //         } elseif (stripos($request->type ?? '', 'discharge_12_15') !== false && strpos($admission_type, 'non-elective') !== false) {
 
-                    if ($hour >= 12 && $hour <= 15 && $ward_type == 'medical') {
+        //             if ($hour >= 12 && $hour <= 15 && $ward_type == 'medical') {
 
-                        if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                 if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'medical') {
 
-                            $patient_list[] = $discharge_data;
-                        }
-                    } elseif ($hour >= 12 && $hour <= 15 && $ward_type == 'surgical') {
-                        if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                            $patient_list[] = $discharge_data;
-                        }
-                    } elseif ($hour >= 12 && $hour <= 15 && $ward_type == 'all') {
-                        if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($discharge_data['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
-                            $patient_list[] = $discharge_data;
-                        }
-                    }
-                } elseif (stripos($request->type ?? '', 'discharge_16_23') !== false && strpos($admission_type, 'non-elective') !== false) {
-                    if ($hour >= 16 && $hour <= 23 && $ward_type == 'medical') {
-                        if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'medical') {
-                            $patient_list[] = $discharge_data;
-                        }
-                    } elseif ($hour >= 16 && $hour <= 23 && $ward_type == 'surgical') {
-                        if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'surgical') {
-                            $patient_list[] = $discharge_data;
-                        }
-                    } elseif ($hour >= 16 && $hour <= 23 && $ward_type == 'all') {
-                        if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($discharge_data['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
-                            $patient_list[] = $discharge_data;
-                        }
-                    }
-                } elseif (stripos($request->type ?? '', 'overall_outpatient_') !== false) {
-                    $admit_string = explode('_', $request->type);
-                    $ward = end($admit_string);
-                    $admission_type = strtolower($discharge_data['ip_admission_type_description']);
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             } elseif ($hour >= 12 && $hour <= 15 && $ward_type == 'surgical') {
+        //                 if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             } elseif ($hour >= 12 && $hour <= 15 && $ward_type == 'all') {
+        //                 if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($discharge_data['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             }
+        //         } elseif (stripos($request->type ?? '', 'discharge_16_23') !== false && strpos($admission_type, 'non-elective') !== false) {
+        //             if ($hour >= 16 && $hour <= 23 && $ward_type == 'medical') {
+        //                 if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'medical') {
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             } elseif ($hour >= 16 && $hour <= 23 && $ward_type == 'surgical') {
+        //                 if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && strtolower($discharge_data['ward']['primary_ward_type']['ward_type']) == 'surgical') {
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             } elseif ($hour >= 16 && $hour <= 23 && $ward_type == 'all') {
+        //                 if (isset($discharge_data['ward']['primary_ward_type']['ward_type']) && in_array(strtolower($discharge_data['ward']['primary_ward_type']['ward_type']), ['surgical', 'medical'])) {
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             }
+        //         } elseif (stripos($request->type ?? '', 'overall_outpatient_') !== false) {
+        //             $admit_string = explode('_', $request->type);
+        //             $ward = end($admit_string);
+        //             $admission_type = strtolower($discharge_data['ip_admission_type_description']);
 
 
-                    if (strpos($admission_type, 'non-elective') !== false) {
-                        if ($discharge_data['ibox_ward_short_name'] == $ward) {
-                            $patient_list[] = $discharge_data;
-                        }
-                    }
-                }
-            }
-        }
+        //             if (strpos($admission_type, 'non-elective') !== false) {
+        //                 if ($discharge_data['ibox_ward_short_name'] == $ward) {
+        //                     $patient_list[] = $discharge_data;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
 
         $ward_wise_patient = array_reduce($patient_list, function ($carry, $item)
         {
@@ -1465,7 +1465,7 @@ class SiteOverViewController extends Controller
             \DB::raw('COALESCE(MAX(CASE WHEN TIME(created_at) < "12:00:00" THEN DATE_FORMAT(created_at, "%H:%i") ELSE "00:00" END), "00:00") AS am_time'),
             \DB::raw('COALESCE(MAX(CASE WHEN TIME(created_at) >= "12:00:00" THEN DATE_FORMAT(created_at, "%H:%i") ELSE "00:00" END), "00:00") AS pm_time')
         )
-            ->whereDate('created_at', $date)
+           // ->whereDate('created_at', $date)
             ->whereDate('ward_id', array_keys($all_wards))
             ->groupBy('history_id', 'ward_id', 'status', \DB::raw('DATE(created_at)'))
             ->orderBy('history_id', 'asc')
@@ -1576,6 +1576,7 @@ class SiteOverViewController extends Controller
         } else {
             $data = SymphonyAneDTAPatientView::where('dta_type_key', $request->key)->get()->toArray();
         }
+        $data = SymphonyAneDTAPatientView::get()->toArray();
         $view = View::make('Dashboards.Camis.SiteOverview.Partials.ANEOffcanvas', compact('data'));
         return $view->render();
     }

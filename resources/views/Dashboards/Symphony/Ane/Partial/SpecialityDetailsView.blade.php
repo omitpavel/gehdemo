@@ -65,7 +65,7 @@
 
             <td class="pivoted">
                 <div class="tdBefore">Seen By Date/Time</div>
-                {{ PredefinedDateFormatFor24Hour($speacitly['symphony_seen_date']) }}
+                {{ !empty($speacitly['symphony_seen_date']) ? PredefinedDateFormatFor24Hour($speacitly['symphony_seen_date']) : PredefinedDateFormatFor24Hour(CurrentDateOnFormat()) }}
 
             </td>
             <td class="pivoted">
