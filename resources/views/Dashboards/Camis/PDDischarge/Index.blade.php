@@ -73,21 +73,20 @@
             }
         });
     </script>
-
     <script>
         @if (CheckSpecificPermission('pd_dashboard_today_dashboard_view'))
             $(document).ready(function() {
-                DischargeDay('today');
+                DischargeDay('{{ \Carbon\Carbon::today()->format('l') }} ');
             });
         @elseif (CheckSpecificPermission('pd_dashboard_tomorrow_dashboard_view'))
 
             $(document).ready(function() {
-                DischargeDay('tomorrow');
+                DischargeDay('{{ \Carbon\Carbon::tomorrow()->format('l') }}');
             });
         @elseif (CheckSpecificPermission('pd_dashboard_day_after_tomorrow_dashboard_view'))
 
             $(document).ready(function() {
-                DischargeDay('day_after_tomorrow');
+                DischargeDay('{{ \Carbon\Carbon::now()->addDays(2)->format('l') }}');
             });
         @elseif (CheckSpecificPermission('pd_dashboard_missed_discharged_view'))
 

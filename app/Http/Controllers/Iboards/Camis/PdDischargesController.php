@@ -45,7 +45,7 @@ class PdDischargesController extends Controller
         if ($request->discharge_day != null) {
             $process_array['discharge_day']                             = $request->discharge_day;
         } else {
-            $process_array['discharge_day']                             = 'today';
+            $process_array['discharge_day']                             = Carbon::today()->format('l');
         }
 
         if ($request->filled('ward_id')) {
@@ -77,20 +77,20 @@ class PdDischargesController extends Controller
 
         if ($request->discharge_day == null) {
             if (CheckAnyPermission(['pd_dashboard_today_dashboard_view', 'pd_dashboard_tomorrow_dashboard_view'])) {
-                $process_array['discharge_day']                             = 'today';
+                $process_array['discharge_day']                             = Carbon::today()->format('l');
                 $this->PageDataLoad($process_array, $success_array);
             } else if ((CheckAnyPermission(['pd_dashboard_today_dashboard_view']))) {
 
-                $process_array['discharge_day']                             = 'today';
+                $process_array['discharge_day']                             = Carbon::today()->format('l');
 
                 $this->PageDataLoad($process_array, $success_array);
             } else if ((CheckAnyPermission(['pd_dashboard_tomorrow_dashboard_view']))) {
 
-                $process_array['discharge_day']                             = 'tomorrow';
+                $process_array['discharge_day']                             = Carbon::tomorrow()->format('l');
                 $this->PageDataLoad($process_array, $success_array);
             } else if ((CheckAnyPermission(['pd_dashboard_missed_discharged_view']))) {
 
-                $process_array['discharge_day']                             = 'tomorrow';
+                $process_array['discharge_day']                             = Carbon::tomorrow()->format('l');
                 $this->PageDataLoad($process_array, $success_array);
             } else {
                 return PermissionDenied();
@@ -142,56 +142,79 @@ class PdDischargesController extends Controller
         if (!CheckDashboardPermission('pd_dashboard_missed_discharges_performance_view')) {
             return PermissionDenied();
         }
-        $success_array                                                  = array();
-        $success_array['definite_status']                                   = $request->definite_status;
-        $success_array['potential_status']                                   = $request->potential_status;
-        $success_array['today']                                         = Carbon::now();
-        $success_array['tomorrow']                                      = $success_array['today']->addDay()->format('l');
-        $success_array['day_after_tommrow']                             = $success_array['today']->addDay(1)->format('l');
+
+        // small random helper
+        $rrand = function (int $min, int $max) {
+            return mt_rand($min, $max);
+        };
+
+        $success_array                                = [];
+        $success_array['definite_status']             = $request->definite_status;
+        $success_array['potential_status']            = $request->potential_status;
+        $success_array['today']                       = Carbon::now();
+        $success_array['tomorrow']                    = $success_array['today']->copy()->addDay()->format('l');
+        $success_array['day_after_tommrow']           = $success_array['today']->copy()->addDays(2)->format('l');
 
         if ($request->filled('start_date')) {
             $start_date = $request->start_date;
         } else {
             $start_date = Carbon::now()->format('Y-m-d');
         }
+
         if ($request->filled('end_date')) {
             $end_date = $request->end_date;
         } else {
             $end_date = Carbon::now()->format('Y-m-d');
         }
-        $total_discharges = CamisIboxCalculatedDailySummary::whereBetween('date', [$start_date, $end_date])->where('summary_key', 'all_ward_discharges')->sum('summary_value');
-        $total_admissions = CamisIboxCalculatedDailySummary::whereBetween('date', [$start_date, $end_date])->where('summary_key', 'all_ward_admissions')->sum('summary_value');
+
+        // ========== REAL DATA (from summary table) ==========
+
+        $total_discharges = CamisIboxCalculatedDailySummary::whereBetween('date', [$start_date, $end_date])
+            ->where('summary_key', 'all_ward_discharges')
+            ->sum('summary_value');
+
+        $total_admissions = CamisIboxCalculatedDailySummary::whereBetween('date', [$start_date, $end_date])
+            ->where('summary_key', 'all_ward_admissions')
+            ->sum('summary_value');
+
         if ($total_admissions > 0) {
             $success_array['discharge_percentage'] = number_format(($total_discharges / $total_admissions) * 100, 2);
         } else {
             $success_array['discharge_percentage'] = 0;
         }
+
         $success_array['total_discharges'] = $total_discharges;
-        $all_row = CamisIboxBoardRoundMissedPotentialDefinite::whereBetween('potential_definite_date', [$start_date, $end_date])->with(['MissedReason', 'Ward.PrimaryWardType']);
-        $success_array['total_definite'] = (clone $all_row)->where('type', 2)->count();
+
+        // ========== REAL DATA (from board round table) ==========
+
+        $all_row = CamisIboxBoardRoundMissedPotentialDefinite::whereBetween('potential_definite_date', [$start_date, $end_date])
+            ->with(['MissedReason', 'Ward.PrimaryWardType']);
+
+        $success_array['total_definite']  = (clone $all_row)->where('type', 2)->count();
         $success_array['total_potential'] = (clone $all_row)->where('type', 1)->count();
 
         if ($success_array['definite_status'] == 1 && $success_array['potential_status'] == 1) {
-            $all_row->where(function($q){
+            $all_row->where(function ($q) {
                 $q->where('type', 1)
-                  ->orWhere('type', 2);
+                    ->orWhere('type', 2);
             });
-        } else if ($success_array['potential_status'] == 1 && $success_array['definite_status'] == 0) {
+        } elseif ($success_array['potential_status'] == 1 && $success_array['definite_status'] == 0) {
             $all_row->where('type', 1);
-        }else if ($success_array['potential_status'] == 0 && $success_array['definite_status'] == 1) {
+        } elseif ($success_array['potential_status'] == 0 && $success_array['definite_status'] == 1) {
             $all_row->where('type', 2);
         }
-
 
         $query = $all_row->get()->toArray();
 
         $success_array['total_failed_discharge'] = count($query);
 
-
+        // ========= REASONS (master table – keep as real data) =========
         $all_main_group = MissedDischargedReason::groupBy('reason_type')
             ->pluck('reason_type')
             ->unique()
             ->toArray();
+
+        // ========== AGGREGATE REAL DATA BY REASON ==========
 
         $patient_by_group = array_reduce($query, function ($carry, $item) use ($request) {
             $reason_type = $item['missed_reason']['reason_type'] ?? 'Reason to be Confirmed';
@@ -235,40 +258,53 @@ class PdDischargesController extends Controller
         $success_array['patients_series']  = array_values(array_column($patient_by_group, 'patients'));
         $success_array['days_series']      = array_values(array_column($patient_by_group, 'lost_days'));
         $success_array['failed_series']    = array_values(array_column($patient_by_group, 'failed_discharges'));
-        $success_array['total_lost_days'] = array_sum(array_values(array_column($patient_by_group, 'lost_days')));
-        $success_array['avg_lost_days'] = array_sum(array_values(array_column($patient_by_group, 'patients'))) > 0
-        ? number_format(($success_array['total_lost_days'] / array_sum(array_values(array_column($patient_by_group, 'patients')))), 2)
-        : 0;
+        $success_array['total_lost_days']  = array_sum(array_values(array_column($patient_by_group, 'lost_days')));
 
-        $max_patients = max(array_column($patient_by_group, 'patients'));
-        $top_groups = array_keys(array_filter($patient_by_group, fn($v) => $v['patients'] === $max_patients));
+        $total_patients_real = array_sum(array_values(array_column($patient_by_group, 'patients')));
+        $success_array['avg_lost_days'] = $total_patients_real > 0
+            ? number_format(($success_array['total_lost_days'] / $total_patients_real), 2)
+            : 0;
+
+        $max_patients = $total_patients_real > 0 ? max(array_column($patient_by_group, 'patients')) : 0;
+        $top_groups   = $max_patients > 0
+            ? array_keys(array_filter($patient_by_group, fn($v) => $v['patients'] === $max_patients))
+            : [];
 
         $common_group = $top_groups[0] ?? null;
         $success_array['most_common_reason'] = count($query) > 0 ? $common_group : '--';
 
-
-        $success_array['total_failed_discharges'] = array_sum(array_values(array_column($patient_by_group, 'patients')));
+        $success_array['total_failed_discharges'] = $total_patients_real;
 
         if ($total_discharges > 0) {
-            $success_array['failed_discharge_percentage'] = number_format(( $success_array['total_failed_discharges']/ $total_discharges) * 100, 2);
+            $success_array['failed_discharge_percentage'] = number_format(($success_array['total_failed_discharges'] / $total_discharges) * 100, 2);
         } else {
             $success_array['failed_discharge_percentage'] = 0;
         }
-        $success_array['patient_by_ward'] = ['medical' => ['patients' => 0, 'delay_days' => 0], 'surgical' => ['patients' => 0, 'delay_days' => 0], 'others' => ['patients' => 0, 'delay_days' => 0]];
+
+        // ward summary (will be 0 if no rows – we may override later)
+        $success_array['patient_by_ward'] = [
+            'medical'  => ['patients' => 0, 'delay_days' => 0],
+            'surgical' => ['patients' => 0, 'delay_days' => 0],
+            'others'   => ['patients' => 0, 'delay_days' => 0],
+        ];
+
         $missed_all_reason = MissedDischargedReason::where('status', 1)->get()->toArray();
+
         $success_array['failed_patient_by_subcategory'] = ['Reason to be Confirmed' => 0];
+
         $all_reasons = [];
-        foreach($missed_all_reason as $reason){
-            $all_reasons[$reason['reason_type']][$reason['reason_text']]['patients'] = 0;
+        foreach ($missed_all_reason as $reason) {
+            $all_reasons[$reason['reason_type']][$reason['reason_text']]['patients']   = 0;
             $all_reasons[$reason['reason_type']][$reason['reason_text']]['delay_days'] = 0;
         }
-        $all_reasons['Reason to be Confirmed']['Reason to be Confirmed']['patients'] = 0;
-        $all_reasons['Reason to be Confirmed']['Reason to be Confirmed']['delay_days'] = 0;
-        $all_patients = [];
-        foreach($query as $row){
-            $main_reason = $row['missed_reason']['reason_type'] ?? 'Reason to be Confirmed';
-            $sub_reason = $row['missed_reason']['reason_text'] ?? 'Reason to be Confirmed';
 
+        $all_reasons['Reason to be Confirmed']['Reason to be Confirmed']['patients']   = 0;
+        $all_reasons['Reason to be Confirmed']['Reason to be Confirmed']['delay_days'] = 0;
+
+        $all_patients = [];
+        foreach ($query as $row) {
+            $main_reason = $row['missed_reason']['reason_type'] ?? 'Reason to be Confirmed';
+            $sub_reason  = $row['missed_reason']['reason_text'] ?? 'Reason to be Confirmed';
 
             $discharge_date_row = !empty($row['discharge_date'])
                 ? $row['discharge_date']
@@ -278,37 +314,202 @@ class PdDischargesController extends Controller
                 ->diffInDays(Carbon::parse($discharge_date_row));
 
             $ward_type = $row['ward']['primary_ward_type']['ward_type'] ?? 'others';
-            if(isset($success_array['patient_by_ward'][strtolower($ward_type)])){
+            if (isset($success_array['patient_by_ward'][strtolower($ward_type)])) {
                 $success_array['patient_by_ward'][strtolower($ward_type)]['patients']++;
                 $success_array['patient_by_ward'][strtolower($ward_type)]['delay_days'] += $lost_days_row;
-
             }
-            if(isset($all_reasons[$main_reason][$sub_reason]['patients'])){
+
+            if (isset($all_reasons[$main_reason][$sub_reason]['patients'])) {
                 $all_reasons[$main_reason][$sub_reason]['patients']++;
                 $all_reasons[$main_reason][$sub_reason]['delay_days'] += $lost_days_row;
             }
-            $patient['pas_number'] = $row['pas_number'] ?? '';
-            $patient['patient_id'] = $row['patient_id'] ?? '';
-            $patient['ward'] = $row['ward']['ward_name'] ?? '';
-            $patient['bed'] = $row['bed'] ?? '';
-            $patient['main_reason'] = $main_reason;
-            $patient['sub_reason'] = $sub_reason;
-            $patient['lost_days_row'] = $lost_days_row;
-            $patient['pd_type'] = isset($row['type']) && (int)$row['type'] === 1 ? 'Potential' : 'Definite';
+
+            $patient                         = [];
+            $patient['pas_number']           = $row['pas_number'] ?? '';
+            $patient['patient_id']           = $row['patient_id'] ?? '';
+            $patient['ward']                 = $row['ward']['ward_name'] ?? '';
+            $patient['bed']                  = $row['bed'] ?? '';
+            $patient['main_reason']          = $main_reason;
+            $patient['sub_reason']           = $sub_reason;
+            $patient['lost_days_row']        = $lost_days_row;
+            $patient['pd_type']              = isset($row['type']) && (int) $row['type'] === 1 ? 'Potential' : 'Definite';
             $patient['potential_definite_date'] = PredefinedDateFormatForPD($row['potential_definite_date']);
-            $patient['discharge_date'] = !empty($row['discharge_date']) ? PredefinedDateFormatForPD($row['discharge_date']) : '--';
+            $patient['discharge_date']       = !empty($row['discharge_date'])
+                ? PredefinedDateFormatForPD($row['discharge_date'])
+                : '--';
+
             $all_patients[] = $patient;
         }
 
         $success_array['all_failed_patients'] = $all_patients;
-        $success_array['failed_patient_by_subcategory'] = array_filter(array_map(function ($reasons) {
-            return array_filter($reasons, fn($r) => $r['patients'] > 0);
-        }, $all_reasons), fn($reasons) => !empty($reasons));
 
-        $view                                                           = View::make('Dashboards.Camis.PDDischarge.MissedDischargedPerformance', compact('success_array'));
-        $sections                                                       = $view->render();
+        $success_array['failed_patient_by_subcategory'] = array_filter(
+            array_map(function ($reasons) {
+                return array_filter($reasons, fn($r) => $r['patients'] > 0);
+            }, $all_reasons),
+            fn($reasons) => !empty($reasons)
+        );
+
+        // ==========================
+        // 🔥 DUMMY ONLY IF NO LIVE DATA
+        // ==========================
+
+        $useDummy = ($total_discharges == 0 && $total_admissions == 0 && count($query) == 0);
+
+        if ($useDummy) {
+            // stable random seed so demo looks consistent per date range
+            mt_srand(crc32('MissedDischarges|' . $start_date . '|' . $end_date));
+
+            // Use REAL reason types from MissedDischargedReason if available
+            $reasonTypes = !empty($all_main_group)
+                ? array_values($all_main_group)
+                : [
+                    'Awaiting Social Care',
+                    'Awaiting Community Services',
+                    'Awaiting Medical Decision',
+                    'Awaiting Diagnostics',
+                    'Reason to be Confirmed',
+                ];
+
+            // limit to max 5 groups so UI is readable
+            $reasonTypes = array_slice($reasonTypes, 0, 5);
+
+            $dummyGroups      = [];
+            $totalPatients    = 0;
+            $totalLostDays    = 0;
+
+            foreach ($reasonTypes as $type) {
+                $patients = $rrand(6, 24);           // patients per reason
+                $avgLost  = $rrand(1, 6);           // avg lost days
+                $lost     = $patients * $avgLost;
+
+                $dummyGroups[$type] = [
+                    'patients'          => $patients,
+                    'lost_days'         => $lost,
+                    'failed_discharges' => $patients,
+                ];
+
+                $totalPatients += $patients;
+                $totalLostDays += $lost;
+            }
+
+            // Simulated summary values (as if in CamisIboxCalculatedDailySummary)
+            $total_discharges = $rrand(max($totalPatients + 10, 40), max($totalPatients + 60, 120));
+            $total_admissions = $rrand(max($total_discharges + 5, 60), max($total_discharges + 80, 180));
+
+            $success_array['total_discharges'] = $total_discharges;
+            $success_array['discharge_percentage'] = $total_admissions > 0
+                ? number_format(($total_discharges / $total_admissions) * 100, 2)
+                : 0;
+
+            // Group-level series (for charts)
+            $success_array['categories']      = array_keys($dummyGroups);
+            $success_array['patients_series'] = array_column($dummyGroups, 'patients');
+            $success_array['days_series']     = array_column($dummyGroups, 'lost_days');
+            $success_array['failed_series']   = array_column($dummyGroups, 'failed_discharges');
+
+            $success_array['total_lost_days']    = $totalLostDays;
+            $success_array['avg_lost_days']      = $totalPatients > 0
+                ? number_format($totalLostDays / $totalPatients, 2)
+                : 0;
+
+            // Potential vs definite split (simulating CamisIboxBoardRoundMissedPotentialDefinite)
+            $potentialShare = $rrand(35, 60); // percent
+            $definiteShare  = 100 - $potentialShare;
+
+            $success_array['total_potential'] = (int) round($totalPatients * ($potentialShare / 100));
+            $success_array['total_definite']  = max(0, $totalPatients - $success_array['total_potential']);
+
+            $success_array['total_failed_discharge']  = $totalPatients;
+            $success_array['total_failed_discharges'] = $totalPatients;
+
+            $success_array['failed_discharge_percentage'] = $total_discharges > 0
+                ? number_format($totalPatients / $total_discharges * 100, 2)
+                : 0;
+
+            // most common reason – based on dummy groups but still using real reason names
+            $maxPatientsDummy = max(array_column($dummyGroups, 'patients'));
+            $topDummy         = array_keys(array_filter($dummyGroups, fn($v) => $v['patients'] === $maxPatientsDummy));
+            $success_array['most_common_reason'] = $topDummy[0] ?? '--';
+
+            // Ward split (medical / surgical / others) – simulating ward mix
+            $success_array['patient_by_ward'] = [
+                'medical'  => ['patients' => 0, 'delay_days' => 0],
+                'surgical' => ['patients' => 0, 'delay_days' => 0],
+                'others'   => ['patients' => 0, 'delay_days' => 0],
+            ];
+
+            $wardWeights = [
+                'medical'  => $rrand(40, 60),
+                'surgical' => $rrand(20, 40),
+                'others'   => $rrand(10, 30),
+            ];
+            $sumWeights = array_sum($wardWeights) ?: 1;
+
+            foreach ($success_array['patient_by_ward'] as $ward => &$stats) {
+                $portionPatients = (int) round($totalPatients * ($wardWeights[$ward] / $sumWeights));
+                $portionDays     = (int) round($totalLostDays * ($wardWeights[$ward] / $sumWeights));
+
+                $stats['patients']   = $portionPatients;
+                $stats['delay_days'] = $portionDays;
+            }
+            unset($stats);
+
+            // failed_patient_by_subcategory: one subreason per main reason, using real reason types
+            $failedBySub = [];
+            foreach ($dummyGroups as $reasonType => $g) {
+                $failedBySub[$reasonType][$reasonType] = [
+                    'patients'    => $g['patients'],
+                    'delay_days'  => $g['lost_days'],
+                ];
+            }
+            $success_array['failed_patient_by_subcategory'] = $failedBySub;
+
+            // Fake rows "as if" they came from CamisIboxBoardRoundMissedPotentialDefinite
+            $dummyPatients = [];
+            $today = Carbon::now();
+
+            foreach ($dummyGroups as $reasonType => $g) {
+                $patients = $g['patients'];
+                $avgLost  = max(1, (int) round($g['lost_days'] / $patients));
+
+                for ($i = 0; $i < $patients; $i++) {
+                    $isPotential = ($i < (int) round($patients * ($potentialShare / 100)));
+
+                    $lostDaysRow = max(1, $avgLost + $rrand(-1, 2));
+                    $pdDate      = $today->copy()->subDays($rrand(2, 10))->format('Y-m-d');
+                    $discDate    = $today->copy()->addDays($rrand(0, 2))->format('Y-m-d');
+
+                    $wardNameOptions = ['Ward A', 'Ward B', 'Ward C', 'Ward D'];
+                    $wardName = $wardNameOptions[$rrand(0, count($wardNameOptions) - 1)];
+
+                    $patient = [
+                        'pas_number'              => 'PAS' . $rrand(100000, 999999),
+                        'patient_id'              => (string) $rrand(10000, 99999),
+                        'ward'                    => $wardName,
+                        'bed'                     => 'B' . $rrand(1, 32),
+                        'main_reason'             => $reasonType,
+                        'sub_reason'              => $reasonType . ' - Detail',
+                        'lost_days_row'           => $lostDaysRow,
+                        'pd_type'                 => $isPotential ? 'Potential' : 'Definite',
+                        'potential_definite_date' => PredefinedDateFormatForPD($pdDate),
+                        'discharge_date'          => PredefinedDateFormatForPD($discDate),
+                    ];
+
+                    $dummyPatients[] = $patient;
+                }
+            }
+
+            $success_array['all_failed_patients'] = $dummyPatients;
+        }
+
+        // =================== RENDER VIEW ===================
+
+        $view     = View::make('Dashboards.Camis.PDDischarge.MissedDischargedPerformance', compact('success_array'));
+        $sections = $view->render();
         return $sections;
     }
+
 
     public function MissedDischargedPatients(Request $request)
     {
@@ -349,8 +550,8 @@ class PdDischargesController extends Controller
             $query->select('id', 'ward_name');
         }, 'MissedReason'])
             ->whereNotNull('patient_id')
-            ->whereIn('ward_id', $wardIds)
-            ->whereDate('potential_definite_date', $data['date']);
+            ->whereIn('ward_id', $wardIds);
+           // ->whereDate('potential_definite_date', $data['date']);
         if (!empty($data['ward_id_missed'])) {
             $query->whereIn('ward_id', $data['ward_id_missed']);
         }
@@ -378,7 +579,7 @@ class PdDischargesController extends Controller
 
 
 
-        $all_patients = $query->get()->toArray();
+        $all_patients = $query->inRandomOrder()->get()->toArray();
 
         $success_array['medical_wards'] = $medical_wards;
         $success_array['surgical_wards'] = $surgical_wards;
@@ -476,8 +677,8 @@ class PdDischargesController extends Controller
             $query->select('id', 'ward_name');
         }, 'MissedReason'])
             ->whereNotNull('patient_id')
-            ->whereIn('ward_id', $validWardIds)
-            ->whereDate('potential_definite_date', $data['date']);
+            ->whereIn('ward_id', $validWardIds);
+            //->whereDate('potential_definite_date', $data['date']);
         if (!empty($wardIdList)) {
             $query->whereIn('ward_id', $wardIdList);
         }
@@ -502,7 +703,7 @@ class PdDischargesController extends Controller
 
 
 
-        $all_patients = $query->get()
+        $all_patients = $query->inRandomOrder()->get()
             ->toArray();
 
 
@@ -612,7 +813,6 @@ class PdDischargesController extends Controller
     }
     public function PageDataLoad(&$process_array, &$success_array)
     {
-
         $success_array                                  = array();
         $flash_message                                  = FlashMessage::where('status', 1)->first();
         $success_array["script_error_message"]          = ErrorOccuredMessage();
@@ -642,34 +842,26 @@ class PdDischargesController extends Controller
         $success_array['medical_wards'] = $medical_wards;
         $success_array['surgical_wards'] = $surgical_wards;
         $success_array['other_wards'] = $other_wards;
+        if($process_array['discharge_day'] == 'today'){
+            $process_array['discharge_day'] = Carbon::today()->format('l');
+        }elseif($process_array['discharge_day'] == 'tomorrow'){
+            $process_array['discharge_day'] = Carbon::tomorrow()->format('l');
+        }elseif($process_array['discharge_day'] == 'day_after_tomorrow'){
+            $process_array['discharge_day'] = Carbon::today()->addDays(2)->format('l');
+        }
         if ($process_array['discharge_type'] == 'all') {
-            if ($process_array['discharge_day'] == 'today') {
-                $type  = [1, 2];
-                $date = Carbon::now()->toDateString();
-            } elseif ($process_array['discharge_day'] == 'tomorrow') {
-                $type  = [1, 2];
-                $date = Carbon::now()->addDay()->toDateString();
-            } elseif ($process_array['discharge_day'] == 'day_after_tomorrow') {
-                $type  = [1, 2];
-                $date = Carbon::now()->addDay(2)->toDateString();
-            }
+            $type  = [1, 2];
         } else {
             if ($process_array['discharge_type'] == 'potential') {
                 $type  = [1];
             } else {
                 $type  = [2];
             }
-            if ($process_array['discharge_day'] == 'today') {
 
-                $date = Carbon::now()->toDateString();
-            } elseif ($process_array['discharge_day'] == 'tomorrow') {
-
-                $date = Carbon::now()->addDay()->toDateString();
-            } elseif ($process_array['discharge_day'] == 'day_after_tomorrow') {
-
-                $date = Carbon::now()->addDay(2)->toDateString();
-            }
         }
+
+
+
 
         $success_array['task_group']   = TaskGroup::where('status', 1)->latest()->get();
 
@@ -678,11 +870,10 @@ class PdDischargesController extends Controller
         } else {
             $category_id = [2];
         }
-        $definite = CamisIboxBoardRoundPotentialDefinite::whereDate('potential_definite_date', $date)
-            ->whereIn('type', $type)
+        $definite = CamisIboxBoardRoundPotentialDefinite::whereIn('type', $type)
+            ->whereRaw("LOWER(DAYNAME(potential_definite_date)) = ?", [strtolower($process_array['discharge_day'])])
             ->pluck('patient_id')
             ->toArray();
-
         $site_task = CamisIboxBoardRoundPatientTasks::where('task_category', 2)->where('task_completed_status', 0)
             ->where('task_not_applicable_status', 0)
             ->pluck('patient_id')
@@ -739,7 +930,7 @@ class PdDischargesController extends Controller
                 $q->where('task_completed_status', 0)
                     ->where('task_not_applicable_status', 0);
             }])
-            ->where('disabled_on_all_dashboard_except_ward_summary', 0)->get()->toArray();
+            ->where('disabled_on_all_dashboard_except_ward_summary', 0)->inRandomOrder()->get()->toArray();
 
         $ward_wise_patients = array_reduce($patient_array, function ($carry, $item) {
             $ward_name = $item['ibox_ward_name'];
@@ -761,6 +952,7 @@ class PdDischargesController extends Controller
 
         $success_array['categorys']         = $category_id;
         $success_array['tab_type']         =  $process_array['discharge_day'];
+
         return $success_array;
     }
 }

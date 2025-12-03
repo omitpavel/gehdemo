@@ -4,22 +4,21 @@
 <div class="col-lg-12">
     <div class="row">
         <div class="col-lg-12" id="custom-tab">
-
             <div class="sticky-toprow" id="stickyToprow" >
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="mb-2 {{ PermissionDeniedDiv('pd_dashboard_today_dashboard_view') }}">
-                        <a class="tab-custom-btn @if(($success_array['tab_type']== null)|| ($success_array['tab_type'] == 'today'))active @endif {{ DisabledButtonOnRolePermission('pd_dashboard_today_dashboard_view') }}" onclick="DischargeDay('today');" data-bs-toggle="tab"
+                        <a class="tab-custom-btn @if(($success_array['tab_type']== null)|| ($success_array['tab_type'] == \Carbon\Carbon::today()->format('l')))active @endif {{ DisabledButtonOnRolePermission('pd_dashboard_today_dashboard_view') }}" onclick="DischargeDay('{{ \Carbon\Carbon::today()->format('l') }}');" data-bs-toggle="tab"
                            href="#dischargeToday">
                             <div class="tab-active">D/P Discharge Today
                             </div> </a>
                     </li>
                     <li class="mb-2 {{ PermissionDeniedDiv('pd_dashboard_tomorrow_dashboard_view') }}">
-                        <a class="tab-custom-btn {{ $success_array['tab_type'] == 'tomorrow'? 'active':'' }} {{ DisabledButtonOnRolePermission('pd_dashboard_tomorrow_dashboard_view') }}" data-bs-toggle="tab" href="#dischargeTomorrow" onclick="DischargeDay('tomorrow');">
+                        <a class="tab-custom-btn {{ $success_array['tab_type'] == \Carbon\Carbon::tomorrow()->format('l') ? 'active':'' }} {{ DisabledButtonOnRolePermission('pd_dashboard_tomorrow_dashboard_view') }}" data-bs-toggle="tab" href="#dischargeTomorrow" onclick="DischargeDay('{{ \Carbon\Carbon::tomorrow()->format('l') }} ');">
                             <div class="tab-active">D/P Discharge {{ $success_array['tomorrow'] }}</div>
                         </a>
                     </li>
                     <li class="mb-2 {{ PermissionDeniedDiv('pd_dashboard_day_after_tomorrow_dashboard_view') }}">
-                        <a class="tab-custom-btn {{ $success_array['tab_type'] == 'day_after_tomorrow'? 'active':'' }} {{ DisabledButtonOnRolePermission('pd_dashboard_day_after_tomorrow_dashboard_view') }}" data-bs-toggle="tab" href="#dischargeDayAfterTomorrow" onclick="DischargeDay('day_after_tomorrow');">
+                        <a class="tab-custom-btn {{ $success_array['tab_type'] == \Carbon\Carbon::now()->addDays(2)->format('l') ? 'active':'' }} {{ DisabledButtonOnRolePermission('pd_dashboard_day_after_tomorrow_dashboard_view') }}" data-bs-toggle="tab" href="#dischargeDayAfterTomorrow" onclick="DischargeDay('{{ \Carbon\Carbon::now()->addDays(2)->format('l') }}');">
                             <div class="tab-active">D/P Discharge {{ $success_array['day_after_tommrow'] }}</div>
                         </a>
                     </li>

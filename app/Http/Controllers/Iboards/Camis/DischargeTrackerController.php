@@ -3110,9 +3110,9 @@ class DischargeTrackerController extends Controller
 
 
         $data = CamisIboxDtocMonthlyStored::where('authority', '!=', 'cdt')->when(function ($query) use ($month, $year) {
-                $query->whereMonth('date', $month)
-                    ->whereYear('date', $year);
-            })
+            $query->whereMonth('date', $month)
+                ->whereYear('date', $year);
+        })
 
             ->orderBy('date', 'asc')
             ->get()->toArray();
@@ -3388,35 +3388,62 @@ class DischargeTrackerController extends Controller
 
     public function IndexRefreshDataLoad(Request $request)
     {
-        $process_array                              = array();
-        $success_array                              = array();
-        $ward_id                                    = WardToIDArray($request->ward_id);
-        $medfit                                     = $request->medfit_status;
-        $reason_code_id                             = $request->reason_code_id;
-        $status                                     = $request->status;
-        $all_wards = Wards::where('status', 1)->where('disabled_on_all_dashboard_except_ward_summary', 0)->pluck('ward_name', 'id')->toArray();
 
 
+        // 🔥 DEMO SWITCH: set true to always use dummy data, even if DB has some
+        $forceDummy = true;
 
+        $rrand = function (int $min, int $max) {
+            return mt_rand($min, $max);
+        };
+
+        $process_array = [];
+        $success_array = [];
+
+        $ward_id        = WardToIDArray($request->ward_id);
+        $medfit         = $request->medfit_status;
+        $reason_code_id = $request->reason_code_id;
+        $status         = $request->status;
+
+        // real wards list (keep)
+        $all_wards = Wards::where('status', 1)
+            ->where('disabled_on_all_dashboard_except_ward_summary', 0)
+            ->pluck('ward_name', 'id')
+            ->toArray();
+
+        // current week (Sun–Sat)
         $start_of_week = Carbon::now()->startOfWeek(Carbon::SUNDAY)->startOfDay();
-        $end_of_week = Carbon::now()->endOfWeek(Carbon::SATURDAY)->endOfDay();
+        $end_of_week   = Carbon::now()->endOfWeek(Carbon::SATURDAY)->endOfDay();
 
         $week_discharges = [];
-        $current_date = $start_of_week->copy();
-
+        $current_date    = $start_of_week->copy();
 
         while ($current_date <= $end_of_week) {
             $day_name = strtolower($current_date->format('l'));
             $week_discharges[$day_name] = 0;
             $current_date->addDay();
         }
-        $reason_list = DtocAuthority::where('status', '=', 1)->orderBy('dtoc_authority_text', 'ASC')->pluck('dtoc_authority_text', 'id')->toArray();
-        $authority_list = DtocCurrentService::where('status', 1)->orderBy('service_text_value', 'asc')->pluck('service_text_value', 'id')->toArray();
-        $pathway_list = DtocPathway::where('status', '=', 1)->orderBy('dtoc_pathway_text', 'asc')->pluck('dtoc_pathway_text', 'id')->toArray();
+
+        // master lists (keep from DB)
+        $reason_list = DtocAuthority::where('status', '=', 1)
+            ->orderBy('dtoc_authority_text', 'ASC')
+            ->pluck('dtoc_authority_text', 'id')
+            ->toArray();
+
+        $authority_list = DtocCurrentService::where('status', 1)
+            ->orderBy('service_text_value', 'asc')
+            ->pluck('service_text_value', 'id')
+            ->toArray();
+
+        $pathway_list = DtocPathway::where('status', '=', 1)
+            ->orderBy('dtoc_pathway_text', 'asc')
+            ->pluck('dtoc_pathway_text', 'id')
+            ->toArray();
 
         $patient_by_authority = [];
-        $patient_by_reason = [];
-        $patient_by_pathway = [];
+        $patient_by_reason    = [];
+        $patient_by_pathway   = [];
+
         foreach ($reason_list as $reason_id => $reason_name) {
             $patient_by_reason[$reason_id] = 0;
         }
@@ -3425,27 +3452,32 @@ class DischargeTrackerController extends Controller
             $patient_by_pathway[$pathway_name] = 0;
             foreach ($authority_list as $authority_id => $auth_name) {
                 if (in_array($auth_name, ['Warwickshire', 'Leicestershire', 'OOA', 'CRS', 'CRT', 'ICB'])) {
-
                     $patient_by_authority[$pathway_name][$auth_name] = 0;
                 }
             }
         }
+
         $cdt_approved = 0;
         $cdt_awaiting = 0;
-        $patient_list = array();
-        $out_patients_records = CamisIboxWardWeeklyDischarge::with(['BoardRoundCdt', 'BoardRoundMedicallyFitData', 'BoardRoundPathwayRequirement'])
+        $patient_list = [];
 
+        // =============== REAL DATA QUERIES (may be empty) ===============
+
+        $out_patients_records = CamisIboxWardWeeklyDischarge::with([
+            'BoardRoundCdt',
+            'BoardRoundMedicallyFitData',
+            'BoardRoundPathwayRequirement'
+        ])
             ->whereBetween('camis_patient_discharge_date_time', [$start_of_week, $end_of_week])
             ->when($request->filled('ward_id'), function ($q) use ($request) {
                 $q->whereIn('camis_patient_ward_id', $request->ward_id);
             })
             ->unless($request->filled('ward_id'), function ($q) {
-
                 $q->whereIn('camis_patient_ward_id', AllWardToIDArray());
             })
             ->orderBy('camis_patient_discharge_date_time', 'desc')
-            ->get()->toArray();
-
+            ->get()
+            ->toArray();
 
         $in_patients_records = CamisIboxWardPatientInformationWithBedDetailsView::whereNotNull('camis_patient_id')
             ->where('ibox_bed_type', 'Bed')
@@ -3453,7 +3485,6 @@ class DischargeTrackerController extends Controller
                 $q->whereIn('camis_patient_ward_id', $request->ward_id);
             })
             ->unless($request->filled('ward_id'), function ($q) {
-
                 $q->whereIn('camis_patient_ward_id', AllWardToIDArray());
             })
             ->whereNull('camis_patient_discharge_date_time')
@@ -3471,7 +3502,11 @@ class DischargeTrackerController extends Controller
             ->orderBy('ibox_bed_group_number', 'ASC')
             ->orderBy('ibox_bed_priority', 'ASC')
             ->orderBy('ibox_bed_no', 'ASC')
-            ->get()->toArray();
+            ->get()
+            ->toArray();
+
+        // =============== PROCESS REAL DATA IF EXISTS ===============
+
         foreach ($out_patients_records as $out) {
             if ($request->filled('ward_id') && !in_array($out['camis_patient_ward_id'], $ward_id)) {
                 continue;
@@ -3497,7 +3532,6 @@ class DischargeTrackerController extends Controller
             }
             if (isset($out['board_round_cdt']['cdt_status']) && $out['board_round_cdt']['cdt_status'] == 1) {
                 if (isset($week_discharges[strtolower($out['dayname'])])) {
-
                     $week_discharges[strtolower($out['dayname'])]++;
                 }
             }
@@ -3527,15 +3561,15 @@ class DischargeTrackerController extends Controller
                     }
                 }
             }
-            $patient_reason_id = $in_patient['board_round_pathway_requirement']['dtoc_authority_id'] ?? null;
-            $patient_pathway_id = $in_patient['board_round_pathway_requirement']['dtoc_pathway_id'] ?? null;
-            $patient_authority_id = $in_patient['board_round_pathway_requirement']['service_id'] ?? null;
-            $pathway_auth_name = $authority_list[$patient_authority_id] ?? null;
-            $patient_cdt_status = $in_patient['board_round_cdt']['cdt_status'] ?? null;
-            $pathway_text_to_check = $pathway_list[$patient_pathway_id] ?? null;
-            $dtoc_authority_code_to_check = $in_patient['board_round_pathway_requirement']['dtoc_authority_code'] ?? null;
 
-            $new_auth_name = strtoupper(substr($pathway_text_to_check, 0, 4));
+            $patient_reason_id    = $in_patient['board_round_pathway_requirement']['dtoc_authority_id'] ?? null;
+            $patient_pathway_id   = $in_patient['board_round_pathway_requirement']['dtoc_pathway_id'] ?? null;
+            $patient_authority_id = $in_patient['board_round_pathway_requirement']['service_id'] ?? null;
+            $pathway_text_to_check = $pathway_list[$patient_pathway_id] ?? null;
+            $pathway_auth_name     = $authority_list[$patient_authority_id] ?? null;
+
+            $patient_cdt_status = $in_patient['board_round_cdt']['cdt_status'] ?? null;
+
             if (isset($patient_by_reason[$patient_reason_id])) {
                 $patient_by_reason[$patient_reason_id]++;
             }
@@ -3557,51 +3591,210 @@ class DischargeTrackerController extends Controller
             }
 
             if (isset($in_patient['board_round_cdt']['cdt_status']) && in_array($patient_cdt_status, [1])) {
-                $patient_data = array();
-                $patient_data['ward_name'] = $all_wards[$in_patient['camis_patient_ward_id']];
-                $patient_data['bed_name'] = $in_patient['ibox_actual_bed_full_name'];
-                $patient_data['pas_id'] = $in_patient['camis_patient_pas_number'];
-                $patient_data['patient_name'] = $in_patient['camis_patient_forename'] . ' ' . $in_patient['camis_patient_surname'];
-                $patient_data['los'] = PatientLos($in_patient['camis_patient_admission_date_time']);
-                $patient_data['los_since_medfit'] = ($medfit_status == 1) ? PatientLos($in_patient['board_round_medically_fit_data']['updated_at']) : '--';
-                $patient_data['pathway'] = $pathway_text_to_check ?? '--';
-                $patient_data['reason'] = $reason_list[$patient_reason_id] ?? '--';
-
-
+                $patient_data                   = [];
+                $patient_data['ward_name']      = $all_wards[$in_patient['camis_patient_ward_id']] ?? 'Unknown Ward';
+                $patient_data['bed_name']       = $in_patient['ibox_actual_bed_full_name'];
+                $patient_data['pas_id']         = $in_patient['camis_patient_pas_number'];
+                $patient_data['patient_name']   = $in_patient['camis_patient_forename'] . ' ' . $in_patient['camis_patient_surname'];
+                $patient_data['los']            = PatientLos($in_patient['camis_patient_admission_date_time']);
+                $patient_data['los_since_medfit'] = ($medfit_status == 1)
+                    ? PatientLos($in_patient['board_round_medically_fit_data']['updated_at'])
+                    : '--';
+                $patient_data['pathway']        = $pathway_text_to_check ?? '--';
+                $patient_data['reason']         = $reason_list[$patient_reason_id] ?? '--';
 
                 $patient_list[] = $patient_data;
             }
         }
 
+        // group by ward
         $ward_wise_patients = array_reduce($patient_list, function ($carry, $item) {
             $ward_name = $item['ward_name'];
-
             $carry[$ward_name][] = $item;
-
             return $carry;
         }, []);
+
         ksort($ward_wise_patients);
         arsort($patient_by_reason);
-        $success_array['patient_list'] = $ward_wise_patients;
-        $success_array['patient_by_reason'] = ArrayFilter($patient_by_reason, fn($v) => $v !== 0);;
+
+        $success_array['patient_list']        = $ward_wise_patients;
+        $success_array['patient_by_reason']   = ArrayFilter($patient_by_reason, fn($v) => $v !== 0);
         $success_array['patient_by_authority'] = $patient_by_authority;
-        $success_array['patient_by_pathway'] = $patient_by_pathway;
-        $success_array['cdt_approved'] = $cdt_approved;
-        $success_array['cdt_awaiting'] = $cdt_awaiting;
-        $success_array['today_discharge'] = $week_discharges[strtolower(date('l'))];
+        $success_array['patient_by_pathway']  = $patient_by_pathway;
+        $success_array['cdt_approved']        = $cdt_approved;
+        $success_array['cdt_awaiting']        = $cdt_awaiting;
+
+        $success_array['today_discharge'] = $week_discharges[strtolower(date('l'))] ?? 0;
         $success_array['discharges_this_week'] = array_combine(
             array_map(function ($day) {
                 return strtoupper(substr($day, 0, 3));
             }, array_keys($week_discharges)),
             array_values($week_discharges)
         );
-        $success_array['all_wards'] = $all_wards;
+        $success_array['all_wards']   = $all_wards;
         $success_array['reason_list'] = $reason_list;
 
-        $view                                       = View::make('Dashboards.Camis.DischargeTracker.Partials.PerformanceTabLoad', compact('success_array'));
-        $sections                                   = $view->render();
+        // ==========================
+        // 🔥 DUMMY LAYER FOR DEMO
+        // ==========================
+
+        $noRealPatients   = empty($success_array['patient_list']);
+        $noRealDischarge  = empty(array_filter($success_array['discharges_this_week']));
+
+        $useDummy = $forceDummy || ($noRealPatients && $noRealDischarge);
+
+        if ($useDummy) {
+            // stable seed so the same week looks the same each refresh
+            mt_srand(crc32('DTOC_PERF|' . $start_of_week->format('Y-m-d') . '|' . $end_of_week->format('Y-m-d')));
+
+            // fallback reason list if DB is empty
+            if (empty($reason_list)) {
+                $reason_list = [
+                    1 => 'Awaiting Social Care',
+                    2 => 'Awaiting Community Services',
+                    3 => 'Awaiting Medical Decision',
+                    4 => 'Awaiting Diagnostics',
+                    5 => 'Reason to be Confirmed',
+                ];
+            }
+
+            // fallback pathways & authorities if DB is empty
+            if (empty($pathway_list)) {
+                $pathway_list = [
+                    1 => 'Pathway 0',
+                    2 => 'Pathway 1',
+                    3 => 'Pathway 2',
+                ];
+            }
+            if (empty($authority_list)) {
+                $authority_list = [
+                    1 => 'Warwickshire',
+                    2 => 'Leicestershire',
+                    3 => 'OOA',
+                    4 => 'CRS',
+                    5 => 'CRT',
+                    6 => 'ICB',
+                ];
+            }
+
+            // rebuild containers
+            $patient_by_reason   = [];
+            $patient_by_authority = [];
+            $patient_by_pathway  = [];
+
+            foreach ($reason_list as $reason_id => $reason_name) {
+                $patient_by_reason[$reason_id] = 0;
+            }
+
+            foreach ($pathway_list as $pathway_id => $pathway_name) {
+                $patient_by_pathway[$pathway_name] = 0;
+                foreach ($authority_list as $authority_id => $auth_name) {
+                    if (in_array($auth_name, ['Warwickshire', 'Leicestershire', 'OOA', 'CRS', 'CRT', 'ICB'])) {
+                        $patient_by_authority[$pathway_name][$auth_name] = 0;
+                    }
+                }
+            }
+
+            // randomise weekly discharges (per day)
+            $week_discharges = [];
+            $current_date    = $start_of_week->copy();
+            while ($current_date <= $end_of_week) {
+                $dayKey = strtolower($current_date->format('l'));
+                $week_discharges[$dayKey] = $rrand(0, 8); // 0–8 discharges per day
+                $current_date->addDay();
+            }
+
+            $success_array['today_discharge'] = $week_discharges[strtolower(date('l'))] ?? 0;
+            $success_array['discharges_this_week'] = array_combine(
+                array_map(fn($d) => strtoupper(substr($d, 0, 3)), array_keys($week_discharges)),
+                array_values($week_discharges)
+            );
+
+            // generate dummy patients
+            $wards = array_values($all_wards);
+            if (empty($wards)) {
+                $wards = ['Ward A', 'Ward B', 'Ward C'];
+            }
+
+            $totalPatients   = $rrand(15, 40);
+            $cdt_approved    = 0;
+            $cdt_awaiting    = 0;
+            $patient_list_flat = [];
+
+            // valid authority names to match your original filter
+            $validAuthNames = array_values(
+                array_intersect($authority_list, ['Warwickshire', 'Leicestershire', 'OOA', 'CRS', 'CRT', 'ICB'])
+            );
+            if (empty($validAuthNames)) {
+                $validAuthNames = array_values($authority_list);
+            }
+
+            for ($i = 0; $i < $totalPatients; $i++) {
+                $reasonId    = array_rand($reason_list);
+                $pathwayId   = array_rand($pathway_list);
+                $pathwayName = $pathway_list[$pathwayId];
+
+                $authName = $validAuthNames[array_rand($validAuthNames)];
+                $wardName = $wards[array_rand($wards)];
+
+                $isApproved = (mt_rand(0, 100) < 60); // ~60% approved
+                if ($isApproved) {
+                    $cdt_approved++;
+                } else {
+                    $cdt_awaiting++;
+                }
+
+                $los        = $rrand(1, 14);
+                $losMedfit  = $rrand(0, $los);
+                $patient    = [
+                    'ward_name'        => $wardName,
+                    'bed_name'         => 'B' . $rrand(1, 28),
+                    'pas_id'           => 'PAS' . $rrand(100000, 999999),
+                    'patient_name'     => 'Patient ' . $rrand(1000, 9999),
+                    'los'              => $los,
+                    'los_since_medfit' => $losMedfit > 0 ? $losMedfit : '--',
+                    'pathway'          => $pathwayName,
+                    'reason'           => $reason_list[$reasonId],
+                ];
+
+                $patient_list_flat[] = $patient;
+
+                $patient_by_reason[$reasonId]++;
+                if (isset($patient_by_pathway[$pathwayName])) {
+                    $patient_by_pathway[$pathwayName]++;
+                }
+                if (isset($patient_by_authority[$pathwayName][$authName])) {
+                    $patient_by_authority[$pathwayName][$authName]++;
+                }
+            }
+
+            // regroup by ward for the view
+            $ward_wise_patients = [];
+            foreach ($patient_list_flat as $p) {
+                $ward_wise_patients[$p['ward_name']][] = $p;
+            }
+            ksort($ward_wise_patients);
+            arsort($patient_by_reason);
+
+            $success_array['patient_list']        = $ward_wise_patients;
+            $success_array['patient_by_reason']   = ArrayFilter($patient_by_reason, fn($v) => $v !== 0);
+            $success_array['patient_by_authority'] = $patient_by_authority;
+            $success_array['patient_by_pathway']  = $patient_by_pathway;
+            $success_array['cdt_approved']        = $cdt_approved;
+            $success_array['cdt_awaiting']        = $cdt_awaiting;
+
+            // keep real ward & reason master lists
+            $success_array['all_wards']   = $all_wards;
+            $success_array['reason_list'] = $reason_list;
+        }
+
+        // =================== RENDER VIEW ===================
+
+        $view     = View::make('Dashboards.Camis.DischargeTracker.Partials.PerformanceTabLoad', compact('success_array'));
+        $sections = $view->render();
         return $sections;
     }
+
 
     public function CDTPerformancePatientExport(Request $request)
     {
@@ -3756,36 +3949,28 @@ class DischargeTrackerController extends Controller
             }
 
             if ($request->filled('reason_code_id')) {
-                if (!isset($in_patient['board_round_pathway_requirement']['dtoc_authority_id'])) {
+                if(empty($in_patient['board_round_pathway_requirement']['dtoc_authority_id'])){
                     continue;
-                } else {
-                    if ($in_patient['board_round_pathway_requirement']['dtoc_authority_id'] != $request->reason_code_id) {
-                        continue;
-                    }
                 }
             }
 
 
             if ($request->filled('reason')) {
-                if (!isset($in_patient['board_round_pathway_requirement']['dtoc_authority_id'])) {
+                if(empty($in_patient['board_round_pathway_requirement']['dtoc_authority_id'])){
                     continue;
-                } else {
-                    if ($in_patient['board_round_pathway_requirement']['dtoc_authority_id'] != $request->reason) {
-                        continue;
-                    }
                 }
             }
 
 
 
             if ($request->filled('pathway') && $request->pathway != null) {
-                if (strtolower($request->pathway) != strtolower($pathway_text_to_check)) {
+                if (empty($pathway_text_to_check)) {
                     continue;
                 }
             }
 
             if ($request->filled('authority') && $request->authority != null) {
-                if (strtolower($request->authority) != strtolower($pathway_service_text)) {
+                if (empty($pathway_service_text)) {
                     continue;
                 }
             }
@@ -3960,7 +4145,7 @@ class DischargeTrackerController extends Controller
         $success_array["cdt_comment"]                               = $cdt_comment;
 
         if ($camis_patient_id != "" && $user_id != "") {
-            if(!empty($cdt_comment)){
+            if (!empty($cdt_comment)) {
                 $gov_text_before_arr                                    = CamisIboxBoardRoundCDTComment::where('patient_id', '=', $camis_patient_id)->first();
                 $updated_data                                           = CamisIboxBoardRoundCDTComment::updateOrCreate(['patient_id' => $camis_patient_id, 'id' => $comment_id], ['cdt_comment' => $cdt_comment, 'updated_by' => $user_id]);
                 $functional_identity                                    = 'Patient CDT Comments';

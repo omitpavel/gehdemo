@@ -730,7 +730,6 @@ class CamisDailySummaryController extends Controller
 
             if ($updated_data->wasRecentlyCreated) {
                 $history_controller->HistoryTableDataInsertFromUpdateCreate($updated_data, $history_modal, 1);
-                $success_array["message"]                           = DataAddedMessage();
                 $updated_array                                      = $updated_data->getOriginal();
                 $gov_text_before                                    = array();
                 if (count($updated_array) > 0 && isset($updated_array["id"])) {
@@ -754,7 +753,6 @@ class CamisDailySummaryController extends Controller
             }
 
 
-            $pd_gov_text_before_arr->delete();
         }
     }
 
@@ -782,7 +780,6 @@ class CamisDailySummaryController extends Controller
 
 
 
-            $pd_gov_text_before_arr->delete();
         }
     }
 
